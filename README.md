@@ -24,6 +24,9 @@ Aquí se cambian tres cosas.
 ```
 index.html                 el cuadro completo, autónomo (datos incluidos)
 docs/especificacion.md     el encargo: criterios, pesos del eje, esquema de celda
+docs/analisis-mercado.md   visores histórico-geotemporales: quién hay y qué falta
+docs/panorama-fuentes.md   fuentes de datos abiertas, capa a capa
+docs/plan-visor.md         los pasos del visor: orden, umbrales y criterios de parada
 data/celdas.md             volcado legible de las 100 celdas y los 48 enlaces
 ```
 
