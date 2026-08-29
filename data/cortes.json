@@ -1,0 +1,62 @@
+[
+ {
+  "id": "-3000",
+  "año": -3000,
+  "etiqueta": "3000 a.C.",
+  "ventana": [
+   -3300,
+   -2750
+  ],
+  "col_cuadro": 1
+ },
+ {
+  "id": "-2500",
+  "año": -2500,
+  "etiqueta": "2500 a.C.",
+  "ventana": [
+   -2750,
+   -2250
+  ],
+  "col_cuadro": null
+ },
+ {
+  "id": "-2000",
+  "año": -2000,
+  "etiqueta": "2000 a.C.",
+  "ventana": [
+   -2250,
+   -1800
+  ],
+  "col_cuadro": 2
+ },
+ {
+  "id": "-1600",
+  "año": -1600,
+  "etiqueta": "1600 a.C.",
+  "ventana": [
+   -1800,
+   -1475
+  ],
+  "col_cuadro": null
+ },
+ {
+  "id": "-1350",
+  "año": -1350,
+  "etiqueta": "1350 a.C.",
+  "ventana": [
+   -1475,
+   -1275
+  ],
+  "col_cuadro": null
+ },
+ {
+  "id": "-1200",
+  "año": -1200,
+  "etiqueta": "1200 a.C.",
+  "ventana": [
+   -1275,
+   -1000
+  ],
+  "col_cuadro": 3
+ }
+]

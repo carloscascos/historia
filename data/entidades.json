@@ -1,0 +1,371 @@
+[
+ {
+  "qid": "Q187979",
+  "nombre": "Egipto: periodo arcaico",
+  "tipo": "estado",
+  "civilizacion": 5,
+  "desde": -3150,
+  "hasta": -2686,
+  "linea": "Egipto unificado bajo las dinastías I y II; capital en Menfis.",
+  "fuentes": [
+   "wikidata:Q187979",
+   "eswiki:Periodo arcaico de Egipto"
+  ],
+  "origen_geo": "cliopatria"
+ },
+ {
+  "qid": "Q177819",
+  "nombre": "Egipto: Imperio Antiguo",
+  "tipo": "estado",
+  "civilizacion": 5,
+  "desde": -2686,
+  "hasta": -2181,
+  "linea": "La época de las pirámides de Guiza; el Estado más centralizado de su tiempo.",
+  "fuentes": [
+   "wikidata:Q177819",
+   "eswiki:Imperio Antiguo de Egipto"
+  ],
+  "origen_geo": "cliopatria"
+ },
+ {
+  "qid": "Q191324",
+  "nombre": "Egipto: Imperio Medio",
+  "tipo": "estado",
+  "civilizacion": 5,
+  "desde": -2055,
+  "hasta": -1650,
+  "linea": "Reunificación desde Tebas; expansión a Nubia y comercio con Biblos.",
+  "fuentes": [
+   "wikidata:Q191324",
+   "eswiki:Imperio Medio de Egipto"
+  ],
+  "origen_geo": "cliopatria"
+ },
+ {
+  "qid": "Q728479",
+  "nombre": "Egipto: dinastía XV (hicsos)",
+  "tipo": "estado",
+  "civilizacion": 5,
+  "desde": -1650,
+  "hasta": -1550,
+  "linea": "Reyes de origen levantino gobiernan el delta desde Avaris; introducen el carro y el arco compuesto.",
+  "fuentes": [
+   "wikidata:Q728479",
+   "eswiki:Dinastía XV de Egipto"
+  ],
+  "origen_geo": "cliopatria"
+ },
+ {
+  "qid": "Q737695",
+  "nombre": "Egipto: dinastía XVI",
+  "tipo": "estado",
+  "civilizacion": 5,
+  "desde": -1650,
+  "hasta": -1580,
+  "linea": "Dinastía tebana contemporánea de los hicsos; control limitado al Alto Egipto.",
+  "fuentes": [
+   "wikidata:Q737695",
+   "eswiki:Dinastía XVI de Egipto"
+  ],
+  "origen_geo": "cliopatria"
+ },
+ {
+  "qid": "Q642301",
+  "nombre": "Egipto: dinastía XVII",
+  "tipo": "estado",
+  "civilizacion": 5,
+  "desde": -1580,
+  "hasta": -1550,
+  "linea": "Desde Tebas, inicia la guerra contra los hicsos que desemboca en el Imperio Nuevo.",
+  "fuentes": [
+   "wikidata:Q642301",
+   "eswiki:Dinastía XVII de Egipto"
+  ],
+  "origen_geo": "cliopatria"
+ },
+ {
+  "qid": "Q180568",
+  "nombre": "Egipto: Imperio Nuevo",
+  "tipo": "estado",
+  "civilizacion": 5,
+  "desde": -1550,
+  "hasta": -1069,
+  "linea": "Apogeo imperial: Canaán y Nubia bajo control egipcio; diplomacia de Amarna con Mitani, Hatti, Babilonia y Alasiya.",
+  "fuentes": [
+   "wikidata:Q180568",
+   "eswiki:Imperio Nuevo de Egipto",
+   "isbn:9780691140896 — Cline 2014, 1177 B.C.: The Year Civilization Collapsed, Princeton"
+  ],
+  "origen_geo": "cliopatria"
+ },
+ {
+  "qid": "Q2345840",
+  "nombre": "Ciudades-estado sumerias",
+  "tipo": "estado",
+  "civilizacion": 7,
+  "desde": -3300,
+  "hasta": -2004,
+  "linea": "Uruk, Ur, Lagash, Kish: primeras ciudades y primera escritura; rivalidad constante entre ellas.",
+  "fuentes": [
+   "wikidata:Q2345840",
+   "enwiki:History of Sumer"
+  ],
+  "origen_geo": "cliopatria"
+ },
+ {
+  "qid": "Q41137",
+  "nombre": "Asiria",
+  "tipo": "estado",
+  "civilizacion": 7,
+  "desde": -2025,
+  "hasta": -609,
+  "linea": "En el Bronce final, el Imperio Asirio Medio: Assur-uballit I se libera de Mitani hacia 1365 y se trata de igual a igual con Egipto.",
+  "fuentes": [
+   "wikidata:Q41137",
+   "eswiki:Asiria"
+  ],
+  "origen_geo": "cliopatria"
+ },
+ {
+  "qid": "Q47690",
+  "nombre": "Babilonia",
+  "tipo": "estado",
+  "civilizacion": 7,
+  "desde": -1894,
+  "hasta": -539,
+  "linea": "En el Bronce final gobierna la dinastía casita: cuatro siglos de estabilidad y el acadio como lengua diplomática de todo el Próximo Oriente.",
+  "fuentes": [
+   "wikidata:Q47690",
+   "eswiki:Babilonia (reino)"
+  ],
+  "origen_geo": "cliopatria"
+ },
+ {
+  "qid": "Q7440601",
+  "nombre": "I Dinastía del País del Mar",
+  "tipo": "estado",
+  "civilizacion": 7,
+  "desde": -1732,
+  "hasta": -1460,
+  "linea": "Dinastía del sur de Mesopotamia entre la caída de la Babilonia amorrita y el dominio casita.",
+  "fuentes": [
+   "wikidata:Q7440601",
+   "eswiki:I Dinastía del País del Mar"
+  ],
+  "origen_geo": "cliopatria"
+ },
+ {
+  "qid": "Q178665",
+  "nombre": "Mitani",
+  "tipo": "estado",
+  "civilizacion": 7,
+  "desde": -1500,
+  "hasta": -1300,
+  "linea": "Reino hurrita del alto Éufrates; potencia rival de Egipto hasta la paz de Tutmosis IV, destruido por Suppiluliuma I hacia 1340.",
+  "fuentes": [
+   "wikidata:Q178665",
+   "eswiki:Mitani"
+  ],
+  "origen_geo": "cliopatria"
+ },
+ {
+  "qid": "Q128904",
+  "nombre": "Elam",
+  "tipo": "estado",
+  "civilizacion": 8,
+  "desde": -3200,
+  "hasta": -539,
+  "linea": "Susa y Anshan: el reino de la meseta que enlaza Mesopotamia con las rutas del este; en el Bronce final, la dinastía de Untash-Napirisha construye Dur-Untash.",
+  "fuentes": [
+   "wikidata:Q128904",
+   "eswiki:Elam (reino)"
+  ],
+  "origen_geo": "cliopatria"
+ },
+ {
+  "qid": "Q42534",
+  "nombre": "Civilización del valle del Indo",
+  "tipo": "cultura arqueológica",
+  "civilizacion": 9,
+  "desde": -3300,
+  "hasta": -1300,
+  "linea": "Harappa y Mohenjo-daro: urbanismo planificado, escritura sin descifrar, sin palacios ni templos identificables.",
+  "fuentes": [
+   "wikidata:Q42534",
+   "eswiki:Civilización del valle del Indo"
+  ],
+  "origen_geo": "cliopatria"
+ },
+ {
+  "qid": "Q128938",
+  "nombre": "Shang",
+  "tipo": "estado",
+  "civilizacion": 10,
+  "desde": -1600,
+  "hasta": -1046,
+  "linea": "Primera dinastía china con registro escrito: huesos oraculares de Anyang, bronces rituales, carros de guerra.",
+  "fuentes": [
+   "wikidata:Q128938",
+   "eswiki:Dinastía Shang"
+  ],
+  "origen_geo": "cliopatria"
+ },
+ {
+  "qid": "Q134178",
+  "nombre": "Civilización minoica",
+  "tipo": "cultura arqueológica",
+  "civilizacion": 4,
+  "desde": -3000,
+  "hasta": -1450,
+  "linea": "Palacios de Creta (Cnosos, Festo); talasocracia comercial; escritura Lineal A sin descifrar.",
+  "fuentes": [
+   "wikidata:Q134178",
+   "eswiki:Civilización minoica"
+  ],
+  "origen_geo": "cliopatria"
+ },
+ {
+  "qid": "Q181264",
+  "nombre": "Civilización micénica",
+  "tipo": "estado",
+  "civilizacion": 4,
+  "desde": -1600,
+  "hasta": -1100,
+  "linea": "Estados palaciales del Peloponeso (Micenas, Pilos, Tirinto) con escritura Lineal B; heredan Creta hacia 1450.",
+  "fuentes": [
+   "wikidata:Q181264",
+   "eswiki:Civilización micénica",
+   "isbn:9780691140896 — Cline 2014, 1177 B.C.: The Year Civilization Collapsed, Princeton"
+  ],
+  "origen_geo": "cliopatria"
+ },
+ {
+  "qid": "Q5406",
+  "nombre": "Hatti (hititas)",
+  "tipo": "estado",
+  "civilizacion": null,
+  "desde": -1650,
+  "hasta": -1178,
+  "linea": "Imperio anatolio con capital en Hattusa; rival de Egipto por Siria, destruye Mitani y Arzawa bajo Suppiluliuma I y Mursili II.",
+  "fuentes": [
+   "wikidata:Q5406",
+   "eswiki:Hititas",
+   "isbn:9780691140896 — Cline 2014, 1177 B.C.: The Year Civilization Collapsed, Princeton"
+  ],
+  "origen_geo": "cliopatria"
+ },
+ {
+  "qid": "Q191369",
+  "nombre": "Ugarit",
+  "tipo": "estado",
+  "civilizacion": 6,
+  "desde": -1800,
+  "hasta": -1185,
+  "linea": "Reino-puerto del norte de Siria, vasallo de Hatti, nudo del comercio entre Chipre, Egipto y el Egeo; inventa el alfabeto cuneiforme.",
+  "fuentes": [
+   "wikidata:Q191369",
+   "eswiki:Ugarit",
+   "isbn:9780691140896 — Cline 2014, 1177 B.C.: The Year Civilization Collapsed, Princeton"
+  ],
+  "origen_geo": "mano"
+ },
+ {
+  "qid": "Q1760729",
+  "nombre": "Alasiya (Chipre)",
+  "tipo": "estado",
+  "civilizacion": 6,
+  "desde": -1500,
+  "hasta": -1050,
+  "linea": "El reino del cobre: exporta lingotes a Egipto, Ugarit, el Egeo y Cerdeña; se cartea con el faraón en las cartas de Amarna.",
+  "fuentes": [
+   "wikidata:Q1760729",
+   "eswiki:Alasiya"
+  ],
+  "origen_geo": "mano"
+ },
+ {
+  "qid": "Q1421436",
+  "nombre": "Cultura nurágica",
+  "tipo": "cultura arqueológica",
+  "civilizacion": 3,
+  "desde": -1800,
+  "hasta": -238,
+  "linea": "Cerdeña de las torres de piedra; recibe lingotes de cobre chipriota y cerámica micénica.",
+  "fuentes": [
+   "wikidata:Q1421436",
+   "eswiki:Cultura nurágica"
+  ],
+  "origen_geo": "mano"
+ },
+ {
+  "qid": "Q2629081",
+  "nombre": "Bronce final atlántico",
+  "tipo": "cultura arqueológica",
+  "civilizacion": 2,
+  "desde": -1300,
+  "hasta": -700,
+  "linea": "Red metalúrgica de la fachada atlántica (Galicia, Bretaña, Cornualles, Irlanda); fuente del estaño que llega al Mediterráneo oriental según los isótopos.",
+  "fuentes": [
+   "wikidata:Q2629081",
+   "eswiki:Bronce Final atlántico",
+   "doi:10.1371/journal.pone.0218326 — Berger et al. 2019, Isotope systematics and chemical composition of tin ingots from Mochlos (Crete) and other Late Bronze Age sites, PLOS ONE"
+  ],
+  "origen_geo": "mano"
+ },
+ {
+  "qid": "Q135364",
+  "nombre": "Olmecas",
+  "tipo": "cultura arqueológica",
+  "civilizacion": 1,
+  "desde": -1600,
+  "hasta": -400,
+  "linea": "San Lorenzo y las cabezas colosales en la costa del Golfo: la primera cultura compleja mesoamericana, sin contacto con el Viejo Mundo.",
+  "fuentes": [
+   "wikidata:Q135364",
+   "eswiki:Cultura olmeca"
+  ],
+  "origen_geo": "mano"
+ },
+ {
+  "qid": "Q215262",
+  "nombre": "Cultura védica temprana",
+  "tipo": "cultura arqueológica",
+  "civilizacion": 9,
+  "desde": -1500,
+  "hasta": -500,
+  "linea": "Pueblos indoarios en el Punyab tras el fin del Indo; composición del Rigveda; sin ciudades.",
+  "fuentes": [
+   "wikidata:Q215262",
+   "eswiki:Periodo védico"
+  ],
+  "origen_geo": "mano"
+ },
+ {
+  "qid": "Q459376",
+  "nombre": "Cultura de Andrónovo",
+  "tipo": "rango nómada",
+  "civilizacion": null,
+  "desde": -2000,
+  "hasta": -1150,
+  "linea": "Pastores de la estepa del Kazajistán; carro ligero de radios y metalurgia del bronce; posible origen del carro que llega a China.",
+  "fuentes": [
+   "wikidata:Q459376",
+   "eswiki:Cultura andrónovo"
+  ],
+  "origen_geo": "mano"
+ },
+ {
+  "qid": "Q649262",
+  "nombre": "Arzawa",
+  "tipo": "estado",
+  "civilizacion": null,
+  "desde": -1500,
+  "hasta": -1320,
+  "linea": "Reino de Anatolia occidental, rival de Hatti; se cartea con Amenhotep III; conquistado por Mursili II hacia 1320.",
+  "fuentes": [
+   "wikidata:Q649262",
+   "eswiki:Arzawa"
+  ],
+  "origen_geo": "mano"
+ }
+]

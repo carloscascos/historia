@@ -1,0 +1,122 @@
+[
+ {
+  "id": 1,
+  "nombre": "Mesoamérica y Andes",
+  "zona": "América",
+  "orden": 1,
+  "bbox": [
+   -105,
+   -20,
+   -60,
+   25
+  ]
+ },
+ {
+  "id": 2,
+  "nombre": "Europa atlántica",
+  "zona": "Atlántico",
+  "orden": 2,
+  "bbox": [
+   -12,
+   36,
+   5,
+   56
+  ]
+ },
+ {
+  "id": 3,
+  "nombre": "Mediterráneo occid.",
+  "zona": "Mediterráneo",
+  "orden": 3,
+  "bbox": [
+   -10,
+   30,
+   20,
+   46
+  ]
+ },
+ {
+  "id": 4,
+  "nombre": "Grecia y Egeo",
+  "zona": "Mediterráneo",
+  "orden": 4,
+  "bbox": [
+   19,
+   33,
+   30,
+   42
+  ]
+ },
+ {
+  "id": 5,
+  "nombre": "Egipto",
+  "zona": "Nilo",
+  "orden": 5,
+  "bbox": [
+   24,
+   20,
+   37,
+   33
+  ]
+ },
+ {
+  "id": 6,
+  "nombre": "Levante y Fenicia",
+  "zona": "Levante",
+  "orden": 6,
+  "bbox": [
+   32,
+   29,
+   40,
+   38
+  ]
+ },
+ {
+  "id": 7,
+  "nombre": "Mesopotamia",
+  "zona": "Ríos",
+  "orden": 7,
+  "bbox": [
+   37,
+   28,
+   50,
+   38
+  ]
+ },
+ {
+  "id": 8,
+  "nombre": "Persia / Irán",
+  "zona": "Meseta",
+  "orden": 8,
+  "bbox": [
+   44,
+   25,
+   65,
+   40
+  ]
+ },
+ {
+  "id": 9,
+  "nombre": "India",
+  "zona": "Índico",
+  "orden": 9,
+  "bbox": [
+   62,
+   8,
+   90,
+   36
+  ]
+ },
+ {
+  "id": 10,
+  "nombre": "China",
+  "zona": "Extremo Oriente",
+  "orden": 10,
+  "bbox": [
+   100,
+   20,
+   125,
+   42
+  ]
+ }
+]

@@ -1,0 +1,159 @@
+[
+ {
+  "id": "r01",
+  "a": "Q1760729",
+  "b": "Q180568",
+  "tipo": "comercio",
+  "desde": -1450,
+  "hasta": -1200,
+  "linea": "Cobre chipriota hacia Egipto; el rey de Alasiya negocia cantidades y precios con el faraón en las cartas de Amarna.",
+  "fuentes": [
+   "wikidata:Q235502",
+   "eswiki:Cartas de Amarna"
+  ]
+ },
+ {
+  "id": "r02",
+  "a": "Q1760729",
+  "b": "Q191369",
+  "tipo": "comercio",
+  "desde": -1400,
+  "hasta": -1190,
+  "linea": "Cobre y grano entre Chipre y Ugarit; mercaderes ugaríticos residentes en Chipre según los archivos de Ugarit.",
+  "fuentes": [
+   "wikidata:Q191369",
+   "eswiki:Ugarit",
+   "wikidata:Q1760729",
+   "eswiki:Alasiya"
+  ]
+ },
+ {
+  "id": "r03",
+  "a": "Q191369",
+  "b": "Q181264",
+  "tipo": "comercio",
+  "desde": -1400,
+  "hasta": -1190,
+  "linea": "La ruta marítima del Levante al Egeo por la costa de Anatolia: la que seguía el barco de Uluburun con diez toneladas de cobre y una de estaño.",
+  "fuentes": [
+   "doi:10.1111/j.1095-9270.1998.tb00803.x — Pulak 1998, The Uluburun shipwreck: an overview, IJNA 27"
+  ]
+ },
+ {
+  "id": "r04",
+  "a": "Q2629081",
+  "b": "Q1760729",
+  "tipo": "comercio",
+  "desde": -1300,
+  "hasta": -1200,
+  "linea": "Estaño atlántico hasta el Mediterráneo oriental. Hipótesis isotópica: los lingotes de Mochlos e Israel son compatibles con menas de Cornualles.",
+  "fuentes": [
+   "doi:10.1371/journal.pone.0218326 — Berger et al. 2019, Isotope systematics and chemical composition of tin ingots from Mochlos (Crete) and other Late Bronze Age sites, PLOS ONE"
+  ]
+ },
+ {
+  "id": "r05",
+  "a": "Q128904",
+  "b": "Q47690",
+  "tipo": "comercio",
+  "desde": -1475,
+  "hasta": -1200,
+  "linea": "Estaño y lapislázuli de Badajsán llegan a Babilonia por la meseta irania a través de Elam.",
+  "fuentes": [
+   "wikidata:Q32056",
+   "eswiki:Badajsán",
+   "enwiki:Lapis lazuli"
+  ]
+ },
+ {
+  "id": "r06",
+  "a": "Q180568",
+  "b": "Q5406",
+  "tipo": "conflicto",
+  "desde": -1350,
+  "hasta": -1259,
+  "linea": "Egipto y Hatti se disputan Siria (Amurru, Qadesh) hasta el tratado de paz de Ramsés II y Hattusili III en 1259.",
+  "fuentes": [
+   "wikidata:Q203729",
+   "eswiki:Batalla de Qadesh"
+  ]
+ },
+ {
+  "id": "r07",
+  "a": "Q5406",
+  "b": "Q178665",
+  "tipo": "conflicto",
+  "desde": -1350,
+  "hasta": -1320,
+  "linea": "Suppiluliuma I saquea Washukanni y reduce Mitani a estado vasallo.",
+  "fuentes": [
+   "wikidata:Q178665",
+   "eswiki:Mitani"
+  ]
+ },
+ {
+  "id": "r08",
+  "a": "Q41137",
+  "b": "Q178665",
+  "tipo": "conflicto",
+  "desde": -1365,
+  "hasta": -1300,
+  "linea": "Assur-uballit I se independiza de Mitani y ocupa su mitad oriental.",
+  "fuentes": [
+   "wikidata:Q12642600",
+   "eswiki:Imperio Asirio Medio"
+  ]
+ },
+ {
+  "id": "r09",
+  "a": "Q5406",
+  "b": "Q649262",
+  "tipo": "conflicto",
+  "desde": -1330,
+  "hasta": -1310,
+  "linea": "Mursili II conquista Arzawa y lo reparte en reinos vasallos.",
+  "fuentes": [
+   "wikidata:Q649262",
+   "eswiki:Arzawa"
+  ]
+ },
+ {
+  "id": "r10",
+  "a": "Q47690",
+  "b": "Q180568",
+  "tipo": "transmision",
+  "desde": -1400,
+  "hasta": -1300,
+  "linea": "El acadio en escritura cuneiforme es la lengua diplomática: la cancillería egipcia escribe en babilonio a sus iguales y vasallos.",
+  "fuentes": [
+   "wikidata:Q235502",
+   "eswiki:Cartas de Amarna"
+  ]
+ },
+ {
+  "id": "r11",
+  "a": "Q1760729",
+  "b": "Q1421436",
+  "tipo": "comercio",
+  "desde": -1300,
+  "hasta": -1100,
+  "linea": "Lingotes de cobre chipriota en forma de piel de buey aparecen en los nuragas de Cerdeña.",
+  "fuentes": [
+   "enwiki:Oxhide ingot"
+  ]
+ },
+ {
+  "id": "r12",
+  "a": "Q459376",
+  "b": "Q128938",
+  "tipo": "transmision",
+  "desde": -1300,
+  "hasta": -1100,
+  "linea": "El carro ligero de radios aparece en Anyang hacia 1200. Hipótesis: llega desde la estepa por Asia central.",
+  "fuentes": [
+   "enwiki:Chariot",
+   "wikidata:Q459376",
+   "eswiki:Cultura andrónovo"
+  ]
+ }
+]
