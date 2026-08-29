@@ -61,14 +61,17 @@
   .corner{position:sticky;left:0;top:0;z-index:9;background:var(--ink-2);border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
   .gutlabel{position:sticky;left:0;z-index:6;background:var(--ink-2);border-right:1px solid var(--line)}
 
+  /* Bandas de era: altura suficiente para las dos líneas, y etiqueta que
+     se queda pegada al borde izquierdo mientras su banda siga en pantalla. */
   .era{
     position:sticky;top:0;z-index:7;border-bottom:1px solid var(--line);
-    padding:7px 10px;font-family:var(--sans);overflow:hidden;
+    padding:8px 10px 9px;font-family:var(--sans);min-height:56px;
   }
-  .era .name{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
-  .era .rate{font-size:10px;color:var(--text-dim);letter-spacing:.04em;white-space:nowrap;margin-top:2px}
-  .era-split{display:flex;height:100%;margin:-7px -10px;}
-  .era-split > div{padding:7px 10px;overflow:hidden;border-left:1px solid rgba(255,255,255,.07)}
+  .era .inner{position:sticky;left:calc(var(--label-w) + 10px);display:inline-block}
+  .era .name{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;line-height:1.2}
+  .era .rate{font-size:10px;color:var(--text-dim);letter-spacing:.04em;white-space:nowrap;line-height:1.3;margin-top:3px}
+  .era-split{display:flex;margin:-8px -10px -9px;min-height:56px}
+  .era-split > div{padding:8px 10px 9px;border-left:1px solid rgba(255,255,255,.07);min-width:0}
   .era-split > div:first-child{border-left:0}
 
   .colhead{
@@ -85,11 +88,13 @@
   }
   .cell:hover,.cell:focus-visible{background:rgba(255,255,255,.045);outline:none}
   .cell:focus-visible{box-shadow:inset 0 0 0 2px var(--info)}
+  /* La columna ancha conserva su ancho, pero la prosa no se estira:
+     medida de línea limitada para que siga siendo legible. */
   .cell .estado{
     font-family:var(--sans);font-weight:700;font-size:12px;letter-spacing:.05em;
-    text-transform:uppercase;line-height:1.25;margin-bottom:5px;
+    text-transform:uppercase;line-height:1.25;margin-bottom:5px;max-width:34ch;
   }
-  .cell .hecho{font-size:13px;line-height:1.4;color:#cfd6d8;font-weight:300}
+  .cell .hecho{font-size:13px;line-height:1.4;color:#cfd6d8;font-weight:300;max-width:46ch}
   .cell.vacia{cursor:default;background:repeating-linear-gradient(135deg,transparent 0 7px,rgba(255,255,255,.03) 7px 8px)}
   .cell.vacia .estado{color:#5c686d;font-weight:500}
 
@@ -121,8 +126,8 @@
   #panel h3{font-family:var(--sans);font-size:19px;margin:6px 0 12px;letter-spacing:.02em;text-transform:uppercase}
   #panel dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 14px;align-items:baseline}
   #panel dt{font-family:var(--sans);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-dim)}
-  #panel dd{margin:0;font-size:15px;line-height:1.5}
-  #panel .rel{font-size:14px;line-height:1.6}
+  #panel dd{margin:0;font-size:15px;line-height:1.5;max-width:62ch}
+  #panel .rel{font-size:14px;line-height:1.6;max-width:62ch}
   #panel .tag{font-family:var(--sans);font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:1px 6px;border:1px solid;border-radius:2px;margin-right:6px;white-space:nowrap}
   .t-conflicto{color:var(--conflicto);border-color:var(--conflicto)}
   .t-comercio{color:var(--comercio);border-color:var(--comercio)}
@@ -200,7 +205,7 @@ const COLS = [
   {id:10,cut:"1500 → hoy", span:"1300–2026",      years:726,  w:22, era:"e-mix"}
 ];
 
-// [estado, hecho, [relaciones en texto]]
+// [estado, hecho, relación]
 const C = {
  1:{
   1:["Aldeas y primer maíz","Se domestica el maíz en Mesoamérica y se levanta Caral en la costa peruana, sin cerámica ni escritura.","Sin contacto con el Viejo Mundo."],
@@ -364,7 +369,7 @@ function eraCell(colStart,colEnd,name,tint,years,id){
   const d = el("div","era");
   d.style.gridArea = `1 / ${colStart} / 2 / ${colEnd}`;
   d.style.background = tint;
-  d.innerHTML = `<div class="name">${name}</div><div class="rate" data-years="${years}" id="${id}"></div>`;
+  d.innerHTML = `<div class="inner"><div class="name">${name}</div><div class="rate" data-years="${years}" id="${id}"></div></div>`;
   grid.appendChild(d);
   return d;
 }
@@ -376,9 +381,9 @@ eraCell(6,12,"Hierro","rgba(93,132,146,.16)",1900,"r-hierro");
 const eraLast = el("div","era");
 eraLast.style.gridArea = "1 / 12 / 2 / 13";
 eraLast.innerHTML = `<div class="era-split">
-  <div style="flex:4;background:rgba(93,132,146,.16)"><div class="name">Hierro</div><div class="rate" data-years="450" id="r-hierro2"></div></div>
-  <div style="flex:10;background:rgba(106,92,82,.20)"><div class="name">Industrial</div><div class="rate" data-years="200" id="r-ind"></div></div>
-  <div style="flex:8;background:rgba(99,208,214,.16)"><div class="name">Información</div><div class="rate" data-years="76" id="r-info"></div></div>
+  <div style="flex:4;background:rgba(93,132,146,.16)"><div class="inner"><div class="name">Hierro</div><div class="rate" data-years="450" id="r-hierro2"></div></div></div>
+  <div style="flex:10;background:rgba(106,92,82,.20)"><div class="inner"><div class="name">Industrial</div><div class="rate" data-years="200" id="r-ind"></div></div></div>
+  <div style="flex:8;background:rgba(99,208,214,.16)"><div class="inner"><div class="name">Información</div><div class="rate" data-years="76" id="r-info"></div></div></div>
 </div>`;
 grid.appendChild(eraLast);
 
@@ -512,7 +517,8 @@ function drawLinks(){
 // ---- lectura de elasticidad: años por cada 100 px
 function rates(){
   document.querySelectorAll(".rate").forEach(r=>{
-    const box = r.closest(".era") ? (r.parentElement.classList.contains("era") ? r.closest(".era") : r.parentElement) : r.parentElement;
+    const box = r.closest(".era-split > div") || r.closest(".era");
+    if(!box) return;
     const w = box.getBoundingClientRect().width;
     if(!w) return;
     const y = +r.dataset.years;
@@ -523,6 +529,7 @@ function rates(){
 
 function refresh(){ rates(); drawLinks(); }
 window.addEventListener("resize", refresh);
+document.getElementById("scroller").addEventListener("scroll", ()=>{ /* etiquetas fijadas por CSS */ }, {passive:true});
 document.fonts && document.fonts.ready.then(refresh);
 setTimeout(refresh, 60);
 refresh();
