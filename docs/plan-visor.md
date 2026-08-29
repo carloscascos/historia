@@ -4,25 +4,37 @@ Agosto de 2026. Tercer documento de la serie: `analisis-mercado.md` dice *quién
 
 ---
 
-## Lo que ya está decidido y no se rediscute
+## Decisiones cerradas
 
-De los dos documentos anteriores, y de lo decidido el 29 de agosto de 2026, se arrastran cinco decisiones cerradas. Volver sobre ellas es perder tiempo.
+Dos vienen de los documentos anteriores y nueve se tomaron el 29 de agosto de 2026. Volver sobre ellas es perder tiempo.
+
+**De partida**
 
 1. **Construir sobre componentes existentes.** Ni adoptar una herramienta tal cual (ninguna cumple los siete requisitos) ni partir de cero (vida media de estos proyectos: unos cinco años).
-2. **Sitio estático, sin servidor dinámico.** Es la recomendación del Endings Project y de la Socio-Technical Sustainability Roadmap, y es lo que habilita el par PMTiles + alojamiento barato. No es una preferencia técnica: es la mitigación principal contra la causa de muerte dominante.
-3. **Pila base: MapLibre GL + PMTiles, con globo 2D proyectado.** Sin tarifas de API, sin atadura a Mapbox, servible desde GitHub Pages o S3. CesiumJS y el globo WGS84 con terreno quedan descartados: son otro proyecto, con otro coste y otro riesgo de mortalidad.
-4. **Proyecto abierto, sin uso comercial.** Entra todo lo que la cláusula no comercial vetaba, y son dos piezas grandes: CHGIS, la mejor fuente para China, y la base agregada completa del World Historical Gazetteer, que además aloja Cliopatria.
-5. **Licencias documentadas capa a capa desde el primer día**, código y datos por separado. Al ser el proyecto abierto la pregunta ya no es qué se puede vender sino qué se puede combinar, que es más sutil y da más problemas: ver la matriz del paso 2.
+2. **Sitio estático, sin servidor dinámico.** Recomendación del Endings Project y de la Socio-Technical Sustainability Roadmap. No es una preferencia técnica: es la mitigación principal contra la causa de muerte dominante, y además es lo que permite aplazar la decisión 11.
+
+**De producto**
+
+3. **Globo 2D con MapLibre GL + PMTiles.** CesiumJS y el globo WGS84 con terreno quedan descartados: son otro proyecto, con otro coste y otro riesgo de mortalidad.
+4. **La incertidumbre se muestra siempre, aunque afee.** Es el segundo diferenciador del proyecto, después del cuadro.
+5. **Dos clases de incertidumbre, dos canales distintos.** No saber *dónde* estaba el borde es espacial y se dibuja con geometría: desenfoque en fronteras, radio de error en batallas. No saber *cuánto* —HYDE es una reconstrucción modelada, las poblaciones de Reba–Seto son estimaciones de Chandler y Modelski— no es espacial y se marca con un distintivo de capa y una nota en la leyenda. Desenfocar HYDE afirmaría que no se sabe dónde está, cuando lo que no se sabe es cuánto. Sale casi gratis, porque lo segundo es uniforme por capa.
+6. **El play va a saltos entre cortes, sin interpolar.** Los datos vienen por fechas de corte. Animar de forma continua obligaría a dibujar estados intermedios que nadie ha sostenido nunca. Queda menos vistoso que un reloj fluido y es la única opción compatible con la decisión 4.
+7. **El suelo de zoom sale de las cien celdas del cuadro.** La precisión no varía solo por época sino por época y sitio: Egipto en 1200 a.C. está mucho mejor documentado que Europa atlántica en 1200 a.C. Cada celda de civilización × corte lleva su propio límite de detalle.
+8. **Capa cultural: solo Europeana, mostrando cobertura y no densidad.** Europeana es europea, así que pintar sus objetos como puntos haría leer una laguna de catálogo como una pobreza histórica, justo lo que la decisión 4 prohíbe. Se muestra cuántos objetos hay disponibles por zona, explícitamente.
+9. **Tres capas temáticas, y rutas y comercio va primera.** Después conflictos y HYDE. Maddison queda fuera: asigna PIB a países modernos proyectados hacia atrás, que es la misma precisión inventada que la decisión 4 rechaza, disfrazada de cifra.
+
+**De gobierno**
+
+10. **Licencia permisiva: MIT o Apache-2.0 para el código, CC BY 4.0 para los datos propios.** Obliga a preferir Cliopatria (CC BY 4.0, revisada por pares, con DOI) sobre `historical-basemaps` (GPL-3.0), que cubre la misma necesidad peor. El copyleft protege contra que alguien encierre el trabajo; el permisivo aumenta las probabilidades de que el trabajo siga vivo en 2035, y para un proyecto sin modelo comercial lo segundo importa más.
+11. **Repositorio propio ahora, casa institucional después del paso 4.** Las instituciones adoptan cosas que funcionan, no propuestas. La decisión 2 hace que mudarse cueste casi nada, así que aplazar aquí no penaliza.
 
 ## Lo que este plan cambia respecto a la recomendación inicial
 
-Tres cosas, y conviene justificarlas antes de la lista de pasos.
+**El cuadro sinóptico pasa de ser la última etapa a ser la tercera, y a estar antes del visor.** `analisis-mercado.md` lo situaba al final porque lo daba por construir. Ya está construido, y las decisiones 7 y 9 lo han vuelto estructural: gobierna el suelo de zoom del mapa y aporta la capa de rutas antiguas. El visor no se puede hacer bien sin él, así que va delante.
 
-**El cuadro sinóptico se adelanta de la etapa 3 a la 4.** `analisis-mercado.md` lo situaba al final porque lo daba por construir. Ya está construido: cien celdas y cuarenta y ocho enlaces en `index.html`. Enlazar cada celda con una coordenada y un rango temporal es barato y produce lo único que hoy no ofrece nadie. Dejarlo para el final es reservar el diferenciador para cuando ya no queden fuerzas.
+**El riesgo principal se ha mudado.** El paso 1 existía para responder si la animación era fluida. Con saltos entre cortes, eso deja de ser un reto. Lo difícil ahora es dibujar fronteras difusas de forma legible: las teselas vectoriales están hechas para trazos nítidos, y un relleno con desenfoque por polígono, a varios niveles de zoom y con decenas de entidades solapadas, no se resuelve con una propiedad de estilo. El prototipo desechable cambia de objeto.
 
-**Se añade un paso 0 que mide la cobertura real de OpenHistoricalMap en la antigüedad.** Ambos documentos recomiendan OHM como base y ambos señalan, de pasada, que su cobertura es *desigual*, muy fuerte en condados y husos horarios de Estados Unidos. Este proyecto vive entre 3000 a.C. y 1500 d.C. Si en ese tramo OHM está casi vacío, la base cartográfica elegida no sirve para lo que se quiere hacer, y eso hay que saberlo en la semana uno, no en el mes cuatro.
-
-**El modelo de datos se define antes de ingerir nada.** Los dos documentos coinciden en que el trabajo real no es cartografiar sino integrar y armonizar, pero ninguno dice cómo. Ingerir seis fuentes con seis modelos temporales distintos y armonizarlas después es el camino corto al abandono.
+**El modelo de datos se define antes de ingerir la segunda fuente.** Los dos documentos anteriores coinciden en que el trabajo real es integrar y armonizar, pero ninguno dice cómo. Y ahora la fiabilidad no es metadato: es entrada de render.
 
 ---
 
@@ -32,92 +44,96 @@ Tres cosas, y conviene justificarlas antes de la lista de pasos.
 
 ### 0.1 Probar Running Reality contra los siete requisitos
 
-Es lo más parecido a lo que se quiere y es gratis. Abrirlo, recorrerlo y puntuar los siete requisitos uno a uno. Si los cubre, el proyecto no existe y se ha ahorrado un año. Sus dos defectos conocidos —propietario y sin API de datos— solo importan si se quiere extraer, empotrar o superponer capas propias; conviene decidir explícitamente si eso hace falta.
+Es lo más parecido a lo que se quiere y es gratis. Abrirlo, recorrerlo y puntuar los siete requisitos uno a uno. Si los cubre, el proyecto no existe y se ha ahorrado un año. Conviene mirar en concreto qué hace cuando no sabe: si dibuja el 3000 a.C. con la misma nitidez que el siglo XX, la decisión 4 ya es un diferenciador frente a él.
 
-### 0.2 Medir la cobertura de OHM en los diez cortes del cuadro
+### 0.2 Medir qué añade OHM sobre Cliopatria
 
-La prueba, concreta: para cada uno de los diez cortes temporales del cuadro sinóptico, descargar las teselas vectoriales de `vtiles.openhistoricalmap.org` sobre tres recuadros —Mediterráneo oriental, valle del Indo, llanura del norte de China— y contar los elementos vigentes en esa fecha según `start_date` y `end_date`.
+La decisión 10 convierte a Cliopatria en fuente principal de fronteras. La pregunta deja de ser si OHM basta y pasa a ser si aporta algo encima.
 
-Un recuento crudo de elementos de tesela no mide cobertura, y como de este número cuelga una decisión de arquitectura, hay que acotarlo o dará denso o vacío sobre los mismos datos:
+Para cada uno de los diez cortes del cuadro, descargar las teselas de `vtiles.openhistoricalmap.org` sobre tres recuadros —Mediterráneo oriental, valle del Indo, llanura del norte de China— y contar los elementos vigentes según `start_date` y `end_date`. Un recuento crudo no mide cobertura, así que hay que acotarlo:
 
-- **Zoom fijo** para las treinta consultas. El contenido de la tesela y su grado de generalización dependen del nivel: comparar entre zooms no compara nada.
+- **Zoom fijo** para las treinta consultas. El contenido de la tesela y su generalización dependen del nivel: comparar entre zooms no compara nada.
 - **Deduplicar por identificador de elemento.** Un polígono que cruza el borde de la tesela aparece recortado en varias; contar trozos infla el resultado justo donde solo hay una frontera.
-- **Contar solo las capas que el visor necesita**, entidades políticas y asentamientos. Si entran vías, husos horarios y lugares modernos, la fuerza conocida de OHM en Estados Unidos acaba tapando precisamente la ausencia que se está midiendo.
-
-Salida: una tabla de diez filas por tres columnas con el número de elementos. Es cosa de una jornada y decide la arquitectura.
+- **Contar solo entidades políticas y asentamientos.** Si entran vías, husos horarios y lugares modernos, la fuerza conocida de OHM en Estados Unidos tapa la ausencia que se quiere medir.
 
 | Resultado | Consecuencia |
 |---|---|
-| Cobertura razonable en los diez cortes | OHM como base, tal como estaba previsto |
-| Densa desde ~500 a.C., pobre antes | OHM para lo tardío, Cliopatria e historical-basemaps para lo antiguo, con dos rutas de render |
-| Vacío casi todo | OHM no es la base. Cliopatria pasa a primera fuente y OHM queda como capa opcional |
+| OHM añade cobertura real sobre Cliopatria | Entra como capa complementaria, con su CC0 sin fricción |
+| OHM aporta poco antes de 1500 | Cliopatria sola para lo antiguo, OHM para lo moderno |
+| OHM aporta poco en todo el rango | Fuera del alcance inicial. Menos código y menos armonización |
 
-Una nota sobre el recuadro chino, ahora que el proyecto es abierto: para China existe además **CHGIS**, lugares y unidades administrativas de 221 a.C. a 1911, que estaba vetado mientras el uso comercial siguiera sobre la mesa. China es la fila peor cubierta por OHM, así que ese recuadro pesa menos de lo que parece: aunque salga vacío, hay recambio.
+El resultado ya no decide la arquitectura, porque el suelo de zoom por celda absorbe la escasez: una región mal cubierta significa un suelo más alto ahí, no un cambio de pila. Y para China existe además CHGIS, accesible ahora que el proyecto no es comercial.
 
-**Salida del paso 0:** `docs/decision-base.md` con las dos respuestas.
+**Salida:** `docs/decision-base.md`.
 **Umbral:** si Running Reality cubre los siete requisitos, parar aquí.
 
 ---
 
-## Paso 1 — Prototipo desechable de animación
+## Paso 1 — Prototipo desechable: el render difuso
 
-**Duración orientativa: 2–3 semanas. Se tira a la basura al terminar, y hay que decirlo en voz alta antes de empezar para no acabar construyendo el producto encima.**
+**Duración orientativa: 3–4 semanas. Se tira a la basura al terminar, y hay que decirlo en voz alta antes de empezar para no acabar construyendo el producto encima.**
 
-El riesgo técnico central no son los datos: es si la animación combinada de fronteras y ciudades es fluida. Todo lo demás son ficheros y paciencia.
+Prueba la única cosa que puede hacer inviable la decisión 4. Sobre MapLibre GL, con una docena de polígonos de Cliopatria y un puñado de ciudades de Reba–Seto:
 
-- Mapa MapLibre GL sobre un PMTiles de base física.
-- Una sola capa de fronteras (la que gane en el paso 0) y las ciudades de Reba–Seto como puntos escalados por población.
-- Barra temporal con play real, actualizando con `setFeatureState()` en vez de recargar teselas.
-- Sin estilo, sin interfaz, sin panel lateral. Solo el reloj corriendo.
+- Fronteras con borde difuso cuyo radio dependa de un valor de fiabilidad por elemento.
+- Legibilidad con entidades solapadas, que es el caso normal en la antigüedad y el que rompe las soluciones ingenuas.
+- Comportamiento a tres niveles de zoom, y qué se ve al topar con el suelo.
+- Los dos canales de la decisión 5 conviviendo: una capa difusa y una capa marcada como modelo, distinguibles de un vistazo.
 
-**Umbral:** fluidez aceptable a tres niveles de zoom —continental, regional y local— en un portátil normal. Con el globo 2D ya decidido, la salida si no se alcanza no es cambiar de motor: es bajar la ambición de la animación a saltos entre cortes en vez de reloj continuo, que es lo que hacen GeaCron, Euratlas, TimeMaps y Chronas, y es un producto notablemente peor. Conviene saberlo antes de empezar, porque significa que este prototipo no tiene red.
+Caminos a probar, de menos a más coste: sombreado con `blur` sobre capas de línea, relleno con degradado radial precalculado, campos de distancia en teselas ráster.
+
+**Umbral:** que un lector distinga sin leyenda entre una frontera bien conocida y una conjetural, y entre un dato observado y uno modelado. Si ningún camino lo consigue a coste razonable, la decisión 4 choca con la tecnología y hay que revisarla antes de seguir, no después.
 
 ---
 
-## Paso 2 — Modelo de datos y registro de licencias
+## Paso 2 — Modelo de datos y matriz de licencias
 
-**Duración orientativa: 3–4 semanas. Es el paso menos vistoso y el que determina si el proyecto sobrevive a la tercera capa.**
+**Duración orientativa: 3–4 semanas. El paso menos vistoso y el que determina si el proyecto sobrevive a la tercera capa.**
 
-Definir, por escrito y antes de ingerir la segunda fuente, cinco cosas:
+**Tipología de entidad.** La solución de War Atlas, adoptable tal cual: estado, red tributaria, confederación, cultura arqueológica y rango nómada. Solo el estado se dibuja con línea continua; los otros cuatro van difusos digan lo que digan los datos. Un mapa de fronteras de 1200 a.C. es en buena parte una convención, y fingir que un ámbito cultural tenía frontera fija es más falso que no dibujarla.
 
-**Tipología de entidad.** La solución de War Atlas es adoptable tal cual: estado, red tributaria, confederación, cultura arqueológica y rango nómada. **Solo el estado se dibuja con línea continua; los otros cuatro van en discontinuo o con desenfoque digan lo que digan los datos.** Un mapa de fronteras de 1200 a.C. es en buena parte una convención, y fingir que un ámbito cultural tenía frontera fija es más falso que no dibujarla. Esto entra en el esquema el primer día, no como refinamiento posterior.
+**Incertidumbre como entrada de render, en dos campos separados.** Uno espacial, que alimenta el radio de desenfoque de las fronteras y el radio de error de los puntos de HCED, donde una de cada veinte coordenadas está materialmente desplazada. Otro epistémico, por capa, que marca si lo que se muestra es observación o salida de modelo. No son el mismo campo y no se pintan con el mismo canal.
 
-**Modelo temporal.** Fechas vagas de primera clase: inicio y fin con margen, no un año exacto fingido. Referenciar períodos con identificadores de **PeriodO**, que permite decir «Edad del Bronce según qué autoridad y para qué región» en vez de imponer la periodización europea a todo el mundo. GeoJSON-T de Pelagios como formato de intercambio.
+**Modelo temporal.** Fechas vagas de primera clase: inicio y fin con margen, no un año exacto fingido. Períodos referenciados con identificadores de **PeriodO**, que permite decir «Edad del Bronce según qué autoridad y para qué región» en vez de imponer la periodización europea. GeoJSON-T de Pelagios como formato de intercambio.
 
-**Identidad de lugar.** Cada lugar con su identificador de Pleiades, World Historical Gazetteer —ahora la base agregada completa, no solo los datasets sueltos— o Wikidata. Es lo que después permite enganchar Europeana y Peripleo sin volver a geocodificar nada.
+**Identidad de lugar.** Cada lugar con su identificador de Pleiades, World Historical Gazetteer o Wikidata. Es lo que después permite enganchar Europeana sin volver a geocodificar nada.
 
-**Fiabilidad propagada.** Reba–Seto trae índice de fiabilidad por punto y HCED tiene una de cada veinte coordenadas materialmente desplazada. Esa incertidumbre tiene que llegar hasta el píxel: un punto dudoso se dibuja distinto. Si se pierde en la ingesta, no se recupera.
+**Matriz de combinabilidad.** La decisión 10 simplifica mucho esto, pero no lo elimina. El conjunto que se publique se construye solo con fuentes CC BY o CC0 —Cliopatria, OHM, Reba–Seto—, que son fusionables entre sí y compatibles con la licencia de salida. Lo no comercial (CHGIS, la base agregada de WHG) y lo compartir-igual (lo derivado de Wikipedia) se pueden **superponer** como capas independientes, que es agregación y es correcta, pero no **fundir** en el conjunto publicado. La consecuencia es de arquitectura, no de papeleo: obliga a mantener las capas separadas por procedencia hasta el momento del render.
 
-**Registro de licencias, que aquí es una matriz de combinabilidad.** Decidir que el proyecto es abierto no elimina el trabajo de licencias: le cambia la forma. CC BY-NC y CC BY-SA son incompatibles entre sí, porque compartir-igual obliga a que lo derivado salga con la misma licencia y no comercial obliga a arrastrar la restricción, y no se pueden cumplir las dos en una misma obra derivada. En la práctica:
-
-- **Superponer** capas de licencias distintas en el visor es agregación, y es correcto.
-- **Fusionar** geometrías o atributos de una fuente no comercial con datos CC BY-SA en un único conjunto que después se publique, no lo es.
-
-La consecuencia es de arquitectura y no de papeleo: obliga a mantener las capas separadas por procedencia hasta el momento del render, en vez de armonizarlas en una tabla única. Una tabla por capa con fuente, licencia, si contagia y atribución exigida, más la matriz de qué se puede fundir con qué. Verificar antes de integrar los cabos que los documentos anteriores dejan sueltos: HYDE 3.3, Correlates of War, Brecke, PeriodO, Oxford Roman Economy Project y las bases de pecios.
+Verificar antes de integrar los cabos sueltos: HYDE 3.3, Correlates of War, Brecke, PeriodO, Oxford Roman Economy Project y las bases de pecios.
 
 **Salida:** `docs/modelo-datos.md` y `docs/licencias.md`.
 
 ---
 
-## Paso 3 — Primer visor usable
+## Paso 3 — Enriquecer el cuadro
 
-**Duración orientativa: 2–3 meses. Es la etapa 1 de `analisis-mercado.md`, ya con el modelo del paso 2 debajo.**
+**Duración orientativa: 3–4 semanas. Va antes del visor porque el visor depende de él.**
 
-Rehacer el prototipo en serio: base cartográfica, fronteras con la tipología de cinco tipos aplicada al trazo, ciudades apareciendo y decayendo por población, barra temporal con play, y controles de zoom y período. Publicado en estático, con datos versionados en el repositorio.
+Añadir a cada una de las cien celdas de `index.html` cuatro campos:
 
-**Umbral:** que sirva para responder una pregunta que hoy no se puede responder cómodamente en ningún otro visor. Si no llega ahí, no se añaden capas encima: se arregla.
+1. **Recuadro geográfico**, para que pulsar una celda sitúe el mapa.
+2. **Rango temporal**, con margen, no un año.
+3. **Suelo de zoom**, el límite de detalle que el dato sostiene ahí y entonces. Son cien juicios editoriales, y el proyecto ya asume que el cuadro es editorial: el eje elástico y el orden por vecindad también lo son.
+4. **Identificadores de las entidades implicadas**, que enganchan con Cliopatria y Wikidata.
+
+Y convertir los cuarenta y ocho enlaces en geometría: cada conflicto, ruta comercial y transmisión cultural con su trazado, en discontinuo, marcado como conjetura editorial. El estaño atlántico deja de ser una línea entre dos filas y pasa a ser una ruta de Cornualles a Tiro.
+
+Aquí conviene resistir la tentación de que el cuadro se genere solo desde los datos. Lo que se enlaza son las celdas, no su disposición.
+
+Al terminar este paso el cuadro hace tres trabajos —índice de entrada, suelo de zoom del mapa y capa de rutas antiguas— y ahí ya no hay competidor posible.
 
 ---
 
-## Paso 4 — El puente con el cuadro sinóptico
+## Paso 4 — Primer visor usable
 
-**Duración orientativa: 3–4 semanas. Es el diferenciador, y es barato porque el cuadro ya existe.**
+**Duración orientativa: 2–3 meses.**
 
-Añadir a cada una de las cien celdas de `index.html` tres campos: recuadro geográfico, rango temporal e identificadores de las entidades implicadas. Con eso, hacer clic en una celda sitúa el mapa. Y a la inversa: el mapa, en cualquier momento, sabe en qué columna del cuadro está.
+Base cartográfica, fronteras de Cliopatria con la tipología de cinco tipos aplicada al trazo y el desenfoque del paso 1, ciudades de Reba–Seto apareciendo y decayendo por población, barra temporal con saltos entre los diez cortes, y suelo de zoom leído del cuadro. Publicado en estático, con datos versionados en el repositorio.
 
-Los cuarenta y ocho enlaces de conflicto, comercio y transmisión cultural pasan a ser trazos sobre el mapa además de sobre la lámina. El estaño atlántico que hoy es una línea entre dos filas se convierte en una ruta de Cornualles a Tiro.
+**Umbral:** que sirva para responder una pregunta que hoy no se puede responder cómodamente en ningún otro visor. Si no llega ahí, no se añaden capas encima: se arregla.
 
-Aquí conviene resistir la tentación de que el cuadro se genere solo desde los datos. El cuadro es editorial: el eje elástico y el orden por vecindad son criterios de autor, no salidas de un algoritmo. Lo que se enlaza son las celdas, no su disposición.
+Es también el momento de empezar a buscar casa institucional, según la decisión 11: ya hay algo que enseñar.
 
 ---
 
@@ -125,17 +141,17 @@ Aquí conviene resistir la tentación de que el cuadro se genere solo desde los 
 
 **Duración orientativa: 3–6 meses, y cada capa es opcional e independiente.**
 
-Ese es el punto: cada capa se añade entera o no se añade, y ninguna bloquea a las siguientes. Orden sugerido por valor decreciente sobre esfuerzo:
+Ese es el punto: cada capa se añade entera o no se añade, y ninguna bloquea a las siguientes. El orden lo fija la decisión 9, y el criterio no es la facilidad de integración sino qué queda si el proyecto se para después de la primera.
 
-| Orden | Capa | Fuente | Por qué ahí |
-|---|---|---|---|
-| 1 | Conflictos | HCED, UCDP, Wikidata | Puntos con fecha: el modelo del paso 2 ya los admite sin cambios |
-| 2 | Población y uso del suelo | HYDE 3.3 | Rejilla, no vectores: valida que el modelo aguanta datos ráster |
-| 3 | Economía | Maddison 2023 | Por país y año, se pinta sobre las fronteras ya cargadas |
-| 4 | Rutas y comercio | ORBIS, DARMC, Slave Voyages | La capa menos explorada por nadie, y la que más se parece al cuadro |
-| 5 | Referencias culturales | API de Europeana, Peripleo | Cincuenta millones de objetos, pero exige identidad de lugar sólida del paso 2 |
+**1 · Rutas y comercio.** ORBIS, DARMC y Slave Voyages. Se construye en dos mitades, porque la cobertura de los datasets está al revés de lo que interesa: ORBIS es Roma hacia el 200 d.C., DARMC del 0 al 1500, y para el estaño de 1200 a.C. no hay dataset ni lo va a haber. Donde hay dato, el dataset. Donde no, los cuarenta y ocho enlaces del paso 3, en discontinuo. Es la capa que no tiene nadie y la que sostiene la tesis del cuadro.
 
-**Umbral, el mismo de `analisis-mercado.md`:** la variable crítica es el coste de armonizar licencias y fechas. Si crece más rápido de lo previsto, tres o cuatro capas buenas valen más que cinco a medias.
+**2 · Conflictos.** HCED, UCDP y Wikidata. Puntos con fecha, que el modelo del paso 2 admite sin cambios, cada uno con su radio de error.
+
+**3 · Población y uso del suelo.** HYDE 3.3, en rejilla, marcada como reconstrucción modelada según la decisión 5. Verificar su licencia exacta antes de integrarla.
+
+**Capa cultural.** Europeana como indicador de cobertura, según la decisión 8. No es una de las tres y no compite con ellas.
+
+**Umbral:** la variable crítica es el coste de armonizar fechas y procedencias. Si crece más rápido de lo previsto, dos capas buenas valen más que tres a medias.
 
 ---
 
@@ -148,28 +164,26 @@ Ese es el punto: cada capa se añade entera o no se añade, y ninguna bloquea a 
 - Versión etiquetada y archivada que siga funcionando aunque nadie la toque en cinco años.
 - Dominio y alojamiento pagados por adelantado a varios años. Suena trivial y es una de las causas de muerte documentadas.
 
-El riesgo de mantenedor único no se elimina, se acota: Chronas lleva años sostenido por una sola persona y sigue vivo, pero es el ejemplo del riesgo, no su refutación. Que todo sea estático y esté en un repositorio público es lo que permite que otro lo recoja.
+Lo que se busca con la casa institucional no es alojamiento —GitHub Pages es gratis y no se cae— sino **sucesor**: alguien que lo recoja cuando el mantenedor pare. Los candidatos ya están en el ecosistema: el World Historical Gazetteer de Pittsburgh, que aloja Cliopatria; Pelagios, que se reconvirtió en asociación abierta en 2019 justo para sobrevivir a los ciclos de financiación; OpenStreetMap US, que acredita OHM. O una universidad española, que encaja con el sesgo atlántico e ibérico del cuadro.
 
-Queda una pregunta abierta que no cambia los pasos, pero sí cuánto esfuerzo merece este: **dónde vive el proyecto.** VandeCreek documenta que los alojados en instituciones académicas sobrevivieron un 74 % frente a un 45 % los de fuera. Un proyecto abierto y sin modelo comercial depende enteramente de que alguien lo mantenga, así que una casa institucional vale más aquí que en uno que se paga solo.
+El riesgo de mantenedor único no se elimina, se acota: Chronas lleva años sostenido por una sola persona y sigue vivo, pero es el ejemplo del riesgo, no su refutación.
 
 ---
 
-## Decisiones que hay que tomar el primer día
+## Decisiones que quedan
 
-Eran cinco. Dos se cerraron el 29 de agosto de 2026 —globo 2D y proyecto abierto— y quedan cuatro, todas irreversibles en la práctica:
+Dos, y ninguna bloquea el arranque:
 
-1. **La licencia del propio proyecto.** No es libre la elección: `historical-basemaps` es GPL-3.0 y contagia al código derivado, y lo derivado de Wikipedia es CC BY-SA. Lo coherente es código GPL-3.0 y datos propios CC BY-SA. Hay que fijarlo antes del paso 2, porque determina qué fuentes se pueden tocar sin quedar atrapado.
-2. **La tipología de cinco tipos de entidad.** Meterla después obliga a reetiquetar todo lo ingerido.
-3. **Fechas vagas de primera clase.** Un esquema con año exacto no se convierte luego en uno con incertidumbre sin rehacer la ingesta.
-4. **Alcance geográfico y temporal.** Las diez filas y los diez cortes del cuadro son un alcance razonable y ya está escrito. Ampliarlo es la vía habitual a no terminar nada.
+1. **La tipología de cinco tipos de entidad**, si se adopta la de War Atlas tal cual o se ajusta. Meterla después obliga a reetiquetar todo lo ingerido, así que se cierra en el paso 2.
+2. **Alcance geográfico y temporal.** Las diez filas y los diez cortes del cuadro son un alcance razonable y ya está escrito. Ampliarlo es la vía habitual a no terminar nada.
 
 ## Criterios de parada
 
-Conviene escribirlos ahora, cuando no duelen:
+Conviene tenerlos escritos ahora, cuando no duelen:
 
 - Running Reality cubre los siete requisitos → no hay proyecto.
-- La animación no es fluida y tampoco lo es con el motor alternativo → se rebaja a saltos entre cortes, o se para.
-- Tras el paso 3 el visor no responde ninguna pregunta mejor que los visores existentes → se para antes de las capas temáticas.
+- Ningún camino de render difuso es legible a coste razonable → hay que revisar la decisión 4 antes de seguir, no seguir y ver.
+- Tras el paso 4 el visor no responde ninguna pregunta mejor que los visores existentes → se para antes de las capas temáticas.
 - El coste de armonizar la segunda capa temática supera al de la primera → se congela en las capas que haya.
 
 ## Calendario orientativo
@@ -177,19 +191,19 @@ Conviene escribirlos ahora, cuando no duelen:
 | Paso | Duración | Acumulado |
 |---|---|---|
 | 0 Decisión pendiente | 1–2 semanas | 2 semanas |
-| 1 Prototipo desechable | 2–3 semanas | ~1 mes |
-| 2 Modelo de datos | 3–4 semanas | ~2 meses |
-| 3 Primer visor usable | 2–3 meses | ~5 meses |
-| 4 Puente con el cuadro | 3–4 semanas | ~6 meses |
+| 1 Prototipo del render difuso | 3–4 semanas | ~1,5 meses |
+| 2 Modelo de datos | 3–4 semanas | ~2,5 meses |
+| 3 Enriquecer el cuadro | 3–4 semanas | ~3,5 meses |
+| 4 Primer visor usable | 2–3 meses | ~6 meses |
 | 5 Capas temáticas | 3–6 meses | 9–12 meses |
 | 6 Congelar | continuo | — |
 
-Son órdenes de magnitud para un desarrollador, no un presupuesto. Los pasos 0, 1 y 2 —los tres que deciden si hay proyecto— suman unos dos meses y casi ningún coste.
+Son órdenes de magnitud para un desarrollador, no un presupuesto. Los pasos 0 y 1 —los dos que deciden si el proyecto es viable tal como está definido— suman mes y medio y casi ningún coste.
 
 ## Los primeros diez días
 
-1. Abrir Running Reality y puntuar los siete requisitos.
-2. Descargar teselas de OHM en los tres recuadros y contar elementos en los diez cortes.
-3. Escribir `docs/decision-base.md` con las tres respuestas del paso 0.
-4. Decidir por escrito 2D o 3D, y uso comercial sí o no.
-5. Si sigue habiendo proyecto: abrir el prototipo desechable con MapLibre y las ciudades de Reba–Seto.
+1. Abrir Running Reality y puntuar los siete requisitos, mirando en concreto qué hace cuando no sabe.
+2. Descargar teselas de OHM en los tres recuadros y contar elementos en los diez cortes, con las tres cautelas.
+3. Descargar Cliopatria y ver qué cubre en esos mismos treinta puntos.
+4. Escribir `docs/decision-base.md`.
+5. Si sigue habiendo proyecto: abrir el prototipo del render difuso con una docena de polígonos, que es la prueba que puede tumbar el diferenciador.
