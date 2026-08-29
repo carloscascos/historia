@@ -1,72 +1,92 @@
 # MVP — visor de la Edad del Bronce
 
-Agosto de 2026. Maqueta previa a cualquier desarrollo del visor.
-Complementa `analisis-mercado.md` (actores, construir o adoptar) y `panorama-fuentes.md` (fuentes por capa). El cuadro sinóptico de `index.html` es el punto de partida, no el producto: el pilar del proyecto es el mapa.
+Maqueta previa a cualquier desarrollo del visor. Vocabulario en `CONTEXT.md`; actores y fuentes en `analisis-mercado.md` y `panorama-fuentes.md`. El cuadro sinóptico de `index.html` es el punto de partida, no el producto: el pilar del proyecto es el mapa.
 
 ---
 
 ## 1. Por qué el Bronce
 
-- **Es donde vive la tesis del proyecto.** Las dos rutas del estaño, el colapso de 1200 a.C., la fundación de Cádiz. Todo el contenido que ya tiene argumento está en este período: la maqueta cuenta una historia, no solo superpone capas.
-- **Es el caso difícil.** Fronteras difusas, áreas que se solapan, datos escasos. Si el visor funciona en el Bronce, funciona en cualquier época; lo contrario no es cierto.
-- **Encaja con imágenes estáticas.** No hace falta motor de animación: n mapas por n slots, con fundido entre ellos.
+- **Es donde vive la tesis del proyecto.** Las dos rutas del estaño, el colapso de 1200 a.C., la fundación de Cádiz. La maqueta cuenta una historia, no solo superpone capas.
+- **Es el caso difícil.** Fronteras difusas, áreas que se solapan, datos escasos. Si el visor funciona en el Bronce, funciona en cualquier época.
+- **Cabe en un fichero.** Seis cortes, unas quince entidades y unas veinticinco ciudades por corte: el navegador lo dibuja sin motor cartográfico.
 
 ## 2. Usuario y criterio de éxito
 
 **Usuario:** cualquier interesado en la historia que quiera comprender visualmente los conflictos, las relaciones comerciales, las expansiones, el auge y el fin de los imperios. No es un especialista.
 
-**Criterio de éxito de la maqueta:** una persona sin formación mira el visor y entiende por qué se cae el Mediterráneo oriental en 1200 a.C. sin leer un párrafo. Si eso ocurre, el pilar aguanta y se continúa. Si no, se revisa el diseño antes de invertir en cartografía.
+**Quién juzga:** tres a cinco personas no especialistas, sin explicación previa, con una sola pregunta al final: "¿por qué se cae todo en 1200 a.C.?". Si lo entienden sin leer un párrafo, el pilar aguanta y se continúa. Si no, se revisa el diseño antes de invertir en cartografía.
 
-## 3. Alcance
+## 3. Forma
 
-### Geografía
-Del Atlántico al Indo. Es el arco que recorre el estaño: Cornualles, Galicia y norte de Portugal por mar; Badakhshan por caravana. Cobre de Chipre en el centro.
+- **Un fichero HTML autónomo**, `bronce.html`, publicable en GitHub Pages. `index.html` sigue siendo el cuadro completo de diez cortes hasta que la maqueta lo sustituya.
+- **Una sola página:** el cuadro arriba como franja compacta que marca el corte actual; el mapa debajo. Tocar una columna del cuadro mueve el mapa; mover el deslizador ilumina la columna.
+- **Solo español.**
 
-### Slots temporales
-Seis, no tres. Con los cortes del cuadro (3000, 2000, 1200 a.C.) el Bronce se ve como tres fotos fijas; con seis se ve la red crecer y romperse.
+## 4. Tiempo: seis cortes
 
-| Slot | Qué muestra |
-|---|---|
-| 3000 a.C. | Primeras ciudades: Sumer, Egipto unificado, Harappa incipiente |
-| 2500 a.C. | Imperio antiguo egipcio, ciudades-estado sumerias, Indo en apogeo |
-| 2000 a.C. | Ur III cae, Imperio medio, minoicos, primeras rutas largas del estaño |
-| 1600 a.C. | Hititas, hicsos, Babilonia de Hammurabi, micénicos, Shang |
-| 1350 a.C. | Sistema palacial en su cénit: Amarna, Ugarit, Uluburun. Red completa |
-| 1200 a.C. | Colapso: Ugarit arde, micénicos caen, Egipto resiste y se apaga |
+Cada corte es una ventana, no un instante (ver `CONTEXT.md`). Los tres cortes del cuadro (3000, 2000, 1200) son también cortes del mapa; los otros tres solo existen en el mapa.
 
-### Capas
-- **Áreas culturales** — en difuso, sin línea nítida. Solo los estados reales (Egipto, Hatti, Babilonia) llevan contorno continuo, y aun así con borde suave. Criterio tomado de War Atlas: estado con línea; red tributaria, confederación, cultura arqueológica y rango nómada, siempre en discontinuo o degradado.
-- **Ciudades** — puntos escalados por población, de Reba–Seto (SEDAC). Aparecen, crecen y desaparecen entre slots.
-- **Comercio** — rutas del estaño y del cobre, en verde con doble punta, igual que en el cuadro.
-- **Conflicto** — tres o cuatro, no más: Megiddo (1457), Kadesh (1274), Pueblos del Mar (~1177). En rojo.
-- **Transmisión cultural** — una sola, para probar el grafismo: cuneiforme → alfabeto ugarítico. En azul discontinuo.
+| Corte | Ventana | Qué muestra |
+|---|---|---|
+| 3000 a.C. | 3300–2750 | Primeras ciudades: Sumer, Egipto unificado, Harappa incipiente, Caral, Longshan |
+| 2500 a.C. | 2750–2250 | Imperio antiguo egipcio, ciudades-estado sumerias, Indo en apogeo, Ebla |
+| 2000 a.C. | 2250–1800 | Ur III cae, Imperio medio, minoicos, primeras rutas largas del estaño |
+| 1600 a.C. | 1800–1475 | Hititas, hicsos, Babilonia de Hammurabi, micénicos, Erlitou → Shang |
+| 1350 a.C. | 1475–1275 | Sistema palacial en su cénit: Amarna, Ugarit, Uluburun. Red completa |
+| 1200 a.C. | 1275–1000 | Colapso: Ugarit arde, micénicos caen, Egipto resiste y se apaga |
 
-### Entrada
-El cuadro sinóptico. Tocar una columna abre el mapa en ese slot; tocar una celda abre el mapa centrado en la geografía de esa fila. El cuadro y el mapa comparten los mismos tres colores de relación.
+## 5. Espacio
 
-### Contenido externo
-Un solo enganche, para validar el patrón antes de generalizarlo: el pecio de Uluburun → Museo de Arqueología Submarina de Bodrum, o las cartas de Amarna → British Museum. Desde un punto del mapa se llega a un objeto real de museo en un clic.
+- **El mapa es el mundo entero.** Encuadre por defecto en el Viejo Mundo (Atlántico–China, 5°–60° N); tocar una celda de América lleva el encuadre allí; botón "mundo". Sin zoom libre.
+- **Proyección equirrectangular, costa actual** (Natural Earth 110m, dominio público), sin relieve. Nota visible: "costas actuales".
+- **Dibujo como SVG en línea desde los datos**, no como imágenes: cada entidad es un polígono, cada ciudad un círculo, cada relación un trazo. El fundido entre cortes es una transición de opacidad. Si algo se ve mal, se corrige el dato, no la imagen.
 
-### Lo que la maqueta NO hace
-- Play ni animación continua.
-- Zoom libre ni globo.
-- Períodos fuera del Bronce.
-- Más de una fuente de contenido externo.
+## 6. Capas
 
-## 4. Decisiones abiertas
+**Entidades.** Tipadas: estado · red tributaria · confederación · cultura arqueológica · rango nómada. Solo el estado lleva contorno; el resto, relleno con desenfoque gaussiano y sin borde. Lo nítido es un estado; lo borroso, un ámbito.
 
-**De dónde salen las imágenes.** Dos vías:
-- *Renderizar* `historical-basemaps` (cortes en 3000, 2000, 1500, 1000 a.C.) o Cliopatria (anual) a SVG por slot y retocar a mano. Barato y escala a "n imágenes en n slots".
-- *Dibujar* cada slot desde cero. Más bonito, no escala.
+**Ciudades.** De Reba–Seto (unión de los censos de Chandler y Modelski, año más cercano dentro de la ventana). Todas las que tienen dato, con radio proporcional a la población; las de fiabilidad 3 (geocodificado dudoso) con marca distinta. No hay ciudades en Europa atlántica ni en el Mediterráneo occidental antes de 1200 a.C.: en el extremo atlántico de la ruta del estaño se ve la ruta, no ciudades.
 
-La recomendación es renderizar y retocar. Si el resultado no convence visualmente, dibujar solo los slots de la maqueta y decidir después.
+**Relaciones.** Un solo dato para cuadro y mapa: siempre entre dos entidades, con tipo y ventana. El cuadro la agrega a nivel de civilización. Las doce relaciones del cuadro que caen en el Bronce (dos en 3000, seis en 2000, cuatro en 1200) se reasignan de filas a entidades, y se añaden las de 2500, 1600 y 1350. Geometría: curva automática entre centroides por defecto; trazado a mano donde importa (el estaño atlántico por mar rodeando Iberia, la caravana de Badakhshan). Colores del cuadro: rojo conflicto, verde comercio, azul transmisión.
 
-**Tecnología de visualización.** La evolución del mapa dependerá de cómo se grafique. Para la maqueta bastan imágenes estáticas (SVG o PNG) con fundido; la decisión de motor (MapLibre, Cesium, u otro) se aplaza hasta que la maqueta demuestre que el concepto vale.
+**Eventos.** Pocos: Megiddo (1457), Kadesh (1274), Pueblos del Mar (~1177), incendio de Ugarit, pecio de Uluburun (~1320). Cada uno cuelga de una relación o de una entidad.
 
-**Ingesta de contenido de otras webs.** Vale para lo abierto: OpenHistoricalMap (CC0), Cliopatria (CC BY), Reba–Seto (abierto), Europeana (PD/CC BY según objeto), Wikidata (CC0). No vale para GeaCron, Euratlas ni Running Reality: de esos se aprende la técnica, no se toma el dato. Queda por revisar qué otras técnicas de los mejores proyectos merece la pena adoptar.
+**Contenido externo.** Un solo enganche, para validar el patrón: el pecio de Uluburun → Museo de Arqueología Submarina de Bodrum. Lleva estaño y cobre: es la tesis hecha objeto. Europeana se prueba después.
 
-**Verificación del contenido.** Las celdas del cuadro son texto de una conversación, sin fuente por celda. Antes de que el cuadro sea el índice del mapa, las celdas del Bronce (columnas 3000, 2000 y 1200 a.C.) deben llevar fuente. El resto del cuadro se refina después.
+## 7. Interacción
 
-## 5. Siguiente paso
+- Deslizador con seis paradas y fundido.
+- Tocar una entidad: tarjeta con nombre, tipo, civilización, ventana, una línea y enlace a Wikipedia por QID.
+- Tocar una ciudad: nombre, población y fuente.
+- Tocar una relación: tipo, extremos y sus eventos. Aquí se cuenta la historia del estaño.
+- Tocar una celda del cuadro: el mapa va a ese corte y encuadra esa civilización.
 
-Producir el slot de **1350 a.C.** primero: es el de la red completa, el que más capas junta y el que sirve de contraste con 1200. Si un solo slot bien hecho ya cuenta la historia, los otros cinco son repetición del método.
+**Lo que la maqueta NO hace:** play ni animación continua; zoom libre ni globo; períodos fuera del Bronce; más de un enganche a contenido externo.
+
+## 8. Datos
+
+**Identificador canónico: QID de Wikidata** para entidades, ciudades y eventos desde el primer dato. Las ~60 ciudades de Reba–Seto no lo traen: se asigna a mano.
+
+**Fuente por dato.** Mínimo: QID y artículo de Wikipedia como localizador; donde el dato es una tesis del proyecto, una referencia académica (Cline para 1200; el catálogo de Uluburun). Alcance: entidades, relaciones, eventos y las treinta celdas del cuadro de 3000, 2000 y 1200 a.C. Las otras setenta celdas quedan como están.
+
+**Fuentes de geometría.**
+- *Cliopatria* (CC BY 4.0, con QID) para los estados que trae: en el Bronce, entre 3 y 11 por corte, solo de Grecia hacia el este. Se extraen solo los seis cortes a un GeoJSON pequeño. Etiqueta todo como POLITY: el tipo lo asignamos nosotros. Egipto en 1600 aparece como tres dinastías (XV, XVI, XVII): tres entidades de una civilización.
+- *A mano*, con QID y fuente, lo que Cliopatria no tiene: Ugarit, Ebla, Acad, Ur III, Alashiya, Erlitou, Caral, olmecas, Tartessos, nurágica, Wessex. Estados con contorno, culturas en difuso.
+- *historical-basemaps* no se usa: GPL-3 sobre los datos contamina cualquier derivado y cierra la vía comercial.
+
+**Ficheros**, uno por término del glosario, en `data/`:
+- `civilizaciones.json` — id, nombre, orden geográfico.
+- `cortes.json` — año, ventana, si aparece en el cuadro.
+- `entidades.json` — QID, nombre, tipo, civilización, desde, hasta, una línea, fuentes.
+- `geo/entidades.geojson` — geometría por QID, con origen (Cliopatria o mano).
+- `ciudades.csv` — nombre, QID, lat, lon, fiabilidad, población por corte, fuente.
+- `relaciones.json` — id, entidad a, entidad b, tipo, desde, hasta, fuentes.
+- `geo/relaciones.geojson` — trazados a mano, solo para las que lo tengan.
+- `eventos.json` — QID, nombre, año, lat, lon, de qué cuelga, enlace externo, fuentes.
+- `celdas.json` — civilización × corte: estado, hecho, relación, fuentes. Sustituye al objeto `C` de `index.html` y a `celdas.md`.
+
+`scripts/build.py` (Python, uv) incrusta todos los datos en `bronce.html` a partir de una plantilla. El fichero publicado sigue siendo autónomo; los datos se editan y verifican por separado.
+
+## 9. Siguiente paso
+
+Producir el corte de **1350 a.C.** primero: es el de la red completa, el que más capas junta y el que sirve de contraste con 1200. Si un solo corte bien hecho ya cuenta la historia, los otros cinco son repetición del método.
