@@ -37,7 +37,13 @@ Es lo más parecido a lo que se quiere y es gratis. Abrirlo, recorrerlo y puntua
 
 La prueba, concreta: para cada uno de los diez cortes temporales del cuadro sinóptico, descargar las teselas vectoriales de `vtiles.openhistoricalmap.org` sobre tres recuadros —Mediterráneo oriental, valle del Indo, llanura del norte de China— y contar los elementos vigentes en esa fecha según `start_date` y `end_date`.
 
-Salida: una tabla de diez filas por tres columnas con el número de elementos. Es media jornada de trabajo y decide la arquitectura.
+Un recuento crudo de elementos de tesela no mide cobertura, y como de este número cuelga una decisión de arquitectura, hay que acotarlo o dará denso o vacío sobre los mismos datos:
+
+- **Zoom fijo** para las treinta consultas. El contenido de la tesela y su grado de generalización dependen del nivel: comparar entre zooms no compara nada.
+- **Deduplicar por identificador de elemento.** Un polígono que cruza el borde de la tesela aparece recortado en varias; contar trozos infla el resultado justo donde solo hay una frontera.
+- **Contar solo las capas que el visor necesita**, entidades políticas y asentamientos. Si entran vías, husos horarios y lugares modernos, la fuerza conocida de OHM en Estados Unidos acaba tapando precisamente la ausencia que se está midiendo.
+
+Salida: una tabla de diez filas por tres columnas con el número de elementos. Es cosa de una jornada y decide la arquitectura.
 
 | Resultado | Consecuencia |
 |---|---|
@@ -147,7 +153,7 @@ El riesgo de mantenedor único no se elimina, se acota: Chronas lleva años sost
 Cinco, y las cinco son irreversibles en la práctica:
 
 1. **2D o 3D.** Condiciona la pila entera.
-2. **Uso comercial, sí o no.** Si es que sí, quedan fuera CHGIS, la base agregada de WHG y la parte contagiada por Wikipedia. Si es que no, se abre medio ecosistema. No se puede decidir a mitad.
+2. **Uso comercial, sí o no.** Si es que sí, quedan fuera CHGIS y la base agregada de WHG, que son no comerciales. Lo derivado de Wikipedia no: CC BY-SA permite el uso comercial, y lo que impone es atribuir y compartir igual, que contagia a lo que se publique con ello. Compartir-igual y no-comercial son restricciones distintas y confundirlas aquí cuesta media fuente. Si es que no, se abre medio ecosistema. No se puede decidir a mitad.
 3. **La tipología de cinco tipos de entidad.** Meterla después obliga a reetiquetar todo lo ingerido.
 4. **Fechas vagas de primera clase.** Un esquema con año exacto no se convierte luego en uno con incertidumbre sin rehacer la ingesta.
 5. **Alcance geográfico y temporal.** Las diez filas y los diez cortes del cuadro son un alcance razonable y ya está escrito. Ampliarlo es la vía habitual a no terminar nada.
