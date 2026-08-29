@@ -6,12 +6,13 @@ Agosto de 2026. Tercer documento de la serie: `analisis-mercado.md` dice *quién
 
 ## Lo que ya está decidido y no se rediscute
 
-De los dos documentos anteriores se arrastran cuatro decisiones cerradas. Volver sobre ellas es perder tiempo.
+De los dos documentos anteriores, y de lo decidido el 29 de agosto de 2026, se arrastran cinco decisiones cerradas. Volver sobre ellas es perder tiempo.
 
 1. **Construir sobre componentes existentes.** Ni adoptar una herramienta tal cual (ninguna cumple los siete requisitos) ni partir de cero (vida media de estos proyectos: unos cinco años).
 2. **Sitio estático, sin servidor dinámico.** Es la recomendación del Endings Project y de la Socio-Technical Sustainability Roadmap, y es lo que habilita el par PMTiles + alojamiento barato. No es una preferencia técnica: es la mitigación principal contra la causa de muerte dominante.
-3. **Pila base: MapLibre GL + PMTiles.** Sin tarifas de API, sin atadura a Mapbox, servible desde GitHub Pages o S3.
-4. **Licencias documentadas capa a capa desde el primer día**, código y datos por separado. CHGIS y la base agregada de WHG son no comerciales; historical-basemaps es GPL-3.0 y contagia; Wikipedia es CC BY-SA y contagia. Mezclarlas sin registro previo es crear un problema que después no se puede deshacer.
+3. **Pila base: MapLibre GL + PMTiles, con globo 2D proyectado.** Sin tarifas de API, sin atadura a Mapbox, servible desde GitHub Pages o S3. CesiumJS y el globo WGS84 con terreno quedan descartados: son otro proyecto, con otro coste y otro riesgo de mortalidad.
+4. **Proyecto abierto, sin uso comercial.** Entra todo lo que la cláusula no comercial vetaba, y son dos piezas grandes: CHGIS, la mejor fuente para China, y la base agregada completa del World Historical Gazetteer, que además aloja Cliopatria.
+5. **Licencias documentadas capa a capa desde el primer día**, código y datos por separado. Al ser el proyecto abierto la pregunta ya no es qué se puede vender sino qué se puede combinar, que es más sutil y da más problemas: ver la matriz del paso 2.
 
 ## Lo que este plan cambia respecto a la recomendación inicial
 
@@ -51,11 +52,9 @@ Salida: una tabla de diez filas por tres columnas con el número de elementos. E
 | Densa desde ~500 a.C., pobre antes | OHM para lo tardío, Cliopatria e historical-basemaps para lo antiguo, con dos rutas de render |
 | Vacío casi todo | OHM no es la base. Cliopatria pasa a primera fuente y OHM queda como capa opcional |
 
-### 0.3 Decidir 2D o 3D
+Una nota sobre el recuadro chino, ahora que el proyecto es abierto: para China existe además **CHGIS**, lugares y unidades administrativas de 221 a.C. a 1911, que estaba vetado mientras el uso comercial siguiera sobre la mesa. China es la fila peor cubierta por OHM, así que ese recuadro pesa menos de lo que parece: aunque salga vacío, hay recambio.
 
-«Girar el globo» admite dos lecturas: el globo 2D proyectado de MapLibre, o el globo WGS84 real de CesiumJS con terreno y tiempo de primera clase. La primera es mucho más barata y encaja con PMTiles y con el sitio estático. La segunda es un proyecto distinto. Elegir ahora y por escrito.
-
-**Salida del paso 0:** `docs/decision-base.md` con las tres respuestas.
+**Salida del paso 0:** `docs/decision-base.md` con las dos respuestas.
 **Umbral:** si Running Reality cubre los siete requisitos, parar aquí.
 
 ---
@@ -71,7 +70,7 @@ El riesgo técnico central no son los datos: es si la animación combinada de fr
 - Barra temporal con play real, actualizando con `setFeatureState()` en vez de recargar teselas.
 - Sin estilo, sin interfaz, sin panel lateral. Solo el reloj corriendo.
 
-**Umbral:** fluidez aceptable a tres niveles de zoom —continental, regional y local— en un portátil normal. Si no, o se baja la ambición de la animación (saltos entre cortes en vez de reloj continuo, que es lo que hacen GeaCron, Euratlas, TimeMaps y Chronas) o se cambia de motor. No seguir con la duda abierta.
+**Umbral:** fluidez aceptable a tres niveles de zoom —continental, regional y local— en un portátil normal. Con el globo 2D ya decidido, la salida si no se alcanza no es cambiar de motor: es bajar la ambición de la animación a saltos entre cortes en vez de reloj continuo, que es lo que hacen GeaCron, Euratlas, TimeMaps y Chronas, y es un producto notablemente peor. Conviene saberlo antes de empezar, porque significa que este prototipo no tiene red.
 
 ---
 
@@ -85,11 +84,16 @@ Definir, por escrito y antes de ingerir la segunda fuente, cinco cosas:
 
 **Modelo temporal.** Fechas vagas de primera clase: inicio y fin con margen, no un año exacto fingido. Referenciar períodos con identificadores de **PeriodO**, que permite decir «Edad del Bronce según qué autoridad y para qué región» en vez de imponer la periodización europea a todo el mundo. GeoJSON-T de Pelagios como formato de intercambio.
 
-**Identidad de lugar.** Cada lugar con su identificador de Pleiades, World Historical Gazetteer o Wikidata. Es lo que después permite enganchar Europeana y Peripleo sin volver a geocodificar nada.
+**Identidad de lugar.** Cada lugar con su identificador de Pleiades, World Historical Gazetteer —ahora la base agregada completa, no solo los datasets sueltos— o Wikidata. Es lo que después permite enganchar Europeana y Peripleo sin volver a geocodificar nada.
 
 **Fiabilidad propagada.** Reba–Seto trae índice de fiabilidad por punto y HCED tiene una de cada veinte coordenadas materialmente desplazada. Esa incertidumbre tiene que llegar hasta el píxel: un punto dudoso se dibuja distinto. Si se pierde en la ingesta, no se recupera.
 
-**Registro de licencias.** Una tabla por capa: fuente, licencia, si contagia, si permite uso comercial, atribución exigida. Verificar antes de integrar los cabos que los documentos anteriores dejan sueltos: HYDE 3.3, Correlates of War, Brecke, PeriodO, Oxford Roman Economy Project y las bases de pecios.
+**Registro de licencias, que aquí es una matriz de combinabilidad.** Decidir que el proyecto es abierto no elimina el trabajo de licencias: le cambia la forma. CC BY-NC y CC BY-SA son incompatibles entre sí, porque compartir-igual obliga a que lo derivado salga con la misma licencia y no comercial obliga a arrastrar la restricción, y no se pueden cumplir las dos en una misma obra derivada. En la práctica:
+
+- **Superponer** capas de licencias distintas en el visor es agregación, y es correcto.
+- **Fusionar** geometrías o atributos de una fuente no comercial con datos CC BY-SA en un único conjunto que después se publique, no lo es.
+
+La consecuencia es de arquitectura y no de papeleo: obliga a mantener las capas separadas por procedencia hasta el momento del render, en vez de armonizarlas en una tabla única. Una tabla por capa con fuente, licencia, si contagia y atribución exigida, más la matriz de qué se puede fundir con qué. Verificar antes de integrar los cabos que los documentos anteriores dejan sueltos: HYDE 3.3, Correlates of War, Brecke, PeriodO, Oxford Roman Economy Project y las bases de pecios.
 
 **Salida:** `docs/modelo-datos.md` y `docs/licencias.md`.
 
@@ -146,17 +150,18 @@ Ese es el punto: cada capa se añade entera o no se añade, y ninguna bloquea a 
 
 El riesgo de mantenedor único no se elimina, se acota: Chronas lleva años sostenido por una sola persona y sigue vivo, pero es el ejemplo del riesgo, no su refutación. Que todo sea estático y esté en un repositorio público es lo que permite que otro lo recoja.
 
+Queda una pregunta abierta que no cambia los pasos, pero sí cuánto esfuerzo merece este: **dónde vive el proyecto.** VandeCreek documenta que los alojados en instituciones académicas sobrevivieron un 74 % frente a un 45 % los de fuera. Un proyecto abierto y sin modelo comercial depende enteramente de que alguien lo mantenga, así que una casa institucional vale más aquí que en uno que se paga solo.
+
 ---
 
 ## Decisiones que hay que tomar el primer día
 
-Cinco, y las cinco son irreversibles en la práctica:
+Eran cinco. Dos se cerraron el 29 de agosto de 2026 —globo 2D y proyecto abierto— y quedan cuatro, todas irreversibles en la práctica:
 
-1. **2D o 3D.** Condiciona la pila entera.
-2. **Uso comercial, sí o no.** Si es que sí, quedan fuera CHGIS y la base agregada de WHG, que son no comerciales. Lo derivado de Wikipedia no: CC BY-SA permite el uso comercial, y lo que impone es atribuir y compartir igual, que contagia a lo que se publique con ello. Compartir-igual y no-comercial son restricciones distintas y confundirlas aquí cuesta media fuente. Si es que no, se abre medio ecosistema. No se puede decidir a mitad.
-3. **La tipología de cinco tipos de entidad.** Meterla después obliga a reetiquetar todo lo ingerido.
-4. **Fechas vagas de primera clase.** Un esquema con año exacto no se convierte luego en uno con incertidumbre sin rehacer la ingesta.
-5. **Alcance geográfico y temporal.** Las diez filas y los diez cortes del cuadro son un alcance razonable y ya está escrito. Ampliarlo es la vía habitual a no terminar nada.
+1. **La licencia del propio proyecto.** No es libre la elección: `historical-basemaps` es GPL-3.0 y contagia al código derivado, y lo derivado de Wikipedia es CC BY-SA. Lo coherente es código GPL-3.0 y datos propios CC BY-SA. Hay que fijarlo antes del paso 2, porque determina qué fuentes se pueden tocar sin quedar atrapado.
+2. **La tipología de cinco tipos de entidad.** Meterla después obliga a reetiquetar todo lo ingerido.
+3. **Fechas vagas de primera clase.** Un esquema con año exacto no se convierte luego en uno con incertidumbre sin rehacer la ingesta.
+4. **Alcance geográfico y temporal.** Las diez filas y los diez cortes del cuadro son un alcance razonable y ya está escrito. Ampliarlo es la vía habitual a no terminar nada.
 
 ## Criterios de parada
 
