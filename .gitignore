@@ -1,2 +1,3 @@
 tmp/
 tasks/
+__pycache__/
