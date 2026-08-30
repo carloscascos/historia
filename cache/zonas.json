@@ -4477,5 +4477,39 @@
   ],
   "nota": "La zona (6,71–21,25 E / 33,1–44,22 N) cubre Malta, Sicilia, Cerdeña oriental, sur y centro de Italia, Adriático oriental, Albania y las islas Jónicas hasta Léucade; NO incluye la Argólida, el Egeo ni Creta. Descartado por caer fuera del recuadro: Lerna y la Casa de las Tejas (22,72 E), Keros-Dhaskalio (25,2 E), Olimpia (21,63 E) y la cueva de Haua Fteah en Cirenaica (21,9 E). Descartado por fechas fuera de la ventana −2750/−2250: cultura de Castelluccio en Sicilia (−2200/−1800), cultura de Cetina en el Adriático (−2300/−1600 en la cronología alta, apenas 50 años dentro), campaniforme de Cerdeña (−2100/−1800) y cultura de Monte Claro (−2400/−2100, solo el arranque queda dentro). Sovjan (Albania), yacimiento lacustre del Korçë con dendrocronología de los siglos XXIV–XXII a.C. y por tanto el mejor datado de la zona en esta ventana, se ha descartado por no tener artículo propio en Wikipedia ni QID verificable; el municipio de Maliq sí tiene QID (Q772248) pero su artículo no da fechas absolutas para las fases Maliq IIIa/IIb, así que tampoco se propone. No se ha encontrado ningún evento fechado dentro de la ventana con coordenadas y QID en esta zona: el colapso del periodo de los templos malteses hacia 2500 a.C. está documentado como transición de fase, no como suceso datado, y por eso se propone como relación de transmisión entre las dos fases y no como evento.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "e95dd65def",
+  "bbox": [
+   6.71,
+   33.1,
+   21.25,
+   44.22
+  ],
+  "corte": "-3000",
+  "lod": 1,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 4,
+  "descartados": [
+   {
+    "nombre": "Ħaġar Qim",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Círculo de piedra de Xagħra",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Templos de Tarxien",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Ġgantija",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "La zona abarca Túnez oriental, Malta, Sicilia, Italia peninsular, el Adriático y Grecia occidental hasta 21,25° E. Lo único que reúne QID, coordenadas de Wikidata dentro del recuadro y ocupación documentada en 3300–2750 a.C. es el conjunto de yacimientos malteses, que corresponden a las fases Ġgantija (3600–3000), Saflieni (3300–3000) y el arranque de Tarxien (3000–2500); todos cuelgan de la Cultura de los templos de Malta ya presente en el visor. DESCARTADOS por caer fuera del recuadro: cueva de Alepotrypa en Mani (Q38251077, 22,38° E), Sesklo y Dimini en Tesalia (~22,7° E), Ötzi (46,67° N, muy al norte de 44,22). DESCARTADOS por no tener coordenadas en Wikidata, pese a solapar con la ventana: cultura de Gaudo (Q427986, 3150–2950 en el sur de Italia), cultura de Rinaldone (Q3699303, Lacio y Toscana) y cultura de Eutresis (Q106630030, Heládico Antiguo I, 3200–2650 en Grecia continental) — son las tres entidades que más echo en falta aquí, y su ausencia deja la Italia peninsular y Grecia vacías en este corte por una limitación de Wikidata, no por falta de ocupación. DESCARTADOS por quedar fuera de la ventana: cultura Diana de Lípari (4500–4000), cultura de Cetina en Dalmacia (2200–1500), Abealzu-Filigosa en Cerdeña (2700–2400, y además fuera del recuadro), y la ocupación de Lerna, que tiene un hiato justo en estos siglos y solo despega en el Heládico Antiguo II (2700–2200). No he propuesto ninguna RELACIÓN comercial Malta–Sicilia pese a estar bien documentada la importación de obsidiana de Lípari y Pantelaria y de hachas de piedra verde de Calabria: no encontré ninguna entidad siciliana con QID y coordenadas que sirviera de segundo extremo, y las fuentes leídas señalan además que ese flujo de obsidiana DISMINUYE precisamente durante el periodo de los templos, así que trazarla en esta ventana sería forzar el dato. Tampoco he encontrado ningún EVENTO datado dentro de 3300–2750 a.C. en la zona: la prehistoria maltesa se conoce por fases de siglos, no por hechos fechados.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
