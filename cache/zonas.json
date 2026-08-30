@@ -1364,5 +1364,31 @@
   ],
   "nota": "Zona = sur/sudeste de Asia y sur de China (lon 79.33–125, lat 5–32.5). Lo único que alcanza peso 3 en la ventana -3300/-2750 es Liangzhu (entidad + su ciudad; ambos QID con coordenadas 30.40N 119.99E, dentro de zona). Descartados por no llegar al umbral de vista lejana: cultura de Qujialing (Q1153210, Hubei/Hunan, c. 3400–2600 a.C.; ciudades fortificadas pero sin rango de estado, peso 2; además su item de Wikidata no tiene coordenadas, solo las tiene el yacimiento Q11042270); cultura de Songze (Q30257) termina en -3300, fuera de ventana; Shijiahe empieza hacia -2500, fuera de ventana. Dawenkou, Longshan temprano y Majiayao caen fuera de la zona por latitud/longitud. Neolítico del sur de la India (montículos de ceniza) y el neolítico de Sri Lanka, Indochina y Filipinas son culturas aldeanas sin estados ni ciudades grandes en esta ventana (peso 1). No hay guerras mayores documentadas. Los objetos ya cargados (Indo, Sumer, Elam, Egipto, minoicos, Millares) se han respetado; no propongo relaciones nuevas porque no hay contactos documentados entre Liangzhu y el Indo en este periodo. La entrada UNESCO (whc.unesco.org/en/list/1592) devolvió 403 y no se ha podido leer directamente; sus afirmaciones se citan a través de Wikipedia y China Daily.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "d39e239cc7",
+  "bbox": [
+   33.67,
+   5.0,
+   79.33,
+   32.5
+  ],
+  "corte": "-3000",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 1,
+  "descartados": [
+   {
+    "nombre": "Susa",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Shahr-e Sukhteh",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona: sur de Mesopotamia (hasta 32,5°N), Irán, golfo Pérsico, Arabia, valle del Indo y Cuerno de África; el Nilo queda fuera (oeste de 33,67°E). Se han comprobado en Wikidata QID y coordenadas de todos los candidatos. Incluidos con peso 3: Susa (QID verificado Q180773, 32.19N 48.26E, dentro de la zona por 0,3°) y Shahr-e Sukhteh. Descartados por no llegar al umbral en ESTA ventana: Harappa (Q185562) —fase Ravi 3300–2800 a.C. con solo ~25 ha, ciudad grande solo desde 2600 a.C.—; Lagash (Q207330) y Girsu (Q853946) —ocupación significativa solo desde ED I (2900 a.C.) y apogeo en 2500 a.C.—; Mehrgarh (Q242148), Mundigak y el Período Hafit (Q55647864, sin coordenadas) por ser peso 2. Kish (Q132272) cae fuera por latitud (32.54N) y la batalla Kish–Susa de En-me-barage-si (hacia 2700 a.C.) cae fuera de la ventana. Dilmún (Q748846): sin coordenadas en Wikidata y las páginas leídas (en, es) no documentan su existencia dentro de la ventana (la Wikipedia inglesa fecha la primera mención en el tercer milenio tardío; no he podido verificar la mención en textos arcaicos de Uruk), así que no se propone. La civilización protoelamita (Q1196237, 3100–2700 a.C.) encaja de lleno en la ventana pero solaparía con la entidad Elam ya presente; se ha preferido no duplicar. Nada documentado con peso 3 en Arabia, Etiopía ni Sinaí para este periodo.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
