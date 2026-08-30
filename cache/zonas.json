@@ -710,5 +710,27 @@
   ],
   "nota": "Zona: India oriental y Sri Lanka, Sudeste Asiático continental e insular, y China al sur de 32,5°N (cuenca del Yangtsé y Sichuan). Único objeto que alcanza peso 3 en vista lejana: Sanxingdui (Q929072, 30,99°N 104,20°E), cuya ciudad amurallada se data por radiocarbono hacia 1600 a.C. y que las fuentes identifican como capital del reino de Shu; la fase de esplendor de sus bronces es posterior (s. XII–XI a.C.), pero la fundación cae dentro de la ventana y una capital cumple el criterio de peso 3. Se fija 'hasta' en -1150 según la cronología de Wikipedia (c. 1700–1150 a.C. para el yacimiento). No se propone relación Sanxingdui–Shang: las fuentes leídas hablan de contemporaneidad y de una metalurgia distinta, pero no documentan un contacto datado dentro de la ventana -1800/-1475. Descartados por quedar fuera de la zona: cultura de Erlitou / Xia (yacimiento a 34,7°N, extensión meridional documentada solo hasta Hubei, al norte de 32,5°N). Descartados por no llegar al umbral de peso 3 (culturas aldeanas sin estados ni ciudades grandes): Ban Chiang (Tailandia, bronce desde c. 2000 a.C. según una cronología, c. 1000 a.C. según Higham; cronología disputada), cultura Phùng Nguyên (Vietnam, c. 2000–1500 a.C.), cultura de la Cerámica Ocre / tesoros de cobre (Ganges, c. 2000–1500 a.C.; apenas roza el borde occidental de la zona hacia 79,5°E). Nada localizado en Sri Lanka, Filipinas ni Indonesia con documentación de estados o ciudades en la ventana.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "60a8530a2e",
+  "bbox": [
+   -10.19,
+   42.87,
+   -0.62,
+   45.19
+  ],
+  "corte": "-1600",
+  "lod": 1,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 1,
+  "descartados": [
+   {
+    "nombre": "Cista de Ondarre (Sierra de Aralar, Gipuzkoa)",
+    "motivo": "QID no existe en Wikidata"
+   }
+  ],
+  "nota": "Zona: mar Cantábrico y su orla (norte de Galicia, Asturias, Cantabria, País Vasco costero, Landas y Médoc). En 1800–1475 a.C. no hay en ella ninguna ciudad, estado ni cultura arqueológica con nombre e ítem de Wikidata; el registro es de cuevas sepulcrales, cistas y hallazgos aislados de bronce, y casi ningún poblado excavado. Se consultó Wikipedia (es/en/fr/eu), Wikidata (SPARQL por caja de coordenadas + periodo Edad del Bronce, y por descripción 'bronce/bronze'), Artehistoria, Kobie, Trabajos de Prehistoria, Persée y yacimientos.asturias.es. Descartado: (1) Ídolo de Peña Tú (Q2081919, Llanes): fechado en Calcolítico/inicio del Bronce Antiguo (III milenio); es un monumento, no un asentamiento, y su cronología queda antes de la ventana. (2) Minas de cobre de Texeo/El Aramo (Riosa) y El Milagro (Onís), explotadas c. 2500–1500 a.C.: sin ítem propio en Wikidata (solo Sierra del Aramo, Q9077169, que es la montaña); sería el objeto más relevante de la zona si existiera QID. (3) Hachas 'medoquinas' y depósitos del Médoc: 57 depósitos, pero atribuidos al Bronce medio 2 (c. 1450–1350), después de la ventana, y sin ítem propio en Wikidata (solo la región, Q1435049). (4) Poblados vascos etiquetados 'Bronce' en Wikidata: Peñas de Oro (s. IX a.C.), Belaku (s. IV a.C.), Babio y Epertegañeta (sin fechas publicadas dentro de la ventana). (5) Cuencos de Axtroki (Q428188): Bronce Final. (6) Cuevas de Santimamiñe, Kobaederra y Marizulo: restos 'de la Edad del Bronce' sin datar. (7) Otras cistas de Aralar con QID (Atxurbi: C14 2188±107 cal BC, anterior; Mariola, Langagorri, Onyi, Erroizpe, Abilleta, Irumugarrieta II, Andatza III, Urteagako Zabala: sin datación verificada); la cista de Arraztarangaña (3515±35 BP, c. 1840 cal BC) no tiene QID localizable. (8) Necrópolis del Agro da Nogueira (Toques, A Coruña), Bronce Inicial: sin QID. (9) Cueva del Copillo (Noja) y enterramiento de monte Mijedo: sin QID. Los dos yacimientos aceptados se han codificado como tipo 'ciudad' por ser el único tipo admitido para sitios; ambos son lugares funerarios, no poblados. Peso 1 para ambos: solo visibles en vista cercana.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
