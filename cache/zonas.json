@@ -454,5 +454,27 @@
   ],
   "nota": "Zona = isla de Rodas casi completa, Calki y Alimia; la costa caria (Marmaris, Bozburun, Cnido) queda al norte del límite 36.59 y Simi/Tilos justo fuera. Único yacimiento con ocupación documentada en la ventana: Trianda (Ialisos), llanura bajo Filérimos; contacto minoico intenso desde MM IIIB (hacia 1700 a.C.), arquitectura extensa de LM IA, tefra de Tera en contexto LM IA sin ruptura de la ocupación (Doumas & Papazoglou 1980; Marketou 1990), continuidad hasta LM IB y sustitución micénica en LH IIB-IIIA. No existe ítem de Wikidata propio para el yacimiento prehistórico de Trianda; se usa Q29963099 (Ialisos, ciudad antigua, 36.400 N 28.142 E, dentro de la zona), que es la acrópolis de Filérimos a ~1 km del asentamiento del Bronce; la fecha de inicio -1700 es aproximada («hacia»). ATENCIÓN: la entidad Q134178 (civilización minoica) tiene coordenadas en Creta (35.31 N 24.89 E), FUERA de la zona; se propone porque su presencia en Rodas está documentada, pero incumple la regla de coordenadas — el visor decide. Descartados: Asomatos (Kremasti) es Bronce Antiguo (3er milenio), sin QID y fuera de ventana; Lindos y Calki sin ocupación documentada en la ventana en las fuentes leídas; necrópolis micénicas de Ialisos (Moschou/Makria Vounara) son posteriores a 1450 a.C. — es.wikipedia las fecha «1700-1400 a.C.», dato que descuadra con la cronología académica (LH IIB-IIIC) y no se ha usado; la erupción de Tera (Q1144693, hacia 1600 a.C. por radiocarbono, 1550-1480 por sincronismos egipcios) tiene coordenadas en Santorini, fuera de zona, así que no se propone como evento aunque su tefra en Trianda sea el hecho datado más notable de la zona; no se propone relación porque el único par documentado (Creta→Trianda) uniría una entidad con una ciudad, no dos entidades. Fuentes no accesibles (403/405): academia.edu (Marketou, Excavations at Trianda), maajournal.com, ADS/Nature abstract — el contenido de Doumas & Papazoglou se conoce por la cita en resultados de búsqueda y en Dartmouth, no por lectura directa.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "f16c5d76f2",
+  "bbox": [
+   33.67,
+   5.0,
+   79.33,
+   32.5
+  ],
+  "corte": "-1350",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 3,
+  "descartados": [
+   {
+    "nombre": "Dilmun",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona = Arabia, golfo Pérsico, sur de Mesopotamia, Irán meridional, Indo y Deccán, Levante sur, mar Rojo y Cuerno de África. Umbral peso 3. AVISO: Dilmun (Q748846) NO tiene coordenadas (P625) en Wikidata, igual que la I Dinastía del País del Mar ya cargada; si el visor exige P625 hay que descartarlo o anclarlo a Qal'at al-Bahrain (Q740104). Mirado y descartado por debajo del umbral: Ur (Q5699, 30.96N 46.10E) — Wikipedia dice literalmente que 'no parece haber sido una ciudad significativa en la Babilonia casita', solo reconstrucciones de Kurigalzu I, peso 2; Anshan/Tall-i Malyan (Q569107, dentro de zona) — el título 'rey de Anshan y Susa' se usa desde el s. XV, pero los niveles medio-elamitas excavados son de la fase tardía y la ocupación hacia 1350 no queda confirmada en lo leído, peso 2 con duda; ciudades-estado de Amarna en Canaán, todas vasallas de Egipto y documentadas c. 1350: Laquis (Q848509), Gezer (Q1466687), Siquem (Q7951237, reino de Labaya), Jerusalén (Q1218, 'small hillside town' según EA 287) — peso 2, no son 'ciudades grandes' a esta escala. India: Cemetery H (Q2364797), Malwa (Q48728691), Jorwe (Q48728694), Ahar-Banas (Q399951), cerámica ocre (Q2663163) — culturas regionales, peso 2, ya cubiertas a esta escala por Civilización del valle del Indo y Cultura védica temprana; Malwa y Jorwe además sin P625. Omán: cultura de Wadi Suq (Q48802879), sin P625, peso 2. Relación Babilonia–Dilmun (administración casita c. 1370) queda recogida en la línea de Dilmun; como vínculo aparte sería peso 2. Conquista casita del País del Mar por Ulamburiash: Wikipedia la fecha en la segunda mitad del s. XVI a.C. y Wikidata cierra la dinastía en -1460 — descuadre de cronología, causa no resuelta; por quedar en el borde o fuera de la ventana no se propone. La conquista de Elam se atribuye hoy a Kurigalzu I (c. 1400), no a Kurigalzu II como decía la Crónica P; se ha fechado -1400/-1375 con 'hacia'. Punt: sin coordenadas en Wikidata, no propuesto. Nubia (Kerma, Napata) y Serabit el-Khadim quedan al oeste de 33.67E; Timna (minas egipcias desde Seti I, c. 1300) es peso 2.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
