@@ -1428,5 +1428,31 @@
   ],
   "nota": "Zona = Europa occidental y central, Islas Británicas, sur de Escandinavia, Balcanes, Egeo, Anatolia occidental y Malta, 3300-2750 a.C. No hay estados ni ciudades grandes en sentido estricto en esta zona y ventana: propongo culturas de escala continental y dos monumentos icónicos, en línea con lo que ya admite el visor (Megalitismo atlántico, Civilización minoica, tholos de Montelirio). AVISOS: (1) Cerámica cordada, yamna, Cucuteni-Tripolie, vasos de embudo y cicládica NO tienen coordenadas (P625) en Wikidata; su ubicación tendrá que resolverse por otra vía. (2) El núcleo yamna (estepa póntica, 30-50 E) queda fuera de la zona; entra por su expansión danubiana. (3) Fin de Cucuteni-Tripolie: Wikipedia en dice c. 2950/3000 a.C., el artículo de Yamnaya c. 2700 y Wikidata -2650; descuadre no resuelto, uso 'hacia 3000'. (4) Fechas cordada: Wikidata da -3000/-2000, Wikipedia en 2900-2300, es 2900-2450/2350; uso 2900-2350. DESCARTADOS por peso 2 (vista media): Troya I (Q22647, ciudadela de menos de 1 ha, 3000-2550), Skara Brae (Q816437), Poliochni (Q1542545), cultura de Baden (Q687230, 3500-2800), ánforas globulares (Q218257, 3100-2600), cultura de Vila Nova de São Pedro (Q60823294, ya representada por Zambujal y Leceia), Cnosos prepalacial (Q173527, cubierto por la entidad minoica), Ötzi (Q171291, sin coordenadas en Wikidata, hacia 3300-3250). Campaniforme (Q470867) empieza en Wikidata en -2600, fuera de ventana. Relación cicládica→minoica (influencia cerámica en Cnosos 3400-2200 a.C.) documentada pero de peso 2, no propuesta a este nivel.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "621d281a74",
+  "bbox": [
+   33.67,
+   32.5,
+   79.33,
+   60.0
+  ],
+  "corte": "-3000",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 1,
+  "descartados": [
+   {
+    "nombre": "Cultura yamna",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura Kura-Araxes",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona: Anatolia oriental, Cáucaso, meseta iraní norte, estepa póntico-caspia, Asia Central y norte de Afganistán. Al nivel «vista lejana» (peso 3) solo llegan dos grandes horizontes culturales que cubren miles de km² en la ventana (Yamna, Kura-Araxes) y la transmisión de la escritura Uruk→protoelamita entre dos entidades ya existentes. ADVERTENCIA: Q426737 y Q169349 no tienen coordenadas (P625) en Wikidata; solo llevan P580/P582. La cultura yamna se extiende también al oeste de 33.67° (Bug/Dniéster), pero su núcleo Dniéper–Volga–Ural cae dentro. Descartados por quedar en peso 2: cultura de Maikop Q1257373 (3700–3000, solo solapa el inicio de la ventana, ámbito regional); cultura Botai Q279792 (3700–3100, norte de Kazajistán, cría temprana de caballos); Habuba Kabira Q1567031 (colonia de Uruk, 36.15N 38.06E, abandonada hacia 3100); Arslantepe Q705132 (palacio y espadas más antiguas, 3300–3100, tumba real 3085–2900); Nínive Q5680 (colonia de Uruk y luego Ninevita 5, sin rango de capital en la ventana); Ebla Q5743 (Mardikh I, asentamiento menor hasta ~3000, potencia regional solo después de 2600); Altyn-Depe Q2559322 (Namazga III/IV, 25 ha); Sarazm Q422929 (3900–2100, aldea comercial de Tayikistán); una relación «comercio» Ciudades-estado sumerias→Tell Brak (expansión de Uruk, 3300–3100). Descartados por caer fuera de la zona: Afanásievo Q80974 (Minusinsk/Altái, al este de 79.33°), Susa, Uruk, Shahr-i Sokhta, Harappa (latitud <32.5). No se ha propuesto el periodo protoelamita Q1196237 como entidad aparte porque se solaparía con Elam Q128904, ya en el visor. No se han localizado guerras mayores documentadas en la ventana dentro de la zona. Dos consultas a la API de Wikidata (Q422929, Q731494) fallaron por límite de tasa; sus QIDs proceden solo de la página de Wikipedia.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
