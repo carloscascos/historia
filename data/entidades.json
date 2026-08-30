@@ -596,5 +596,114 @@
   "contexto": [
    "Arzawa ocupa el oeste de Anatolia, con capital en Apasa, quizá la futura Éfeso. Rival de Hatti, llega a cartearse con Amenhotep III, que le pide una princesa. Mursili II lo conquista hacia 1320 y lo reparte en reinos vasallos: Mira, Seha y Hapalla."
   ]
+ },
+ {
+  "qid": "Q7573930",
+  "nombre": "Megalitismo atlántico",
+  "tipo": "cultura arqueológica",
+  "civilizacion": 2,
+  "desde": -4500,
+  "hasta": -2500,
+  "linea": "Dólmenes, menhires y sepulcros de corredor en toda la fachada atlántica, de Portugal a Bretaña: comunidades campesinas sin ciudades ni metal que levantan monumentos colectivos.",
+  "contexto": [
+   "El megalitismo no es un pueblo ni un estado: es una forma de construir y enterrar que comparten comunidades neolíticas de la fachada atlántica desde el quinto milenio. Los dólmenes de Antequera, los sepulcros de corredor gallegos y portugueses y los alineamientos de Carnac pertenecen a ese mismo mundo, que hacia 3000 a.C. está en plena actividad.",
+   "Hacia 2500 el fenómeno se apaga en la mayor parte de Iberia, sustituido por las tumbas colectivas calcolíticas y después por las individuales del campaniforme y de El Argar."
+  ],
+  "alias": [
+   "megalitismo",
+   "megalitos"
+  ],
+  "fuentes": [
+   "wikidata:Q7573930",
+   "eswiki:Megalitismo"
+  ],
+  "origen_geo": "mano"
+ },
+ {
+  "qid": "Q5794482",
+  "nombre": "Los Millares",
+  "tipo": "cultura arqueológica",
+  "civilizacion": 3,
+  "desde": -3200,
+  "hasta": -2250,
+  "linea": "Poblado fortificado del sureste de Iberia con murallas, fortines y una necrópolis de tholoi: el primer horizonte metalúrgico del cobre en la península.",
+  "contexto": [
+   "Los Millares, junto al río Andarax (Almería), es el yacimiento que da nombre al Calcolítico del sureste ibérico: un poblado de varias hectáreas con cuatro líneas de muralla, una docena de fortines en las alturas vecinas y una necrópolis de unas ochenta tumbas de falsa cúpula. Trabaja el cobre local y comercia con marfil y huevos de avestruz norteafricanos.",
+   "Su tamaño, quizá un millar de habitantes, no llega a ciudad; su organización, con élites que se entierran con ajuar, anuncia lo que después será El Argar. Se abandona hacia 2200."
+  ],
+  "alias": [
+   "millarense"
+  ],
+  "fuentes": [
+   "wikidata:Q5794482",
+   "eswiki:Cultura arqueológica de Los Millares"
+  ],
+  "origen_geo": "mano"
+ },
+ {
+  "qid": "Q60823294",
+  "nombre": "Vila Nova de São Pedro",
+  "tipo": "cultura arqueológica",
+  "civilizacion": 2,
+  "desde": -2600,
+  "hasta": -1500,
+  "linea": "Calcolítico del estuario del Tajo: poblados amurallados como Zambujal y Vila Nova de São Pedro, con metalurgia del cobre y comercio atlántico.",
+  "contexto": [
+   "En la Estremadura portuguesa, entre el Tajo y el Atlántico, se levantan hacia 2600 poblados fortificados con murallas de bastiones que recuerdan a Los Millares. Zambujal, el mejor excavado, estuvo junto a un brazo de mar hoy colmatado y controlaba el acceso al interior.",
+   "Aquí se ha propuesto uno de los orígenes del vaso campaniforme, que desde el estuario del Tajo se difunde por Europa hacia 2500. La hipótesis es una de varias."
+  ],
+  "alias": [
+   "Zambujal"
+  ],
+  "fuentes": [
+   "wikidata:Q60823294",
+   "eswiki:Cultura arqueológica de Vila Nova"
+  ],
+  "origen_geo": "mano"
+ },
+ {
+  "qid": "Q470867",
+  "nombre": "Campaniforme (Iberia)",
+  "tipo": "cultura arqueológica",
+  "civilizacion": 2,
+  "desde": -2500,
+  "hasta": -1900,
+  "linea": "El vaso campaniforme: un mismo ajuar de cerámica, puñales de cobre y brazales de arquero que aparece desde Portugal hasta Hungría en enterramientos individuales.",
+  "contexto": [
+   "Más que una cultura, el campaniforme es un paquete de objetos y de ideas sobre la muerte que se extiende por Europa occidental entre 2500 y 2000: vaso decorado, puñal de cobre, botones, brazal de arquero, tumba individual. En Iberia aparece sobre los poblados calcolíticos de Los Millares y del Tajo y coexiste con ellos.",
+   "La genética reciente muestra que en Iberia el campaniforme se adopta sin gran reemplazo de población, al contrario que en Gran Bretaña. Aquí se dibuja solo su extensión ibérica."
+  ],
+  "alias": [
+   "campaniforme",
+   "vaso campaniforme"
+  ],
+  "fuentes": [
+   "wikidata:Q470867",
+   "eswiki:Cultura del vaso campaniforme"
+  ],
+  "origen_geo": "mano"
+ },
+ {
+  "qid": "Q13409799",
+  "nombre": "El Argar",
+  "tipo": "cultura arqueológica",
+  "civilizacion": 3,
+  "desde": -2200,
+  "hasta": -1550,
+  "linea": "Bronce del sureste ibérico: poblados en altura, enterramientos bajo las casas con ajuares de plata y bronce, y una jerarquía tan marcada que algunos autores hablan ya de estado.",
+  "contexto": [
+   "El Argar sucede a Los Millares en el sureste hacia 2200 con un cambio brusco: poblados en cerros, casas rectangulares, muertos enterrados dentro de las casas en urnas o cistas, y ajuares que distinguen a unos pocos con diademas de plata, espadas y alabardas. La Bastida (Murcia) tiene murallas de piedra con torres únicas en la Europa de su tiempo.",
+   "La discusión sobre si El Argar fue un estado sigue abierta: hay jerarquía, especialización y control del territorio, pero no escritura ni ciudades. Colapsa hacia 1550, quizá por agotamiento del suelo y crisis social, y el sureste queda despoblado durante siglos."
+  ],
+  "alias": [
+   "argárica",
+   "argárico",
+   "La Bastida"
+  ],
+  "fuentes": [
+   "wikidata:Q13409799",
+   "eswiki:Cultura argárica"
+  ],
+  "origen_geo": "mano"
  }
 ]
