@@ -3361,5 +3361,47 @@
   ],
   "nota": "Zona = Transbaikalia (Buriatia, Zabaikalie), norte-este de Mongolia, Hulunbuir y extremo norte de Manchuria. Mirado: cultura de las tumbas de losa (única propuesta; Wikidata la fecha 1300–300 a.C. con inicio en Transbaikalia, P276 = Mongolia + Transbaikalia; no tiene P625, igual que Cultura nurágica y Bronce final atlántico ya en el visor, así que asumo que el visor la sitúa por localización). Descartados: piedras de ciervo / cultura de los deer stones (Q176824, 1400–700 a.C.) porque su coordenada Wikidata cae en 47.75N 101.37E, 0.8° al oeste del borde de la zona, y su núcleo es Mongolia central-occidental; khirigsuur (Q4219542) es un tipo de túmulo sin fechas ni coordenadas en Wikidata, no una entidad; cultura de Glazkovo (Q1973554) termina hacia 1200 a.C. según Wikipedia en (2200–1200) y hacia 2400 a.C. según Wikidata (3200–2400): descuadre entre fuentes, en cualquier caso se agota al inicio de la ventana y no llega al umbral; cultura de Ulaanzuukh (Q118898954, 1450–1000 a.C.) cae dentro de la ventana pero su núcleo (Gobi, Sükhbaatar, Dornogovi, Ömnögovi) queda al sur del paralelo 46.25 y no tiene coordenadas ni localización en Wikidata, y a escala media sería peso 1; cultura de Baijinbao (Q803759) está fuera por fecha (h. 900 a.C.) y por latitud (45.49N); Karasuk y Xiajiadian inferior/superior quedan fuera de la zona. No propongo relación de transmisión tumbas de losa/Ulaanzuukh → Shang (carros, puñales con pomo animal): Wikipedia lo formula como 'may have contributed' y lo atribuye en origen a los deer stones, que están fuera de la zona; HIPÓTESIS SIN VERIFICAR, no la incluyo. No hay ciudades ni eventos datados en la zona y ventana.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "195b8f4af3",
+  "bbox": [
+   -12.0,
+   32.5,
+   10.84,
+   46.25
+  ],
+  "corte": "-1200",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 5,
+  "descartados": [
+   {
+    "nombre": "Cultura de los Campos de Urnas (extremo occidental: nordeste ibérico y sur de Francia)",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura torreana (Córcega)",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Canegrate",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de las Terramaras",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Periodo pretalayótico / cultura naviforme (Baleares)",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Su Nuraxi (Barumini)",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona = Mediterráneo occidental (Iberia, sur de Francia, Magreb norte, Baleares, Córcega, Cerdeña, Liguria/Lombardía y borde occidental de Emilia). QIDs, coordenadas y fechas contrastados en la API de Wikidata y en Wikipedia es/en/fr/it. Cautelas: (1) Terramaras está al borde este de la zona (Piacenza/Parma dentro, Módena fuera; lon. límite 10,84). (2) Campos de Urnas es una cultura paneuropea sin coordenadas en Wikidata; aquí se propone por su presencia documentada en el NE ibérico y Languedoc desde c. 1150 a.C. (3) Su Nuraxi: la Wikipedia es fecha la torre central en 1100-1050 a.C. pero la ficha UNESCO habla de construcción entre los siglos XIII y VI; se ha usado -1300 como inicio, discrepancia entre fuentes no resuelta. (4) Wikidata trae para la cultura talayótica una fecha de inicio errónea (+950 en vez de -950). DESCARTADOS: Cogotas I (cultura principal de la Meseta en el Bronce Final, pero sin ítem propio en Wikidata; solo existe el yacimiento Las Cogotas Q2660473); estelas de guerrero del Suroeste (sin ítem ni artículo localizable en Wikidata/Wikipedia); cultura talayótica Q530894 (inicio entre 1200 y 900 a.C. según escuela, sin consenso; cae en el borde o fuera de la ventana); protovillanoviano Q2588933 (casi todo fuera de la zona); fundaciones legendarias de Gadir (1104 a.C.), Lixus y Utica (1101 a.C.), sin respaldo arqueológico antes del s. IX-VIII; depósito de la Ría de Huelva y objetos nurágicos en Huelva/Cádiz (s. X-IX, fuera de ventana, por eso no se propone relación nurágica–Bronce atlántico); identificación de los Sherden de los Pueblos del Mar con los sardos nurágicos (tesis de Ugas): HIPÓTESIS SIN VERIFICAR, no se propone como relación. Nuraga Antigori Q123065 y Cabezo Redondo Q8254441 tienen coordenadas en zona pero serían peso 1 (vista cercana).",
+  "autor": "carlos alvarez-cascos"
  }
 ]
