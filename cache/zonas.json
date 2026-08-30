@@ -3113,5 +3113,83 @@
   "descartados": [],
   "nota": "Zona = Sudeste Asiático continental (Tailandia, Camboya, Laos sur, Vietnam centro-sur), sur de Hainan y Filipinas. En 1275–1000 a.C. no hay estados, ciudades ni batallas: solo aldeas neolíticas y de bronce incipiente. Se han revisado Wikipedia (en/es), Wikidata y el artículo de Higham et al. 2015 (PLOS One), que sitúa el inicio del bronce en el NE de Tailandia en 1200–1000 a.C. (68 %), con origen en la difusión hacia el sur desde los estados del río Amarillo/Yangtsé; la cronología alternativa de White (bronce hacia 2000 a.C. vía Seima-Turbino) sigue en disputa. Se proponen Ban Chiang (coordenadas Wikidata 17.55, 103.36) y Ban Non Wat (15.27, 102.27, dentro por 0.1° del borde oeste), ambos con ocupación documentada en toda la ventana. Descartados por peso 1: Non Nok Tha (Q1996138, 16.74, 102.26; 1420–50 a.C., artículo en Wikipedia en no accesible) y Samrong Sen (Q7410304, Camboya, 12.22, 104.78; florece 1500–500 a.C., bronce sin fecha precisa dentro de la ventana). Descartados por fecha: cultura Sa Huỳnh (Q2000186, empieza hacia 1000 a.C., Edad del Hierro, justo en el límite). Descartados por caer fuera de la zona: cultura Đồng Đậu (Q8079980, 1500–1000 a.C.) y las demás culturas del río Rojo (hacia 21°N) y el valle de Khao Wong Prachan (hacia 100.7°E). Filipinas: solo Neolítico austronesio, sin metal hasta hacia 500 a.C.; nada con QID y peso ≥2. No existe ítem de Wikidata para una 'cultura de Ban Chiang' como entidad, por lo que no se propone entidad ni la relación de transmisión tecnológica Shang (Q128938) → NE de Tailandia que sugiere Higham: sin entidad receptora válida en la zona, no cabe como 'relacion' según las reglas.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "bc9b682fe2",
+  "bbox": [
+   33.67,
+   18.75,
+   56.5,
+   32.5
+  ],
+  "corte": "-1200",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 9,
+  "descartados": [
+   {
+    "nombre": "Ur",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Anshan (Tall-i Malyan)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Qal'at al-Bahrain (Dilmún)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Bet-Seán",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Gaza",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Ascalón",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Asdod",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Ecrón (Tel Miqne)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Gat (Tell es-Safi)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Laquis",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Gézer",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Filisteos",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Israelitas",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Canaán",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Dilmún",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona = sur de Mesopotamia, Elam y Golfo Pérsico, Canaán meridional, Sinaí oriental, Transjordania y el norte de Arabia. Verificado en Wikidata (QID + coordenadas) y leído en Wikipedia en. Descartados por falta de documentación en la ventana: Uruk (el artículo no documenta ocupación entre 1275 y 1000 a.C., aunque es probable), Jerusalén (mención en Amarna, anterior a la ventana; restos del Bronce Final/Hierro I escasos), Siquem/Tell Balata (ocupada hasta c. 1150 pero hiato posterior; peso 1), Jafa y Afek (residencias egipcias, peso 1), Deir Alla, Silo y Tayma (peso 1), Larsa y Girsu (peso 1), Haft Tepe (florece antes de la ventana). Eventos: la batalla de Djahy (Q844639) tiene coordenadas en Wikidata a 32.77 N, fuera de la zona; la batalla del Delta y la estela de Merenptah caen en Egipto occidental; no hay QID para el saqueo elamita de 1158 ni para la batalla del Ulai, por lo que van como relación Elam–Babilonia. Canaán (Q163329) tiene su punto de Wikidata a 32.77 N, justo al norte del límite: se propone como entidad porque su territorio cubre la zona, pero el visor debe decidir si lo admite. Bet-Seán (Q152368) está a 32.496 N, dentro por muy poco. Relación Babilonia–Dilmún omitida: las tablillas casitas de Qal'at al-Bahrain (Agum III) y el gobernador Ilī-ippašra son anteriores a la ventana; la pretensión asiria sobre Dilmún (1250–1050) es solo titular y queda reflejada en la línea de la entidad.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
