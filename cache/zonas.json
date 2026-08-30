@@ -931,5 +931,39 @@
   ],
   "nota": "Zona = norte de China, Mongolia, sur de Siberia y este de Asia Central en 1275–1000 a.C. Lo único que alcanza peso 3 y no está ya en el visor es el ascenso de los Zhou: la dinastía (Q35216, sin coordenadas en Wikidata, pero es entidad), su capital Fenghao (Q275515, 34.21N 108.72E, dentro de zona) y el conflicto Zhou–Shang. DESCUADRE a exponer: la batalla de Muye (Q1273506, fecha -1046 en Wikidata) NO tiene coordenadas (P625) en su ítem de Wikidata, por lo que no puede proponerse como «evento» según la regla 2; la conquista se ha modelado como «relacion conflicto» entre Zhou y Shang. Haojing (Q3818368) no se propone por separado para no duplicar Fenghao. Descartados por quedar bajo el umbral de peso 3: Zhou predinástico (Q16924982, c. 1150–1046, sin coordenadas; ya cubierto por la entidad Zhou), yacimiento de Zhouyuan (Q198067, peso 2), cultura de Karasuk (Q129282, 1500–800 a.C., sur de Siberia, cultura arqueológica de peso 2, sin coordenadas en Wikidata), Xiajiadian superior (Q1075080, empieza en -1000, justo al borde de la ventana, peso 2). Sanxingdui queda fuera por latitud (31N). No se ha encontrado QID para Guifang. Fechas Zhou: Wikidata da tres inicios alternativos (-1046, -1027, c. -1100); se usa -1046 (cronología Xia-Shang-Zhou), que también es la de Wikipedia es/en.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "dcbb559bcb",
+  "bbox": [
+   -12.0,
+   32.5,
+   33.67,
+   60.0
+  ],
+  "corte": "-1200",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 7,
+  "descartados": [
+   {
+    "nombre": "Troya (Wilusa)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Cultura de los campos de urnas",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Edad del Bronce nórdica",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Pueblos del Mar",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona: Europa occidental y central, Egeo, Anatolia occidental y Chipre (Hattusa, lon 34.6, queda fuera). Revisado: Wikipedia es/en de Troya, campos de urnas, Bronce nórdico, Pueblos del Mar, Tollense, Cnosos, Ugarit, Nihriya, Tukulti-Ninurta I, Suppiluliuma II, Ahhiyawa, Qadesh, colapso del Bronce final; QIDs y coordenadas verificados en la API de Wikidata (Troya 39.96/26.24 y Tollense 53.74/13.31 dentro de la zona; Wikidata fija la batalla del Tollense en -1250). AVISO: los tres objetos 'entidad' propuestos (Q223998, Q605601, Q193850) no tienen coordenadas P625 en Wikidata, igual que las culturas ya presentes; los Pueblos del Mar además no tienen un territorio fijo y Wikidata los describe como 'purported historical ethnic group' — si el visor exige coordenadas, descartar. DESCARTADOS por quedar en peso 2 al nivel de vista lejana: Cnosos Q173527 (tras la destrucción del palacio hacia 1350 conserva solo importancia local en la ventana), Tirinto, Tebas y Atenas micénicas, Kition (Chipre; Enkomi cae fuera, lon 33.87), Mileto/Millawanda, Terramare (colapsa hacia 1150), Protovillanoviano, Cogotas I, cultura lusaciana, Noua-Sabatinovka/Belozerka; relaciones de peso 2 no propuestas: comercio Ugarit–Alasiya (cobre), comercio micénico–nurágico (cerámica nurágica en Kommos y Tirinto, lingotes chipriotas en Cerdeña), tensión Hatti–Micénica/Ahhiyawa por Wilusa y Millawanda (carta de Tawagalawa, hacia 1250). No propuesto el 'colapso del Bronce final' ni la 'guerra de Troya' (Q42937, legendaria, sin coordenadas en Wikidata): la destrucción de Troya VIIa hacia 1180 se recoge en la línea de la ciudad. Fecha de Nihriya y del saqueo de Babilonia con margen de ±10 años según cronología alta/baja.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
