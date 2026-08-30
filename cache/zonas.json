@@ -4511,5 +4511,27 @@
   ],
   "nota": "La zona abarca Túnez oriental, Malta, Sicilia, Italia peninsular, el Adriático y Grecia occidental hasta 21,25° E. Lo único que reúne QID, coordenadas de Wikidata dentro del recuadro y ocupación documentada en 3300–2750 a.C. es el conjunto de yacimientos malteses, que corresponden a las fases Ġgantija (3600–3000), Saflieni (3300–3000) y el arranque de Tarxien (3000–2500); todos cuelgan de la Cultura de los templos de Malta ya presente en el visor. DESCARTADOS por caer fuera del recuadro: cueva de Alepotrypa en Mani (Q38251077, 22,38° E), Sesklo y Dimini en Tesalia (~22,7° E), Ötzi (46,67° N, muy al norte de 44,22). DESCARTADOS por no tener coordenadas en Wikidata, pese a solapar con la ventana: cultura de Gaudo (Q427986, 3150–2950 en el sur de Italia), cultura de Rinaldone (Q3699303, Lacio y Toscana) y cultura de Eutresis (Q106630030, Heládico Antiguo I, 3200–2650 en Grecia continental) — son las tres entidades que más echo en falta aquí, y su ausencia deja la Italia peninsular y Grecia vacías en este corte por una limitación de Wikidata, no por falta de ocupación. DESCARTADOS por quedar fuera de la ventana: cultura Diana de Lípari (4500–4000), cultura de Cetina en Dalmacia (2200–1500), Abealzu-Filigosa en Cerdeña (2700–2400, y además fuera del recuadro), y la ocupación de Lerna, que tiene un hiato justo en estos siglos y solo despega en el Heládico Antiguo II (2700–2200). No he propuesto ninguna RELACIÓN comercial Malta–Sicilia pese a estar bien documentada la importación de obsidiana de Lípari y Pantelaria y de hachas de piedra verde de Calabria: no encontré ninguna entidad siciliana con QID y coordenadas que sirviera de segundo extremo, y las fuentes leídas señalan además que ese flujo de obsidiana DISMINUYE precisamente durante el periodo de los templos, así que trazarla en esta ventana sería forzar el dato. Tampoco he encontrado ningún EVENTO datado dentro de 3300–2750 a.C. en la zona: la prehistoria maltesa se conoce por fases de siglos, no por hechos fechados.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "f6b50d734e",
+  "bbox": [
+   0.01,
+   38.64,
+   5.26,
+   40.54
+  ],
+  "corte": "-2000",
+  "lod": 0,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 2,
+  "descartados": [
+   {
+    "nombre": "Periodo pretalayótico",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "La zona es sobre todo mar Balear: cubre Mallorca, Ibiza, Formentera y el borde occidental de Menorca, más una franja peninsular estrecha (norte de Castellón, Maestrazgo, Baix Maestrat y la Marina Alta). Lado peninsular: nada supera el umbral. Se buscó y descartó Minferri (Juneda, Q20108472), el mejor yacimiento del rango en el NE peninsular — está fuera de la zona por latitud (41,55 N) y además su ítem de Wikidata carece de coordenadas. Santa Llúcia (Alcalà de Xivert), cuya cronología encaja de lleno (últimos dos siglos del III milenio y primeros del II, con epicampaniforme y metalurgia de reciclaje), NO tiene ítem en Wikidata: descartado por la regla del QID. Orpesa la Vella (Q96942866) sí está en zona pero su ocupación documentada es Bronce Medio y Final, posterior a la ventana. Cap de Barbaria II (Q111652048) se descarta pese a estar en zona: el análisis bayesiano de sus dataciones sitúa la ocupación en 1650-900 a.C., fuera de la ventana — la cifra de «desde 2000 a.C.» que circula en fuentes divulgativas no la sostiene el radiocarbono. Los navetiformes (Naveta Alemany, Tanca d'en Just, Ses Barraques) y Closos de Can Gaià arrancan hacia 1600-1500 a.C.: fuera. Coval Simó (Escorca), sitio campaniforme mallorquín con metalurgia de cobre local perfectamente dentro de la ventana, no tiene ítem en Wikidata y por eso no se propone. La cultura talayótica (Q530894) empieza c. 950 a.C.: muy fuera. El arte rupestre levantino de Valltorta-Gasulla queda en zona pero su datación es discutida y mayoritariamente anterior, sin anclaje firme en 2250-1800. Aviso sobre la entidad propuesta: el único ítem existente para el pretalayótico está etiquetado «en Menorca», y Menorca solo entra por su extremo occidental en esta zona; se propone porque el mismo horizonte cultural cubre Mallorca y las Pitiusas, que sí están enteras dentro, pero el desajuste entre etiqueta y alcance geográfico es real y no lo he resuelto.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
