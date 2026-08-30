@@ -3044,5 +3044,35 @@
   ],
   "nota": "Zona = Libia, Egipto (salvo el extremo NE), Nubia hasta la 3ª catarata y Sinaí occidental. Todos los QID verificados en la API de Wikidata. AVISOS de coordenadas: Libu (Q2456520), Meshwesh (Q1191083), Dinastía XXI (Q748151), Tratado egipcio-hitita (Q253155), Huelga de Deir el-Medina (Q2355615) y Conspiración del harén (Q2994789) NO tienen P625 en Wikidata; la Batalla de Perire (Q1152668) tampoco, pero lleva P276 = Sais (Q381038, 30.96N 30.77E, dentro de zona). Si el visor exige P625 estricto, estos siete objetos caen; ubicaciones razonables: Libu/Meshwesh en Cirenaica-Marmárica, Dinastía XXI en Tanis (Q210598), tratado en Karnak/Tebas (Q101583), huelga en Deir el-Medina (Q750212), conspiración en Medinet Habu (Q932622). Fechas de la huelga: Wikidata da 1166/1153 a.C., Wikipedia año 29 de Ramsés III ≈ 1158 a.C.; uso -1157 «hacia». Abu Simbel se propone como evento de construcción (Wikidata P571 = -1274; Wikipedia 1264–1244) porque no es un asentamiento. DESCARTADOS: Reino de Kush (Q241790, coordenadas 17.18N fuera de zona y emergencia real hacia 1000–800 a.C.); Pueblos del Mar (Q193850, sin coordenadas y no residentes en la zona; ya cubiertos por la Batalla del Delta); Buhen (Q1002656) y Kerma/Dukki Gel (Q1107569): sin documentación leída de su papel en 1275–1000 a.C., solo peso 1; Serabit el-Khadim (Q1462523): minas activas en el Imperio Nuevo pero sin faraones ramésidas concretos verificados, peso 1; Medinet Habu (Q932622/Q656040): dentro de Tebas, ya presente; Aniba (capital de Wawat): no se encontró QID; Tercer Período Intermedio (Q212728) redundante con Dinastía XXI; guerras libias de Ramsés III (1182/1176) sin QID propio, recogidas en las relaciones; Historia de Unamón es obra literaria, usada solo como fuente. Interior de Libia (Fezzan/garamantes) sin evidencia en la ventana.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "5dadd83699",
+  "bbox": [
+   56.5,
+   18.75,
+   79.33,
+   32.5
+  ],
+  "corte": "-1200",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 2,
+  "descartados": [
+   {
+    "nombre": "Cultura de la cerámica gris pintada",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Jorwe",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Daimabad",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona = Irán oriental (Kerman, Sistán), costa de Omán, Baluchistán, Sind, Panyab, Gujarat, Rajastán, Malwa, Haryana/Delhi y norte de Maharashtra; ventana 1275–1000 a.C. Se han comprobado QID, coordenadas (P625) y fechas en Wikidata y leído los artículos de Wikipedia (en). AVISO: las dos culturas arqueológicas propuestas (Q2525293, Q48728694) no tienen P625 en Wikidata; su extensión documentada (Ghaggar–Ganges occidental; Maharashtra–Malwa) cae en la zona, pero el visor no podrá tomar coordenadas de Wikidata para ellas. La cultura de Jorwe solo entra parcialmente: su mitad sur (Inamgaon, lat 18,6) queda fuera. Kuru y Hastinapura solapan con la ya existente 'Cultura védica temprana'; se proponen porque son el estado y la ciudad concretos, no la cultura. DESCARTADOS: Cultura del Cementerio H (Q2364797, 1900–1300 a.C.) y fase Harappa tardía en general (terminan ~1300, antes de la ventana); cultura de Malwa (Q48728691, 1600–1300 a.C.); Wadi Suq en Omán (Q48802879, 2000–1300 a.C.) y el Hierro I omaní 1300–1000 (sin ítem de Wikidata; Lizq Q48792334 es Hierro II y sin coordenadas); Panchala (Q558603: Wikidata lo inicia en -900, Wikipedia 'c. 1100', demasiado dudoso para la ventana); Batalla de los Diez Reyes (Q513097, datada ~1400 a.C., fuera de ventana y sin coordenadas); Pirak (Q4363252, 29.44N 67.84E, ocupado 1800–800 a.C., pero es un yacimiento de peso 1, por debajo del umbral); Bhagwanpura, Rojdi, Mundigak y Tepe Yahya (peso 1 o sin ocupación documentada en la ventana); Cultura de los tesoros del cobre y Cerámica ocre (Q458076, Q2663163, datación 2000–1500 a.C., sin fechas en Wikidata). No se propone relación Andrónovo→védica: la migración indoaria que la justificaría se sitúa antes de 1400 a.C. y es hipótesis, no hecho datado en la ventana. No hay estados, batallas ni rutas documentadas en Irán oriental, Baluchistán, Sind ni Omán en este periodo.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
