@@ -73,6 +73,9 @@
   #panel .src a{color:var(--text-dim)}
   #panel .ev{margin:6px 0;padding:6px 8px;background:#0e1316;border-left:2px solid var(--bronce);cursor:pointer}
   #panel .more{display:block;margin:10px 0 0;color:var(--bronce);border:0;padding:0;font-size:13px}
+  #panel .gal{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0} #panel .gal a{display:block;width:104px;text-decoration:none}
+  #panel .gal img{width:104px;height:78px;object-fit:cover;border-radius:3px;display:block;background:#0e1316} #panel .gal small{display:block;font-family:var(--sans);font-size:9.5px;color:var(--text-dim);line-height:1.15;margin-top:2px;max-height:24px;overflow:hidden}
+  #panel .vid{margin:4px 0;padding:5px 8px;background:#0e1316;border-left:2px solid var(--transmision)} #panel .vid small{color:var(--text-dim);font-family:var(--sans);font-size:11px}
   #panel p{margin:6px 0}
 
   /* 5. pie */
@@ -374,6 +377,7 @@ function card(title,pages,color,self){
   function next(){const d=document.createElement("div");d.className="sec";d.innerHTML=pages[i++];pBody.insertBefore(d,more);d.querySelectorAll("a.go").forEach(a=>a.onclick=ev=>{ev.preventDefault();if(a.dataset.corte!=null){pushHist();setCorte(+a.dataset.corte,true);show(a.dataset.kind,a.dataset.key,{silent:true})}else go(a.dataset.kind,a.dataset.key)});if(i>=pages.length)more.remove()}
   pBody.appendChild(more); more.onclick=next; next(); openPanel(); pBody.scrollTop=0; navBtns(); invBtn();
   if(self&&GEN[self.kind+":"+self.key]){const d=document.createElement("div");d.innerHTML=genHtml(self.kind,self.key);pBody.insertBefore(d.firstChild,more)}
+  if(self){const q=self.kind==="gen"?self.key:qidDe(self.kind,self.key);const h=medHtml(q);if(h){const d=document.createElement("div");d.innerHTML=h;pBody.insertBefore(d.firstChild,more)}}
 }
 function show(kind,key,opt={}){
   if(!opt.silent)pushHist();
@@ -405,6 +409,18 @@ function showCelda(cv,c,cel){clearSel();if(!cel){showCorte(c);return}sel={kind:"
 // leyenda: cada icono muestra u oculta su capa
 document.querySelectorAll(".leg span[data-t]").forEach(sp=>sp.onclick=()=>{const off=sp.classList.toggle("off");svg.classList.toggle("h-"+sp.dataset.t,off)});
 
+/* ---------- medios (fase 2): imágenes de Commons, curiosidad, vídeos, por QID ---------- */
+const MED={};
+fetch("cache/medios.json",{cache:"no-store"}).then(r=>r.ok?r.json():Promise.reject()).catch(()=>fetch("https://raw.githubusercontent.com/carloscascos/historia/main/cache/medios.json",{cache:"no-store"}).then(r=>r.ok?r.json():{})).then(m=>{Object.assign(MED,m||{});if(sel&&sel.kind&&sel.kind!=="celda"&&sel.kind!=="zona")show(sel.kind,sel.key,{silent:true})}).catch(()=>{});
+function qidDe(kind,key){return kind==="ent"||kind==="ev"?key:kind==="ciu"?DATA.ciu[key]?.qid:null}
+function medHtml(qid){const m=qid&&MED[qid];if(!m)return"";let h="";
+  if(m.imagenes&&m.imagenes.length)h+=`<div class="kicker">imágenes · Wikimedia Commons</div><div class="gal">`+m.imagenes.slice(0,6).map(i=>`<a href="${i.pagina}" target="_blank" title="${(i.descripcion||i.archivo).replace(/"/g,"'")}"><img src="${i.thumb}" loading="lazy" alt=""><small>${i.licencia||""}${i.autor?" · "+i.autor:""}</small></a>`).join("")+`</div>`;
+  const r=m.revision||{};
+  if(r.correccion)h+=`<div class="gen"><span class="kicker">corrección propuesta · sin revisar</span><p>${r.correccion}</p>${r.fuente_correccion?`<div class="src"><a href="${r.fuente_correccion}" target="_blank">${r.fuente_correccion}</a></div>`:""}</div>`;
+  if(r.curiosidad)h+=`<div class="kicker">curiosidad</div><p>${r.curiosidad}${r.fuente_curiosidad?` <a href="${r.fuente_curiosidad}" target="_blank" style="font-family:var(--sans);font-size:11px">fuente</a>`:""}</p>`;
+  const v=(r.videos||[]).filter(x=>x.verificado!==false);
+  if(v.length)h+=`<div class="kicker">vídeos</div>`+v.map(x=>`<div class="vid"><a href="${x.url}" target="_blank">${x.titulo||x.url}</a>${x.duracion?` <small>${x.duracion}</small>`:""}<br><small>${x.por_que||""}</small></div>`).join("");
+  return h?`<div class="sec">${h}<div class="src">imágenes y datos añadidos automáticamente (${r.fecha||m.fecha||""}); las imágenes enlazan a su página de Commons con licencia y autor</div></div>`:""}
 /* ---------- investigador: fichas generadas por Claude ---------- */
 const GEN={};  // "tipo:clave" -> ficha generada (cache/index.json, sin revisar)
 const RAW="https://raw.githubusercontent.com/carloscascos/historia/main/cache/index.json";
@@ -493,7 +509,7 @@ function renderGen(){document.querySelectorAll(".gen-g").forEach(g=>g.remove());
       (n||g2).addEventListener("click",()=>click(()=>showGen(o)))})});applyVB()}
 function showGen(o){clearSel();sel={kind:"gen",key:o.qid||o.id};const z=ZONAS_HECHAS.find(z=>z.id===o.zona);
   card(o.nombre||o.tipo,[`<div class="meta"><span class="tag">${o.tipo}${o.subtipo?" · "+o.subtipo:""}</span><span class="tag" style="background:#3a2a1e;color:#d4a27f">generado · sin revisar</span>${o.año!=null?fmt(o.año):o.desde!=null?`${fmt(o.desde)} – ${fmt(o.hasta)}`:""}</div><p>${o.linea||""}</p>`+(o.coord_sin_verificar?`<p style="color:var(--text-dim)">coordenadas dadas por el modelo, sin verificar en Wikidata</p>`:""),
-    `<div class="src">hallado por ${o.modelo} el ${o.fecha}${z?` en una zona investigada al nivel «${LODN[z.lod]}»`:""}<br><a href="https://www.wikidata.org/wiki/${o.qid}" target="_blank">Wikidata ${o.qid}</a>${o.eswiki?` · <a href="https://es.wikipedia.org/wiki/${encodeURIComponent(o.eswiki.replace(/ /g,"_"))}" target="_blank">Wikipedia: ${o.eswiki}</a>`:""}</div>`+srcHtml((o.fuentes||[]).map(f=>f.url?`web:${f.url} — ${f.titulo||""}`:f.titulo||""))],"#d4a27f")}
+    `<div class="src">hallado por ${o.modelo} el ${o.fecha}${z?` en una zona investigada al nivel «${LODN[z.lod]}»`:""}<br><a href="https://www.wikidata.org/wiki/${o.qid}" target="_blank">Wikidata ${o.qid}</a>${o.eswiki?` · <a href="https://es.wikipedia.org/wiki/${encodeURIComponent(o.eswiki.replace(/ /g,"_"))}" target="_blank">Wikipedia: ${o.eswiki}</a>`:""}</div>`+srcHtml((o.fuentes||[]).map(f=>f.url?`web:${f.url} — ${f.titulo||""}`:f.titulo||""))],"#d4a27f",{kind:"gen",key:o.qid||o.id})}
 function renderZonas(){const g=$("#zonas");g.innerHTML="";ZONAS_HECHAS.filter(z=>z.corte===CORTES[cur].id).forEach(z=>{const b=z.bbox;const r=el("rect",{x:b[0],y:-b[3],width:b[2]-b[0],height:b[3]-b[1],class:"zhecha"});r.appendChild(el("title",{},`zona investigada el ${z.fecha}: ${z.hallazgos} objetos`));g.appendChild(r)})}
 // carga inicial: objetos y zonas desde el servicio si está, si no desde el repositorio publicado
 (async()=>{let j=null;if(cfg.url){try{j=await (await fetch(cfg.url+"/cola")).json()}catch(e){}}
