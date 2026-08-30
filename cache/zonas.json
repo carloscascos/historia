@@ -4051,5 +4051,39 @@
   ],
   "nota": "Zona = China oriental y central (llanura del río Amarillo, Shandong, bajo Yangtsé, Sichuan, Manchuria) más Corea y el borde oeste de Japón. La ventana cae de lleno en el Longshan tardío y la transición al bronce, con los tres grandes yacimientos (Shimao, Taosi, Erlitou) ya en el visor; lo que faltaba eran las culturas que los enmarcan.\n\nDESCARTADOS con motivo:\n- Liangzhu (Q punto bajo Yangtsé): colapsa hacia 2300–2200 a.C., justo al inicio de la ventana; sus sucesoras (Qianshanyang, Guangfulin, 2300–2000) son culturas locales de rango menor, no llegan a peso 2.\n- Yueshi (Q1460971, Shandong): datada 1900–1500 a.C., solo solapa el último siglo de la ventana y además representa un declive marcado respecto al Longshan de Shandong. No alcanza el umbral en este corte; sería propia del corte siguiente.\n- Sanxingdui (Q929072): la ciudad amurallada se funda hacia 1700–1600 a.C., POSTERIOR a la ventana. Se propone en su lugar Baodun, que es la fase que sí está ocupada.\n- Pingliangtai (Q133238013, coord. 33.71/114.92, dentro de zona): tiene el sistema de drenaje cerámico urbano más antiguo de China, pero unos 500 habitantes y sin evidencia de poder centralizado. Es peso 1, vista cercana.\n- Corea y Japón occidental: en esta ventana Corea está en el Jeulmun (c. 8000–1500 a.C.), cazadores-recolectores con horticultura a pequeña escala; el Mumun y el bronce no empiezan hasta c. 1500 a.C. Nada alcanza peso 2. Mismo caso en Japón (Jōmon).\n\nNO PROPUESTOS POR FALTA DE QID, aunque son hechos datados dentro de la ventana: el abandono de Taosi (c. 1900 a.C., con hipótesis de rebelión contra la élite) y el abandono de Shimao (c. 1800 a.C., asociado al giro climático de húmedo a seco entre 2000 y 1700 a.C.). Wikidata no tiene ítem separado para ninguno de los dos: son propiedades de los yacimientos, ya presentes en el visor. No invento QID.\n\nAVISO SOBRE COORDENADAS: Longshan (Q1057935), Qijia (Q1269223) y Xiajiadian inferior (Q1041674) NO tienen P625 en Wikidata — lo he comprobado por API. Baodun (Q807064) sí (30.45/103.75, dentro de zona). Esto no es un descuido mío: las culturas arqueológicas chinas carecen sistemáticamente de coordenada puntual, y las ya cargadas en el visor tienen el mismo problema (Erlitou culture Q1051663 sí la tiene, 34.70/112.70; Andrónovo Q459376 la tiene en 55.88 N, FUERA de esta zona, y aun así figura listada). Si el visor resuelve las entidades por geometría propia y no por P625, estas cuatro funcionan igual que las ya presentes; si exige P625 estrictamente, tres de ellas fallarán al cargar. Lo señalo porque afecta también a objetos ya en el visor, no solo a los que propongo.\n\nLa relación Qijia→Erlitou la doy con ventana tardía (-1900/-1800) y una salvedad que conviene no perder: Fitzgerald-Huber y otros ven paralelos tipológicos claros, pero hay trabajos que sostienen que la vía Seima-Turbino entró por Shanxi y no por Gansu, y que no es anterior a la fase III de Erlitou. El hecho del contacto está documentado; la RUTA concreta está en disputa académica abierta.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "b9165a723a",
+  "bbox": [
+   79.33,
+   32.5,
+   102.16,
+   46.25
+  ],
+  "corte": "-2000",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 6,
+  "descartados": [
+   {
+    "nombre": "Cultura de Qijia",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Tianshanbeilu",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Qäwrighul",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Complejo funerario de Xiaohe",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona = Xinjiang (Tarim, Dzungaria, Tian Shan oriental), meseta tibetana, Qinghai occidental, corredor de Hexi y Altái mongol occidental. FUERA DE ZONA: Lajia (Q1317169, 102.80E) y Qijiaping (Q11180227, 103.83E) quedan al este del límite 102.16, igual que la garganta de Jishi y Zhukaigou (110.3E); Karuo (Q1692194) está a 31.06N, al sur del límite. Esto deja el corazón de Qijia justo fuera del recorte, pero propongo la cultura porque su distribución documentada llega al oeste del lago Qinghai y cubre el corredor de Hexi, dentro de la zona. FUERA DE VENTANA: Adunqiaolu (Q133306585, dentro de zona) tiene radiocarbono a partir de mediados del s. XVIII a.C.; Baigetuobie es de 1800-1500 a.C. y además no tiene QID; la cultura Siba (Q33204333) se data en 1900-1500 y solo solapa por su arranque, por eso propongo Huoshaogou (tumbas de 2000-1800) y no la cultura; Donghuishan (Q10870768) tiene coordenadas en zona pero sus dataciones se han revisado a 1623-1388 a.C.; Yanbulaq (Q2599315), Wubao (Q2594685), Mohuchahangoukou (Q64644968), Shirenzigou (Q123334152), Jirentai Goukou (Q74096259) y Nuomuhong (Q1326128) son todos del Bronce final o de la Edad del Hierro. SIN QID: Changguogou, Beifang (1785-1664, además fuera por poco), los yacimientos afanasievo de Xinjiang (Ke'ermuqi/Qiemu'erqieke) y Baigetuobie. MESETA TIBETANA Y LADAKH: nada alcanza el umbral, y el motivo es sólido, no una laguna de mi búsqueda. La cultura de Qugong, que la cronología antigua situaba en 2000-1500 a.C., ha sido redatada por reexcavación a 1400-1300 cal a.C.; Bangga, Kayue y Nuomuhong son posteriores. En Ladakh lo que hay es arte rupestre sin datación absoluta y sin ítems propios en Wikidata. Un barrido SPARQL sobre el rectángulo devuelve, en la mitad tibetana, solo monasterios y sitios históricos tardíos. COORDENADAS: Qijia, Qäwrighul, Tianshanbeilu y Seima-Turbino no tienen P625 en Wikidata y necesitan geometría dibujada a mano, como ya se hizo con Andrónovo y la cultura nurágica.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
