@@ -1769,5 +1769,39 @@
   ],
   "nota": "Zona = Transbaikalia, lago Baikal e Irkutsk, cuenca del alto Lena, Mongolia nororiental (Khentii, Dornod, norte de Sükhbaatar) y alto Amur; ventana 1475–1275 a.C., umbral peso 2. No hay estados, ciudades ni batallas documentadas: solo culturas arqueológicas. Leídos Wikipedia en/es/ru y la API de Wikidata (P625/P580/P582) para Glázkovo, Ulaanzuukh, tumbas de losa, piedras de ciervo, Ymyyakhtakh, Shiverskaya, Ust-Mil y Karasuk. AVISOS DE DATOS: (1) NINGUNO de los dos objetos propuestos tiene coordenadas P625 en Wikidata; si el visor exige P625 serán descartados como pasó con Karasuk en la zona vecina. Ancla manual sugerida: Glázkovo → Irkutsk (~52,3N 104,3E, epónimo y núcleo Angará/Baikal, dentro de zona); Ulaanzuukh → montes Delgerkhaan, Khentii (Q3404126, 47,18N 109,19E, dentro de zona; yacimiento citado por el título de Amartuvshin et al. en Academia, página no legible por 403). El grueso de Ulaanzuukh-Tevsh está en el Gobi sudoriental (44–46N), por debajo del borde sur de la zona: solo su franja norte cae dentro. (2) Fechas de Glázkovo: Wikidata P580/P582 dice -3200/-2400 y contradice a Wikipedia en (2200–1200 a.C.) y ru (siglos XVIII–XIII a.C.); he usado Wikipedia, que es coherente con la literatura sobre 'Glazkovo mortuary tradition' (~4955–3565 cal BP), pero el descuadre queda sin resolver. (3) Fechas de Ulaanzuukh: Wikipedia en da 1450–1000 a.C.; el artículo de Nature Comm. 2025 aplica ese rango a la 'tradición de tumbas en forma de figura' en conjunto, no da fechas propias para Ulaanzuukh. DESCARTADOS: cultura de las tumbas de losa (Q2098731, tiene eswiki): Wikipedia en/es/ru la inician en 1300 a.C. en Transbaikal, pero Nature Comm. 2025 la data ca. 1100–400 a.C. y en Mongolia empieza ~700; arranque dudoso y como mucho 25 años dentro de la ventana, sin P625 — fuera. Piedras de ciervo/khirigsuur: 1400–700 a.C., pero no existe ítem de 'cultura' en Wikidata (Q176824 es el tipo de monumento, con coordenadas 47,75N 101,37E, al oeste de 102,16 y fuera de zona), y su núcleo (Khövsgöl, Arkhangai) queda al oeste. Ymyyakhtakh (Q4529391, 2200–1300 a.C.): sin P625, núcleo en el Lena medio y Yakutia central por encima de 60N; solo su periferia sur tocaría la zona. Shiverskaya (Q116971037): datación solo 'II–I milenio a.C.', sin P625, demasiado vaga. Ust-Mil (Q1655299): coordenadas 59,64N 133,12E, fuera de zona al este. Karasuk (Q129282): núcleo en Minusinsk (~92E), fuera de zona. No se propone la relación de transmisión Ulaanzuukh → tumbas de losa porque empieza (1300 o 1100 a.C. según fuente) en el borde o fuera de la ventana; ni relación con Shang (el carro llega a Anyang hacia 1200 a.C., fuera de ventana).",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "7baa20f945",
+  "bbox": [
+   102.16,
+   32.5,
+   125.0,
+   46.25
+  ],
+  "corte": "-1350",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 5,
+  "descartados": [
+   {
+    "nombre": "Cultura de Xindian",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Siwa",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Zhukaigou",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Ulaanzuukh",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = norte de China (Henan norte, Shanxi, Shaanxi norte, Hebei, Shandong, Liaoning oeste), sur de Mongolia y noroeste de Corea. Revisado en Wikipedia (en/zh) y Wikidata. Descartes: (1) 'Pan Geng traslada la capital a Yin' (Q17040331, hacia 1300 a.C.) es el evento de peso 3 de la ventana, pero su ítem de Wikidata no tiene coordenadas ni P31 y solo tiene artículo en zh, así que no cumple la regla de coordenadas; convendría añadirlo a mano ligado a Yin Xu/Huanbei. (2) Dongxianxian (Q117437119, Xingtai, ~1300 a.C.) y Dongxiafeng (Q793516) son yacimientos de peso 1; la identificación de Xingtai y Qufu con las capitales Xing y Yan de las crónicas es tradicional y sin respaldo arqueológico en las páginas leídas. (3) Yueshi (termina -1500), Xiajiadian inferior (termina -1600) y Zhukaigou marginal quedan fuera o casi; Karasuk (Minusinsk) queda al norte de la zona; Kayue (Wikidata -900) y Siba/Qijia quedan fuera por fecha o al oeste de 102°. (4) Gojoseon (-2333 en Wikidata) es legendario; Mumun (desde -1500) cae fuera de la zona (Corea central/sur). Aviso: las cuatro culturas propuestas (Xindian, Siwa, Zhukaigou, Ulaanzuukh) no tienen P625 en Wikidata; su ubicación en zona se ha verificado por la descripción geográfica de los artículos. Las dataciones de Siwa difieren entre Wikidata (-1400/-1100) y Wikipedia en (-1300/-650); se ha usado el inicio hacia -1400. La fecha de inicio Shang de Daxinzhuang ('principios del s. XIII a.C.' para Erligang tardío) es la que da Wikipedia en, aunque no cuadra bien con el fin de Erligang hacia -1400; se deja tal cual.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
