@@ -1522,5 +1522,31 @@
   "descartados": [],
   "nota": "Zona explorada: Sáhara occidental y central (sur de Marruecos, sur de Argelia, oeste de Libia, norte de Mauritania/Malí/Níger) en la ventana -1475/-1275. Candidatos examinados y descartados: (1) Tradición/cultura de Tichitt (Q107008575), la primera sociedad compleja de África occidental (c. 2200-200 a.C.), ocupada en la ventana y de peso 2-3, pero el ítem de Wikidata no tiene coordenadas y el sitio Dhar Tichitt (Q1165596) está en 18.36 N, fuera de la zona (límite sur 18.75); Dhar Walata y la región de los lagos de Malí quedan aún más al sur. (2) Arte rupestre de la Edad del Bronce del Alto Atlas (Oukaïmeden, Yagour; 31.2 N, -7.9 E, dentro de la zona) con armas de tipo ibérico (alabardas, hachas, escudos), datado c. 2000-1000 a.C. y por tanto vigente en la ventana; pero no existe ningún ítem de Wikidata para esa cultura ni para el conjunto rupestre (solo hay ítems de la estación de esquí, el observatorio y el jbel), así que no puede proponerse como entidad o ciudad; en cualquier caso sería peso 1. (3) Tassili n'Ajjer y el Sáhara central: ocupación de las tierras altas hasta c. 1500 a.C. y transición del periodo pastoral (bovidiano) al periodo del caballo con carros (fechas discrepantes entre fuentes: desde 2000 a.C. según Wikipedia, desde c. 1000 a.C. según UNESCO/Met/Coulson); no hay ítem de Wikidata para el periodo pastoral ni para el periodo caballino, y son tradiciones rupestres, no estados ni ciudades. (4) Garamantes (Q839034): emergen c. 1000 a.C. o después y su núcleo (Fezzan, 13 E) queda fuera por longitud. (5) Libios de las fuentes egipcias (Tehenu, Libu, Meshwesh): se sitúan en Cirenaica/Marmárica, fuera por longitud. (6) Kach Kouch (Bronce marroquí, 2200-600 a.C.) y las islas Canarias (no pobladas todavía): fuera de la zona. Conclusión: en esta zona y ventana no hay ningún estado, ciudad, batalla ni ruta documentada con QID y coordenadas dentro del recuadro que alcance el umbral de vista media; la ocupación son grupos pastoriles saharianos y del Atlas sin entidad nombrada en Wikidata.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "cb0b3b3afe",
+  "bbox": [
+   56.5,
+   5.0,
+   79.33,
+   18.75
+  ],
+  "corte": "-1350",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 1,
+  "descartados": [
+   {
+    "nombre": "Cultura de Jorwe",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Neolítico del sur de la India (túmulos de ceniza)",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "La zona cubre la India peninsular al sur de ~18.75°N, Sri Lanka, Maldivas y mar Arábigo abierto; no hay estados, ciudades propiamente dichas ni batallas documentadas en -1475/-1275. Lo único que alcanza vista media son dos horizontes arqueológicos y su yacimiento cabecera. Advertencias: (1) Q48728694 (Jorwe) y Q25348565 (túmulos de ceniza) NO tienen coordenadas P625 en Wikidata — mismo caso que la cultura nurágica Q1421436 ya en el visor, por lo que se asume que el visor admite culturas sin punto; si no es así, descartarlos. (2) Q25348565 describe los 'túmulos de ceniza' como depósitos, no como cultura; no existe ítem Wikidata para 'Southern Neolithic' ni 'Deccan Chalcolithic', así que es el único QID disponible para ese horizonte. (3) Las fechas de Inamgaon varían por fuente: Wikipedia da 1800-1200 a.C.; Dhavalikar/Sankalia dan Malwa 1600-1400, Jorwe temprano 1400-1000, Jorwe tardío 1000-700; Penn Museum da Malwa 1700-1400 y Jorwe tardío 1100-700. Se ha usado -1700/-700. Descartados: cultura de Malwa (Q48728691, 1600-1300 a.C.) porque su núcleo (Malwa, MP, ~22-23°N) queda fuera de la zona aunque su fase final llegue a Inamgaon; Daimabad (19.51°N) fuera de la zona por 0.76°; Hallur y Sanganakallu como ciudades individuales (peso 1; el primer hierro de Hallur, 1200-1000 a.C., queda fuera de la ventana); relación comercio Jorwe↔Neolítico del sur (oro y marfil de Karnataka, según Wikipedia) por ser peso 1; Sri Lanka (escoria de cobre en Mantai c. 1800 a.C., Balangoda mesolítico; la supuesta canela en Egipto hacia 1500 a.C. es una inferencia sin QID ni evidencia firme); Maldivas y costa omaní sin nada documentado en la ventana dentro del recuadro.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
