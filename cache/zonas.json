@@ -2581,5 +2581,35 @@
   ],
   "nota": "Zona = Alemania oriental, Polonia, Chequia, Eslovaquia, norte de Hungría/Austria, Dinamarca oriental, sur de Suecia, Bálticos, Bielorrusia, norte de Ucrania y oeste de Rusia. Sin estados ni ciudades: todo son culturas arqueológicas. AVISO: ninguna de las culturas propuestas tiene coordenadas (P625) en Wikidata; solo el disco de Nebra (51.28, 11.52) y la Ruta del ámbar (Q239574, 48.17, 16.98) las tienen — la Ruta del ámbar no se propone como objeto porque no encaja en los tipos admitidos, y se representa como relación Nórdico–Micenas. Fechas tomadas de Wikipedia en; discrepancias conocidas: Trzciniec aparece como 2400–1300 en Wikipedia pero muchas síntesis lo acotan a 1700–1200; Wietenberg 2200–1500 en Wikipedia frente a 1800–1300 en otras fuentes; Wietenberg además queda en el borde sur de la zona (Transilvania, lat ~46–47). Descartados por quedar fuera de la ventana: Fatianovo-Balanovo (Q1398184, termina -1850), Cerámica multicordada (Q4246693, termina -1800 y mayormente al este de lon 33.67), Komarov (Q4229398, empieza -1500), túmulos de Leubingen (Q1483247, c. -1940) y Helmsdorf (c. -1840), tumba de Kivik y carro solar de Trundholm (c. -1400). Descartados por peso 1: culturas de Hatvan (Q3509098), Cerámica incrustada (Q1663752), Straubing (Q180178), Věteřov (Q3497243, integrada en el complejo Maďarovce); poblados fortificados Spišský Štvrtok, Bruszczewo, Nitriansky Hrádok, Fidvár (solo QID del municipio, no del yacimiento, y visibles solo en vista cercana). Relación Únětice–Wessex documentada pero Wessex está fuera de la zona y no existe en el visor; relación Maďarovce–Micenas mencionada en Wikipedia sin detalle, no propuesta.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "8308982222",
+  "bbox": [
+   33.67,
+   46.25,
+   56.5,
+   60.0
+  ],
+  "corte": "-1600",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 0,
+  "descartados": [
+   {
+    "nombre": "Cultura de Srubna (tumbas de madera)",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de la cerámica de cordones múltiples (Babino)",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Fenómeno Seima-Turbino",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = estepa y bosque-estepa del Don, Volga medio, Kama y Urales occidentales (Rusia europea). Sin estados ni ciudades: ningún asentamiento de la ventana tiene artículo con coordenadas en Wikidata. ADVERTENCIA de coordenadas: ninguna de las tres entidades propuestas tiene P625 en Wikidata (tampoco lo tienen Abáshevo o Sintashta); la pertenencia a la zona se basa en su extensión descrita en Wikipedia (Don-Volga-Urales; Seima y Turbino a ~43°E y ~56°E), no en un punto Wikidata. DISCREPANCIAS de fechas sin resolver: Srubna aparece como 1900-1200 a.C. (en.wiki, radiocarbono de expansión 1900-1550), 1600-1200 (Wikidata P580/P582) y siglos XVI-IX (es.wiki); he usado 1900 (fase temprana Pokrovka). Seima-Turbino: Wikidata 2300-1700, radiocarbono 2200-1900 (quedaría FUERA de la ventana), tipología 1600-1400; incluido con el rango de Wikidata y la disputa explícita en la línea; si el visor exige cronología radiocarbónica, debe descartarse. DESCARTADOS: Abáshevo Q305628 (2500/2300-1900/1850 a.C., termina antes de la ventana); Sintashta Q656393 / yacimiento Q1090987 (coordenadas 60.18°E, fuera de la zona, y termina ~1800); Potapovka Q971802 (2500-2000); Fatiánovo-Balánovo Q1398184 (2600-1850); necrópolis de Turbino Q114352665 (sin coordenadas ni artículo); Pozdniakovo Q4368832 (solo ru.wiki, sin fechas verificadas). Relaciones no propuestas: la transmisión metalúrgica Seima-Turbino → China llega a Shang (Q128938) vía Qijia/Erlitou, sin solape temporal documentado con Shang (desde 1600) en ninguna cronología; la absorción de Babino por Srubna y el parentesco Srubna-Andrónovo no están documentados como conflicto ni comercio en las fuentes leídas.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
