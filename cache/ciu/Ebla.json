@@ -1,0 +1,86 @@
+{
+ "tipo": "ciu",
+ "clave": "Ebla",
+ "nombre": "Ebla",
+ "corte": "1600 a.C.",
+ "estado": "generada",
+ "modelo": "claude (claude -p)",
+ "fecha": "2026-08-30",
+ "autor": "carlos alvarez-cascos",
+ "entradilla": "Ebla (Tell Mardikh), la gran ciudad del interior de Siria que tras dos destrucciones renació como reino amorreo vasallo de Alepo y fue arrasada definitivamente por los hititas hacia 1600 a.C.",
+ "contexto": [
+  "Ebla es el nombre antiguo de Tell Mardikh, un montículo del noroeste de Siria situado a unos 55-60 km al suroeste de Alepo. La ciudad tuvo tres vidas: un primer reino que floreció entre hacia 2400 y 2300 a.C. y que dominaba media Siria actual, desde la costa hasta Damasco, con más de sesenta ciudades sometidas; un segundo periodo de recuperación modesta entre hacia 2300 y 2000 a.C.; y un tercer reino, ya de población amorrea, que se extiende desde hacia 2000 hasta su ruina en torno a 1600 a.C., que es el momento en que se consulta esta ficha. Fue identificada en 1968, cuando la misión italiana de la Universidad de Roma dirigida por Paolo Matthiae, que excava el yacimiento desde 1964, halló el torso de una estatua votiva a Ishtar con la inscripción de «Ibbit-Lim, rey de Ebla»: hasta entonces se sabía por los textos que Ebla existía, pero no dónde estaba.",
+  "La fama de Ebla se debe al archivo del Palacio G, descubierto en 1974-1975 y sellado por el incendio que destruyó la primera ciudad hacia 2300 a.C.: unos 17.000 fragmentos que corresponderían a entre 4.000 y 5.000 tablillas originales, escritas en sumerio y en eblaíta, una lengua semítica hasta entonces desconocida que se anotó con el cuneiforme mesopotámico y que hoy se considera semítica oriental con rasgos occidentales. No es una biblioteca sino un archivo administrativo de raciones y tributos, pleitos y contactos diplomáticos, con listas bilingües sumerio-eblaíta pensadas para dar el equivalente local de los signos sumerios. Esos textos describen una economía palaciega volcada en la lana y los tejidos, la metalurgia del cobre, el estaño y el bronce y la madera de cedro, que se cambiaban por oro, plata y piedras preciosas, con contactos que llegaban a Mari, Kish y Nagar en Mesopotamia, a Egipto, Anatolia, Chipre y, para el lapislázuli, hasta Afganistán; en el palacio aparecieron objetos egipcios con los nombres de los faraones Kefrén y Pepi I. Mari fue su gran rival comercial, y Alfonso Archi y Maria Giovanna Biga sostienen que fue Mari, y no Sargón o Naram-Sin de Acad como pretenden sus propias inscripciones, quien destruyó Ebla hacia 2300 a.C. en venganza por la derrota de Terqa; otros autores proponen incluso una catástrofe natural.",
+  "La ciudad que existe en 1600 a.C. es la del tercer reino. Tras el final del segundo asentamiento, Ebla fue reconstruida como ciudad planificada, con casi 60 hectáreas encerradas por una gran muralla de tierra con puertas de doble cámara, un Palacio Occidental que albergaba la necrópolis real, en la que destaca la llamada «Tumba del Señor de las Cabras» con un trono decorado con cabezas de cabra en bronce, y varios templos, entre ellos el gran templo de Ishtar. Sus reyes llevaban nombres de tradición local, como Ibbit-Lim, pero los pobladores eran mayoritariamente amorreos, y el panteón cambió: desaparecieron las divinidades propiamente eblaítas, Hadad pasó a ser el dios principal e Ishtar ocupó el lugar de Ishara. Marta D'Andrea, de la Sapienza, interpreta esa mezcla de nombres reales antiguos y culto nuevo como un compromiso de los nuevos dirigentes amorreos entre reconectar con la tradición local y adoptar algo ajeno, y subraya que las excavaciones de 2004-2008 muestran más continuidad entre la ciudad del tercer milenio y la amorrea de lo que se creía.",
+  "En la red del Bronce Medio, Ebla ya no manda: es una potencia de segundo orden dentro de la órbita de Yamhad, el reino amorreo de Alepo que dominó el norte de Siria entre hacia 1810 y 1517 a.C. y del que Ebla, Ugarit y Mamma fueron vasallos. Aun así siguió siendo un centro de intercambio: los hallazgos arqueológicos muestran contactos intensos con Egipto y con ciudades costeras sirias como Biblos, textos de la época de Ur III mencionan hombres de Ebla en Mesopotamia en el siglo XXI a.C., y un sello del rey Ib-Damu de Ebla apareció en Kültepe, el emporio asirio de la Anatolia central, prueba de que la ciudad estaba enganchada al comercio anatolio de la época. El último rey conocido es Indilimma; un sello de su príncipe heredero Maratewari apareció en el Palacio Occidental, y Archi piensa que este último pudo llegar a reinar.",
+  "El final llegó con las campañas hititas en Siria. Hattusili I abrió las hostilidades contra Yamhad hacia 1650 a.C. atacando Alalakh, y su sucesor Mursili I conquistó Alepo hacia 1600 a.C. y acabó con Yamhad como gran potencia; la mayoría de los autores atribuyen a Mursili I la destrucción de Ebla hacia 1600 a.C., aunque la Wikipedia en español recoge también la posibilidad de que fuera Hattusili I. Ese fin quedó memorizado en el «Canto de la Liberación», un poema bilingüe hurrita-hitita hallado en 1983-1985 en los templos 15 y 16 de la ciudad alta de Hattusa, cuya traducción hitita se data a finales del siglo XV o comienzos del XIV a.C.: en él el dios de la tormenta Teshub exige al rey Meki de Ebla que libere a los cautivos de la ciudad de Ikinkalis y amenaza con dejar Ebla «como un lugar deshabitado»; la asamblea de ancianos, encabezada por el orador Zazalla, se niega porque los cautivos les sirven de coperos, cocineros y lavanderos, y aunque las tablillas se interrumpen, el desenlace implícito es la destrucción de la ciudad. Archi entiende que el poema narra precisamente la caída del tercer reino, y Stefano de Martino lo considera un relato compuesto probablemente en Siria en los años siguientes a la catástrofe. Ebla no se recuperó: entre 1600 y 1200 a.C. fue una pequeña aldea, después un asentamiento rural y un pequeño monasterio, y quedó desierta en el siglo VII d.C."
+ ],
+ "fuentes": [
+  {
+   "titulo": "Ebla – Wikipedia (español)",
+   "url": "https://es.wikipedia.org/wiki/Ebla",
+   "uso": "Localización, periodos, economía palaciega y exportaciones, 15.000-20.000 habitantes en 50 ha del primer reino, alternativa Mursili I / Hattusili I para la destrucción de 1600 a.C., decadencia posterior.",
+   "responde": true
+  },
+  {
+   "titulo": "Ebla – Wikipedia (English)",
+   "url": "https://en.wikipedia.org/wiki/Ebla",
+   "uso": "Tres reinos y fechas, archivo (~20.000 piezas, 2500-2350 a.C.), eblaíta como semítico oriental, sesenta vasallos, Mari como rival y tesis de Archi y Biga, objetos de Kefrén y Pepi I, ciudad del tercer reino (60 ha, muralla, puertas, Palacio Occidental, Tumba del Señor de las Cabras), cambio de panteón, vasallaje a Yamhad, Indilimma y Maratewari, Mursili I hacia 1600 a.C., Archi sobre el Canto de la Liberación, contactos con Egipto y Biblos, Mardikh IV como aldea.",
+   "responde": true
+  },
+  {
+   "titulo": "Ibbit-Lim – Wikipedia (English)",
+   "url": "https://en.wikipedia.org/wiki/Ibbit-Lim",
+   "uso": "Torso hallado en 1968, inscripción «rey de Ebla, hijo de Igrish-Kheb», dedicado ocho años después de la aparición de Ishtar, primera prueba para identificar Tell Mardikh con Ebla, población predominantemente amorrea.",
+   "responde": true
+  },
+  {
+   "titulo": "Yamhad – Wikipedia (English)",
+   "url": "https://en.wikipedia.org/wiki/Yamhad",
+   "uso": "Yamhad centrado en Alepo, ca. 1810-1517 a.C.; Mamma, Ebla y Ugarit como vasallos; campañas de Hattusili I desde ca. 1650 a.C. (Alalakh) y conquista de Alepo por Mursili I ca. 1600 a.C.",
+   "responde": true
+  },
+  {
+   "titulo": "Marta D'Andrea (2021), «Ebla between the Early and Middle Bronze Ages: A Précis (and Some New Data)», Asia Anteriore Antica 3: 3-41, DOI 10.36253/asiana-1199",
+   "url": "https://riviste.fupress.net/index.php/asiana/article/download/1199/1081/11397",
+   "uso": "Excavaciones 2004-2008 y continuidad EB IVB / Bronce Medio; destrucción hacia finales del siglo XXIV a.C. y debate Sargón/Naram-Sin/Mari/catástrofe natural; textos de Ur III (Drehem) con hombres de Ebla en el siglo XXI a.C.; sello de Ib-Damu en Kültepe; nombres reales no amorreos frente a población amorrea; sincretismo Ishara-Ishtar y lectura de «compromiso» de los nuevos dirigentes.",
+   "responde": true
+  },
+  {
+   "titulo": "Stefano de Martino (2019), «The Hurrian Song of Release and the Fall of Ebla», Studia Eblaitica 5: 123-155, DOI 10.13173/STEBLA/2019/1/123",
+   "url": "https://stebla.harrassowitz-library.com/article/stebla/2019/1/7",
+   "uso": "El Canto de la Liberación como narración hurrita sobre la caída de Ebla, compuesta probablemente en Siria poco después; traducción hitita de finales del siglo XV o inicios del XIV a.C.",
+   "responde": true
+  },
+  {
+   "titulo": "Mnamon – Eblaite (Scuola Normale Superiore di Pisa)",
+   "url": "https://mnamon.sns.it/index.php?id=7&lang=en&page=Scrittura",
+   "uso": "Tell Mardikh a unos 60 km al suroeste de Alepo, excavado desde 1964 por la Sapienza bajo Matthiae; archivo del Palacio G descubierto en 1974-1975, ~17.000 objetos inscritos y 4.000-5.000 tablillas originales; cuneiforme mesopotámico adaptado; listas bilingües sumerio-eblaíta.",
+   "responde": true
+  },
+  {
+   "titulo": "Mnamon – Hurrian (Scuola Normale Superiore di Pisa)",
+   "url": "https://mnamon.sns.it/index.php?page=Lingua&id=3&lang=en",
+   "uso": "El Canto de la Liberación como bilingüe hurrita-hitita de época hitita media que narra la destrucción de Ebla, hallado en 1983-1985 en los templos 15 y 16 de la ciudad alta de Hattusa.",
+   "responde": true
+  },
+  {
+   "titulo": "The Destruction of Ebla: A Hurrian Tale – BAS Library",
+   "url": "https://library.biblicalarchaeology.org/sidebar/the-destruction-of-ebla-a-hurrian-tale/",
+   "uso": "Contenido del poema: amenaza de Teshub de dejar Ebla «como un lugar deshabitado», negativa de los ancianos porque los cautivos sirven de coperos, cocineros y lavanderos; ciudad destruida hacia 1600 a.C. y no reconstruida.",
+   "responde": true
+  },
+  {
+   "titulo": "Ebla – Tell Mardikh – Vici.org",
+   "url": "https://vici.org/vici/21308/",
+   "uso": "Identificación en 1968 gracias al torso de Ibbit-Lim; tras la tercera destrucción, asentamiento rural, pequeño monasterio y abandono en el siglo VII d.C.",
+   "responde": true
+  }
+ ],
+ "sin_respaldo": [
+  "La cifra de población de la ficha (10.000 habitantes hacia 1900 y 1700 a.C.) no aparece en ninguna de las páginas leídas; para el primer reino las fuentes ni siquiera coinciden entre sí (Wikipedia en español: 15.000-20.000 en 50 ha; Wikipedia en inglés: unos 40.000 en la capital y más de 200.000 en el reino).",
+  "No he podido leer el texto completo del artículo de de Martino (2019), solo el resumen; no sé qué rey hitita propone él como responsable de la destrucción, ni qué autores concretos defienden la atribución a Hattusili I frente a Mursili I.",
+  "La identificación de Ikinkalis, la ciudad cuyos cautivos retiene Ebla en el poema, con un lugar concreto.",
+  "Que el Palacio Occidental fuera la residencia del príncipe heredero y no del rey (lo he leído en resúmenes de buscador, no en una página abierta)."
+ ]
+}
