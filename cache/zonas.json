@@ -632,5 +632,27 @@
   ],
   "nota": "Zona: cornisa cantábrica (norte de Galicia, Asturias, Cantabria, País Vasco), Landas, País Vasco francés y sur del Médoc. Ventana 1475–1275 a.C. (Bronce Medio). Solo se propone el Bronce Final atlántico (Q2629081), y con reserva: Wikidata fija su inicio en 1300 a.C., de modo que solo solapa los últimos 25 años de la ventana; conviene que el visor lo trate como incipiente en este corte. Candidatos revisados y descartados: (1) Minas de cobre del Aramo (Riosa, Asturias): las dataciones C14 publicadas se concentran en 2600–2300 cal BC (Calcolítico–Bronce Antiguo); la continuidad hasta 1500 cal BC o el Bronce Final es una hipótesis del propio de Blas Cortina no confirmada, y además no existe ítem de Wikidata para las minas (solo Q9077169, la sierra). (2) Cueva-túnel de San Adrián (Zegama, Gipuzkoa, Q3471662): ocupación del Bronce Antiguo datada 1880–1510 cal BC según Munibe 2016; termina justo antes de la ventana. (3) Depósito de Gamonedo (Onís, Asturias): hacha plana y lingotes de cobre arsenical datados 'hacia mediados del II milenio' por tipología, sin C14 y sin QID propio (solo la aldea, Q55714505). (4) Depósitos de hachas del Bronce Medio del Médoc (57 depósitos del Bronce Medio 2 según Couderc 2015; Saint-Vivien, Bégadan, La Clare): son el conjunto más relevante de la zona en esta ventana, pero no hay ítem de Wikidata para el 'grupo del Médoc' ni para los depósitos, y los mejor documentados (Saint-Vivien 45,43°N; Bégadan 45,36°N) caen al norte del límite de la zona (45,19°N). (5) Corro dos Mouros / Penas do Caldeiro (Adai, Lugo): construcción datada en el s. XIII a.C. y ocupación en los ss. X–IX; solapa marginalmente y no tiene QID. (6) Peña Tú (Llanes, Q2081919): Neolítico/Calcolítico según Wikipedia, fuera de ventana. (7) Ilso Betaio (Bizkaia): poblado calcolítico, fuera de ventana. (8) Cuevas sepulcrales de Cantabria y País Vasco (Aer, Matienzo, Pico Ramos): objetos del Bronce en su mayoría descontextualizados, sin datación específica en 1475–1275 ni QIDs. (9) Bronce Pirenaico (Q122349163): 2300–1650 a.C. y limitado al Pirineo oriental, fuera de zona y ventana. (10) Cromlechs del País Vasco francés y túmulos de Sare: Bronce Final–Hierro. La bibliografía (Blas Cortina; Munibe 1990) coincide en que el Bronce Medio cantábrico se conoce casi solo por hallazgos metálicos aislados y sin poblados excavados, lo que explica la lista casi vacía.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "81b882e0b1",
+  "bbox": [
+   -12.0,
+   5.0,
+   33.67,
+   32.5
+  ],
+  "corte": "-1600",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 7,
+  "descartados": [
+   {
+    "nombre": "Egipto: dinastía XIV",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = Egipto al sur de 32.5°N, Nubia/Sudán, Sáhara y Sahel hasta Mauritania. Lo que falta al nivel 3 es el bloque nubio (reino y capital de Kerma) y la dinastía XIV del Delta, más las relaciones entre entidades ya existentes. Descartado por debajo del umbral: Buhen (Q1002656, fortaleza tomada por Kerma en el II Periodo Intermedio, peso 2), dinastía de Abidos (Q15631010, reino local, peso 2), Deir el-Ballas (Q805157, palacio de la XVII, peso 1), Nejen/Hieracómpolis y Abidos como ciudades (peso 2). Tradición de Tichitt (Q107008575, Mauritania, 2200–200 a.C.): sería peso 2 y además su ítem de Wikidata no tiene coordenadas, así que no cumple la regla 2. Dinastía XIII (Q721807) no se propone porque queda cubierta por la entidad 'Imperio Medio' ya existente. Eventos: no existe ítem de Wikidata para el asedio/toma de Avaris, la toma hicsa del poder ni la incursión kermita hasta Elkab (la Tablilla Carnarvon Q40887660 es un objeto, no un evento), así que las guerras van como relaciones. Aviso: Q650945 (dinastía XIV) no tiene P625 en Wikidata, igual que las dinastías XV–XVII ya cargadas; su cronología varía hasta 75 años entre autores (Ryholt 1805–1650 vs Bietak c. 1725–1650). El tipo 'comercio' para el eje hicsos–Kush es el más cercano admitido a 'alianza'. Canarias queda fuera de la zona (al oeste de -12°). Culturas pastorales saharianas: sin QID con coordenadas ni entidad definida, no propuestas.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
