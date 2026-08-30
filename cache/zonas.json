@@ -688,5 +688,27 @@
   ],
   "nota": "Zona: sur de Mesopotamia (hasta 32,5° N), Elam, golfo Pérsico, Arabia, Indo/India occidental, mar Rojo y Cuerno de África. Se leyeron las páginas en inglés de Wikipedia de Ur, Uruk, Harappa, Dilmun, Kassites, Sharuhen, Old Babylonian Empire, First Sealand dynasty, Hyksos, Land of Punt, Sukkalmah dynasty y Hammurabi, y se verificaron QIDs y coordenadas en Wikidata. Propuestos solo objetos de peso 3. Descartados por peso (1–2): Uruk (Q168518, reino independiente hasta hacia 1800 a.C., reino rebelde de Rîm-Anum hacia 1742 y despoblación tras Samsu-iluna; en esta ventana es secundaria frente a Ur), Punt (Q282350, coords 9,5 N / 48 E dentro de la zona; socio comercial de Egipto con expediciones de Senusret I, Amenemhat II, Amenemhat IV y Hatshepsut, pero sin estructura política documentada), Qal'at al-Bahrain (Q740104, capital de Dilmún), Dholavira (Q9468, ocupada hasta hacia 1450 a.C.), Lothal (Q9443), Rakhigarhi (Q3418050), culturas del Cementerio H (Q2364797), Wadi Suq (Q48802879) y Cerámica Ocre (Q2663163). Relaciones de peso 2 no incluidas: comercio Dilmún–Babilonia y comercio Egipto–Punt. No se propone la dinastía sukkalmah de Elam (Q16611086, hacia 1900–1500 a.C.) ni el Imperio paleobabilónico (Q733897) por solaparse con las entidades Elam y Babilonia ya presentes; si el visor modela dinastías por separado (como hace con Egipto), la sukkalmah sería candidata a peso 3. Eventos: no existe ítem de Wikidata para el asedio de Sharuhen, la victoria de Hammurabi sobre Elam ni el saqueo de Ur de Samsu-iluna, así que se han codificado como relaciones; Sharuhen (Q1548392) tiene coordenadas dentro de la zona pero duplicaría la ciudad Tell el-Far'ah (Sur) ya presente. Fuera de la zona por muy poco: Babilonia (32,54 N), Kish y Sippar (latitud), Kerma/Kush (30,4 E), Avaris y Tebas (longitud), por lo que el saqueo hitita de Babilonia de 1595 a.C. no se incluye. Advertencia de fechas: Wikipedia mezcla cronología media (Sealand 1732–1475, Hammurabi 1792–1750) y corta (saqueo de Babilonia 1531, casitas desde entonces); se ha usado la media, coherente con las entidades ya cargadas. Babilonia (Q47690) se usa en las dos relaciones como la entidad Babilonia en sentido amplio; si en el visor Q47690 solo representa la I dinastía amorrea, el tramo 1595–1460 de la relación con el País del Mar debería reasignarse a Q16630263.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "3cd817bdad",
+  "bbox": [
+   79.33,
+   5.0,
+   125.0,
+   32.5
+  ],
+  "corte": "-1600",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 0,
+  "descartados": [
+   {
+    "nombre": "Sanxingdui",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona: India oriental y Sri Lanka, Sudeste Asiático continental e insular, y China al sur de 32,5°N (cuenca del Yangtsé y Sichuan). Único objeto que alcanza peso 3 en vista lejana: Sanxingdui (Q929072, 30,99°N 104,20°E), cuya ciudad amurallada se data por radiocarbono hacia 1600 a.C. y que las fuentes identifican como capital del reino de Shu; la fase de esplendor de sus bronces es posterior (s. XII–XI a.C.), pero la fundación cae dentro de la ventana y una capital cumple el criterio de peso 3. Se fija 'hasta' en -1150 según la cronología de Wikipedia (c. 1700–1150 a.C. para el yacimiento). No se propone relación Sanxingdui–Shang: las fuentes leídas hablan de contemporaneidad y de una metalurgia distinta, pero no documentan un contacto datado dentro de la ventana -1800/-1475. Descartados por quedar fuera de la zona: cultura de Erlitou / Xia (yacimiento a 34,7°N, extensión meridional documentada solo hasta Hubei, al norte de 32,5°N). Descartados por no llegar al umbral de peso 3 (culturas aldeanas sin estados ni ciudades grandes): Ban Chiang (Tailandia, bronce desde c. 2000 a.C. según una cronología, c. 1000 a.C. según Higham; cronología disputada), cultura Phùng Nguyên (Vietnam, c. 2000–1500 a.C.), cultura de la Cerámica Ocre / tesoros de cobre (Ganges, c. 2000–1500 a.C.; apenas roza el borde occidental de la zona hacia 79,5°E). Nada localizado en Sri Lanka, Filipinas ni Indonesia con documentación de estados o ciudades en la ventana.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
