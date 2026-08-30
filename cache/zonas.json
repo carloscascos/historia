@@ -3225,5 +3225,27 @@
   "descartados": [],
   "nota": "Zona = China meridional (Sichuan, Yangtsé medio y bajo, Fujian, Guangdong, Guangxi), Taiwán, Hainan y norte de Vietnam. Revisado vía API de Wikidata (coordenadas P625, fechas) y extractos de Wikipedia en/es/zh. Incluido: Chu (Q504759, coordenada Wikidata 30.42N 112.17E dentro de la zona; la tradición lo funda bajo el rey Cheng, 1042–1021 a.C.; ojo: Wikidata pone 'inicio -722', descuadre con Wikipedia que se deja constar), tumba de Dayangzhou (c. 1200 a.C.) y tres relaciones entre objetos ya existentes. Descartados: antiguo reino de Shu (Q1193806) porque su coordenada en Wikidata es 33.05N 106.99E, fuera de la zona por medio grado, aunque Sanxingdui/Jinsha ya lo representan; Ba (Q950756), Yue (Q1137403), cultura Đồng Đậu (Q8079980, c. 1500–1000 a.C.), Gò Mun (Q1533344), cultura Beinan de Taiwán (Q24841396), culturas de Hushu (Q10394913), Maqiao (Q13859415) y Fubin (Q11149443): todas sin coordenadas P625 en Wikidata, así que no se pueden situar; Wu (Q912068): su fundación por Taibo hacia 1150 a.C. es un mito fundacional que la propia Wikipedia da por disputado y Wikidata fecha su inicio en el siglo IX a.C., sin existencia documentada en la ventana; Panlongcheng (Q217684): abandonado al final de Erligang (c. 1300 a.C.), antes de la ventana; yacimiento de Shi'erqiao (Q17022034): sí cae en la ventana y en la zona, pero está a 3 km de Jinsha y sería peso 1, por debajo del umbral. Yunnan (Haimenkou) queda fuera por longitud. No se ha encontrado ninguna batalla ni ruta datada en la zona en esta ventana.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "88f358fb38",
+  "bbox": [
+   79.33,
+   46.25,
+   102.16,
+   60.0
+  ],
+  "corte": "-1200",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 4,
+  "descartados": [
+   {
+    "nombre": "Cultura de Karasuk",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = sur de Siberia (Altái, cuenca de Minusinsk/Jakasia, Tuvá, Ob medio, Krasnoyarsk) y franja noroeste de Mongolia (Khövsgöl). Sin estados ni ciudades en la ventana: todo son culturas arqueológicas. ADVERTENCIAS: (1) Q129282 (Karasuk) NO tiene coordenadas P625 en Wikidata; se propone igualmente porque es la cultura principal de la zona en 1200 a.C. y porque Andrónovo (Q459376, P625 en 55.7E, fuera de este recuadro) ya figura como existente aquí, lo que indica que el visor no usa P625 para entidades; si sí lo usa, descartar. (2) Las fechas de Karasuk descuadran entre fuentes: Wikipedia (en, es) da 1500–800 a.C.; EBSCO da 1250–700 a.C. Se usa la de Wikipedia; causa de la diferencia desconocida (probable distinta periodización, HIPÓTESIS SIN VERIFICAR). (3) Q176824 es el ítem de 'piedra de ciervo' (monumento) al que enlaza también el artículo 'Deer stones culture'; sus coordenadas (47.75N, 101.37E, Uushigiin Övör, junto a Mörön) caen dentro del recuadro. Wikipedia da 1400–700 o 1300–700 a.C. para las estelas y 1200–700 para el complejo con khirigsuur; se usa 1300. (4) El vínculo Karasuk→Shang lo afirma Wikipedia con rotundidad ('numerosos bronces de modelo Karasuk en Anyang') y EBSCO solo como 'posible'; se mantiene con peso 2. DESCARTADOS: cultura Irmen Q765074 (siglos IX–VIII a.C., fuera de ventana, y sin P625); Begazy-Dandybai Q814276 (1500–1100 a.C. pero núcleo en Kazajistán central, al oeste del recuadro, sin P625); Tagar Q2005344 (desde 750 a.C.); khirigsuur Q4219542 (sin fechas ni coordenadas en Wikidata, ya cubierto por la entidad de piedras de ciervo); depresión de Minusinsk Q730295 (accidente geográfico, no objeto histórico); sitio Uushigiin Övör (sin ítem propio en Wikidata; el ítem UNESCO Q66133349 es la declaración de Patrimonio Mundial, no un asentamiento); Petroglifos de Shalobolino Q4519615 (sin datación clara en la ventana, y peso 1). No se han encontrado asentamientos Karasuk con artículo en Wikidata. Britannica y UNESCO devolvieron HTTP 403 y no pudieron leerse.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
