@@ -3305,5 +3305,39 @@
   ],
   "nota": "Zona = norte de China (Shaanxi, Shanxi, Henan norte, Hebei, Shandong, Pekín, Liaoning, Mongolia Interior sur) más el borde oriental de Gansu; Corea queda casi toda al este de 125°. Verificado cada QID y sus coordenadas (P625) en Wikidata. AVISOS de coordenadas: Batalla de Muye (Q1273506) no tiene P625 propio; su lugar (P276) es Muye Q1198636, con coordenadas 35.32N 113.90E, dentro de la zona. Zhou occidental no tiene P625 pero su capital (P36) es Fenghao Q275515, ya en el visor. Zhou predinástico, Guifang, Siwa, Xindian, Lu, Jin, Yan y Song no tienen P625 en Wikidata (Lu→capital Qufu Q210287 35.60N 116.98E; Song→P36 Q1198957; Yan→P36 Q1740592 Liulihe); si el visor exige P625 en el propio ítem, esos objetos no se podrán situar automáticamente. Zhouyuan (Q198067) solo tiene artículo en Wikipedia en chino. DESCARTADOS: Rebelión de los Tres Guardias (Q7797508, h. 1040 a.C.) porque su único lugar en Wikidata es 'China' sin coordenadas; Xiajiadian superior (Q1075080) porque Wikidata y Wikipedia lo inician en 1000 a.C., justo en el borde de la ventana (corresponde al corte siguiente); Xiajiadian inferior (Q1041674) porque termina h. 1600 a.C.; Sanxingdui (30.99N) queda al sur de la zona; Karasuk (Siberia) y Mumun (Corea, lon >125) fuera de la zona; Wey (Q1147897) y otros feudos menores por debajo del umbral; Dongyi (Q333910) sin coordenadas y de definición demasiado vaga para proponer la relación Shang–Dongyi, aunque la campaña Shang contra ellos precede a Muye. Personas (Wu Ding, Fu Hao, Jiang Ziya, rey Wu) no son tipo admitido.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "b5e0d8c87a",
+  "bbox": [
+   79.33,
+   32.5,
+   102.16,
+   46.25
+  ],
+  "corte": "-1200",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 2,
+  "descartados": [
+   {
+    "nombre": "Cultura de Tianshanbeilu (Hami)",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Nuomuhong",
+    "motivo": "QID no existe en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Xindian",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Karasuk",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = Xinjiang, Dzungaria, corredor de Hexi occidental, Qinghai, norte del Tíbet y Altái mongol meridional. No hay estados ni ciudades con QID en la ventana; solo culturas arqueológicas. ADVERTENCIA de coordenadas: Tianshanbeilu (Q11107150), Xindian (Q2598279) y Karasuk (Q129282) NO tienen P625 en Wikidata; se proponen porque el visor ya admite entidades sin coordenadas (nurágica, védica). Xindian cae a caballo del borde este (su núcleo del río Tao, ~103,9°E, queda fuera; la parte del Huangshui, dentro) y Karasuk solo toca la zona por el Altái/Tian Shan; el visor deberá decidir si los ubica aquí. Descartados: Kayue (Q1737460; Wikipedia en/zh lo data 900–600 a.C., fuera de ventana, aunque otras periodizaciones lo remontan a 1600 a.C. — HIPÓTESIS SIN VERIFICAR en Wikipedia); Xiaohe/momias del Tarim (Q179220/Q2002185; la ocupación datada por radiocarbono es 2100–1500 a.C., Wikipedia da un genérico 2000–1000 sin sustentar la fase tardía); ciervos de piedra y khirigsuur (Q176824, 1400–700 a.C., pero las coordenadas de Wikidata están a 47,7°N, fuera de la zona); Siwa (Q285605, 1350–650 a.C., sureste de Gansu ~104–106°E, fuera); Shajing (Q2276473, 103,09°E, fuera y posterior); Siba (Q33204333, termina 1500 a.C.); Begazy-Dandybai (Q814276, Kazajistán central ~48°N, fuera); Chawuhu (Q120266397, sin artículo, coordenadas ni fechas en Wikidata; ~1000–400 a.C.); Subeshi (Q123144527, Edad del Hierro); Chemurchek (anterior a la ventana). No se propone relación Andrónovo→Shang por el carro: el artículo Chariot de Wikipedia data la primera evidencia china en Wu Ding (c. 1250 a.C.) pero no documenta la ruta de transmisión. Nuomuhong y Yanbulaq (Q1326128, Q2599315, Wikidata en zona) no existen en Wikipedia es; Yanbulaq solo solapa el último siglo de la ventana.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
