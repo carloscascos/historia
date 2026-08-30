@@ -4803,5 +4803,35 @@
   "descartados": [],
   "nota": "La zona no incluye Cantabria: el bbox cubre el norte de A Coruña y Lugo, más Asturias hasta Cangas de Onís. Barrido completo de Wikidata por bbox (yacimientos arqueológicos, cuevas, dólmenes, túmulos, menhires, minas, y todo ítem con fecha a.C.): el inventario con QID en la zona es muy corto y casi todo cae fuera de la ventana. DESCARTADOS POR CRONOLOGÍA: Monte Areo (Q5412414 / Q125925921), la mayor necrópolis de Asturias, cuya vigencia el C14 sitúa entre los últimos siglos del IV y los comienzos del III milenio, es decir antes de -2750; dolmen de Merillés (Q106832772) y de Baradal (Q106834280), datados en IV-III milenio sin precisión que permita afirmar uso en la ventana; dolmen de La Cobertoria de Salas, con cinco fases constructivas radiocarbónicas entre 4000 y 3500 a.C. (y sin QID); cueva de los Azules (Q5794231), Aziliense (~9500 a.C.); poblado calcolítico de Monte Alto (Oviedo), C14 en 1886-1737 a.C., posterior a la ventana. DESCARTADO POR FALTA DE QID, y es la exclusión que más distorsiona el resultado: las minas prehistóricas de cobre de la Sierra del Aramo (Texeo, Riosa) y de El Milagro (Onís), cuyas dataciones por radiocarbono sobre utillaje de asta y hueso las sitúan en la SEGUNDA MITAD DEL III MILENIO a.C. — plena ventana, y probablemente el hecho más relevante de esta zona en este corte, ya que están entre las explotaciones cupríferas más antiguas de Europa. Ninguna de las dos tiene artículo en Wikipedia ni ítem en Wikidata, por lo que la regla 2 obliga a omitirlas; el visor queda por tanto sin representar la minería del cobre asturiana. NO PROPUESTA COMO RELACIÓN, por faltar QID en uno de los extremos: Blas Cortina y Corretgé (Trabajos de Prehistoria 58/2, 2001) documentan una concentración de útiles-arma perforados de cianita en túmulos de A Coruña y el oeste de Lugo —dentro de la zona— fechados «acaso poco antes del 2600-2400 cal AC», con un ejemplar importado hasta Marabiu (Teverga, Asturias central); es una circulación de objetos de prestigio real y datada en ventana, pero no enlaza dos entidades del visor. El Dolmen de Santa Cruz se propone con peso 1 y reservas explícitas: la ficha oficial del Principado dice «III milenio a.C.» sin fases, mientras Wikipedia da ~3000 a.C., que quedaría fuera; el solapamiento con la ventana es plausible pero no está demostrado.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "ef7d135ee9",
+  "bbox": [
+   28.57,
+   10.17,
+   40.03,
+   22.94
+  ],
+  "corte": "-2500",
+  "lod": 1,
+  "fecha": "2026-08-31",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 4,
+  "descartados": [
+   {
+    "nombre": "Kerma",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Reino de Kerma (Kerma Antiguo)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Buhen",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "La zona cubre el valle del Nilo nubio (Sudán/sur de Egipto) en su mitad norte y las tierras altas de Etiopía-Eritrea y el Sudán oriental en la mitad sur. Casi todo lo aceptado es nubio: Kerma en su fase antigua (2500-2000 a.C.), Saï como segundo núcleo del reino, y dos huellas del Imperio Antiguo egipcio en la Baja Nubia (Buhen y las canteras de Gebel el-Asr), ambas activas en la ventana.\n\nDESCARTES POR FECHA: la mayoría de yacimientos con coordenadas dentro del recuadro son mucho más tardíos — Meroe, las pirámides de Meroe, Napata, Jebel Barkal, Musawarat, Sedeinga (kushitas, I milenio a.C.); Abu Simbel, Amada, Ellesyia, Faras, Askut, Uronarti, Kumma (Imperio Medio y Nuevo); Old Dongola y Qasr al-Wizz (cristianos). Aviso: Wikidata fecha Meroe (Q5780) en -2500/-1500; **eso es erróneo** — la Wikipedia y la bibliografía sitúan su fundación como capital hacia 591 a.C. No lo he propuesto.\n\nDESCARTES POR FALTA DE COORDENADAS EN WIKIDATA: la cultura del Grupo C de la Baja Nubia (Q1022291, iniciada c. 2400/2200 a.C.) y el Grupo Gash del Sudán oriental (Q84088970, c. 3000-1800 a.C., con Mahal Teglinos junto a Kassala) sí existen en la ventana y son relevantes, pero sus ítems de Wikidata no llevan P625, así que no puedo situarlos. Merecerían entrar si alguien añade coordenadas.\n\nMITAD SUR VACÍA: en Etiopía y Eritrea no he encontrado nada documentado en 2750-2250 a.C. La bibliografía sitúa las primeras sociedades complejas del Cuerno de África en el II-I milenio a.C. (Ona, Matara, preaksumita); es un hueco real de la investigación, no de mi búsqueda. Tampoco he propuesto la tierra de Punt (destino de la expedición de Sahure, c. 2470 a.C.): su localización sigue siendo objeto de debate y no tiene coordenadas fijas. Mersa Gawasis, el puerto del mar Rojo asociado, cae fuera del recuadro (≈26,5 N).\n\nLas canteras de Kefrén tienen ítem en Wikidata con coordenadas pero solo enlace a Commons, no a Wikipedia; las incluyo con peso 1 porque el nivel de detalle es de vista cercana, pero si el visor exige artículo de Wikipedia habría que quitarlas.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
