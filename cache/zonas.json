@@ -4115,5 +4115,22 @@
   ],
   "nota": "Zona = Altái-Sayán, cuenca de Minusinsk (alto Yeniséi), alto Obi y noroeste de Mongolia. AVISO SOBRE COORDENADAS, que afecta a la regla 2: ninguna de las cuatro entidades propuestas tiene P625 en Wikidata (Okúnev solo tiene P276 = Siberia, Q5428, cuyo punto 60N/105E cae FUERA de la zona; Seima-Turbino y Elunino no tienen ninguna; solo Karakol tiene coordenada propia, 50.773N/86.464E, dentro de la zona). No es un defecto de estas propuestas sino del criterio: de los objetos que YA están en el visor, Andrónovo (Q459376) tiene P625 en 55.88N/55.70E — los Urales, a más de 2.000 km al oeste de esta zona — y Cultura nurágica y Campaniforme no tienen P625 en absoluto. Es decir, el visor ya coloca culturas sin usar su coordenada de Wikidata; si el pipeline exige P625 y descarta lo que no lo tiene, esta zona se quedará vacía salvo Karakol, y eso sería un artefacto del método, no un vacío histórico. No sé cómo resuelve el visor la posición de esas culturas: causa desconocida, no la he inspeccionado. DESCARTADOS: Chemurchek (Q18573560, 2750-1900 a.C.) encaja en ventana y es la cultura megalítica clave del Altái mongol, pero su P625 está en 46.128N/91.687E, 0.12 grados al SUR del borde de la zona — queda fuera por muy poco y debería aparecer en la zona contigua del sur. Munkhkhairkhan (Q124077889) se data 1800-1600 a.C.: empieza justo donde acaba la ventana. Afanasievo termina hacia 2500 a.C., antes de la ventana. Cultura de Samus (Q2219081, hacia 2000 a.C.) es del Tomsk-Narym y curso medio del Irtish, al noroeste de la zona, y sin coordenada. Karasuk y Tagar son posteriores. No he encontrado ninguna ciudad ni evento datado con coordenadas que alcance el umbral: en esta región y ventana no hay urbanismo ni hechos fechados individualmente — los yacimientos Okúnev citados (Tas-Jazaá, Chernovaya VIII, Uibat) son necrópolis sin artículo propio de Wikidata que haya podido verificar.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "320188fd82",
+  "bbox": [
+   -19.49,
+   27.08,
+   -12.78,
+   30.11
+  ],
+  "corte": "-2000",
+  "lod": 0,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 0,
+  "descartados": [],
+  "nota": "La zona (-19,49 a -12,78 lon; 27,08 a 30,11 lat) cubre el litoral atlántico del sur de Marruecos y norte del Sáhara Occidental —franja de Tarfaya/Cabo Juby, El Aaiún, hasta cerca de Cabo Bojador— más el brazo de mar hacia las islas Canarias orientales; el extremo occidental roza Lanzarote y Fuerteventura. Se ha mirado y descartado lo siguiente. (1) Canarias: no hay ocupación humana en la ventana. La evidencia genómica y las dataciones actuales sitúan la colonización de Lanzarote hacia 70-240 d.C. y de Fuerteventura hacia 270-525 d.C.; las cronologías alternativas más antiguas que circulan (s. X o VI a.C.) siguen siendo propuestas discutidas, y aun aceptándolas quedarían más de ochocientos años fuera del corte. Ningún objeto canario es proponible. (2) Costa de Tarfaya / Cabo Juby: sí existe ocupación humana holocena documentada —concheros (amas coquilliers) con industria lítica y cerámica, y una secuencia de ocupación de unos tres milenios—, pero la datación publicada del gran conchero al sur de Tarfaya es de 3300 ± 100 BP (hacia 1350 a.C.), posterior a la ventana, y ninguno de esos yacimientos tiene artículo de Wikidata con coordenadas propias, así que no hay QID que proponer. (3) Arte rupestre del Sáhara Occidental (Asli Bukerch, Mekeiteb, Uaad Seluan, Lekcheiuat, Echbeica): los conjuntos citados se concentran en el interior, alrededor de Smara, fuera de la zona por el este, y su datación es amplia (5000 a.C. – 400 d.C.) sin acotación a 2250-1800 a.C.; tampoco tienen QID individual con coordenadas. (4) Culturas arqueológicas: no se ha encontrado ninguna cultura o entidad con QID cuya definición territorial cubra específicamente este sector atlántico sahariano en la ventana. Los hallazgos recientes de la Edad del Bronce marroquí que sí caen en 2200-2000 a.C. —Kach Kouch y los conjuntos funerarios de la península de Tánger— están unos 1.200 km al norte, muy fuera de la zona. Conclusión: hay presencia humana real en la franja costera, pero nada documentado dentro de la ventana con QID y coordenadas dentro de la zona; se devuelve lista vacía en lugar de forzar un objeto mal datado o mal situado.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
