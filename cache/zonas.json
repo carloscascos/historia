@@ -1150,5 +1150,22 @@
   ],
   "nota": "Zona: Nilo egipcio (hasta 32,5° N, incluye Menfis, Heliópolis, Guiza y el Alto Egipto), Nubia, Sudán, Sáhara, Sahel y África occidental. Solo dos objetos alcanzan peso 3. (1) Gran Pirámide: Wikipedia da 'hacia 2600 a.C.' y Wikidata 'hacia 2560 a.C.'; se toma el valor de Wikidata. (2) Kerma: Wikidata Q1739282 tiene coordenadas dentro de la zona (19,6° N, 30,4° E) pero fija el inicio en 3500 a.C. (fase Pre-Kerma); se usa 2500 a.C., inicio del Kerma Antiguo según Wikipedia (en). Aviso: en esta ventana Kerma es 'una pequeña aldea fortificada recién fundada', no un estado; el peso 3 corresponde al objeto en su conjunto (reino hasta 1500 a.C.), no a su relevancia en 2500 a.C. Wikipedia (es) usa una periodización distinta (Kerma Antiguo hacia 2000 a.C.); las dos fuentes descuadran en las fechas de fase. DESCARTADOS por peso 2 o inferior: cultura del Grupo C (Q1022291, Baja Nubia, 2400–1550 a.C., cultura arqueológica sin estado); Buhen (Q1002656, factoría de cobre egipcia de la IV–V dinastía, hacia 2600–2400 a.C.); Elefantina (Q284009, puesto fronterizo y escala del comercio de marfil; ciudad de rango medio); Abidos no se ha verificado en esta pasada. DESCARTADOS por fuera de zona o ventana: País de Punt (Q282350, Wikidata lo sitúa en 9,5° N 48° E, fuera de la zona; primera expedición documentada bajo Sahure, s. XXV a.C.); tradición de Tichitt (Mauritania, empieza hacia 2200 a.C., posterior a la ventana). RELACIONES no propuestas: comercio Egipto Imperio Antiguo ↔ Nubia (expediciones de Harkhuf a Yam, hacia 2270 a.C.) y las razias de Seneferu en Nubia y Libia (hacia 2600 a.C., 7.000 y 11.000 cautivos según la Piedra de Palermo) están documentadas, pero la contraparte (Grupo A disperso, libios) no existe como entidad en el visor y ninguna alcanza el umbral de 'guerra mayor' a vista lejana; las razias tampoco tienen QID con coordenadas para proponerse como evento.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "327547faac",
+  "bbox": [
+   79.33,
+   5.0,
+   125.0,
+   32.5
+  ],
+  "corte": "-2500",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 2,
+  "descartados": [],
+  "nota": "Zona = sur/centro de China, Indochina, costa oriental de la India, Sri Lanka, Filipinas y Borneo norte. Para 2750–2250 a.C. lo único que alcanza el umbral de vista lejana (peso 3) es Liangzhu (cultura Q1204909, coords Wikidata 30.40N 119.99E; ciudad Q15904183, 30.40N 119.99E), ambos dentro de la zona y ocupados hasta ~2300 a.C. No propongo un evento 'colapso de Liangzhu' (~2300 a.C., inundaciones) porque no tiene ítem propio en Wikidata. Descartados por peso 2: cultura Shijiahe (Q125936, 2500–2000 a.C., centro amurallado de 120 ha en Hubei; el ítem de la cultura no tiene coordenadas en Wikidata, el yacimiento Q97300857 sí, 30.78N 113.08E) y cultura Baodun (Q807064, 2700–1700 a.C., llanura de Chengdu, recintos hasta 245 ha) — ambas son jefaturas/proto-estados regionales, visibles en vista media pero no en la lejana. Longshan queda fuera de la zona (centro en Shandong/Henan, lat >32.5). Ninguna ciudad del valle del Indo cae al este de 79.33E. Sudeste asiático, India oriental, Sri Lanka, Taiwán y Filipinas están en Neolítico o Mesolítico sin estados ni ciudades en la ventana (peso 1). No hay guerras documentadas. No se proponen relaciones: ninguna entidad ya presente en el visor cae en esta zona y no hay vínculo documentado entre Liangzhu y las que están listadas.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
