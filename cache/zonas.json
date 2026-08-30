@@ -792,5 +792,31 @@
   ],
   "nota": "Revisado: Egeo, Anatolia occidental, Chipre y Europa central/septentrional en Wikidata (QID, P625, P580/P582) y Wikipedia en/es. Descartados por caer FUERA de la zona (límite este 33,67°E): Hattusa Q181007 (34,62°E) y todo el Levante/Siria (Yamhad Q617218 a 37,15°E, Alalakh, Biblos, Kanesh); por eso no se propone el saqueo hitita de Alepo ni el de Babilonia (hacia 1595 a.C.). Descartados por peso < 3 en vista lejana: cultura de Wessex Q719139 (solo sur de Britania), terramaras Q1410539 (valle del Po), Festo/Malia, disco de Nebra, campaña de Hattusili I contra Arzawa, comercio minoico-egipcio (Keftiu/Tell el-Dab'a). Descartado por fecha: conquista micénica de Cnosos (hacia 1450 a.C., posterior a la ventana). ADVERTENCIAS: (1) Las tres culturas centroeuropeas/nórdicas NO tienen coordenadas (P625) en Wikidata, igual que la civilización micénica ya cargada; si el visor exige P625 para situarlas, no se pueden colocar automáticamente. (2) Darles peso 3 es un juicio: no son estados sino culturas arqueológicas macrorregionales; se propone por coherencia con El Argar y la cultura nurágica ya presentes, pero si el criterio del visor es 'solo estados', quitarlas. (3) La fecha de la erupción minoica es un descuadre abierto entre radiocarbono (h. 1620) y arqueología (1550–1480); se usa -1600 como valor de Wikidata (P585).",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "3c30c814ca",
+  "bbox": [
+   33.67,
+   32.5,
+   79.33,
+   60.0
+  ],
+  "corte": "-1600",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 5,
+  "descartados": [
+   {
+    "nombre": "Cultura de Srubna (tumbas de madera)",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Babilonia: dinastía casita",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona: Anatolia central-oriental, Cáucaso, Mesopotamia norte y Babilonia (32,54 N, justo dentro), Irán norte, Asia Central y estepa hasta los Urales. Verificado en Wikidata: Kültepe Q538605 (38,85 N / 35,63 E) y BMAC Q1054850 (37,30 N / 64,16 E) caen dentro de la zona. Q1470165 (Srubna) y Q16630263 (dinastía casita) NO tienen P625 en Wikidata; se proponen porque el visor ya admite entidades sin coordenadas (la cultura nurágica Q1421436 tampoco las tiene). Descuadres de fechas que se dejan a la vista: Srubna empieza hacia 1900 a.C. según en.wiki pero Wikidata pone -1600 y es.wiki 'siglos XVI-IX'; BMAC termina en 1700 (en.wiki, Wikidata) o 1600 (es.wiki); Kültepe nivel Ib acaba en 1740 (Kültepe) o 1719 (Old Assyrian period); la dinastía casita empieza en 1595 (Wikidata, en.wiki), 1550 (es.wiki) o 1531 (cronología corta). EVENTO 'saqueo de Babilonia por Mursili I' (hacia 1595): no existe ítem de Wikidata (las búsquedas 'Sack of Babylon', 'Hittite sack of Babylon' y 'Saqueo de Babilonia' devuelven vacío; Q16534553 'Fall of Babylon' es una obra de arte de 1277 y Q28169617 es la caída de 539 a.C.), por lo que se registra solo como relación de conflicto Hatti–Babilonia. Descartados por debajo del umbral (peso 2): cultura de Trialeti-Vanadzor Q169320 (Cáucaso sur, 2200-1500, sin P625), Gonur Depe Q3110595 (capital del BMAC, 55 ha, 2400-1600; queda representada por la entidad BMAC), Kussara Q372292 (reino de Pithana y Anitta, ubicación desconocida). Descartados por quedar fuera de la ventana: cultura de Sintashta Q656393 (2200-1900/1750, ya sucedida por Andrónovo que está en el visor), fenómeno Seima-Turbino Q2409967 (2300/2200-1700 según fuente, sin P625). Gran parte de la zona (Irán norte, Kazajistán central, Rusia europea al norte de 50 N) no tiene estados ni ciudades grandes documentados en la ventana más allá de las culturas de Andrónovo y Srubna.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
