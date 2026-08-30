@@ -3074,5 +3074,27 @@
   ],
   "nota": "Zona = Irán oriental (Kerman, Sistán), costa de Omán, Baluchistán, Sind, Panyab, Gujarat, Rajastán, Malwa, Haryana/Delhi y norte de Maharashtra; ventana 1275–1000 a.C. Se han comprobado QID, coordenadas (P625) y fechas en Wikidata y leído los artículos de Wikipedia (en). AVISO: las dos culturas arqueológicas propuestas (Q2525293, Q48728694) no tienen P625 en Wikidata; su extensión documentada (Ghaggar–Ganges occidental; Maharashtra–Malwa) cae en la zona, pero el visor no podrá tomar coordenadas de Wikidata para ellas. La cultura de Jorwe solo entra parcialmente: su mitad sur (Inamgaon, lat 18,6) queda fuera. Kuru y Hastinapura solapan con la ya existente 'Cultura védica temprana'; se proponen porque son el estado y la ciudad concretos, no la cultura. DESCARTADOS: Cultura del Cementerio H (Q2364797, 1900–1300 a.C.) y fase Harappa tardía en general (terminan ~1300, antes de la ventana); cultura de Malwa (Q48728691, 1600–1300 a.C.); Wadi Suq en Omán (Q48802879, 2000–1300 a.C.) y el Hierro I omaní 1300–1000 (sin ítem de Wikidata; Lizq Q48792334 es Hierro II y sin coordenadas); Panchala (Q558603: Wikidata lo inicia en -900, Wikipedia 'c. 1100', demasiado dudoso para la ventana); Batalla de los Diez Reyes (Q513097, datada ~1400 a.C., fuera de ventana y sin coordenadas); Pirak (Q4363252, 29.44N 67.84E, ocupado 1800–800 a.C., pero es un yacimiento de peso 1, por debajo del umbral); Bhagwanpura, Rojdi, Mundigak y Tepe Yahya (peso 1 o sin ocupación documentada en la ventana); Cultura de los tesoros del cobre y Cerámica ocre (Q458076, Q2663163, datación 2000–1500 a.C., sin fechas en Wikidata). No se propone relación Andrónovo→védica: la migración indoaria que la justificaría se sitúa antes de 1400 a.C. y es hipótesis, no hecho datado en la ventana. No hay estados, batallas ni rutas documentadas en Irán oriental, Baluchistán, Sind ni Omán en este periodo.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "d102f0e2b3",
+  "bbox": [
+   79.33,
+   5.0,
+   102.16,
+   18.75
+  ],
+  "corte": "-1200",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 0,
+  "descartados": [
+   {
+    "nombre": "Non Pa Wai (valle de Khao Wong Prachan)",
+    "motivo": "QID no existe en Wikidata"
+   }
+  ],
+  "nota": "Zona = Sudeste Asiático continental occidental (Tailandia central y peninsular, sur de Birmania, norte de Malasia, oeste de Camboya/Laos), Sri Lanka, costa oriental india (Tamil Nadu/Andhra al este de 79.33°) y Andamán. Único objeto que alcanza el umbral: Non Pa Wai (14.97N, 100.68E), con ocupación neolítica desde c. 2000 a.C. y enterramientos fundacionales de la Edad del Bronce datados c. 1200–800 a.C. (KDE de ~100 fechas AMS, Higham et al. 2020); el cobre del valle aparece en Ban Chiang c. 1025–935 a.C. y en Birmania c. 1000 a.C. Nota de descuadre: la Wikipedia alemana sigue dando 'c. 1500 a.C.' para el inicio del cobre (cronología larga de Pigott 1997), mientras Rispoli et al. 2013 y Higham 2020 lo sitúan a finales del II milenio; en cualquiera de las dos el sitio está activo en la ventana. Descartados: Nil Kham Haeng (Q1663736, sin coordenadas en Wikidata y con la producción principal posterior a 1100/500 a.C. según la fuente); valle de Khao Wong Prachan (Q1254413) por redundante con Non Pa Wai; Ban Non Wat (102.27E) y Non Nok Tha (102.26E) quedan fuera de la zona por escasas centésimas de grado, y Ban Chiang (103.2E) claramente fuera; Khok Phanom Di (2000–1500 a.C.) y Ban Kao (neolítico tardío, cronología imprecisa) sin ocupación documentada en la ventana al nivel requerido; Sri Lanka sin nada documentado entre 1300 y 1000 a.C. (Anuradhapura 'antes de 900 a.C.', Edad del Hierro desde c. 1000 a.C., fuera de ventana); sur de Birmania y norte de Malasia sin yacimientos de bronce de esta época (el bronce birmano —Nyaunggan, Samon— está al norte de 18.75N); costa india oriental dentro de la zona sin yacimientos de la Edad del Hierro megalítica con QID y fecha segura en la ventana (Adichanallur y Hallur, c. 1200–1000 a.C., quedan al oeste de 79.33E). No propongo relación de transmisión Shang→Tailandia: la tesis de Higham de que la metalurgia del estaño-bronce llegó desde el sur de China hacia 1100–1000 a.C. es una hipótesis académica en debate (frente a la cronología larga de White/Ban Chiang), no un vínculo documentado, y en todo caso sería peso 1.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
