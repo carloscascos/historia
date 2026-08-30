@@ -2457,5 +2457,75 @@
   ],
   "nota": "Zona: Islas Británicas, Francia al norte del Loira, Benelux, Alemania occidental, Suiza, Dinamarca y sur de Escandinavia. No hay ciudades ni estados en la ventana: todo son culturas arqueológicas, un centro minero y hallazgos datados. Avisos: (1) Ninguna de las cinco entidades tiene P625 en Wikidata (igual que las culturas ya presentes en el visor); la ubicación tendrá que resolverse por extensión. (2) Únětice cae mayoritariamente al este de 10.84°E (Bohemia, Sajonia-Anhalt, Silesia); solo su franja occidental en Turingia/Baja Sajonia toca la zona; se propone con peso 2 por sus vínculos con Wessex y su continuidad en la cultura de los túmulos. (3) Great Orme es un complejo minero, no un asentamiento; se propone como 'ciudad' por ser el único tipo admitido con coordenadas puntuales y ocupación continua; retirar si el tipo no encaja. (4) El barco de Dover (Q1252872) no tiene P625 ni P189; solo P276 = Dover Museum (Q5302509), en Dover, dentro de la zona; si el visor no resuelve por P276 no podrá situarlo. Descartados: disco celeste de Nebra (11.5°E, fuera de la zona por 0.7°); cultura de Hilversum (Q278382, 1870-1050 a.C., Países Bajos/Bélgica) y cultura de Elp, Sögel-Wohlde, Adlerberg, Arbon y grupo de Singen, todas regionales, peso 1; barcos de Ferriby (anteriores a 1800 a.C.); minas de Ross Island (terminan hacia 1900 a.C.); Bush Barrow (hacia 1900 a.C., fuera de ventana); carro solar de Trundholm y Flag Fen (posteriores a 1475 a.C.). No se ha propuesto relación Bronce nórdico–Micenas porque Wikipedia la sitúa a partir de 1500 a.C., casi fuera de la ventana.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "274fa69cb0",
+  "bbox": [
+   10.84,
+   32.5,
+   33.67,
+   46.25
+  ],
+  "corte": "-1600",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 10,
+  "descartados": [
+   {
+    "nombre": "Micenas",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Troya (Troya VI)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Tirinto",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Mileto",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Cultura de las Terramaras",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Polada",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Capo Graziano",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Castelluccio",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Cetina",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Vatin",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Monteoru",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Tei",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Wietenberg",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = Mediterráneo central y oriental (Italia, Sicilia, Malta, Balcanes hasta 46,25°N, Grecia, Egeo, Creta, Anatolia occidental hasta 33,67°E, costa libia). Verificados QID y coordenadas en Wikidata; fechas leídas en Wikipedia en/es. DESCARTADOS por peso 1 (solo vista cercana): Hagia Triada (Q393632), Lerna (Q1236078), Argos (Q189901), Orcómeno (Q13574822), Limantepe (Q4261739), Yaso (Q279048), Borg in-Nadur (Q2004454, 1500-700 a.C., apenas roza la ventana). DESCARTADOS por falta de documentación en la ventana: Pilos/Palacio de Néstor (Q2047396; el artículo no documenta fases anteriores a 1300 a.C.), Tebas/Cadmea (Q1276854; ocupación fiable solo desde 1400 a.C.), Cultura apenínica (Q2569017; la fase propia es de los siglos XV-XIV, la Protoapenínica no está fechada en la fuente), Cultura de Thapsos (Q3699334; empieza en 1500 a.C., 25 años de solapamiento). SIN QID: Kolonna (Egina), Trianda (Rodas), Ayia Irini (Kea), cultura de Milazzese, cultura de Verbicioara. FUERA DE ZONA: Hattusa, Kültepe, Enkomi (>33,67°E), Avaris y el delta egipcio (<32,5°N); Polada y Terramaras están en el límite oeste (10,84°E) y Wietenberg en el límite norte (46,25°N), solo parcialmente dentro. AVISOS: la datación de Castelluccio está discutida (2200-1800 frente a 1800-1400 a.C.; Thapsos la sucede en 1500, por eso se cierra en -1500); la atribución del incendio de Beycesultan a Hattusili I es una hipótesis de Mellaart, no un hecho. RELACIONES NO PROPUESTAS: Minoica–Ugarit y Minoica–Alasiya (los artículos de Ugarit y Alashiya leídos no documentan contactos cretenses en 1800-1475 a.C.); Micénica–culturas cárpato-balcánicas (espada de Dumbrăvioara, ‘influencia micénica’ en Vatin) por fechas vagas y probablemente posteriores a 1500 a.C. Ningún evento con QID propio cae en la ventana aparte de la erupción de Tera ya presente (la destrucción de los primeros palacios hacia 1700 a.C. y el incendio de Beycesultan no tienen ítem en Wikidata).",
+  "autor": "carlos alvarez-cascos"
  }
 ]
