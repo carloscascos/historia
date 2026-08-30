@@ -866,5 +866,22 @@
   ],
   "nota": "Zona = Norte de África, Sáhara, Nubia y Sahel (Egipto hasta 32,5 N). Se han revisado Wikidata (QID, P625, fechas) y Wikipedia en/es. Umbral peso 3. Incluidos: la batalla del Delta (coordenadas Wikidata 30,9 N 31,12 E, dentro de zona; Wikidata la fecha en 1178, es-wiki 1178/1175, en-wiki ~1175: se da 'hacia 1175'); el Tercer periodo intermedio como continuidad del Estado egipcio a partir de 1069 (la entidad 'Imperio Nuevo' existente termina en -1070 en Wikidata; sin él Egipto desaparecería del mapa en los últimos 70 años de la ventana) — AVISO: Q212728 no tiene coordenadas P625 en Wikidata, igual que la entidad Hatti Q5406 ya presente; si el visor exige P625 hay que descartarlo o usar como alternativa la dinastía XXI (Q748151, tampoco con P625); y la relación de conflicto Egipto–Hatti que cierra con el tratado de 1259 (Qadesh cae fuera de zona, 36,5 E, pero ambas entidades ya están en el visor). DESCARTADOS: Reino de Kush (Q241790) — nace hacia 1070 a.C. en Napata, pero la coordenada de Wikidata es Meroe (17,18 N, 33,83 E), 0,16° fuera del borde este de la zona: excluido por regla 2, conviene revisarlo si la zona vecina no lo recoge. Napata (Q743282, 18,53 N 31,82 E): en la ventana es solo centro religioso egipcio de Amón, peso 2. Guerras libias de Merenptah (Perire, 1208 a.C.) y de Ramsés III (años 5 y 11, ~1182 y ~1176): sin ítem de Wikidata para las batallas; los libu (Q2456520) y mashauash (Q1191083) no tienen coordenadas y como entidad valdrían peso 2, no 3. Pueblos del Mar (Q193850): sin coordenadas y no residentes en la zona; quedan representados por la batalla. Cultura Nok (Q927291, desde 1500), tradición de Tichitt (2200–500) y garamantes (Q839034, desde ~1000): peso 1–2 en vista lejana. Kerma (Q1739282) termina hacia 1500. Punt (Q282350) tiene coordenadas fuera de zona (48 E). Relaciones comerciales Egipto–Ugarit/Alasiya/micénicos: plausibles pero de peso 2, por debajo del umbral.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "922143e19a",
+  "bbox": [
+   79.33,
+   5.0,
+   125.0,
+   32.5
+  ],
+  "corte": "-1200",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 2,
+  "descartados": [],
+  "nota": "Zona revisada: China al sur de 32,5°N (Sichuan, Yangtsé medio y bajo, Hunan, Jiangxi), Sudeste Asiático continental e insular, India oriental/Ganges medio, Nepal, Tíbet meridional, Sri Lanka y Taiwán, ventana 1275–1000 a.C. PROPUESTO (peso 3): Jinsha, centro político sucesor de Sanxingdui (fecha de inicio aproximada: Wikipedia en/zh dan 1200–1250 a.C., Archaeology Magazine sitúa el relevo hacia 1000 a.C.; se usa 1200 con «hacia»); y la cultura de Wucheng, tratada al mismo nivel que Nurágica y Bronce final atlántico ya presentes en el visor — aviso: su peso es discutible (2–3), lo subo a 3 por coherencia con esas dos entidades y por ser una entidad política de primer orden en el sur de China; el corte 1000 a.C. como fin es aproximado (wiki zh: 1700–1000; en: fase inicial c. 1600). DESCARTADOS: (a) Estado de Shu (Q1193806), documentado en la ventana (aliado de Zhou en Muye, 1046 a.C., según el Shujing), pero su coordenada en Wikidata (33,05°N, 107°E) cae FUERA de la zona, así que no se propone; (b) tumba de Dayangzhou (Q400087, c. 1200 a.C.), evento de peso 2; (c) relación 'transmision' Shang (Q128938) → Sanxingdui (Q929072): tecnología de molde por piezas y vasijas zun/lei de estilo Yangtsé datadas en Yinxu medio (1260–1200 a.C.), documentada (Jesus College Cambridge, ScienceDirect), pero peso 2 a esta escala; (d) relación 'comercio' Wucheng ↔ Shang (cobre del sur hacia la llanura central), peso 2; (e) cultura de la cerámica gris pintada (Q2525293, c. 1200–600 a.C.): sus yacimientos principales (Hastinapur, Mathura, Ahichchhatra) quedan al oeste de 79,33°E y la entrada no tiene coordenadas, además la cultura védica temprana ya está en el visor; (f) Ban Chiang (Tailandia): cronología del bronce en disputa (2000 vs 1000 a.C.) y aldea sin Estado, peso 1–2; (g) culturas Đồng Đậu/Gò Mun del norte de Vietnam, peso 1–2, no revisadas en profundidad; (h) batalla de Muye (c. 1046 a.C.) y Yinxu/Anyang quedan al norte de 32,5°N, fuera de la zona. Sri Lanka, Tíbet, Nepal y Taiwán: nada documentado que alcance el umbral en esta ventana.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
