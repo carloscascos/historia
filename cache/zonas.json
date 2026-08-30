@@ -4533,5 +4533,43 @@
   ],
   "nota": "La zona es sobre todo mar Balear: cubre Mallorca, Ibiza, Formentera y el borde occidental de Menorca, más una franja peninsular estrecha (norte de Castellón, Maestrazgo, Baix Maestrat y la Marina Alta). Lado peninsular: nada supera el umbral. Se buscó y descartó Minferri (Juneda, Q20108472), el mejor yacimiento del rango en el NE peninsular — está fuera de la zona por latitud (41,55 N) y además su ítem de Wikidata carece de coordenadas. Santa Llúcia (Alcalà de Xivert), cuya cronología encaja de lleno (últimos dos siglos del III milenio y primeros del II, con epicampaniforme y metalurgia de reciclaje), NO tiene ítem en Wikidata: descartado por la regla del QID. Orpesa la Vella (Q96942866) sí está en zona pero su ocupación documentada es Bronce Medio y Final, posterior a la ventana. Cap de Barbaria II (Q111652048) se descarta pese a estar en zona: el análisis bayesiano de sus dataciones sitúa la ocupación en 1650-900 a.C., fuera de la ventana — la cifra de «desde 2000 a.C.» que circula en fuentes divulgativas no la sostiene el radiocarbono. Los navetiformes (Naveta Alemany, Tanca d'en Just, Ses Barraques) y Closos de Can Gaià arrancan hacia 1600-1500 a.C.: fuera. Coval Simó (Escorca), sitio campaniforme mallorquín con metalurgia de cobre local perfectamente dentro de la ventana, no tiene ítem en Wikidata y por eso no se propone. La cultura talayótica (Q530894) empieza c. 950 a.C.: muy fuera. El arte rupestre levantino de Valltorta-Gasulla queda en zona pero su datación es discutida y mayoritariamente anterior, sin anclaje firme en 2250-1800. Aviso sobre la entidad propuesta: el único ítem existente para el pretalayótico está etiquetado «en Menorca», y Menorca solo entra por su extremo occidental en esta zona; se propone porque el mismo horizonte cultural cubre Mallorca y las Pitiusas, que sí están enteras dentro, pero el desajuste entre etiqueta y alcance geográfico es real y no lo he resuelto.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "fcc790fb98",
+  "bbox": [
+   6.71,
+   33.1,
+   21.25,
+   44.22
+  ],
+  "corte": "-2000",
+  "lod": 1,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 3,
+  "descartados": [
+   {
+    "nombre": "Cultura de Cetina",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Castelluccio",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Fase del Cementerio de Tarxien",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Tirinto (Heládico Antiguo III)",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Templos de Tarxien",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "La zona NO es principalmente Grecia micénica: el límite este en 21,25° deja fuera todo el núcleo argólico y ático. Comprobado en Wikidata y descartado por coordenadas: Micenas (Q132564, 22,76°E), Tirinto (Q217379, 22,80°E), Olimpia (Q38888, 21,63°E), Malthi (Q38281259, 21,88°E), Nicoria (Q1595514, 21,91°E), Festo (Q249707, Creta, 24,81°E). Lo que sí cae dentro es el Mediterráneo central: Sicilia, Malta, Cerdeña, sur de Italia, Adriático y Epiro/Albania. Descartado por cronología: la cultura de Bonnanaro de Cerdeña (Q756512 y afines) arranca en 1800 a.C. según su artículo, es decir justo al cerrarse la ventana, y los nuragas que devuelve la consulta geográfica sobre Cerdeña son posteriores; no propongo ninguno. Coppa Nevigata (Q3691795) está dentro de la zona y tiene ocupación anterior, pero su poblado fortificado y la producción de púrpura empiezan hacia 1800 a.C., en el borde mismo de la ventana, y no encuentro dataciones firmes de estructuras dentro de 2250-1800: lo dejo fuera. Descartados por falta de QID adecuado: Sovjan y Vajzë (Albania) existen en Wikidata solo como pueblos modernos (Q13046289, Q13047286), no como yacimientos, y usar esos identificadores atribuiría mal el objeto; el tell de Maliq tiene secuencia de Bronce Antiguo pero su QID (Q772248) es igualmente el municipio actual. Los túmulos R de Steno/Nidri en Léucade quedan dentro de la zona y son relevantes, pero el yacimiento no tiene entrada propia con coordenadas en Wikidata (Q53629239 y Q2006122 son la localidad). Los dos objetos de Borġ in-Nadur en Wikidata (Q2004454, Q20925777) caen en la zona, pero su artículo no data el poblado del Bronce dentro de esta ventana —suele situarse hacia 1500 a.C.—, así que tampoco lo propongo. La relación Cetina-Malta va marcada como hipótesis: es la lectura más citada hoy, no un hecho establecido.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
