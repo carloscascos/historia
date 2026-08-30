@@ -818,5 +818,31 @@
   ],
   "nota": "Zona: Anatolia central-oriental, Cáucaso, Mesopotamia norte y Babilonia (32,54 N, justo dentro), Irán norte, Asia Central y estepa hasta los Urales. Verificado en Wikidata: Kültepe Q538605 (38,85 N / 35,63 E) y BMAC Q1054850 (37,30 N / 64,16 E) caen dentro de la zona. Q1470165 (Srubna) y Q16630263 (dinastía casita) NO tienen P625 en Wikidata; se proponen porque el visor ya admite entidades sin coordenadas (la cultura nurágica Q1421436 tampoco las tiene). Descuadres de fechas que se dejan a la vista: Srubna empieza hacia 1900 a.C. según en.wiki pero Wikidata pone -1600 y es.wiki 'siglos XVI-IX'; BMAC termina en 1700 (en.wiki, Wikidata) o 1600 (es.wiki); Kültepe nivel Ib acaba en 1740 (Kültepe) o 1719 (Old Assyrian period); la dinastía casita empieza en 1595 (Wikidata, en.wiki), 1550 (es.wiki) o 1531 (cronología corta). EVENTO 'saqueo de Babilonia por Mursili I' (hacia 1595): no existe ítem de Wikidata (las búsquedas 'Sack of Babylon', 'Hittite sack of Babylon' y 'Saqueo de Babilonia' devuelven vacío; Q16534553 'Fall of Babylon' es una obra de arte de 1277 y Q28169617 es la caída de 539 a.C.), por lo que se registra solo como relación de conflicto Hatti–Babilonia. Descartados por debajo del umbral (peso 2): cultura de Trialeti-Vanadzor Q169320 (Cáucaso sur, 2200-1500, sin P625), Gonur Depe Q3110595 (capital del BMAC, 55 ha, 2400-1600; queda representada por la entidad BMAC), Kussara Q372292 (reino de Pithana y Anitta, ubicación desconocida). Descartados por quedar fuera de la ventana: cultura de Sintashta Q656393 (2200-1900/1750, ya sucedida por Andrónovo que está en el visor), fenómeno Seima-Turbino Q2409967 (2300/2200-1700 según fuente, sin P625). Gran parte de la zona (Irán norte, Kazajistán central, Rusia europea al norte de 50 N) no tiene estados ni ciudades grandes documentados en la ventana más allá de las culturas de Andrónovo y Srubna.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "1c5907e3dc",
+  "bbox": [
+   79.33,
+   32.5,
+   125.0,
+   60.0
+  ],
+  "corte": "-1600",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 1,
+  "descartados": [
+   {
+    "nombre": "Xia",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Zhengzhou (ciudad Shang)",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona = China del norte, Mongolia, Xinjiang, Siberia sur y Asia Central oriental, 1800–1475 a.C., umbral peso 3. Propuesto: Xia (Q169705, entidad sin coordenadas en Wikidata; es el estado que corresponde a la ciudad de Erlitou ya presente), Zhengzhou Shang City (Q203132, coords 34.745/113.683, fases 1630–1400 a.C., ~300–1.500 ha, capital probable) y la relación de conflicto Shang–Xia (batalla de Mingtiao hacia 1600 a.C.). La batalla de Mingtiao (Q608694) NO se propone como evento porque su ítem de Wikidata carece de coordenadas y su ubicación exacta es discutida; se recoge como relación. Yanshi Shang City / Xibo corresponde al 'Bo' (Q11040185) ya presente en el visor, así que no se repite. Descartados por quedar por debajo del umbral (culturas arqueológicas, peso 2 o menos, y sin coordenadas en Wikidata salvo indicación): cultura de Erlitou (Q1051663, coords en zona; ya cubierta por la ciudad de Erlitou y por Xia), cultura de Erligang (Q1151593, 1600–1400 a.C.; cubierta por la entidad Shang ya presente), Qijia (Q1269223, 2400/2200–1600 a.C., Gansu-Qinghai), Xiajiadian inferior (Q1041674, 2200–1600 a.C., Mongolia Interior-Liaoning), Siba (Q33204333, 1900–1500 a.C.), Zhukaigou (Q2545535, Ordos), Yueshi (Q1460971, 1900–1500 a.C., Shandong), Xiaqiyuan (Q67935770), Seima-Turbino (Q2409967, 2200–1700 a.C., red metalúrgica Altái-Siberia; su ventana apenas roza el inicio del periodo), Okunev (Q2632835), Glazkovo (Q1973554), Tianshanbeilu (Q11107150) y el cementerio de Xiaohe (2000–1000 a.C., Lop Nur: solo necrópolis, sin asentamiento conocido). Karasuk (Q129282) empieza hacia 1500 a.C. y es peso 2. Panlongcheng (Q217684) queda fuera de la zona (30,7°N). Sin Wikidata verificable: Elunino, Chemurchek/Munkhkhairkhan (Mongolia). No se ha encontrado ninguna guerra mayor documentada en la zona además de Mingtiao.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
