@@ -4571,5 +4571,31 @@
   ],
   "nota": "La zona NO es principalmente Grecia micénica: el límite este en 21,25° deja fuera todo el núcleo argólico y ático. Comprobado en Wikidata y descartado por coordenadas: Micenas (Q132564, 22,76°E), Tirinto (Q217379, 22,80°E), Olimpia (Q38888, 21,63°E), Malthi (Q38281259, 21,88°E), Nicoria (Q1595514, 21,91°E), Festo (Q249707, Creta, 24,81°E). Lo que sí cae dentro es el Mediterráneo central: Sicilia, Malta, Cerdeña, sur de Italia, Adriático y Epiro/Albania. Descartado por cronología: la cultura de Bonnanaro de Cerdeña (Q756512 y afines) arranca en 1800 a.C. según su artículo, es decir justo al cerrarse la ventana, y los nuragas que devuelve la consulta geográfica sobre Cerdeña son posteriores; no propongo ninguno. Coppa Nevigata (Q3691795) está dentro de la zona y tiene ocupación anterior, pero su poblado fortificado y la producción de púrpura empiezan hacia 1800 a.C., en el borde mismo de la ventana, y no encuentro dataciones firmes de estructuras dentro de 2250-1800: lo dejo fuera. Descartados por falta de QID adecuado: Sovjan y Vajzë (Albania) existen en Wikidata solo como pueblos modernos (Q13046289, Q13047286), no como yacimientos, y usar esos identificadores atribuiría mal el objeto; el tell de Maliq tiene secuencia de Bronce Antiguo pero su QID (Q772248) es igualmente el municipio actual. Los túmulos R de Steno/Nidri en Léucade quedan dentro de la zona y son relevantes, pero el yacimiento no tiene entrada propia con coordenadas en Wikidata (Q53629239 y Q2006122 son la localidad). Los dos objetos de Borġ in-Nadur en Wikidata (Q2004454, Q20925777) caen en la zona, pero su artículo no data el poblado del Bronce dentro de esta ventana —suele situarse hacia 1500 a.C.—, así que tampoco lo propongo. La relación Cetina-Malta va marcada como hipótesis: es la lectura más citada hoy, no un hecho establecido.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "94f859eed1",
+  "bbox": [
+   7.59,
+   38.48,
+   10.23,
+   43.22
+  ],
+  "corte": "-2000",
+  "lod": 0,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 6,
+  "descartados": [
+   {
+    "nombre": "Cultura del vaso campaniforme en Cerdeña",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Monte Claro",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "La zona cubre Cerdeña entera y Córcega entera, más mar Tirreno vacío; Elba y la costa toscana quedan fuera (>10,23 E). El eje real del periodo es la secuencia calcolítico tardío → Bronce antiguo: Monte Claro (2400-2100), campaniforme sardo (2100-1800) y el arranque de Bonnanaro. DESCARTADOS Y POR QUÉ: (1) Cultura de Bonnanaro (Q747396), 1800-1600 a.C. según la cronología estándar en dos fases — arranca justo en el borde de la ventana o después, no dentro; lo mismo la necrópolis de Is Calitas (Q26258066), plenamente Bonnanaro. (2) Las espadas de cobre arsenical de Sant'Iroxi están datadas en 1650-1600 a.C., fuera de la ventana; el hipogeo se incluye solo por su ocupación continuada, no por ese ajuar. (3) Protonuraghe Bruncu Madugui (Q92967592): hay conflicto de fuentes sin resolver — una C14 sobre corcho carbonizado da 1820±250 a.C. (el margen de ±250 años lo hace compatible con la ventana pero no la demuestra), mientras la síntesis de Wikipedia sitúa TODOS los protonuraghi en 1700-1500 a.C. No lo propongo: la existencia de arquitectura nurágica antes de 1800 a.C. no está establecida. (4) Filitosa (Q1025950) y Cucuruzzu (Q1048878), en Córcega: ocupación documentada desde el 3300 a.C. y hasta época romana, pero sin fase datada dentro de 2250-1800; sus estatuas-menhir y torri son de 1500 a.C. en adelante. La civilización torreana (Q472258) tiene el mismo problema al revés: Wikipedia la sitúa en la segunda mitad del II milenio y a la vez dice que las primeras torres son de finales del III milenio — contradicción interna en la propia fuente, así que solo propongo el yacimiento concreto (Tappa) que sí tiene fechas de construcción y abandono. (5) Ipogeo de Padru Jossu (Sanluri): encaje cronológico y cultural perfecto (Monte Claro + campaniforme, con adornos de marfil de proboscídeo que documentan redes mediterráneas), pero su ficha de Wikidata (Q20009704) NO tiene coordenadas P625, así que la regla 2 lo deja fuera. Es la ausencia más costosa de esta lista. (6) Las dos culturas propuestas como 'entidad' (Q3699304, Q1585136) tampoco tienen coordenadas en Wikidata, solo 'ubicado en: Cerdeña'; si el visor exige P625 para colocarlas, no podrá situarlas. (7) No he encontrado NINGÚN evento datado (batalla, destrucción, pecio) dentro de la ventana en esta zona con QID: el abandono de Monte Baranta está documentado pero sin fecha precisa ni entrada propia. (8) Sobre las fechas de Monte Baranta las fuentes discrepan: 2500-2000 (SardegnaTurismo), 2500-2200 (literatura del yacimiento), 2400-2100 (marco de Monte Claro en Wikipedia). He usado -2400/-2000 como envolvente; el descuadre no está resuelto.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
