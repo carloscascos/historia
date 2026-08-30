@@ -2645,5 +2645,35 @@
   ],
   "nota": "Zona = Asia Central (Turkmenistán oriental, Uzbekistán, Tayikistán, norte de Afganistán, Kirguistán, sur de Kazajistán, extremo oeste de Xinjiang). Se han revisado Wikipedia (en/es), Wikidata y dos publicaciones académicas (Kaniuth 2020; Latify & Mahesh 2020, con Francfort). DESCUADRES QUE DEBE CONOCER EL EDITOR: (1) La entidad BMAC ya existente tiene fin propuesto en -1950 (Salvatori) o -1700 (Dubova/Lyonnet) según Wikipedia, pero Gonur sigue ocupado hasta -1600 y la cultura Sapalli/Djarkutan hasta -1500 (Kaniuth 2020: siglos XX–XV a.C.); no sé qué fechas tiene el visor para Q1054850; si acaba en -1950, las ciudades propuestas quedan 'huérfanas' de entidad. (2) Djarkutan: Wikidata P625 da 41.03N/70.93E, pero el artículo en Wikipedia sitúa el yacimiento en 37.63N/66.96E (Surjandaria, cerca de Sherobod); la coordenada de Wikidata parece errónea, aunque ambas caen dentro de la zona. (3) Tazabagyab: Wikidata no tiene coordenadas (P625) y su P580 dice -1500, mientras que Wikipedia (en) da 'ca. 1850–1500 BC' con la datación antigua '1500–1100 BC'; se incluye con las fechas nuevas, pero la cronología está en disputa. (4) Shortugai: Wikipedia solo da 'hacia 2000 a.C.'; las fases 2300/2200–1800 y 1800–1600 y la ocupación final 1700–1500 vienen de Latify & Mahesh 2020 citando a Francfort. DESCARTADOS: Togolok/Togolok 21 (Q55885896, templo-fortaleza a 10 km de Gonur, primera mitad del II milenio; peso 1 a esta escala); Sapallitepa (Q20536480, 3–4 ha, peso 1); cultura Sapalli como entidad (sin QID en Wikidata, no se puede proponer); cultura de Chust (Q13174573, empieza hacia -1500, apenas roza la ventana); Seima-Turbino (Q2409967, sin coordenadas, acaba en -1700 y su núcleo está fuera de la zona); Altyndepe (Q2559322, abandonado hacia -2000); Zaman Baba (Q20536519, sin coordenadas ni fechas en Wikidata); Dashly (sin QID); yacimientos del Tarim (Xiaohe, Gumugou) quedan al este de 79.33°. No hay eventos datados (batallas, destrucciones con fecha) en la zona para esta ventana.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "6b82e21ae3",
+  "bbox": [
+   79.33,
+   32.5,
+   102.16,
+   46.25
+  ],
+  "corte": "-1600",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 1,
+  "descartados": [
+   {
+    "nombre": "Cementerio de Xiaohe (momias del Tarim)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Cultura de Siba",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Tianshanbeilu",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = cuenca del Tarim, Dzungaria, corredor de Hexi occidental, Qinghai y Mongolia occidental. En la ventana -1800/-1475 no hay estados, ciudades ni batallas documentadas: solo culturas arqueológicas. Incluidas Xiaohe (Wikidata con coordenadas 40.34N 88.67E, dentro), Siba y Tianshanbeilu. ADVERTENCIA: Siba (Q33204333) y Tianshanbeilu (Q11107150) NO tienen P625 en Wikidata; su ubicación (Hexi ~97–102E/39–40N y Hami 42.8N/93.5E) cae dentro de la zona, pero el visor no podrá tomar coordenadas de Wikidata para ellas. Descartados: cultura de Qijia (Q1269223, 2200–1600 a.C.) porque su núcleo es Lanzhou (~103.8E), fuera de la zona, aunque se extiende por el este de Qinghai; corresponde a la tesela oriental. Cultura de Chemurchek (Q18573560, coords 46.13N 91.69E, dentro por poco) termina hacia 1900 a.C., antes de la ventana. Cultura de Kayue (Q1737460) datada 900–600 a.C. en Wikidata y Wikipedia, fuera de la ventana. Seima-Turbino (Q2409967) llega a Xinjiang pero termina hacia 1900 a.C. y carece de coordenadas. Mönkhkhairkhan (Mongolia occidental) y Gumugou/Qäwrighul sin QID en Wikidata. Los yacimientos tibetanos (Karuo, Qugong) quedan al sur de 32.5N. Andrónovo (ya en el visor) tiene presencia en Ili/Tacheng/Bortala desde ~1900 a.C., pero no propongo relación con Tianshanbeilu porque las fuentes leídas no la documentan explícitamente.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
