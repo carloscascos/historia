@@ -2675,5 +2675,27 @@
   ],
   "nota": "Zona = cuenca del Tarim, Dzungaria, corredor de Hexi occidental, Qinghai y Mongolia occidental. En la ventana -1800/-1475 no hay estados, ciudades ni batallas documentadas: solo culturas arqueológicas. Incluidas Xiaohe (Wikidata con coordenadas 40.34N 88.67E, dentro), Siba y Tianshanbeilu. ADVERTENCIA: Siba (Q33204333) y Tianshanbeilu (Q11107150) NO tienen P625 en Wikidata; su ubicación (Hexi ~97–102E/39–40N y Hami 42.8N/93.5E) cae dentro de la zona, pero el visor no podrá tomar coordenadas de Wikidata para ellas. Descartados: cultura de Qijia (Q1269223, 2200–1600 a.C.) porque su núcleo es Lanzhou (~103.8E), fuera de la zona, aunque se extiende por el este de Qinghai; corresponde a la tesela oriental. Cultura de Chemurchek (Q18573560, coords 46.13N 91.69E, dentro por poco) termina hacia 1900 a.C., antes de la ventana. Cultura de Kayue (Q1737460) datada 900–600 a.C. en Wikidata y Wikipedia, fuera de la ventana. Seima-Turbino (Q2409967) llega a Xinjiang pero termina hacia 1900 a.C. y carece de coordenadas. Mönkhkhairkhan (Mongolia occidental) y Gumugou/Qäwrighul sin QID en Wikidata. Los yacimientos tibetanos (Karuo, Qugong) quedan al sur de 32.5N. Andrónovo (ya en el visor) tiene presencia en Ili/Tacheng/Bortala desde ~1900 a.C., pero no propongo relación con Tianshanbeilu porque las fuentes leídas no la documentan explícitamente.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "cc6ec04eaa",
+  "bbox": [
+   56.5,
+   46.25,
+   79.33,
+   60.0
+  ],
+  "corte": "-1600",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 0,
+  "descartados": [
+   {
+    "nombre": "Fenómeno Seima-Turbino",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = Urales meridionales, Trans-Urales, norte de Kazajistán y Siberia occidental hasta Omsk. Revisado: cultura de Sintashta (Q656393), Arkaim (Q672602), yacimiento de Sintashta (Q1090987), País de las Ciudades (Q4443328), cultura Petrovka (Q4361179), Alakul (Q12528019), Fiódorovo (Q129764211), Cherkaskul (Q4513013), Seima-Turbino (Q2409967), Krotovo (Q6439090), Samus (Q2219081), Srubna (Q1470165), Abáshevo (Q305628). DESCARTADOS por cronología: Sintashta–Petrovka termina hacia 1750 a.C. según radiocarbono (en.wikipedia: 2200–1750), es decir, solo roza el inicio de la ventana y ya no existe en el corte de 1600 a.C.; Arkaim tiene datación contradictoria entre fuentes (infobox 2150–1650; texto 'actualmente 2050–1900'; es.wikipedia 's. XX–XVI'), pero la ocupación principal del yacimiento vecino de Sintashta es 2100–1800 y la revisión radiocarbónica sitúa las fortificaciones antes de 1800: no hay documentación sólida de ocupación en la ventana, así que no se propone ni Arkaim ni Sintashta ni el País de las Ciudades como ciudades; Petrovka solo tiene artículo en ru.wikipedia (que da s. XVII–XVI a.C., datación tipológica antigua frente a 1900–1750 radiocarbónico) y sin coordenadas en Wikidata. DESCARTADOS por redundancia: Alakul (1900–1500) y Fiódorovo (1900–1300) son fases de Andrónovo, ya presente en el visor; además sus ítems de Wikidata no tienen artículos enlazados ni coordenadas. DESCARTADOS por peso: Cherkaskul (2.º–3.er cuarto del II milenio, bosque-estepa transuraliano) es regional, peso 1, sin coordenadas. Fuera de zona: Krotovo (82°E), Samus (Tomsk), Srubna y Abáshevo (al oeste del Ural). ADVERTENCIAS sobre el único propuesto: (1) la datación de Seima-Turbino está en disputa — el radiocarbono de los yacimientos siberianos (Rostovka) da 2200–1900 cal BC (Marchenko et al. 2017, visto en resultados de búsqueda, no leído el artículo), mientras Chernykh (2017) extiende el fenómeno hasta 1600–1500 cal BC incluyendo variantes tardías; Wikidata registra 2300–1700; la presencia en esta ventana depende de aceptar la cronología larga; (2) el ítem Q2409967 no tiene coordenadas (P625) en Wikidata, igual que Andrónovo Q459376, cuyas coordenadas (55.7°E) quedan de hecho fuera de esta zona aunque el visor lo liste dentro — HIPÓTESIS SIN VERIFICAR: el visor no usa P625 para entidades. No se proponen relaciones: el vínculo Sintashta/Andrónovo→BMAC (exportación de metal, carros) está documentado en en.wikipedia pero BMAC no está en el visor y queda fuera de zona; la transmisión Seima-Turbino→China Shang que menciona en.wikipedia se fecha hacia 2100–2000, anterior a Shang y a la ventana.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
