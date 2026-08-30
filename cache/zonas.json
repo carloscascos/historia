@@ -2128,5 +2128,35 @@
   ],
   "nota": "Zona: Sahel central (cuenca del Chad, Sudán central, Sudán del Sur, RCA, oeste de Etiopía). Único candidato que llega al umbral: la cultura de Gajiganna (Q1491580, coords 11.83N 13.15E, dentro de la zona; 1800–400 a.C.). Es un caso límite: en la ventana (fase I, 1800–1500 a.C.) son solo campamentos pastoriles de menos de 1 ha, sin agricultura hasta ~1200 a.C.; se propone con peso 2 porque es la única cultura arqueológica documentada y datada en toda la zona, y es comparable en escala a otras culturas regionales que el visor ya muestra en vista media (Vila Nova de São Pedro, El Argar). Si se prefiere un criterio estricto, bajar a peso 1. Descartados: (a) Reino de Kerma (Q1739282), la potencia real del periodo (Kerma clásico 1750–1500 a.C., alianza con los hicsos, incursión en Egipto 1575–1550 a.C.): sus coordenadas en Wikidata (19.60N 30.41E) quedan al norte del límite 18.75N y su territorio documentado llega solo hasta la 4.ª catarata (~19N), así que no cae en esta zona. (b) Jebel Moya (Q55640121, 13.5N 33.33E): ocupación agropastoril del periodo 2 (2500–1500 a.C.) y enterramientos desde finales del III milenio, pero es un yacimiento, no una ciudad ni una entidad; peso 1, por debajo del umbral. (c) Civilización Sao (cuenca del Chad): comienza en el I milenio a.C., fuera de la ventana. (d) Pastores de Wadi Howar y arte rupestre de Ennedi: ocupación pastoril del II milenio sin datación fina ni entidad definida; peso 1. No hay ciudades, batallas ni rutas documentadas en la zona para 1800–1475 a.C. Sin relaciones nuevas: ninguna entidad existente del visor tiene su asiento en esta zona, y Kerma, que sí tendría relaciones (conflicto/comercio con Egipto), queda fuera de ella.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "4b85cfeab6",
+  "bbox": [
+   -12.0,
+   5.0,
+   10.84,
+   18.75
+  ],
+  "corte": "-1600",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 0,
+  "descartados": [
+   {
+    "nombre": "Cultura de Tichitt (Dhar Tichitt)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Complejo de Kintampo",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Cultura Nok",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona = África occidental (Senegal, Mauritania meridional, Malí, Guinea, Ghana, Burkina, Nigeria occidental). No hay estados, ciudades ni batallas documentados en -1800/-1475; sólo culturas arqueológicas. Se proponen tres con peso 2, al mismo nivel que El Argar o Vila Nova de São Pedro ya presentes. ADVERTENCIAS: (1) Tichitt: el ítem de la cultura (Q107008575, 'Tichitt culture') NO tiene coordenadas en Wikidata, por lo que se ancla al ítem del yacimiento Dar Tichitt (Q1165596, 18.36N -9.15E, dentro de la zona); si el visor exige que el QID sea de la cultura y no del sitio, descartar. La ocupación se da como 2000–300 a.C. (Wikipedia en); los recintos de piedra seca se datan desde c. 1400 a.C., o sea después de la ventana, pero el cultivo de mijo perla (1900–1600 a.C.) sí cae dentro. (2) Nok: entra en la ventana sólo en sus últimos 25 años (inicio c. 1500 a.C. según Wikipedia en y Wikidata P571); la Wikipedia en español la data 500 a.C.–300 d.C., discrepancia sin resolver entre fuentes; si se prefiere la cronología conservadora, descartar para este corte. (3) Kintampo cae íntegramente en la ventana y con coordenadas en zona; sin reservas. DESCARTADOS: Karkarichinkat (Malí, Q22906084) por no tener coordenadas en Wikidata y datarse 2620–2200 a.C., antes de la ventana; Gajiganna (Nigeria, lago Chad) por quedar fuera de la zona (lon ~13E); Ounjougou (Malí) por ser relevante en milenios anteriores. No se proponen relaciones: no hay vínculos documentados entre estas culturas ni con las entidades ya en el visor en este periodo.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
