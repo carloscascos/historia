@@ -3096,5 +3096,22 @@
   ],
   "nota": "Zona = Sudeste Asiático continental occidental (Tailandia central y peninsular, sur de Birmania, norte de Malasia, oeste de Camboya/Laos), Sri Lanka, costa oriental india (Tamil Nadu/Andhra al este de 79.33°) y Andamán. Único objeto que alcanza el umbral: Non Pa Wai (14.97N, 100.68E), con ocupación neolítica desde c. 2000 a.C. y enterramientos fundacionales de la Edad del Bronce datados c. 1200–800 a.C. (KDE de ~100 fechas AMS, Higham et al. 2020); el cobre del valle aparece en Ban Chiang c. 1025–935 a.C. y en Birmania c. 1000 a.C. Nota de descuadre: la Wikipedia alemana sigue dando 'c. 1500 a.C.' para el inicio del cobre (cronología larga de Pigott 1997), mientras Rispoli et al. 2013 y Higham 2020 lo sitúan a finales del II milenio; en cualquiera de las dos el sitio está activo en la ventana. Descartados: Nil Kham Haeng (Q1663736, sin coordenadas en Wikidata y con la producción principal posterior a 1100/500 a.C. según la fuente); valle de Khao Wong Prachan (Q1254413) por redundante con Non Pa Wai; Ban Non Wat (102.27E) y Non Nok Tha (102.26E) quedan fuera de la zona por escasas centésimas de grado, y Ban Chiang (103.2E) claramente fuera; Khok Phanom Di (2000–1500 a.C.) y Ban Kao (neolítico tardío, cronología imprecisa) sin ocupación documentada en la ventana al nivel requerido; Sri Lanka sin nada documentado entre 1300 y 1000 a.C. (Anuradhapura 'antes de 900 a.C.', Edad del Hierro desde c. 1000 a.C., fuera de ventana); sur de Birmania y norte de Malasia sin yacimientos de bronce de esta época (el bronce birmano —Nyaunggan, Samon— está al norte de 18.75N); costa india oriental dentro de la zona sin yacimientos de la Edad del Hierro megalítica con QID y fecha segura en la ventana (Adichanallur y Hallur, c. 1200–1000 a.C., quedan al oeste de 79.33E). No propongo relación de transmisión Shang→Tailandia: la tesis de Higham de que la metalurgia del estaño-bronce llegó desde el sur de China hacia 1100–1000 a.C. es una hipótesis académica en debate (frente a la cronología larga de White/Ban Chiang), no un vínculo documentado, y en todo caso sería peso 1.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "90eb078e86",
+  "bbox": [
+   102.16,
+   5.0,
+   125.0,
+   18.75
+  ],
+  "corte": "-1200",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 2,
+  "descartados": [],
+  "nota": "Zona = Sudeste Asiático continental (Tailandia, Camboya, Laos sur, Vietnam centro-sur), sur de Hainan y Filipinas. En 1275–1000 a.C. no hay estados, ciudades ni batallas: solo aldeas neolíticas y de bronce incipiente. Se han revisado Wikipedia (en/es), Wikidata y el artículo de Higham et al. 2015 (PLOS One), que sitúa el inicio del bronce en el NE de Tailandia en 1200–1000 a.C. (68 %), con origen en la difusión hacia el sur desde los estados del río Amarillo/Yangtsé; la cronología alternativa de White (bronce hacia 2000 a.C. vía Seima-Turbino) sigue en disputa. Se proponen Ban Chiang (coordenadas Wikidata 17.55, 103.36) y Ban Non Wat (15.27, 102.27, dentro por 0.1° del borde oeste), ambos con ocupación documentada en toda la ventana. Descartados por peso 1: Non Nok Tha (Q1996138, 16.74, 102.26; 1420–50 a.C., artículo en Wikipedia en no accesible) y Samrong Sen (Q7410304, Camboya, 12.22, 104.78; florece 1500–500 a.C., bronce sin fecha precisa dentro de la ventana). Descartados por fecha: cultura Sa Huỳnh (Q2000186, empieza hacia 1000 a.C., Edad del Hierro, justo en el límite). Descartados por caer fuera de la zona: cultura Đồng Đậu (Q8079980, 1500–1000 a.C.) y las demás culturas del río Rojo (hacia 21°N) y el valle de Khao Wong Prachan (hacia 100.7°E). Filipinas: solo Neolítico austronesio, sin metal hasta hacia 500 a.C.; nada con QID y peso ≥2. No existe ítem de Wikidata para una 'cultura de Ban Chiang' como entidad, por lo que no se propone entidad ni la relación de transmisión tecnológica Shang (Q128938) → NE de Tailandia que sugiere Higham: sin entidad receptora válida en la zona, no cabe como 'relacion' según las reglas.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
