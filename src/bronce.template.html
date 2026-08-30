@@ -71,7 +71,8 @@
   /* 5. pie */
   #foot{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;padding:6px 16px;border-top:1px solid var(--line);font-family:var(--sans);font-size:11.5px;color:var(--text-dim)}
   .leg{display:flex;gap:12px;flex-wrap:wrap}
-  .leg span{display:inline-flex;align-items:center;gap:5px}
+  .leg span{display:inline-flex;align-items:center;gap:5px;cursor:pointer;user-select:none;padding:1px 4px;border-radius:3px}
+  .leg span:hover{background:#182027} .leg span.off{opacity:.4;text-decoration:line-through}
   .leg i{display:inline-block;width:20px;height:0;border-top:2px solid}
   .leg i.x{border-top-style:dashed}
   .leg b{display:inline-block;width:14px;height:10px;border-radius:2px;background:#6a7a80}
@@ -108,6 +109,8 @@
   svg.lod2 .w0,svg.lod2 .w1{display:none}
   svg.lod1 .w0{display:none}
   svg.lod3 .lbl.t,svg.lod2 .lbl.t{display:none}
+  /* capas ocultas desde la leyenda */
+  svg.h-conflicto [data-tipo="conflicto"]{display:none} svg.h-comercio [data-tipo="comercio"]{display:none} svg.h-transmision [data-tipo="transmision"]{display:none} svg.h-estado [data-tipo="estado"]{display:none} svg.h-difuso [data-tipo="difuso"]{display:none} svg.h-ciudad [data-tipo="ciudad"]{display:none} svg.h-evento [data-tipo="evento"]{display:none}
   .lbl .sub{font-size:.8em;fill:var(--text-dim);letter-spacing:0}
   svg.lod3 .lbl .sub,svg.lod2 .lbl .sub{display:none}
   .lbl.rl{font-size:.9px;letter-spacing:.06em;text-transform:uppercase} .lbl.rl.conflicto{fill:var(--conflicto)} .lbl.rl.comercio{fill:var(--comercio)} .lbl.rl.transmision{fill:var(--transmision)}
@@ -151,13 +154,13 @@
 <!-- 5. pie -->
 <div id="foot">
   <div class="leg">
-    <span><i style="border-color:var(--conflicto)"></i> conflicto</span>
-    <span><i style="border-color:var(--comercio)"></i> comercio</span>
-    <span><i class="x" style="border-color:var(--transmision)"></i> transmisión</span>
-    <span><b style="outline:1px solid #ddd"></b> estado</span>
-    <span><b class="blur"></b> ámbito difuso</span>
-    <span><b style="width:10px;height:10px;border-radius:50%;background:#f0e6d2"></b> ciudad (∝ población)</span>
-    <span><b style="width:9px;height:9px;transform:rotate(45deg);background:var(--bronce)"></b> evento</span>
+    <span data-t="conflicto" title="mostrar u ocultar"><i style="border-color:var(--conflicto)"></i> conflicto</span>
+    <span data-t="comercio" title="mostrar u ocultar"><i style="border-color:var(--comercio)"></i> comercio</span>
+    <span data-t="transmision" title="mostrar u ocultar"><i class="x" style="border-color:var(--transmision)"></i> transmisión</span>
+    <span data-t="estado" title="mostrar u ocultar"><b style="outline:1px solid #ddd"></b> estado</span>
+    <span data-t="difuso" title="mostrar u ocultar"><b class="blur"></b> ámbito difuso</span>
+    <span data-t="ciudad" title="mostrar u ocultar"><b style="width:10px;height:10px;border-radius:50%;background:#f0e6d2"></b> ciudad (∝ población)</span>
+    <span data-t="evento" title="mostrar u ocultar"><b style="width:9px;height:9px;transform:rotate(45deg);background:var(--bronce)"></b> evento</span>
   </div>
   <span>Costas actuales (Natural Earth). Lo nítido es un estado; lo difuso, un ámbito cultural. Rueda o pellizco para acercar; arrastrar para mover.</span>
   <span class="lic">Datos: Cliopatria/Seshat CC BY 4.0 · Reba–Seto 2016 CC BY 4.0 · Wikidata CC0 · Natural Earth dominio público</span>
@@ -189,7 +192,7 @@ CORTES.forEach((c,i)=>{
   const ge=el("g");
   c.ent.forEach(e=>{
     const E=DATA.ent[e.qid], tipo=E.tipo==="estado"?"estado":"difuso";
-    const p=el("path",{d:e.d,class:`ent ${tipo}`,fill:entColor(E),"data-qid":e.qid});
+    const p=el("path",{d:e.d,class:`ent ${tipo}`,fill:entColor(E),"data-qid":e.qid,"data-tipo":tipo});
     p.addEventListener("click",()=>click(()=>show("ent",e.qid,p)));
     ge.appendChild(p);
   });
@@ -197,7 +200,7 @@ CORTES.forEach((c,i)=>{
   const gr=el("g");
   c.rel.forEach(r=>{
     const R=DATA.rel[r.id];
-    const hit=el("path",{d:r.d,class:"rel hit"}), p=el("path",{d:r.d,class:`rel ${R.tipo}`,"data-id":r.id});
+    const hit=el("path",{d:r.d,class:"rel hit","data-tipo":R.tipo}), p=el("path",{d:r.d,class:`rel ${R.tipo}`,"data-id":r.id,"data-tipo":R.tipo});
     const h=()=>click(()=>show("rel",r.id,p)); hit.addEventListener("click",h); p.addEventListener("click",h);
     gr.appendChild(hit); gr.appendChild(p);
     const L=p.getTotalLength?null:null; // longitud se calcula tras insertar en el DOM
@@ -205,12 +208,12 @@ CORTES.forEach((c,i)=>{
   });
   g.appendChild(gr);
   const gl=el("g");
-  c.ent.forEach(e=>{const E=DATA.ent[e.qid];const t=el("text",{class:"lbl zs","text-anchor":"middle","data-x":e.c[0],"data-y":-e.c[1]},E.nombre);t.appendChild(el("tspan",{x:0,dy:"1.2em",class:"sub"},`${E.tipo} · ${fmt(E.desde)} – ${fmt(E.hasta)}`));gl.appendChild(t)});
+  c.ent.forEach(e=>{const E=DATA.ent[e.qid];const t=el("text",{class:"lbl zs","text-anchor":"middle","data-x":e.c[0],"data-y":-e.c[1],"data-tipo":E.tipo==="estado"?"estado":"difuso"},E.nombre);t.appendChild(el("tspan",{x:0,dy:"1.2em",class:"sub"},`${E.tipo} · ${fmt(E.desde)} – ${fmt(E.hasta)}`));gl.appendChild(t)});
   g.appendChild(gl);
   const gc=el("g");
   c.ciu.forEach(ci=>{
     const r=0.18+0.12*Math.sqrt(ci.pob/1000);
-    const g2=el("g",{class:"zs w"+wCiu(ci.pob),"data-x":ci.lon,"data-y":-ci.lat});
+    const g2=el("g",{class:"zs w"+wCiu(ci.pob),"data-x":ci.lon,"data-y":-ci.lat,"data-tipo":"ciudad"});
     const k=el("circle",{cx:0,cy:0,r:r.toFixed(2),class:"ciu"+(ci.fiab===3?" dud":"")});
     k.addEventListener("click",()=>click(()=>show("ciu",ci,k))); g2.appendChild(k);
     g2.appendChild(el("text",{x:r+0.2,y:0.35,class:"lbl t"},ci.n)); gc.appendChild(g2);
@@ -218,7 +221,7 @@ CORTES.forEach((c,i)=>{
   g.appendChild(gc);
   const gv=el("g");
   c.ev.forEach(v=>{
-    const V=DATA.ev[v.qid], s=0.75, g2=el("g",{class:"zs w"+(V.peso||1),"data-x":v.lon,"data-y":-v.lat}), m=el("path",{d:`M0,${-s}L${s},0L0,${s}L${-s},0Z`,class:"evm"});
+    const V=DATA.ev[v.qid], s=0.75, g2=el("g",{class:"zs w"+(V.peso||1),"data-x":v.lon,"data-y":-v.lat,"data-tipo":"evento"}), m=el("path",{d:`M0,${-s}L${s},0L0,${s}L${-s},0Z`,class:"evm"});
     m.addEventListener("click",()=>click(()=>show("ev",v.qid,m))); g2.appendChild(m);
     g2.appendChild(el("text",{x:s+0.2,y:0.35,class:"lbl"},V.nombre)); gv.appendChild(g2);
   });
@@ -227,7 +230,7 @@ CORTES.forEach((c,i)=>{
 });
 
 // etiquetas de tipo sobre cada relación, en el punto medio del trazo (solo se ven de cerca)
-document.querySelectorAll(".corte").forEach(g=>{const gl=el("g");g.appendChild(gl);g.querySelectorAll("path.rel:not(.hit)").forEach(p=>{const m=p.getPointAtLength(p.getTotalLength()/2);const t=el("text",{class:`lbl zs rl ${p.dataset.lbl}`,"text-anchor":"middle","data-x":m.x.toFixed(2),"data-y":m.y.toFixed(2)},p.dataset.lbl);gl.appendChild(t)})});
+document.querySelectorAll(".corte").forEach(g=>{const gl=el("g");g.appendChild(gl);g.querySelectorAll("path.rel:not(.hit)").forEach(p=>{const m=p.getPointAtLength(p.getTotalLength()/2);const t=el("text",{class:`lbl zs rl ${p.dataset.lbl}`,"text-anchor":"middle","data-x":m.x.toFixed(2),"data-y":m.y.toFixed(2),"data-tipo":p.dataset.lbl},p.dataset.lbl);gl.appendChild(t)})});
 /* ---------- viewBox: zoom, paneo, nivel de detalle ---------- */
 const svg=$("#map"), wrap=$("#mapwrap"); const VIEJO=[-25,-60,150,55], MUNDO=[-180,-80,360,140], OP=[15,-47,42,22];
 let vb=VIEJO.slice();
@@ -329,6 +332,8 @@ function show(kind,key,node){
 function showCorte(c){card(c.etiqueta,[`<div class="meta">ventana ${fmt(c.ventana[0])} – ${fmt(c.ventana[1])}${c.col_cuadro?" · corte del cuadro":" · solo en el mapa"}</div><p>${c.ent.length} entidades, ${c.ciu.length} ciudades con población estimada, ${c.rel.length} relaciones, ${c.ev.length} eventos.</p><p style="color:var(--text-dim)">Toca cualquier cosa del mapa para ver qué es y de dónde sale el dato.</p>`])}
 function showCelda(cv,c,cel){clearSel();if(!cel){showCorte(c);return}sel={kind:"celda"};card(cv.nombre,[`<div class="meta">${c.etiqueta} · celda del cuadro</div><p><b>Estado.</b> ${cel.estado}</p>`,`<p><b>Hecho.</b> ${cel.hecho}</p><p><b>Relación.</b> ${cel.relacion}</p>`,cel.fuentes.length?srcHtml(cel.fuentes):`<div class="src">celda sin fuente todavía</div>`])}
 
+// leyenda: cada icono muestra u oculta su capa
+document.querySelectorAll(".leg span[data-t]").forEach(sp=>sp.onclick=()=>{const off=sp.classList.toggle("off");svg.classList.toggle("h-"+sp.dataset.t,off)});
 setCorte(cur); applyVB();
 </script>
 </body>
