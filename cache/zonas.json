@@ -1278,5 +1278,39 @@
   ],
   "nota": "Zona = Mongolia, Siberia meridional, Xinjiang, norte de China (río Amarillo), Corea y Japón, ventana 2750–2250 a.C. Verificado en Wikidata: Longshan (Q1057935) y Afanásievo (Q80974) no tienen coordenadas P625, igual que varias entidades ya cargadas (Sumer Q2345840, Campaniforme Q470867, Megalitismo Q7573930), así que se asume que el visor admite entidades sin punto. Taosi sí tiene coordenadas (35.893 N, 111.49 E), dentro de la zona; es marginal en esta ventana (empieza hacia 2300 a.C., solo los últimos ~50 años) y pertenece sobre todo al corte 2000 a.C. Afanásievo termina hacia 2500 a.C.: solo cubre la primera mitad de la ventana; se le da peso 3 por el mismo criterio con que el visor ya carga Campaniforme y Megalitismo atlántico (fenómenos culturales de escala continental), no porque sea un estado. Descartados por peso 2 o inferior: cultura de Majiayao (Q1310602, 3300–2000, Gansu/Qinghai, cerámica pintada y el bronce más antiguo de China, ~2900–2740 a.C.); cultura de Chemurchek (Q18573560, 2750–1900, Altái mongol); cultura de Okunev (Q2632835, sucede a Afanásievo hacia 2500); Sannai-Maruyama (Q911970, 3900–2200, mayor poblado Jōmon, ~500 habitantes: aldea grande, no ciudad); período Jōmon (Q52824, es un período de cazadores-recolectores, no una entidad política); poblados amurallados Longshan de Shandong como Chengziya (Q1070056, 20 ha), Liangchengzhen (Q18381231, 273 ha) y Yaowangcheng (Q133261005, 368 ha): comparables en tamaño a Taosi pero mucho peor documentados en las fuentes leídas y sin fechas verificadas por mí, quedan cubiertos por la entidad Longshan. Fuera de ventana: cultura de Qijia (Q1269223, 2200–1600). Fuera de zona: Liangzhu y Shijiahe (lat 30–31 N). Sin relaciones propuestas: la transmisión de metalurgia estepa→Majiayao que sugiere Wikipedia no está atribuida explícitamente a Afanásievo y su peso sería 2. Observación: la lista de objetos 'ya en la zona' incluye Egipto, Sumer, Elam, Minoicos e Iberia, que no caen en esta zona; supongo que son entidades sin coordenadas que el visor considera globales.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "89e6595cce",
+  "bbox": [
+   33.67,
+   32.5,
+   79.33,
+   60.0
+  ],
+  "corte": "-2500",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 7,
+  "descartados": [
+   {
+    "nombre": "Imperio acadio",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Cultura yamna",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de las catacumbas",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura Kurá-Araxes",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona: Anatolia central-oriental, Siria norte, Mesopotamia norte, Irán norte, Cáucaso, estepa póntico-caspia y Asia Central. QIDs y coordenadas comprobados contra la API de Wikidata/Wikipedia. Único estado nuevo con umbral 3: el Imperio acadio (Q4461035, coord. Wikidata 33.1 N / 44.1 E, dentro de la zona; la ciudad de Agadé Q150996 no tiene coordenadas). Las tres culturas propuestas (Yamna, Catacumbas, Kurá-Araxes) NO tienen P625 en Wikidata; se proponen igual porque el visor ya admite entidades culturales sin coordenadas (Campaniforme, Megalitismo atlántico), pero habrá que ubicarlas por otro medio. Descartados por peso <3: Nínive (Q5680, periodo Ninevita 5, sin rango de capital), Assur (Q200200, templo de Ishtar desde Dinástico Antiguo, ciudad menor), Sarazm (Q422929, 90 ha, centro metalúrgico, no estado), Altyn-Depe (Q2559322), Alaca Höyük (Q558861, tumbas reales 2850–2450 a.C.) y hatianos (Q7322482, ciudades-estado conocidas solo por arqueología y fuentes hititas tardías), Kültepe, Arslantepe, Tell Chuera, Tell Beydar, Hamoukar, cultura de Poltavka (Q1757895, regional). Descartados por fecha: Maikop (termina -3000), BMAC (empieza -2200), Trialeti (-2200), gutis (-2200), Ur III. Fuera de la zona (lat <32.5): Susa, Shahr-i Sokhta, Mundigak, Uruk. La 'civilización de Kish' (Q18639374) se descarta porque la propia Wikipedia la da por teoría abandonada. Alianzas Ebla–Kish y Ebla–Nagar (matrimonio dinástico) no encajan en los tres tipos de relación admitidos y no se proponen. La atribución de la destrucción de Ebla es discutida (Sargón / Naram-Sin / Mari) y así se deja en la línea. Naram-Sin (c. 2254–2218) queda al borde de la ventana; sus campañas contra lullubi y Armanum no se incluyen como eventos por falta de coordenadas y por caer fuera.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
