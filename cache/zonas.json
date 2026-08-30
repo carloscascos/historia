@@ -3927,5 +3927,31 @@
   ],
   "nota": "Zona revisada: Iberia, Magreb occidental, sur de Francia, Baleares, Córcega, Cerdeña y Mediterráneo occidental. Los objetos ya presentes que caen dentro de esta zona son solo cinco (Los Millares, Vila Nova de São Pedro, Campaniforme ibérico, El Argar y Cultura nurágica); el resto de la lista previa (Egipto, Sumeria, Asiria, Babilonia, Elam, Indo, minoica, Ugarit, Andrónovo) es geográficamente exterior a este recuadro. DESCARTADO Y POR QUÉ: (1) Cabezo Redondo (Q8254441) — ocupación 1500-1100 a.C., posterior a la ventana. (2) Cultura de Bonnanaro (Q747396) — 1800-1600 a.C.; solo roza el último año de la ventana y es la fase inicial de la cultura nurágica, que ya está en el visor. (3) Civilización torreana de Córcega (Q472258) — segunda mitad del II milenio, fuera de ventana. (4) Cultura pretalayótica balear (Q4167312) — los asentamientos se documentan de forma masiva a partir de 1600 a.C.; la ocupación entre 2250 y 1800 no está establecida con claridad en las fuentes consultadas. (5) Cultura del Ródano (Q116507925) — cronología correcta (2200-1500 a.C.) pero su núcleo (Franco Condado, Borgoña oriental, Alpes del norte, Valais) queda al este del recuadro, y el ítem de Wikidata carece de coordenadas, con lo que no se puede verificar que caiga dentro. (6) Kach Kouch, Marruecos (Q108266902) — dentro de la zona y con coordenadas, pero su fase 2200-2000 a.C. está, en palabras de los propios excavadores, 'escasamente representada'; no llega al umbral de vista media. (7) Evento 4.2 ka (Q1291515) — la sequía es el motor de las motillas y probablemente del cambio de Los Millares a El Argar, pero es un evento climático global sin coordenadas, no localizable en esta zona. (8) Zambujal (Portugal) — abandonado en la primera mitad del II milenio, pero no he encontrado un QID con coordenadas para el yacimiento (Q145729 es la freguesía moderna), así que no lo propongo. CAVEAT sobre la relación propuesta: el intercambio de grano motillas→El Argar procede de la Wikipedia inglesa de la cultura argárica, que lo presenta como resultado de investigación reciente; no he leído el artículo científico original. La misma fuente en español subraya que ambas culturas son coetáneas y no subordinadas, así que la relación se propone como comercio, no como dependencia.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "fba67ae3f3",
+  "bbox": [
+   10.84,
+   32.5,
+   33.67,
+   46.25
+  ],
+  "corte": "-2000",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 2,
+  "descartados": [
+   {
+    "nombre": "Cnosos",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Troya",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "La zona real cubre Egeo, Creta, Grecia, Anatolia occidental, Chipre occidental, Italia y Balcanes: el límite este (33,67) deja FUERA toda Anatolia central y el Levante, y el sur (32,5) deja fuera Egipto. Verificado con las coordenadas de Wikidata: quedan fuera Kültepe/Kanesh (35,63 E), Hattusa (34,62), Alacahöyük (34,70), Acemhöyük (33,84), Ebla (36,80), Alalakh (36,39), Yamhad (37,15), Biblos (35,65) y Enkomi (33,87, por poco) — es decir, la red de colonias asirias y el Levante amorreo, que son lo relevante de esta ventana, caen en zonas vecinas. Ya estaban en el visor con QID (no se repiten): Beycesultan (Q4081181), Festo (Q249707), Malia (Q1887316), Zakros (Q60218) y Filacopi (Q1447360), y la relación comercial minoicos–Egipto Imperio Medio (Q134178–Q191324). DESCARTADOS por no llegar al umbral de peso 2: Lerna (Q1236078: tras el incendio de la Casa de las Tejas, ~2250, solo un poblado de casas de dos o tres cuartos), Poliochni (Q1542545: en declive hacia 2000 a.C. y con un hiato de ocupación), Sotira Kaminoudhia (Q59139488, poblado pequeño), Küllüoba, Limantepe y Panaztepe. DESCARTADO por fecha: cultura de Vučedol (Q922829), que termina hacia 2200 a.C. y solo rozaría el inicio de la ventana; Arzawa (Q649262), documentada a partir del s. XV a.C. NO PROPUESTAS por falta de coordenadas en Wikidata (el visor las exige): Heládico Medio (Q1940165), cultura de Polada (Q2347305), cultura de Castelluccio (Q3699313), Nagyrév (Q2338751) y los periodos minoicos (Q137262813, Q12056948) — son las etiquetas que cubrirían Grecia continental, Italia y Sicilia en esta ventana, de modo que esas tres regiones quedan sin representar por una limitación de los datos, no por ausencia de material arqueológico. La datación del pecio de Dokós oscila entre 2700 y 2200 a.C. según la fuente; se ha usado la estimación cerámica de ~2200 a.C., la única que lo sitúa dentro de la ventana.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
