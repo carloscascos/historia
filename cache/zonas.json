@@ -2411,5 +2411,51 @@
   ],
   "nota": "Zona: Omán, sureste de Irán, sur de Afganistán, Pakistán (Sind, Baluchistán, Punyab) e India noroccidental hasta el Doab. Se verificó en Wikidata que todas las ciudades propuestas tienen coordenadas dentro de la zona. Descartados: Rakhigarhi (Q3418050) porque el artículo solo documenta ocupación hasta la fase madura (1900 a.C.); Rojdi (hasta 1700 a.C.) y Bhagwanpura (1700-1300 a.C., solapamiento tardo-harappense/PGW) por ser peso 1; Tepe Yahya (Q384077) por cronología contradictoria en la fuente (periodo IVA 'principios del II milenio' vs 'producción de clorita a mediados del II milenio'), sin fecha firme dentro de la ventana; Shahr-e Sukhteh (abandono hacia 2350-2000 a.C.) y Konar Sandal (hasta 2200 a.C.) por caer antes de la ventana; Magan (Q1429914) porque las menciones documentadas son del III milenio y no hay nada datado en 1800-1475 a.C.; culturas Bara, Copper Hoard y Kayatha por peso 1 o fin antes de la ventana; la cultura Rangpur no tiene ítem propio en Wikidata. Sin eventos: no existe ningún hecho datado con ítem de Wikidata y coordenadas en esta zona y ventana (el abandono de Mohenjo-Daro es un proceso sin ítem propio). Relación Wadi Suq-Indo omitida por ser un vínculo 'menguante' (peso 1). Advertencia sobre Dholavira: la fuente da dos cronologías incompatibles (fin hacia 1450 a.C. tradicional frente a hacia 1800 a.C. en investigación reciente); se ha usado la tradicional, que es la que mantiene la ciudad dentro de la ventana. La relación Andrónovo→védica es una hipótesis (teoría migratoria) y así se etiqueta en la línea.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "1786f1d869",
+  "bbox": [
+   -12.0,
+   46.25,
+   10.84,
+   60.0
+  ],
+  "corte": "-1600",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 6,
+  "descartados": [
+   {
+    "nombre": "Cultura de Wessex",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Edad del Bronce nórdica",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de los túmulos",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Únětice",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de los túmulos armoricanos",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Última fase de construcción de Stonehenge (hoyos Y y Z)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Barco de la Edad del Bronce de Dover",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona: Islas Británicas, Francia al norte del Loira, Benelux, Alemania occidental, Suiza, Dinamarca y sur de Escandinavia. No hay ciudades ni estados en la ventana: todo son culturas arqueológicas, un centro minero y hallazgos datados. Avisos: (1) Ninguna de las cinco entidades tiene P625 en Wikidata (igual que las culturas ya presentes en el visor); la ubicación tendrá que resolverse por extensión. (2) Únětice cae mayoritariamente al este de 10.84°E (Bohemia, Sajonia-Anhalt, Silesia); solo su franja occidental en Turingia/Baja Sajonia toca la zona; se propone con peso 2 por sus vínculos con Wessex y su continuidad en la cultura de los túmulos. (3) Great Orme es un complejo minero, no un asentamiento; se propone como 'ciudad' por ser el único tipo admitido con coordenadas puntuales y ocupación continua; retirar si el tipo no encaja. (4) El barco de Dover (Q1252872) no tiene P625 ni P189; solo P276 = Dover Museum (Q5302509), en Dover, dentro de la zona; si el visor no resuelve por P276 no podrá situarlo. Descartados: disco celeste de Nebra (11.5°E, fuera de la zona por 0.7°); cultura de Hilversum (Q278382, 1870-1050 a.C., Países Bajos/Bélgica) y cultura de Elp, Sögel-Wohlde, Adlerberg, Arbon y grupo de Singen, todas regionales, peso 1; barcos de Ferriby (anteriores a 1800 a.C.); minas de Ross Island (terminan hacia 1900 a.C.); Bush Barrow (hacia 1900 a.C., fuera de ventana); carro solar de Trundholm y Flag Fen (posteriores a 1475 a.C.). No se ha propuesto relación Bronce nórdico–Micenas porque Wikipedia la sitúa a partir de 1500 a.C., casi fuera de la ventana.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
