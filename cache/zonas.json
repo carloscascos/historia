@@ -3897,5 +3897,35 @@
   ],
   "nota": "Zona dominada por la civilización del Indo (ya en el visor) más el borde oriental irania. Añadidas cinco ciudades con QID y coordenadas dentro del recuadro: Ganweriwala y Lothal a peso 3 (gran centro urbano y puerto principal), Kalibangan, Sutkagan Dor y Nausharo a peso 2. Añadidas dos relaciones comerciales entre entidades ya presentes. DESCARTADOS: Shahr-e Sukhteh (Q1032128, 30.6N/61.3E, dentro de la zona) porque su fase urbana termina hacia 2300 a.C., antes de que se abra la ventana; solo hay una reocupación marginal del «Edificio Quemado» en 2100-2000 a.C., insuficiente para peso 2. Konar Sandal / Jiroft: apogeo a mediados del III milenio, con hiato en la ventana. Mehrgarh (Q242148, dentro de la zona): ya estaba en gran parte abandonado en favor de Nausharo antes de 2250 a.C. Pirak (Q4363252): la ocupación arranca en 1800 a.C., justo al cerrarse la ventana. Kuntasi y Rojdi (Gujarat): ocupados en la ventana pero son asentamientos secundarios, peso 1, por debajo del umbral. Shortugai (37.3N/69.5E) y el complejo de Bactria-Margiana / Gonur Depe (38.2N/62.0E) quedan al norte del límite de 32.5° de latitud, fuera de la zona. Magan (Q1429914) y Dilmun caen al oeste/suroeste del recuadro y además Magan carece de coordenadas en Wikidata. NO PROPUESTOS POR FALTA DE COORDENADAS EN WIKIDATA, pese a encajar en la ventana y la zona: cultura de Kulli (Q1755265, Baluchistán meridional, ca. 2500-2000 a.C.) y cultura del Cementerio H (Q2364797, Punjab, desde ca. 1900 a.C.) — la regla 2 exige coordenadas y ninguno de los dos ítems tiene P625. Tampoco se propone el evento 4.2 ka (Q1291515), sequía global fechada en el siglo XXII a.C. y asociada al declive del Indo: es un evento climático sin coordenadas, no un hecho localizable. Queda sin resolver, y se deja dicho: no he encontrado un ítem de Wikidata con coordenadas que represente el colapso urbano del Indo como evento datado, así que ese proceso —el hecho más importante de la zona en esta ventana— no aparece como objeto.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "1d6b8cff09",
+  "bbox": [
+   -12.0,
+   32.5,
+   10.84,
+   46.25
+  ],
+  "corte": "-2000",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 3,
+  "descartados": [
+   {
+    "nombre": "La Bastida (Totana)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Cultura de las Motillas (Bronce Manchego)",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Motilla del Azuer",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona revisada: Iberia, Magreb occidental, sur de Francia, Baleares, Córcega, Cerdeña y Mediterráneo occidental. Los objetos ya presentes que caen dentro de esta zona son solo cinco (Los Millares, Vila Nova de São Pedro, Campaniforme ibérico, El Argar y Cultura nurágica); el resto de la lista previa (Egipto, Sumeria, Asiria, Babilonia, Elam, Indo, minoica, Ugarit, Andrónovo) es geográficamente exterior a este recuadro. DESCARTADO Y POR QUÉ: (1) Cabezo Redondo (Q8254441) — ocupación 1500-1100 a.C., posterior a la ventana. (2) Cultura de Bonnanaro (Q747396) — 1800-1600 a.C.; solo roza el último año de la ventana y es la fase inicial de la cultura nurágica, que ya está en el visor. (3) Civilización torreana de Córcega (Q472258) — segunda mitad del II milenio, fuera de ventana. (4) Cultura pretalayótica balear (Q4167312) — los asentamientos se documentan de forma masiva a partir de 1600 a.C.; la ocupación entre 2250 y 1800 no está establecida con claridad en las fuentes consultadas. (5) Cultura del Ródano (Q116507925) — cronología correcta (2200-1500 a.C.) pero su núcleo (Franco Condado, Borgoña oriental, Alpes del norte, Valais) queda al este del recuadro, y el ítem de Wikidata carece de coordenadas, con lo que no se puede verificar que caiga dentro. (6) Kach Kouch, Marruecos (Q108266902) — dentro de la zona y con coordenadas, pero su fase 2200-2000 a.C. está, en palabras de los propios excavadores, 'escasamente representada'; no llega al umbral de vista media. (7) Evento 4.2 ka (Q1291515) — la sequía es el motor de las motillas y probablemente del cambio de Los Millares a El Argar, pero es un evento climático global sin coordenadas, no localizable en esta zona. (8) Zambujal (Portugal) — abandonado en la primera mitad del II milenio, pero no he encontrado un QID con coordenadas para el yacimiento (Q145729 es la freguesía moderna), así que no lo propongo. CAVEAT sobre la relación propuesta: el intercambio de grano motillas→El Argar procede de la Wikipedia inglesa de la cultura argárica, que lo presenta como resultado de investigación reciente; no he leído el artículo científico original. La misma fuente en español subraya que ambas culturas son coetáneas y no subordinadas, así que la relación se propone como comercio, no como dependencia.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
