@@ -11,53 +11,73 @@
     --sans:"Archivo Narrow",ui-sans-serif,"Helvetica Neue",Arial,sans-serif;
     --serif:"Newsreader",Georgia,"Times New Roman",serif;
     --c1:#b0736a;--c2:#7f9a6b;--c3:#9b8a5a;--c4:#5f8fa8;--c5:#d1a24a;--c6:#c47c4b;--c7:#a3728f;--c8:#7c8fb5;--c9:#8fa06a;--c10:#c05f5f;--c0:#8a9398;
+    --panel-w:360px;
   }
-  *{box-sizing:border-box} html,body{margin:0;background:var(--ink);color:var(--text);font-family:var(--serif);-webkit-font-smoothing:antialiased}
+  *{box-sizing:border-box} html,body{margin:0;height:100%;background:var(--ink);color:var(--text);font-family:var(--serif);-webkit-font-smoothing:antialiased;overflow:hidden}
   a{color:var(--transmision)}
-  header{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline;padding:14px 20px 6px;border-bottom:1px solid var(--line)}
-  header h1{font-family:var(--sans);font-weight:700;font-size:clamp(18px,3.2vw,24px);margin:0}
-  header .sub{color:var(--text-dim);font-size:14px}
+  body{display:grid;grid-template-rows:auto auto 1fr auto;height:100vh}
+  #top{grid-row:1} #cuadro{grid-row:2} #main{grid-row:3} #foot{grid-row:4}
   .kicker{font-family:var(--sans);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-dim)}
+  button{font-family:var(--sans);background:transparent;color:var(--text);border:1px solid var(--line);border-radius:4px;padding:3px 9px;cursor:pointer;font-size:12.5px}
+  button:hover{border-color:var(--bronce)} button.on{border-color:var(--bronce);color:var(--bronce)}
 
-  /* cuadro: franja compacta */
-  #cuadro{display:grid;grid-template-columns:130px repeat(6,var(--w));gap:1px;background:var(--line);border-bottom:1px solid var(--line);font-family:var(--sans);font-size:11.5px;line-height:1.15}
+  /* 1. barra superior */
+  #top{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;padding:8px 16px;border-bottom:1px solid var(--line);font-family:var(--sans);font-size:12.5px}
+  #top h1{font-weight:700;font-size:clamp(16px,2.6vw,21px);margin:0 6px 0 0}
+  #top .sub{color:var(--text-dim);font-size:12px}
+  #corte-lbl{font-size:20px;font-weight:700;color:var(--bronce);min-width:100px}
+  #top input[type=range]{width:min(360px,40vw);accent-color:var(--bronce)}
+  #top .grp{display:flex;gap:6px;align-items:center}
+  #top .right{margin-left:auto}
+
+  /* 2. cuadro sinóptico plegable */
+  #cuadro{display:grid;gap:1px;background:var(--line);border-bottom:1px solid var(--line);font-family:var(--sans);font-size:11.5px;line-height:1.15;max-height:40vh;overflow:auto}
+  #cuadro.hid{display:none}
   #cuadro>div{background:var(--ink);padding:3px 5px;min-height:20px}
-  #cuadro .h{color:var(--text-dim);text-align:center;cursor:pointer;font-weight:700;letter-spacing:.04em}
+  #cuadro .h{color:var(--text-dim);text-align:center;cursor:pointer;font-weight:700;letter-spacing:.04em;position:sticky;top:0;z-index:1}
   #cuadro .h.map{font-weight:400;font-size:10.5px}
   #cuadro .n{color:var(--text-dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-left:3px solid var(--cc)}
   #cuadro .c{cursor:pointer;color:var(--text);overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
-  #cuadro .c.map{background:#0e1316;cursor:default}
-  #cuadro .c:hover:not(.map){background:#182027}
+  #cuadro .c.map{background:#0e1316;color:var(--text-dim)}
+  #cuadro .c:hover{background:#182027}
   #cuadro .cur{background:#1b2a1f!important;box-shadow:inset 0 0 0 1px var(--bronce)}
   #cuadro .h.cur{color:var(--bronce)}
 
-  /* controles */
-  #ctl{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;padding:8px 20px;border-bottom:1px solid var(--line);font-family:var(--sans);font-size:12.5px}
-  #ctl input[type=range]{width:min(420px,60vw);accent-color:var(--bronce)}
-  #corte-lbl{font-size:20px;font-weight:700;color:var(--bronce);min-width:110px}
-  .leg{display:flex;gap:14px;flex-wrap:wrap;color:var(--text-dim)}
-  .leg span{display:inline-flex;align-items:center;gap:5px}
-  .leg i{display:inline-block;width:22px;height:0;border-top:2px solid}
-  .leg i.x{border-top-style:dashed}
-  .leg b{display:inline-block;width:14px;height:10px;border-radius:2px;background:#6a7a80}
-  .leg b.blur{filter:blur(2px);opacity:.8}
-  button{font-family:var(--sans);background:transparent;color:var(--text);border:1px solid var(--line);border-radius:4px;padding:3px 9px;cursor:pointer}
-  button:hover{border-color:var(--bronce)}
-
-  /* mapa + panel */
-  #main{display:grid;grid-template-columns:1fr 340px;min-height:60vh;height:calc(100vh - var(--top,340px))}
-  #mapwrap{position:relative;background:#0d1417;overflow:hidden}
+  /* 3+4. mapa y ficha */
+  #main{display:grid;grid-template-columns:1fr var(--panel-w);min-height:0;position:relative}
+  #main.nopanel{grid-template-columns:1fr 0}
+  #mapwrap{position:relative;background:#0d1417;overflow:hidden;touch-action:none;cursor:grab}
+  #mapwrap.drag{cursor:grabbing}
   svg#map{width:100%;height:100%;display:block;position:absolute;inset:0}
-  #mapwrap .nota{position:absolute;left:10px;bottom:8px;font-family:var(--sans);font-size:11px;color:var(--text-dim)}
-  #panel{border-left:1px solid var(--line);padding:16px 18px;overflow:auto;background:var(--panel);font-size:14.5px;line-height:1.4}
-  #panel h2{font-family:var(--sans);font-size:18px;margin:0 0 4px}
+  #zoomctl{position:absolute;right:10px;top:10px;display:flex;flex-direction:column;gap:4px}
+  #zoomctl button{width:30px;height:30px;padding:0;font-size:18px;background:rgba(11,15,17,.8)}
+  #lod{position:absolute;left:10px;top:10px;font-family:var(--sans);font-size:11px;color:var(--text-dim);background:rgba(11,15,17,.7);padding:2px 6px;border-radius:3px}
+  #panel{border-left:1px solid var(--line);background:var(--panel);font-size:14.5px;line-height:1.45;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+  #main.nopanel #panel{display:none}
+  #panel .hd{display:flex;align-items:flex-start;gap:8px;padding:14px 16px 6px;border-bottom:1px solid var(--line)}
+  #panel .hd h2{font-family:var(--sans);font-size:18px;margin:0;flex:1}
+  #panel .hd button{padding:0 7px;font-size:16px;line-height:22px}
+  #panel .bd{padding:10px 16px 16px;overflow:auto;flex:1}
   #panel .meta{font-family:var(--sans);font-size:12px;color:var(--text-dim);margin-bottom:8px}
   #panel .tag{display:inline-block;padding:1px 6px;border-radius:3px;font-size:11px;background:#1d262b;margin-right:4px;text-transform:uppercase;letter-spacing:.05em}
   #panel ul{padding-left:18px;margin:6px 0}
-  #panel .src{font-family:var(--sans);font-size:11.5px;color:var(--text-dim);margin-top:12px;border-top:1px solid var(--line);padding-top:8px;word-break:break-word}
+  #panel .sec{margin-top:10px}
+  #panel .src{font-family:var(--sans);font-size:11.5px;color:var(--text-dim);border-top:1px solid var(--line);padding-top:8px;word-break:break-word}
   #panel .src a{color:var(--text-dim)}
   #panel .ev{margin:6px 0;padding:6px 8px;background:#0e1316;border-left:2px solid var(--bronce);cursor:pointer}
-  @media (max-width:900px){#main{grid-template-columns:1fr}#panel{border-left:0;border-top:1px solid var(--line)}#cuadro{font-size:10px;grid-template-columns:90px repeat(6,var(--w))}}
+  #panel .more{display:block;margin:10px 0 0;color:var(--bronce);border:0;padding:0;font-size:13px}
+  #panel p{margin:6px 0}
+
+  /* 5. pie */
+  #foot{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;padding:6px 16px;border-top:1px solid var(--line);font-family:var(--sans);font-size:11.5px;color:var(--text-dim)}
+  .leg{display:flex;gap:12px;flex-wrap:wrap}
+  .leg span{display:inline-flex;align-items:center;gap:5px}
+  .leg i{display:inline-block;width:20px;height:0;border-top:2px solid}
+  .leg i.x{border-top-style:dashed}
+  .leg b{display:inline-block;width:14px;height:10px;border-radius:2px;background:#6a7a80}
+  .leg b.blur{filter:blur(2px);opacity:.8}
+  #foot .lic{margin-left:auto}
+  @media (max-width:900px){#main{grid-template-columns:1fr}#main.nopanel{grid-template-columns:1fr}#panel{position:absolute;right:0;bottom:0;left:0;max-height:55%;border-left:0;border-top:1px solid var(--line);z-index:2}#cuadro{font-size:10px}}
 
   /* capas svg */
   .corte{opacity:0;transition:opacity .6s ease;pointer-events:none}
@@ -70,7 +90,6 @@
   .ent.sel{stroke:var(--bronce)!important;stroke-width:2!important;stroke-opacity:1!important}
   .lbl{font-family:var(--sans);font-size:1.15px;fill:var(--text);paint-order:stroke;stroke:#0b0f11;stroke-width:.35px;stroke-linejoin:round;pointer-events:none;letter-spacing:.03em}
   .lbl.t{font-size:.95px;fill:var(--text-dim)}
-  svg.far .lbl.t{display:none}
   .zs{transform-box:fill-box}
   .ciu{fill:#f0e6d2;fill-opacity:.9;stroke:#0b0f11;stroke-width:.5;vector-effect:non-scaling-stroke;cursor:pointer}
   .ciu.dud{stroke-dasharray:2 1.5;fill-opacity:.55}
@@ -83,33 +102,28 @@
   .rel.sel{stroke-width:3.2}
   .evm{fill:var(--bronce);stroke:#0b0f11;stroke-width:.5;vector-effect:non-scaling-stroke;cursor:pointer}
   .evm:hover{fill:#fff}
+  /* nivel de detalle por zoom: w = peso (ciudad por población, evento por peso) */
+  svg.lod3 .w0,svg.lod3 .w1,svg.lod3 .w2{display:none}
+  svg.lod2 .w0,svg.lod2 .w1{display:none}
+  svg.lod1 .w0{display:none}
+  svg.lod3 .lbl.t,svg.lod2 .lbl.t{display:none}
 </style>
 </head>
 <body>
-<header>
+
+<!-- 1. barra superior -->
+<div id="top">
   <h1>Edad del Bronce · visor</h1>
-  <span class="sub">Maqueta. Seis cortes, del Atlántico a China. Toca una entidad, una ciudad, un trazo o un evento.</span>
-</header>
-
-<div id="cuadro"></div>
-
-<div id="ctl">
-  <span id="corte-lbl"></span>
-  <input type="range" id="slider" min="0" max="5" step="1" value="4">
-  <button id="btn-mundo">Mundo</button>
-  <button id="btn-viejo">Viejo Mundo</button>
-  <button id="btn-op">Oriente Próximo</button>
-  <div class="leg">
-    <span><i style="border-color:var(--conflicto)"></i> conflicto</span>
-    <span><i style="border-color:var(--comercio)"></i> comercio</span>
-    <span><i class="x" style="border-color:var(--transmision)"></i> transmisión</span>
-    <span><b style="outline:1px solid #ddd"></b> estado</span>
-    <span><b class="blur"></b> ámbito difuso</span>
-    <span><b style="width:10px;height:10px;border-radius:50%;background:#f0e6d2"></b> ciudad (∝ población)</span>
-    <span><b style="width:9px;height:9px;transform:rotate(45deg);background:var(--bronce)"></b> evento</span>
-  </div>
+  <span class="sub">maqueta</span>
+  <div class="grp"><span id="corte-lbl"></span><input type="range" id="slider" min="0" max="5" step="1" value="4"></div>
+  <div class="grp"><button id="btn-mundo">Mundo</button><button id="btn-viejo">Viejo Mundo</button><button id="btn-op">Oriente Próximo</button></div>
+  <div class="grp right"><button id="btn-cuadro" class="on">Cuadro ▴</button><button id="btn-panel">Ficha</button></div>
 </div>
 
+<!-- 2. cuadro sinóptico -->
+<div id="cuadro"></div>
+
+<!-- 3. mapa + 4. ficha -->
 <div id="main">
   <div id="mapwrap">
     <svg id="map" xmlns="http://www.w3.org/2000/svg" viewBox="-25 -60 150 55" preserveAspectRatio="xMidYMid meet">
@@ -122,9 +136,25 @@
       <path id="land"/>
       <g id="layers"></g>
     </svg>
-    <div class="nota">Costas actuales (Natural Earth). Fronteras antiguas: lo nítido es un estado; lo difuso, un ámbito cultural.</div>
+    <div id="lod"></div>
+    <div id="zoomctl"><button id="z-in" title="acercar">+</button><button id="z-out" title="alejar">−</button></div>
   </div>
-  <aside id="panel"></aside>
+  <aside id="panel"><div class="hd"><h2 id="p-title"></h2><button id="p-close" title="cerrar">×</button></div><div class="bd" id="p-body"></div></aside>
+</div>
+
+<!-- 5. pie -->
+<div id="foot">
+  <div class="leg">
+    <span><i style="border-color:var(--conflicto)"></i> conflicto</span>
+    <span><i style="border-color:var(--comercio)"></i> comercio</span>
+    <span><i class="x" style="border-color:var(--transmision)"></i> transmisión</span>
+    <span><b style="outline:1px solid #ddd"></b> estado</span>
+    <span><b class="blur"></b> ámbito difuso</span>
+    <span><b style="width:10px;height:10px;border-radius:50%;background:#f0e6d2"></b> ciudad (∝ población)</span>
+    <span><b style="width:9px;height:9px;transform:rotate(45deg);background:var(--bronce)"></b> evento</span>
+  </div>
+  <span>Costas actuales (Natural Earth). Lo nítido es un estado; lo difuso, un ámbito cultural. Rueda o pellizco para acercar; arrastrar para mover.</span>
+  <span class="lic">Datos: Cliopatria/Seshat CC BY 4.0 · Reba–Seto 2016 CC BY 4.0 · Wikidata CC0 · Natural Earth dominio público</span>
 </div>
 
 <script>
@@ -132,81 +162,97 @@
 const $=s=>document.querySelector(s), svgNS="http://www.w3.org/2000/svg";
 const el=(t,a={},txt)=>{const e=document.createElementNS(svgNS,t);for(const k in a)e.setAttribute(k,a[k]);if(txt!=null)e.textContent=txt;return e};
 const civColor=id=>`var(--c${id||0})`;
+const civName=id=>{const c=DATA.civ.find(c=>c.id===id);return c?c.nombre:"— sin fila en el cuadro —"};
+const fmt=y=>y<0?`${-y} a.C.`:`${y} d.C.`;
+const CORTES=DATA.cortes;
+let cur=4, sel=null;
 // matiz por entidad dentro de una misma civilización (Asiria, Babilonia y Mitani no deben verse iguales)
 const HEX={1:"#b0736a",2:"#7f9a6b",3:"#9b8a5a",4:"#5f8fa8",5:"#d1a24a",6:"#c47c4b",7:"#a3728f",8:"#7c8fb5",9:"#8fa06a",10:"#c05f5f",0:"#8a9398"};
 const entIdx={}; Object.values(DATA.ent).forEach(e=>{const k=e.civilizacion||0;entIdx[e.qid]=(entIdx["_"+k]=(entIdx["_"+k]||0)+1)-1});
 function entColor(E){const h=HEX[E.civilizacion||0];const n=parseInt(h.slice(1),16);let r=n>>16,g=(n>>8)&255,b=n&255;const i=entIdx[E.qid]%4;const f=[1,0.78,1.18,0.88][i];const rot=[0,1,2,0][i];
   let c=[r,g,b].map(v=>Math.max(0,Math.min(255,Math.round(v*f))));if(rot===1)c=[c[1],c[0],c[2]].map((v,j)=>Math.round((v+[r,g,b][j])/2));if(rot===2)c=[c[0],c[2],c[1]].map((v,j)=>Math.round((v+[r,g,b][j])/2));
   return `rgb(${c.join(",")})`}
-const civName=id=>{const c=DATA.civ.find(c=>c.id===id);return c?c.nombre:"— sin fila en el cuadro —"};
-const fmt=y=>y<0?`${-y} a.C.`:`${y} d.C.`;
-const CORTES=DATA.cortes;
-let cur=4, sel=null;
+// peso de una ciudad por población (0–3); el de un evento viene en el dato (1–3)
+const wCiu=p=>p>=40000?3:p>=20000?2:p>=8000?1:0;
 
 /* ---------- mapa ---------- */
 $("#land").setAttribute("d",DATA.land);
 const layers=$("#layers");
 CORTES.forEach((c,i)=>{
   const g=el("g",{class:"corte","data-i":i});
-  // entidades
   const ge=el("g");
   c.ent.forEach(e=>{
     const E=DATA.ent[e.qid], tipo=E.tipo==="estado"?"estado":"difuso";
     const p=el("path",{d:e.d,class:`ent ${tipo}`,fill:entColor(E),"data-qid":e.qid});
-    p.addEventListener("click",()=>show("ent",e.qid,p));
+    p.addEventListener("click",()=>click(()=>show("ent",e.qid,p)));
     ge.appendChild(p);
   });
   g.appendChild(ge);
-  // relaciones
   const gr=el("g");
   c.rel.forEach(r=>{
     const R=DATA.rel[r.id];
     const hit=el("path",{d:r.d,class:"rel hit"}), p=el("path",{d:r.d,class:`rel ${R.tipo}`,"data-id":r.id});
-    hit.addEventListener("click",()=>show("rel",r.id,p)); p.addEventListener("click",()=>show("rel",r.id,p));
+    const h=()=>click(()=>show("rel",r.id,p)); hit.addEventListener("click",h); p.addEventListener("click",h);
     gr.appendChild(hit); gr.appendChild(p);
   });
   g.appendChild(gr);
-  // etiquetas de entidad
   const gl=el("g");
-  c.ent.forEach(e=>{const E=DATA.ent[e.qid];const t=el("text",{class:"lbl zs","text-anchor":"middle","data-x":e.c[0],"data-y":-e.c[1]},E.nombre);gl.appendChild(t)});
+  c.ent.forEach(e=>{const E=DATA.ent[e.qid];gl.appendChild(el("text",{class:"lbl zs","text-anchor":"middle","data-x":e.c[0],"data-y":-e.c[1]},E.nombre))});
   g.appendChild(gl);
-  // ciudades
   const gc=el("g");
   c.ciu.forEach(ci=>{
     const r=0.18+0.12*Math.sqrt(ci.pob/1000);
-    const g2=el("g",{class:"zs","data-x":ci.lon,"data-y":-ci.lat});
+    const g2=el("g",{class:"zs w"+wCiu(ci.pob),"data-x":ci.lon,"data-y":-ci.lat});
     const k=el("circle",{cx:0,cy:0,r:r.toFixed(2),class:"ciu"+(ci.fiab===3?" dud":"")});
-    k.addEventListener("click",()=>show("ciu",ci,k)); g2.appendChild(k);
+    k.addEventListener("click",()=>click(()=>show("ciu",ci,k))); g2.appendChild(k);
     g2.appendChild(el("text",{x:r+0.2,y:0.35,class:"lbl t"},ci.n)); gc.appendChild(g2);
   });
   g.appendChild(gc);
-  // eventos
   const gv=el("g");
   c.ev.forEach(v=>{
-    const s=0.75, g2=el("g",{class:"zs","data-x":v.lon,"data-y":-v.lat}), m=el("path",{d:`M0,${-s}L${s},0L0,${s}L${-s},0Z`,class:"evm"});
-    m.addEventListener("click",()=>show("ev",v.qid,m)); g2.appendChild(m);
-    g2.appendChild(el("text",{x:s+0.2,y:0.35,class:"lbl t"},DATA.ev[v.qid].nombre)); gv.appendChild(g2);
+    const V=DATA.ev[v.qid], s=0.75, g2=el("g",{class:"zs w"+(V.peso||1),"data-x":v.lon,"data-y":-v.lat}), m=el("path",{d:`M0,${-s}L${s},0L0,${s}L${-s},0Z`,class:"evm"});
+    m.addEventListener("click",()=>click(()=>show("ev",v.qid,m))); g2.appendChild(m);
+    g2.appendChild(el("text",{x:s+0.2,y:0.35,class:"lbl"},V.nombre)); gv.appendChild(g2);
   });
   g.appendChild(gv);
   layers.appendChild(g);
 });
 
-/* ---------- viewBox animado ---------- */
-const svg=$("#map"); const VIEJO=[-25,-60,150,55], MUNDO=[-180,-80,360,140];
-const OP=[15,-47,42,22];
+/* ---------- viewBox: zoom, paneo, nivel de detalle ---------- */
+const svg=$("#map"), wrap=$("#mapwrap"); const VIEJO=[-25,-60,150,55], MUNDO=[-180,-80,360,140], OP=[15,-47,42,22];
 let vb=VIEJO.slice();
 const ZS=[...document.querySelectorAll(".zs")];
-function applyVB(){svg.setAttribute("viewBox",vb.join(" "));const u=Math.max(.35,Math.min(1.6,vb[2]/150));svg.classList.toggle("far",vb[2]>100);
-  ZS.forEach(n=>n.setAttribute("transform",`translate(${n.dataset.x},${n.dataset.y}) scale(${u.toFixed(3)})`))}
-applyVB();
-function flyTo(t){const s=vb.slice(),t0=performance.now();(function step(n){const k=Math.min(1,(n-t0)/500),e=1-Math.pow(1-k,3);vb=s.map((v,i)=>v+(t[i]-v)*e);applyVB();if(k<1)requestAnimationFrame(step)})(t0)}
-function bboxView(b){const [x0,y0,x1,y1]=b,w=x1-x0,h=y1-y0,px=w*.25,py=h*.25;let W=w+2*px,H=h+2*py;const ar=svg.clientWidth/svg.clientHeight;if(W/H<ar)W=H*ar;else H=W/ar;const cx=(x0+x1)/2,cy=-(y0+y1)/2;return[cx-W/2,cy-H/2,W,H]}
+const LODN={3:"vista lejana: ciudades grandes y eventos mayores",2:"vista media",1:"vista cercana",0:"todo el detalle"};
+function lod(){return vb[2]>220?3:vb[2]>110?2:vb[2]>45?1:0}
+function ratio(){return svg.clientHeight/Math.max(1,svg.clientWidth)}
+function applyVB(){
+  vb[2]=Math.max(6,Math.min(400,vb[2])); vb[3]=vb[2]*ratio();
+  svg.setAttribute("viewBox",vb.join(" "));
+  const u=Math.max(.3,Math.min(1.6,vb[2]/150)); ZS.forEach(n=>n.setAttribute("transform",`translate(${n.dataset.x},${n.dataset.y}) scale(${u.toFixed(3)})`));
+  const L=lod(); svg.classList.remove("lod0","lod1","lod2","lod3"); svg.classList.add("lod"+L); $("#lod").textContent=LODN[L];
+}
+function flyTo(t){t=t.slice();t[3]=t[2]*ratio();const s=vb.slice(),t0=performance.now();(function step(n){const k=Math.min(1,(n-t0)/500),e=1-Math.pow(1-k,3);vb=s.map((v,i)=>v+(t[i]-v)*e);applyVB();if(k<1)requestAnimationFrame(step)})(t0)}
+function bboxView(b){const [x0,y0,x1,y1]=b,w=x1-x0,h=y1-y0;let W=w*1.5,H=h*1.5;const ar=ratio();if(H/W<ar)H=W*ar;else W=H/ar;const cx=(x0+x1)/2,cy=-(y0+y1)/2;return[cx-W/2,cy-H/2,W,H]}
+// coordenadas de pantalla -> coordenadas del mapa (viewBox con meet)
+function toMap(cx,cy){const r=svg.getBoundingClientRect();const s=Math.max(vb[2]/r.width,vb[3]/r.height);const ox=(r.width-vb[2]/s)/2,oy=(r.height-vb[3]/s)/2;return[vb[0]+(cx-r.left-ox)*s,vb[1]+(cy-r.top-oy)*s]}
+function zoomAt(f,cx,cy){const [mx,my]=toMap(cx,cy);const w=vb[2]*f;if(w<6||w>400)return;vb=[mx-(mx-vb[0])*f,my-(my-vb[1])*f,w,vb[3]*f];applyVB()}
+wrap.addEventListener("wheel",e=>{e.preventDefault();zoomAt(Math.pow(1.0015,e.deltaY),e.clientX,e.clientY)},{passive:false});
+const center=()=>{const r=svg.getBoundingClientRect();return[r.left+r.width/2,r.top+r.height/2]};
+$("#z-in").onclick=()=>zoomAt(1/1.4,...center()); $("#z-out").onclick=()=>zoomAt(1.4,...center());
+// arrastre y pellizco con pointer events; un clic real es un pointerup sin desplazamiento
+const ptr=new Map(); let dragged=false, last=null, pinch=null;
+wrap.addEventListener("pointerdown",e=>{ptr.set(e.pointerId,[e.clientX,e.clientY]);wrap.setPointerCapture(e.pointerId);dragged=false;last=[e.clientX,e.clientY];if(ptr.size===2){const p=[...ptr.values()];pinch={d:Math.hypot(p[0][0]-p[1][0],p[0][1]-p[1][1])}}});
+wrap.addEventListener("pointermove",e=>{if(!ptr.has(e.pointerId))return;ptr.set(e.pointerId,[e.clientX,e.clientY]);
+  if(ptr.size===2&&pinch){const p=[...ptr.values()];const d=Math.hypot(p[0][0]-p[1][0],p[0][1]-p[1][1]);if(d>0){zoomAt(pinch.d/d,(p[0][0]+p[1][0])/2,(p[0][1]+p[1][1])/2);pinch.d=d}dragged=true;return}
+  if(ptr.size===1&&last){const dx=e.clientX-last[0],dy=e.clientY-last[1];if(Math.hypot(dx,dy)>3)dragged=true;if(dragged){const r=svg.getBoundingClientRect();const s=Math.max(vb[2]/r.width,vb[3]/r.height);vb[0]-=dx*s;vb[1]-=dy*s;applyVB();wrap.classList.add("drag")}last=[e.clientX,e.clientY]}});
+const up=e=>{ptr.delete(e.pointerId);if(ptr.size<2)pinch=null;if(!ptr.size){last=null;wrap.classList.remove("drag");setTimeout(()=>dragged=false,0)}};
+wrap.addEventListener("pointerup",up); wrap.addEventListener("pointercancel",up);
+function click(fn){if(!dragged)fn()}
 $("#btn-mundo").onclick=()=>flyTo(MUNDO); $("#btn-viejo").onclick=()=>flyTo(VIEJO); $("#btn-op").onclick=()=>flyTo(OP);
-function fitMain(){const m=$("#main");m.style.height=Math.max(420,innerHeight-m.offsetTop)+"px"} addEventListener("resize",fitMain);
+addEventListener("resize",()=>applyVB());
 
 /* ---------- cuadro ---------- */
 const cuadro=$("#cuadro");
-cuadro.style.setProperty("--w","1fr");
 cuadro.style.gridTemplateColumns="130px "+CORTES.map(c=>c.col_cuadro?"3fr":"1fr").join(" ");
 cuadro.appendChild(Object.assign(document.createElement("div"),{className:"kicker",textContent:"civilización / corte"}));
 CORTES.forEach((c,i)=>{const h=document.createElement("div");h.className="h"+(c.col_cuadro?"":" map");h.textContent=c.etiqueta;h.dataset.i=i;h.onclick=()=>setCorte(i);cuadro.appendChild(h)});
@@ -216,10 +262,11 @@ DATA.civ.forEach(cv=>{
     const d=document.createElement("div");d.dataset.i=i;
     if(c.col_cuadro){const cel=DATA.celdas.find(x=>x.civilizacion===cv.id&&x.col_cuadro===c.col_cuadro);d.className="c";d.textContent=cel?cel.estado:"";d.title=cel?cel.hecho:"";
       d.onclick=()=>{setCorte(i);flyTo(bboxView(cv.bbox));showCelda(cv,c,cel)}}
-    else{d.className="c map";const names=c.ent.filter(e=>DATA.ent[e.qid].civilizacion===cv.id).map(e=>DATA.ent[e.qid].nombre.replace(/^Egipto: /,""));d.textContent=names.join(" · ");d.title=d.textContent;if(names.length){d.style.cursor="pointer";d.style.color="var(--text-dim)";d.onclick=()=>{setCorte(i);flyTo(bboxView(cv.bbox))}}}
+    else{d.className="c map";const names=c.ent.filter(e=>DATA.ent[e.qid].civilizacion===cv.id).map(e=>DATA.ent[e.qid].nombre.replace(/^Egipto: /,""));d.textContent=names.join(" · ");d.title=d.textContent;d.onclick=()=>{setCorte(i);flyTo(bboxView(cv.bbox))}}
     cuadro.appendChild(d);
   });
 });
+$("#btn-cuadro").onclick=()=>{const hid=cuadro.classList.toggle("hid");$("#btn-cuadro").textContent=hid?"Cuadro ▾":"Cuadro ▴";$("#btn-cuadro").classList.toggle("on",!hid);applyVB()};
 
 /* ---------- corte ---------- */
 function setCorte(i){
@@ -227,12 +274,15 @@ function setCorte(i){
   document.querySelectorAll(".corte").forEach(g=>g.classList.toggle("on",+g.dataset.i===i));
   cuadro.querySelectorAll("[data-i]").forEach(d=>d.classList.toggle("cur",+d.dataset.i===i));
   if(sel&&sel.el&&!sel.el.closest(".corte.on")) clearSel();
-  if(!sel) showCorte(CORTES[i]);
+  if(!sel&&!main.classList.contains("nopanel")) showCorte(CORTES[i]);
 }
 $("#slider").addEventListener("input",e=>setCorte(+e.target.value));
 
-/* ---------- panel ---------- */
-const panel=$("#panel");
+/* ---------- ficha (panel derecho) con paginado "más" ---------- */
+const main=$("#main"), pTitle=$("#p-title"), pBody=$("#p-body");
+function openPanel(){main.classList.remove("nopanel");$("#btn-panel").classList.add("on");applyVB()}
+function closePanel(){main.classList.add("nopanel");$("#btn-panel").classList.remove("on");applyVB()}
+$("#p-close").onclick=closePanel; $("#btn-panel").onclick=()=>main.classList.contains("nopanel")?(showCorte(CORTES[cur]),openPanel()):closePanel();
 function clearSel(){if(sel&&sel.el)sel.el.classList.remove("sel");sel=null}
 function srcHtml(fs){return fs&&fs.length?`<div class="src"><span class="kicker">fuentes</span><br>`+fs.map(s=>{
   if(s.startsWith("wikidata:"))return`<a href="https://www.wikidata.org/wiki/${s.slice(9)}" target="_blank">Wikidata ${s.slice(9)}</a>`;
@@ -241,30 +291,35 @@ function srcHtml(fs){return fs&&fs.length?`<div class="src"><span class="kicker"
   if(s.startsWith("doi:")){const [d,...rest]=s.slice(4).split(" — ");return`<a href="https://doi.org/${d}" target="_blank">${rest.join(" — ")||d}</a>`}
   if(s.startsWith("isbn:")){const [d,...rest]=s.slice(5).split(" — ");return rest.join(" — ")+` (ISBN ${d})`}
   return s}).join("<br>")+`</div>`:""}
-function evHtml(list){return list.length?`<div class="kicker" style="margin-top:10px">eventos</div>`+list.map(v=>`<div class="ev" data-ev="${v.qid}"><b>${v.nombre}</b> · ${fmt(v.año)}<br>${v.linea}</div>`).join(""):""}
-function bindEv(){panel.querySelectorAll(".ev").forEach(d=>d.onclick=()=>show("ev",d.dataset.ev,null))}
+function evHtml(list){return list.length?`<div class="kicker">eventos</div>`+list.map(v=>`<div class="ev" data-ev="${v.qid}"><b>${v.nombre}</b> · ${fmt(v.año)}<br>${v.linea}</div>`).join(""):""}
+// la ficha se compone de páginas; se muestra la primera y un botón "más" va revelando las siguientes
+function card(title,pages,color){
+  pTitle.textContent=title; pTitle.style.color=color||""; pBody.innerHTML=""; pages=pages.filter(Boolean); let i=0;
+  const more=document.createElement("button"); more.className="more"; more.textContent="… más";
+  function next(){const d=document.createElement("div");d.className="sec";d.innerHTML=pages[i++];pBody.insertBefore(d,more);d.querySelectorAll(".ev").forEach(x=>x.onclick=()=>show("ev",x.dataset.ev,null));if(i>=pages.length)more.remove()}
+  pBody.appendChild(more); more.onclick=next; next(); openPanel(); pBody.scrollTop=0;
+}
 function show(kind,key,node){
   clearSel(); if(node){node.classList.add("sel")} sel={kind,key,el:node};
   const c=CORTES[cur];
   if(kind==="ent"){const E=DATA.ent[key];const evs=Object.values(DATA.ev).filter(v=>v.cuelga_de.entidad===key&&v.año>=c.ventana[0]&&v.año<=c.ventana[1]);
     const rels=Object.values(DATA.rel).filter(r=>(r.a===key||r.b===key)&&c.rel.some(x=>x.id===r.id));
-    panel.innerHTML=`<h2>${E.nombre}</h2><div class="meta"><span class="tag">${E.tipo}</span>${civName(E.civilizacion)} · ${fmt(E.desde)} – ${fmt(E.hasta)}</div><p>${E.linea}</p>`+
-      (rels.length?`<div class="kicker">relaciones en este corte</div><ul>`+rels.map(r=>{const o=r.a===key?r.b:r.a;return`<li><span style="color:var(--${r.tipo})">${r.tipo}</span> con ${DATA.ent[o].nombre}</li>`}).join("")+`</ul>`:"")+
-      evHtml(evs)+`<div class="src"><span class="kicker">geometría</span><br>${E.origen_geo==="cliopatria"?"Cliopatria (Seshat), CC BY 4.0, simplificada":"dibujada a mano para esta maqueta"}</div>`+srcHtml(E.fuentes);bindEv()}
+    card(E.nombre,[`<div class="meta"><span class="tag">${E.tipo}</span>${civName(E.civilizacion)} · ${fmt(E.desde)} – ${fmt(E.hasta)}</div><p>${E.linea}</p>`,
+      rels.length?`<div class="kicker">relaciones en este corte</div><ul>`+rels.map(r=>{const o=r.a===key?r.b:r.a;return`<li><span style="color:var(--${r.tipo})">${r.tipo}</span> con ${DATA.ent[o].nombre}<br><span style="color:var(--text-dim)">${r.linea}</span></li>`}).join("")+`</ul>`:"",
+      evHtml(evs),
+      `<div class="src"><span class="kicker">geometría</span><br>${E.origen_geo==="cliopatria"?"Cliopatria (Seshat), CC BY 4.0, simplificada":"dibujada a mano para esta maqueta"}</div>`+srcHtml(E.fuentes)])}
   if(kind==="rel"){const R=DATA.rel[key];const evs=Object.values(DATA.ev).filter(v=>v.cuelga_de.relacion===key&&v.año>=c.ventana[0]&&v.año<=c.ventana[1]);const g=c.rel.find(x=>x.id===key);
-    panel.innerHTML=`<h2 style="color:var(--${R.tipo})">${R.tipo}</h2><div class="meta">${DATA.ent[R.a].nombre} ${R.tipo==="conflicto"?"→":"↔"} ${DATA.ent[R.b].nombre} · ${fmt(R.desde)} – ${fmt(R.hasta)}</div><p>${R.linea}</p>`+evHtml(evs)+
-      `<div class="src"><span class="kicker">trazado</span><br>${g&&g.mano?"ruta dibujada a mano":"curva automática entre las dos entidades; no representa un itinerario"}</div>`+srcHtml(R.fuentes);bindEv()}
-  if(kind==="ciu"){const ci=key;panel.innerHTML=`<h2>${ci.n}</h2><div class="meta"><span class="tag">ciudad</span>población estimada ${ci.pob.toLocaleString("es")} hacia ${fmt(ci.año)}</div>`+
-      (ci.nota?`<p style="color:var(--text-dim)">${ci.nota}</p>`:"")+`<div class="src">${ci.fuente}; fiabilidad del geocodificado ${ci.fiab} (1 = mejor)<br><a href="https://www.wikidata.org/wiki/${ci.qid}" target="_blank">Wikidata ${ci.qid}</a>${ci.eswiki?` · <a href="https://es.wikipedia.org/wiki/${encodeURIComponent(ci.eswiki.replace(/ /g,"_"))}" target="_blank">Wikipedia: ${ci.eswiki}</a>`:""}</div>`}
+    card(R.tipo,[`<div class="meta">${DATA.ent[R.a].nombre} ${R.tipo==="conflicto"?"→":"↔"} ${DATA.ent[R.b].nombre} · ${fmt(R.desde)} – ${fmt(R.hasta)}</div><p>${R.linea}</p>`,evHtml(evs),
+      `<div class="src"><span class="kicker">trazado</span><br>${g&&g.mano?"ruta dibujada a mano":"curva automática entre las dos entidades; no representa un itinerario"}</div>`+srcHtml(R.fuentes)],`var(--${R.tipo})`)}
+  if(kind==="ciu"){const ci=key;card(ci.n,[`<div class="meta"><span class="tag">ciudad</span>población estimada ${ci.pob.toLocaleString("es")} hacia ${fmt(ci.año)}</div>`+(ci.nota?`<p style="color:var(--text-dim)">${ci.nota}</p>`:""),
+      `<div class="src">${ci.fuente}; fiabilidad del geocodificado ${ci.fiab} (1 = mejor)<br><a href="https://www.wikidata.org/wiki/${ci.qid}" target="_blank">Wikidata ${ci.qid}</a>${ci.eswiki?` · <a href="https://es.wikipedia.org/wiki/${encodeURIComponent(ci.eswiki.replace(/ /g,"_"))}" target="_blank">Wikipedia: ${ci.eswiki}</a>`:""}</div>`])}
   if(kind==="ev"){const V=DATA.ev[key];const cd=V.cuelga_de.relacion?`relación: ${DATA.ent[DATA.rel[V.cuelga_de.relacion].a].nombre} – ${DATA.ent[DATA.rel[V.cuelga_de.relacion].b].nombre}`:`entidad: ${DATA.ent[V.cuelga_de.entidad].nombre}`;
-    panel.innerHTML=`<h2>${V.nombre}</h2><div class="meta"><span class="tag">evento</span>${fmt(V.año)} · ${cd}</div><p>${V.linea}</p>`+(V.enlace?`<p>→ <a href="${V.enlace.url}" target="_blank">${V.enlace.texto}</a></p>`:"")+srcHtml(V.fuentes)}
+    card(V.nombre,[`<div class="meta"><span class="tag">evento</span>${fmt(V.año)} · ${cd}</div><p>${V.linea}</p>`,(V.enlace?`<p>→ <a href="${V.enlace.url}" target="_blank">${V.enlace.texto}</a></p>`:"")+srcHtml(V.fuentes)])}
 }
-function showCorte(c){panel.innerHTML=`<h2>${c.etiqueta}</h2><div class="meta">ventana ${fmt(c.ventana[0])} – ${fmt(c.ventana[1])}${c.col_cuadro?" · corte del cuadro":" · solo en el mapa"}</div>
-  <p>${c.ent.length} entidades, ${c.ciu.length} ciudades con población estimada, ${c.rel.length} relaciones, ${c.ev.length} eventos.</p>
-  <p style="color:var(--text-dim)">Toca cualquier cosa del mapa para ver qué es y de dónde sale el dato.</p>`}
-function showCelda(cv,c,cel){clearSel();if(!cel){showCorte(c);return}sel={kind:"celda"};panel.innerHTML=`<h2>${cv.nombre}</h2><div class="meta">${c.etiqueta} · celda del cuadro</div><p><b>Estado.</b> ${cel.estado}</p><p><b>Hecho.</b> ${cel.hecho}</p><p><b>Relación.</b> ${cel.relacion}</p>`+(cel.fuentes.length?srcHtml(cel.fuentes):`<div class="src">celda sin fuente todavía</div>`)}
+function showCorte(c){card(c.etiqueta,[`<div class="meta">ventana ${fmt(c.ventana[0])} – ${fmt(c.ventana[1])}${c.col_cuadro?" · corte del cuadro":" · solo en el mapa"}</div><p>${c.ent.length} entidades, ${c.ciu.length} ciudades con población estimada, ${c.rel.length} relaciones, ${c.ev.length} eventos.</p><p style="color:var(--text-dim)">Toca cualquier cosa del mapa para ver qué es y de dónde sale el dato.</p>`])}
+function showCelda(cv,c,cel){clearSel();if(!cel){showCorte(c);return}sel={kind:"celda"};card(cv.nombre,[`<div class="meta">${c.etiqueta} · celda del cuadro</div><p><b>Estado.</b> ${cel.estado}</p>`,`<p><b>Hecho.</b> ${cel.hecho}</p><p><b>Relación.</b> ${cel.relacion}</p>`,cel.fuentes.length?srcHtml(cel.fuentes):`<div class="src">celda sin fuente todavía</div>`])}
 
-fitMain(); setCorte(cur);
+setCorte(cur); applyVB();
 </script>
 </body>
 </html>

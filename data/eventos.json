@@ -13,7 +13,8 @@
   "fuentes": [
    "wikidata:Q733364",
    "eswiki:Batalla de Megido (siglo XV a. C.)"
-  ]
+  ],
+  "peso": 2
  },
  {
   "qid": "Q573852",
@@ -33,7 +34,8 @@
    "wikidata:Q573852",
    "eswiki:Pecio de Uluburun",
    "doi:10.1111/j.1095-9270.1998.tb00803.x — Pulak 1998, The Uluburun shipwreck: an overview, IJNA 27"
-  ]
+  ],
+  "peso": 3
  },
  {
   "qid": "Q235502",
@@ -49,7 +51,8 @@
   "fuentes": [
    "wikidata:Q235502",
    "eswiki:Cartas de Amarna"
-  ]
+  ],
+  "peso": 2
  },
  {
   "qid": "Q203729",
@@ -65,7 +68,8 @@
   "fuentes": [
    "wikidata:Q203729",
    "eswiki:Batalla de Qadesh"
-  ]
+  ],
+  "peso": 3
  },
  {
   "qid": "Q51885901",
@@ -81,6 +85,7 @@
   "fuentes": [
    "wikidata:Q51885901",
    "isbn:9780691140896 — Cline 2014, 1177 B.C.: The Year Civilization Collapsed, Princeton"
-  ]
+  ],
+  "peso": 3
  }
 ]

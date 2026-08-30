@@ -38,6 +38,8 @@ Los datos del cuadro de diez cortes siguen dentro de `index.html` (objetos `C` y
 
 **Ver la maqueta:** abra `bronce.html`. Arranca en el corte de 1350 a.C., el de la red completa. Cada entidad, ciudad, trazo y evento lleva su fuente (QID de Wikidata, Wikipedia y, donde el dato sostiene una tesis, la referencia académica).
 
+Cinco paneles: barra superior (corte, encuadres, plegar cuadro y ficha), cuadro sinóptico plegable, mapa (rueda o pellizco para acercar, arrastre para mover, botones ±), ficha a la derecha (se abre al tocar un objeto, pagina con "… más", se cierra con ×) y pie con leyenda y licencias. El nivel de detalle depende del zoom: de lejos solo ciudades grandes (por población) y eventos mayores (campo `peso` de `eventos.json`); de cerca, todo.
+
 ## Las diez filas
 
 Mesoamérica y Andes · Europa atlántica · Mediterráneo occidental · Grecia y Egeo · Egipto · Levante y Fenicia · Mesopotamia · Persia e Irán · India · China
