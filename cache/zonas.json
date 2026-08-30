@@ -4970,5 +4970,31 @@
   ],
   "nota": "La zona es prácticamente toda la isla de Chipre más mar abierto. Se han comprobado uno a uno los yacimientos chipriotas conocidos y se han descartado por fecha fuera de ventana: Kition/Bamboula (ocupación de la Edad del Bronce a partir del s. XIII a.C.), Kalavasos-Ayios Dhimitrios (Q1625222, auge en el Chipriota Tardío IIC, s. XIII), Alassa (Q521403, ss. XIV-XII), Pyla-Kokkinokremos (Q6426672, finales del s. XIII). Politiko-Troullia queda por el otro lado: la datación por radiocarbono lo sitúa en ~2050-1850 a.C., anterior a la ventana. Marki Alonia (Q6771042) sí estuvo ocupada en el Chipriota Medio, pero su ficha de Wikidata NO tiene coordenadas, así que no se propone conforme a la regla 2. Deneia (Q5256884) y Agios Iakovos (Q4831287) son necrópolis de la Edad del Bronce documentadas, pero sus únicos elementos de Wikidata son los municipios modernos, no los yacimientos: no se proponen para no colgar un cementerio prehistórico de la coordenada de un pueblo actual. NO se ha encontrado ningún evento fechado dentro de -1800/-1475 en la zona: no hay pecio conocido de esta ventana en aguas chipriotas (el de Uluburun es del s. XIV y además queda fuera del recuadro) ni destrucción datada con precisión; la destrucción por terremoto de Toumba tou Skourou se sitúa 'hacia 1550 a.C.' con esa sola aproximación y no se ha propuesto como evento. Sobre Alashiya conviene una advertencia: el artículo de Wikipedia en inglés solo recoge menciones desde ~1400 a.C., pero las fuentes académicas consultadas documentan atestiguaciones en Mari, Alalaj y Babilonia ya en la primera mitad del siglo XVIII a.C.; se ha seguido esta segunda datación, que es la que justifica su presencia en la ventana. Lo que NO está documentado es la naturaleza política de Alashiya en este momento: si en el s. XVII a.C. era ya un reino unificado o solo un topónimo comercial es discutido, y su capital (Enkomi, Alassa o Kalavasos) sigue sin identificarse. La coordenada de Wikidata para Alashiya (35.1, 33.43) es un punto convencional en el centro de la isla, no un yacimiento.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "ced3080e83",
+  "bbox": [
+   31.95,
+   34.46,
+   34.88,
+   35.65
+  ],
+  "corte": "-2000",
+  "lod": 0,
+  "fecha": "2026-08-31",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 2,
+  "descartados": [
+   {
+    "nombre": "Alasiya",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Necrópolis de Vounous-Bellapais",
+    "motivo": "QID no existe en Wikidata"
+   }
+  ],
+  "nota": "La zona es prácticamente toda la isla de Chipre; el borde este del recuadro (hasta 34,88°E) es mar, no llega a la costa levantina (Ugarit está en 35,78°E, fuera). Consultada la secuencia Early Cypriot–Middle Cypriot en Wikipedia (es/en/de), ancientcyprus.com, Livius y Encyclopedia.com, y cruzada con una consulta SPARQL de yacimientos arqueológicos dentro del recuadro (98 resultados). DESCARTADOS Y POR QUÉ: (1) Marki Alonia (Q6771042) y Erimi-Laonin tou Porakou (Q62031560) son los dos asentamientos mejor excavados y mejor datados de esta ventana —Marki cubre de 2400 hasta bien entrado el Bronce Medio— pero sus artículos de Wikidata NO TIENEN COORDENADAS (verificado vía wbgetentities: sin propiedad P625), así que la regla 2 los deja fuera. Es una exclusión por falta de dato en Wikidata, no por falta de relevancia: son las dos ausencias más notables de esta lista. (2) Sotira Kaminoudhia (Q59139488, con coordenadas) queda descartado porque el modelado bayesiano de radiocarbono sitúa el fin de la ocupación hacia 2200 a.C., de modo que solo roza los primeros 50 años de la ventana. (3) Enkomi (Q22987223): su nivel más antiguo (Nivel A) está datado por los excavadores en 1900-1700 a.C., lo que tocaría el final de la ventana, PERO la propia Wikipedia lo describe como un estrato preliminar 'pobremente representado' sobre la roca madre y Crewe (2007) lo rebaja a LC IA (h. 1650-1550). La datación está en disputa abierta y no propongo el objeto: sería presentar como documentado algo que los especialistas no han cerrado. (4) Kalopsida (Q6354281) y Toumba tou Skourou (Q25381188): ambos son MC III o posteriores (h. 1750 en adelante), fuera de la ventana por el otro extremo. (5) Cultura Filia (Q1632948): tampoco tiene coordenadas en Wikidata y además su rango (2450-2200 a.C.) solo solapa el arranque de la ventana. (6) No se ha encontrado ningún EVENTO datado dentro de -2250/-1800 en esta zona: las fuentes consultadas subrayan que el Bronce Medio chipriota es un proceso de transformación gradual, y el gran vuelco (traslado de asentamientos a la costa, intensificación del comercio del cobre) ocurre en la transición MC III-LC I, hacia 1750-1550, ya fuera de la ventana. La relación de comercio con Biblos (Q173532) se propone con peso 2 sobre la base de la mención del cobre de Alasiya en los textos de Mari del s. XIX a.C.; el destino concreto Biblos es la vía levantina habitual, pero el vínculo puerto-a-puerto no está atestiguado nominalmente en esos textos.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
