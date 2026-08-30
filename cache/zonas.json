@@ -965,5 +965,47 @@
   ],
   "nota": "Zona: Europa occidental y central, Egeo, Anatolia occidental y Chipre (Hattusa, lon 34.6, queda fuera). Revisado: Wikipedia es/en de Troya, campos de urnas, Bronce nórdico, Pueblos del Mar, Tollense, Cnosos, Ugarit, Nihriya, Tukulti-Ninurta I, Suppiluliuma II, Ahhiyawa, Qadesh, colapso del Bronce final; QIDs y coordenadas verificados en la API de Wikidata (Troya 39.96/26.24 y Tollense 53.74/13.31 dentro de la zona; Wikidata fija la batalla del Tollense en -1250). AVISO: los tres objetos 'entidad' propuestos (Q223998, Q605601, Q193850) no tienen coordenadas P625 en Wikidata, igual que las culturas ya presentes; los Pueblos del Mar además no tienen un territorio fijo y Wikidata los describe como 'purported historical ethnic group' — si el visor exige coordenadas, descartar. DESCARTADOS por quedar en peso 2 al nivel de vista lejana: Cnosos Q173527 (tras la destrucción del palacio hacia 1350 conserva solo importancia local en la ventana), Tirinto, Tebas y Atenas micénicas, Kition (Chipre; Enkomi cae fuera, lon 33.87), Mileto/Millawanda, Terramare (colapsa hacia 1150), Protovillanoviano, Cogotas I, cultura lusaciana, Noua-Sabatinovka/Belozerka; relaciones de peso 2 no propuestas: comercio Ugarit–Alasiya (cobre), comercio micénico–nurágico (cerámica nurágica en Kommos y Tirinto, lingotes chipriotas en Cerdeña), tensión Hatti–Micénica/Ahhiyawa por Wilusa y Millawanda (carta de Tawagalawa, hacia 1250). No propuesto el 'colapso del Bronce final' ni la 'guerra de Troya' (Q42937, legendaria, sin coordenadas en Wikidata): la destrucción de Troya VIIa hacia 1180 se recoge en la línea de la ciudad. Fecha de Nihriya y del saqueo de Babilonia con margen de ±10 años según cronología alta/baja.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "d71d28a6df",
+  "bbox": [
+   33.67,
+   32.5,
+   79.33,
+   60.0
+  ],
+  "corte": "-1200",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 10,
+  "descartados": [
+   {
+    "nombre": "Karkemish",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Pueblos del mar",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Arameos",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Mitanni (Hanigalbat)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Batalla de Nihriya",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Tratado de paz egipcio-hitita",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona: Anatolia oriental, Levante norte, Mesopotamia, Irán norte, Cáucaso, Asia Central y estepa hasta 60N. Se han verificado QIDs y coordenadas en Wikidata y leído Wikipedia (en/es). AVISOS sobre coordenadas: Batalla de Nihriya (Q906834) y Tratado egipcio-hitita (Q253155) NO tienen P625 en Wikidata; Nihriya se sitúa en el alto Balij (zona de Şanlıurfa/Harran, dentro de la zona) y el tratado tiene P276=Hattusa (Q181007); si el ingestor exige coordenadas propias, quedarán fuera y habrá que asignarlas manualmente. Pueblos del mar (Q193850) y Arameos (Q175064) tampoco tienen coordenadas (como ya ocurre con otras entidades del visor). Mitanni existe solo los primeros ~15 años de la ventana (hasta c. 1260); se propone porque su absorción por Asiria es un hecho mayor del periodo. DESCARTADOS por debajo del peso 3: Kar-Tukulti-Ninurta (Q165841, capital efímera asiria c. 1230-1207, peso 2); Sidón (Q163490, peso 2); Alepo (Q41183, virreinato hitita, peso 2); Cultura de Srubna (Q1470165, estepa póntica hasta c. 1200, peso 2); Frigia/Mushki (Q32579/Q1857902, mencionados desde c. 1165-1115 pero sin estado mayor hasta el s. VIII, peso 2); Nairi (Q560342, peso 1-2); cultura de Yaz (Q2120200) y cultura de Koban (Q914771), peso 1-2. SIN OBJETO EN WIKIDATA: el saqueo de Babilonia por Tukulti-Ninurta I (c. 1225) y el saqueo elamita de 1158 no tienen ítem propio, por lo que se recogen solo como relaciones de conflicto. El Colapso de la Edad del Bronce (Q1059758) no tiene coordenadas ni lugar único y no encaja como evento puntual. Susa, Nippur y Anshan quedan al sur de 32.5N (fuera de zona). Relaciones de comercio (Ugarit-Alasiya, Ugarit-Egipto) se estiman de peso 2 y no se incluyen a este nivel.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
