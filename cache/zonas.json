@@ -1167,5 +1167,39 @@
   "descartados": [],
   "nota": "Zona = sur/centro de China, Indochina, costa oriental de la India, Sri Lanka, Filipinas y Borneo norte. Para 2750–2250 a.C. lo único que alcanza el umbral de vista lejana (peso 3) es Liangzhu (cultura Q1204909, coords Wikidata 30.40N 119.99E; ciudad Q15904183, 30.40N 119.99E), ambos dentro de la zona y ocupados hasta ~2300 a.C. No propongo un evento 'colapso de Liangzhu' (~2300 a.C., inundaciones) porque no tiene ítem propio en Wikidata. Descartados por peso 2: cultura Shijiahe (Q125936, 2500–2000 a.C., centro amurallado de 120 ha en Hubei; el ítem de la cultura no tiene coordenadas en Wikidata, el yacimiento Q97300857 sí, 30.78N 113.08E) y cultura Baodun (Q807064, 2700–1700 a.C., llanura de Chengdu, recintos hasta 245 ha) — ambas son jefaturas/proto-estados regionales, visibles en vista media pero no en la lejana. Longshan queda fuera de la zona (centro en Shandong/Henan, lat >32.5). Ninguna ciudad del valle del Indo cae al este de 79.33E. Sudeste asiático, India oriental, Sri Lanka, Taiwán y Filipinas están en Neolítico o Mesolítico sin estados ni ciudades en la ventana (peso 1). No hay guerras documentadas. No se proponen relaciones: ninguna entidad ya presente en el visor cae en esta zona y no hay vínculo documentado entre Liangzhu y las que están listadas.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "00f8c58157",
+  "bbox": [
+   33.67,
+   32.5,
+   79.33,
+   60.0
+  ],
+  "corte": "-2000",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 10,
+  "descartados": [
+   {
+    "nombre": "Kültepe (Kanesh)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Biblos",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Complejo Bactria-Margiana (civilización del Oxus)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Yamhad",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Verificados QID y coordenadas P625 contra la API de Wikidata y las fechas contra Wikipedia (en/es). Todas las ciudades y el Imperio acadio (33.10, 44.10) y los guteos (37.0, 45.3) caen dentro de la zona según Wikidata. Sintashta (Q656393) y Kura-Araxes (Q169349) no tienen P625: se dan lat/lon a mano (yacimiento de Sintashta 52.49/60.18; llanura del Ararat 40.1/44.4) para que queden marcadas como coordenadas sin verificar. Yamhad entra solo por el borde final de la ventana (Sumu-Epuh, hacia 1810 a.C.); Wikidata le da inicio -2004, que no está respaldado por Wikipedia. Descartados por quedar en peso 2 o inferior a esta escala: Urkesh/Tell Mozan (capital hurrita, Q1758030), Alacahöyük (Q558861), Hattusa (Q181007; en la ventana solo ciudad hatiana con kārum), Carchemish (Q283680), Nínive (Q5680), Alalakh (Q575249), Sidón (Q163490), Damasco (Q3766), Altyndepe (Q2559322), Tepe Hissar (Q1484199), cultura de Trialeti (Q169320), cultura de las Catacumbas (Q1511519, solo su mitad oriental entra en la zona y sin P625), Abashevo y Poltavka. Descartados por caer fuera de la zona: Tercera Dinastía de Ur (Ur, 30.96 N; Q723587 sin coordenadas), Susa, Nippur (32.13 N). Sin objeto propio en Wikidata con coordenadas: caída de Akad, evento climático 4.2 ka (Q1291515, sin coordenadas), periodo paleoasirio (Q15782728), Reino de Alta Mesopotamia (Q140544569, y empieza en 1808), amorreos (Q203507) y hurritas (Q190394). La relación Asiria–Kültepe y Egipto–Biblos unen una entidad con una ciudad porque no existe entidad hatiana ni cananea con coordenadas en el visor; el revisor puede reanclarlas.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
