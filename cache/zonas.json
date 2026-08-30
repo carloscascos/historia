@@ -3475,5 +3475,71 @@
   ],
   "nota": "Zona = Europa central y oriental (Polonia, Chequia, Eslovaquia, norte de Hungría, Bálticos, Bielorrusia, Ucrania y oeste de Rusia). Es territorio sin estados ni ciudades en esta ventana: todo lo que alcanza el umbral son culturas arqueológicas y las rutas de intercambio que las conectan. DESCARTADO por fecha: Biskupin (Q866393), el yacimiento más famoso de la zona y el único con coordenadas en Wikidata, es de la Edad del Hierro — la dendrocronología da tala de robles en 747-722 a.C., más de dos siglos después del cierre de la ventana; Trzciniec (Q2537330) termina hacia -1300, justo antes; Chernoles (Q2636498) empieza hacia -950, justo después; Srubnaya (Q1470165) termina hacia -1200 y su núcleo queda al este del meridiano 34 (Volga-Ural), fuera de la zona; Noua-Sabatinovka-Coslogeni (Q116966464) está fechada en Wikidata -1600/-1300 y su masa cae al sur del paralelo 46,25 — se propone en su lugar su sucesora Bilozerka, que sí cubre -1200/-1000. DESCARTADO por umbral: los grupos regionales de campos de urnas (Knovíz Q1309143, Piliny Q2332687, Gáva Q372349, Velatice) son subdivisiones de peso 1, visibles solo en vista cercana. NO SE PROPONE NINGÚN EVENTO: no se ha encontrado ningún hecho datado con coordenadas dentro de la ventana en esta zona aparte de la batalla del Tollense, que ya está en el visor. ADVERTENCIA SOBRE COORDENADAS: ninguna de las cinco entidades propuestas tiene propiedad P625 en Wikidata (comprobado uno a uno) — son culturas, no puntos. Si el visor exige coordenadas de Wikidata para situar el objeto, estas cinco no se podrán colocar y la zona quedará vacía; el único QID de la lista con P625 es Q239574 (Amber Road, 48,17 N / 16,98 E), que no he propuesto como objeto porque su artículo describe sobre todo la ruta de época romana y no la red del Bronce Final. Las extensiones geográficas que doy en las líneas provienen del texto de los artículos, no de datos estructurados.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "283ecf9c80",
+  "bbox": [
+   10.84,
+   32.5,
+   33.67,
+   46.25
+  ],
+  "corte": "-1200",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 3,
+  "descartados": [
+   {
+    "nombre": "Hattusa",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Pi-Ramsés",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Assur",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Troya",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Tirinto",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Carquemis",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Enkomi",
+    "motivo": "fuera de la zona (35.17,33.87)"
+   },
+   {
+    "nombre": "Batalla de Qadesh",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Batalla del Delta",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Naufragio de Uluburun",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Batalla de Djahy",
+    "motivo": "fuera de la zona (32.77,35.33)"
+   },
+   {
+    "nombre": "Pueblos del Mar",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona: Egeo, Anatolia, Levante, delta del Nilo, Chipre y Mesopotamia. Añado 4 ciudades de peso 3 (Hattusa, Pi-Ramsés, Assur, Troya) y 3 de peso 2 (Tirinto, Carquemis, Enkomi), 4 eventos, la confederación de los Pueblos del Mar y 3 relaciones entre entidades ya presentes.\n\nDESCARTADO por falta de coordenadas en Wikidata (regla 2): batalla de Nihriya (Q906834, solo P276 al río Balikh), batalla de Perire (Q1152668), guerra de Troya (Q42937, solo P276), tratado de paz egipcio-hitita (Q253155) — este último lo reconvierto en la relación conflicto Egipto–Hatti. La destrucción de Ugarit existe como ítem (Q51885901, fechada 1192-1185 a.C.) pero TAMPOCO tiene P625, así que no la propongo como evento; Ugarit ya está en el visor como entidad.\n\nDESCARTADO por no existir ítem en Wikidata: los dos saqueos de Babilonia (Tukulti-Ninurta I ~1225 y el elamita de Shutruk-Nahhunte ~1158), buscados y no encontrados.\n\nDESCARTADO por duplicar objetos ya presentes: Palacio de Néstor (Q2047396, 37.03/21.70) está a 9 km de Navarino (Q3904982) que ya está en el visor y es literalmente el mismo yacimiento micénico — añadirlo pondría dos marcas para lo mismo. Imperio asirio medio (Q12642600) duplica la entidad Asiria ya presente; dinastía casita (Q243312) duplica Babilonia.\n\nDESCARTADO por caer fuera de la ventana: Arzawa (Q649262, termina en 1300), Mitanni (Q178665, termina en 1260), cultura villanoviana (Q587309, empieza en 900), Emar (Q1196243, destruida ~1187 y no reocupada — solo cubre el primer cuarto).\n\nDOS AVISOS SOBRE LA CALIDAD DEL DATO, no interpretaciones mías:\n1. El ítem Amurru (Q481766) tiene las fechas en Wikidata con el SIGNO EQUIVOCADO: P571=1380 y P576=1200 en positivo, es decir d.C. Si el visor filtra por rango temporal, Amurru nunca aparecerá en una ventana a.C. No lo propongo por eso.\n2. Pueblos del Mar (Q193850) NO tiene fechas (P580/P582/P571) en Wikidata ni coordenadas. Las fechas que doy (-1210/-1100) salen del artículo de Wikipedia, que las ancla en las menciones egipcias de Ramsés II, Merenptah, Ramsés III y el Onomasticón de Amenope. Si el visor exige coordenadas también para las entidades, este objeto fallará; lo propongo asumiendo que las entidades se dibujan como área y no como punto.\n\nNO VERIFICADO: la ocupación de Kültepe/Kanesh entre 1275 y 1000 a.C. no he podido confirmarla — su documentación conocida es del kārum asirio de ~1950-1700 a.C. Causa desconocida, no la relleno; por eso no propongo el objeto.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
