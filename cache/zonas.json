@@ -2960,5 +2960,31 @@
   ],
   "nota": "Zona = India peninsular al sur de ~18,75 N (Decán meridional, Tamil Nadu, Kerala), Sri Lanka, Maldivas y mar Arábigo abierto (la costa de Omán y Socotra quedan fuera). En 1275-1000 a.C. no hay estados, ciudades ni batallas documentadas: la región está en el tránsito Neolítico/Calcolítico → Hierro. ADVERTENCIAS sobre lo propuesto: (1) Q25348565 «Neolithic ashmounds» es el único ítem de Wikidata para el Neolítico del sur de la India; solo tiene sitelink en enwiki, sin coordenadas ni fechas en Wikidata (yacimientos Kupgal/Sanganakallu, Utnur, Budihal, Hallur, todos dentro de la zona). Su fin (~1200 a.C.) apenas solapa con el arranque de la ventana; Fuller et al. dan 3000/3200-1200 a.C. (2) Cultura de Jorwe: Wikidata (Q48728694) no tiene coordenadas; su núcleo (Jorwe 19,4 N, Daimabad 19,5 N, Prakash 21 N) cae al NORTE del borde de la zona; solo Inamgaon (Q6013487, 18,6 N, 74,5 E) está dentro. Si el visor exige coordenadas Wikidata dentro de la zona, descartarla. DESCARTADO: Edad del Hierro/cultura megalítica del sur de la India: no existe ítem Wikidata específico (Q111204222 «megalithic cultures of India» no tiene descripción ni sitelinks en/es; Q1056845 es la Edad del Hierro de todo el subcontinente, inicio -1500, ubicación genérica). Su inicio en el sur se data hacia 1000 a.C. (Sudyka 2011: origen c. 1000 a.C. en Karnataka/Andhra; Hallur, hierro datado c. 1000 a.C., fase de transición 1200-1000 a.C.), es decir, en el límite final de la ventana. Hallur (Q3595458) e Inamgaon son yacimientos rurales, peso 1, bajo el umbral de vista media. Adichanallur (Q2824397): datación ASI 2019 de 905-696 a.C., fuera de ventana; fechas más antiguas (1500±700, 'hace 3800 años') sin consenso. Sivagalai (Q7532307): fechas de 3345 a.C. para hierro y 1155-1248 a.C. para arroz; muy discutidas, prensa de 2025, sin consenso académico; no propuesto. Sri Lanka: la propia Wikipedia dice que el paso Mesolítico→Hierro 'no está adecuadamente documentado'; Anuradhapura (Q5724) se funda antes de 900 a.C., fuera de ventana. Maldivas y mar Arábigo: nada. Relaciones: no se ha encontrado ningún vínculo documentado entre esta zona y las entidades ya presentes en la ventana.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "f88cbce3b6",
+  "bbox": [
+   33.67,
+   5.0,
+   56.5,
+   18.75
+  ],
+  "corte": "-1200",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 2,
+  "descartados": [
+   {
+    "nombre": "País de Punt",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Sabeos (Saba)",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = Cuerno de África, sur de Sudán/Eritrea, Yemen, Dhofar. MIRADO: Punt (en/es Wikipedia, Ramsés III, Papiro Harris I), Sabeos/Saba/Marib (en/es Wikipedia, Sheba), historia antigua de Yemen y cultura Sabir (Wikipedia, Radiocarbon 2002 Cambridge), Adulis, grupos Gash y Jebel Mokram (Wikipedia + búsquedas Fattovich/Manzo), colonización sabea de África, D'mt, Somalilandia y Dhofar (búsquedas). ADVERTENCIAS sobre lo propuesto: (1) Punt: las coordenadas de Wikidata (9.5N, 48E, Somalia) NO coinciden con el consenso actual (Eritrea/este de Etiopía según isótopos y ADN de babuinos); el punto caerá en el mapa donde lo pone Wikidata. Wikidata da fin -1069; la última expedición real es la de Ramsés III (reinado c. 1186-1155). (2) Sabeos y Marib: fecha de inicio DISPUTADA. Wikipedia (Sabaeans/Sheba): 'probablemente entre c. 1000 y c. 800 a.C.', con estimaciones alternativas desde 1200 a.C.; Wikidata Q940785 pone inicio -1200; el artículo Marib dice 'al menos 1050 a.C.' y el de Sabeos 'asentamiento creado a finales del II milenio'. He usado -1050 (hacia) para ambos por coherencia entre sí; si el visor prefiere solo fechas seguras, retirar ambos de este corte y dejarlos para el de 1000 a.C. DESCARTADO: cultura Sabir (Yemen costero, c. 1900-800 cal BC, sitios Sabir y Ma'layba junto a Adén) — sería peso 2 en esta ventana, pero NO tiene ítem en Wikidata (buscado en en/fr/de/it), así que no se puede proponer; es el hueco más relevante de la zona. Grupo Jebel Mokram (Q86752182, Kassala/Eritrea occidental, c. 1500-mediados I milenio) — existe en Wikidata pero sin coordenadas, no se puede situar. Adulis (Q378940) — ocupación prehistórica bajo la ciudad de mediados del II a inicios del I milenio; peso 1 en este corte, por debajo del umbral. Expedición de Ramsés III a Punt como evento — sin QID propio; queda recogida en la relación. D'mt (siglo VIII a.C.), cultura Ona (c. 800 a.C.), presencia sabea en Etiopía (VIII-VII a.C.): todo posterior a la ventana. Somalia/Somalilandia: nada datable en la ventana (Laas Geel es muy anterior). Dhofar/Khor Rori: tumbas de la Edad del Bronce acerámicas sin entidad ni ciudad con QID en la ventana.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
