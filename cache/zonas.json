@@ -3583,5 +3583,27 @@
   ],
   "nota": "Zona: Anatolia oriental, norte de Siria, alta y baja Mesopotamia, Zagros y meseta iraní occidental. Descartados y por qué: (1) Batalla de Nihriya (Q906834, c.1237 a.C.) y Guerra babilonio-asiria de 1235 a.C. (Q3119079) — ambas tienen QID y fecha en la ventana, pero NINGUNA tiene coordenadas (P625) en Wikidata (la localización de Nihriya sigue en discusión académica, con propuestas dispersas en un radio de 50 km en torno a Şanlıurfa), así que no cumplen el requisito de «evento»; las he reconvertido en relaciones de conflicto entre entidades ya presentes en el visor. (2) Batallas de Alasiya (Q85745983, primer combate naval documentado, c.1210 a.C.): tampoco tiene coordenadas y además es un combate frente a Chipre, al oeste del límite 33,67°E. (3) Susa (Q180773): capital elamita y protagonista del periodo, pero sus coordenadas Wikidata son 32,189°N — cae 0,3° por debajo del límite sur de la zona (32,5°N), así que queda fuera pese a su importancia; el papel de Elam en la ventana queda recogido en la relación de conflicto Elam–Babilonia. (4) Urartu (Q185068): unificado bajo Arame hacia 860 a.C., posterior a la ventana; en su lugar he propuesto Nairi, la confederación previa atestiguada desde Salmanasar I. (5) Alalakh (Q575249, 36,24°N 36,38°E, dentro de zona): su ocupación de la Edad del Bronce se apaga en el siglo XIII y su nivel final es de escasa entidad; no llega al umbral de vista media para una ventana que se extiende hasta 1000 a.C. (6) Segunda Dinastía de Isin y reino de Mukish: no encuentro elementos de Wikidata propios, y en cualquier caso la primera queda cubierta por la entidad Babilonia ya presente. No he verificado en Wikidata si Mushki y Nairi tienen geometría asociada — carecen de P625 y su extensión tendrá que resolverla el visor por otra vía.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "501bf924b9",
+  "bbox": [
+   56.5,
+   32.5,
+   79.33,
+   46.25
+  ],
+  "corte": "-1200",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 2,
+  "descartados": [
+   {
+    "nombre": "Cultura de Yaz",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona = meseta irania oriental, Asia Central (Margiana/Bactriana/Sogdiana), Afganistán y NO del subcontinente. Lo único que llena la ventana -1275/-1000 con peso suficiente es el horizonte Yaz, sucesor del BMAC, más Ulug Depe como yacimiento que documenta la continuidad. DESCARTADOS y por qué: (1) BMAC / Gonur Depe (Q3110595), Namazga-Tepe, Altyndepe, Djarkutan — dentro de la zona pero abandonados hacia -1600, muy anteriores a la ventana. (2) Elam medio: Susa y Chogha Zanbil (Q4523, 48.5°E) caen al oeste del límite de longitud; la entidad Elam ya está en el visor. (3) Cultura de las tumbas de Gandhara (Q2625916) — fechada c. -1400/-800, sí encaja en la ventana y el valle de Swat cae dentro de la zona, pero su ítem de Wikidata NO tiene coordenadas (P625), así que el visor no podría situarla; la regla 2 obliga a no proponerla. Mismo caso: cultura del Cementerio H (Q2364797), cerámica ocre (Q2663163), Tazabagyab (Q4132504), Bishkent (Q60675719), Vakhsh (Q80963065) — todas sin coordenadas. (4) Gandhara como entidad política (Q213651) tiene coordenadas en zona pero Wikidata la fecha desde -750, fuera de la ventana. (5) Harappa (30.6°N), Shahr-e Sukhteh (30.6°N) y Mundigak (31.65°N) quedan al sur del límite de latitud. (6) Cultura de la cerámica gris pintada (Q2525293), fechada desde -1200, sin coordenadas y su núcleo (llanura del Ganges) está al este de la zona. No he encontrado ninguna batalla, fundación ni destrucción datada dentro de -1275/-1000 con QID y coordenadas en esta zona: es un vacío real de la documentación, no una omisión de la búsqueda — esta región no tiene fuentes escritas propias en el Bronce Final.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
