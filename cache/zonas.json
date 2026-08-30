@@ -2106,5 +2106,27 @@
   ],
   "nota": "Zona: Italia peninsular y Sicilia, Malta, Grecia, Egeo, Anatolia occidental, Creta, Chipre hasta 33,67°E y los Balcanes hasta 46,25°N. Verificados QID y coordenadas en Wikidata; leídas las páginas de Wikipedia citadas. DESCARTADOS por caer fuera de la zona: Hattusa (34,6°E), Enkomi (33,87°E), Kaskas (norte de Anatolia central), Cabo Gelidonya (además, c. 1200 a.C.). DESCARTADOS por peso 1 al nivel medio: Beycesultan, Borġ in-Nadur, Kalavasos-Ayios Dhimitrios (la página de Wikipedia dio 404, sin verificar), Dendra, Ásine, Iasos, Hapalla (pequeño reino vasallo), Vivara, Lípari/cultura de Milazzese, culturas balcánicas de Vatin, Monteoru, Wietenberg y Ottomány (sin coordenadas en Wikidata y en el borde norte de la zona), cultura de los Túmulos (mayoritariamente al norte de 46,25°N). Hagia Triada y Festo: su apogeo es anterior a 1450 a.C.; en la ventana son centros secundarios bajo Cnosos, peso 1. Midea: la muralla y el primer megaron son LH IIIB2 (después de 1275 a.C.); no documenté ocupación relevante dentro de la ventana, así que no lo propongo. Ahhiyawa (Q552241) no se propone como entidad para no duplicar la Civilización micénica ya existente; las relaciones hitita-micénicas se cuelgan de Q181264. Cadmea (Q1276854) duplica Tebas, ya existente. Libu (Q2456520): sin coordenadas y las menciones egipcias empiezan con Seti I (c. 1290), en el límite de la ventana; no propuesto. EVENTOS: no hay entradas de Wikidata para la campaña de Mursili II contra Arzawa (c. 1318 a.C.), el incendio de Millawanda, la revuelta de Assuwa (que existe solo como liga, Q2665673, propuesta como entidad) ni la toma micénica de Cnosos, así que no se proponen como eventos; la batalla de Qadesh (1274 a.C.) queda fuera de zona y de ventana. Aviso sobre la relación Arzawa-Egipto: es diplomática (correspondencia de Amarna), etiquetada «comercio» porque el esquema no admite «diplomacia». Fechas: en ciudades y culturas de larga duración, desde/hasta están recortados a la ventana; Gla se data desde c. 1300 y solo solapa 25 años con la ventana. Yolco: la identificación del palacio de Dimini con Yolco está aceptada pero la página no da fechas explícitas LH IIIA-B; la inclusión se apoya en la lista de centros palaciales de la página de Grecia micénica.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "85706f2309",
+  "bbox": [
+   10.84,
+   5.0,
+   33.67,
+   18.75
+  ],
+  "corte": "-1600",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 0,
+  "descartados": [
+   {
+    "nombre": "Cultura de Gajiganna",
+    "motivo": "QID no existe en Wikidata"
+   }
+  ],
+  "nota": "Zona: Sahel central (cuenca del Chad, Sudán central, Sudán del Sur, RCA, oeste de Etiopía). Único candidato que llega al umbral: la cultura de Gajiganna (Q1491580, coords 11.83N 13.15E, dentro de la zona; 1800–400 a.C.). Es un caso límite: en la ventana (fase I, 1800–1500 a.C.) son solo campamentos pastoriles de menos de 1 ha, sin agricultura hasta ~1200 a.C.; se propone con peso 2 porque es la única cultura arqueológica documentada y datada en toda la zona, y es comparable en escala a otras culturas regionales que el visor ya muestra en vista media (Vila Nova de São Pedro, El Argar). Si se prefiere un criterio estricto, bajar a peso 1. Descartados: (a) Reino de Kerma (Q1739282), la potencia real del periodo (Kerma clásico 1750–1500 a.C., alianza con los hicsos, incursión en Egipto 1575–1550 a.C.): sus coordenadas en Wikidata (19.60N 30.41E) quedan al norte del límite 18.75N y su territorio documentado llega solo hasta la 4.ª catarata (~19N), así que no cae en esta zona. (b) Jebel Moya (Q55640121, 13.5N 33.33E): ocupación agropastoril del periodo 2 (2500–1500 a.C.) y enterramientos desde finales del III milenio, pero es un yacimiento, no una ciudad ni una entidad; peso 1, por debajo del umbral. (c) Civilización Sao (cuenca del Chad): comienza en el I milenio a.C., fuera de la ventana. (d) Pastores de Wadi Howar y arte rupestre de Ennedi: ocupación pastoril del II milenio sin datación fina ni entidad definida; peso 1. No hay ciudades, batallas ni rutas documentadas en la zona para 1800–1475 a.C. Sin relaciones nuevas: ninguna entidad existente del visor tiene su asiento en esta zona, y Kerma, que sí tendría relaciones (conflicto/comercio con Egipto), queda fuera de ella.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
