@@ -4764,5 +4764,27 @@
   "descartados": [],
   "nota": "Zona = Marruecos noroccidental y atlántico norte (Tánger, Tetuán, Larache, Rabat, Casablanca, Fez, Rif occidental), ventana -1800 a -1475. No se ha encontrado NINGÚN objeto documentado dentro de la ventana, ni siquiera al nivel de vista cercana. Revisado y descartado: (1) Kach Kouch (Q108266902, valle del Oued Laou, dentro de la zona), el único asentamiento de la Edad del Bronce excavado y datado por radiocarbono en el Magreb — sus fases son 2200-2000 a.C. y 1300-900 a.C., con un HIATO de abandono explícito que cubre exactamente nuestra ventana (Antiquity 2025). (2) Daroua Zaydan, cerca de Tánger, primer enterramiento en cista datado del noroeste de África: 2118-1890 a.C., anterior a la ventana; además no se le ha localizado artículo con QID. (3) Mzoura / Msoura (crómlech cerca de Asilah, dentro de la zona): datación muy disputada — el círculo se atribuye al III-IV milenio y el túmulo a los siglos IV-V a.C. por las ánforas; ningún anclaje en 1800-1475, así que no cumple la regla 3. (4) Lixus y Volubilis: ocupación documentada solo desde el Neolítico y luego desde los siglos VIII-III a.C.; sin evidencia de II milenio. (5) Cuevas del Rif (Gar Kahal, Kaf Taht el Ghar, Kaf Boussaria): sus secuencias datadas son epipaleolíticas y neolíticas (5600-4500 a.C.), no del Bronce Medio. (6) Grabados rupestres de armas del Oukaïmeden, paralelos argáricos de hacia 1500 a.C.: quedan FUERA de la zona (lat ~31.2, al sur del límite 31.67). (7) Cueva de Benzú (Ceuta), con ocupación del Bronce: queda fuera por el norte (lat ~35.9 > 35.67). Las síntesis recientes (African Archaeological Review, 'New Light on the Silent Millennia'; The Conversation 2025-2026) coinciden en que el segundo milenio a.C. es el periodo peor conocido de la prehistoria norteafricana y que la evidencia radiocarbónica del II milenio temprano excluye precisamente el noroeste atlántico de Marruecos. No es que la zona estuviera despoblada: es que el registro arqueológico publicado no permite anclar ningún yacimiento, entidad ni evento a esta ventana. Rellenarlo con una 'cultura del Bronce marroquí' genérica sería inventar relevancia.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "f024088940",
+  "bbox": [
+   -9.33,
+   31.67,
+   -2.47,
+   35.67
+  ],
+  "corte": "-2500",
+  "lod": 1,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 2,
+  "descartados": [
+   {
+    "nombre": "Cultura del vaso campaniforme",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona = Marruecos atlántico y septentrional (Essaouira–Rabat–Tánger, Rif occidental, Meseta del Zemmour, Medio Atlas). El marco cronológico regional está bien establecido: una Edad del Cobre de c. 2900–2200 a.C. integrada en las redes campaniformes atlánticas (síntesis 'Before Hercules', JMA). El problema no es la ausencia de arqueología sino la ausencia de items de Wikidata con coordenadas. Barrido SPARQL por caja de coordenadas sobre yacimientos y cuevas de toda la zona: los items existentes son romanos/medievales (Volubilis, Banasa, Thamusida, Rirha, Lixus, Sala, Tamuda, Chellah), paleolíticos (Jebel Irhoud, Dar es-Soltan, Thomas Quarry) o cuevas kársticas sin contenido arqueológico. DESCARTADOS con motivo: (1) Oued Beht — el hallazgo mayor de la zona, complejo agrícola de 9-10 ha, el mayor de África fuera del Nilo, pero fechado 3400–2900 a.C., anterior a la ventana salvo una fecha suelta de c. 2700 a.C.; además su item de Wikidata (Q131841178) NO tiene coordenadas (P625 vacío), así que incumple la regla 2 por partida doble. (2) Gar Cahal y Kaf Taht el-Ghar — las dos cuevas con campaniforme marítimo de estilo portugués mejor documentadas del Estrecho, pero NO tienen item de Wikidata propio; Q17007033 'Kaf El Ghar' es una comuna rural moderna de la provincia de Taza, no la cueva de Tetuán, y usarla habría puesto un punto falso en el mapa. (3) Kelif el Boroud / Kehf el Baroud (Q48790760, dentro de la zona) — sus enterramientos datados por ADN antiguo son de c. 3780–3650 a.C., un milenio antes de la ventana; no hay ocupación del III milenio documentada en las fuentes leídas. (4) Kach Kouch (Q108266902) — primer poblado de la Edad del Bronce del Magreb, pero su fase más antigua es 2200–2000 a.C., posterior al cierre de la ventana en -2250. (5) El Gour (Q1324164) — bazina protohistórica, siglos V–II a.C., muy fuera. (6) Necrópolis de Rouazi-Skhirat — IV milenio y sin item de Wikidata. ADVERTENCIA SOBRE LO PROPUESTO: la datación del nivel calcolítico de Ifri n'Amr ou Moussa es floja. Las fuentes discrepan: unas sitúan el Calcolítico del yacimiento entre 3000 y 1800 a.C. (rango que cubre la ventana), otras dan las capas como anteriores a 3200 a.C. y consideran el material 'probablemente pre-campaniforme'; las únicas dataciones absolutas publicadas del yacimiento (Fregel et al. 2018, c. 5325–4786 a.C.) son del Neolítico antiguo, no del nivel campaniforme. No hay radiocarbono publicado que ancle ese nivel dentro de -2750/-2250: el encaje se apoya en la cronología regional del campaniforme, no en fechas del propio yacimiento. Se propone con peso 1 por eso. La entidad campaniforme se propone con peso 2 porque el fenómeno en la zona sí está bien fechado, aunque sus yacimientos concretos no sean mapeables. La relación propuesta hereda la misma incertidumbre de datación que el yacimiento.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
