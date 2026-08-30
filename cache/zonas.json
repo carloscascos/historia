@@ -128,5 +128,123 @@
   "descartados": [],
   "nota": "La zona (lon 3.69–4.48, lat 39.72–40.24) corresponde a la isla de Menorca. Ventana -3300 a -2750. Se ha revisado la Wikipedia en español (Hipogeos de Biniai Nou) y la bibliografía de la UIB sobre los orígenes del poblamiento balear. La evidencia humana más antigua documentada en Menorca es un hueso humano de los hipogeos de Biniai Nou datado por C-14 en 2290–2030 a.C.; la investigación académica (Alcover et al., 'Los orígenes del poblamiento balear: una discusión no acabada') sostiene que con las dataciones radiocarbónicas disponibles no puede afirmarse presencia humana en Baleares antes de c. 2300 cal a.C. Es decir, en toda la ventana solicitada la isla se considera deshabitada: no hay ciudades, culturas arqueológicas, eventos ni relaciones documentadas dentro de -3300/-2750. Se descartan por tanto Biniai Nou (Q5903680 aprox., inicio c. -2300), la fase calcolítica de Cornia Nou y los sepulcros megalíticos menorquines, todos posteriores al cierre de la ventana. Quedaría abierta, como HIPÓTESIS SIN VERIFICAR de la propia bibliografía, la posibilidad de una llegada 'un poco antes' del 2300 a.C., pero sin datación que la respalde ni que alcance -2750. Fuentes leídas: https://es.wikipedia.org/wiki/Hipogeos_de_Biniai_Nou ; https://portalinvestigacio.uib.es/documentos/5ef13ae62999520503afa2ec?lang=en . Las páginas https://es.wikipedia.org/wiki/Prehistoria_de_Menorca y https://en.wikipedia.org/wiki/Prehistory_of_the_Balearic_Islands devolvieron 404.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "3f16fe6309",
+  "bbox": [
+   34,
+   31,
+   38,
+   37
+  ],
+  "corte": "-2000",
+  "lod": 0,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 13,
+  "descartados": [
+   {
+    "nombre": "Ebla (Tell Mardikh)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Biblos",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Qatna",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Ugarit",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Alalakh",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Alepo (Halab)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Hazor",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Megido",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Jericó (Tell es-Sultan)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Siquem",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Ascalón",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Sidón",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Dan (Laish)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Tel Kabri",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Afec (Tel Afek / Antipatris)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Laquis",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Tell el-Ajjul",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Jerusalén",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Pella (Pehal)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Tell el-Burak",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Qadesh (Tell Nebi Mend)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Hama",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Tell Afis",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Amorreos",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Yamhad",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona = Levante (Israel/Palestina, Líbano, Siria occidental, Hatay/Cilicia oriental, Jordania occidental, punta oriental de Chipre) en el Bronce Antiguo IV/Bronce Intermedio y el arranque del Bronce Medio. Se han verificado QID y coordenadas contra Wikidata (todos los objetos 'ciudad' caen dentro del rectángulo) y se han leído las páginas de Wikipedia (en) citadas. Descartes: Tiro (solo 'ocupada desde el Bronce', sin fase datada), Beirut (tumbas del Bronce Medio sin fecha), Damasco (sin evidencia anterior al Bronce Final), Gezer y Tirzah (hiato en Bronce Antiguo IV / Bronce Medio I), Tel Yarmut (reocupación ligera), Hebrón (apogeo siglos XVIII–XVII, fuera de ventana), Ciudadela de Amán (la página se contradice: 'fortificada hacia 1800' frente a 'ocupación desde 1650–1550'), Tell Sukas y Tell Kazel (Bronce Medio sin datar), Ras Ibn Hani (Bronce Final), Tarso-Gözlükule, Yumuktepe y Kinet Höyük (páginas sin fases datadas). Sin QID utilizable: Bronce Intermedio como periodo (no existe ítem en Wikidata, solo artículos científicos), Khirbat Iskandar (Q97357842 no tiene coordenadas), Tel Ifshar (sin artículo legible). Excluidos por no tener coordenadas en Wikidata aunque son eventos de la ventana: obelisco de Abishemu (Q85436926, hacia 1800 a.C.) y estela de Sebek-khu (Q16879944, la campaña de Senusret III contra Siquem; el ítem apunta a Abidos/Mánchester, fuera de zona). La destrucción de Ebla hacia 2000 a.C. y la atribuida a Naram-Sin (siglo XXIII, discutida) no tienen ítem propio y van descritas en la línea de Ebla. Los Textos de Execración (Q252811) son textos egipcios sin coordenadas: se usan como fuente, no como objeto. 'Canaán' (Q163329) no se propone como entidad: Wikidata lo describe como civilización del final del II milenio y el nombre solo se atestigua a partir del siglo XVIII a.C. Advertencias: Amorreos (Q203507) no tiene coordenadas en Wikidata; Alepo y Yamhad entran solo por el borde (Sumu-Epuh hacia 1810); Bab edh-Dhra tiene fecha de abandono contradictoria en la propia página (2350 frente a 2000–1950 a.C.), causa del descuadre desconocida; la Historia de Sinuhé (hacia 1950 a.C., ambientada en Retenu) es literaria y no se propone. No se ha investigado la punta de Karpas (Chipre) ni Cilicia más allá de las páginas citadas.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
