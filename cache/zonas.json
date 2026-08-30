@@ -2269,5 +2269,55 @@
   ],
   "nota": "Zona = mar Arábigo, sur del Decán, Kerala/Tamil Nadu, Laquedivas y norte de Maldivas. Revisado: Neolítico del sur de la India (Fuller fases II 2300-1800 y III 1800-1200 a.C.; Paiyampalli fase III 1800-1500 a.C.); cultura Malwa/Jorwe del Decán; Sri Lanka; Omán (Wadi Suq); Maldivas/Laquedivas. ADVERTENCIAS: (1) el QID Q25348565 corresponde a los ashmounds (los depósitos de ceniza), no existe ítem Wikidata para el 'Neolítico del sur de la India' como cultura; el ítem no tiene coordenadas. (2) Inamgaon es un poblado de ~5 ha, no una ciudad; se propone con peso 2 solo porque es el asentamiento de referencia de la zona en la ventana y su artículo de Wikidata (18.61 N, 74.54 E) cae dentro; si el visor exige ciudades propiamente dichas, baja a peso 1. (3) La cultura Malwa (Q48728691, c. 1600-1300 a.C., quizá desde 2000-1750) tiene su núcleo fuera de la zona (Malwa, ~23 N) y el ítem Wikidata carece de coordenadas; solo su borde sur (Inamgaon) entra, por eso no se propone como entidad. DESCARTADOS por peso 1 (solo vista cercana): Sanganakallu Q7417832, Hallur Q3595458 (2000-1200 a.C.), Maski Q3360195, Piklihal Q7193691, Tekkalakote Q429171, Watgal Q7974638, Paiyampalli Q16896353 (C14 1390±200 a.C.). Brahmagiri Q4955533: Wikipedia fecha su Periodo I en el I milenio a.C., fuera de ventana. Utnur (19.37 N) y Daimabad (19.5 N) quedan fuera por latitud. Wadi Suq (Q48802879, 2000-1300 a.C.) queda fuera: Omán/EAU están al norte de 22 N y al oeste de 56.5 E. Sri Lanka: Mantai (escoria de cobre c. 1800 a.C.) está en 79.9 E, fuera; el resto es Mesolítico de Balangoda sin fechas claras. Maldivas: la afirmación de ocupación 'desde 1500 a.C.' procede de una web turística, sin verificar; Laquedivas sin evidencia para el II milenio. No se propone ninguna relación: la adopción de trigo/cebada y mijos africanos en la fase III del Neolítico del sur está documentada, pero no se ha identificado con QID la entidad emisora.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "687a321154",
+  "bbox": [
+   -12.0,
+   32.5,
+   10.84,
+   46.25
+  ],
+  "corte": "-1600",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 3,
+  "descartados": [
+   {
+    "nombre": "Bronce Manchego (cultura de las Motillas)",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Motilla del Azuer",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Bronce valenciano",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Polada",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de las Terramaras",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Bonnanaro",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura del Ródano",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura pretalayótica (fase naviforme)",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona: Iberia, sur de Francia, norte de Italia hasta 10,84°E, Cerdeña, Córcega, Baleares y Magreb al norte de 32,5°N. Verificados QID en Wikidata y cronología en Wikipedia (es/en). Incluidos con peso 2 las culturas del Bronce coetáneas de El Argar (Bronce Manchego, Bronce valenciano), dos asentamientos emblemáticos con coordenadas (Motilla del Azuer 39.04/-3.50; La Bastida 37.76/-1.56) y las culturas del arco alpino-tirrénico (Polada, Terramaras, Ródano, Bonnanaro, pretalayótica). Advertencias: (1) Bonnanaro es la fase inicial de la ya presente Cultura nurágica; si el visor la data desde 1800 a.C. hay solapamiento y puede sobrar. (2) La cultura del Ródano tiene su núcleo (Franco Condado, Valais, Borgoña) al norte de 46,25°N; solo su extensión por el valle del Ródano cae en la zona; el ítem de Wikidata no tiene coordenadas. (3) Terramaras se concentra en Emilia, a caballo del límite este (Parma dentro, Módena fuera); sin coordenadas en Wikidata. (4) Polada, Bronce Manchego, Bronce valenciano y pretalayótica tampoco tienen P625; se proponen porque el visor ya admite entidades sin coordenadas (Nurágica, Vila Nova). Descartados: civilización torreana de Córcega (Q472258: Wikipedia la sitúa en la segunda mitad del II milenio, fuera casi por completo de la ventana; cronología de las torri discutida); cultura talayótica (desde ~850 a.C.); cultura de Wessex y de los Túmulos (fuera de zona); Castelluccio (Sicilia, fuera de zona); Cerro de la Encina y Lavagnone (peso 1, y Lavagnone sin artículo es/en); no se ha encontrado ningún evento con QID propio en la ventana (el abandono de La Bastida ~1600/1550 a.C. y el fin de El Argar ~1550 a.C. no tienen ítem de Wikidata separado); Magreb sin objetos de peso 2 en este periodo.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
