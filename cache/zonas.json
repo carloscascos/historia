@@ -2763,5 +2763,55 @@
   ],
   "nota": "Zona: Anatolia oriental, Cáucaso sur, alta Mesopotamia, Diyala, NO de Irán y Caspio, 1800-1475 a.C. Verificado en Wikidata que cada QID tiene coordenadas dentro de la zona (Kish 32.54N y Acemhöyük 33.84E entran por poco); las entidades (culturas, pueblos, reinos) no tienen coordenadas puntuales en Wikidata salvo Kizzuwatna (38N 36E). DESCARTADOS: Washukanni (Q1069007), capital de Mitani, sin coordenadas en Wikidata y con identificación con Tell Fekheriye discutida (análisis de arcilla la descarta), por lo que no se propone; Sack of Babylon y la caída de Mari no tienen ítem propio en Wikidata, así que van como relaciones de conflicto y no como eventos; Ekallatum (Q1194737) sin ubicación; Susa/Larsa/Haft Tepe/Gonur quedan fuera de la zona; Sukkalmah (Q16611086) ya cubierto por Elam; Lchashen-Metsamor (Q65226046) empieza en 1500 a.C. y Srubnaya (Q1470165) tiene su núcleo al norte de 46N, ambos marginales; Alaca Höyük solo es relevante en el Bronce Final (niveles hititas del s. XIV). Peso 1 (no alcanzan vista media): Tell al-Rimah/Qattara, Chagar Bazar, Tell Barri, Arrapha, Tilmen Höyük, Alişar, Kaman-Kalehöyük, Shaduppum, Ishchali, Sippar-Amnanum, Godin Tepe, Tepe Giyan, Hasanlu, Dinkha Tepe, Tell Shemshara, Mardaman. Advertencia: Nuzi entra con peso 2 solo porque su gran fase arranca justo al final de la ventana; en 1800-1500 era una ocupación menor. Cronología media en todas las fechas; la página de Kassites usa una cronología distinta (saqueo en 1531), se ha normalizado a 1595.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "06f7ff62d9",
+  "bbox": [
+   102.16,
+   32.5,
+   125.0,
+   46.25
+  ],
+  "corte": "-1600",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 4,
+  "descartados": [
+   {
+    "nombre": "Cultura de Erlitou",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Ciudad Shang de Zhengzhou",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Cultura de Erligang",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Dinastía Xia",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Xiajiadian inferior",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Zhukaigou",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Yueshi",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Qijia",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = norte y centro de China (Henan, Shanxi, Shaanxi, Hebei, Shandong, Gansu oriental, Mongolia Interior, Liaoning) y norte de Corea. Revisado en Wikipedia (en/es) y verificado en Wikidata (QID, P625, fechas). ADVERTENCIA de coordenadas: en Wikidata NO tienen P625 las entidades Xiajiadian inferior (Q1041674), Zhukaigou (Q2545535), Yueshi (Q1460971), Qijia (Q1269223) ni dinastía Xia (Q169705); si el visor exige coordenadas, los yacimientos tipo sí las tienen y caen dentro de la zona: Xiajiadian Q117709379 (42.35N 119.16E), Dadianzi Q1156993 (42.30N 120.61E), Zhukaigou Q113303616 (39.61N 110.32E), Qijiaping Q11180227 (35.50N 103.83E). Erlitou culture, Erligang, Zhengzhou y Xiaqiyuan sí tienen P625 dentro de la zona. Descartados: batalla de Mingtiao (Q608694) como evento porque Wikidata no le da coordenadas y su localización es discutida (Xia County, Shanxi, o Jingzhou) — se recoge como relación conflicto Xia–Shang; Ciudad Shang de Yanshi = 'Bo' (Q11040185) ya en el visor; Panlongcheng (Q217684) queda fuera por latitud (30.7N); Shimao (Q24036336) y Taosi (Q217859) terminan hacia 1800–1900 a.C., antes de la ventana; Lajia (Q1317169) destruido hacia 1900 a.C.; culturas de Xindian (Q2598279), Siwa (Q285605) y Kayue (Q1737460) empiezan en 1500–1400 a.C. o después; periodo Mumun (Q721164) empieza en 1500 a.C., sin coordenadas y mayoritariamente al este de 125E; Dongxiafeng (Q793516) y Wangchenggang (Q15938189) son yacimientos de peso 1, por debajo del umbral. Relación transmisión Qijia→Erlitou (metalurgia esteparia) NO se propone: Wikipedia solo documenta contacto Seima-Turbino→Qijia y Seima-Turbino→Erlitou por separado, no un vínculo directo entre ambas. Fechas de Qijia: Wikidata da 2200–1600, Wikipedia en 2400–1600.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
