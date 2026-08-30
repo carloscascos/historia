@@ -909,5 +909,27 @@
   ],
   "nota": "Zona = sur del Levante (Jerusalén, Gaza, Laquis), Sinaí oriental, Arabia, Cuerno de África, sur de Mesopotamia, Elam, golfo Pérsico, Indo y norte de la India. Fuera de la caja por poco: Babilonia (lat 32,54), Meguido/Hazor/Qadesh (norte de 32,5), todo el valle del Nilo y Nubia (lon < 33,67), Serabit el-Khadim (lon 33,46). Los dos estados nuevos en la ventana son los filisteos y, con reservas, Israel: Israelitas Q51669 es un pueblo sin estado en 1208 a.C. (estela de Merenptah); lo doy con peso 3 por importancia para el lector, pero es el caso más discutible de la lista. El «Reino unido de Israel» (Q3185305, tradicionalmente 1047-930 a.C.) se descarta: Wikidata lo describe como reino legendario y no hay documentación arqueológica en la ventana. Ni Filisteos ni Israelitas tienen coordenadas P625 en Wikidata (tampoco las tienen Cultura nurágica, Olmecas o Cultura védica ya cargadas, así que asumo que el visor lo resuelve por otro medio); si exige P625, hay que caerlos. Descartados por peso 2 (vista media): Anshan Q569107 (30,01 N 52,41 E; cocapital elamita, título «rey de Anshan y Susa»), Uruk Q168518 (31,33 N 45,64 E, ocupada bajo casitas e Isin II), Dilmun Q748846 (gobernadores casitas en Bahréin hasta ~1200), Punt Q282350 (última expedición egipcia bajo Ramsés III), Cultura de la cerámica gris pintada Q2525293 (desde ~1200, solapa con Cultura védica ya cargada), Laquis/Gaza/Jerusalén (ciudades cananeas menores en esta fase). Ur: no logré confirmar su QID en Wikidata (Q5711 es Uusimaa) y no la propongo. Pueblos del Mar Q193850: sin lugar fijo, sustituido por la relación Egipto–Filisteos. Guerra filisteos–israelitas (Afec, ~1050 a.C.) solo documentada bíblicamente; no se propone. Asiria–Babilonia: Babilonia ciudad queda 0,04° al norte de la caja, pero la entidad Babilonia figura como presente en la zona, por eso la relación se incluye.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "cc4f304770",
+  "bbox": [
+   79.33,
+   32.5,
+   125.0,
+   60.0
+  ],
+  "corte": "-1200",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 2,
+  "descartados": [
+   {
+    "nombre": "Dinastía Zhou",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = norte de China, Mongolia, sur de Siberia y este de Asia Central en 1275–1000 a.C. Lo único que alcanza peso 3 y no está ya en el visor es el ascenso de los Zhou: la dinastía (Q35216, sin coordenadas en Wikidata, pero es entidad), su capital Fenghao (Q275515, 34.21N 108.72E, dentro de zona) y el conflicto Zhou–Shang. DESCUADRE a exponer: la batalla de Muye (Q1273506, fecha -1046 en Wikidata) NO tiene coordenadas (P625) en su ítem de Wikidata, por lo que no puede proponerse como «evento» según la regla 2; la conquista se ha modelado como «relacion conflicto» entre Zhou y Shang. Haojing (Q3818368) no se propone por separado para no duplicar Fenghao. Descartados por quedar bajo el umbral de peso 3: Zhou predinástico (Q16924982, c. 1150–1046, sin coordenadas; ya cubierto por la entidad Zhou), yacimiento de Zhouyuan (Q198067, peso 2), cultura de Karasuk (Q129282, 1500–800 a.C., sur de Siberia, cultura arqueológica de peso 2, sin coordenadas en Wikidata), Xiajiadian superior (Q1075080, empieza en -1000, justo al borde de la ventana, peso 2). Sanxingdui queda fuera por latitud (31N). No se ha encontrado QID para Guifang. Fechas Zhou: Wikidata da tres inicios alternativos (-1046, -1027, c. -1100); se usa -1046 (cronología Xia-Shang-Zhou), que también es la de Wikipedia es/en.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
