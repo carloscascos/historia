@@ -2887,5 +2887,35 @@
   ],
   "nota": "Zona = Sahel central, Sudán (Nilo hasta la 4ª catarata), Etiopía/Eritrea occidental y cuenca del Chad. Revisado: (1) Napata/Gebel Barkal: único asentamiento del Imperio Nuevo en Nubia cuya coordenada Wikidata cae dentro de la zona (18.53N, 31.82E); Kawa, Sesebi, Soleb y Amara West quedan al norte de lat 18.75. Ocupación egipcia documentada hasta la retirada hacia 1070 a.C.; la continuidad 1070–1000 a.C. es poco documentada, por eso se deja «hasta -1000» como límite de ventana y no como dato. (2) Reino de Kush (Q241790): descartado por dos motivos — su coordenada Wikidata (17.18N, 33.83E) queda fuera de la zona por 0.16° de longitud, y su existencia como estado en la ventana no está documentada (es.wikipedia da c. 780 a.C.; el 1070 a.C. de en.wikipedia/Wikidata es una fecha convencional ligada a la retirada egipcia, no a un estado atestiguado). (3) Punt (Q282350): hay expedición documentada bajo Ramsés III (Papiro Harris I, c. 1150 a.C.), pero la coordenada Wikidata está en Somalia (9.5N, 48E), fuera de la zona; no se propone ni la relación comercial Egipto–Punt. (4) Cultura Gajiganna (cuenca del Chad, c. 1800–800 a.C.): sin QID en Wikidata, descartada; además sería peso 1. (5) Cultura Nok: sus yacimientos están al oeste de lon 10.84. (6) Campañas nubias de Merenptah (c. 1208 a.C.) e Irem de Ramsés II: la primera se sitúa en la Baja Nubia (fuera de zona) y la segunda carece de localización y QID. Nada más en la zona alcanza peso 2 en esta ventana; el pre-axumita y Meroe son posteriores a 1000 a.C.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "f8249e8e59",
+  "bbox": [
+   -12.0,
+   5.0,
+   10.84,
+   18.75
+  ],
+  "corte": "-1200",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 0,
+  "descartados": [
+   {
+    "nombre": "Tradición de Tichitt",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Dhar Tichitt",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Cultura Nok (fase temprana)",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona = África occidental sahelo-sudanesa (Senegal, Mauritania sur, Malí, Burkina, Ghana, Nigeria oeste). No hay estados, ciudades en sentido estricto, batallas ni rutas documentadas para 1275–1000 a.C.; solo culturas arqueológicas. Se proponen tres objetos: la Tradición de Tichitt (Q107008575, sin coordenadas en Wikidata: el visor deberá tratarla como entidad regional), su yacimiento principal Dhar Tichitt (Q1165596, coords 18.36N -9.15W, dentro de la zona) y la fase temprana de Nok (Q927291, coords 9.50N 8.02E). Aviso sobre Nok: Wikidata y el proyecto de Fráncfort fijan el inicio hacia 1500 a.C., pero la Wikipedia en español aún da 500 a.C.; la fase temprana está poco caracterizada y sin terracotas. Descartados: complejo Kintampo (Q1320943, Ghana; cronología académica c. 3600–3200 BP ≈ 1650–1250 a.C., Wikipedia lo cierra en 1400 a.C.: el solape con la ventana es marginal); cultura de Gajiganna (Nigeria NE, 1800–800 a.C.) por caer fuera de la zona (lon ~13E); valle del Tilemsi/Karkarichinkat (Malí) termina hacia 1500 a.C.; Ounjougou y yacimientos del Falémé (Senegal) solo alcanzarían peso 1. No se encontró QID para Dakhlet el Atrouss ni Dhar Walata. Sin relaciones documentadas con las entidades ya presentes en el visor en esta ventana.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
