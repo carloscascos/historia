@@ -1033,5 +1033,22 @@
   ],
   "nota": "Zona = Egipto y Nubia (Nilo entero al oeste de 33,67°), Sáhara, Sahel y África occidental hasta 5°N; el Levante queda fuera por longitud y la costa mediterránea magrebí/libia por latitud. Revisado en Wikidata/Wikipedia: Kerma (Q1739282, coords 19,6/30,41 dentro de zona), Heracleópolis (Q249480, 29,09/30,93), Ity-tauy (Q389285, 29,57/31,23), Primer Período Intermedio (Q232211: sin coordenadas en Wikidata, igual que las entidades dinásticas ya cargadas; Wikidata data 2181–2055 a.C.). Descartados por quedar en peso 2 o inferior a esta escala: Abidos (Q192268) y Heliópolis (Q191687), centros religiosos, no capitales; Buhen (Q1002656) y demás fortalezas de la 2ª catarata; cultura del Grupo C de la Baja Nubia (Q1022291, 2400–1550 a.C.); tradición de Tichitt en Mauritania (Q107008575, desde ca. 2200 a.C., sin coordenadas en Wikidata, urbanismo jerarquizado más tardío); complejo de Kintampo en Ghana (Q1320943); Asiut y otras ciudades de nomarcas. La reunificación de Egipto por Mentuhotep II (ca. 2055 a.C.) no tiene ítem de Wikidata propio con coordenadas, por eso va como relación de conflicto Heracleópolis–Tebas y no como evento. Nota sobre la relación Egipto–Kerma: las campañas de Senusret I y III se dirigen a la Baja Nubia (pueblos del Grupo C) y la línea de fuertes de Semna se levanta frente a Kerma; el texto de Wikipedia no documenta un choque directo con la ciudad de Kerma en la ventana. Las fechas de Kerma en Wikidata (inicio −3500) incluyen la fase pre-Kerma; se han usado las de Wikipedia (cultura Kerma desde ca. 2500 a.C.).",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "b7d3e34055",
+  "bbox": [
+   79.33,
+   5.0,
+   125.0,
+   32.5
+  ],
+  "corte": "-2000",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 0,
+  "descartados": [],
+  "nota": "Zona explorada: sur de la India y Sri Lanka, Bengala, Sudeste Asiático continental e insular, y China al sur del paralelo 32,5 (cuencas del Yangtsé y del Sichuan). Candidatos revisados en Wikidata y Wikipedia (en): (1) Dinastía Xia (Q169705, c. 2070–1600 a.C.): existencia no probada arqueológicamente, sin coordenadas en Wikidata, y su núcleo (valle del río Amarillo, Henan) cae al norte del recuadro; descartada. (2) Cultura de Erlitou (Q1051663): coordenadas 34,7 N / 112,7 E, fuera del recuadro por el norte; descartada. (3) Cultura de Shijiahe (Q125936, 2500–2000 a.C., Hubei): el mayor complejo amurallado del Neolítico chino (120 ha, hasta 8 km²), algunos autores lo consideran un Estado incipiente, pero en la ventana solo entra su fase final de abandono (2250–2000 a.C.), el ítem de Wikidata carece de coordenadas y no es un Estado documentado: peso 2, por debajo del umbral. (4) Cultura de Baodun (Q807064, c. 2700–1700 a.C., llanura de Chengdu, 30,45 N / 103,75 E): dentro del recuadro y de la ventana, con recintos amurallados grandes (Baodun 245 ha con muralla exterior), pero es una cultura neolítica sin carácter estatal: peso 2. (5) Sanxingdui (Q929072): dentro del recuadro, pero la cultura de Sanxingdui propiamente dicha es posterior (c. 1700–1150 a.C.); en la ventana el sitio pertenece a la fase Baodun. (6) Cultura de Phùng Nguyên (Q825179, c. 2000–1500 a.C., delta del río Rojo, Vietnam): cultura de la Edad del Bronce inicial, sin ciudades ni Estado: peso 1–2. (7) Cultura de la Cerámica Ocre (Q2663163) y tesoros de cobre del Ganges: quedan casi por completo al oeste del meridiano 79,33 y son culturas de aldea: peso 1. (8) Neolítico del sur de la India (túmulos de ceniza, Decán): sin ciudades ni Estados en la ventana; peso 1. Longshan (Q1057935) y Qijia (Q1269223) quedan al norte del recuadro. Conclusión: a nivel de vista lejana (solo Estados, ciudades grandes y guerras mayores) no hay nada que proponer; Shijiahe y Baodun serían los primeros en aparecer al bajar a vista media.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
