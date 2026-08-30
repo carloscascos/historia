@@ -1471,5 +1471,22 @@
   "descartados": [],
   "nota": "Zona = norte de China (río Amarillo, Shandong, Liaoning), Mongolia, sur de Siberia, Xinjiang, Tíbet norte y borde occidental de Corea, ventana 3300–2750 a.C., umbral peso 3. Ninguno de los siete objetos ya cargados cae en esta zona. Se ha consultado Wikipedia (en/es) y Wikidata (helper scripts/wd.py) para: Yangshao, Hongshan, Dawenkou, Majiayao, Afanásievo, Longshan, Botai, Kelteminar, Xiaoheyan, Niuheliang, Xishan, Shuanghuaishu, Miaodigou. PROPUESTO: cultura de Yangshao (Q854631, Wikidata con coordenadas 36.3N 109.1E, dentro de la zona; 5000–3000 a.C., fase tardía 3500–3000). AVISO sobre el peso: es una cultura neolítica, no un estado; se le da 3 por el mismo criterio con que el visor ya carga en vista lejana Megalitismo atlántico, Los Millares y (en el corte -3000, zona sur) Liangzhu, y por el rango de Shuanghuaishu (117 ha, presentado por los arqueólogos chinos como 'capital' del 'reino de Heluo', c. 3300 a.C.); si el visor exige estados verdaderos, este hallazgo no llega. El fin (-3000) es el convencional de Wikipedia; el relevo Longshan/Miaodigou II se data 3000–2600 a.C. NO PROPUESTOS por carecer de coordenadas P625 en Wikidata (regla 2; en el corte -2500 el sistema ya descartó por ese motivo Afanásievo y Longshan): Afanásievo (Q80974, 3300–2500 a.C., Altái/Minusinsk, expansión hasta Mongolia central y Dzungaria; sería peso 3 por coherencia con lo decidido en el corte -2500), Longshan (Q1057935, empieza hacia 3000 a.C., solo el último cuarto de la ventana), Hongshan (Q1195031, 4700–2900 a.C., jefatura, no estado), Dawenkou (Q1178509, 4300–2600 a.C.), Majiayao (Q1310602, 3300–2000 a.C., valorada en peso 2 en el corte -2500). Shuanghuaishu no tiene ítem propio en Wikidata (buscado en en y zh; solo existe el municipio homónimo Q10912139, que no es el yacimiento), así que no puede proponerse como ciudad pese a ser el mejor candidato a 'ciudad grande' de la zona. Descartados por peso 2 aunque tengan coordenadas: Niuheliang (Q7041693, 41.33N 119.53E, centro ceremonial y funerario Hongshan 3500–3000 a.C. sin asentamiento) y Xishan (Q15900656, 34.91N 113.53E, recinto amurallado de 25 ha, 3300–2800 a.C.). Botai (Q279792) queda fuera de la zona (67.6E). Corea (Jeulmun), Tíbet norte y Xinjiang están en Neolítico aldeano o sin ocupación documentada (peso 1). No hay guerras mayores documentadas ni relaciones datadas entre entidades presentes en el visor y esta zona. Las fuentes chinas oficiales sobre Shuanghuaishu (scio.gov.cn, china.org.cn) no se pudieron leer por error de certificado TLS; se ha leído la de CGTN.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "5186303332",
+  "bbox": [
+   10.84,
+   5.0,
+   33.67,
+   18.75
+  ],
+  "corte": "-1350",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 1,
+  "descartados": [],
+  "nota": "Zona = Sahel y Sudán central (lago Chad, Kordofán, Nilo hasta ~18,75°N, oeste de Etiopía). En 1350 a.C. el único punto documentado con entidad de vista media es Napata/Gebel Barkal (Wikidata 18,53°N 31,82°E, dentro del recuadro por 0,2°), puesto fronterizo egipcio con templo de Amón desde Tutmosis III; se propone como ciudad con peso 2 (fue capital de Kush solo desde ~1100-750 a.C., fuera de la ventana). Gebel Barkal en sí (Q499019) no se propone por separado: es el mismo lugar que Napata y aparecería duplicado. Mirado y descartado: cultura Gajiganna (Q1491580, 11,83°N 13,15°E, ca. 1800–400 a.C., pastores del lago Chad en fase de transición a la agricultura) — existe en la ventana y cae en zona, pero es una cultura regional del Neolítico tardío sin rango de vista media, peso 1, por debajo del umbral. Kerma, Sai, Soleb, Kurgus y el resto de Nubia egipcia quedan al norte de 18,75°N; Punt y la costa del mar Rojo quedan al este de 33,67°E; Nok (Nigeria central, ~8-9°E) queda al oeste de 10,84°E. Para Egipto (Q180568, ya en el visor) no se propone relación nueva: en esta zona no hay otra entidad con QID que sirva de contraparte (el reino de Kerma/Kush ya estaba sometido y su sede queda fuera del recuadro).",
+  "autor": "carlos alvarez-cascos"
  }
 ]
