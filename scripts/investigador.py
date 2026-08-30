@@ -116,6 +116,8 @@ def guardar_revisada(t):
 NIVEL = {3: "vista lejana: solo estados, ciudades grandes y guerras mayores (peso 3)", 2: "vista media: estados, ciudades relevantes, batallas y rutas principales (peso 2 o 3)",
          1: "vista cercana: también yacimientos y hechos locales (peso 1 a 3)", 0: "todo el detalle: cualquier objeto documentado (peso 1 a 3)"}
 COLA = queue.Queue(); ZONAS = []
+WORKERS = int(os.environ.get("INVESTIGADOR_WORKERS", "3"))
+PENDIENTES = ROOT / "tmp" / "cola_pendiente.json"  # zonas en cola o en curso, para sobrevivir a un reinicio
 CORTES = json.loads((ROOT / "data" / "cortes.json").read_text(encoding="utf-8"))
 def leer(p, default):
     try: return json.loads(p.read_text(encoding="utf-8"))
@@ -165,12 +167,12 @@ def investigar_zona(tid, p):
         meta = {"modelo": out.get("model") or "claude (claude -p)", "fecha": time.strftime("%Y-%m-%d"), "sesion": out.get("session_id"), "coste_usd": out.get("total_cost_usd")}
         for h in ok: h.update(estado="generado", zona=tid, corte=corte["id"], modelo=meta["modelo"], fecha=meta["fecha"])
         guardar_zona(tid, p, corte, ok, [{"nombre": h.get("nombre"), "motivo": m} for h, m in desc], res.get("nota", ""), meta)
-        with LOCK: TAREAS[tid].update(estado="hecha", hallazgos=ok, descartados=[{"nombre": h.get("nombre"), "motivo": m} for h, m in desc], nota=res.get("nota", ""), meta=meta)
-        log("zona hecha", tid, len(ok), "objetos,", len(desc), "descartados")
         if p.get("vecinos", True): encolar_vecinos(p, corte)
+        with LOCK: TAREAS[tid].update(estado="hecha", hallazgos=ok, descartados=[{"nombre": h.get("nombre"), "motivo": m} for h, m in desc], nota=res.get("nota", ""), meta=meta)
+        log("zona hecha", tid, len(ok), "objetos,", len(desc), "descartados"); persistir()
     except Exception as e:
         with LOCK: TAREAS[tid].update(estado="error", error=str(e))
-        log("zona error", tid, e)
+        log("zona error", tid, e); persistir()
 def guardar_zona(tid, p, corte, ok, desc, nota, meta):
     with LOCK:
         objs = leer(CACHE / "objetos.json", []); objs = [o for o in objs if o.get("zona") != tid] + ok
@@ -189,16 +191,25 @@ def encolar_vecinos(p, corte):
     for j in (i - 1, i + 1):
         if 0 <= j < len(CORTES) and not zona_hecha(p["bbox"], CORTES[j]["id"]):
             nueva_zona({**p, "corte": CORTES[j]["id"], "vecinos": False, "existentes": p.get("existentes_por_corte", {}).get(CORTES[j]["id"], [])}, origen=p["corte"])
-def nueva_zona(p, origen=None):
-    tid = uuid.uuid4().hex[:10]
+def nueva_zona(p, origen=None, tid=None):
+    tid = tid or uuid.uuid4().hex[:10]
     with LOCK: TAREAS[tid] = {"id": tid, "tipo": "zona", "estado": "en cola", "peticion": p, "corte": p["corte"], "bbox": p["bbox"], "origen": origen, "inicio": time.time()}
-    COLA.put(tid); return tid
+    COLA.put(tid); persistir(); return tid
+def persistir():
+    with LOCK:
+        pend = [{"id": t["id"], "peticion": t["peticion"], "origen": t.get("origen")} for t in TAREAS.values() if t.get("tipo") == "zona" and t["estado"] in ("en cola", "en curso")]
+    PENDIENTES.parent.mkdir(exist_ok=True); PENDIENTES.write_text(json.dumps(pend, ensure_ascii=False), encoding="utf-8")
 def trabajador():
     while True:
         tid = COLA.get()
-        with LOCK: TAREAS[tid]["estado"] = "en curso"
+        with LOCK:
+            if TAREAS[tid]["estado"] != "en cola": COLA.task_done(); continue  # cancelada
+            TAREAS[tid]["estado"] = "en curso"
         investigar_zona(tid, TAREAS[tid]["peticion"]); COLA.task_done()
-threading.Thread(target=trabajador, daemon=True).start()
+for _ in range(WORKERS): threading.Thread(target=trabajador, daemon=True).start()
+# reencolar lo que quedó pendiente en el último arranque (una investigación a medias se repite desde cero)
+for t in leer(PENDIENTES, []):
+    if not zona_hecha(t["peticion"]["bbox"], t["peticion"]["corte"]): nueva_zona(t["peticion"], origen=t.get("origen"), tid=t["id"]); log("reencolada", t["id"], t["peticion"]["bbox"], t["peticion"]["corte"])
 
 class H(BaseHTTPRequestHandler):
     def cors(self):
@@ -234,8 +245,16 @@ class H(BaseHTTPRequestHandler):
             return self.out(202, {"id": tid})
         if self.path == "/zona":
             if not (isinstance(body.get("bbox"), list) and len(body["bbox"]) == 4 and body.get("corte")): return self.out(400, {"error": "falta bbox o corte"})
+            b = body["bbox"]; w, h = b[2] - b[0], b[3] - b[1]
+            if w < 0.3 or h < 0.3: return self.out(400, {"error": f"zona demasiado pequeña ({w:.2f}° × {h:.2f}°): arrastra un rectángulo"})
+            if w > 60 or h > 60: return self.out(400, {"error": "zona demasiado grande: acércate antes de investigar"})
             if zona_hecha(body["bbox"], body["corte"]): return self.out(409, {"error": "esa zona y corte ya están investigados o en cola"})
             return self.out(202, {"id": nueva_zona(body)})
+        if self.path == "/cancelar":
+            t = TAREAS.get(body.get("id", ""))
+            if not t or t.get("estado") != "en cola": return self.out(400, {"error": "solo se cancela lo que está en cola"})
+            with LOCK: t["estado"] = "cancelada"
+            persistir(); return self.out(200, {"ok": True})
         if self.path == "/guardar":
             t = TAREAS.get(body.get("id", ""))
             if not t or t.get("estado") != "hecha": return self.out(400, {"error": "tarea no lista"})

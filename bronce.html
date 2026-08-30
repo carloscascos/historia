@@ -114,7 +114,7 @@
   #mapwrap.zona{cursor:crosshair} #selrect{fill:rgba(212,162,127,.12);stroke:#d4a27f;stroke-width:1.5;stroke-dasharray:4 3;vector-effect:non-scaling-stroke;pointer-events:none}
   .zhecha{fill:rgba(212,162,127,.05);stroke:#7a5a40;stroke-width:1;stroke-dasharray:3 3;vector-effect:non-scaling-stroke;pointer-events:none}
   .gciu{fill:#d4a27f;fill-opacity:.85;stroke:#0b0f11;stroke-width:.5;stroke-dasharray:2 1.2;vector-effect:non-scaling-stroke;cursor:pointer}
-  .gent{fill:#d4a27f;fill-opacity:.22;stroke:#d4a27f;stroke-width:1.2;stroke-dasharray:4 3;vector-effect:non-scaling-stroke;cursor:pointer;filter:url(#blur)}
+  .gent{fill:#d4a27f;fill-opacity:.14;stroke:#d4a27f;stroke-opacity:.6;stroke-width:1.2;stroke-dasharray:4 3;vector-effect:non-scaling-stroke;cursor:pointer}
   .gev{fill:#d4a27f;stroke:#0b0f11;stroke-width:.5;stroke-dasharray:2 1.2;vector-effect:non-scaling-stroke;cursor:pointer}
   .grel{fill:none;stroke:#d4a27f;stroke-width:1.4;stroke-dasharray:6 3;vector-effect:non-scaling-stroke;cursor:pointer}
   .lbl.g{fill:#d4a27f}
@@ -468,7 +468,8 @@ function proponerZona(b){const c=CORTES[cur],L=lod();clearSel();sel={kind:"zona"
 let colaTimer=null, ZONAS_HECHAS=[];
 async function pollCola(loop){if(!cfg.url)return;try{const j=await (await fetch(cfg.url+"/cola")).json();ZONAS_HECHAS=j.hechas||[];renderZonas();mergeGen(j.objetos||[]);
     const act=j.zonas.filter(z=>z.estado==="en cola"||z.estado==="en curso");const box=$("#cola");
-    if(act.length){box.classList.add("on");box.innerHTML=`<span class="kicker">investigando zonas</span>`+act.map(z=>`<div>${z.estado==="en curso"?"⏳":"·"} ${CORTES.find(c=>c.id===z.corte)?.etiqueta} · ${z.bbox.map(v=>v.toFixed(0)).join(", ")}${z.origen?" (vecino)":""}</div>`).join("")}
+    if(act.length){box.classList.add("on");box.innerHTML=`<span class="kicker">investigando zonas</span>`+act.map(z=>`<div>${z.estado==="en curso"?"⏳":"·"} ${CORTES.find(c=>c.id===z.corte)?.etiqueta} · ${z.bbox.map(v=>v.toFixed(0)).join(", ")}${z.origen?" (vecino)":""}${z.estado==="en cola"?` <a class="go" data-cancel="${z.id}" title="quitar de la cola">×</a>`:""}</div>`).join("");
+      box.querySelectorAll("[data-cancel]").forEach(a=>a.onclick=async()=>{await fetch(cfg.url+"/cancelar",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({id:a.dataset.cancel})});pollCola(false)})}
     else{const ult=j.zonas.filter(z=>z.estado==="hecha").slice(-3);box.classList.toggle("on",!!ult.length);box.innerHTML=ult.length?`<span class="kicker">zonas terminadas</span>`+ult.map(z=>`<div>✓ ${CORTES.find(c=>c.id===z.corte)?.etiqueta}: ${z.hallazgos.length} objetos${z.descartados?.length?`, ${z.descartados.length} descartados`:""}${z.hallazgos.length?"":" — "+(z.nota||"").slice(0,120)}</div>`).join(""):""}
     if(loop&&act.length)colaTimer=setTimeout(()=>pollCola(true),6000)}catch(e){}}
 // objetos generados: se pintan en su corte con trazo discontinuo ámbar
@@ -478,7 +479,7 @@ function renderGen(){document.querySelectorAll(".gen-g").forEach(g=>g.remove());
   CORTES.forEach((c,i)=>{const objs=GENOBJ.filter(o=>o.corte===c.id);if(!objs.length)return;const g=el("g",{class:"gen-g"});document.querySelector(`.corte[data-i="${i}"]`).appendChild(g);
     objs.forEach(o=>{if(o.tipo==="relacion"){const a=NODES[i]["ent:"+o.a]||GENNODES[i+":"+o.a],b=NODES[i]["ent:"+o.b]||GENNODES[i+":"+o.b];if(!a||!b)return;const ra=a.getBBox(),rb=b.getBBox();const p=el("path",{d:`M${ra.x+ra.width/2},${ra.y+ra.height/2}L${rb.x+rb.width/2},${rb.y+rb.height/2}`,class:"grel"});p.addEventListener("click",()=>click(()=>showGen(o)));g.appendChild(p);return}
       const x=o.lon,y=-o.lat;let n;
-      if(o.tipo==="entidad"){const r=o.subtipo==="estado"?1.6:2.4;n=el("circle",{cx:x,cy:y,r,class:"gent"});g.appendChild(n);GENNODES[i+":"+o.qid]=n}
+      if(o.tipo==="entidad"){const r=(o.subtipo||"").startsWith("estado")?0.8:1.2;n=el("circle",{cx:x,cy:y,r,class:"gent"});g.appendChild(n);GENNODES[i+":"+o.qid]=n}
       const g2=el("g",{class:"zs w"+(o.peso||1),"data-x":x,"data-y":y,"data-tipo":"generado"});
       if(o.tipo==="ciudad"){n=el("circle",{cx:0,cy:0,r:.45,class:"gciu"});g2.appendChild(n)}
       else if(o.tipo==="evento"){const s=.75;n=el("path",{d:`M0,${-s}L${s},0L0,${s}L${-s},0Z`,class:"gev"});g2.appendChild(n)}
