@@ -1312,5 +1312,31 @@
   ],
   "nota": "Zona: Anatolia central-oriental, Siria norte, Mesopotamia norte, Irán norte, Cáucaso, estepa póntico-caspia y Asia Central. QIDs y coordenadas comprobados contra la API de Wikidata/Wikipedia. Único estado nuevo con umbral 3: el Imperio acadio (Q4461035, coord. Wikidata 33.1 N / 44.1 E, dentro de la zona; la ciudad de Agadé Q150996 no tiene coordenadas). Las tres culturas propuestas (Yamna, Catacumbas, Kurá-Araxes) NO tienen P625 en Wikidata; se proponen igual porque el visor ya admite entidades culturales sin coordenadas (Campaniforme, Megalitismo atlántico), pero habrá que ubicarlas por otro medio. Descartados por peso <3: Nínive (Q5680, periodo Ninevita 5, sin rango de capital), Assur (Q200200, templo de Ishtar desde Dinástico Antiguo, ciudad menor), Sarazm (Q422929, 90 ha, centro metalúrgico, no estado), Altyn-Depe (Q2559322), Alaca Höyük (Q558861, tumbas reales 2850–2450 a.C.) y hatianos (Q7322482, ciudades-estado conocidas solo por arqueología y fuentes hititas tardías), Kültepe, Arslantepe, Tell Chuera, Tell Beydar, Hamoukar, cultura de Poltavka (Q1757895, regional). Descartados por fecha: Maikop (termina -3000), BMAC (empieza -2200), Trialeti (-2200), gutis (-2200), Ur III. Fuera de la zona (lat <32.5): Susa, Shahr-i Sokhta, Mundigak, Uruk. La 'civilización de Kish' (Q18639374) se descarta porque la propia Wikipedia la da por teoría abandonada. Alianzas Ebla–Kish y Ebla–Nagar (matrimonio dinástico) no encajan en los tres tipos de relación admitidos y no se proponen. La atribución de la destrucción de Ebla es discutida (Sargón / Naram-Sin / Mari) y así se deja en la línea. Naram-Sin (c. 2254–2218) queda al borde de la ventana; sus campañas contra lullubi y Armanum no se incluyen como eventos por falta de coordenadas y por caer fuera.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "ad951d4fb1",
+  "bbox": [
+   -12.0,
+   5.0,
+   33.67,
+   32.5
+  ],
+  "corte": "-3000",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 2,
+  "descartados": [
+   {
+    "nombre": "Naqada III (Periodo protodinástico / Dinastía 0)",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Menfis",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona = norte de África, Egipto, Nubia, Sáhara y Sinaí occidental (el Levante queda al este de 33,67°). Se ha mirado: Egipto protodinástico y arcaico (Naqada III, Menfis, Hieracómpolis, Abidos, Tinis, Naqada, Buto), Nubia (Grupo A, Qustul, Gebel Sheikh Suleiman), contactos Egipto–Mesopotamia y Sinaí. Coordenadas verificadas en Wikidata: Menfis 29,85/31,25; Nejen 25,10/32,78; Abidos 26,19/31,92, todas dentro de la zona. Descartados por debajo del umbral (peso 2): Grupo A de la Baja Nubia (Q277797, apogeo h. 3100, fin h. 2900 a.C. por conquista egipcia; la 'realeza de Qustul' es tesis discutida), el conflicto Egipto–Grupo A h. 3000 a.C. (relieve de Gebel Sheikh Suleiman, atribución a Djer no segura), y la relación de transmisión Uruk→Egipto (sellos cilíndricos, fachadas nichadas, cuchillo de Gebel el-Arak, h. 3500–3000 a.C.), que sería relación Q2345840→Q721840 en vista media. Descartado por falta de datos en Wikidata: el evento 'unificación del Alto y Bajo Egipto' (Q1739078) no tiene coordenadas ni artículos enlazados. Tinis (Q1153959), capital de las dinastías I–II según Manetón, se ha omitido porque el yacimiento no está localizado arqueológicamente (la coordenada de Wikidata es aproximada, cerca de Girga); Abidos, su necrópolis, la representa. Nada relevante al umbral en Sáhara, Magreb ni África occidental en esta ventana. Las dataciones de Naqada III varían según fuente (3325–3000, 3200–3000, Wikidata 3200–3060 a.C.); se ha usado el inicio de la ventana.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
