@@ -2917,5 +2917,22 @@
   ],
   "nota": "Zona = África occidental sahelo-sudanesa (Senegal, Mauritania sur, Malí, Burkina, Ghana, Nigeria oeste). No hay estados, ciudades en sentido estricto, batallas ni rutas documentadas para 1275–1000 a.C.; solo culturas arqueológicas. Se proponen tres objetos: la Tradición de Tichitt (Q107008575, sin coordenadas en Wikidata: el visor deberá tratarla como entidad regional), su yacimiento principal Dhar Tichitt (Q1165596, coords 18.36N -9.15W, dentro de la zona) y la fase temprana de Nok (Q927291, coords 9.50N 8.02E). Aviso sobre Nok: Wikidata y el proyecto de Fráncfort fijan el inicio hacia 1500 a.C., pero la Wikipedia en español aún da 500 a.C.; la fase temprana está poco caracterizada y sin terracotas. Descartados: complejo Kintampo (Q1320943, Ghana; cronología académica c. 3600–3200 BP ≈ 1650–1250 a.C., Wikipedia lo cierra en 1400 a.C.: el solape con la ventana es marginal); cultura de Gajiganna (Nigeria NE, 1800–800 a.C.) por caer fuera de la zona (lon ~13E); valle del Tilemsi/Karkarichinkat (Malí) termina hacia 1500 a.C.; Ounjougou y yacimientos del Falémé (Senegal) solo alcanzarían peso 1. No se encontró QID para Dakhlet el Atrouss ni Dhar Walata. Sin relaciones documentadas con las entidades ya presentes en el visor en esta ventana.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "8f2c826f30",
+  "bbox": [
+   -12.0,
+   18.75,
+   10.84,
+   32.5
+  ],
+  "corte": "-1200",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 0,
+  "descartados": [],
+  "nota": "Zona = Sáhara occidental y central (sur de Marruecos y Argelia, Sáhara Occidental, norte de Mauritania y Malí, extremo suroeste de Libia), ventana 1275–1000 a.C., umbral peso ≥2. Revisado: (1) Tradición de Tichitt (Q107008575, Mauritania): es el único candidato de peso 2 en el entorno —fase clásica 1600–1000 a.C. con centenares de aldeas amuralladas de piedra seca, la sociedad compleja más antigua de África occidental—, pero queda FUERA de la zona: Dhar Tichitt está en 18°27′N (18.45), por debajo del límite sur 18.75, y Dhar Walata/Néma aún más al sur; además el ítem de Wikidata de la cultura no tiene coordenadas (P625) y el del sitio no aparece en la búsqueda de Wikidata, así que no cumple la regla 2. Recomiendo proponerla al explorar la zona contigua al sur. (2) Tassili n'Ajjer (Q190048, 25.67N 9.0E, dentro de la zona): el «periodo del caballo» del arte rupestre (carros, jinetes) se data laxamente entre 2000 a.C. y 50 d.C.; es un yacimiento de arte rupestre sin asentamiento ni entidad política, peso 1 en vista media y sin fecha firme en la ventana → descartado. (3) Bronce del Alto Atlas (Oukaïmeden, Yagour, 31.2N -7.85E): grabados de puñales y alabardas copiados de modelos argáricos; la Encyclopédie berbère no aporta ninguna datación 1300–1000 a.C. y en Wikidata solo existen la comuna y la estación de esquí, no el conjunto rupestre → descartado (peso 1, sin QID ni fecha). (4) Libu, Meshwesh y Tehenu (guerras libias de Merenptah y Ramsés III, 1208–1176 a.C.) se localizan en Cirenaica/Marmárica, al este de la zona (lon >20); los garamantes (Fezzan, Germa 13.1E) están fuera por longitud y no se documentan antes de ~1000 a.C. (5) Lixus y Mogador (fundaciones fenicias) quedan fuera por latitud o por fecha (siglos VIII–VII a.C.). No hay entidades del visor dentro de la zona con las que proponer relaciones nuevas.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
