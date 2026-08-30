@@ -57,6 +57,7 @@
   svg#map{width:100%;height:100%;display:block;position:absolute;inset:0}
   #zoomctl{position:absolute;right:10px;top:10px;display:flex;flex-direction:column;gap:4px}
   #zoomctl button{width:30px;height:30px;padding:0;font-size:18px;background:rgba(11,15,17,.8)}
+  #f-up,#f-dn{font-family:var(--serif);font-weight:700;margin-top:2px}
   #lod{position:absolute;left:10px;top:10px;font-family:var(--sans);font-size:11px;color:var(--text-dim);background:rgba(11,15,17,.7);padding:2px 6px;border-radius:3px}
   #panel{border-left:1px solid var(--line);background:var(--panel);font-size:14.5px;line-height:1.45;overflow:hidden;display:flex;flex-direction:column;min-width:0}
   #main.nopanel #panel{display:none}
@@ -105,8 +106,8 @@
   .ent.difuso{filter:url(#blur);stroke:none;fill-opacity:.5}
   .ent:hover{fill-opacity:.7}
   .ent.sel{stroke:var(--bronce)!important;stroke-width:2!important;stroke-opacity:1!important}
-  .lbl{font-family:var(--sans);font-size:1.55px;fill:var(--text);paint-order:stroke;stroke:#0b0f11;stroke-width:.45px;stroke-linejoin:round;pointer-events:none;letter-spacing:.03em}
-  .lbl.t{font-size:1.3px;fill:var(--text-dim)}
+  .lbl{font-family:var(--sans);font-size:calc(1.55px * var(--fs,1));fill:var(--text);paint-order:stroke;stroke:#0b0f11;stroke-width:calc(.45px * var(--fs,1));stroke-linejoin:round;pointer-events:none;letter-spacing:.03em}
+  .lbl.t{font-size:calc(1.3px * var(--fs,1));fill:var(--text-dim)}
   .zs{transform-box:view-box;transform-origin:0 0}
   .ciu{fill:#f0e6d2;fill-opacity:.9;stroke:#0b0f11;stroke-width:.5;vector-effect:non-scaling-stroke;cursor:pointer}
   .ciu.dud{stroke-dasharray:2 1.5;fill-opacity:.55}
@@ -139,7 +140,7 @@
   svg.h-conflicto [data-tipo="conflicto"]{display:none} svg.h-comercio [data-tipo="comercio"]{display:none} svg.h-transmision [data-tipo="transmision"]{display:none} svg.h-estado [data-tipo="estado"]{display:none} svg.h-difuso [data-tipo="difuso"]{display:none} svg.h-ciudad [data-tipo="ciudad"]{display:none} svg.h-evento [data-tipo="evento"]{display:none}
   .lbl .sub{font-size:.8em;fill:var(--text-dim);letter-spacing:0}
   svg.lod3 .lbl .sub,svg.lod2 .lbl .sub{display:none}
-  .lbl.rl{font-size:1.2px;letter-spacing:.06em;text-transform:uppercase} .lbl.rl.conflicto{fill:var(--conflicto)} .lbl.rl.comercio{fill:var(--comercio)} .lbl.rl.transmision{fill:var(--transmision)}
+  .lbl.rl{font-size:calc(1.2px * var(--fs,1));letter-spacing:.06em;text-transform:uppercase} .lbl.rl.conflicto{fill:var(--conflicto)} .lbl.rl.comercio{fill:var(--comercio)} .lbl.rl.transmision{fill:var(--transmision)}
   svg.lod3 .lbl.rl,svg.lod2 .lbl.rl,svg.lod1 .lbl.rl{display:none}
 </style>
 </head>
@@ -174,7 +175,7 @@
       <rect id="selrect" style="display:none"/>
     </svg>
     <div id="lod"></div>
-    <div id="zoomctl"><button id="z-in" title="acercar">+</button><button id="z-out" title="alejar">−</button></div>
+    <div id="zoomctl"><button id="z-in" title="acercar">+</button><button id="z-out" title="alejar">−</button><button id="f-up" title="letra más grande">A</button><button id="f-dn" title="letra más pequeña" style="font-size:12px">A</button></div>
     <div id="cola"></div>
   </div>
   <div id="tirador" title="arrastra para cambiar el ancho de la ficha (doble clic: 360 px)"></div>
@@ -293,6 +294,11 @@ function zoomAt(f,cx,cy){const [mx,my]=toMap(cx,cy);const w=vb[2]*f;if(w<6||w>40
 wrap.addEventListener("wheel",e=>{e.preventDefault();zoomAt(Math.pow(1.0015,e.deltaY),e.clientX,e.clientY)},{passive:false});
 const center=()=>{const r=svg.getBoundingClientRect();return[r.left+r.width/2,r.top+r.height/2]};
 $("#z-in").onclick=()=>zoomAt(1/1.4,...center()); $("#z-out").onclick=()=>zoomAt(1.4,...center());
+// tamaño de la letra del mapa, recordado entre visitas
+let FS=1; try{FS=+localStorage.getItem("map_fs")||1}catch(e){}
+function setFS(v){FS=Math.max(.6,Math.min(2.4,+v.toFixed(2)));document.documentElement.style.setProperty("--fs",FS);try{localStorage.setItem("map_fs",FS)}catch(e){}requestAnimationFrame(()=>{applyVB();despejar()})}
+$("#f-up").onclick=()=>setFS(FS*1.15); $("#f-dn").onclick=()=>setFS(FS/1.15);
+setFS(FS);
 const ptr=new Map(); let dragged=false, last=null, pinch=null;
 wrap.addEventListener("pointerdown",e=>{if(e.button!==0&&e.pointerType==="mouse")return;if(zonaMode){zonaStart(e);return}ptr.set(e.pointerId,[e.clientX,e.clientY]);dragged=false;last=[e.clientX,e.clientY];if(ptr.size===2){const p=[...ptr.values()];pinch={d:Math.hypot(p[0][0]-p[1][0],p[0][1]-p[1][1])}}});
 wrap.addEventListener("pointermove",e=>{if(zonaMode&&zsel){zonaMove(e);return}if(!ptr.has(e.pointerId))return;ptr.set(e.pointerId,[e.clientX,e.clientY]);
