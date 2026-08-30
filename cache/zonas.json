@@ -3703,5 +3703,47 @@
   "descartados": [],
   "nota": "Zona = Sáhara central-meridional, Sahel y Nilo medio-sur (sur de Libia, Chad, norte de Nigeria/Camerún, Sudán central, Sudán del Sur). Nada alcanza el umbral de vista media. Verificado en Wikidata que caen FUERA de la zona: Kerma/reino de Kerma Q1739282 (19.60N, límite norte 18.75), Meroë Q5780 (33.75E, límite este 33.67, y fundación ~800 a.C.), Gash Group Q84088970 y su yacimiento Mahal Teglinos Q110924115 (36.43E), cultura Nok Q927291 (8.02E, y datación 500 a.C.), Tierra de Punt Q282350 (48E), Takarkori Q124881312 y Uan Muhuggiag Q4352659 (24.9N y 10.33E). Dentro de zona y ventana solo hay Jebel Moya Q55640121 (13.5N, 33.33E), con ocupación principal hacia 2300 a.C., pero es un complejo funerario y asentamiento agropastoral sin estructura urbana ni estatal: peso 1, solo vista cercana. Kadero Q109284535 y Esh Shaheinab Q109284524 caen dentro de la zona pero su ocupación es neolítica (6000-5000 a.C.), fuera de la ventana. El Handessi Horizon (c. 2200-1100 a.C., Wadi Howar y Ennedi) y la cultura Gajiganna (desde 1800 a.C., cuenca del Chad) sí caerían dentro geográficamente y en ventana, pero NO tienen artículo de Wikidata: sin QID no se pueden proponer, así que la zona queda vacía pese a existir ocupación pastoral documentada. Descartados por posteriores a 1800 a.C.: Daima y Zilum (cuenca del Chad, I milenio a.C.), Jebel Mokram Group Q86752182 (desde 1500/1400 a.C.), reino de Kush Q241790 (desde 1070 a.C.). Pan-Grave Q1665306 y C-Group Q1022291 no tienen coordenadas en Wikidata y se sitúan en Baja Nubia/Desierto Oriental, al norte de la zona. No se proponen relaciones nuevas entre las entidades ya presentes porque todas ellas (Egipto, Mesopotamia, Elam, Indo, Egeo, Iberia) tienen su centro fuera de esta zona; los vínculos que las unen no pasan por aquí.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "87f859d6c7",
+  "bbox": [
+   10.84,
+   18.75,
+   33.67,
+   32.5
+  ],
+  "corte": "-2000",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 5,
+  "descartados": [
+   {
+    "nombre": "Reino de Kerma",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Kerma",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Cultura del Grupo C",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Buhen",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Semna",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Abidos",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona = Egipto, Nubia, Sinaí, desierto libio oriental y Cirenaica. Se ha comprobado en Wikidata la coordenada de cada candidato y se ha descartado todo lo que cae al este de 33.67°E o al norte de 32.5°N: Biblos, Ebla, Qatna, Hazor, Megiddo, Gaza y Tell el-Ajjul (Levante), Kültepe/Kanesh y Hattusa (Anatolia) y Mersa Gawasis (34.04°E, puerto del mar Rojo de las expediciones a Punt — queda fuera por poco). Descartado el Reino de Kush (Q241790): su coordenada cae fuera y su horquilla empieza hacia 1070 a.C., muy posterior. Descartados por debajo del umbral de peso 2 los fuertes menores de la cadena de la segunda catarata (Uronarti Q496002, Askut Q732310, Shalfak Q933214, Kumma Q926195): están documentados y dentro de la zona, pero son detalle de vista cercana frente a Buhen, Semna y Mirgissa. Descartados los oasis del desierto occidental (Bahariya, Dajla) por falta de ocupación relevante documentada en esta ventana concreta. No se propone ningún objeto de tipo 'evento': las campañas nubias de Sesostris III (años 8, 10, 16 y 19 de su reinado, c. 1870-1859 a.C.) y su campaña levantina de la estela de Sebek-ju están bien datadas, pero ninguna tiene un artículo de Wikidata propio con coordenadas, y la regla 2 lo exige. Los hicsos (Q192319) quedan fuera: su dinastía arranca hacia 1650 a.C., posterior a la ventana. Cirenaica (Q165198) cae dentro de la zona pero no se propone: no hay una entidad política ni cultura arqueológica documentada allí para -2250/-1800 con QID propio.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
