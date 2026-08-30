@@ -1803,5 +1803,31 @@
   ],
   "nota": "Zona = norte de China (Henan norte, Shanxi, Shaanxi norte, Hebei, Shandong, Liaoning oeste), sur de Mongolia y noroeste de Corea. Revisado en Wikipedia (en/zh) y Wikidata. Descartes: (1) 'Pan Geng traslada la capital a Yin' (Q17040331, hacia 1300 a.C.) es el evento de peso 3 de la ventana, pero su ítem de Wikidata no tiene coordenadas ni P31 y solo tiene artículo en zh, así que no cumple la regla de coordenadas; convendría añadirlo a mano ligado a Yin Xu/Huanbei. (2) Dongxianxian (Q117437119, Xingtai, ~1300 a.C.) y Dongxiafeng (Q793516) son yacimientos de peso 1; la identificación de Xingtai y Qufu con las capitales Xing y Yan de las crónicas es tradicional y sin respaldo arqueológico en las páginas leídas. (3) Yueshi (termina -1500), Xiajiadian inferior (termina -1600) y Zhukaigou marginal quedan fuera o casi; Karasuk (Minusinsk) queda al norte de la zona; Kayue (Wikidata -900) y Siba/Qijia quedan fuera por fecha o al oeste de 102°. (4) Gojoseon (-2333 en Wikidata) es legendario; Mumun (desde -1500) cae fuera de la zona (Corea central/sur). Aviso: las cuatro culturas propuestas (Xindian, Siwa, Zhukaigou, Ulaanzuukh) no tienen P625 en Wikidata; su ubicación en zona se ha verificado por la descripción geográfica de los artículos. Las dataciones de Siwa difieren entre Wikidata (-1400/-1100) y Wikipedia en (-1300/-650); se ha usado el inicio hacia -1400. La fecha de inicio Shang de Daxinzhuang ('principios del s. XIII a.C.' para Erligang tardío) es la que da Wikipedia en, aunque no cuadra bien con el fin de Erligang hacia -1400; se deja tal cual.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "0cb6466965",
+  "bbox": [
+   56.5,
+   32.5,
+   79.33,
+   46.25
+  ],
+  "corte": "-1350",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 2,
+  "descartados": [
+   {
+    "nombre": "Cultura de Chust",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Tazabagyab",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = Asia Central (Turkmenistán oriental, Uzbekistán, Tayikistán, Kirguistán, norte de Afganistán, sur de Kazajistán, borde occidental de Xinjiang). Ventana 1475–1275 a.C. Revisado: Wikipedia en/ru, Wikidata, ResearchGate, mappalab. DATACIONES CONTRADICTORIAS que no se han cerrado: (1) Tazabagyab: Wikipedia en (infobox, Garner 2020) 1850–1500 a.C. = fuera de la ventana; Mallory & Adams 1997, Wikipedia ru (XV–XI a.C.) y Wikidata P580 = 1500 a.C. la sitúan dentro. Se incluye con la datación mayoritaria (1500–1100) pero el desacuerdo es real. (2) Chust: Wikidata/Wikipedia 1500–900; el estudio de ResearchGate da límite inferior por datación científica en s. XV–XIV a.C. pero por análisis de componentes esteparios lo acota a s. XII–IX, lo que la dejaría fuera. (3) Yaz: Wikipedia Yaz I 1500/1400–1000 a.C. (radiocarbono); Wikidata inicio 1350 a.C.; marcos antiguos lo bajan a 900–650 a.C. Se incluye con inicio hacia 1500. COORDENADAS: Chust (Q13174573) y Tazabagyab (Q4132504) NO tienen P625 en Wikidata; Yaz sí (37.75N, 62.00E, dentro de la zona). Si el visor exige P625 para entidades, las dos primeras quedan sin ancla. DESCARTADOS por fecha: Gonur Depe (2400–1600, abandono ~1500), Togolok 21 (1950–1500), Namazga-Tepe VI (se reduce ~1600, fase acaba ~1500), Bishkent (redatada 2800–2400), Vakhsh (2500–1650), Shortugai (2200–1700). Cultura de Sapalli (fases Molali/Bustan, mediados del II milenio, sí caen en ventana): sin QID en Wikidata bajo 'Sapalli culture'/'Sapallitepa', y Jarkutan ya está en el visor como ciudad; no se propone. DESCARTADOS por peso (1, solo vista cercana): Yaz-depe (Q124328955), necrópolis de Kangurttut (Molali, Tayikistán), petroglifos de Saimaluu-Tash. No hay estados, batallas ni ciudades de peso 3 documentados en esta zona y ventana; no hay eventos datados. Begazy-Dandybai queda al norte de la zona. La relación Andrónovo→Yaz se etiqueta como hipótesis porque las fuentes leídas la presentan como propuesta, no como hecho establecido.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
