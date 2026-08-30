@@ -2175,5 +2175,31 @@
   "descartados": [],
   "nota": "Zona = Magreb (Marruecos, Argelia, Túnez occidental) y Sáhara occidental/central hasta el Tassili. Revisado: (1) Kach Kouch (Q108266902, 35.39N -5.16E, único asentamiento de la Edad del Bronce conocido en el Magreb): fases 2200–2000 a.C., abandono, y 1300–900 a.C.; no hay ocupación documentada en la ventana 1800–1475 y aun así sería peso 1 (aldea <100 personas). (2) Tassili n'Ajjer (Q190048, 25.5N 9.0E): hay ocupación de las mesetas hasta c. 1500 a.C. y arte rupestre pastoral/'periodo del caballo', pero la datación del inicio del periodo del caballo es contradictoria entre fuentes (2000 / 1650 / 1200 a.C.) y no es ciudad, estado ni evento; peso 1 a lo sumo, por debajo del umbral. (3) Grabados de armas del Alto Atlas (Oukaïmeden, Yagour): alabardas y puñales comparados con tipos argáricos, datados por paralelos hacia mediados del II milenio; no existe QID propio para el conjunto rupestre (solo estación de esquí Q3090623 y comuna Q7110362) y sería peso 1. HIPÓTESIS SIN VERIFICAR: transmisión El Argar → Alto Atlas; no se propone como relación por falta de entidad receptora con QID y por datación solo tipológica. (4) Dhar Tichitt (18.45N -9.41W): queda fuera de la zona por el sur (límite 18.75N) y su inicio (c. 2000 a.C.) es marginal. (5) Tribus libias (Tehenu, Libu, Meshwesh): primeras menciones egipcias firmes en el s. XIII a.C. y localizadas en Cirenaica/Marmárica, fuera de la zona por el este. (6) Wikipedia es (Historia de Argelia, Historia de Marruecos, Historia de Túnez) no recoge ninguna cultura, ciudad ni estado con nombre para 2000–1000 a.C. en la región: entre el Neolítico magrebí (hasta c. 2000 a.C.) y la colonización fenicia (s. IX–VIII a.C.) no hay objeto de peso 2–3. Fuentes leídas: https://en.wikipedia.org/wiki/Tassili_n%27Ajjer ; https://en.wikipedia.org/wiki/Dhar_Tichitt ; https://en.wikipedia.org/wiki/Prehistoric_Morocco ; https://en.wikipedia.org/wiki/Ancient_Libya ; https://es.wikipedia.org/wiki/Historia_de_Argelia ; https://www.eurekalert.org/news-releases/1075672?language=spanish ; https://theconversation.com/discovery-of-a-4-000-year-old-bronze-age-settlement-in-morocco-rewrites-history-253172 ; https://www.wikidata.org/wiki/Special:EntityData/Q108266902.json ; https://www.rupestre.net/tracce/?p=5149",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "dfa5b20dcc",
+  "bbox": [
+   33.67,
+   5.0,
+   56.5,
+   18.75
+  ],
+  "corte": "-1600",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 1,
+  "descartados": [
+   {
+    "nombre": "País de Punt",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": null,
+    "motivo": "fuera de la ventana"
+   }
+  ],
+  "nota": "Zona: Cuerno de África, sur de Sudán/Eritrea, sur de Arabia (Yemen, Dhofar) y golfo de Adén, 1800–1475 a.C. Lo único que alcanza el umbral con QID y coordenadas dentro de la zona es Punt (Q282350, Wikidata lo sitúa en 9.5N 48E). Advertencia cruda: la documentación de Punt dentro de la ventana es escasa; las expediciones atestiguadas están en los bordes (dinastía XII hasta Amenemhat IV, hacia 1790 a.C., y Hatshepsut, año 9 de su reinado, hacia 1470 a.C. con la cronología habitual o 1493 a.C. con la antigua). Durante el Segundo Periodo Intermedio no hay viajes atestiguados. La relación Imperio Nuevo–Punt empieza en −1470, cinco años fuera de la ventana bajo la cronología baja; se propone igualmente por la incertidumbre cronológica y para que el visor la recorte. No se ha encontrado ítem de Wikidata para la expedición de Hatshepsut como evento (solo artículos académicos), así que no se propone evento. Descartados: cultura Gash (Q84088970, hasta ~1800 a.C.) y grupo Jebel Mokram (Q86752182, desde ~1800 a.C.), culturas pastoriles de Kassala/Eritrea occidental, sin coordenadas en Wikidata y de peso 1; 'Wetenet' (Q138320465), ítem sin fuentes ni sitelinks que dice ser equivalente al Gash Group, poco fiable; cultura Sabir / Ma'layba (Tihama yemení, 1900–800 a.C., primeros centros urbanos hacia mediados del II milenio) sin ítem en Wikidata; Kerma y la cultura Pan-Grave quedan al norte del límite de latitud; reinos sudarábigos (Saba) y Ona son posteriores a la ventana.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
