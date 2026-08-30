@@ -4687,5 +4687,35 @@
   ],
   "nota": "La zona cubre tres bloques muy distintos: Mallorca (que entra entera), las Pitiusas (Ibiza y Formentera) y la costa de Castellón más el interior de Teruel y Cuenca. ACEPTADO: en Baleares, el periodo naviforme arranca c. 1600-1700 a.C. y Closos de Can Gaià es el yacimiento con dataciones radiocarbónicas más firmes (inicio c. 1700 a.C., no antes); en Formentera, Cap de Barbaria II (desde c. 1650 a.C.) y Ca na Costa, que se deja de usar hacia 1600 a.C. y por tanto solo solapa el arranque de la ventana. En la costa de Castellón, Orpesa la Vella y Tossal del Mortòrum están ocupados a lo largo de toda la ventana. DESCARTADO por fecha: la Naveta Alemany (Calvià, Q5558060, dentro de la zona) — su construcción solo está acotada por el rango naviforme genérico y los materiales excavados son de c. 1400-1300 a.C., posteriores a la ventana; no la incluyo porque la datación dentro del periodo no está documentada, solo supuesta. DESCARTADO por falta de QID: los poblados del Bronce de Teruel y Cuenca citados en la bibliografía (Hoya Quemada de Mora de Rubielos, Cabezo Sellado, Las Costeras) no tienen artículo en Wikidata, así que quedan fuera pese a estar en la zona. DESCARTADO por ruido: el volcado de Wikidata devuelve más de cien 'yacimientos arqueológicos' mallorquines de inventario BIC (cuevas y restos de possessió) sin cronología publicada; no hay forma de saber cuáles caen en esta ventana y no los propongo. LIMITACIÓN QUE NO PUEDO RESOLVER: quería proponer la cultura pretalayótica/naviforme (Q4167312) como 'entidad' de tipo cultura arqueológica, que es el objeto que de verdad estructura esta zona y periodo, pero su artículo de Wikidata NO tiene coordenadas (P625). Como la regla 2 dice que las coordenadas se toman de Wikidata, no sé dónde la situaría el visor y la dejo fuera; lo mismo ocurre con la cultura argárica (Q13409799), que sí uso como extremo de la relación de transmisión aunque su centro geográfico está fuera de la zona. Si el visor sabe colocar entidades sin coordenadas, la cultura naviforme debería añadirse con peso 3. NO HAY: ningún evento datado (batalla, destrucción, pecio) documentado dentro de esta zona y ventana; el debate sobre un posible hiato de poblamiento en las Pitiusas entre el Bronce y la llegada fenicia sigue abierto y sin resolver, y no lo presento como hecho.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "34448f0b49",
+  "bbox": [
+   7.59,
+   38.48,
+   10.23,
+   43.22
+  ],
+  "corte": "-2500",
+  "lod": 0,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 7,
+  "descartados": [
+   {
+    "nombre": "Cultura de Abealzu-Filigosa",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Monte Claro",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Complejo megalítico de Monte Baranta",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "La zona es Cerdeña casi entera más Córcega del sur. CERDEÑA: la ventana -2750/-2250 cae en el Calcolítico, dominado por Abealzu-Filigosa (2700-2400) y el arranque de Monte Claro (2400-2100); ambas culturas y sus sitios epónimos y principales están dentro. AVISO SOBRE LA CALIDAD DE LA DATACIÓN: solo Monte Baranta (2500-2200) y la fase de ampliación de Monte d'Accoddi (2800-2400) tienen cifras numéricas inequívocas dentro de la ventana. Montessu, Anghelu Ruju, Filigosa, Santu Pedru y Su Crucifissu Mannu se incluyen por atribución cultural explícita (secuencia Ozieri → Abealzu-Filigosa → Monte Claro documentada en cada uno), NO por fechas numéricas de fase; sus rangos aquí son una inferencia a partir de la datación de las culturas, no un dato de excavación. CÓRCEGA DEL SUR: descartada por completo. Filitosa (Q1025950), Cauria (Q1677172), I Stantari (Q10964453), Funtanaccia (Q10976649), Cucuruzzu (Q1048878) y Castellu d'Araghju (Q2859432) tienen QID y coordenadas dentro de la zona, pero ninguna de sus entradas en Wikipedia (fr/en/co) da una sola fecha numérica: se describen como neolíticos o, sobre todo, de la Edad del Bronce (torreanos, hacia 1600 a.C.). El yacimiento calcolítico corso mejor datado en la bibliografía, I Calanchi-Sapar'Alta (Sollacaro, inicio del III milenio), NO tiene ítem en Wikidata, igual que Palaggiu y Renaghju; sin QID no se proponen. DESCARTES ADICIONALES: Pranu Muttedu (Q2107814) termina en 2800 a.C., antes de la ventana; Sa Figu (Q3685189) solo tiene una atribución declarada como hipótesis (\"si ipotizza\") al Eneolítico, sus fases datadas son Neolítico y Bronce Medio; Sant'Andrea Priu (Q2223903) no aporta fechas en las fuentes leídas; Monte Revincu queda fuera de la zona por latitud (42.67N sí entra en el rango, pero sus C14 son del V milenio, muy anteriores). Tampoco se ha localizado ítem con coordenadas para el yacimiento epónimo de Monte Claro en Cagliari.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
