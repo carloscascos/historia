@@ -4017,5 +4017,39 @@
   ],
   "nota": "La zona (Alemania oriental, Chequia, Polonia, Bálticos, Bielorrusia, oeste de Rusia; 46,25–60 °N) no tiene estados ni ciudades en esta ventana: es territorio de culturas arqueológicas prehistóricas, sin escritura y sin urbanismo. Ninguno de los objetos ya presentes en el visor cae dentro de este recuadro (Egipto, Mesopotamia e Iberia quedan todos fuera), así que los siete propuestos son nuevos. DESCARTADOS con motivo: (a) Ruta del Ámbar (Q239574) — su punto de Wikidata cae dentro del recuadro, pero la propia Wikipedia sitúa un DESCENSO del comercio de ámbar hacia el 2000 a.C. y solo documenta movimiento sostenido desde el siglo XVI a.C.; no está documentada como ruta activa en la ventana, así que no se propone pese a ser tentadora. (b) Disco celeste de Nebra (Q157094, 51,28 N / 11,52 E, dentro del recuadro) — fabricado hacia 1800 a.C., justo en el borde final de la ventana, y con una controversia de datación abierta (Gebhard y Krause 2020 propusieron edad del Hierro, rebatido por Pernicka); además es un objeto único, no un hecho de escala continental. (c) Edad del Bronce nórdica (Q605601) — Wikidata la inicia en -1800, el límite mismo de la ventana, y su núcleo (Dinamarca, ~10 °E) queda al oeste del recuadro. (d) Fenómeno Seima-Turbino (Q2409967, c. 2150–1600 a.C.) — encaja en la ventana, pero su centro de gravedad está muy al este de 33,67 °E; solo hallazgos sueltos (siete en Estonia, cinco en Finlandia, uno en Lituania) entran en el recuadro. (e) Túmulo de Leubingen (Q1483247, 51,19 N / 11,17 E), Nitra (Q2153777), Iwno (Q11750975) y Strzyżów (Q4442553) — dentro de zona y ventana, pero son un enterramiento aislado y culturas regionales de detalle: peso 1, por debajo del umbral de vista media. LIMITACIÓN A SEÑALAR: ninguna de las cuatro culturas propuestas tiene coordenadas (P625) en Wikidata — son polígonos, no puntos. Si el visor exige P625 para situar el objeto, las cuatro fallarán; asumo que las trata como los objetos-cultura que ya lleva dentro (Andrónovo, Campaniforme, Los Millares), que tampoco son puntos. Bruszczewo y los descartados sí tienen coordenadas verificadas. Las fechas de Fatyanovo-Balanovo (hasta -2050) solo solapan el primer tramo de la ventana: en el corte de 2000 a.C. la cultura está extinguiéndose, no en su apogeo.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "9a98bd58d4",
+  "bbox": [
+   102.16,
+   32.5,
+   125.0,
+   46.25
+  ],
+  "corte": "-2000",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 3,
+  "descartados": [
+   {
+    "nombre": "Cultura de Longshan",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Qijia",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Xiajiadian inferior",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Baodun",
+    "motivo": "fuera de la zona (30.45,103.75)"
+   }
+  ],
+  "nota": "Zona = China oriental y central (llanura del río Amarillo, Shandong, bajo Yangtsé, Sichuan, Manchuria) más Corea y el borde oeste de Japón. La ventana cae de lleno en el Longshan tardío y la transición al bronce, con los tres grandes yacimientos (Shimao, Taosi, Erlitou) ya en el visor; lo que faltaba eran las culturas que los enmarcan.\n\nDESCARTADOS con motivo:\n- Liangzhu (Q punto bajo Yangtsé): colapsa hacia 2300–2200 a.C., justo al inicio de la ventana; sus sucesoras (Qianshanyang, Guangfulin, 2300–2000) son culturas locales de rango menor, no llegan a peso 2.\n- Yueshi (Q1460971, Shandong): datada 1900–1500 a.C., solo solapa el último siglo de la ventana y además representa un declive marcado respecto al Longshan de Shandong. No alcanza el umbral en este corte; sería propia del corte siguiente.\n- Sanxingdui (Q929072): la ciudad amurallada se funda hacia 1700–1600 a.C., POSTERIOR a la ventana. Se propone en su lugar Baodun, que es la fase que sí está ocupada.\n- Pingliangtai (Q133238013, coord. 33.71/114.92, dentro de zona): tiene el sistema de drenaje cerámico urbano más antiguo de China, pero unos 500 habitantes y sin evidencia de poder centralizado. Es peso 1, vista cercana.\n- Corea y Japón occidental: en esta ventana Corea está en el Jeulmun (c. 8000–1500 a.C.), cazadores-recolectores con horticultura a pequeña escala; el Mumun y el bronce no empiezan hasta c. 1500 a.C. Nada alcanza peso 2. Mismo caso en Japón (Jōmon).\n\nNO PROPUESTOS POR FALTA DE QID, aunque son hechos datados dentro de la ventana: el abandono de Taosi (c. 1900 a.C., con hipótesis de rebelión contra la élite) y el abandono de Shimao (c. 1800 a.C., asociado al giro climático de húmedo a seco entre 2000 y 1700 a.C.). Wikidata no tiene ítem separado para ninguno de los dos: son propiedades de los yacimientos, ya presentes en el visor. No invento QID.\n\nAVISO SOBRE COORDENADAS: Longshan (Q1057935), Qijia (Q1269223) y Xiajiadian inferior (Q1041674) NO tienen P625 en Wikidata — lo he comprobado por API. Baodun (Q807064) sí (30.45/103.75, dentro de zona). Esto no es un descuido mío: las culturas arqueológicas chinas carecen sistemáticamente de coordenada puntual, y las ya cargadas en el visor tienen el mismo problema (Erlitou culture Q1051663 sí la tiene, 34.70/112.70; Andrónovo Q459376 la tiene en 55.88 N, FUERA de esta zona, y aun así figura listada). Si el visor resuelve las entidades por geometría propia y no por P625, estas cuatro funcionan igual que las ya presentes; si exige P625 estrictamente, tres de ellas fallarán al cargar. Lo señalo porque afecta también a objetos ya en el visor, no solo a los que propongo.\n\nLa relación Qijia→Erlitou la doy con ventana tardía (-1900/-1800) y una salvedad que conviene no perder: Fitzgerald-Huber y otros ven paralelos tipológicos claros, pero hay trabajos que sostienen que la vía Seima-Turbino entró por Shanxi y no por Gansu, y que no es anterior a la fase III de Erlitou. El hecho del contacto está documentado; la RUTA concreta está en disputa académica abierta.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
