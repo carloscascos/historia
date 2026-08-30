@@ -1,0 +1,86 @@
+{
+ "tipo": "ciu",
+ "clave": "Alepo",
+ "nombre": "Alepo",
+ "corte": "1600 a.C.",
+ "estado": "generada",
+ "modelo": "claude (claude -p)",
+ "fecha": "2026-08-30",
+ "autor": "carlos alvarez-cascos",
+ "entradilla": "Halab, la actual Alepo, fue la capital del reino amorreo de Yamhad, la mayor potencia de Siria en el siglo XVIII a.C., sede del gran templo del dios de la tormenta Hadad y, hacia 1600 a.C., el objetivo que los hititas acababan de tomar tras décadas de asedio.",
+ "contexto": [
+  "Alepo, llamada Halab en la Antigüedad, aparece por primera vez en las tablillas de Ebla, en el tercer milenio a.C., donde figura como «Ha-lam». Ya entonces era un lugar sagrado: en el centro de la ciudad, sobre la colina que hoy ocupa la ciudadela, se alzaba el santuario del dios de la tormenta, al que los textos de Ebla llaman Hadda (Hadad); los archivos eblaítas mencionan a Hadad y a su consorte Halabatu, «la de Halab», lo que muestra hasta qué punto ciudad y dios se identificaban. Las excavaciones dirigidas por Kay Kohlmeyer desde 1996 bajo la ciudadela han sacado a la luz ese templo, construido por primera vez en la Edad del Bronce Antiguo y reconstruido después por sucesivas culturas, entre ellas la hitita, hasta la Edad del Hierro.",
+  "Hacia 1800 a.C. Halab se convirtió en capital de Yamhad, un reino amorreo que las fuentes llaman también «la tierra de Halab» y que fue uno de los más poderosos del Próximo Oriente. Su fundador, Sumu-epuh, se enfrentó a Mari; su hijo Yarim-Lim I, aliado de Hammurabi de Babilonia y de Ibal-pi-el II de Eshnunna, resistió el cerco del asirio Shamshi-Adad I y convirtió Yamhad en la potencia dominante de Siria. Una carta enviada a Zimri-Lim de Mari resume su peso diplomático: «veinte reyes siguen a Yarim-Lim de Yamhad», frente a los diez o quince que seguían a los demás grandes reyes. Yarim-Lim casó además a su hija Shibtu con Zimri-Lim, y a mediados del siglo XVIII a.C. casi toda Siria salvo el sur dependía de Halab, directamente o como vasalla: Ebla, Ugarit y Alalakh reconocían su soberanía, y el rey Abba-El I entregó Alalakh a su hermano como reino dependiente.",
+  "La prosperidad de Halab se debía a su posición en la encrucijada de caminos. Yamhad controlaba el comercio entre la meseta iraní, Mesopotamia, Chipre y Anatolia, y era la puerta entre el este iraní y el Egeo; Emar le servía de puerto en el Éufrates y Alalakh de salida al Mediterráneo. Sus mercados eran fuente de cobre traído de las montañas, probablemente anatólicas, y de Chipre. Ese sistema dependía de la seguridad de las rutas: cuando Babilonia destruyó Mari, los textos dicen que «el camino se volvió peligroso» para las caravanas, que perdieron la protección mariota. La población era sobre todo amorrea, pero hacia 1725 a.C. los hurritas ya formaban una parte considerable de ella y trajeron a Halab festividades religiosas con nombres hurritas; con el tiempo identificaron a su dios Teshub con Hadad, «el dios de la tormenta de Halab». En el palacio de Alalakh, vasallo de Halab, hay incluso frescos atribuidos a pintores minoicos.",
+  "La caída llegó desde Anatolia. El rey hitita Hattusili I no atacó Halab de frente, sino que fue tomando primero a sus vasallos y aliados: Alalakh cayó hacia 1650 a.C., en el segundo año de sus campañas sirias (algunos estudios recientes sitúan esa destrucción en 1628 a.C.), y después venció a los hurritas de Urshu, al noreste de Halab, pese al apoyo militar de Halab y Karkemish. Cuando por fin atacó Halab, bajo el reinado de Hammurabi III, fue derrotado y herido, y murió hacia 1620 a.C. Su sucesor Mursili I completó la obra: conquistó Halab hacia 1600 a.C., destruyó Yamhad como gran potencia y, en la misma expedición, saqueó Ebla y marchó dos mil kilómetros hasta Babilonia, que arrasó hacia 1595 a.C. según la cronología media (la cronología corta lo sitúa hacia 1526 a.C.).",
+  "El corte de 1600 a.C. es, pues, el momento de la destrucción. Pero el golpe hitita no fue definitivo: Mursili fue asesinado a su regreso por su cuñado Hantili, el reino hitita entró en crisis y perdió sus conquistas sirias, y la dinastía local recuperó Halab, aunque el nombre Yamhad dejó de usarse. El fin verdadero vino de Mitanni: hacia 1524 a.C. el rey Ilim-Ilimma I murió en una revuelta instigada por Parshatatar de Mitanni; su hijo Idrimi, «hijo del rey de Yamhad» según la inscripción de su propia estatua, se hizo con Alalakh hacia 1517 a.C. como vasallo mitanio. En el siglo XIV a.C. Suppiluliuma I derrotó a Mitanni, tomó Alepo e instaló allí a un hijo suyo, y una dinastía hitita gobernó la ciudad hasta el colapso del Bronce Final; los hititas reorientaron el templo de la ciudadela y lo adornaron con relieves y guardianes de basalto. La principal evidencia escrita sobre la Halab del Bronce no procede de la propia ciudad, ocupada sin interrupción hasta hoy, sino de los archivos de Mari y de Alalakh (nivel VII) y de los anales hititas."
+ ],
+ "fuentes": [
+  {
+   "titulo": "Yamhad — Wikipedia (en)",
+   "url": "https://en.wikipedia.org/wiki/Yamhad",
+   "uso": "Cronología del reino (c. 1810–1517 a.C.), reyes, alianzas con Babilonia y Eshnunna, carta de los «veinte reyes», matrimonio de Shibtu, vasallos, comercio (Emar, Alalakh, cobre de Chipre y Anatolia, ruta peligrosa tras la caída de Mari), población amorrea y hurrita, Teshub-Hadad, campañas de Hattusili I (Alalakh c. 1650, Urshu, herida y muerte c. 1620), conquista de Mursili I c. 1600, recuperación de la dinastía, Ilim-Ilimma e Idrimi, fin del nombre Yamhad.",
+   "responde": true
+  },
+  {
+   "titulo": "Yamkhad — Wikipedia (es)",
+   "url": "https://es.wikipedia.org/wiki/Yamhad",
+   "uso": "Yamhad como reino sirio más fuerte de su época bajo Yarim-Lim I; población amorrea con elementos hurritas; Hadad como dios principal del norte de Siria; captura de Alepo por Mursili I hacia 1595 a.C. y absorción por Mitanni.",
+   "responde": true
+  },
+  {
+   "titulo": "Aleppo — Wikipedia (en)",
+   "url": "https://en.wikipedia.org/wiki/Aleppo",
+   "uso": "Primera mención en las tablillas de Ebla como «Ha-lam»; Yamhad (c. 1800–1525 a.C.) como «tierra de Halab»; templo de Hadad en la colina de la ciudadela; devastación por Mursili I; conquista por Suppiluliuma I en el siglo XIV a.C. y dinastía hitita hasta el colapso del Bronce Final.",
+   "responde": true
+  },
+  {
+   "titulo": "Alepo — Wikipedia (es)",
+   "url": "https://es.wikipedia.org/wiki/Alepo",
+   "uso": "Capital del reino durante la dinastía amorrea hasta aproximadamente 1600 a.C.; después hitita.",
+   "responde": true
+  },
+  {
+   "titulo": "Temple of the Storm God — Archaeology Magazine (2009)",
+   "url": "https://archive.archaeology.org/0911/features/syria_aleppo_temple_storm_god_citadel.html",
+   "uso": "Excavaciones de Kay Kohlmeyer desde 1996; santuario fundado en el Bronce Antiguo; peregrinaciones de los reyes de Ebla c. 2400 a.C. a un lugar de culto a Adda; gran reforma c. 1800 a.C.; reorientación hitita del altar y relieves y guardianes de basalto; fases hasta la Edad del Hierro (Taita).",
+   "responde": true
+  },
+  {
+   "titulo": "Aleppo — Hittite Monuments",
+   "url": "https://www.hittitemonuments.com/aleppo/",
+   "uso": "Alepo como centro del culto al dios de la tormenta en Siria en época hitita; relieves y ortostatos del templo; inscripción de Talmi-Sharruma del periodo imperial.",
+   "responde": true
+  },
+  {
+   "titulo": "Ebla — Wikipedia (en)",
+   "url": "https://en.wikipedia.org/wiki/Ebla",
+   "uso": "Hadad (Hadda) y su consorte Halabatu, «la de Halab», en los textos de Ebla; Ebla vasalla de Yamhad en el Bronce Medio; destrucción de Ebla por Mursili I hacia 1600 a.C.",
+   "responde": true
+  },
+  {
+   "titulo": "Alalakh — Wikipedia (en)",
+   "url": "https://en.wikipedia.org/wiki/Alalakh",
+   "uso": "Abba-El I entrega Alalakh a su hermano Yarim-Lim (c. 1750 a.C.); Alalakh vasalla de Yamhad; destrucción del nivel VII por Hattusili I c. 1650 a.C., o 1628 a.C. según una datación más reciente; Idrimi «hijo del rey de Yamhad» en la inscripción de su estatua.",
+   "responde": true
+  },
+  {
+   "titulo": "Ḫattušili I — Wikipedia (en)",
+   "url": "https://en.wikipedia.org/wiki/Hattusili_I",
+   "uso": "Anales: en el segundo año sometió Alalakh y otras ciudades sirias aliadas de Yamhad; Mursili I continuó sus campañas y conquistó Alepo y saqueó Babilonia.",
+   "responde": true
+  },
+  {
+   "titulo": "Mursili I — Wikipedia (en)",
+   "url": "https://en.wikipedia.org/wiki/Mursili_I",
+   "uso": "Invasión de Yamhad y Alepo, que habían eludido a Hattusili I; marcha de 2.000 km y saqueo de Babilonia c. 1595 a.C. (cronología media) o c. 1526 a.C. (cronología corta); asesinato por Hantili I; posterior pérdida de las conquistas sirias.",
+   "responde": true
+  }
+ ],
+ "sin_respaldo": [
+  "La cifra de población de unos 10.000 habitantes que figura en la ficha para 2000 y 1600 a.C. no la he podido respaldar en ninguna página leída.",
+  "El significado del nombre Halab (raíz semítica «ordeñar» o «blanco») aparece en Wikipedia solo como posibilidad etimológica; no lo he incluido en el contexto.",
+  "Las relaciones comerciales de Yamhad con Creta (Kaptara) y Jasor, y el viaje de Zimri-Lim de Mari a Ugarit pasando por Halab, no los he encontrado confirmados en las páginas leídas.",
+  "La fecha exacta de la herida y muerte de Hattusili I ante Halab (c. 1620 a.C.) procede solo del artículo de Wikipedia sobre Yamhad; el artículo sobre el propio Hattusili I no menciona la herida."
+ ]
+}
