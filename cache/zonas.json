@@ -2201,5 +2201,47 @@
   ],
   "nota": "Zona: Cuerno de África, sur de Sudán/Eritrea, sur de Arabia (Yemen, Dhofar) y golfo de Adén, 1800–1475 a.C. Lo único que alcanza el umbral con QID y coordenadas dentro de la zona es Punt (Q282350, Wikidata lo sitúa en 9.5N 48E). Advertencia cruda: la documentación de Punt dentro de la ventana es escasa; las expediciones atestiguadas están en los bordes (dinastía XII hasta Amenemhat IV, hacia 1790 a.C., y Hatshepsut, año 9 de su reinado, hacia 1470 a.C. con la cronología habitual o 1493 a.C. con la antigua). Durante el Segundo Periodo Intermedio no hay viajes atestiguados. La relación Imperio Nuevo–Punt empieza en −1470, cinco años fuera de la ventana bajo la cronología baja; se propone igualmente por la incertidumbre cronológica y para que el visor la recorte. No se ha encontrado ítem de Wikidata para la expedición de Hatshepsut como evento (solo artículos académicos), así que no se propone evento. Descartados: cultura Gash (Q84088970, hasta ~1800 a.C.) y grupo Jebel Mokram (Q86752182, desde ~1800 a.C.), culturas pastoriles de Kassala/Eritrea occidental, sin coordenadas en Wikidata y de peso 1; 'Wetenet' (Q138320465), ítem sin fuentes ni sitelinks que dice ser equivalente al Gash Group, poco fiable; cultura Sabir / Ma'layba (Tihama yemení, 1900–800 a.C., primeros centros urbanos hacia mediados del II milenio) sin ítem en Wikidata; Kerma y la cultura Pan-Grave quedan al norte del límite de latitud; reinos sudarábigos (Saba) y Ona son posteriores a la ventana.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "a5e88beaad",
+  "bbox": [
+   10.84,
+   18.75,
+   33.67,
+   32.5
+  ],
+  "corte": "-1600",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 10,
+  "descartados": [
+   {
+    "nombre": "Ity-tauy",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Abidos",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Buhen",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Egipto: dinastía XIII",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Egipto: dinastía XIV",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Dinastía de Abidos",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = Egipto, Baja Nubia hasta la tercera catarata, Libia y el Sáhara oriental. Revisado en Wikipedia (en) y verificado en Wikidata (etiqueta + coordenadas P625 dentro del rectángulo) cada objeto propuesto. Descartado: (1) eventos — no existen ítems de Wikidata para la caída de Ity-tauy/conquista hicsa (c. 1650), la muerte de Seqenenra, las campañas de Kamose, el asedio de Avaris ni la destrucción de Kerma por Tutmosis I; búsquedas en en/es sin resultado, así que esos hechos van como relaciones con ventana. (2) Hermópolis, Heracleópolis, Edfu, Coptos, Hieracómpolis, Mirgissa, Uronarti, Askut, Kuban, Faras — existen y tienen coordenadas, pero su papel en la ventana es local (peso 1) o no lo he podido documentar de forma específica; irían en vista cercana. (3) Leontópolis/Tell el-Yahudiya (recinto hicso) — no leí documentación suficiente de su cronología, no lo propongo. (4) Libia y el desierto: no hay entidad libia (tjehenu/tjemehu) con ítem de Wikidata datable en la ventana; el Garamantes es posterior. Advertencias: la isla de Sai cae exactamente en el borde sur (lat 18.75); la dinastía de Abidos es una hipótesis (Ryholt/Wegner) y así se describe; la dinastía XIII solapa con la entidad 'Imperio Medio' ya existente, la propongo porque el visor ya desglosa XV/XVI/XVII; la relación hicsos–Kush va como 'comercio' porque es el subtipo más cercano a una alianza con contacto por ruta de oasis, no hay evidencia directa de intercambio comercial leída. Las fechas de Kerma/Tutmosis I dependen de la cronología convencional (Tutmosis I c. 1504–1492).",
+  "autor": "carlos alvarez-cascos"
  }
 ]
