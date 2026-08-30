@@ -1338,5 +1338,31 @@
   ],
   "nota": "Zona = norte de África, Egipto, Nubia, Sáhara y Sinaí occidental (el Levante queda al este de 33,67°). Se ha mirado: Egipto protodinástico y arcaico (Naqada III, Menfis, Hieracómpolis, Abidos, Tinis, Naqada, Buto), Nubia (Grupo A, Qustul, Gebel Sheikh Suleiman), contactos Egipto–Mesopotamia y Sinaí. Coordenadas verificadas en Wikidata: Menfis 29,85/31,25; Nejen 25,10/32,78; Abidos 26,19/31,92, todas dentro de la zona. Descartados por debajo del umbral (peso 2): Grupo A de la Baja Nubia (Q277797, apogeo h. 3100, fin h. 2900 a.C. por conquista egipcia; la 'realeza de Qustul' es tesis discutida), el conflicto Egipto–Grupo A h. 3000 a.C. (relieve de Gebel Sheikh Suleiman, atribución a Djer no segura), y la relación de transmisión Uruk→Egipto (sellos cilíndricos, fachadas nichadas, cuchillo de Gebel el-Arak, h. 3500–3000 a.C.), que sería relación Q2345840→Q721840 en vista media. Descartado por falta de datos en Wikidata: el evento 'unificación del Alto y Bajo Egipto' (Q1739078) no tiene coordenadas ni artículos enlazados. Tinis (Q1153959), capital de las dinastías I–II según Manetón, se ha omitido porque el yacimiento no está localizado arqueológicamente (la coordenada de Wikidata es aproximada, cerca de Girga); Abidos, su necrópolis, la representa. Nada relevante al umbral en Sáhara, Magreb ni África occidental en esta ventana. Las dataciones de Naqada III varían según fuente (3325–3000, 3200–3000, Wikidata 3200–3060 a.C.); se ha usado el inicio de la ventana.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "538c313559",
+  "bbox": [
+   79.33,
+   5.0,
+   125.0,
+   32.5
+  ],
+  "corte": "-3000",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 0,
+  "descartados": [
+   {
+    "nombre": "Cultura de Liangzhu",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Ciudad antigua de Liangzhu",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona = sur/sudeste de Asia y sur de China (lon 79.33–125, lat 5–32.5). Lo único que alcanza peso 3 en la ventana -3300/-2750 es Liangzhu (entidad + su ciudad; ambos QID con coordenadas 30.40N 119.99E, dentro de zona). Descartados por no llegar al umbral de vista lejana: cultura de Qujialing (Q1153210, Hubei/Hunan, c. 3400–2600 a.C.; ciudades fortificadas pero sin rango de estado, peso 2; además su item de Wikidata no tiene coordenadas, solo las tiene el yacimiento Q11042270); cultura de Songze (Q30257) termina en -3300, fuera de ventana; Shijiahe empieza hacia -2500, fuera de ventana. Dawenkou, Longshan temprano y Majiayao caen fuera de la zona por latitud/longitud. Neolítico del sur de la India (montículos de ceniza) y el neolítico de Sri Lanka, Indochina y Filipinas son culturas aldeanas sin estados ni ciudades grandes en esta ventana (peso 1). No hay guerras mayores documentadas. Los objetos ya cargados (Indo, Sumer, Elam, Egipto, minoicos, Millares) se han respetado; no propongo relaciones nuevas porque no hay contactos documentados entre Liangzhu y el Indo en este periodo. La entrada UNESCO (whc.unesco.org/en/list/1592) devolvió 403 y no se ha podido leer directamente; sus afirmaciones se citan a través de Wikipedia y China Daily.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
