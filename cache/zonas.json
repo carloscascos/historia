@@ -754,5 +754,43 @@
   ],
   "nota": "Zona = Golfo de Vizcaya: norte de Galicia, Asturias, Cantabria, País Vasco, norte de Navarra y la franja litoral de Aquitania (Médoc, Landas, Bayona-Biarritz; Burdeos, Mont-de-Marsan, Pau y Dordoña quedan fuera del rectángulo por longitud). En la ventana -1275/-1000 (Bronce Final I-II) no hay en esta zona ninguna ciudad, estado ni evento datado con artículo de Wikidata. Lo único que llega al umbral es el Bronce Final Atlántico (Q2629081, 1300-700 a.C.), del que la cornisa cantábrica es periferia: De Blas cuenta apenas una quincena de hallazgos metálicos del Bronce Final en toda Cantabria y un centenar largo en Asturias, todos sin QID propio (hachas de talón de Salcedo, Peña Cabarga y Escobedo de Camargo atribuidas al Bronce Final II; depósito de 17 hachas de Langreo, fines del II milenio). ADVERTENCIA: Q2629081 no tiene coordenadas (P625 vacío); su P276 incluye Galicia (Q3908), que cae parcialmente en la zona. Descartados por fecha: depósito de Gamonedo (Onís) — Bronce Antiguo/Medio, mediados del II milenio; minas del Aramo (Riosa) — c. 2500-1500 a.C., sin QID; caldero de Cabárceno — 900-650 a.C.; Chao Samartín — c. 800 a.C.; Campa Torres — s. VI a.C.; Punta de Muros (Arteixo) — Bronce Final tardío, sin QID; depósito de Hourtin (Gironda) — s. X a.C., sin QID; Grotte du Phare (Biarritz) — Bronce Final IIIa/IIIb, sin QID; Haltzerreka (Gipuzkoa) — sin QID. Descartados por falta de documentación en ventana: cuevas de Santimamiñe (Q2993079), Lumentxa (Q8464914), Arenaza (Q12253903) y complejo de La Garma (Q8348804): sus artículos en Wikipedia no describen niveles ni dataciones del Bronce Final. Los yacimientos aquitanos de Bronze final I-II citados en la síntesis cerámica (Meschers, Anglade, Cubzac, L'Isle-Saint-Georges, Mont-de-Marsan, La Roque-Saint-Christophe) están todos fuera del rectángulo por latitud o longitud. No se proponen relaciones: no hay dos entidades en la zona entre las que trazarlas.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "c2f395a913",
+  "bbox": [
+   -12.0,
+   32.5,
+   33.67,
+   60.0
+  ],
+  "corte": "-1600",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 2,
+  "descartados": [
+   {
+    "nombre": "Micenas",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Troya (Troya VI)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Cultura de Únětice",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de los túmulos",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Edad del Bronce nórdica",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Revisado: Egeo, Anatolia occidental, Chipre y Europa central/septentrional en Wikidata (QID, P625, P580/P582) y Wikipedia en/es. Descartados por caer FUERA de la zona (límite este 33,67°E): Hattusa Q181007 (34,62°E) y todo el Levante/Siria (Yamhad Q617218 a 37,15°E, Alalakh, Biblos, Kanesh); por eso no se propone el saqueo hitita de Alepo ni el de Babilonia (hacia 1595 a.C.). Descartados por peso < 3 en vista lejana: cultura de Wessex Q719139 (solo sur de Britania), terramaras Q1410539 (valle del Po), Festo/Malia, disco de Nebra, campaña de Hattusili I contra Arzawa, comercio minoico-egipcio (Keftiu/Tell el-Dab'a). Descartado por fecha: conquista micénica de Cnosos (hacia 1450 a.C., posterior a la ventana). ADVERTENCIAS: (1) Las tres culturas centroeuropeas/nórdicas NO tienen coordenadas (P625) en Wikidata, igual que la civilización micénica ya cargada; si el visor exige P625 para situarlas, no se pueden colocar automáticamente. (2) Darles peso 3 es un juicio: no son estados sino culturas arqueológicas macrorregionales; se propone por coherencia con El Argar y la cultura nurágica ya presentes, pero si el criterio del visor es 'solo estados', quitarlas. (3) La fecha de la erupción minoica es un descuadre abierto entre radiocarbono (h. 1620) y arqueología (1550–1480); se usa -1600 como valor de Wikidata (P585).",
+  "autor": "carlos alvarez-cascos"
  }
 ]
