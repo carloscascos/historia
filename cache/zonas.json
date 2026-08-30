@@ -1050,5 +1050,31 @@
   "descartados": [],
   "nota": "Zona explorada: sur de la India y Sri Lanka, Bengala, Sudeste Asiático continental e insular, y China al sur del paralelo 32,5 (cuencas del Yangtsé y del Sichuan). Candidatos revisados en Wikidata y Wikipedia (en): (1) Dinastía Xia (Q169705, c. 2070–1600 a.C.): existencia no probada arqueológicamente, sin coordenadas en Wikidata, y su núcleo (valle del río Amarillo, Henan) cae al norte del recuadro; descartada. (2) Cultura de Erlitou (Q1051663): coordenadas 34,7 N / 112,7 E, fuera del recuadro por el norte; descartada. (3) Cultura de Shijiahe (Q125936, 2500–2000 a.C., Hubei): el mayor complejo amurallado del Neolítico chino (120 ha, hasta 8 km²), algunos autores lo consideran un Estado incipiente, pero en la ventana solo entra su fase final de abandono (2250–2000 a.C.), el ítem de Wikidata carece de coordenadas y no es un Estado documentado: peso 2, por debajo del umbral. (4) Cultura de Baodun (Q807064, c. 2700–1700 a.C., llanura de Chengdu, 30,45 N / 103,75 E): dentro del recuadro y de la ventana, con recintos amurallados grandes (Baodun 245 ha con muralla exterior), pero es una cultura neolítica sin carácter estatal: peso 2. (5) Sanxingdui (Q929072): dentro del recuadro, pero la cultura de Sanxingdui propiamente dicha es posterior (c. 1700–1150 a.C.); en la ventana el sitio pertenece a la fase Baodun. (6) Cultura de Phùng Nguyên (Q825179, c. 2000–1500 a.C., delta del río Rojo, Vietnam): cultura de la Edad del Bronce inicial, sin ciudades ni Estado: peso 1–2. (7) Cultura de la Cerámica Ocre (Q2663163) y tesoros de cobre del Ganges: quedan casi por completo al oeste del meridiano 79,33 y son culturas de aldea: peso 1. (8) Neolítico del sur de la India (túmulos de ceniza, Decán): sin ciudades ni Estados en la ventana; peso 1. Longshan (Q1057935) y Qijia (Q1269223) quedan al norte del recuadro. Conclusión: a nivel de vista lejana (solo Estados, ciudades grandes y guerras mayores) no hay nada que proponer; Shijiahe y Baodun serían los primeros en aparecer al bajar a vista media.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "5ea95a3ad1",
+  "bbox": [
+   33.67,
+   5.0,
+   79.33,
+   32.5
+  ],
+  "corte": "-2000",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 1,
+  "descartados": [
+   {
+    "nombre": "Tercera Dinastía de Ur (Ur III)",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Lagash (Segunda dinastía, Gudea)",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona = Golfo Pérsico, sur de Mesopotamia (lat ≤ 32.5), Irán meridional, Arabia, sur del Levante y valle del Indo. Verificado en Wikidata (P625/P571/P576) y leídos en/es.wikipedia. ADVERTENCIA: Q723587 (Ur III) no tiene coordenadas en Wikidata, igual que la entidad ya existente Q2345840; su capital Ur (Q5699, 30.96N 46.10E) está dentro de la zona; si el visor exige P625, descartar y usar Q1748182 (Renacimiento sumerio, tampoco con coordenadas). DESCARTADOS por caer fuera de la zona: Imperio acadio Q4461035 (P625 33.1N), Guti Q549531 (37N), Kish y Babilonia (32.54N, límite). DESCARTADOS por no alcanzar peso 3 al nivel lejano (peso 2): Primera dinastía de Isin Q55610176 (2017–1794, sin coordenadas; Isin y Larsa ya están como ciudades), rivalidad Isin–Larsa, Eridu Q210065, Shuruppak Q392725, Lothal Q9443, Ganeriwala Q3095220, Kalibangan Q1722226, Shahr-i Sokhta Q1025825, Jiroft Q1149433, Umm an-Nar Q18600648, Kulli Q1755265, Cementerio H Q2364797, Mersa Gawasis Q1536350, Jericó y Ascalón (BM IIA, marginales en la ventana), dinastías Simashki Q3396376 y Sukkalmah Q16611086 (ya cubiertas por Elam), conquista de Lagash por Ur-Nammu (~2110). Magan Q1429914 y Meluhha Q483421 carecen de coordenadas en Wikidata y la relación comercial Ur III–Magan/Dilmún/Meluhha es peso 2, no propuesta. Amorreos Q203507: sin coordenadas y con núcleo fuera de la zona (Siria), no propuestos. El saqueo de Ur de 2004 a.C. no tiene ítem propio en Wikidata (buscado como 'Fall of Ur', 'Sack of Ur', 'Elamite conquest of Ur'); se representa como relación de conflicto. Cronología media en todas las fechas.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
