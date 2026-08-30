@@ -4944,5 +4944,31 @@
   "descartados": [],
   "nota": "La zona (-19.3/-12.7 lon, 26.91/29.89 lat) es casi toda océano Atlántico: cubre el archipiélago canario occidental y central (La Palma, La Gomera, norte de El Hierro, Tenerife, Gran Canaria, Fuerteventura, Lanzarote, La Graciosa) y mar abierto. La costa africana (Sáhara Occidental, cabo Bojador a 26.13°N/14.5°W, y Saguia el-Hamra) queda FUERA del recuadro: Bojador cae al sur del límite 26.91 y el continente al este del límite -12.7.\n\nSe consultó Wikidata por caja geográfica (SPARQL, wikibase:box) para yacimientos arqueológicos, asentamientos y sitios protegidos dentro del recuadro: devuelve ~80 yacimientos, TODOS de la cultura aborigen canaria (Cueva Pintada, Cenobio de Valerón, Zonzamas, La Atalayita, Risco Caído, grabados de Balos, Tindaya…). Ninguno se data en la ventana de -1475 a -1275.\n\nCronología del poblamiento canario, que es el punto decisivo: el modelo actual con higiene cronométrica y bayesiana (Santana et al., PNAS 2024) sitúa la primera evidencia bereber fiable en Lanzarote entre 70 y 240 cal d.C., y descarta expresamente el modelo previo que colocaba la colonización de Lanzarote en el siglo X a.C. por basarse en sedimentos a granel y carbón no identificado. Existe una postura discrepante (P. Atoche) que propone el tránsito del II al I milenio a.C., es decir hacia -1000: DISCREPANCIA REAL EN LA LITERATURA, no resuelta aquí. Pero incluso la datación más antigua propuesta queda ~300 años después del cierre de la ventana, así que ninguna de las dos posturas sostiene presencia humana en -1475/-1275.\n\nLos contactos fenicios/cartagineses con las islas que se citan (orchilla, Hannón) se sitúan en los siglos X-VI a.C. o posteriores, también fuera de la ventana, y sin yacimiento datado dentro de ella.\n\nEn el continente próximo (fuera de caja) el registro del Sáhara Occidental para el II milenio a.C. consiste en túmulos y monumentos de piedra en su mayoría sin datar —los pocos excavados dan ~1.500 años de antigüedad—, y arte rupestre de atribución neolítica sin cronología absoluta; nada de eso serviría aquí aunque cayera dentro del recuadro.\n\nConclusión: en esta zona y ventana no hay ningún objeto documentado. La lista vacía no es falta de búsqueda: es que el poblamiento humano de las Canarias es posterior, y el continente queda fuera del recuadro.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "ddbb039b1a",
+  "bbox": [
+   31.95,
+   34.46,
+   34.88,
+   35.65
+  ],
+  "corte": "-1600",
+  "lod": 0,
+  "fecha": "2026-08-31",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 5,
+  "descartados": [
+   {
+    "nombre": "Alashiya",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Hala Sultan Tekke",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "La zona es prácticamente toda la isla de Chipre más mar abierto. Se han comprobado uno a uno los yacimientos chipriotas conocidos y se han descartado por fecha fuera de ventana: Kition/Bamboula (ocupación de la Edad del Bronce a partir del s. XIII a.C.), Kalavasos-Ayios Dhimitrios (Q1625222, auge en el Chipriota Tardío IIC, s. XIII), Alassa (Q521403, ss. XIV-XII), Pyla-Kokkinokremos (Q6426672, finales del s. XIII). Politiko-Troullia queda por el otro lado: la datación por radiocarbono lo sitúa en ~2050-1850 a.C., anterior a la ventana. Marki Alonia (Q6771042) sí estuvo ocupada en el Chipriota Medio, pero su ficha de Wikidata NO tiene coordenadas, así que no se propone conforme a la regla 2. Deneia (Q5256884) y Agios Iakovos (Q4831287) son necrópolis de la Edad del Bronce documentadas, pero sus únicos elementos de Wikidata son los municipios modernos, no los yacimientos: no se proponen para no colgar un cementerio prehistórico de la coordenada de un pueblo actual. NO se ha encontrado ningún evento fechado dentro de -1800/-1475 en la zona: no hay pecio conocido de esta ventana en aguas chipriotas (el de Uluburun es del s. XIV y además queda fuera del recuadro) ni destrucción datada con precisión; la destrucción por terremoto de Toumba tou Skourou se sitúa 'hacia 1550 a.C.' con esa sola aproximación y no se ha propuesto como evento. Sobre Alashiya conviene una advertencia: el artículo de Wikipedia en inglés solo recoge menciones desde ~1400 a.C., pero las fuentes académicas consultadas documentan atestiguaciones en Mari, Alalaj y Babilonia ya en la primera mitad del siglo XVIII a.C.; se ha seguido esta segunda datación, que es la que justifica su presencia en la ventana. Lo que NO está documentado es la naturaleza política de Alashiya en este momento: si en el s. XVII a.C. era ya un reino unificado o solo un topónimo comercial es discutido, y su capital (Enkomi, Alassa o Kalavasos) sigue sin identificarse. La coordenada de Wikidata para Alashiya (35.1, 33.43) es un punto convencional en el centro de la isla, no un yacimiento.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
