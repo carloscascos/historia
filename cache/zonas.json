@@ -1102,5 +1102,31 @@
   ],
   "nota": "Se ha revisado Egeo, Anatolia occidental, Chipre occidental, Europa central y atlántica, Italia e islas. Solo tres objetos alcanzan peso 3 en la ventana -2250/-1800: Cnosos (primer palacio c. 1900 a.C., capital minoica), la cultura de Únětice (equiparable a El Argar o Andrónovo, ya admitidas en el visor a esta escala) y la relación comercial minoico-egipcia del Reino Medio (cerámica de Kamares en Lisht/Kahun). Descartados por quedar en peso ≤2: Troya (Troya III–V, c. 2300–1750 a.C., descrita como más pequeña y pobre que Troya II; entra en el corte de 1200 a.C.), Festos y Malia (palacios secundarios), Kolonna de Egina, cultura de Wessex (Q719139), Polada, Bonnanaro, Bronce de La Mancha/motillas, túmulos armoricanos, Cementerio de Tarxien en Malta. Stonehenge es monumento y no asentamiento, no encaja en los tipos admitidos. Fuera de la zona por longitud (>33,67 E): Kanesh/karum asirio, Hattusa, Alaca Höyük, Biblos, Ugarit; fuera por latitud (<32,5 N): todo Egipto. Fuera de ventana: Reino Antiguo hitita (desde c. 1650), erupción de Tera (c. 1600), disco de Nebra (c. 1600). El evento climático de 4,2 ka (c. 2200 a.C.) carece de coordenadas en Wikidata y no se propone. La ficha del Met Museum de una jarra Kamares del Reino Medio devolvió HTTP 429 y no se ha leído, por lo que no se cita.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "480d690855",
+  "bbox": [
+   79.33,
+   32.5,
+   125.0,
+   60.0
+  ],
+  "corte": "-2000",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 3,
+  "descartados": [
+   {
+    "nombre": "Cultura de Longshan",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Erlitou",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona = Asia Central y Oriental (Xinjiang, Mongolia, Siberia meridional, norte de China). Ninguno de los 15 objetos ya presentes cae realmente en esta zona salvo, en su extremo occidental, la cultura de Andrónovo (Q459376, coordenadas en Wikidata 55.9N 55.7E, fuera de la zona). Se ha mirado en Wikipedia (en) y Wikidata: Longshan, Taosi, Shimao, Erlitou (cultura y yacimiento), dinastía Xia, Qijia, Xiajiadian inferior, Okunev, Seima-Turbino, Xiaohe. Propuestos a peso 3: Longshan y sus dos mayores ciudades (Taosi, Shimao) y el primer estado chino (Erlitou, que arranca en 1900 a.C., dentro de la ventana). Descartados por debajo del umbral (peso 2): cultura de Qijia (Q1269223, 2200–1600 a.C., primera metalurgia del noroeste), Xiajiadian inferior (Q1041674, 2200–1600 a.C.), Okunev (Q2632835, Minusinsk) y cementerio de Xiaohe (Tarim); Seima-Turbino no devolvió QID en la búsqueda. La dinastía Xia (Q169705, fechas tradicionales 2070–1600 a.C.) se ha dejado FUERA deliberadamente: no hay registros contemporáneos ni prueba arqueológica de su existencia (Wikipedia: 'unprovable'), así que no cumple la regla 3; si el visor quiere mostrar la tradición, sería un objeto de peso 3 con etiqueta de 'tradicional / no verificado'. Advertencias: (a) Longshan (Q1057935) no tiene coordenadas P625 en Wikidata, igual que la cultura nurágica ya admitida; el visor tendrá que resolverla por otra vía; Erlitou-cultura, Erlitou-yacimiento, Shimao y Taosi sí tienen P625 y caen dentro de la zona (34.7N 112.7E; 38.6N 110.3E; 35.9N 111.5E). (b) Wikidata fecha la cultura de Erlitou 2000–1500 a.C. y Wikipedia 1900–1500 (un estudio de radiocarbono de 2007 la reduce a 1750–1530): descuadre de fuentes; se ha usado 1900. (c) No se proponen relaciones: la sucesión Longshan→Erlitou es cultural, no un vínculo de comercio/conflicto/transmisión entre dos entidades coetáneas, y la posible transmisión de la metalurgia del bronce desde la estepa (Seima-Turbino/Andrónovo) hacia Qijia y Erlitou es HIPÓTESIS SIN VERIFICAR en las fuentes leídas.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
