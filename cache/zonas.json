@@ -411,5 +411,22 @@
   ],
   "nota": "La zona cubre la isla de Rodas y Chalki; la costa turca (Datça, Bozburun, Marmaris, Cnido) y Symi quedan justo fuera del límite norte de latitud. Se han leído Wikipedia (en/es: Ialysos, Rhodes, Lindos, Kameiros, Ahhiyawa), World History Encyclopedia, ToposText, la lección 17/18 de Aegean Prehistoric Archaeology (Dartmouth), el resumen del BSA sobre la cerámica de Trianda y la reseña del AJA sobre Pylona; los PDF de Academia/ResearchGate y el artículo de MAA (Benzi, Marketou, Karantzali) no se han podido leer (403). Descartados: Lindos (Q65122097) porque su artículo solo documenta ocupación desde el s. X a.C. y el nivel micénico de la zona ya lo cubre Pylona; Kameiros (Q1231539) porque la única mención («habitada por micénicos en época prehistórica») no tiene fecha ni fuente arqueológica leída; Kalavarda, Lelos y otros cementerios micénicos menores citados en la bibliografía de Dartmouth por carecer de artículo de Wikidata con coordenadas; Asomatos por ser del Bronce Antiguo; Ahhiyawa (Q552241) porque su sede en Rodas es solo una de varias hipótesis en disputa y la propia Wikipedia señala que no hay prueba arqueológica que la sitúe en la isla — HIPÓTESIS SIN VERIFICAR, no se propone. No se ha encontrado QID para un evento datable en la ventana (el terremoto de hacia 1400 a.C. en Trianda no tiene artículo propio). Chalki (Q917162) no tiene documentación de ocupación en la ventana en las fuentes leídas. Las fechas absolutas de las fases HR IIIA2–IIIB son convencionales (hacia 1375–1250 a.C.); ninguna fuente leída da fechas calibradas para Trianda.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "2ad78fd842",
+  "bbox": [
+   -12.0,
+   5.0,
+   33.67,
+   32.5
+  ],
+  "corte": "-1350",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 2,
+  "descartados": [],
+  "nota": "Zona = norte de África: Egipto hasta el Delta y el Sinaí occidental, Nubia, Libia, Sáhara y Sahel; Chipre, Gaza, Punt y Mersa Gawasis (lon 33.93) quedan fuera del rectángulo. Al umbral de peso 3 (vista lejana) las capitales y el Imperio Nuevo ya están en el visor; no se ha encontrado ninguna ciudad, entidad o evento nuevo que lo alcance. Revisado y descartado: Reino de Kerma (Q1739282, coords 19.60/30.41, dentro de la zona) — como estado independiente termina antes de la ventana (Wikidata: disuelto c. 1500 a.C.; en.wikipedia: anexión c. 1504 a.C.; es.wikipedia: conquista c. 1530 a.C. — las tres fuentes descuadran en ~30 años, pero todas lo sitúan antes de -1475); en la ventana Nubia es provincia egipcia con rebeliones (una c. 1452 a.C. bajo Amenhotep II, y en general hasta c. 1300), que son peso ≤2. Reino de Kush (Q241790) empieza c. 1070 a.C. Napata/Gebel Barkal: asentamiento fortificado egipcio desde c. 1450 a.C., peso 2. Pi-Ramsés (Q?): palacio de verano de Seti I c. 1290–1279 y capital solo desde Ramsés II (1279+), al borde final de la ventana; candidato para el corte «1200 a.C.», no para 1350. Avaris: sin papel político tras Amenhotep II. Cultura de Tichitt (Q107008575, 2200–500 a.C., Mauritania): sería peso 2 y además su ítem de Wikidata carece de coordenadas (el yacimiento Q112610148 tampoco las tiene; solo el pueblo actual Q985527). Libios (Libu/Meshwesh): no forman estado; el artículo Ancient Libya fecha las primeras menciones documentadas de los Libu en Ramsés II/Merenptah (siglo XIII), fuera de ventana; la campaña libia de Seti I no tiene fecha ni lugar. Relaciones descartadas por peso 2 (comercio/diplomacia, no guerras): alianza matrimonial Egipto–Mitani (Tutmosis IV, Amenhotep III, c. 1400–1340), intercambio de oro por lapislázuli y caballos con Babilonia y Asiria, cobre de Alasiya y cerámica micénica en Amarna. Sin eventos con coordenadas Wikidata dentro de la zona que superen el umbral: la fundación de Aketatón ya está cubierta por la ciudad; la tumba de Tutankamón no es guerra ni estado. Se ha comprobado en la caché que no existe ya ninguna relación Egipto–Hatti ni Egipto–Mitani.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
