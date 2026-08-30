@@ -883,5 +883,31 @@
   "descartados": [],
   "nota": "Zona revisada: China al sur de 32,5°N (Sichuan, Yangtsé medio y bajo, Hunan, Jiangxi), Sudeste Asiático continental e insular, India oriental/Ganges medio, Nepal, Tíbet meridional, Sri Lanka y Taiwán, ventana 1275–1000 a.C. PROPUESTO (peso 3): Jinsha, centro político sucesor de Sanxingdui (fecha de inicio aproximada: Wikipedia en/zh dan 1200–1250 a.C., Archaeology Magazine sitúa el relevo hacia 1000 a.C.; se usa 1200 con «hacia»); y la cultura de Wucheng, tratada al mismo nivel que Nurágica y Bronce final atlántico ya presentes en el visor — aviso: su peso es discutible (2–3), lo subo a 3 por coherencia con esas dos entidades y por ser una entidad política de primer orden en el sur de China; el corte 1000 a.C. como fin es aproximado (wiki zh: 1700–1000; en: fase inicial c. 1600). DESCARTADOS: (a) Estado de Shu (Q1193806), documentado en la ventana (aliado de Zhou en Muye, 1046 a.C., según el Shujing), pero su coordenada en Wikidata (33,05°N, 107°E) cae FUERA de la zona, así que no se propone; (b) tumba de Dayangzhou (Q400087, c. 1200 a.C.), evento de peso 2; (c) relación 'transmision' Shang (Q128938) → Sanxingdui (Q929072): tecnología de molde por piezas y vasijas zun/lei de estilo Yangtsé datadas en Yinxu medio (1260–1200 a.C.), documentada (Jesus College Cambridge, ScienceDirect), pero peso 2 a esta escala; (d) relación 'comercio' Wucheng ↔ Shang (cobre del sur hacia la llanura central), peso 2; (e) cultura de la cerámica gris pintada (Q2525293, c. 1200–600 a.C.): sus yacimientos principales (Hastinapur, Mathura, Ahichchhatra) quedan al oeste de 79,33°E y la entrada no tiene coordenadas, además la cultura védica temprana ya está en el visor; (f) Ban Chiang (Tailandia): cronología del bronce en disputa (2000 vs 1000 a.C.) y aldea sin Estado, peso 1–2; (g) culturas Đồng Đậu/Gò Mun del norte de Vietnam, peso 1–2, no revisadas en profundidad; (h) batalla de Muye (c. 1046 a.C.) y Yinxu/Anyang quedan al norte de 32,5°N, fuera de la zona. Sri Lanka, Tíbet, Nepal y Taiwán: nada documentado que alcance el umbral en esta ventana.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "733e45d616",
+  "bbox": [
+   33.67,
+   5.0,
+   79.33,
+   32.5
+  ],
+  "corte": "-1200",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 3,
+  "descartados": [
+   {
+    "nombre": "Filisteos (Pentápolis filistea)",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Israelitas (Hierro I)",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = sur del Levante (Jerusalén, Gaza, Laquis), Sinaí oriental, Arabia, Cuerno de África, sur de Mesopotamia, Elam, golfo Pérsico, Indo y norte de la India. Fuera de la caja por poco: Babilonia (lat 32,54), Meguido/Hazor/Qadesh (norte de 32,5), todo el valle del Nilo y Nubia (lon < 33,67), Serabit el-Khadim (lon 33,46). Los dos estados nuevos en la ventana son los filisteos y, con reservas, Israel: Israelitas Q51669 es un pueblo sin estado en 1208 a.C. (estela de Merenptah); lo doy con peso 3 por importancia para el lector, pero es el caso más discutible de la lista. El «Reino unido de Israel» (Q3185305, tradicionalmente 1047-930 a.C.) se descarta: Wikidata lo describe como reino legendario y no hay documentación arqueológica en la ventana. Ni Filisteos ni Israelitas tienen coordenadas P625 en Wikidata (tampoco las tienen Cultura nurágica, Olmecas o Cultura védica ya cargadas, así que asumo que el visor lo resuelve por otro medio); si exige P625, hay que caerlos. Descartados por peso 2 (vista media): Anshan Q569107 (30,01 N 52,41 E; cocapital elamita, título «rey de Anshan y Susa»), Uruk Q168518 (31,33 N 45,64 E, ocupada bajo casitas e Isin II), Dilmun Q748846 (gobernadores casitas en Bahréin hasta ~1200), Punt Q282350 (última expedición egipcia bajo Ramsés III), Cultura de la cerámica gris pintada Q2525293 (desde ~1200, solapa con Cultura védica ya cargada), Laquis/Gaza/Jerusalén (ciudades cananeas menores en esta fase). Ur: no logré confirmar su QID en Wikidata (Q5711 es Uusimaa) y no la propongo. Pueblos del Mar Q193850: sin lugar fijo, sustituido por la relación Egipto–Filisteos. Guerra filisteos–israelitas (Afec, ~1050 a.C.) solo documentada bíblicamente; no se propone. Asiria–Babilonia: Babilonia ciudad queda 0,04° al norte de la caja, pero la entidad Babilonia figura como presente en la zona, por eso la relación se incluye.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
