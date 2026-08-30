@@ -610,5 +610,27 @@
   ],
   "nota": "Revisados ~55 candidatos (Wikipedia en/es) con QID y coordenadas verificados en la API de Wikidata. FUERA DE ZONA por longitud: Hattusa Q181007 (34,62 E) y Enkomi Q22987223 (33,87 E) quedan al este del límite 33,67 E, aunque son las dos ciudades de peso 3 más obvias del periodo; conviene que la zona vecina las recoja. Cultura de Srubna Q1470165 (Dniéper–Urales) solo roza el borde oriental y corresponde a la zona esteparia. DESCARTADOS POR UMBRAL (peso 2, válidos en vista media): Terramare Q1410539, cultura apenínica Q2569017, Trzciniec Q2537330, Wessex Q719139, Cogotas I (solo hay ítem del yacimiento Q2660473), liga de Assuwa Q2665673 (hacia 1400 a.C.), Mileto/Millawanda Q169460 (asentamiento micénico desde 1450 a.C.), Hala Sultan Tekke Q136360956 (34,88 N 33,61 E, dentro por 0,06°), Festo Q249707, Cidonia Q1481525, Atenas Q1524; relaciones de peso 2: Hatti–Ahhiyawa (Madduwatta/Attarissiya, Mursili II contra Millawanda), Egipto–Arzawa (cartas EA 31–32), micénica–Alasiya (comercio cerámico, ya ilustrado por Uluburun e Ialiso–Alasiya). CAMPOS DE URNAS Q223998: Wikipedia en fecha el inicio (Bronce D) hacia 1300 a.C., Wikipedia es en 1250–1200 y Wikidata en 1200; con la ventana acabando en 1275 lo dejo para el corte de 1200 a.C. AHHIYAWA Q552241 no se propone porque es el nombre hitita de la civilización micénica ya presente (y Wikidata le da fechas -2000/-1500 incoherentes). APASA Q2748874 (capital de Arzawa) no tiene coordenadas en Wikidata y su identificación con Éfeso/Ayasuluk es una hipótesis, así que Éfeso Q47611 (inicio -1000 en Wikidata) no se propone como ciudad de la ventana. EVENTOS: no se encontró ítem de Wikidata para la destrucción final de Cnosos (hacia 1350 a.C.) ni para la revuelta de Assuwa; la batalla de Qadesh (1274 a.C.) cae fuera de la ventana y de la zona. Asiria–Mitani (independencia de Assur-uballit I, conquista de Adad-nirari I) no se propone porque ambas entidades y el teatro quedan fuera de esta zona. Fechas de Tebas y Tirinto tomadas con «hacia»: el apogeo palacial es LH IIIA–B (1400–1200 a.C.); el palacio de Pilos conservado es de hacia 1300 a.C., por lo que su solape con la ventana es corto.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "719e0f5b25",
+  "bbox": [
+   -10.19,
+   42.87,
+   -0.62,
+   45.19
+  ],
+  "corte": "-1350",
+  "lod": 1,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 0,
+  "descartados": [
+   {
+    "nombre": "Bronce Final atlántico",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona: cornisa cantábrica (norte de Galicia, Asturias, Cantabria, País Vasco), Landas, País Vasco francés y sur del Médoc. Ventana 1475–1275 a.C. (Bronce Medio). Solo se propone el Bronce Final atlántico (Q2629081), y con reserva: Wikidata fija su inicio en 1300 a.C., de modo que solo solapa los últimos 25 años de la ventana; conviene que el visor lo trate como incipiente en este corte. Candidatos revisados y descartados: (1) Minas de cobre del Aramo (Riosa, Asturias): las dataciones C14 publicadas se concentran en 2600–2300 cal BC (Calcolítico–Bronce Antiguo); la continuidad hasta 1500 cal BC o el Bronce Final es una hipótesis del propio de Blas Cortina no confirmada, y además no existe ítem de Wikidata para las minas (solo Q9077169, la sierra). (2) Cueva-túnel de San Adrián (Zegama, Gipuzkoa, Q3471662): ocupación del Bronce Antiguo datada 1880–1510 cal BC según Munibe 2016; termina justo antes de la ventana. (3) Depósito de Gamonedo (Onís, Asturias): hacha plana y lingotes de cobre arsenical datados 'hacia mediados del II milenio' por tipología, sin C14 y sin QID propio (solo la aldea, Q55714505). (4) Depósitos de hachas del Bronce Medio del Médoc (57 depósitos del Bronce Medio 2 según Couderc 2015; Saint-Vivien, Bégadan, La Clare): son el conjunto más relevante de la zona en esta ventana, pero no hay ítem de Wikidata para el 'grupo del Médoc' ni para los depósitos, y los mejor documentados (Saint-Vivien 45,43°N; Bégadan 45,36°N) caen al norte del límite de la zona (45,19°N). (5) Corro dos Mouros / Penas do Caldeiro (Adai, Lugo): construcción datada en el s. XIII a.C. y ocupación en los ss. X–IX; solapa marginalmente y no tiene QID. (6) Peña Tú (Llanes, Q2081919): Neolítico/Calcolítico según Wikipedia, fuera de ventana. (7) Ilso Betaio (Bizkaia): poblado calcolítico, fuera de ventana. (8) Cuevas sepulcrales de Cantabria y País Vasco (Aer, Matienzo, Pico Ramos): objetos del Bronce en su mayoría descontextualizados, sin datación específica en 1475–1275 ni QIDs. (9) Bronce Pirenaico (Q122349163): 2300–1650 a.C. y limitado al Pirineo oriental, fuera de zona y ventana. (10) Cromlechs del País Vasco francés y túmulos de Sare: Bronce Final–Hierro. La bibliografía (Blas Cortina; Munibe 1990) coincide en que el Bronce Medio cantábrico se conoce casi solo por hallazgos metálicos aislados y sin poblados excavados, lo que explica la lista casi vacía.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
