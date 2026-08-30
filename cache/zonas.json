@@ -4259,5 +4259,39 @@
   ],
   "nota": "Zona = Asia Central meridional (Turkmenistán oriental, Uzbekistán, Tayikistán, norte de Afganistán) más el noreste de Irán y el norte de Pakistán. El objeto de peso 3 que faltaba es la propia entidad BMAC/civilización del Oxus (Q1054850, coordenada Wikidata 37.30 N / 64.16 E, dentro de zona; fechas Wikidata -2200/-1700, coherentes con la ventana): el visor ya tenía dos de sus ciudades (Namazga-Tepe y Gonur Depe) pero no la entidad que las agrupa. DESCARTADOS POR COORDENADA FUERA DE ZONA: Harappa (30.63 N) y Ganweriwala (28.60 N), al sur del límite de latitud 32.5; Mundigak (~31.9 N) y Shahr-e Sukhteh (~30.6 N), también al sur; Tepe Hissar (~54.35 E) y Tureng Tepe, al oeste del límite 56.5 E. DESCARTADO POR DATO DEFECTUOSO EN WIKIDATA: Djarkutan (Q1265824), gran centro protourbano bactriano contemporáneo y candidato claro de peso 2 — su artículo lo sitúa en Sherobod, Surjandarya (37°37'44\"N 66°57'33\"E), pero la propiedad P625 del ítem dice 41.03 N / 70.93 E, unos 600 km al noreste, en Ferganá. Ambas coordenadas caen dentro de la zona, así que el objeto no se filtraría, pero se pintaría en el sitio equivocado. No lo propongo hasta que se corrija Wikidata. Mismo motivo de exclusión para Sapalli Tepe: la búsqueda en Wikidata no devuelve ítem alguno para el yacimiento, y sin QID no se propone. Sarazm y Altyndepe se incluyen con `hasta` -2000 porque ambos se abandonan hacia esa fecha: cubren la primera mitad de la ventana, no la segunda. No he encontrado ningún evento datado (batalla, destrucción, fundación) dentro de -2250/-1800 en esta zona con QID propio; el BMAC carece de escritura y su cronología es puramente arqueológica, así que no hay hechos fechados al año. La contracción de los centros amurallados hacia 1800 a.C. es un proceso, no un evento datable, y la he recogido como relación de transmisión con Andrónovo en lugar de inventar una fecha.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "aab4adeec6",
+  "bbox": [
+   33.67,
+   46.25,
+   56.5,
+   60.0
+  ],
+  "corte": "-2000",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 2,
+  "descartados": [
+   {
+    "nombre": "Cultura de Abashevo",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Fenómeno de Seima-Turbino",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Potápovka",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Fatiánovo-Balánovo",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "La zona (33,67–56,5 E / 46,25–60 N) cubre el Volga medio y alto, el Kama, el Don alto y la vertiente occidental de los Urales: territorio de estepa y bosque-estepa sin estados ni ciudades en esta ventana, por lo que todo lo propuesto son culturas arqueológicas y relaciones entre ellas. DESCARTADO POR COORDENADAS FUERA DE ZONA: la cultura de Sintashta (Q656393) y sus dos sitios emblemáticos, Arkaim (Q672602, 59,57 E) y el propio Sintashta (Q1090987, 60,18 E) — el llamado «País de las Ciudades» se concentra entre Magnitogorsk y Cheliábinsk, al este del límite oriental de esta zona; su reborde occidental roza Bashkortostán, pero ni la cultura ni sus asentamientos tienen en Wikidata coordenadas que caigan dentro. DESCARTADO POR VENTANA: Srubnaya (Q1470165), que arranca hacia 1900–1600 a.C., y Poltavka (Q1757895), que termina hacia 2100 a.C. y es sobre todo anterior al corte. AVISO SOBRE COORDENADAS: ninguna de las cuatro culturas propuestas tiene P625 en Wikidata (tampoco lo tienen varias de las ya presentes en el visor, salvo Andrónovo, que sí lleva 55,88 N / 55,7 E); si el visor exige coordenadas de Wikidata para situar el objeto, estas cuatro no se podrán colocar sin una fuente de posición alternativa. La relación comercial Sintashta–BMAC (exportación de metal de la estepa a las ciudades de Asia Central, ~2100–1800 a.C.) está bien documentada, pero no la propongo porque ninguno de sus dos extremos cae dentro de esta zona.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
