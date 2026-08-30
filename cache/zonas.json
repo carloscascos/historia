@@ -4859,5 +4859,39 @@
   ],
   "nota": "Zona = Asturias, oriente de Lugo y A Coruña oriental. Barrido por SPARQL de Wikidata del bounding box filtrando dólmenes, menhires, necrópolis y yacimientos, más búsqueda dirigida sobre megalitismo cantábrico. DESCARTADOS: Ídolo de Peña Tú (Q2081919) cae en lon -4.689, fuera del límite este de la zona, y además su puñal grabado lo sitúa en el Bronce inicial, posterior a la ventana. Roza das Modias (Q50689112, Vilalba) está dentro de la zona pero Wikidata y la Wikipedia gallega la datan en el 2500 a.C., mediados del III milenio, posterior a la ventana. Dolmen de Baradal (Q106834280) y Dolmen de Entrerríos (Q125925916) están dentro de la zona pero sus fuentes no ofrecen ninguna datación; no propuestos. Menhires lucenses (Pedra Chantada Q50689108, Marco da Pena Verde Q124249020) sin cronología publicada. Cueva de Tito Bustillo, Candamo, Lluera y los Azules son paleolíticas/epipaleolíticas, muy anteriores. El Dolmen de La Cobertoria, con la mejor datación asturiana (~3500 a.C., madera quemada en el acceso a la cámara), NO tiene artículo de Wikidata, así que no se propone pese a ser el caso mejor fechado del entorno. AVISO SOBRE LA CALIDAD DE LAS FECHAS: ninguno de los cuatro objetos propuestos se apoya en dataciones radiocarbónicas publicadas que yo haya podido leer. Monte Areo es el mejor documentado (la Wikipedia en español atribuye a análisis arqueológico y C14 el rango 'últimos siglos del IV milenio a comienzos del III', que es exactamente la ventana), pero no he visto las fechas concretas. Santa Cruz y Merillés se apoyan en atribuciones genéricas al III milenio o al megalitismo asturiano; las ventanas que doy para ellos son una traducción convencional de esa atribución, no una medida. Merillés en particular se excavó en 1962 sin ajuar alguno, y su asignación a esta ventana concreta es una convención de manual, no un dato.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "eb9cfcd3fe",
+  "bbox": [
+   28.57,
+   10.17,
+   40.03,
+   22.94
+  ],
+  "corte": "-1600",
+  "lod": 1,
+  "fecha": "2026-08-31",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 4,
+  "descartados": [
+   {
+    "nombre": "Buhen",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Mirgissa",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Askut",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Invasión egipcia de Kerma",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = valle del Nilo sudanés (2ª a 4ª catarata) más el desierto oriental y el este de Sudán. ACEPTADOS: las fortalezas egipcias de la 2ª catarata con ocupación probada en la ventana (Buhen, Mirgissa, Askut) y Doukki Gel, la ciudad africana junto a Kerma habitada desde 1800 a.C.; más la invasión de Tutmosis I, único evento de la ventana con QID propio. DESCARTADOS y por qué: (1) Dorginarti (Q11917692) — pese a listarse a veces con los fuertes de la 2ª catarata, su cerámica es de los siglos X-VI a.C. (Heidorn, OINE 12): unos mil años posterior; agruparlo con Buhen es un error cronológico. (2) Soleb (Q1457914), Sedeinga (Q3954148), Sesebi (Q2274450), Amara West (Q454756), Kawa (Q1341882) — todas fundaciones del Reino Nuevo posteriores a la ventana (Amenhotep III, Akhenatón, Sethi I). Kawa tiene una posible fase Kerma en su necrópolis, pero los excavadores la expresan con «quizá»: no es ocupación confirmada. (3) Tombos (Q1457296) — la ocupación arqueológica empieza a mediados de la dinastía XVIII, hacia 1475-1450 a.C., es decir en el borde o después. (4) Jebel Barkal (Q499019) — solo tiestos dispersos de Kerma sin datar, y la actividad egipcia arranca hacia 1450 a.C. (5) Uronarti (Q496002) y Shalfak (Q933214) — fundaciones anteriores a la ventana; en Uronarti la cerámica «no pasa del Segundo Periodo Intermedio muy temprano» (abandono hacia 1650) y de Shalfak la Wikipedia no documenta ninguna fase posterior al Reino Medio: sin ocupación probada en la ventana, no los propongo. (6) Reino de Kush (Q241790) — datado desde c. 1070 a.C. y con coordenadas en Meroe; la entidad correcta para esta ventana es el reino de Kerma, ya presente en el visor. (7) Mersa Gawasis (Q1536350) — puerto de las expediciones a Punt, pero su latitud (26.6 N) queda fuera de la zona y su actividad documentada termina hacia 1800 a.C. (8) Culturas del Grupo C (Q1022291), Pan-Grave (Q1665306) y Medjay (Q1423613) — tienen QID pero NINGUNA tiene coordenadas en Wikidata, y además se sitúan sobre todo al norte del límite de esta zona. (9) La estela de Sepedhor en Buhen, las estelas de Kamose y la invasión kermana de Egipto de Sobeknakht II no existen como entidades en Wikidata: sin QID, no se proponen, pese a ser los hechos mejor datados del periodo. DOS DESCUADRES QUE NO CIERRO: (a) la fecha de la invasión de Kerma aparece como 1500, 1502, 1504 y 1506 a.C. en fuentes distintas —y el propio artículo de Wikipedia se contradice entre infobox (1506) y texto (1504)—; he usado -1504 pero la discrepancia sigue sin resolver, causa desconocida. Ese mismo artículo lista a Sobeknakht II como comandante de Tutmosis I, lo que parece un error del artículo (Sobeknakht II es el gobernador de Elkab que repelió a los kermanos un siglo antes); no lo he usado. (b) Mahal Teglinos: la Wikipedia alemana da ocupación hasta 1500 a.C. y menciona cerámica egipcia del Reino Medio, pero la Wikipedia inglesa cierra el Gash Group en 1800 a.C. mientras los excavadores italianos de Kassala describen continuidad hasta el II milenio. Propongo solo una relación de comercio de peso 1, no el yacimiento como ciudad, porque su ítem de Wikidata está vacío (sin etiqueta ni descripción) y la cronología no está resuelta. El sucesor cultural, el Jebel Mokram Group (Q86752182), sí cubriría la ventana pero carece de coordenadas.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
