@@ -1603,5 +1603,43 @@
   ],
   "nota": "Zona = Egipto (Delta parcial, valle, oasis, Sinaí occidental) + Nubia hasta la tercera catarata + desierto libio. Todo dentro de la ventana es territorio o periferia del Imperio Nuevo, ya presente. QIDs y coordenadas verificados contra la API de Wikidata: todas las ciudades propuestas caen en la zona. Descartados por peso 1 a esta escala: Sai (ocupación egipcia 'periódica', templo y minas de oro), Sesebi (ciudad-templo de Akenatón, 270×200 m), Kawa (templos de Amenhotep III a Tutankamón), Dokki Gel/Pnubs (Q16964645, ciudad-templo egipcia junto a Kerma), Serabit el-Jadim (minas y templo de Hathor, reconstruido en el Imperio Nuevo sin faraones nombrados en la fuente), Gurob, Bubastis, Coptos, Asiut, Edfu, Hieracómpolis, El Kab, Uadi Hammamat, Gebel el-Silsila, oasis de Dajla/Jariyá y Marsa Matruh. Descartados por estar dentro del punto de Tebas: Karnak, Luxor, Deir el-Bahari, Malkata, Kom el-Hettan, Deir el-Medina, Valle de los Reyes. Fuera de zona: Napata/Gebel Barkal (lat 18.53), Mersa Gawasis (lon 34.0), Punt (Wikidata 9.5N 48E; por eso no se propone la relación Egipto–Punt de la expedición de Hatshepsut hacia 1470 a.C.), Megiddo 1457 y Kadesh 1274 (fuera de zona y de ventana). Fuera de ventana: reino de Kerma (Q1739282, fin -1500 con Tutmosis I), Zawyet Umm el-Rakham (fortaleza de Ramsés II posterior), Libu (primera mención bajo Ramsés II, y guerra de Merenptah 1208). Sin coordenadas en Wikidata: periodo de Amarna (Q455151) y Mashauash (Q1191083) — este último se propone igualmente como entidad, con la advertencia de que el visor tendrá que ubicarlo a mano; también Tehenu (Q1476091) sin coordenadas ni artículo, descartado. No hay ítems de Wikidata para la expedición a Punt ni para las campañas nubias de Tutmosis III, Amenhotep III, Akenatón o Seti I (Irem, año 8), así que no se proponen como eventos; tampoco existe entidad para la Nubia bajo dominio egipcio (es provincia del Imperio Nuevo), por lo que no se propone relación de conflicto Egipto–Nubia. Relación Egipto–Arzawa (petición matrimonial de Amenhotep III, EA 31-32) descartada por peso 1.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "d455fa9ab9",
+  "bbox": [
+   56.5,
+   18.75,
+   79.33,
+   32.5
+  ],
+  "corte": "-1350",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 0,
+  "descartados": [
+   {
+    "nombre": "Cultura de Cementerio H",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Harappa",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Cultura de Wadi Suq",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Malwa",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Jorwe",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona: costa de Omán/Emiratos, sureste de Irán, Baluchistán, Sind, Panyab y noroeste-centro de la India, ventana 1475–1275 a.C. Es un periodo de desurbanización sin estados ni batallas documentadas: todo lo que alcanza el umbral son culturas arqueológicas regionales y un solo asentamiento con nombre. Descartados: Dholavira (Q9468), cuyo último estadio VII termina hacia 1450 a.C., apenas roza la ventana; Pirak (Q4363252), yacimiento clave de Baluchistán (1800–800 a.C., caballo y camello bactriano) pero de peso 1 a esta escala; Mohenjo-daro, Lothal y Shahr-i Sokhta, abandonadas antes de la ventana; cultura Ahar-Banas y cerámica ocre (OCP), que terminan hacia 1500 a.C.; cultura de tumbas de Gandhara y BMAC, fuera de la zona por el norte (lat > 32,5). Magan y Meluhha no se proponen: las menciones mesopotámicas cesan hacia 1700 a.C. La sucesión Malwa→Jorwe (hacia 1400) y el debatido vínculo Cementerio H–védico se consideraron como relaciones pero quedan en peso 1. Aviso: las culturas arqueológicas no tienen coordenadas en Wikidata; su ubicación en el visor dependerá de cómo trate las entidades sin punto (igual que las ya presentes, p. ej. Andrónovo).",
+  "autor": "carlos alvarez-cascos"
  }
 ]
