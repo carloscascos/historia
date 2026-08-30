@@ -385,5 +385,31 @@
   "descartados": [],
   "nota": "La zona corresponde a la isla de Menorca. Se ha revisado la prehistoria balear (es.wikipedia: Hipogeos de Biniai Nou, Poblamiento inicial de las Islas Baleares, Periodo pretalayótico; en.wikipedia: Biniai Nou hypogea; balearesantigua.com; descobreixmenorca.com) y Wikidata. La evidencia humana más antigua documentada en Menorca es un hueso de los hipogeos de Biniai Nou (Q27987850, coords 39.9058, 4.2123, dentro de la zona) datado por C14 en 2290–2030 cal a.C.; los artículos sitúan el uso entre 2300 y 2000 a.C. y admiten que 'no se puede asegurar que los primeros colonos no llegaran algo antes', pero sin fechas. Ese rango solo roza la cola de la ventana (-2750/-2250) en sus últimos 40 años del intervalo 2σ: no hay documentación de ocupación de la isla dentro de la ventana, así que no se propone. Biniai Nou es candidato claro para el corte «2000 a.C.». El periodo pretalayótico (Q4167312) figura en Wikidata con inicio en -1801, también fuera de ventana. Ses Roques Llises (dolmen, c. 2000 a.C.), Montplè (3460±65 BP) y las navetas son posteriores. Las hipótesis de poblamiento balear anterior (Waldren/Guerrero, 4500–7500 a.C.; Son Matge en Mallorca, fuera de zona) están discutidas y no aportan yacimientos menorquines datados en la ventana. Descuadre reseñable: una página divulgativa (descobreixmenorca) habla de 'comunidades permanentes entre 2500 y 2100 a.C.' citando Biniai Nou, pero la datación publicada del propio yacimiento (2290–2030) no lo sustenta; se ha ignorado.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "0afa015827",
+  "bbox": [
+   27.4,
+   35.85,
+   28.5,
+   36.59
+  ],
+  "corte": "-1350",
+  "lod": 0,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 3,
+  "descartados": [
+   {
+    "nombre": "Civilización micénica",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Civilización minoica",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "La zona cubre la isla de Rodas y Chalki; la costa turca (Datça, Bozburun, Marmaris, Cnido) y Symi quedan justo fuera del límite norte de latitud. Se han leído Wikipedia (en/es: Ialysos, Rhodes, Lindos, Kameiros, Ahhiyawa), World History Encyclopedia, ToposText, la lección 17/18 de Aegean Prehistoric Archaeology (Dartmouth), el resumen del BSA sobre la cerámica de Trianda y la reseña del AJA sobre Pylona; los PDF de Academia/ResearchGate y el artículo de MAA (Benzi, Marketou, Karantzali) no se han podido leer (403). Descartados: Lindos (Q65122097) porque su artículo solo documenta ocupación desde el s. X a.C. y el nivel micénico de la zona ya lo cubre Pylona; Kameiros (Q1231539) porque la única mención («habitada por micénicos en época prehistórica») no tiene fecha ni fuente arqueológica leída; Kalavarda, Lelos y otros cementerios micénicos menores citados en la bibliografía de Dartmouth por carecer de artículo de Wikidata con coordenadas; Asomatos por ser del Bronce Antiguo; Ahhiyawa (Q552241) porque su sede en Rodas es solo una de varias hipótesis en disputa y la propia Wikipedia señala que no hay prueba arqueológica que la sitúe en la isla — HIPÓTESIS SIN VERIFICAR, no se propone. No se ha encontrado QID para un evento datable en la ventana (el terremoto de hacia 1400 a.C. en Trianda no tiene artículo propio). Chalki (Q917162) no tiene documentación de ocupación en la ventana en las fuentes leídas. Las fechas absolutas de las fases HR IIIA2–IIIB son convencionales (hacia 1375–1250 a.C.); ninguna fuente leída da fechas calibradas para Trianda.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
