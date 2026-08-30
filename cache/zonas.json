@@ -4996,5 +4996,31 @@
   ],
   "nota": "La zona es prácticamente toda la isla de Chipre; el borde este del recuadro (hasta 34,88°E) es mar, no llega a la costa levantina (Ugarit está en 35,78°E, fuera). Consultada la secuencia Early Cypriot–Middle Cypriot en Wikipedia (es/en/de), ancientcyprus.com, Livius y Encyclopedia.com, y cruzada con una consulta SPARQL de yacimientos arqueológicos dentro del recuadro (98 resultados). DESCARTADOS Y POR QUÉ: (1) Marki Alonia (Q6771042) y Erimi-Laonin tou Porakou (Q62031560) son los dos asentamientos mejor excavados y mejor datados de esta ventana —Marki cubre de 2400 hasta bien entrado el Bronce Medio— pero sus artículos de Wikidata NO TIENEN COORDENADAS (verificado vía wbgetentities: sin propiedad P625), así que la regla 2 los deja fuera. Es una exclusión por falta de dato en Wikidata, no por falta de relevancia: son las dos ausencias más notables de esta lista. (2) Sotira Kaminoudhia (Q59139488, con coordenadas) queda descartado porque el modelado bayesiano de radiocarbono sitúa el fin de la ocupación hacia 2200 a.C., de modo que solo roza los primeros 50 años de la ventana. (3) Enkomi (Q22987223): su nivel más antiguo (Nivel A) está datado por los excavadores en 1900-1700 a.C., lo que tocaría el final de la ventana, PERO la propia Wikipedia lo describe como un estrato preliminar 'pobremente representado' sobre la roca madre y Crewe (2007) lo rebaja a LC IA (h. 1650-1550). La datación está en disputa abierta y no propongo el objeto: sería presentar como documentado algo que los especialistas no han cerrado. (4) Kalopsida (Q6354281) y Toumba tou Skourou (Q25381188): ambos son MC III o posteriores (h. 1750 en adelante), fuera de la ventana por el otro extremo. (5) Cultura Filia (Q1632948): tampoco tiene coordenadas en Wikidata y además su rango (2450-2200 a.C.) solo solapa el arranque de la ventana. (6) No se ha encontrado ningún EVENTO datado dentro de -2250/-1800 en esta zona: las fuentes consultadas subrayan que el Bronce Medio chipriota es un proceso de transformación gradual, y el gran vuelco (traslado de asentamientos a la costa, intensificación del comercio del cobre) ocurre en la transición MC III-LC I, hacia 1750-1550, ya fuera de la ventana. La relación de comercio con Biblos (Q173532) se propone con peso 2 sobre la base de la mención del cobre de Alasiya en los textos de Mari del s. XIX a.C.; el destino concreto Biblos es la vía levantina habitual, pero el vínculo puerto-a-puerto no está atestiguado nominalmente en esos textos.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "fa9a7fe609",
+  "bbox": [
+   31.95,
+   34.46,
+   34.88,
+   35.65
+  ],
+  "corte": "-1350",
+  "lod": 0,
+  "fecha": "2026-08-31",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 3,
+  "descartados": [
+   {
+    "nombre": "Enkomi",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Toumba tou Skourou",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "La zona es casi toda Chipre. Revisé por consulta geográfica a Wikidata todos los yacimientos, ciudades y sitios arqueológicos dentro del recuadro, y contrasté cronologías una a una. DESCARTADOS por fecha: Pyla-Kokkinokremos (Q6426672, fundado c. -1230, posterior a la ventana), Maa-Palaiokastro (Q69125006, siglo XII), Idalion (Q1656624: las instalaciones documentadas son del siglo XIII y la ciudad se consolida en LC III, c. -1200/-1050), Palaepaphos (Q22988494: su relevancia arranca hacia -1200; para -1350 la Wikipedia no aporta ocupación documentada), Salamina, Kourion-polis, Amatunte, Tamasos, Solos y las demás ciudades-estado (fundaciones de la Edad del Hierro). Las campañas hititas contra Alasiya (Tudhaliya IV / Suppiluliuma II) quedan en -1225/-1200, fuera de la ventana, así que no propongo relación de conflicto. DESCARTADO por falta de QID utilizable: Alassa-Paliotaverna (ocupación c. -1340/-1100, encajaría, pero Wikidata solo tiene Q521403, el pueblo moderno, no el yacimiento), Maroni-Vournes/Tsaroukkas, Kalopsidha, Politiko-Phorades, Athienou-Bamboulari: ninguno tiene ítem propio con coordenadas. PROBLEMA DE DATOS que no he propuesto por eso: Episkopi-Bamboula sí cumple zona y ventana (ocupado desde c. -1600/-1500, con estructuras del siglo XIV, y era la salida al mar del centro de Alassa), pero su ítem Q25381390 está corrupto en Wikidata — la etiqueta y el enlace alemán son 'Episkopi-Bamboula' (32,91 E / 34,67 N, junto al Kouris) mientras la descripción inglesa dice 'archaeological site in Kition' y la coordenada P625 apunta a Kition (33,633 / 34,920), a 70 km. Como las coordenadas se toman de Wikidata, incluirlo lo colocaría en el sitio equivocado; queda fuera hasta que se corrija el ítem. No he verificado cuál de los dos valores es el erróneo en origen ni por qué el ítem mezcla los dos sitios.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
