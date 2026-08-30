@@ -3247,5 +3247,63 @@
   ],
   "nota": "Zona = sur de Siberia (Altái, cuenca de Minusinsk/Jakasia, Tuvá, Ob medio, Krasnoyarsk) y franja noroeste de Mongolia (Khövsgöl). Sin estados ni ciudades en la ventana: todo son culturas arqueológicas. ADVERTENCIAS: (1) Q129282 (Karasuk) NO tiene coordenadas P625 en Wikidata; se propone igualmente porque es la cultura principal de la zona en 1200 a.C. y porque Andrónovo (Q459376, P625 en 55.7E, fuera de este recuadro) ya figura como existente aquí, lo que indica que el visor no usa P625 para entidades; si sí lo usa, descartar. (2) Las fechas de Karasuk descuadran entre fuentes: Wikipedia (en, es) da 1500–800 a.C.; EBSCO da 1250–700 a.C. Se usa la de Wikipedia; causa de la diferencia desconocida (probable distinta periodización, HIPÓTESIS SIN VERIFICAR). (3) Q176824 es el ítem de 'piedra de ciervo' (monumento) al que enlaza también el artículo 'Deer stones culture'; sus coordenadas (47.75N, 101.37E, Uushigiin Övör, junto a Mörön) caen dentro del recuadro. Wikipedia da 1400–700 o 1300–700 a.C. para las estelas y 1200–700 para el complejo con khirigsuur; se usa 1300. (4) El vínculo Karasuk→Shang lo afirma Wikipedia con rotundidad ('numerosos bronces de modelo Karasuk en Anyang') y EBSCO solo como 'posible'; se mantiene con peso 2. DESCARTADOS: cultura Irmen Q765074 (siglos IX–VIII a.C., fuera de ventana, y sin P625); Begazy-Dandybai Q814276 (1500–1100 a.C. pero núcleo en Kazajistán central, al oeste del recuadro, sin P625); Tagar Q2005344 (desde 750 a.C.); khirigsuur Q4219542 (sin fechas ni coordenadas en Wikidata, ya cubierto por la entidad de piedras de ciervo); depresión de Minusinsk Q730295 (accidente geográfico, no objeto histórico); sitio Uushigiin Övör (sin ítem propio en Wikidata; el ítem UNESCO Q66133349 es la declaración de Patrimonio Mundial, no un asentamiento); Petroglifos de Shalobolino Q4519615 (sin datación clara en la ventana, y peso 1). No se han encontrado asentamientos Karasuk con artículo en Wikidata. Britannica y UNESCO devolvieron HTTP 403 y no pudieron leerse.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "c8b63e45b8",
+  "bbox": [
+   102.16,
+   32.5,
+   125.0,
+   46.25
+  ],
+  "corte": "-1200",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 6,
+  "descartados": [
+   {
+    "nombre": "Zhou occidental",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Batalla de Muye",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Zhou predinástico",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Guifang",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura Siwa",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura Xindian",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Lu",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Jin (Tang)",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Yan",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Song",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = norte de China (Shaanxi, Shanxi, Henan norte, Hebei, Shandong, Pekín, Liaoning, Mongolia Interior sur) más el borde oriental de Gansu; Corea queda casi toda al este de 125°. Verificado cada QID y sus coordenadas (P625) en Wikidata. AVISOS de coordenadas: Batalla de Muye (Q1273506) no tiene P625 propio; su lugar (P276) es Muye Q1198636, con coordenadas 35.32N 113.90E, dentro de la zona. Zhou occidental no tiene P625 pero su capital (P36) es Fenghao Q275515, ya en el visor. Zhou predinástico, Guifang, Siwa, Xindian, Lu, Jin, Yan y Song no tienen P625 en Wikidata (Lu→capital Qufu Q210287 35.60N 116.98E; Song→P36 Q1198957; Yan→P36 Q1740592 Liulihe); si el visor exige P625 en el propio ítem, esos objetos no se podrán situar automáticamente. Zhouyuan (Q198067) solo tiene artículo en Wikipedia en chino. DESCARTADOS: Rebelión de los Tres Guardias (Q7797508, h. 1040 a.C.) porque su único lugar en Wikidata es 'China' sin coordenadas; Xiajiadian superior (Q1075080) porque Wikidata y Wikipedia lo inician en 1000 a.C., justo en el borde de la ventana (corresponde al corte siguiente); Xiajiadian inferior (Q1041674) porque termina h. 1600 a.C.; Sanxingdui (30.99N) queda al sur de la zona; Karasuk (Siberia) y Mumun (Corea, lon >125) fuera de la zona; Wey (Q1147897) y otros feudos menores por debajo del umbral; Dongyi (Q333910) sin coordenadas y de definición demasiado vaga para proponer la relación Shang–Dongyi, aunque la campaña Shang contra ellos precede a Muye. Personas (Wu Ding, Fu Hao, Jiang Ziya, rey Wu) no son tipo admitido.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
