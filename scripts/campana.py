@@ -26,6 +26,8 @@ CORTES_ORDEN = ["-1350", "-1600", "-1200", "-2000", "-2500", "-3000"]  # de más
 NIVEL_MIN = 1          # no bajar de "vista cercana"
 REINTENTOS = 3
 ESPERA_ERROR = 600     # s antes de reintentar una zona fallida (cuota, red)
+FALLOS_SEGUIDOS = 4    # tras esta racha de errores, pausa larga: casi siempre es la cuota de la suscripción
+PAUSA_CUOTA = 1800     # s de pausa cuando se sospecha cuota agotada
 
 def log(*a):
     line = time.strftime("%H:%M:%S ") + " ".join(str(x) for x in a)
@@ -82,6 +84,11 @@ def cargar():
 
 def guardar(st): ESTADO.write_text(json.dumps(st, ensure_ascii=False, indent=0), encoding="utf-8")
 
+def n_act_pausa(cola):
+    return sum(1 for t in cola["zonas"] if t["estado"] in ("en cola", "en curso"))
+def ultimo_error(st):
+    e = [p.get("error", "") for p in st["plan"] if p.get("error")]
+    return e[-1] if e else ""
 def main():
     st = cargar(); guardar(st); fin = st["inicio"] + HORAS * 3600
     log(f"campaña: {len(st['plan'])} celdas de nivel 3, tope {HORAS} h, paralelo {PARALELO}")
@@ -102,19 +109,25 @@ def main():
             k = (tuple(it["bbox"]), it["corte"])
             if it["estado"] in ("hecha", "agotada"): continue
             if k in hechas:
-                z = hechas[k]; it.update(estado="hecha", hallazgos=z["hallazgos"], zona=z["id"]); log(f"hecha nivel {it['lod']} {it['corte']} {it['bbox']}: {z['hallazgos']} objetos")
+                z = hechas[k]; it.update(estado="hecha", hallazgos=z["hallazgos"], zona=z["id"]); st["racha_errores"] = 0
+                log(f"hecha nivel {it['lod']} {it['corte']} {it['bbox']}: {z['hallazgos']} objetos")
                 if z["hallazgos"] > 0 and it["lod"] - 1 >= NIVEL_MIN:
                     for b in celdas(it["bbox"]):
                         if not any(p["bbox"] == b and p["corte"] == it["corte"] for p in st["plan"]):
                             nuevas.append({"bbox": b, "corte": it["corte"], "lod": it["lod"] - 1, "estado": "pendiente", "intentos": 0, "padre": z["id"]})
             elif it["estado"] == "lanzada" and k in errores and k not in activas:
-                it["estado"] = "pendiente"; it["ultimo_error"] = time.time(); it["error"] = errores[k].get("error", "")[:200]
-                log(f"error nivel {it['lod']} {it['corte']} {it['bbox']}: {it['error'][:120]}")
+                it["estado"] = "pendiente"; it["ultimo_error"] = time.time(); it["error"] = errores[k].get("error", "")[:300]
+                st["racha_errores"] = st.get("racha_errores", 0) + 1
+                log(f"error nivel {it['lod']} {it['corte']} {it['bbox']}: {it['error'][:200]}")
                 if it["intentos"] >= REINTENTOS: it["estado"] = "agotada"; log("  agotados los reintentos")
             elif it["estado"] == "lanzada" and k not in activas and k not in hechas:
                 it["estado"] = "pendiente"  # el servicio la perdió (reinicio sin persistencia): se relanza
         st["plan"] += nuevas
         if nuevas: log(f"{len(nuevas)} celdas hijas añadidas (nivel {nuevas[0]['lod']})")
+        # --- racha de errores: casi siempre es la cuota; pausa larga en vez de quemar reintentos ---
+        if st.get("racha_errores", 0) >= FALLOS_SEGUIDOS and n_act_pausa(cola) == 0:
+            log(f"{st['racha_errores']} errores seguidos (último: {ultimo_error(st)[:160]}); pauso {PAUSA_CUOTA//60} min")
+            st["racha_errores"] = 0; guardar(st); time.sleep(PAUSA_CUOTA); continue
         # --- lanzar hasta llenar el paralelismo, mientras quede tiempo ---
         n_act = len(activas); ahora = time.time()
         if ahora < fin:

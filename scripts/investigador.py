@@ -48,7 +48,7 @@ def investigar(tid, p):
     try:
         r = subprocess.run([CLAUDE, "-p", prompt, "--output-format", "json", "--allowedTools", "WebSearch,WebFetch"],
                            cwd=ROOT, capture_output=True, text=True, timeout=900)
-        if r.returncode != 0: raise RuntimeError(r.stderr[-800:] or "claude -p falló")
+        if r.returncode != 0: raise RuntimeError(((r.stderr or "") + " | stdout: " + (r.stdout or ""))[-800:] or "claude -p falló")
         out = json.loads(r.stdout)
         ficha = extraer_json(out.get("result", ""))
         ficha.setdefault("contexto", []); ficha.setdefault("fuentes", []); ficha.setdefault("sin_respaldo", [])
@@ -140,7 +140,7 @@ def investigar_zona(tid, p):
     log("zona", tid, p["bbox"], corte["id"])
     try:
         r = subprocess.run([CLAUDE, "-p", prompt, "--output-format", "json", "--allowedTools", "WebSearch,WebFetch"], cwd=ROOT, capture_output=True, text=True, timeout=1200)
-        if r.returncode != 0: raise RuntimeError(r.stderr[-800:] or "claude -p falló")
+        if r.returncode != 0: raise RuntimeError(((r.stderr or "") + " | stdout: " + (r.stdout or ""))[-800:] or "claude -p falló")
         out = json.loads(r.stdout); res = extraer_json(out.get("result", "")); hall = res.get("hallazgos") or []
         conocidos = qids_conocidos(); ok, desc = [], []
         info = wd.get([h["qid"] for h in hall if re.fullmatch(r"Q\d+", str(h.get("qid", "")))]) if hall else {}
