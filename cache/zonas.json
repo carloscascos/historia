@@ -2361,5 +2361,55 @@
   ],
   "nota": "Zona: Sinaí oriental, Levante sur, Arabia norte y oriental, golfo Pérsico, sur de Mesopotamia y Juzestán. Todos los QID y coordenadas se comprobaron contra la API de Wikidata; las dataciones, contra los artículos de Wikipedia en inglés citados. Las entidades Dilmun (Q748846) y Cultura de Wadi Suq (Q48802879) NO tienen coordenadas en Wikidata; se proponen igualmente por su relevancia. Mashkan-shapir (32.40N) y Borsippa (32.39N) quedan a un décimo de grado del borde norte. DESCUADRE: el artículo de Qal'at al-Bahrain dice que el lugar «fue abandonado tras 1800 a.C.», pero el mismo artículo y el de Dilmun registran allí tablillas de Ea-gamil (País del Mar) y de reyes casitas; se propone con ocupación continua, pero la contradicción queda sin resolver. Descartados: Lagash (Q207330) y Girsu (Q853946), ocupación «modesta» en época babilónica y Girsu abandonada hacia 1600 (peso 1); Dilbat (Q1193666), Marad y Kisurra (peso 1); templo de Barbar (Q807317), en uso solo hasta inicios del II milenio; Tell Abraq (Q3517362) y Shimal (Q7496816), peso 1 y ya representados por Wadi Suq; Tayma (Q27365), cuya muralla se data vagamente «a mediados del II milenio» y cuyo apogeo es posterior; Mersa Gawasis (Q1536350), puerto del Imperio Medio hacia Punt usado hasta Amenemhat IV (hacia 1800 a.C.), fuera de la ventana por escaso margen; Canaán (Q163329), cuyas coordenadas en Wikidata (32.77N) caen fuera de la zona; Punt (Q282350), coordenadas fuera; Casitas/Dinastía casita (Q16630263), Babilonia queda fuera de la zona y su control del sur es posterior a 1475; Haft Tepe (Kabnak), fundada hacia 1400; Serabit el-Khadim y demás Sinaí egipcio, al oeste de 33.67; Nubia y Kerma, fuera. No existe ítem de Wikidata para el asedio de Sharuhen ni para la revuelta de Rim-Sin II/destrucción de Ur (hacia 1739), por lo que se recogen como relaciones o en la línea de Ur. La batalla de Megiddo (1457) queda fuera de ventana y de zona.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "d516a9499c",
+  "bbox": [
+   56.5,
+   18.75,
+   79.33,
+   32.5
+  ],
+  "corte": "-1600",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 7,
+  "descartados": [
+   {
+    "nombre": "Harappa",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Dholavira",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Cultura del Cementerio H",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura Jhukar-Jhangar",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de la cerámica ocre (OCP)",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura Ahar-Banas",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura Malwa",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Wadi Suq",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona: Omán, sureste de Irán, sur de Afganistán, Pakistán (Sind, Baluchistán, Punyab) e India noroccidental hasta el Doab. Se verificó en Wikidata que todas las ciudades propuestas tienen coordenadas dentro de la zona. Descartados: Rakhigarhi (Q3418050) porque el artículo solo documenta ocupación hasta la fase madura (1900 a.C.); Rojdi (hasta 1700 a.C.) y Bhagwanpura (1700-1300 a.C., solapamiento tardo-harappense/PGW) por ser peso 1; Tepe Yahya (Q384077) por cronología contradictoria en la fuente (periodo IVA 'principios del II milenio' vs 'producción de clorita a mediados del II milenio'), sin fecha firme dentro de la ventana; Shahr-e Sukhteh (abandono hacia 2350-2000 a.C.) y Konar Sandal (hasta 2200 a.C.) por caer antes de la ventana; Magan (Q1429914) porque las menciones documentadas son del III milenio y no hay nada datado en 1800-1475 a.C.; culturas Bara, Copper Hoard y Kayatha por peso 1 o fin antes de la ventana; la cultura Rangpur no tiene ítem propio en Wikidata. Sin eventos: no existe ningún hecho datado con ítem de Wikidata y coordenadas en esta zona y ventana (el abandono de Mohenjo-Daro es un proceso sin ítem propio). Relación Wadi Suq-Indo omitida por ser un vínculo 'menguante' (peso 1). Advertencia sobre Dholavira: la fuente da dos cronologías incompatibles (fin hacia 1450 a.C. tradicional frente a hacia 1800 a.C. en investigación reciente); se ha usado la tradicional, que es la que mantiene la ciudad dentro de la ventana. La relación Andrónovo→védica es una hipótesis (teoría migratoria) y así se etiqueta en la línea.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
