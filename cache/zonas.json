@@ -3437,5 +3437,43 @@
   "descartados": [],
   "nota": "Zona = Arabia meridional interior y costera: Yemen oriental (Ma'rib, Shabwa, Hadramaut), Dhofar omaní y Socotra. Nada alcanza el umbral, ni siquiera en vista cercana (peso 1).\n\nDESCARTADOS POR FECHA (existen, pero fuera de la ventana -1475/-1275):\n• Reino de Saba (Q216068, en la zona, 45.33/15.45): Wikidata fija su inicio en -1000; las dinastías sabea y minea se documentan del s. X a.C. al II d.C. Empieza ~275 años DESPUÉS de que se cierre la ventana.\n• Ma'rib (Q335478) y Mahram Bilqis / Templo de Awwam (Q791823, Q16120623): la ciudad y los templos sabeos son del I milenio a.C.; la Gran Presa se data hacia el s. VI a.C.\n• Shabwa (Q2005211), capital de Hadramaut: kingdom del I milenio a.C.\n• Khor Rori / Sumhuram (Q826118): fundación en el s. III a.C., más de mil años tarde.\n• Yacimiento de Shisr / 'Ubar' (Q14912328): Wikipedia, citando Newton & Zarins 2019, lo construye en el s. IV d.C. y lo abandona en el XV-XVI. La cifra de '2800 a.C.' que circula en webs turísticas no procede de la literatura arqueológica y no la he usado.\n• Al-Baleed (Q12184607) y Tumba de Job (Q4433439): islámicos / sin datación de la Edad del Bronce.\n• Socotra (Q82859): el primer asentamiento con evidencia arqueológica es de hacia -1000. Hay industria lítica paleolítica, pero ningún hábitat en esta ventana.\n\nDESCARTADOS POR GEOGRAFÍA (sí caen en la ventana, pero fuera del recuadro):\n• Cultura de Sabir y los sitios de Sabir y Ma'layba, los ÚNICOS centros urbanos bien datados del sur de Arabia en el II milenio (Ma'layba fase I ~s. XX-XIII a.C., fase II desde el s. XIV) — están junto a Adén, hacia 44.9°E, al oeste del límite 45.09 de esta zona. Además ni la cultura ni los dos yacimientos tienen artículo en Wikidata, así que tampoco habría QID que darles. La cultura Sabir se define sobre la Tihama del mar Rojo y el golfo de Adén OCCIDENTAL, no llega al este de la zona.\n• Cultura de Wadi Suq (-2000/-1300), que sí cubriría cronológicamente la ventana, se circunscribe a la península de Omán septentrional y EAU (Tell Abraq, Kalba, Ra's al-Jinz). Ninguna fuente la extiende a Dhofar ni a Yemen.\n\nHALLAZGO NEGATIVO RELEVANTE, no ausencia de búsqueda: la prospección arqueológica de Dhofar (llanura de Salalah y montañas, 2008-2009) documenta explícitamente un HUECO de ocupación en el II milenio temprano-medio, vinculado a la disponibilidad de agua. Y el gazetteer radiocarbónico del proyecto RASA-AHSD para el Hadramaut prehistórico registra monumentos del V, IV, III y I milenio a.C., con una interrupción constructiva entre el final del III milenio y la reutilización de tumbas en el I milenio — es decir, el II milenio, y con él esta ventana, cae dentro del vacío. Los dos extremos de la zona (Dhofar al este, Hadramaut interior en el centro) están vacíos por razones documentadas, no por falta de investigación.\n\nMÉTODO: consulta SPARQL de caja delimitadora sobre Wikidata (yacimientos arqueológicos, ciudades, asentamientos, culturas: ~300 resultados, casi todos aldeas yemeníes modernas sin profundidad histórica) y segunda consulta filtrando por fecha de fundación anterior al año 500, que devolvió un único objeto, el Reino de Saba, ya descartado por fecha. Más búsqueda bibliográfica sobre cultura Sabir, RASA-AHSD, prospección de Dhofar, Wadi Suq y Socotra.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "60ebfa0026",
+  "bbox": [
+   10.84,
+   46.25,
+   33.67,
+   60.0
+  ],
+  "corte": "-1200",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 3,
+  "descartados": [
+   {
+    "nombre": "Cultura lusaciana",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de los campos de urnas",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Bronce nórdico",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Bilozerka",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Komarów",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = Europa central y oriental (Polonia, Chequia, Eslovaquia, norte de Hungría, Bálticos, Bielorrusia, Ucrania y oeste de Rusia). Es territorio sin estados ni ciudades en esta ventana: todo lo que alcanza el umbral son culturas arqueológicas y las rutas de intercambio que las conectan. DESCARTADO por fecha: Biskupin (Q866393), el yacimiento más famoso de la zona y el único con coordenadas en Wikidata, es de la Edad del Hierro — la dendrocronología da tala de robles en 747-722 a.C., más de dos siglos después del cierre de la ventana; Trzciniec (Q2537330) termina hacia -1300, justo antes; Chernoles (Q2636498) empieza hacia -950, justo después; Srubnaya (Q1470165) termina hacia -1200 y su núcleo queda al este del meridiano 34 (Volga-Ural), fuera de la zona; Noua-Sabatinovka-Coslogeni (Q116966464) está fechada en Wikidata -1600/-1300 y su masa cae al sur del paralelo 46,25 — se propone en su lugar su sucesora Bilozerka, que sí cubre -1200/-1000. DESCARTADO por umbral: los grupos regionales de campos de urnas (Knovíz Q1309143, Piliny Q2332687, Gáva Q372349, Velatice) son subdivisiones de peso 1, visibles solo en vista cercana. NO SE PROPONE NINGÚN EVENTO: no se ha encontrado ningún hecho datado con coordenadas dentro de la ventana en esta zona aparte de la batalla del Tollense, que ya está en el visor. ADVERTENCIA SOBRE COORDENADAS: ninguna de las cinco entidades propuestas tiene propiedad P625 en Wikidata (comprobado uno a uno) — son culturas, no puntos. Si el visor exige coordenadas de Wikidata para situar el objeto, estas cinco no se podrán colocar y la zona quedará vacía; el único QID de la lista con P625 es Q239574 (Amber Road, 48,17 N / 16,98 E), que no he propuesto como objeto porque su artículo describe sobre todo la ruta de época romana y no la red del Bronce Final. Las extensiones geográficas que doy en las líneas provienen del texto de los artículos, no de datos estructurados.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
