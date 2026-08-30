@@ -1007,5 +1007,31 @@
   ],
   "nota": "Zona: Anatolia oriental, Levante norte, Mesopotamia, Irán norte, Cáucaso, Asia Central y estepa hasta 60N. Se han verificado QIDs y coordenadas en Wikidata y leído Wikipedia (en/es). AVISOS sobre coordenadas: Batalla de Nihriya (Q906834) y Tratado egipcio-hitita (Q253155) NO tienen P625 en Wikidata; Nihriya se sitúa en el alto Balij (zona de Şanlıurfa/Harran, dentro de la zona) y el tratado tiene P276=Hattusa (Q181007); si el ingestor exige coordenadas propias, quedarán fuera y habrá que asignarlas manualmente. Pueblos del mar (Q193850) y Arameos (Q175064) tampoco tienen coordenadas (como ya ocurre con otras entidades del visor). Mitanni existe solo los primeros ~15 años de la ventana (hasta c. 1260); se propone porque su absorción por Asiria es un hecho mayor del periodo. DESCARTADOS por debajo del peso 3: Kar-Tukulti-Ninurta (Q165841, capital efímera asiria c. 1230-1207, peso 2); Sidón (Q163490, peso 2); Alepo (Q41183, virreinato hitita, peso 2); Cultura de Srubna (Q1470165, estepa póntica hasta c. 1200, peso 2); Frigia/Mushki (Q32579/Q1857902, mencionados desde c. 1165-1115 pero sin estado mayor hasta el s. VIII, peso 2); Nairi (Q560342, peso 1-2); cultura de Yaz (Q2120200) y cultura de Koban (Q914771), peso 1-2. SIN OBJETO EN WIKIDATA: el saqueo de Babilonia por Tukulti-Ninurta I (c. 1225) y el saqueo elamita de 1158 no tienen ítem propio, por lo que se recogen solo como relaciones de conflicto. El Colapso de la Edad del Bronce (Q1059758) no tiene coordenadas ni lugar único y no encaja como evento puntual. Susa, Nippur y Anshan quedan al sur de 32.5N (fuera de zona). Relaciones de comercio (Ugarit-Alasiya, Ugarit-Egipto) se estiman de peso 2 y no se incluyen a este nivel.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "86266bd22c",
+  "bbox": [
+   -12.0,
+   5.0,
+   33.67,
+   32.5
+  ],
+  "corte": "-2000",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 4,
+  "descartados": [
+   {
+    "nombre": "Reino de Kerma",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Egipto: Primer Período Intermedio",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = Egipto y Nubia (Nilo entero al oeste de 33,67°), Sáhara, Sahel y África occidental hasta 5°N; el Levante queda fuera por longitud y la costa mediterránea magrebí/libia por latitud. Revisado en Wikidata/Wikipedia: Kerma (Q1739282, coords 19,6/30,41 dentro de zona), Heracleópolis (Q249480, 29,09/30,93), Ity-tauy (Q389285, 29,57/31,23), Primer Período Intermedio (Q232211: sin coordenadas en Wikidata, igual que las entidades dinásticas ya cargadas; Wikidata data 2181–2055 a.C.). Descartados por quedar en peso 2 o inferior a esta escala: Abidos (Q192268) y Heliópolis (Q191687), centros religiosos, no capitales; Buhen (Q1002656) y demás fortalezas de la 2ª catarata; cultura del Grupo C de la Baja Nubia (Q1022291, 2400–1550 a.C.); tradición de Tichitt en Mauritania (Q107008575, desde ca. 2200 a.C., sin coordenadas en Wikidata, urbanismo jerarquizado más tardío); complejo de Kintampo en Ghana (Q1320943); Asiut y otras ciudades de nomarcas. La reunificación de Egipto por Mentuhotep II (ca. 2055 a.C.) no tiene ítem de Wikidata propio con coordenadas, por eso va como relación de conflicto Heracleópolis–Tebas y no como evento. Nota sobre la relación Egipto–Kerma: las campañas de Senusret I y III se dirigen a la Baja Nubia (pueblos del Grupo C) y la línea de fuertes de Semna se levanta frente a Kerma; el texto de Wikipedia no documenta un choque directo con la ciudad de Kerma en la ventana. Las fechas de Kerma en Wikidata (inicio −3500) incluyen la fase pre-Kerma; se han usado las de Wikipedia (cultura Kerma desde ca. 2500 a.C.).",
+  "autor": "carlos alvarez-cascos"
  }
 ]
