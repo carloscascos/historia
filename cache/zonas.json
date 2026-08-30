@@ -1565,5 +1565,43 @@
   "descartados": [],
   "nota": "Zona = Cuerno de África (Eritrea, Etiopía, Yibuti, Somalia), este de Sudán, Yemen, Asir y Dhofar. Revisado en Wikipedia (en/es/de), Springer (estados del norte del Cuerno), Radiocarbon (Ma'layba y Sabir) y museo de El Cairo. Solo Punt alcanza el umbral: Wikidata Q282350 sitúa el ítem en 9.5N 48E (dentro de la zona) con ventana -2400/-1069, aunque la localización real es discutida y podría caer fuera del recuadro (Eritrea/Sudán) o al otro lado del mar Rojo (Yemen). La fecha del inicio de la relación es la del año 9 de Hatshepsut (c. 1471 a.C. según en.wikipedia; cronología baja). Descartados: (1) evento 'Expedición de Hatshepsut a Punt' — no existe ítem de Wikidata en en/de/fr/es, y su punto de llegada no está localizado; (2) cultura Sabir (Tihama yemení, Sabir y Ma'layba, 14C 1900-800 cal BC, primeros centros urbanos costeros a mediados del II milenio, cerámica con paralelos sudaneses) — sin ítem de Wikidata en ningún idioma probado, no se puede proponer aunque merecería peso 2; (3) Grupo de Jebel Mokram (Kassala, c. 1800-800 a.C., Q86752182) — ítem sin coordenadas y peso 1; Mahal Teglinos (Q110924115, 15.40N 36.43E) es su yacimiento pero peso 1; (4) Wetenet (Q138320465) — ítem sin coordenadas ni artículos, ligado al Gash Group que termina c. 1800 a.C., fuera de ventana; (5) Shi'b Munayder (Hadramaut, c. 1500-1420 a.C.) — sin QID, peso 1; (6) altiplano etíope-eritreo (Sembel, Matara pre-aksumita) — ocupación compleja documentada solo desde c. 800 a.C. Descuadre entre fuentes: de.wikipedia dice que Tutmosis III 'supuestamente conquistó Punt en su año 1', mientras el artículo de Tutmosis III en en.wikipedia no menciona Punt en absoluto y el de Punt solo habla de continuidad comercial; se ha mantenido la versión comercial, sin proponer conflicto.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "7f3f0ebddc",
+  "bbox": [
+   10.84,
+   18.75,
+   33.67,
+   32.5
+  ],
+  "corte": "-1350",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 14,
+  "descartados": [
+   {
+    "nombre": "Abidos",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Elefantina",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Avaris (Peru-nefer)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Pi-Ramsés",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Mashauash (Meshwesh)",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = Egipto (Delta parcial, valle, oasis, Sinaí occidental) + Nubia hasta la tercera catarata + desierto libio. Todo dentro de la ventana es territorio o periferia del Imperio Nuevo, ya presente. QIDs y coordenadas verificados contra la API de Wikidata: todas las ciudades propuestas caen en la zona. Descartados por peso 1 a esta escala: Sai (ocupación egipcia 'periódica', templo y minas de oro), Sesebi (ciudad-templo de Akenatón, 270×200 m), Kawa (templos de Amenhotep III a Tutankamón), Dokki Gel/Pnubs (Q16964645, ciudad-templo egipcia junto a Kerma), Serabit el-Jadim (minas y templo de Hathor, reconstruido en el Imperio Nuevo sin faraones nombrados en la fuente), Gurob, Bubastis, Coptos, Asiut, Edfu, Hieracómpolis, El Kab, Uadi Hammamat, Gebel el-Silsila, oasis de Dajla/Jariyá y Marsa Matruh. Descartados por estar dentro del punto de Tebas: Karnak, Luxor, Deir el-Bahari, Malkata, Kom el-Hettan, Deir el-Medina, Valle de los Reyes. Fuera de zona: Napata/Gebel Barkal (lat 18.53), Mersa Gawasis (lon 34.0), Punt (Wikidata 9.5N 48E; por eso no se propone la relación Egipto–Punt de la expedición de Hatshepsut hacia 1470 a.C.), Megiddo 1457 y Kadesh 1274 (fuera de zona y de ventana). Fuera de ventana: reino de Kerma (Q1739282, fin -1500 con Tutmosis I), Zawyet Umm el-Rakham (fortaleza de Ramsés II posterior), Libu (primera mención bajo Ramsés II, y guerra de Merenptah 1208). Sin coordenadas en Wikidata: periodo de Amarna (Q455151) y Mashauash (Q1191083) — este último se propone igualmente como entidad, con la advertencia de que el visor tendrá que ubicarlo a mano; también Tehenu (Q1476091) sin coordenadas ni artículo, descartado. No hay ítems de Wikidata para la expedición a Punt ni para las campañas nubias de Tutmosis III, Amenhotep III, Akenatón o Seti I (Irem, año 8), así que no se proponen como eventos; tampoco existe entidad para la Nubia bajo dominio egipcio (es provincia del Imperio Nuevo), por lo que no se propone relación de conflicto Egipto–Nubia. Relación Egipto–Arzawa (petición matrimonial de Amenhotep III, EA 31-32) descartada por peso 1.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
