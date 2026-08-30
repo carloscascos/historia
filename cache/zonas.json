@@ -1717,5 +1717,31 @@
   ],
   "nota": "Zona = sur de Siberia (Altái, cuenca de Minusinsk/alto Yeniséi, Tuvá, Kuzbass, Ob medio) y franja norte de Mongolia occidental. Revisado: Wikipedia en/es y Wikidata para Karasuk, Andrónovo (Fedorovo), Sagsai, Mönkhkhairkhan, Chemurchek, Okunev, Seima-Turbino, Irmen, piedras de ciervo/khirigsuur, Ulaanzuukh. Propuestos: Karasuk (1500–800 a.C., núcleo en Minusinsk) y Sagsai (1500–1000 a.C., Altái mongol), más la relación de sucesión Andrónovo→Karasuk. AVISO: ninguno de los dos QIDs tiene coordenadas P625 en Wikidata (Karasuk solo P706 = montes Sayán, Q5535232, que sí cae en la zona; Sagsai no tiene ni fechas ni país en Wikidata, las fechas vienen solo de Wikipedia en) — si el visor exige P625, ambas entidades no podrán ubicarse automáticamente. Descartados por estar fuera de la ventana: Okunev (~2500–1800), Mönkhkhairkhan (1800–1600), Chemurchek (2500–1700), Seima-Turbino (cronología revisada 2200–1900), Irmen (siglos IX–VIII a.C. según Wikipedia, aunque otras fuentes lo inician en el XIII), complejo piedras de ciervo–khirigsuur (1200–700 a.C., fechas más antiguas ~1300 a.C.; sin item propio de 'cultura' en Wikidata, solo Q176824 'deer stone' y Q4219542 'khirigsuur' como tipos de monumento). Descartada la relación Karasuk→Shang (cuchillos de bronce imitados en Anyang) por datarse en los siglos XIII–XI a.C., después del cierre de la ventana; Ulaanzuukh-Tevsh (transmisión del carro a Shang) queda al este de 102°E. No se han hallado ciudades ni eventos datados con QID y coordenadas en la zona para esta ventana.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "c7e697aa07",
+  "bbox": [
+   79.33,
+   32.5,
+   102.16,
+   46.25
+  ],
+  "corte": "-1350",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 1,
+  "descartados": [
+   {
+    "nombre": "Cultura de Tianshanbeilu (Hami)",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Nuomuhong (cuenca del Qaidam)",
+    "motivo": "QID no existe en Wikidata"
+   }
+  ],
+  "nota": "Zona = Xinjiang (Tarim, Turfán, Hami, Dzungaria, Ili/Bortala), extremo oeste del corredor de Hexi, Qaidam y norte del Tíbet; sin estados ni ciudades en 1475–1275 a.C., solo culturas arqueológicas. AVISOS DE DATOS: (1) Tianshanbeilu Q11107150 NO tiene coordenadas (P625), ni país (P17) ni localización (P131) en Wikidata; el visor no podrá situarlo a partir de Wikidata (el cementerio está en Hami, ~42.8N 93.5E, dentro de la zona). Lo propongo igualmente porque es el yacimiento clave de la zona en la ventana (fases 2–3 = 1660–1408 y 1385–1256 cal BC); si el visor exige P625, descartarlo. (2) Nuomuhong: Q1326128 sí tiene coordenadas (35.9N 97.22E) y solo enlace a de-wiki; la cronología DESCUADRA entre fuentes: de-wiki dice 1350–950 a.C.; Quaternary International 2016 dice 3400–2450/2500 cal BP (≈1450–500 a.C.); Sci Rep 2024 da ocupación continua del Qaidam 3600–2500 cal BP. He usado ≈-1450/-550; en cualquiera de las tres versiones cae en la ventana. (3) Xiaohe: datación calibrada 2070–1450 a.C. (PLoS ONE 2013); solo solapa los primeros ~25 años de la ventana, y en el corte 1350 a.C. ya no estaba en uso; Wikipedia en/es dan 2000–1000 sin datación que lo respalde. He usado Q179220 (cementerio, con coordenadas) porque la cultura Qäwrighul Q84152598 no tiene coordenadas y se data 2100–1500 a.C. DESCARTADOS: Siba (Q33204333, 1900–1500 a.C., termina antes de la ventana; sin coordenadas); Qijia (2200–1600); Chemurchek (Q18573560, 2750–1900, coordenadas dentro pero fuera de ventana); Kayue (Q1737460: Wikipedia/Wikidata 900–600 a.C., pero literatura radiocarbónica 3600–2600 cal BP ≈1600–650 a.C.; descuadre no resuelto, sin coordenadas, y su núcleo (Ledu, Minhe) está al este de 102.16); Xindian (Q2598279, 1500–1000 a.C., pero en el río Tao ~103.8E, fuera de zona; sin coordenadas); Adunqiaolu (Q133306585, 44.99N 80.56E, asentamiento Andrónovo-Fedorovo datado 1616–1282 cal BC): peso 1, poblado pastoril pequeño, ya cubierto por la entidad Andrónovo existente; Subeixi (Turfán; una datación C14 de fase temprana 1422–1227 a.C. según Festa 2017, pero es cultura del Hierro y peso 1); Xintala y Zaghunluq (sin dataciones firmes en la ventana); Xiabandi (1500–1300 a.C., pero en Tashkurgan ~75E, fuera de zona). RELACIONES: no propongo ninguna; las fuentes describen a Tianshanbeilu como intermediario entre Hexi y 'las estepas euroasiáticas' sin nombrar a Andrónovo, así que un vínculo Andrónovo→Tianshanbeilu sería HIPÓTESIS SIN VERIFICAR. No hay nada documentado en la ventana para el norte del Tíbet ni para el oeste de Mongolia dentro de la zona.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
