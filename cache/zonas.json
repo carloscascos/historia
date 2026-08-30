@@ -3339,5 +3339,27 @@
   ],
   "nota": "Zona = Xinjiang, Dzungaria, corredor de Hexi occidental, Qinghai, norte del Tíbet y Altái mongol meridional. No hay estados ni ciudades con QID en la ventana; solo culturas arqueológicas. ADVERTENCIA de coordenadas: Tianshanbeilu (Q11107150), Xindian (Q2598279) y Karasuk (Q129282) NO tienen P625 en Wikidata; se proponen porque el visor ya admite entidades sin coordenadas (nurágica, védica). Xindian cae a caballo del borde este (su núcleo del río Tao, ~103,9°E, queda fuera; la parte del Huangshui, dentro) y Karasuk solo toca la zona por el Altái/Tian Shan; el visor deberá decidir si los ubica aquí. Descartados: Kayue (Q1737460; Wikipedia en/zh lo data 900–600 a.C., fuera de ventana, aunque otras periodizaciones lo remontan a 1600 a.C. — HIPÓTESIS SIN VERIFICAR en Wikipedia); Xiaohe/momias del Tarim (Q179220/Q2002185; la ocupación datada por radiocarbono es 2100–1500 a.C., Wikipedia da un genérico 2000–1000 sin sustentar la fase tardía); ciervos de piedra y khirigsuur (Q176824, 1400–700 a.C., pero las coordenadas de Wikidata están a 47,7°N, fuera de la zona); Siwa (Q285605, 1350–650 a.C., sureste de Gansu ~104–106°E, fuera); Shajing (Q2276473, 103,09°E, fuera y posterior); Siba (Q33204333, termina 1500 a.C.); Begazy-Dandybai (Q814276, Kazajistán central ~48°N, fuera); Chawuhu (Q120266397, sin artículo, coordenadas ni fechas en Wikidata; ~1000–400 a.C.); Subeshi (Q123144527, Edad del Hierro); Chemurchek (anterior a la ventana). No se propone relación Andrónovo→Shang por el carro: el artículo Chariot de Wikipedia data la primera evidencia china en Wu Ding (c. 1250 a.C.) pero no documenta la ruta de transmisión. Nuomuhong y Yanbulaq (Q1326128, Q2599315, Wikidata en zona) no existen en Wikipedia es; Yanbulaq solo solapa el último siglo de la ventana.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "80f4194817",
+  "bbox": [
+   102.16,
+   46.25,
+   125.0,
+   60.0
+  ],
+  "corte": "-1200",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 0,
+  "descartados": [
+   {
+    "nombre": "Cultura de las tumbas de losa",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = Transbaikalia (Buriatia, Zabaikalie), norte-este de Mongolia, Hulunbuir y extremo norte de Manchuria. Mirado: cultura de las tumbas de losa (única propuesta; Wikidata la fecha 1300–300 a.C. con inicio en Transbaikalia, P276 = Mongolia + Transbaikalia; no tiene P625, igual que Cultura nurágica y Bronce final atlántico ya en el visor, así que asumo que el visor la sitúa por localización). Descartados: piedras de ciervo / cultura de los deer stones (Q176824, 1400–700 a.C.) porque su coordenada Wikidata cae en 47.75N 101.37E, 0.8° al oeste del borde de la zona, y su núcleo es Mongolia central-occidental; khirigsuur (Q4219542) es un tipo de túmulo sin fechas ni coordenadas en Wikidata, no una entidad; cultura de Glazkovo (Q1973554) termina hacia 1200 a.C. según Wikipedia en (2200–1200) y hacia 2400 a.C. según Wikidata (3200–2400): descuadre entre fuentes, en cualquier caso se agota al inicio de la ventana y no llega al umbral; cultura de Ulaanzuukh (Q118898954, 1450–1000 a.C.) cae dentro de la ventana pero su núcleo (Gobi, Sükhbaatar, Dornogovi, Ömnögovi) queda al sur del paralelo 46.25 y no tiene coordenadas ni localización en Wikidata, y a escala media sería peso 1; cultura de Baijinbao (Q803759) está fuera por fecha (h. 900 a.C.) y por latitud (45.49N); Karasuk y Xiajiadian inferior/superior quedan fuera de la zona. No propongo relación de transmisión tumbas de losa/Ulaanzuukh → Shang (carros, puñales con pomo animal): Wikipedia lo formula como 'may have contributed' y lo atribuye en origen a los deer stones, que están fuera de la zona; HIPÓTESIS SIN VERIFICAR, no la incluyo. No hay ciudades ni eventos datados en la zona y ventana.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
