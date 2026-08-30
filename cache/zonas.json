@@ -1076,5 +1076,31 @@
   ],
   "nota": "Zona = Golfo Pérsico, sur de Mesopotamia (lat ≤ 32.5), Irán meridional, Arabia, sur del Levante y valle del Indo. Verificado en Wikidata (P625/P571/P576) y leídos en/es.wikipedia. ADVERTENCIA: Q723587 (Ur III) no tiene coordenadas en Wikidata, igual que la entidad ya existente Q2345840; su capital Ur (Q5699, 30.96N 46.10E) está dentro de la zona; si el visor exige P625, descartar y usar Q1748182 (Renacimiento sumerio, tampoco con coordenadas). DESCARTADOS por caer fuera de la zona: Imperio acadio Q4461035 (P625 33.1N), Guti Q549531 (37N), Kish y Babilonia (32.54N, límite). DESCARTADOS por no alcanzar peso 3 al nivel lejano (peso 2): Primera dinastía de Isin Q55610176 (2017–1794, sin coordenadas; Isin y Larsa ya están como ciudades), rivalidad Isin–Larsa, Eridu Q210065, Shuruppak Q392725, Lothal Q9443, Ganeriwala Q3095220, Kalibangan Q1722226, Shahr-i Sokhta Q1025825, Jiroft Q1149433, Umm an-Nar Q18600648, Kulli Q1755265, Cementerio H Q2364797, Mersa Gawasis Q1536350, Jericó y Ascalón (BM IIA, marginales en la ventana), dinastías Simashki Q3396376 y Sukkalmah Q16611086 (ya cubiertas por Elam), conquista de Lagash por Ur-Nammu (~2110). Magan Q1429914 y Meluhha Q483421 carecen de coordenadas en Wikidata y la relación comercial Ur III–Magan/Dilmún/Meluhha es peso 2, no propuesta. Amorreos Q203507: sin coordenadas y con núcleo fuera de la zona (Siria), no propuestos. El saqueo de Ur de 2004 a.C. no tiene ítem propio en Wikidata (buscado como 'Fall of Ur', 'Sack of Ur', 'Elamite conquest of Ur'); se representa como relación de conflicto. Cronología media en todas las fechas.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "03847729af",
+  "bbox": [
+   -12.0,
+   32.5,
+   33.67,
+   60.0
+  ],
+  "corte": "-2000",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 1,
+  "descartados": [
+   {
+    "nombre": "Cnosos",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Cultura de Únětice",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Se ha revisado Egeo, Anatolia occidental, Chipre occidental, Europa central y atlántica, Italia e islas. Solo tres objetos alcanzan peso 3 en la ventana -2250/-1800: Cnosos (primer palacio c. 1900 a.C., capital minoica), la cultura de Únětice (equiparable a El Argar o Andrónovo, ya admitidas en el visor a esta escala) y la relación comercial minoico-egipcia del Reino Medio (cerámica de Kamares en Lisht/Kahun). Descartados por quedar en peso ≤2: Troya (Troya III–V, c. 2300–1750 a.C., descrita como más pequeña y pobre que Troya II; entra en el corte de 1200 a.C.), Festos y Malia (palacios secundarios), Kolonna de Egina, cultura de Wessex (Q719139), Polada, Bonnanaro, Bronce de La Mancha/motillas, túmulos armoricanos, Cementerio de Tarxien en Malta. Stonehenge es monumento y no asentamiento, no encaja en los tipos admitidos. Fuera de la zona por longitud (>33,67 E): Kanesh/karum asirio, Hattusa, Alaca Höyük, Biblos, Ugarit; fuera por latitud (<32,5 N): todo Egipto. Fuera de ventana: Reino Antiguo hitita (desde c. 1650), erupción de Tera (c. 1600), disco de Nebra (c. 1600). El evento climático de 4,2 ka (c. 2200 a.C.) carece de coordenadas en Wikidata y no se propone. La ficha del Met Museum de una jarra Kamares del Reino Medio devolvió HTTP 429 y no se ha leído, por lo que no se cita.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
