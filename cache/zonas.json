@@ -3871,5 +3871,31 @@
   "descartados": [],
   "nota": "La zona cubre el mar Arábigo, la India peninsular al sur del Decán, Kerala/Tamil Nadu y el norte de Sri Lanka. Lo único documentado dentro de -2250/-1800 es el Neolítico del sur de la India (tradición de los montículos de ceniza) en Karnataka y Andhra: Fuller, Boivin y Korisettar sitúan su Fase II justamente en 2200-1800 a.C., con datación AMS. DESCARTADOS: (a) la cultura misma —«Neolithic ashmounds» (Q25348565) y «Neolithic India» (Q131439638) no tienen coordenadas en Wikidata, y una consulta SPARQL sobre culturas arqueológicas con coordenadas en la caza no devuelve nada, así que la cultura se representa aquí por sus yacimientos; (b) Brahmagiri (Q4955533), cuyo Neolítico Wheeler databa en el I milenio a.C. y cuya ocupación anterior solo se describe como «al menos II milenio a.C.», sin datación fina en la ventana; (c) Tekkalakote (Q429171), con cabañas datadas en 1780-1540 a.C., posterior al corte; (d) Adichanallur (Tamil Nadu), cuya datación por radiocarbono aceptada judicialmente en 2019 es 905-696 a.C. —la cifra de 2500-2200 a.C. que circula no está respaldada; (e) Kudakkallu Parambu (Kerala), que la ASI fecha «hacia 2000 a.C.» pero sin datación radiocarbónica publicada y en contra del encuadre habitual de los megalitos de Kerala en el I milenio a.C.; (f) Sri Lanka, cuya Edad del Hierro protohistórica (Anuradhapura, Sigiriya) empieza hacia 1000-800 a.C.; (g) las culturas calcolíticas Malwa (1600-1300) y Jorwe (1400-700) de Maharashtra, fuera de ventana y además al norte de 18,75° N; (h) Magan / Umm an-Nar / Wadi Suq, que quedan fuera por latitud (Omán y EAU, por encima de 22° N). Una limitación real: las dataciones firmes de la ventana proceden casi todas del complejo Sanganakallu-Kupgal, que está muy bien excavado; Maski y Piklihal se apoyan en cronologías más gruesas («II milenio a.C.») y su presencia exacta en 2250-1800 a.C. es probable pero no está fijada con la misma precisión.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "0abd0c7c8f",
+  "bbox": [
+   56.5,
+   18.75,
+   79.33,
+   32.5
+  ],
+  "corte": "-2000",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 5,
+  "descartados": [
+   {
+    "nombre": "Lothal",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Kalibangan",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona dominada por la civilización del Indo (ya en el visor) más el borde oriental irania. Añadidas cinco ciudades con QID y coordenadas dentro del recuadro: Ganweriwala y Lothal a peso 3 (gran centro urbano y puerto principal), Kalibangan, Sutkagan Dor y Nausharo a peso 2. Añadidas dos relaciones comerciales entre entidades ya presentes. DESCARTADOS: Shahr-e Sukhteh (Q1032128, 30.6N/61.3E, dentro de la zona) porque su fase urbana termina hacia 2300 a.C., antes de que se abra la ventana; solo hay una reocupación marginal del «Edificio Quemado» en 2100-2000 a.C., insuficiente para peso 2. Konar Sandal / Jiroft: apogeo a mediados del III milenio, con hiato en la ventana. Mehrgarh (Q242148, dentro de la zona): ya estaba en gran parte abandonado en favor de Nausharo antes de 2250 a.C. Pirak (Q4363252): la ocupación arranca en 1800 a.C., justo al cerrarse la ventana. Kuntasi y Rojdi (Gujarat): ocupados en la ventana pero son asentamientos secundarios, peso 1, por debajo del umbral. Shortugai (37.3N/69.5E) y el complejo de Bactria-Margiana / Gonur Depe (38.2N/62.0E) quedan al norte del límite de 32.5° de latitud, fuera de la zona. Magan (Q1429914) y Dilmun caen al oeste/suroeste del recuadro y además Magan carece de coordenadas en Wikidata. NO PROPUESTOS POR FALTA DE COORDENADAS EN WIKIDATA, pese a encajar en la ventana y la zona: cultura de Kulli (Q1755265, Baluchistán meridional, ca. 2500-2000 a.C.) y cultura del Cementerio H (Q2364797, Punjab, desde ca. 1900 a.C.) — la regla 2 exige coordenadas y ninguno de los dos ítems tiene P625. Tampoco se propone el evento 4.2 ka (Q1291515), sequía global fechada en el siglo XXII a.C. y asociada al declive del Indo: es un evento climático sin coordenadas, no un hecho localizable. Queda sin resolver, y se deja dicho: no he encontrado un ítem de Wikidata con coordenadas que represente el colapso urbano del Indo como evento datado, así que ese proceso —el hecho más importante de la zona en esta ventana— no aparece como objeto.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
