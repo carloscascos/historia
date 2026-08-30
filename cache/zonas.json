@@ -732,5 +732,27 @@
   ],
   "nota": "Zona: mar Cantábrico y su orla (norte de Galicia, Asturias, Cantabria, País Vasco costero, Landas y Médoc). En 1800–1475 a.C. no hay en ella ninguna ciudad, estado ni cultura arqueológica con nombre e ítem de Wikidata; el registro es de cuevas sepulcrales, cistas y hallazgos aislados de bronce, y casi ningún poblado excavado. Se consultó Wikipedia (es/en/fr/eu), Wikidata (SPARQL por caja de coordenadas + periodo Edad del Bronce, y por descripción 'bronce/bronze'), Artehistoria, Kobie, Trabajos de Prehistoria, Persée y yacimientos.asturias.es. Descartado: (1) Ídolo de Peña Tú (Q2081919, Llanes): fechado en Calcolítico/inicio del Bronce Antiguo (III milenio); es un monumento, no un asentamiento, y su cronología queda antes de la ventana. (2) Minas de cobre de Texeo/El Aramo (Riosa) y El Milagro (Onís), explotadas c. 2500–1500 a.C.: sin ítem propio en Wikidata (solo Sierra del Aramo, Q9077169, que es la montaña); sería el objeto más relevante de la zona si existiera QID. (3) Hachas 'medoquinas' y depósitos del Médoc: 57 depósitos, pero atribuidos al Bronce medio 2 (c. 1450–1350), después de la ventana, y sin ítem propio en Wikidata (solo la región, Q1435049). (4) Poblados vascos etiquetados 'Bronce' en Wikidata: Peñas de Oro (s. IX a.C.), Belaku (s. IV a.C.), Babio y Epertegañeta (sin fechas publicadas dentro de la ventana). (5) Cuencos de Axtroki (Q428188): Bronce Final. (6) Cuevas de Santimamiñe, Kobaederra y Marizulo: restos 'de la Edad del Bronce' sin datar. (7) Otras cistas de Aralar con QID (Atxurbi: C14 2188±107 cal BC, anterior; Mariola, Langagorri, Onyi, Erroizpe, Abilleta, Irumugarrieta II, Andatza III, Urteagako Zabala: sin datación verificada); la cista de Arraztarangaña (3515±35 BP, c. 1840 cal BC) no tiene QID localizable. (8) Necrópolis del Agro da Nogueira (Toques, A Coruña), Bronce Inicial: sin QID. (9) Cueva del Copillo (Noja) y enterramiento de monte Mijedo: sin QID. Los dos yacimientos aceptados se han codificado como tipo 'ciudad' por ser el único tipo admitido para sitios; ambos son lugares funerarios, no poblados. Peso 1 para ambos: solo visibles en vista cercana.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "33a9c1f7d3",
+  "bbox": [
+   -10.19,
+   42.87,
+   -0.62,
+   45.19
+  ],
+  "corte": "-1200",
+  "lod": 1,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 0,
+  "descartados": [
+   {
+    "nombre": "Bronce Final Atlántico",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona = Golfo de Vizcaya: norte de Galicia, Asturias, Cantabria, País Vasco, norte de Navarra y la franja litoral de Aquitania (Médoc, Landas, Bayona-Biarritz; Burdeos, Mont-de-Marsan, Pau y Dordoña quedan fuera del rectángulo por longitud). En la ventana -1275/-1000 (Bronce Final I-II) no hay en esta zona ninguna ciudad, estado ni evento datado con artículo de Wikidata. Lo único que llega al umbral es el Bronce Final Atlántico (Q2629081, 1300-700 a.C.), del que la cornisa cantábrica es periferia: De Blas cuenta apenas una quincena de hallazgos metálicos del Bronce Final en toda Cantabria y un centenar largo en Asturias, todos sin QID propio (hachas de talón de Salcedo, Peña Cabarga y Escobedo de Camargo atribuidas al Bronce Final II; depósito de 17 hachas de Langreo, fines del II milenio). ADVERTENCIA: Q2629081 no tiene coordenadas (P625 vacío); su P276 incluye Galicia (Q3908), que cae parcialmente en la zona. Descartados por fecha: depósito de Gamonedo (Onís) — Bronce Antiguo/Medio, mediados del II milenio; minas del Aramo (Riosa) — c. 2500-1500 a.C., sin QID; caldero de Cabárceno — 900-650 a.C.; Chao Samartín — c. 800 a.C.; Campa Torres — s. VI a.C.; Punta de Muros (Arteixo) — Bronce Final tardío, sin QID; depósito de Hourtin (Gironda) — s. X a.C., sin QID; Grotte du Phare (Biarritz) — Bronce Final IIIa/IIIb, sin QID; Haltzerreka (Gipuzkoa) — sin QID. Descartados por falta de documentación en ventana: cuevas de Santimamiñe (Q2993079), Lumentxa (Q8464914), Arenaza (Q12253903) y complejo de La Garma (Q8348804): sus artículos en Wikipedia no describen niveles ni dataciones del Bronce Final. Los yacimientos aquitanos de Bronze final I-II citados en la síntesis cerámica (Meschers, Anglade, Cubzac, L'Isle-Saint-Georges, Mont-de-Marsan, La Roque-Saint-Christophe) están todos fuera del rectángulo por latitud o longitud. No se proponen relaciones: no hay dos entidades en la zona entre las que trazarlas.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
