@@ -3983,5 +3983,39 @@
   ],
   "nota": "Zona = Islas Británicas, Irlanda, Francia, Benelux, Alemania occidental, Suiza y borde alpino norte. Descartes explícitos por coordenadas de Wikidata fuera de la caja: cultura de Polada, palafitos del Garda, Ledro (45.88N) y Fiavè (46.00N) quedan al sur de 46.25N; cultura de Únětice (núcleo Bohemia-Sajonia) y el disco de Nebra (11.52E) quedan al este de 10.84E — Únětice roza el borde occidental pero su centro de gravedad está fuera, así que no la propongo. Descartes por ventana temporal: minas de Great Orme (activas desde ~1700 a.C.) y barco de Dover (1575-1520 a.C.) son posteriores; el Arquero de Amesbury (~2300 a.C.) es anterior al inicio de la ventana (-2250) y por eso no lo incluyo pese a su importancia. Cultura de Hilversum (Q278382, desde ~1870 a.C.) y de Elp (Q481062, desde ~1100 a.C. según Wikidata) quedan fuera o al borde y sin peso suficiente. AVISO DE DATO SUCIO: Wikidata da a la cultura del Ródano (Q116507925) fechas de inicio y fin en años POSITIVOS (2200-1500 d.C.); el artículo de Wikipedia dice claramente a.C. Es un error en Wikidata, no una duda cronológica; las fechas que doy son las de Wikipedia. Segunda salvedad: ninguna de las tres culturas propuestas tiene coordenadas (P625) en Wikidata; las incluyo porque el visor ya muestra entidades sin coordenadas en esta misma situación (Campaniforme Q470867, Nurágica Q1421436, Los Millares Q5794482), pero si el visor exige P625 para ubicarlas, estas tres no se podrán colocar. Stonehenge (Q39671) está dentro de la zona y su fase 3 IV (2280-1930 a.C.) cae en la ventana, pero no lo propongo como objeto propio porque es un monumento, no ciudad ni entidad ni hecho datado en la ventana: su fundación es de ~3000 a.C. Sin batallas: no hay ningún conflicto datado documentado en esta zona y ventana.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "1d2b59b73b",
+  "bbox": [
+   10.84,
+   46.25,
+   33.67,
+   60.0
+  ],
+  "corte": "-2000",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 3,
+  "descartados": [
+   {
+    "nombre": "Cultura de Únětice",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Trzciniec",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Mierzanowice",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Fatyanovo-Balanovo",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "La zona (Alemania oriental, Chequia, Polonia, Bálticos, Bielorrusia, oeste de Rusia; 46,25–60 °N) no tiene estados ni ciudades en esta ventana: es territorio de culturas arqueológicas prehistóricas, sin escritura y sin urbanismo. Ninguno de los objetos ya presentes en el visor cae dentro de este recuadro (Egipto, Mesopotamia e Iberia quedan todos fuera), así que los siete propuestos son nuevos. DESCARTADOS con motivo: (a) Ruta del Ámbar (Q239574) — su punto de Wikidata cae dentro del recuadro, pero la propia Wikipedia sitúa un DESCENSO del comercio de ámbar hacia el 2000 a.C. y solo documenta movimiento sostenido desde el siglo XVI a.C.; no está documentada como ruta activa en la ventana, así que no se propone pese a ser tentadora. (b) Disco celeste de Nebra (Q157094, 51,28 N / 11,52 E, dentro del recuadro) — fabricado hacia 1800 a.C., justo en el borde final de la ventana, y con una controversia de datación abierta (Gebhard y Krause 2020 propusieron edad del Hierro, rebatido por Pernicka); además es un objeto único, no un hecho de escala continental. (c) Edad del Bronce nórdica (Q605601) — Wikidata la inicia en -1800, el límite mismo de la ventana, y su núcleo (Dinamarca, ~10 °E) queda al oeste del recuadro. (d) Fenómeno Seima-Turbino (Q2409967, c. 2150–1600 a.C.) — encaja en la ventana, pero su centro de gravedad está muy al este de 33,67 °E; solo hallazgos sueltos (siete en Estonia, cinco en Finlandia, uno en Lituania) entran en el recuadro. (e) Túmulo de Leubingen (Q1483247, 51,19 N / 11,17 E), Nitra (Q2153777), Iwno (Q11750975) y Strzyżów (Q4442553) — dentro de zona y ventana, pero son un enterramiento aislado y culturas regionales de detalle: peso 1, por debajo del umbral de vista media. LIMITACIÓN A SEÑALAR: ninguna de las cuatro culturas propuestas tiene coordenadas (P625) en Wikidata — son polígonos, no puntos. Si el visor exige P625 para situar el objeto, las cuatro fallarán; asumo que las trata como los objetos-cultura que ya lleva dentro (Andrónovo, Campaniforme, Los Millares), que tampoco son puntos. Bruszczewo y los descartados sí tienen coordenadas verificadas. Las fechas de Fatyanovo-Balanovo (hasta -2050) solo solapan el primer tramo de la ventana: en el corte de 2000 a.C. la cultura está extinguiéndose, no en su apogeo.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
