@@ -2865,5 +2865,27 @@
   ],
   "nota": "Zona = sur de Siberia (Altái, cuenca de Minusinsk, Tuvá, alto Irtysh/Obi) y Mongolia occidental al norte de 46,25°. Sin ciudades ni batallas documentadas en la ventana; todo lo relevante son culturas arqueológicas. AVISOS DE DATOS: (1) Seima-Turbino, Munkhkhairkhan y Elunino NO tienen coordenadas (P625) en Wikidata; se proponen porque las entidades ya cargadas en el visor tampoco parecen depender de coordenadas, pero si el visor las exige habrá que descartarlas. Krotovo sí tiene P625 (53,53N 82,45E, dentro de la zona). (2) La datación de Seima-Turbino está en disputa: en.wikipedia da 2200–1900 a.C., ru.wikipedia 2150–1600 a.C., Wikidata 2300–1700 a.C.; con la datación corta quedaría fuera de la ventana. He usado 2200–1700 para que refleje el solape con las dataciones largas; es una elección, no un consenso. (3) Elunino termina hacia 1700 a.C.: solo solapa un siglo con la ventana. (4) La expansión Andronovo-Fiódorovo hacia el Yeniséi (1850–1450 a.C.) es el proceso principal de la zona en esta ventana, pero Andrónovo ya está en el visor; la relación con Krotovo la documenta ru.wikipedia sin fecha precisa ('frontera III–II milenio'), la ventana -1800/-1500 es aproximada. DESCARTADOS: cultura de Okunev (Q2632835, 2600/2700–1800 a.C., Minusinsk) termina justo al inicio de la ventana, solo su fase Razliv 'después de 1800' entraría — sin coords en Wikidata; Chemurchek (Q18573560, 2750–1900 a.C.) anterior a la ventana; Karakol (Q4213912, 'II milenio a.C.', Altái, coords dentro de la zona) datación demasiado vaga y relevancia local → peso 1, bajo el umbral; Samus (Q2219081, 'c. 2000 a.C.', sin coords, sin fechas claras); Sagsai (1500–1000 a.C.) y Karasuk (Q129282, 1500–800 a.C.) empiezan al final de la ventana, solapan 25 años, van al corte siguiente; Fedorovka (Q129764211) es subfase de Andrónovo ya presente. Yacimientos Seima-Turbino de Rostovka (Omsk, ~73E) y Sopka-2 (Baraba, ~78E) caen fuera de la zona por el oeste.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "a662a15f44",
+  "bbox": [
+   10.84,
+   5.0,
+   33.67,
+   18.75
+  ],
+  "corte": "-1200",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 0,
+  "descartados": [
+   {
+    "nombre": "Napata",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona = Sahel central, Sudán (Nilo hasta la 4ª catarata), Etiopía/Eritrea occidental y cuenca del Chad. Revisado: (1) Napata/Gebel Barkal: único asentamiento del Imperio Nuevo en Nubia cuya coordenada Wikidata cae dentro de la zona (18.53N, 31.82E); Kawa, Sesebi, Soleb y Amara West quedan al norte de lat 18.75. Ocupación egipcia documentada hasta la retirada hacia 1070 a.C.; la continuidad 1070–1000 a.C. es poco documentada, por eso se deja «hasta -1000» como límite de ventana y no como dato. (2) Reino de Kush (Q241790): descartado por dos motivos — su coordenada Wikidata (17.18N, 33.83E) queda fuera de la zona por 0.16° de longitud, y su existencia como estado en la ventana no está documentada (es.wikipedia da c. 780 a.C.; el 1070 a.C. de en.wikipedia/Wikidata es una fecha convencional ligada a la retirada egipcia, no a un estado atestiguado). (3) Punt (Q282350): hay expedición documentada bajo Ramsés III (Papiro Harris I, c. 1150 a.C.), pero la coordenada Wikidata está en Somalia (9.5N, 48E), fuera de la zona; no se propone ni la relación comercial Egipto–Punt. (4) Cultura Gajiganna (cuenca del Chad, c. 1800–800 a.C.): sin QID en Wikidata, descartada; además sería peso 1. (5) Cultura Nok: sus yacimientos están al oeste de lon 10.84. (6) Campañas nubias de Merenptah (c. 1208 a.C.) e Irem de Ramsés II: la primera se sitúa en la Baja Nubia (fuera de zona) y la segunda carece de localización y QID. Nada más en la zona alcanza peso 2 en esta ventana; el pre-axumita y Meroe son posteriores a 1000 a.C.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
