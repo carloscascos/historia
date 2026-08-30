@@ -1548,5 +1548,22 @@
   ],
   "nota": "La zona cubre la India peninsular al sur de ~18.75°N, Sri Lanka, Maldivas y mar Arábigo abierto; no hay estados, ciudades propiamente dichas ni batallas documentadas en -1475/-1275. Lo único que alcanza vista media son dos horizontes arqueológicos y su yacimiento cabecera. Advertencias: (1) Q48728694 (Jorwe) y Q25348565 (túmulos de ceniza) NO tienen coordenadas P625 en Wikidata — mismo caso que la cultura nurágica Q1421436 ya en el visor, por lo que se asume que el visor admite culturas sin punto; si no es así, descartarlos. (2) Q25348565 describe los 'túmulos de ceniza' como depósitos, no como cultura; no existe ítem Wikidata para 'Southern Neolithic' ni 'Deccan Chalcolithic', así que es el único QID disponible para ese horizonte. (3) Las fechas de Inamgaon varían por fuente: Wikipedia da 1800-1200 a.C.; Dhavalikar/Sankalia dan Malwa 1600-1400, Jorwe temprano 1400-1000, Jorwe tardío 1000-700; Penn Museum da Malwa 1700-1400 y Jorwe tardío 1100-700. Se ha usado -1700/-700. Descartados: cultura de Malwa (Q48728691, 1600-1300 a.C.) porque su núcleo (Malwa, MP, ~22-23°N) queda fuera de la zona aunque su fase final llegue a Inamgaon; Daimabad (19.51°N) fuera de la zona por 0.76°; Hallur y Sanganakallu como ciudades individuales (peso 1; el primer hierro de Hallur, 1200-1000 a.C., queda fuera de la ventana); relación comercio Jorwe↔Neolítico del sur (oro y marfil de Karnataka, según Wikipedia) por ser peso 1; Sri Lanka (escoria de cobre en Mantai c. 1800 a.C., Balangoda mesolítico; la supuesta canela en Egipto hacia 1500 a.C. es una inferencia sin QID ni evidencia firme); Maldivas y costa omaní sin nada documentado en la ventana dentro del recuadro.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "ce62d0dcdf",
+  "bbox": [
+   33.67,
+   5.0,
+   56.5,
+   18.75
+  ],
+  "corte": "-1350",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 2,
+  "descartados": [],
+  "nota": "Zona = Cuerno de África (Eritrea, Etiopía, Yibuti, Somalia), este de Sudán, Yemen, Asir y Dhofar. Revisado en Wikipedia (en/es/de), Springer (estados del norte del Cuerno), Radiocarbon (Ma'layba y Sabir) y museo de El Cairo. Solo Punt alcanza el umbral: Wikidata Q282350 sitúa el ítem en 9.5N 48E (dentro de la zona) con ventana -2400/-1069, aunque la localización real es discutida y podría caer fuera del recuadro (Eritrea/Sudán) o al otro lado del mar Rojo (Yemen). La fecha del inicio de la relación es la del año 9 de Hatshepsut (c. 1471 a.C. según en.wikipedia; cronología baja). Descartados: (1) evento 'Expedición de Hatshepsut a Punt' — no existe ítem de Wikidata en en/de/fr/es, y su punto de llegada no está localizado; (2) cultura Sabir (Tihama yemení, Sabir y Ma'layba, 14C 1900-800 cal BC, primeros centros urbanos costeros a mediados del II milenio, cerámica con paralelos sudaneses) — sin ítem de Wikidata en ningún idioma probado, no se puede proponer aunque merecería peso 2; (3) Grupo de Jebel Mokram (Kassala, c. 1800-800 a.C., Q86752182) — ítem sin coordenadas y peso 1; Mahal Teglinos (Q110924115, 15.40N 36.43E) es su yacimiento pero peso 1; (4) Wetenet (Q138320465) — ítem sin coordenadas ni artículos, ligado al Gash Group que termina c. 1800 a.C., fuera de ventana; (5) Shi'b Munayder (Hadramaut, c. 1500-1420 a.C.) — sin QID, peso 1; (6) altiplano etíope-eritreo (Sembel, Matara pre-aksumita) — ocupación compleja documentada solo desde c. 800 a.C. Descuadre entre fuentes: de.wikipedia dice que Tutmosis III 'supuestamente conquistó Punt en su año 1', mientras el artículo de Tutmosis III en en.wikipedia no menciona Punt en absoluto y el de Punt solo habla de continuidad comercial; se ha mantenido la versión comercial, sin proponer conflicto.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
