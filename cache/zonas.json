@@ -428,5 +428,31 @@
   "descartados": [],
   "nota": "Zona = norte de África: Egipto hasta el Delta y el Sinaí occidental, Nubia, Libia, Sáhara y Sahel; Chipre, Gaza, Punt y Mersa Gawasis (lon 33.93) quedan fuera del rectángulo. Al umbral de peso 3 (vista lejana) las capitales y el Imperio Nuevo ya están en el visor; no se ha encontrado ninguna ciudad, entidad o evento nuevo que lo alcance. Revisado y descartado: Reino de Kerma (Q1739282, coords 19.60/30.41, dentro de la zona) — como estado independiente termina antes de la ventana (Wikidata: disuelto c. 1500 a.C.; en.wikipedia: anexión c. 1504 a.C.; es.wikipedia: conquista c. 1530 a.C. — las tres fuentes descuadran en ~30 años, pero todas lo sitúan antes de -1475); en la ventana Nubia es provincia egipcia con rebeliones (una c. 1452 a.C. bajo Amenhotep II, y en general hasta c. 1300), que son peso ≤2. Reino de Kush (Q241790) empieza c. 1070 a.C. Napata/Gebel Barkal: asentamiento fortificado egipcio desde c. 1450 a.C., peso 2. Pi-Ramsés (Q?): palacio de verano de Seti I c. 1290–1279 y capital solo desde Ramsés II (1279+), al borde final de la ventana; candidato para el corte «1200 a.C.», no para 1350. Avaris: sin papel político tras Amenhotep II. Cultura de Tichitt (Q107008575, 2200–500 a.C., Mauritania): sería peso 2 y además su ítem de Wikidata carece de coordenadas (el yacimiento Q112610148 tampoco las tiene; solo el pueblo actual Q985527). Libios (Libu/Meshwesh): no forman estado; el artículo Ancient Libya fecha las primeras menciones documentadas de los Libu en Ramsés II/Merenptah (siglo XIII), fuera de ventana; la campaña libia de Seti I no tiene fecha ni lugar. Relaciones descartadas por peso 2 (comercio/diplomacia, no guerras): alianza matrimonial Egipto–Mitani (Tutmosis IV, Amenhotep III, c. 1400–1340), intercambio de oro por lapislázuli y caballos con Babilonia y Asiria, cobre de Alasiya y cerámica micénica en Amarna. Sin eventos con coordenadas Wikidata dentro de la zona que superen el umbral: la fundación de Aketatón ya está cubierta por la ciudad; la tumba de Tutankamón no es guerra ni estado. Se ha comprobado en la caché que no existe ya ninguna relación Egipto–Hatti ni Egipto–Mitani.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "7731379825",
+  "bbox": [
+   27.4,
+   35.85,
+   28.5,
+   36.59
+  ],
+  "corte": "-1600",
+  "lod": 0,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 0,
+  "descartados": [
+   {
+    "nombre": "Ialisos (Trianda)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Civilización minoica (presencia en Rodas)",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona = isla de Rodas casi completa, Calki y Alimia; la costa caria (Marmaris, Bozburun, Cnido) queda al norte del límite 36.59 y Simi/Tilos justo fuera. Único yacimiento con ocupación documentada en la ventana: Trianda (Ialisos), llanura bajo Filérimos; contacto minoico intenso desde MM IIIB (hacia 1700 a.C.), arquitectura extensa de LM IA, tefra de Tera en contexto LM IA sin ruptura de la ocupación (Doumas & Papazoglou 1980; Marketou 1990), continuidad hasta LM IB y sustitución micénica en LH IIB-IIIA. No existe ítem de Wikidata propio para el yacimiento prehistórico de Trianda; se usa Q29963099 (Ialisos, ciudad antigua, 36.400 N 28.142 E, dentro de la zona), que es la acrópolis de Filérimos a ~1 km del asentamiento del Bronce; la fecha de inicio -1700 es aproximada («hacia»). ATENCIÓN: la entidad Q134178 (civilización minoica) tiene coordenadas en Creta (35.31 N 24.89 E), FUERA de la zona; se propone porque su presencia en Rodas está documentada, pero incumple la regla de coordenadas — el visor decide. Descartados: Asomatos (Kremasti) es Bronce Antiguo (3er milenio), sin QID y fuera de ventana; Lindos y Calki sin ocupación documentada en la ventana en las fuentes leídas; necrópolis micénicas de Ialisos (Moschou/Makria Vounara) son posteriores a 1450 a.C. — es.wikipedia las fecha «1700-1400 a.C.», dato que descuadra con la cronología académica (LH IIB-IIIC) y no se ha usado; la erupción de Tera (Q1144693, hacia 1600 a.C. por radiocarbono, 1550-1480 por sincronismos egipcios) tiene coordenadas en Santorini, fuera de zona, así que no se propone como evento aunque su tefra en Trianda sea el hecho datado más notable de la zona; no se propone relación porque el único par documentado (Creta→Trianda) uniría una entidad con una ciudad, no dos entidades. Fuentes no accesibles (403/405): academia.edu (Marketou, Excavations at Trianda), maajournal.com, ADS/Nature abstract — el contenido de Doumas & Papazoglou se conoce por la cita en resultados de búsqueda y en Dartmouth, no por lectura directa.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
