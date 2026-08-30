@@ -2986,5 +2986,63 @@
   ],
   "nota": "Zona = Cuerno de África, sur de Sudán/Eritrea, Yemen, Dhofar. MIRADO: Punt (en/es Wikipedia, Ramsés III, Papiro Harris I), Sabeos/Saba/Marib (en/es Wikipedia, Sheba), historia antigua de Yemen y cultura Sabir (Wikipedia, Radiocarbon 2002 Cambridge), Adulis, grupos Gash y Jebel Mokram (Wikipedia + búsquedas Fattovich/Manzo), colonización sabea de África, D'mt, Somalilandia y Dhofar (búsquedas). ADVERTENCIAS sobre lo propuesto: (1) Punt: las coordenadas de Wikidata (9.5N, 48E, Somalia) NO coinciden con el consenso actual (Eritrea/este de Etiopía según isótopos y ADN de babuinos); el punto caerá en el mapa donde lo pone Wikidata. Wikidata da fin -1069; la última expedición real es la de Ramsés III (reinado c. 1186-1155). (2) Sabeos y Marib: fecha de inicio DISPUTADA. Wikipedia (Sabaeans/Sheba): 'probablemente entre c. 1000 y c. 800 a.C.', con estimaciones alternativas desde 1200 a.C.; Wikidata Q940785 pone inicio -1200; el artículo Marib dice 'al menos 1050 a.C.' y el de Sabeos 'asentamiento creado a finales del II milenio'. He usado -1050 (hacia) para ambos por coherencia entre sí; si el visor prefiere solo fechas seguras, retirar ambos de este corte y dejarlos para el de 1000 a.C. DESCARTADO: cultura Sabir (Yemen costero, c. 1900-800 cal BC, sitios Sabir y Ma'layba junto a Adén) — sería peso 2 en esta ventana, pero NO tiene ítem en Wikidata (buscado en en/fr/de/it), así que no se puede proponer; es el hueco más relevante de la zona. Grupo Jebel Mokram (Q86752182, Kassala/Eritrea occidental, c. 1500-mediados I milenio) — existe en Wikidata pero sin coordenadas, no se puede situar. Adulis (Q378940) — ocupación prehistórica bajo la ciudad de mediados del II a inicios del I milenio; peso 1 en este corte, por debajo del umbral. Expedición de Ramsés III a Punt como evento — sin QID propio; queda recogida en la relación. D'mt (siglo VIII a.C.), cultura Ona (c. 800 a.C.), presencia sabea en Etiopía (VIII-VII a.C.): todo posterior a la ventana. Somalia/Somalilandia: nada datable en la ventana (Laas Geel es muy anterior). Dhofar/Khor Rori: tumbas de la Edad del Bronce acerámicas sin entidad ni ciudad con QID en la ventana.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "edc3518a4a",
+  "bbox": [
+   10.84,
+   18.75,
+   33.67,
+   32.5
+  ],
+  "corte": "-1200",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 11,
+  "descartados": [
+   {
+    "nombre": "Abidos",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Elefantina",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Amara Oeste",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Libu",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Meshwesh",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Egipto: Dinastía XXI (Tanis)",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Tratado de paz egipcio-hitita",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Batalla de Perire",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Huelga de Deir el-Medina",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Conspiración del harén",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = Libia, Egipto (salvo el extremo NE), Nubia hasta la 3ª catarata y Sinaí occidental. Todos los QID verificados en la API de Wikidata. AVISOS de coordenadas: Libu (Q2456520), Meshwesh (Q1191083), Dinastía XXI (Q748151), Tratado egipcio-hitita (Q253155), Huelga de Deir el-Medina (Q2355615) y Conspiración del harén (Q2994789) NO tienen P625 en Wikidata; la Batalla de Perire (Q1152668) tampoco, pero lleva P276 = Sais (Q381038, 30.96N 30.77E, dentro de zona). Si el visor exige P625 estricto, estos siete objetos caen; ubicaciones razonables: Libu/Meshwesh en Cirenaica-Marmárica, Dinastía XXI en Tanis (Q210598), tratado en Karnak/Tebas (Q101583), huelga en Deir el-Medina (Q750212), conspiración en Medinet Habu (Q932622). Fechas de la huelga: Wikidata da 1166/1153 a.C., Wikipedia año 29 de Ramsés III ≈ 1158 a.C.; uso -1157 «hacia». Abu Simbel se propone como evento de construcción (Wikidata P571 = -1274; Wikipedia 1264–1244) porque no es un asentamiento. DESCARTADOS: Reino de Kush (Q241790, coordenadas 17.18N fuera de zona y emergencia real hacia 1000–800 a.C.); Pueblos del Mar (Q193850, sin coordenadas y no residentes en la zona; ya cubiertos por la Batalla del Delta); Buhen (Q1002656) y Kerma/Dukki Gel (Q1107569): sin documentación leída de su papel en 1275–1000 a.C., solo peso 1; Serabit el-Khadim (Q1462523): minas activas en el Imperio Nuevo pero sin faraones ramésidas concretos verificados, peso 1; Medinet Habu (Q932622/Q656040): dentro de Tebas, ya presente; Aniba (capital de Wawat): no se encontró QID; Tercer Período Intermedio (Q212728) redundante con Dinastía XXI; guerras libias de Ramsés III (1182/1176) sin QID propio, recogidas en las relaciones; Historia de Unamón es obra literaria, usada solo como fuente. Interior de Libia (Fezzan/garamantes) sin evidencia en la ventana.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
