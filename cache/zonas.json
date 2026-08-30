@@ -3784,5 +3784,75 @@
   ],
   "nota": "La zona (long 33.67–56.5 E, lat 5.0–18.75 N) cubre Yemen, el sur de Arabia Saudí, el Cuerno de África (Eritrea, Yibuti, Etiopía, norte de Somalia), Socotra y el mar Arábigo occidental. NO cubre el golfo Pérsico ni la península de Omán: los candidatos más obvios del Bronce arábigo quedan todos al norte del límite de 18.75° — Umm an-Nar (Q18600648, 24.4 N), Tell Abraq (Q3517362, 25.5 N), Shimal (Q7496816, 25.8 N), Qal'at al-Bahrain (Q740104, 26.2 N), túmulos de Dilmún (Q5276996, 26.1 N), Failaka (Q1392962, 29.4 N) y Ras al-Jinz (Q1764671, 22.4 N). Descartados por coordenadas, no por relevancia: la cultura de Wadi Suq (Q48802879) y Dilmún (Q748846) no tienen coordenadas en Wikidata, y su área real cae fuera de la zona. Kerma (Q1107569, 19.6 N / 30.4 E) queda fuera por ambos ejes. Ma'rib (Q335478, 15.5 N / 45.3 E) SÍ cae dentro, pero se descarta: el oasis tiene actividad de riego desde el III milenio, aunque la ciudad y el reino de Saba son de hacia 1000-800 a.C., un milenio posterior a la ventana; proponerla como ciudad en 2000 a.C. sería un anacronismo. El Bronce del sur de Arabia está documentado —tumbas y poblados de piedra en el Hadramaut fechados por radiocarbono entre 2500 y 1700 a.C., algunos amurallados— pero es un registro disperso de yacimientos menores sin artículo de Wikidata con coordenadas; la cultura de Sabir y Ma'layba, los primeros centros urbanos costeros de Yemen, arrancan hacia 1900-1800 a.C. en el borde mismo de la ventana y tampoco tienen QID localizable. Punt es el único objeto de la zona que alcanza el umbral de vista media, y lo hace con holgura porque las expediciones egipcias caen de lleno en la ventana.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "45dbd818c1",
+  "bbox": [
+   33.67,
+   18.75,
+   56.5,
+   32.5
+  ],
+  "corte": "-2000",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 6,
+  "descartados": [
+   {
+    "nombre": "Tercera Dinastía de Ur (Imperio Neosumerio)",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Periodo de Isin-Larsa",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Amorreos",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Dinastía Shimashki (Elam)",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Magán",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Wadi Suq",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Eshnunna",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Lagash",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Eridu",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Kish",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Sippar",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Qal'at al-Bahrain",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Failaka",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona = baja Mesopotamia + Diyala, Elam/Zagros occidental, Golfo Pérsico y península de Omán. El visor ya tenía las ciudades sumerias del sur pero le faltaban por completo los ESTADOS del periodo: no había ni Ur III ni Isin-Larsa ni los amorreos, que son el marco político de toda la ventana. Añadidas también las ciudades que faltaban al norte y al este del núcleo sumerio (Eshnunna, Kish, Sippar, Lagash, Eridu) y los nodos del Golfo (Qal'at al-Bahrain como capital de Dilmún, Failaka, Tell Abraq) que dan cuerpo a la ruta Dilmún-Magán-Meluhha.\n\nDESCARTADO por falta de QID de evento verificable: la caída/saqueo de Ur de 2004 a.C. y el muro Muriq-Tidnim de Shu-Sin no tienen ítem propio en Wikidata que yo haya localizado; ambos hechos se han recogido como 'relacion' de conflicto entre entidades que sí lo tienen, no como evento con coordenadas. El zigurat de Ur (Q202927) sí se propone como evento (fundación datada, coordenadas propias) aunque cae a ~200 m del punto de la ciudad Ur ya presente — si el visor no admite solapamiento, es el candidato a eliminar.\n\nDESCARTADO por caer fuera de la zona: Shahr-e Sukhteh (~61,3°E), Konar Sandal/Jiroft y Tepe Yahya, todos al este de 56,5°E. Mari, Babilonia como ciudad y Assur quedan al norte de 32,5°N o al oeste de 33,67°E.\n\nAVISO SOBRE COORDENADAS: varias entidades propuestas (Ur III Q723587, Isin-Larsa Q13577667, amorreos Q203507, Shimashki Q3396376, Magán Q1429914, Wadi Suq Q48802879) NO tienen declaración de coordenadas en Wikidata — lo he comprobado ítem por ítem en los casos de Q723587, Q1429914 y Q3396376. Se proponen igualmente porque son del mismo tipo que las entidades ya presentes en el visor (Babilonia, Elam, Asiria, culturas arqueológicas), que tampoco son puntos; si el visor exige coordenada de Wikidata para todos los tipos, estas seis fallarán al cargarse. No sé cómo las resuelve el visor y no lo he verificado.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
