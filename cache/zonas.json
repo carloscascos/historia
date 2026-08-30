@@ -1390,5 +1390,43 @@
   ],
   "nota": "Zona: sur de Mesopotamia (hasta 32,5°N), Irán, golfo Pérsico, Arabia, valle del Indo y Cuerno de África; el Nilo queda fuera (oeste de 33,67°E). Se han comprobado en Wikidata QID y coordenadas de todos los candidatos. Incluidos con peso 3: Susa (QID verificado Q180773, 32.19N 48.26E, dentro de la zona por 0,3°) y Shahr-e Sukhteh. Descartados por no llegar al umbral en ESTA ventana: Harappa (Q185562) —fase Ravi 3300–2800 a.C. con solo ~25 ha, ciudad grande solo desde 2600 a.C.—; Lagash (Q207330) y Girsu (Q853946) —ocupación significativa solo desde ED I (2900 a.C.) y apogeo en 2500 a.C.—; Mehrgarh (Q242148), Mundigak y el Período Hafit (Q55647864, sin coordenadas) por ser peso 2. Kish (Q132272) cae fuera por latitud (32.54N) y la batalla Kish–Susa de En-me-barage-si (hacia 2700 a.C.) cae fuera de la ventana. Dilmún (Q748846): sin coordenadas en Wikidata y las páginas leídas (en, es) no documentan su existencia dentro de la ventana (la Wikipedia inglesa fecha la primera mención en el tercer milenio tardío; no he podido verificar la mención en textos arcaicos de Uruk), así que no se propone. La civilización protoelamita (Q1196237, 3100–2700 a.C.) encaja de lleno en la ventana pero solaparía con la entidad Elam ya presente; se ha preferido no duplicar. Nada documentado con peso 3 en Arabia, Etiopía ni Sinaí para este periodo.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "dbf379fea9",
+  "bbox": [
+   -12.0,
+   32.5,
+   33.67,
+   60.0
+  ],
+  "corte": "-3000",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 4,
+  "descartados": [
+   {
+    "nombre": "Cultura de la cerámica cordada",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura yamna",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Cucuteni-Tripolie",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de los vasos de embudo",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Civilización cicládica",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = Europa occidental y central, Islas Británicas, sur de Escandinavia, Balcanes, Egeo, Anatolia occidental y Malta, 3300-2750 a.C. No hay estados ni ciudades grandes en sentido estricto en esta zona y ventana: propongo culturas de escala continental y dos monumentos icónicos, en línea con lo que ya admite el visor (Megalitismo atlántico, Civilización minoica, tholos de Montelirio). AVISOS: (1) Cerámica cordada, yamna, Cucuteni-Tripolie, vasos de embudo y cicládica NO tienen coordenadas (P625) en Wikidata; su ubicación tendrá que resolverse por otra vía. (2) El núcleo yamna (estepa póntica, 30-50 E) queda fuera de la zona; entra por su expansión danubiana. (3) Fin de Cucuteni-Tripolie: Wikipedia en dice c. 2950/3000 a.C., el artículo de Yamnaya c. 2700 y Wikidata -2650; descuadre no resuelto, uso 'hacia 3000'. (4) Fechas cordada: Wikidata da -3000/-2000, Wikipedia en 2900-2300, es 2900-2450/2350; uso 2900-2350. DESCARTADOS por peso 2 (vista media): Troya I (Q22647, ciudadela de menos de 1 ha, 3000-2550), Skara Brae (Q816437), Poliochni (Q1542545), cultura de Baden (Q687230, 3500-2800), ánforas globulares (Q218257, 3100-2600), cultura de Vila Nova de São Pedro (Q60823294, ya representada por Zambujal y Leceia), Cnosos prepalacial (Q173527, cubierto por la entidad minoica), Ötzi (Q171291, sin coordenadas en Wikidata, hacia 3300-3250). Campaniforme (Q470867) empieza en Wikidata en -2600, fuera de ventana. Relación cicládica→minoica (influencia cerámica en Cnosos 3400-2200 a.C.) documentada pero de peso 2, no propuesta a este nivel.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
