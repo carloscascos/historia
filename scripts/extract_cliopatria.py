@@ -15,7 +15,7 @@ for f in d['features']:
     if p['Type'] != 'POLITY': continue
     years = [c['año'] for c in cortes if p['FromYear'] <= c['año'] <= p['ToYear']]
     if not years: continue
-    g = shape(f['geometry']).simplify(0.15, preserve_topology=True)
+    g = shape(f['geometry']).simplify(0.03, preserve_topology=True)
     out.append({"type":"Feature","id":f"{p['Wikidata']}_{p['FromYear']}_{p['ToYear']}",
         "properties":{"qid":p['Wikidata'],"nombre_src":p['Name'],"desde":p['FromYear'],"hasta":p['ToYear'],
                       "cortes":years,"origen":"cliopatria","seshat":p['SeshatID']},

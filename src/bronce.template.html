@@ -82,7 +82,8 @@
   /* capas svg */
   .corte{opacity:0;transition:opacity .6s ease;pointer-events:none}
   .corte.on{opacity:1;pointer-events:auto}
-  #land{fill:#1a2328;stroke:#2f3d45;stroke-width:.06}
+  #land,#land50{fill:#1a2328;stroke:#2f3d45;stroke-width:1;vector-effect:non-scaling-stroke}
+  svg.lod3 #land50,svg.lod2 #land50{display:none} svg.lod1 #land,svg.lod0 #land{display:none}
   .ent{fill-opacity:.42;cursor:pointer;vector-effect:non-scaling-stroke}
   .ent.estado{stroke:var(--text);stroke-width:1.1;stroke-opacity:.75}
   .ent.difuso{filter:url(#blur);stroke:none;fill-opacity:.5}
@@ -95,7 +96,7 @@
   .ciu.dud{stroke-dasharray:2 1.5;fill-opacity:.55}
   .ciu:hover{fill:var(--bronce)}
   .rel{fill:none;stroke-width:1.6;vector-effect:non-scaling-stroke;cursor:pointer}
-  .rel.hit{stroke:transparent;stroke-width:12}
+  .rel.hit{stroke:transparent;stroke-width:7}
   .rel.conflicto{stroke:var(--conflicto);marker-end:url(#ar-c)}
   .rel.comercio{stroke:var(--comercio);marker-end:url(#ar-m);marker-start:url(#ar-m0)}
   .rel.transmision{stroke:var(--transmision);stroke-dasharray:5 4}
@@ -107,6 +108,10 @@
   svg.lod2 .w0,svg.lod2 .w1{display:none}
   svg.lod1 .w0{display:none}
   svg.lod3 .lbl.t,svg.lod2 .lbl.t{display:none}
+  .lbl .sub{font-size:.8em;fill:var(--text-dim);letter-spacing:0}
+  svg.lod3 .lbl .sub,svg.lod2 .lbl .sub{display:none}
+  .lbl.rl{font-size:.9px;letter-spacing:.06em;text-transform:uppercase} .lbl.rl.conflicto{fill:var(--conflicto)} .lbl.rl.comercio{fill:var(--comercio)} .lbl.rl.transmision{fill:var(--transmision)}
+  svg.lod3 .lbl.rl,svg.lod2 .lbl.rl,svg.lod1 .lbl.rl{display:none}
 </style>
 </head>
 <body>
@@ -128,12 +133,13 @@
   <div id="mapwrap">
     <svg id="map" xmlns="http://www.w3.org/2000/svg" viewBox="-25 -60 150 55" preserveAspectRatio="xMidYMid meet">
       <defs>
-        <filter id="blur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="0.7"/></filter>
+        <filter id="blur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur id="blurf" stdDeviation="0.7"/></filter>
         <marker id="ar-c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0L10,5L0,10Z" fill="#d1483d"/></marker>
         <marker id="ar-m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto" markerUnits="strokeWidth"><path d="M0,0L10,5L0,10Z" fill="#5fb96f"/></marker>
         <marker id="ar-m0" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="6" markerHeight="6" orient="auto" markerUnits="strokeWidth"><path d="M10,0L0,5L10,10Z" fill="#5fb96f"/></marker>
       </defs>
       <path id="land"/>
+      <path id="land50"/>
       <g id="layers"></g>
     </svg>
     <div id="lod"></div>
@@ -176,7 +182,7 @@ function entColor(E){const h=HEX[E.civilizacion||0];const n=parseInt(h.slice(1),
 const wCiu=p=>p>=40000?3:p>=20000?2:p>=8000?1:0;
 
 /* ---------- mapa ---------- */
-$("#land").setAttribute("d",DATA.land);
+$("#land").setAttribute("d",DATA.land); $("#land50").setAttribute("d",DATA.land50);
 const layers=$("#layers");
 CORTES.forEach((c,i)=>{
   const g=el("g",{class:"corte","data-i":i});
@@ -194,10 +200,12 @@ CORTES.forEach((c,i)=>{
     const hit=el("path",{d:r.d,class:"rel hit"}), p=el("path",{d:r.d,class:`rel ${R.tipo}`,"data-id":r.id});
     const h=()=>click(()=>show("rel",r.id,p)); hit.addEventListener("click",h); p.addEventListener("click",h);
     gr.appendChild(hit); gr.appendChild(p);
+    const L=p.getTotalLength?null:null; // longitud se calcula tras insertar en el DOM
+    p.dataset.lbl=R.tipo; 
   });
   g.appendChild(gr);
   const gl=el("g");
-  c.ent.forEach(e=>{const E=DATA.ent[e.qid];gl.appendChild(el("text",{class:"lbl zs","text-anchor":"middle","data-x":e.c[0],"data-y":-e.c[1]},E.nombre))});
+  c.ent.forEach(e=>{const E=DATA.ent[e.qid];const t=el("text",{class:"lbl zs","text-anchor":"middle","data-x":e.c[0],"data-y":-e.c[1]},E.nombre);t.appendChild(el("tspan",{x:0,dy:"1.2em",class:"sub"},`${E.tipo} · ${fmt(E.desde)} – ${fmt(E.hasta)}`));gl.appendChild(t)});
   g.appendChild(gl);
   const gc=el("g");
   c.ciu.forEach(ci=>{
@@ -218,6 +226,8 @@ CORTES.forEach((c,i)=>{
   layers.appendChild(g);
 });
 
+// etiquetas de tipo sobre cada relación, en el punto medio del trazo (solo se ven de cerca)
+document.querySelectorAll(".corte").forEach(g=>{const gl=el("g");g.appendChild(gl);g.querySelectorAll("path.rel:not(.hit)").forEach(p=>{const m=p.getPointAtLength(p.getTotalLength()/2);const t=el("text",{class:`lbl zs rl ${p.dataset.lbl}`,"text-anchor":"middle","data-x":m.x.toFixed(2),"data-y":m.y.toFixed(2)},p.dataset.lbl);gl.appendChild(t)})});
 /* ---------- viewBox: zoom, paneo, nivel de detalle ---------- */
 const svg=$("#map"), wrap=$("#mapwrap"); const VIEJO=[-25,-60,150,55], MUNDO=[-180,-80,360,140], OP=[15,-47,42,22];
 let vb=VIEJO.slice();
@@ -228,7 +238,7 @@ function ratio(){return svg.clientHeight/Math.max(1,svg.clientWidth)}
 function applyVB(){
   vb[2]=Math.max(6,Math.min(400,vb[2])); vb[3]=vb[2]*ratio();
   svg.setAttribute("viewBox",vb.join(" "));
-  const u=Math.max(.3,Math.min(1.6,vb[2]/150)); ZS.forEach(n=>n.setAttribute("transform",`translate(${n.dataset.x},${n.dataset.y}) scale(${u.toFixed(3)})`));
+  const u=Math.max(.02,Math.min(1.6,vb[2]/150));$("#blurf").setAttribute("stdDeviation",(0.7*u).toFixed(3)); ZS.forEach(n=>n.setAttribute("transform",`translate(${n.dataset.x},${n.dataset.y}) scale(${u.toFixed(3)})`));
   const L=lod(); svg.classList.remove("lod0","lod1","lod2","lod3"); svg.classList.add("lod"+L); $("#lod").textContent=LODN[L];
 }
 function flyTo(t){t=t.slice();t[3]=t[2]*ratio();const s=vb.slice(),t0=performance.now();(function step(n){const k=Math.min(1,(n-t0)/500),e=1-Math.pow(1-k,3);vb=s.map((v,i)=>v+(t[i]-v)*e);applyVB();if(k<1)requestAnimationFrame(step)})(t0)}
@@ -241,10 +251,10 @@ const center=()=>{const r=svg.getBoundingClientRect();return[r.left+r.width/2,r.
 $("#z-in").onclick=()=>zoomAt(1/1.4,...center()); $("#z-out").onclick=()=>zoomAt(1.4,...center());
 // arrastre y pellizco con pointer events; un clic real es un pointerup sin desplazamiento
 const ptr=new Map(); let dragged=false, last=null, pinch=null;
-wrap.addEventListener("pointerdown",e=>{ptr.set(e.pointerId,[e.clientX,e.clientY]);wrap.setPointerCapture(e.pointerId);dragged=false;last=[e.clientX,e.clientY];if(ptr.size===2){const p=[...ptr.values()];pinch={d:Math.hypot(p[0][0]-p[1][0],p[0][1]-p[1][1])}}});
+wrap.addEventListener("pointerdown",e=>{if(e.button!==0&&e.pointerType==="mouse")return;ptr.set(e.pointerId,[e.clientX,e.clientY]);dragged=false;last=[e.clientX,e.clientY];if(ptr.size===2){const p=[...ptr.values()];pinch={d:Math.hypot(p[0][0]-p[1][0],p[0][1]-p[1][1])}}});
 wrap.addEventListener("pointermove",e=>{if(!ptr.has(e.pointerId))return;ptr.set(e.pointerId,[e.clientX,e.clientY]);
   if(ptr.size===2&&pinch){const p=[...ptr.values()];const d=Math.hypot(p[0][0]-p[1][0],p[0][1]-p[1][1]);if(d>0){zoomAt(pinch.d/d,(p[0][0]+p[1][0])/2,(p[0][1]+p[1][1])/2);pinch.d=d}dragged=true;return}
-  if(ptr.size===1&&last){const dx=e.clientX-last[0],dy=e.clientY-last[1];if(Math.hypot(dx,dy)>3)dragged=true;if(dragged){const r=svg.getBoundingClientRect();const s=Math.max(vb[2]/r.width,vb[3]/r.height);vb[0]-=dx*s;vb[1]-=dy*s;applyVB();wrap.classList.add("drag")}last=[e.clientX,e.clientY]}});
+  if(ptr.size===1&&last){const dx=e.clientX-last[0],dy=e.clientY-last[1];if(!dragged&&Math.hypot(dx,dy)>3){dragged=true;ptr.forEach((_,id)=>{try{wrap.setPointerCapture(id)}catch(x){}})}if(dragged){const r=svg.getBoundingClientRect();const s=Math.max(vb[2]/r.width,vb[3]/r.height);vb[0]-=dx*s;vb[1]-=dy*s;applyVB();wrap.classList.add("drag")}last=[e.clientX,e.clientY]}});
 const up=e=>{ptr.delete(e.pointerId);if(ptr.size<2)pinch=null;if(!ptr.size){last=null;wrap.classList.remove("drag");setTimeout(()=>dragged=false,0)}};
 wrap.addEventListener("pointerup",up); wrap.addEventListener("pointercancel",up);
 function click(fn){if(!dragged)fn()}

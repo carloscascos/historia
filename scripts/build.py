@@ -22,6 +22,7 @@ celdas = J("celdas.json")
 geo_e = J("geo/entidades.geojson")["features"]
 geo_r = {f["properties"]["relacion"]: f for f in J("geo/relaciones.geojson")["features"]}
 land = J("geo/ne_110m_land.geojson")["features"]
+land50 = J("geo/ne_50m_land_simp.geojson")["features"]  # Natural Earth 50m simplificada a 0,03°, para las vistas cercanas
 ciudades = list(csv.DictReader(open(D / "ciudades.csv", encoding="utf-8")))
 
 def f(x): return f"{x:.2f}".rstrip("0").rstrip(".")
@@ -33,6 +34,7 @@ def path(geom):
 def line(coords): return "M" + "L".join(f"{f(x)},{f(-y)}" for x, y in coords)
 
 land_path = "".join(path(ft["geometry"]) for ft in land)
+land50_path = "".join(path(ft["geometry"]) for ft in land50)
 
 # --- geometría por entidad y corte ---
 by_qid = {}
@@ -88,7 +90,7 @@ for c in cortes:
     print(f"{c['id']}: {len(E)} entidades, {len(C)} ciudades, {len(R)} relaciones, {len(EV)} eventos")
 
 DATA = {"civ": civ, "cortes": out_cortes, "ent": ent_by, "rel": {r["id"]: r for r in rels}, "ev": {e["qid"]: e for e in evs},
-        "celdas": celdas, "land": land_path}
+        "celdas": celdas, "land": land_path, "land50": land50_path}
 tpl = open(ROOT / "src" / "bronce.template.html", encoding="utf-8").read()
 js = json.dumps(DATA, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 html = tpl.replace("/*__DATA__*/", "const DATA=" + js + ";")
