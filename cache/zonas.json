@@ -2934,5 +2934,31 @@
   "descartados": [],
   "nota": "Zona = Sáhara occidental y central (sur de Marruecos y Argelia, Sáhara Occidental, norte de Mauritania y Malí, extremo suroeste de Libia), ventana 1275–1000 a.C., umbral peso ≥2. Revisado: (1) Tradición de Tichitt (Q107008575, Mauritania): es el único candidato de peso 2 en el entorno —fase clásica 1600–1000 a.C. con centenares de aldeas amuralladas de piedra seca, la sociedad compleja más antigua de África occidental—, pero queda FUERA de la zona: Dhar Tichitt está en 18°27′N (18.45), por debajo del límite sur 18.75, y Dhar Walata/Néma aún más al sur; además el ítem de Wikidata de la cultura no tiene coordenadas (P625) y el del sitio no aparece en la búsqueda de Wikidata, así que no cumple la regla 2. Recomiendo proponerla al explorar la zona contigua al sur. (2) Tassili n'Ajjer (Q190048, 25.67N 9.0E, dentro de la zona): el «periodo del caballo» del arte rupestre (carros, jinetes) se data laxamente entre 2000 a.C. y 50 d.C.; es un yacimiento de arte rupestre sin asentamiento ni entidad política, peso 1 en vista media y sin fecha firme en la ventana → descartado. (3) Bronce del Alto Atlas (Oukaïmeden, Yagour, 31.2N -7.85E): grabados de puñales y alabardas copiados de modelos argáricos; la Encyclopédie berbère no aporta ninguna datación 1300–1000 a.C. y en Wikidata solo existen la comuna y la estación de esquí, no el conjunto rupestre → descartado (peso 1, sin QID ni fecha). (4) Libu, Meshwesh y Tehenu (guerras libias de Merenptah y Ramsés III, 1208–1176 a.C.) se localizan en Cirenaica/Marmárica, al este de la zona (lon >20); los garamantes (Fezzan, Germa 13.1E) están fuera por longitud y no se documentan antes de ~1000 a.C. (5) Lixus y Mogador (fundaciones fenicias) quedan fuera por latitud o por fecha (siglos VIII–VII a.C.). No hay entidades del visor dentro de la zona con las que proponer relaciones nuevas.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "415fc06283",
+  "bbox": [
+   56.5,
+   5.0,
+   79.33,
+   18.75
+  ],
+  "corte": "-1200",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 0,
+  "descartados": [
+   {
+    "nombre": "Neolítico del sur de la India (tradición de los ashmounds)",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Jorwe",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = India peninsular al sur de ~18,75 N (Decán meridional, Tamil Nadu, Kerala), Sri Lanka, Maldivas y mar Arábigo abierto (la costa de Omán y Socotra quedan fuera). En 1275-1000 a.C. no hay estados, ciudades ni batallas documentadas: la región está en el tránsito Neolítico/Calcolítico → Hierro. ADVERTENCIAS sobre lo propuesto: (1) Q25348565 «Neolithic ashmounds» es el único ítem de Wikidata para el Neolítico del sur de la India; solo tiene sitelink en enwiki, sin coordenadas ni fechas en Wikidata (yacimientos Kupgal/Sanganakallu, Utnur, Budihal, Hallur, todos dentro de la zona). Su fin (~1200 a.C.) apenas solapa con el arranque de la ventana; Fuller et al. dan 3000/3200-1200 a.C. (2) Cultura de Jorwe: Wikidata (Q48728694) no tiene coordenadas; su núcleo (Jorwe 19,4 N, Daimabad 19,5 N, Prakash 21 N) cae al NORTE del borde de la zona; solo Inamgaon (Q6013487, 18,6 N, 74,5 E) está dentro. Si el visor exige coordenadas Wikidata dentro de la zona, descartarla. DESCARTADO: Edad del Hierro/cultura megalítica del sur de la India: no existe ítem Wikidata específico (Q111204222 «megalithic cultures of India» no tiene descripción ni sitelinks en/es; Q1056845 es la Edad del Hierro de todo el subcontinente, inicio -1500, ubicación genérica). Su inicio en el sur se data hacia 1000 a.C. (Sudyka 2011: origen c. 1000 a.C. en Karnataka/Andhra; Hallur, hierro datado c. 1000 a.C., fase de transición 1200-1000 a.C.), es decir, en el límite final de la ventana. Hallur (Q3595458) e Inamgaon son yacimientos rurales, peso 1, bajo el umbral de vista media. Adichanallur (Q2824397): datación ASI 2019 de 905-696 a.C., fuera de ventana; fechas más antiguas (1500±700, 'hace 3800 años') sin consenso. Sivagalai (Q7532307): fechas de 3345 a.C. para hierro y 1155-1248 a.C. para arroz; muy discutidas, prensa de 2025, sin consenso académico; no propuesto. Sri Lanka: la propia Wikipedia dice que el paso Mesolítico→Hierro 'no está adecuadamente documentado'; Anuradhapura (Q5724) se funda antes de 900 a.C., fuera de ventana. Maldivas y mar Arábigo: nada. Relaciones: no se ha encontrado ningún vínculo documentado entre esta zona y las entidades ya presentes en la ventana.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
