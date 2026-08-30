@@ -1829,5 +1829,91 @@
   ],
   "nota": "Zona = Asia Central (Turkmenistán oriental, Uzbekistán, Tayikistán, Kirguistán, norte de Afganistán, sur de Kazajistán, borde occidental de Xinjiang). Ventana 1475–1275 a.C. Revisado: Wikipedia en/ru, Wikidata, ResearchGate, mappalab. DATACIONES CONTRADICTORIAS que no se han cerrado: (1) Tazabagyab: Wikipedia en (infobox, Garner 2020) 1850–1500 a.C. = fuera de la ventana; Mallory & Adams 1997, Wikipedia ru (XV–XI a.C.) y Wikidata P580 = 1500 a.C. la sitúan dentro. Se incluye con la datación mayoritaria (1500–1100) pero el desacuerdo es real. (2) Chust: Wikidata/Wikipedia 1500–900; el estudio de ResearchGate da límite inferior por datación científica en s. XV–XIV a.C. pero por análisis de componentes esteparios lo acota a s. XII–IX, lo que la dejaría fuera. (3) Yaz: Wikipedia Yaz I 1500/1400–1000 a.C. (radiocarbono); Wikidata inicio 1350 a.C.; marcos antiguos lo bajan a 900–650 a.C. Se incluye con inicio hacia 1500. COORDENADAS: Chust (Q13174573) y Tazabagyab (Q4132504) NO tienen P625 en Wikidata; Yaz sí (37.75N, 62.00E, dentro de la zona). Si el visor exige P625 para entidades, las dos primeras quedan sin ancla. DESCARTADOS por fecha: Gonur Depe (2400–1600, abandono ~1500), Togolok 21 (1950–1500), Namazga-Tepe VI (se reduce ~1600, fase acaba ~1500), Bishkent (redatada 2800–2400), Vakhsh (2500–1650), Shortugai (2200–1700). Cultura de Sapalli (fases Molali/Bustan, mediados del II milenio, sí caen en ventana): sin QID en Wikidata bajo 'Sapalli culture'/'Sapallitepa', y Jarkutan ya está en el visor como ciudad; no se propone. DESCARTADOS por peso (1, solo vista cercana): Yaz-depe (Q124328955), necrópolis de Kangurttut (Molali, Tayikistán), petroglifos de Saimaluu-Tash. No hay estados, batallas ni ciudades de peso 3 documentados en esta zona y ventana; no hay eventos datados. Begazy-Dandybai queda al norte de la zona. La relación Andrónovo→Yaz se etiqueta como hipótesis porque las fuentes leídas la presentan como propuesta, no como hecho establecido.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "b61fb57865",
+  "bbox": [
+   33.67,
+   32.5,
+   56.5,
+   46.25
+  ],
+  "corte": "-1350",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 11,
+  "descartados": [
+   {
+    "nombre": "Babilonia",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Alepo (Halab)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Biblos",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Tiro",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Sidón",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Qatna",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Qadesh (Tell Nebi Mend)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Alalakh (Tell Atchana)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Tell Brak (Nagar)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Kumidi (Kamid el-Loz)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Samuha (Kayalıpınar)",
+    "motivo": "QID no existe en Wikidata"
+   },
+   {
+    "nombre": "Kaska",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Hayasa-Azzi",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Isuwa",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Nuhashshe",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Lchashen-Metsamor",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Srubna",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Se ha recorrido el Levante norte y costa fenicia, Siria interior, Alta Mesopotamia y Yazira, Anatolia central-oriental, el Cáucaso, el noroeste de Irán y la estepa norcaucásica/caspia. Descartados: Washukanni (Q1069007, sin coordenadas; la identificación con Tell Fekheriye Q1149666 es minoritaria y sin pruebas epigráficas); Batalla de Qadesh (Q203729, 1274 a.C., queda un año fuera de la ventana); Urkesh (Q1758030, abandonada hacia 1350 y sin peso a escala media); reino de Khana/Terqa (Q425405, sólo documentado hacia 1420 como vasallo mitanio, peso 1); Tel Akko (Q12412094), Arwad (Q377802), Maşat Höyük/Tapikka (Q3303460), Kuşaklı/Sarissa y Alacahöyük, todos ocupados pero de peso 1 a esta escala; Teppe Hasanlu (Q250844, periodo V poco relevante); cultura de Trialeti (Q169320, termina hacia 1500); cultura Kayakent-Jorochoi sin ítem en Wikidata; Susa, Haft Tepe, Chogha Zanbil y Nippur caen por debajo de la latitud 32,5. No hay ningún evento con QID y coordenadas dentro de la zona y ventana: el saqueo de Washukanni, la destrucción de Qatna, el incendio de Hattusa por los kaskas y la batalla de Sugagi no tienen ítem propio. Advertencias: las entidades Kaska, Hayasa-Azzi, Isuwa, Nuhashshe, Lchashen-Metsamor y Srubna no tienen coordenadas en Wikidata (igual que otras entidades ya cargadas), por lo que su inclusión depende de cómo el visor las geolocalice; Srubna sólo roza el borde norte de la zona (pie del Cáucaso y norte del Caspio). El artículo de Wikipedia de Tiro no cubre el Bronce final: la línea se apoya en el artículo de Abimilku. La ubicación de Tunip en Tell Asharneh es probable pero no segura. Las relaciones Hatti–Egipto (Amqu, asunto Zannanza) y Ugarit–Alasiya se dejaron fuera por no haber leído fuentes específicas en esta pasada.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
