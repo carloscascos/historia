@@ -4166,5 +4166,55 @@
   "descartados": [],
   "nota": "Zona vacía para la ventana -1800/-1475. Cubre el Atlántico frente al Sáhara Occidental y sur de Marruecos, más las Canarias orientales (Lanzarote, Fuerteventura, parte de Gran Canaria). Se ha mirado lo siguiente.\n\nCANARIAS — descartadas por cronología. El estudio de referencia (PNAS 2024, proyecto IsoCAN) aplica protocolo de higiene cronométrica y sitúa el primer poblamiento de Lanzarote en 70-240 cal d.C. y el de Fuerteventura en 270-525 cal d.C.: unos 1.700 años DESPUÉS del cierre de la ventana. Existe una cronología alternativa más antigua (Atoche Peña) que llevaba la colonización al tránsito del II al I milenio a.C., hacia el 1000 a.C.; esa hipótesis está hoy rechazada por apoyarse en carbón indeterminado y sedimentos a granel sin contexto estratigráfico fiable. Conviene subrayar que la decisión no depende de qué cronología se acepte: incluso la datación maximalista y descartada (~1000 a.C.) queda ~475 años fuera de la ventana. Ninguna lectura de la evidencia pone población en las islas entre -1800 y -1475. El yacimiento del islote de Lobos (Fuerteventura) es de época romana, no de la Edad del Bronce.\n\nSÁHARA OCCIDENTAL / SUR DE MARRUECOS — descartado por falta de datación y de QID. Existe un paisaje funerario real y extenso (túmulos cónicos, plataformas escalonadas, cairns con antesala semicircular) y arte rupestre de estilo Tazina en torno a Smara, en la Saguia el-Hamra. Pero el conjunto se fecha solo por analogía tipológica con monumentos de Libia y Níger, en una horquilla amplísima (c. 3000 a.C. – 800 d.C.) que no permite asignar ningún monumento concreto a esta ventana; los pocos túmulos excavados con C14 dan fechas muy posteriores (primera mitad del I milenio d.C., c. 480-820 d.C.). No es que la zona estuviera despoblada: es que no hay ningún objeto individual con fecha documentada dentro de -1800/-1475. Además, ninguno de estos conjuntos tiene artículo de Wikidata con coordenadas dentro del recuadro, requisito para proponerlo.\n\nNo se propone ninguna entidad de tipo 'cultura arqueológica' que cubra la zona porque no he encontrado ninguna definida y datada para el II milenio a.C. en este tramo del Atlántico sahariano: la secuencia publicada salta del Neolítico sahariano al periodo túmulos/protohistórico sin una unidad cultural nombrada y acotada en esta ventana. Tampoco se proponen relaciones de comercio: la navegación atlántica documentada hacia estas latitudes (fenicia) es del I milenio a.C., posterior a la ventana. Causa de fondo del vacío: aridificación post-Holoceno húmedo y, en las islas, ausencia de poblamiento humano en esas fechas.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "b3a77da135",
+  "bbox": [
+   33.67,
+   32.5,
+   56.5,
+   46.25
+  ],
+  "corte": "-2000",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 3,
+  "descartados": [
+   {
+    "nombre": "Kültepe (Kanesh)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Nínive",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Biblos",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Carquemis",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Meguido",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Acemhöyük (Purushanda)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Emar",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Alalakh (Tell Atchana)",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Descartados por caer FUERA de la zona pese a ser centrales en la ventana: Susa (32.19 N, por debajo del límite sur 32.5), Ur, Larsa, Isin, Uruk y Nippur (todas al sur de 32 N), y con ellas el saqueo de Ur por el elamita Kindattu hacia 2004 a.C. y la III Dinastía de Ur (Q723587) — el evento más decisivo del periodo queda fuera del recuadro. Descartados por FALTA DE COORDENADAS en Wikidata (regla 2): amorreos (Q203507), hurritas (Q190394) y periodo Isin-Larsa (Q13577667) son ítems de grupo étnico o periodo sin P625; el Reino de Alta Mesopotamia de Shamshi-Adad (Q140544569) existe como ítem pero está vacío, sin una sola declaración. Yamhad se fundó hacia 1810 a.C., solapa apenas diez años con la ventana y su capital, Alepo, ya está en el visor; no se propone. Descartado por FECHA: la conquista de Hattusa por Anitta se sitúa hacia 1740-1700 a.C., posterior al corte. La destrucción por incendio del karum II de Kanesh (c. 1836 a.C.) sí cae dentro, pero no se le ha encontrado ítem propio de Wikidata y por tanto no se propone como evento. Sin verificar: la ocupación de Alalakh y Carquemis entre 2250 y 2000 a.C. está mal documentada en las fuentes leídas — sus ventanas se han abierto en -2000, no antes.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
