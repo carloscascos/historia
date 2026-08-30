@@ -1,0 +1,86 @@
+[
+ {
+  "qid": "Q733364",
+  "nombre": "Batalla de Megido",
+  "año": -1457,
+  "lat": 32.585,
+  "lon": 35.184,
+  "cuelga_de": {
+   "entidad": "Q180568"
+  },
+  "linea": "Tutmosis III derrota a la coalición cananea dirigida por el rey de Qadesh; Canaán queda bajo Egipto.",
+  "enlace": null,
+  "fuentes": [
+   "wikidata:Q733364",
+   "eswiki:Batalla de Megido (siglo XV a. C.)"
+  ]
+ },
+ {
+  "qid": "Q573852",
+  "nombre": "Pecio de Uluburun",
+  "año": -1320,
+  "lat": 36.129,
+  "lon": 29.686,
+  "cuelga_de": {
+   "relacion": "r03"
+  },
+  "linea": "Un mercante hundido frente a Kaş con diez toneladas de cobre chipriota, una de estaño, vidrio, ébano, marfil y ámbar báltico: la red entera en una bodega.",
+  "enlace": {
+   "texto": "Museo de Arqueología Subacuática de Bodrum",
+   "url": "https://es.wikipedia.org/wiki/Museo_de_Arqueolog%C3%ADa_Subacu%C3%A1tica_de_Bodrum"
+  },
+  "fuentes": [
+   "wikidata:Q573852",
+   "eswiki:Pecio de Uluburun",
+   "doi:10.1111/j.1095-9270.1998.tb00803.x — Pulak 1998, The Uluburun shipwreck: an overview, IJNA 27"
+  ]
+ },
+ {
+  "qid": "Q235502",
+  "nombre": "Cartas de Amarna",
+  "año": -1350,
+  "lat": 27.66,
+  "lon": 30.9,
+  "cuelga_de": {
+   "relacion": "r10"
+  },
+  "linea": "Archivo de 382 tablillas en acadio: la correspondencia del faraón con Babilonia, Asiria, Mitani, Hatti, Alasiya y sus vasallos cananeos.",
+  "enlace": null,
+  "fuentes": [
+   "wikidata:Q235502",
+   "eswiki:Cartas de Amarna"
+  ]
+ },
+ {
+  "qid": "Q203729",
+  "nombre": "Batalla de Qadesh",
+  "año": -1274,
+  "lat": 34.555,
+  "lon": 36.498,
+  "cuelga_de": {
+   "relacion": "r06"
+  },
+  "linea": "Ramsés II contra Muwatalli II: la mayor batalla de carros conocida; termina en tablas y en el primer tratado de paz conservado.",
+  "enlace": null,
+  "fuentes": [
+   "wikidata:Q203729",
+   "eswiki:Batalla de Qadesh"
+  ]
+ },
+ {
+  "qid": "Q51885901",
+  "nombre": "Destrucción de Ugarit",
+  "año": -1185,
+  "lat": 35.602,
+  "lon": 35.786,
+  "cuelga_de": {
+   "entidad": "Q191369"
+  },
+  "linea": "La ciudad arde y no se reconstruye; la última carta del rey pide ayuda contra barcos enemigos.",
+  "enlace": null,
+  "fuentes": [
+   "wikidata:Q51885901",
+   "isbn:9780691140896 — Cline 2014, 1177 B.C.: The Year Civilization Collapsed, Princeton"
+  ]
+ }
+]

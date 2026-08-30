@@ -22,15 +22,22 @@ Aquí se cambian tres cosas.
 ## Estructura
 
 ```
-index.html                 el cuadro completo, autónomo (datos incluidos)
-docs/especificacion.md     el encargo: criterios, pesos del eje, esquema de celda
-docs/analisis-mercado.md   visores histórico-geotemporales: quién hay y qué falta
-docs/panorama-fuentes.md   fuentes de datos abiertas, capa a capa
-docs/plan-visor.md         los pasos del visor: orden, umbrales y criterios de parada
-data/celdas.md             volcado legible de las 100 celdas y los 48 enlaces
+index.html                 el cuadro completo (diez cortes), autónomo, datos incluidos
+bronce.html                maqueta del visor: cuadro + mapa, Edad del Bronce, seis cortes
+CONTEXT.md                 glosario: corte, civilización, entidad, relación, evento…
+docs/especificacion.md     el encargo del cuadro
+docs/mvp-bronce.md         alcance y decisiones de la maqueta
+docs/analisis-mercado.md   actores y decisión construir/adoptar
+docs/panorama-fuentes.md   fuentes de datos por capa
+docs/plan-visor.md         pasos, umbrales y criterios de parada del visor completo
+data/                      un fichero por término del glosario (JSON/CSV) + geo/ (GeoJSON)
+src/bronce.template.html   plantilla del visor; scripts/build.py la rellena con data/
+scripts/                   build.py, extract_cliopatria.py, ciudades_reba.py, ciudades_qid.py, wd.py
 ```
 
-Los datos vivos están dentro de `index.html`, en los objetos `C` (celdas) y `LINKS` (enlaces). `data/celdas.md` es su volcado en texto, para leer o editar sin tocar el código.
+Los datos del cuadro de diez cortes siguen dentro de `index.html` (objetos `C` y `LINKS`). Los del visor viven en `data/`: `bronce.html` se regenera con `uv run scripts/build.py` y no se edita a mano.
+
+**Ver la maqueta:** abra `bronce.html`. Arranca en el corte de 1350 a.C., el de la red completa. Cada entidad, ciudad, trazo y evento lleva su fuente (QID de Wikidata, Wikipedia y, donde el dato sostiene una tesis, la referencia académica).
 
 ## Las diez filas
 
@@ -55,4 +62,6 @@ Los dos referentes conocidos de este formato son el *Wallchart of World History*
 
 ## Estado
 
-Primera versión completa. Las cien celdas están escritas y los cuarenta y ocho enlaces dibujados. Pendiente de revisión de contenido: filas que falten, cortes mal situados y relaciones discutibles.
+Cuadro: cien celdas escritas y cuarenta y ocho enlaces dibujados; las celdas no llevan fuente todavía.
+
+Visor: maqueta de la Edad del Bronce con el corte de 1350 a.C. completo (16 entidades, 23 ciudades, 12 relaciones, 3 eventos, enganche al pecio de Uluburun). Los otros cinco cortes tienen entidades de Cliopatria y ciudades de Reba–Seto, pero no relaciones ni eventos propios salvo los que se prolongan desde 1350. Pendiente: relaciones y eventos de los otros cortes, fuentes en las treinta celdas del Bronce, y la prueba con lectores no especialistas que define `docs/mvp-bronce.md`.
