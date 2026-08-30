@@ -584,5 +584,31 @@
   ],
   "nota": "Revisado: Anatolia oriental, Siria, Alta Mesopotamia, Irán, Cáucaso, estepa y Asia Central dentro de la zona. Propuestos solo objetos de peso 3. Babilonia (Q5684, 32.54°N) cae dentro de la zona por muy poco; la entidad Babilonia ya estaba pero la ciudad no. Descartados por peso 2 (vista media): Alalakh (Q575249), Qatna (Q630734), Kadesh ciudad (Q690035), Emar (Q1196243), Nuzi (Q584605), Arrapha (Q672905), Tell Brak (Q978443), Hayasa-Azzi (Q599590), Isuwa (Q1489916), cultura de tumbas de Gandhara (Q2625916). Washukanni (Q1069007) es capital de Mitani pero su ítem de Wikidata no tiene coordenadas y la identificación con Tell Fekheriye (Q1149666) es 'probable', no segura: no se propone. Batalla de Kadesh (Q203729) queda en 1274 a.C., un año fuera de la ventana (-1275); se menciona solo en la relación Hatti-Egipto. Sin ítem de Wikidata localizado para el incendio de Hattusa por los kaska ni para la batalla de Sugagu, por lo que no se proponen como eventos. Incertidumbres de fecha: la fecha del incendio de Hattusa por los kaska varía según la fuente (la página en inglés lo sitúa entre Arnuwanda I y Suppiluliuma I, 'hacia 1330', otras reconstrucciones lo llevan a 1400-1370); las fechas asirias y babilonias siguen la cronología media; para Srubna la Wikipedia en inglés da 1900-1200 a.C. y la española siglos XVI-IX, se ha usado la inglesa. Peso 3 de Kizzuwatna, Kaska y Srubna es un juicio por analogía con Arzawa y Andrónovo, ya presentes en el visor; si esos están a peso 2, estos deberían bajarse igual.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "ead744ccc5",
+  "bbox": [
+   -12.0,
+   32.5,
+   33.67,
+   60.0
+  ],
+  "corte": "-1350",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 8,
+  "descartados": [
+   {
+    "nombre": "Cultura de los túmulos",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Edad del Bronce nórdica",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Revisados ~55 candidatos (Wikipedia en/es) con QID y coordenadas verificados en la API de Wikidata. FUERA DE ZONA por longitud: Hattusa Q181007 (34,62 E) y Enkomi Q22987223 (33,87 E) quedan al este del límite 33,67 E, aunque son las dos ciudades de peso 3 más obvias del periodo; conviene que la zona vecina las recoja. Cultura de Srubna Q1470165 (Dniéper–Urales) solo roza el borde oriental y corresponde a la zona esteparia. DESCARTADOS POR UMBRAL (peso 2, válidos en vista media): Terramare Q1410539, cultura apenínica Q2569017, Trzciniec Q2537330, Wessex Q719139, Cogotas I (solo hay ítem del yacimiento Q2660473), liga de Assuwa Q2665673 (hacia 1400 a.C.), Mileto/Millawanda Q169460 (asentamiento micénico desde 1450 a.C.), Hala Sultan Tekke Q136360956 (34,88 N 33,61 E, dentro por 0,06°), Festo Q249707, Cidonia Q1481525, Atenas Q1524; relaciones de peso 2: Hatti–Ahhiyawa (Madduwatta/Attarissiya, Mursili II contra Millawanda), Egipto–Arzawa (cartas EA 31–32), micénica–Alasiya (comercio cerámico, ya ilustrado por Uluburun e Ialiso–Alasiya). CAMPOS DE URNAS Q223998: Wikipedia en fecha el inicio (Bronce D) hacia 1300 a.C., Wikipedia es en 1250–1200 y Wikidata en 1200; con la ventana acabando en 1275 lo dejo para el corte de 1200 a.C. AHHIYAWA Q552241 no se propone porque es el nombre hitita de la civilización micénica ya presente (y Wikidata le da fechas -2000/-1500 incoherentes). APASA Q2748874 (capital de Arzawa) no tiene coordenadas en Wikidata y su identificación con Éfeso/Ayasuluk es una hipótesis, así que Éfeso Q47611 (inicio -1000 en Wikidata) no se propone como ciudad de la ventana. EVENTOS: no se encontró ítem de Wikidata para la destrucción final de Cnosos (hacia 1350 a.C.) ni para la revuelta de Assuwa; la batalla de Qadesh (1274 a.C.) cae fuera de la ventana y de la zona. Asiria–Mitani (independencia de Assur-uballit I, conquista de Adad-nirari I) no se propone porque ambas entidades y el teatro quedan fuera de esta zona. Fechas de Tebas y Tirinto tomadas con «hacia»: el apogeo palacial es LH IIIA–B (1400–1200 a.C.); el palacio de Pilos conservado es de hacia 1300 a.C., por lo que su solape con la ventana es corto.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
