@@ -1128,5 +1128,27 @@
   ],
   "nota": "Zona = Asia Central y Oriental (Xinjiang, Mongolia, Siberia meridional, norte de China). Ninguno de los 15 objetos ya presentes cae realmente en esta zona salvo, en su extremo occidental, la cultura de Andrónovo (Q459376, coordenadas en Wikidata 55.9N 55.7E, fuera de la zona). Se ha mirado en Wikipedia (en) y Wikidata: Longshan, Taosi, Shimao, Erlitou (cultura y yacimiento), dinastía Xia, Qijia, Xiajiadian inferior, Okunev, Seima-Turbino, Xiaohe. Propuestos a peso 3: Longshan y sus dos mayores ciudades (Taosi, Shimao) y el primer estado chino (Erlitou, que arranca en 1900 a.C., dentro de la ventana). Descartados por debajo del umbral (peso 2): cultura de Qijia (Q1269223, 2200–1600 a.C., primera metalurgia del noroeste), Xiajiadian inferior (Q1041674, 2200–1600 a.C.), Okunev (Q2632835, Minusinsk) y cementerio de Xiaohe (Tarim); Seima-Turbino no devolvió QID en la búsqueda. La dinastía Xia (Q169705, fechas tradicionales 2070–1600 a.C.) se ha dejado FUERA deliberadamente: no hay registros contemporáneos ni prueba arqueológica de su existencia (Wikipedia: 'unprovable'), así que no cumple la regla 3; si el visor quiere mostrar la tradición, sería un objeto de peso 3 con etiqueta de 'tradicional / no verificado'. Advertencias: (a) Longshan (Q1057935) no tiene coordenadas P625 en Wikidata, igual que la cultura nurágica ya admitida; el visor tendrá que resolverla por otra vía; Erlitou-cultura, Erlitou-yacimiento, Shimao y Taosi sí tienen P625 y caen dentro de la zona (34.7N 112.7E; 38.6N 110.3E; 35.9N 111.5E). (b) Wikidata fecha la cultura de Erlitou 2000–1500 a.C. y Wikipedia 1900–1500 (un estudio de radiocarbono de 2007 la reduce a 1750–1530): descuadre de fuentes; se ha usado 1900. (c) No se proponen relaciones: la sucesión Longshan→Erlitou es cultural, no un vínculo de comercio/conflicto/transmisión entre dos entidades coetáneas, y la posible transmisión de la metalurgia del bronce desde la estepa (Seima-Turbino/Andrónovo) hacia Qijia y Erlitou es HIPÓTESIS SIN VERIFICAR en las fuentes leídas.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "b2f94edaec",
+  "bbox": [
+   -12.0,
+   5.0,
+   33.67,
+   32.5
+  ],
+  "corte": "-2500",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 1,
+  "descartados": [
+   {
+    "nombre": "Reino de Kerma",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona: Nilo egipcio (hasta 32,5° N, incluye Menfis, Heliópolis, Guiza y el Alto Egipto), Nubia, Sudán, Sáhara, Sahel y África occidental. Solo dos objetos alcanzan peso 3. (1) Gran Pirámide: Wikipedia da 'hacia 2600 a.C.' y Wikidata 'hacia 2560 a.C.'; se toma el valor de Wikidata. (2) Kerma: Wikidata Q1739282 tiene coordenadas dentro de la zona (19,6° N, 30,4° E) pero fija el inicio en 3500 a.C. (fase Pre-Kerma); se usa 2500 a.C., inicio del Kerma Antiguo según Wikipedia (en). Aviso: en esta ventana Kerma es 'una pequeña aldea fortificada recién fundada', no un estado; el peso 3 corresponde al objeto en su conjunto (reino hasta 1500 a.C.), no a su relevancia en 2500 a.C. Wikipedia (es) usa una periodización distinta (Kerma Antiguo hacia 2000 a.C.); las dos fuentes descuadran en las fechas de fase. DESCARTADOS por peso 2 o inferior: cultura del Grupo C (Q1022291, Baja Nubia, 2400–1550 a.C., cultura arqueológica sin estado); Buhen (Q1002656, factoría de cobre egipcia de la IV–V dinastía, hacia 2600–2400 a.C.); Elefantina (Q284009, puesto fronterizo y escala del comercio de marfil; ciudad de rango medio); Abidos no se ha verificado en esta pasada. DESCARTADOS por fuera de zona o ventana: País de Punt (Q282350, Wikidata lo sitúa en 9,5° N 48° E, fuera de la zona; primera expedición documentada bajo Sahure, s. XXV a.C.); tradición de Tichitt (Mauritania, empieza hacia 2200 a.C., posterior a la ventana). RELACIONES no propuestas: comercio Egipto Imperio Antiguo ↔ Nubia (expediciones de Harkhuf a Yam, hacia 2270 a.C.) y las razias de Seneferu en Nubia y Libia (hacia 2600 a.C., 7.000 y 11.000 cautivos según la Piedra de Palermo) están documentadas, pero la contraparte (Grupo A disperso, libios) no existe como entidad en el visor y ninguna alcanza el umbral de 'guerra mayor' a vista lejana; las razias tampoco tienen QID con coordenadas para proponerse como evento.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
