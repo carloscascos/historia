@@ -528,5 +528,27 @@
   ],
   "nota": "La zona cubre casi exactamente la isla de Rodas (más Chalki y la punta de Loryma, sin evidencia LBA leída). Mirado: Ialisos/Trianda, Lindos, Camiro/Kalavarda, Pylona, Kattavia, Ahhiyawa, Chipre/Alashiya, Creta. Descartados: (1) Lindos (Q65122097): Wikipedia solo aporta la mención homérica (Catálogo de las naves, Tlepólemo) y un fragmento de búsqueda cita «dos tumbas de cámara» de la transición Bronce Final/Hierro que no pude leer en fuente; sin documentación leída, no se propone. (2) Ahhiyawa (Q552241): su localización en Rodas es una hipótesis minoritaria y antigua, no una presencia documentada; además Wikidata la fecha 2000–1500 a.C., fuera de la ventana. (3) Abandono de Trianda: hacia 1300 a.C., antes de la ventana y sin QID propio; Moschou Vounara/Makria Vounara y Trianda no tienen ítem en Wikidata, por eso la ciudad se representa con el ítem de Ialisos antigua (36.40, 28.14). (4) Relación con Creta (16 de 37 vasos de estilo pulpo en Ialisos son importaciones cretenses a inicios de LH IIIC): no hay entidad cretense LM IIIC con QID adecuado. (5) Tlepólemo/guerra de Troya: tradición literaria, no evento datado. Advertencias: Pylona y Kalavarda son necrópolis, no poblados excavados; se proponen como «ciudad» por ser la única evidencia de asentamiento. La fecha 1070 de Kalavarda procede de una guía turística (otra fuente da LH IIIA1–IIIB, hasta ~1200): descuadre entre fuentes, no resuelto. Las fuentes de academia.edu se conocen por resúmenes de búsqueda, no por lectura completa del PDF.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "42604bd7b9",
+  "bbox": [
+   79.33,
+   32.5,
+   125.0,
+   60.0
+  ],
+  "corte": "-1350",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 1,
+  "descartados": [
+   {
+    "nombre": "Cultura de Karasuk",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = norte de China, Mongolia, sur de Siberia, Xinjiang y borde occidental de Corea (Japón y Pyongyang quedan al este de 125°). Ya estaban Shang, Zhengzhou, Yin Xu y Andrónovo. Se han mirado Wikipedia (en/es/zh) y Wikidata. PROPUESTO: Huanbei (Q11147514, coords 36.13/114.34, dentro de zona): mayor ciudad amurallada Shang del periodo medio, exactamente en el corte de 1350 a.C.; nota que la Wikipedia inglesa la data 1350–1300 y la china la sitúa en el Shang medio con dos fases, y que el título de 'capital' es la opinión de los arqueólogos chinos, no un dato escrito. Cultura de Karasuk (Q129282): peso 3 es DISCUTIBLE — es una cultura arqueológica, no un estado; se le da 3 por coherencia con Andrónovo (ya presente en la vista lejana) y porque a esta escala es la única entidad documentada en la mitad norte y oeste de la zona en la ventana. Wikidata NO tiene coordenadas (P625) para Q129282; su núcleo (Minusinsk, ~54N 92E) cae dentro de la zona, pero el visor no podrá situarla automáticamente. DESCARTADOS por debajo del umbral: Xiaoshuangqiao (Q107210148, 140 ha, c. 1435–1412 a.C., identificación con la capital Ao disputada; peso 2); cultura de las piedras de ciervo/khirigsuur de Mongolia (empieza c. 1400–1300 a.C., y el único QID disponible, Q176824, es el monumento, no la cultura); Xiaohe/Tarim (termina c. 1450–1400), Zhukaigou (Ordos, termina c. 1400), Xindian y Kayue (Gansu-Qinghai, regionales), todas peso 1–2. No se ha encontrado ningún evento (batalla, fundación con fecha) con QID y coordenadas dentro de la ventana: las guerras Shang documentadas en huesos oraculares empiezan con Wu Ding (c. 1250 a.C.), fuera de ventana, y el traslado de Pan Geng a Yin (tradicionalmente c. 1300 a.C.) no tiene ítem propio en Wikidata. La relación de transmisión Karasuk → Shang (cuchillos, panoplia del carro) está bien documentada en la Wikipedia inglesa pero su cronología firme es c. 1300–1200 a.C. y no alcanza peso 3; se deja para la vista media.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
