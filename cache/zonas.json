@@ -1218,5 +1218,35 @@
   "descartados": [],
   "nota": "Zona = Arabia, golfo Pérsico, sur de Mesopotamia (hasta 32,5 N), Irán meridional, valle del Indo, Levante meridional y Cuerno de África. Al nivel 'vista lejana' no aparece ningún objeto nuevo con coordenadas de peso 3: las capitales del periodo ya están en el visor. Se propone solo relaciones entre entidades existentes; el Imperio acadio (Q4461035) se usa como extremo de dos relaciones aunque su coordenada en Wikidata (33,1 N, 44,1 E) cae fuera de la zona, por lo que no se propone como entidad aquí; Kish (Q132272, 32,54 N) también queda fuera por 0,04°. Descartados por peso ≤2 pese a existir en la ventana: Eridu (Q210065), Bad-tibira (Q1372270), Lothal (Q9443), Kalibangan (Q1722226), Ganeriwala (Q3095220), Mundigak (Q6935822), Konar Sandal / cultura de Jiroft (Q2071319, Q1149433), Qal'at al-Bahrain (Q740104, fundada hacia 2300 a.C.), Tell es-Sultan (Q2402267) y Khirbet al-Batrawy (Q3814996) del Bronce Antiguo III levantino. Dilmun (Q748846), Magan (Q1429914) y Meluhha (Q483421) no tienen coordenadas en Wikidata, así que no pueden proponerse como entidades; Q18600648 'Umm an-Nar Culture' es en realidad el ítem de la isla, no la cultura. 'Batalla de Uruk' (Q3309009) carece de coordenadas y se ha integrado en la relación Acad–Sumer. Punt (Q282350) cae dentro (9,5 N, 48 E) y la expedición de Sahure hacia 2480 a.C. está documentada, pero su ubicación es disputada (Eritrea/Somalia/Sudán) y su peso es 2, por debajo del umbral. El conflicto Sumer–Elam anterior a Acad (Eannatum destruye Susa hacia 2450 a.C.) se ha valorado como peso 2 y no se incluye. Fechas de Sargón según cronología media (2334 a.C.); las fuentes en español dan 2335–2360.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "f4dba1e5ed",
+  "bbox": [
+   -12.0,
+   32.5,
+   33.67,
+   60.0
+  ],
+  "corte": "-2500",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 0,
+  "descartados": [
+   {
+    "nombre": "Troya",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Civilización cicládica",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de la cerámica cordada",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = Europa occidental y central, islas Británicas, Mediterráneo norte, Egeo, Anatolia occidental y Chipre; ventana 2750–2250 a.C. No hay estados ni guerras documentadas dentro de la zona en esta ventana (los estados existentes, Egipto/Sumer/Elam, quedan fuera o ya están en el visor). Se han verificado QID y coordenadas en Wikidata. Incluidos con peso 3: Troya (única 'ciudad grande' amurallada en la zona: Troya II, 2500–2300 a.C.), la civilización cicládica (apogeo Keros-Siros, hub marítimo del Egeo, al mismo nivel que la minoica ya presente) y la cerámica cordada (entidad dominante del norte/centro de Europa). Los dos últimos son culturas, no estados: son casos límite para el umbral 3, se incluyen porque el visor ya usa entidades culturales (minoica, megalitismo) a esta escala. Descartados: campaniforme europeo (su QID Q470867 ya está en el visor como 'Campaniforme (Iberia)', sería duplicado); Yamna (Q426737, extensión esencialmente al este de 33,67° y termina hacia 2600 a.C., Wikidata sin coordenadas); Stonehenge círculo de sarsen (2600–2400 a.C.), Poliochni, Lerna, Skara Brae, templos de Malta, Unetice (empieza 2300, apenas toca la ventana): todos peso 2 o menos a vista lejana. No se proponen relaciones a peso 3: el comercio Cícladas–Creta y Troya–Egeo está documentado pero no alcanza relevancia de vista lejana.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
