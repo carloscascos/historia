@@ -48,3 +48,23 @@ La vista geográfica de un corte: entidades, ciudades, relaciones y eventos sobr
 **Visor**:
 El conjunto de cuadro y mapa y la navegación entre ellos.
 _Avoid_: atlas, app, dashboard
+
+### Fichas
+
+**Ficha**:
+El texto que describe un objeto (entidad, ciudad, relación, evento o corte): entradilla, contexto, relacionado y fuentes.
+_Avoid_: panel, tarjeta, popup
+
+**Ficha revisada**:
+Ficha cuyo texto ha sido leído contra sus fuentes por el revisor y vive en `data/`. Es lo único que el build incrusta.
+
+**Ficha generada**:
+Ficha producida por un LLM a petición de un usuario, con modelo, fecha, consulta y fuentes devueltas. Vive en la caché, se muestra a todos con marca visible y no es dato hasta que se revisa.
+_Avoid_: borrador, sugerencia, automática
+
+**Investigación**:
+El proceso que produce una ficha generada: consulta fija sobre el objeto → generación con la clave del usuario → validación de fuentes → caché. La revisión no forma parte de la investigación.
+_Avoid_: búsqueda, autolearning
+
+**Revisor**:
+Quien promueve una ficha generada a revisada. Hoy, solo Carlos.
