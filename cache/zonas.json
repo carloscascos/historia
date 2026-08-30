@@ -476,5 +476,27 @@
   ],
   "nota": "Zona = Arabia, golfo Pérsico, sur de Mesopotamia, Irán meridional, Indo y Deccán, Levante sur, mar Rojo y Cuerno de África. Umbral peso 3. AVISO: Dilmun (Q748846) NO tiene coordenadas (P625) en Wikidata, igual que la I Dinastía del País del Mar ya cargada; si el visor exige P625 hay que descartarlo o anclarlo a Qal'at al-Bahrain (Q740104). Mirado y descartado por debajo del umbral: Ur (Q5699, 30.96N 46.10E) — Wikipedia dice literalmente que 'no parece haber sido una ciudad significativa en la Babilonia casita', solo reconstrucciones de Kurigalzu I, peso 2; Anshan/Tall-i Malyan (Q569107, dentro de zona) — el título 'rey de Anshan y Susa' se usa desde el s. XV, pero los niveles medio-elamitas excavados son de la fase tardía y la ocupación hacia 1350 no queda confirmada en lo leído, peso 2 con duda; ciudades-estado de Amarna en Canaán, todas vasallas de Egipto y documentadas c. 1350: Laquis (Q848509), Gezer (Q1466687), Siquem (Q7951237, reino de Labaya), Jerusalén (Q1218, 'small hillside town' según EA 287) — peso 2, no son 'ciudades grandes' a esta escala. India: Cemetery H (Q2364797), Malwa (Q48728691), Jorwe (Q48728694), Ahar-Banas (Q399951), cerámica ocre (Q2663163) — culturas regionales, peso 2, ya cubiertas a esta escala por Civilización del valle del Indo y Cultura védica temprana; Malwa y Jorwe además sin P625. Omán: cultura de Wadi Suq (Q48802879), sin P625, peso 2. Relación Babilonia–Dilmun (administración casita c. 1370) queda recogida en la línea de Dilmun; como vínculo aparte sería peso 2. Conquista casita del País del Mar por Ulamburiash: Wikipedia la fecha en la segunda mitad del s. XVI a.C. y Wikidata cierra la dinastía en -1460 — descuadre de cronología, causa no resuelta; por quedar en el borde o fuera de la ventana no se propone. La conquista de Elam se atribuye hoy a Kurigalzu I (c. 1400), no a Kurigalzu II como decía la Crónica P; se ha fechado -1400/-1375 con 'hacia'. Punt: sin coordenadas en Wikidata, no propuesto. Nubia (Kerma, Napata) y Serabit el-Khadim quedan al oeste de 33.67E; Timna (minas egipcias desde Seti I, c. 1300) es peso 2.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "fbc6321a4a",
+  "bbox": [
+   79.33,
+   5.0,
+   125.0,
+   32.5
+  ],
+  "corte": "-1350",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 0,
+  "descartados": [
+   {
+    "nombre": "Sanxingdui",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona = India al este de 79°E, Sri Lanka, Sudeste Asiático y China al sur de 32,5°N (quedan fuera Anyang, Zhengzhou/Erligang y Yanshi, todas por encima de 34°N; los Shang ya figuran como entidad). Único objeto que alcanza el umbral 3 en vista lejana: la ciudad de Sanxingdui (Wikidata 30.99°N 104.20°E, dentro de la zona; ciudad amurallada fundada hacia 1600 a.C., activa toda la ventana, abandono hacia 1150 a.C. con traslado a Jinsha). La 'cultura de Sanxingdui' como entidad (Q118173543) existe en Wikidata pero sin coordenadas, por lo que no se propone; por el mismo motivo se omite una relación de transmisión Shang→Sanxingdui (técnica del bronce), que además valoraría en peso 2. Revisados y descartados por quedar en peso 2 o menos: Panlongcheng (Q217684, avanzada Erligang en Hubei, ~1 km², c. 1500–1300 a.C., peso 2); cultura de Wucheng (Q1078422, Jiangxi, desde c. 1600 a.C., peso 2); cultura Đồng Đậu (Q8079980, Vietnam, c. 1500–1000 a.C., aldeas con fundición, sin coordenadas en Wikidata, peso 1-2); Ban Chiang (Q584125, Tailandia: según Higham asentamiento c. 1500 a.C. pero bronce solo desde c. 1000 a.C., peso 1); cerámica de color ocre / tesoros del cobre (Q2663163, Q458076): aldeas del doab Ganges-Yamuna, mayoritariamente al oeste de 79°E, sin coordenadas en Wikidata, terminan hacia 1500-1200 a.C., peso 1. No se ha encontrado ningún estado, ciudad grande ni guerra mayor documentados en India oriental, Sri Lanka, Myanmar, Filipinas o Indonesia en 1475–1275 a.C.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
