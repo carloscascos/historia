@@ -3660,5 +3660,31 @@
   ],
   "nota": "Zona = Urales meridionales, estepa de Kazajistán central/norte y estepa arbolada de Siberia occidental. En la ventana -1275/-1000 la Andrónovo clásica ya se ha disgregado, así que lo pertinente son sus sucesoras: se proponen Sargary-Alekseyevka, Begazy-Dandybai, Mezhovka e Irmen, más los dos yacimientos con artículo y coordenadas dentro del recuadro (Semiyarka, mausoleos de Begazy). DESCARTADOS: cultura de Cherkaskul (Q4513013) — su horquilla habitual es s. XVII–XV a.C., termina hacia -1250 y solo roza el inicio de la ventana; necrópolis de Karazhartas (Q56309356), dentro del recuadro pero datada por radiocarbono en los siglos XV–XIV a.C., anterior a la ventana; Sintashta/Arkaim, muy anteriores (-2200/-1800); Kargaly, la gran mina de cobre, cae en ~55°E, al oeste del recuadro; Taldysai y Atasu, centros metalúrgicos reales, pero sus ítems de Wikidata son pueblos modernos homónimos, no los yacimientos, así que no cumplen la regla del QID. ADVERTENCIAS DE DATO: (1) las cuatro culturas propuestas NO tienen coordenadas (P625) en Wikidata — como tampoco las tiene Mezhovka ni Irmen; solo Andrónovo, ya presente en el visor, las lleva. Si el visor toma la posición de Wikidata, estos cuatro objetos no se podrán situar. (2) La datación de los mausoleos de Begazy discrepa entre fuentes: la Wikipedia inglesa dice s. XII–VIII a.C. y el sitio qazaqstan3d y otras fuentes c. 1350–1150 a.C.; he usado -1200/-1000 porque es lo que ambas lecturas comparten dentro de la ventana, pero el rango real es incierto. (3) Semiyarka: no se ha publicado fecha de abandono; el -1100 que doy es el final de la fase Alekseyevka-Sargary a la que se le atribuye, no una fecha medida en el yacimiento. (4) No se ha encontrado ningún evento datado (batalla, destrucción, fundación) dentro de la ventana en esta zona: es prehistoria sin fuentes escritas, y no propongo ninguno antes que inventarlo. (5) Se comprobó si la ruta del estaño hacia el Mediterráneo (pecio de Uluburun) anclaba una relación comercial aquí: el análisis isotópico apunta a Uzbekistán y Tayikistán (~40°N), fuera del recuadro por el sur, así que esa relación no se propone.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "5a7456956b",
+  "bbox": [
+   -12.0,
+   5.0,
+   10.84,
+   18.75
+  ],
+  "corte": "-2000",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 0,
+  "descartados": [
+   {
+    "nombre": "Tradición de Tichitt",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Dhar Tichitt",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona = África occidental y Sahel central-occidental (Atlántico a la cuenca del Chad occidental, 5°–18.75°N). Barrido sistemático de Wikidata por caja geográfica (SPARQL, P31 = sitio arqueológico / cultura arqueológica / ciudad / bien cultural) más búsquedas dirigidas. El registro con QID y coordenadas dentro de esta ventana es muy escaso; casi todo lo que aparece en la caja (Djenné-Djenno, Koumbi Saleh, Igbo-Ukwu, Taruga, Begho, Bura, Oyo-Ile, Loropéni, Gao) es de la Edad del Hierro o medieval, mil años o más después. DISCREPANCIA DE FECHAS QUE NO CIERRO: sobre Tichitt las fuentes no coinciden. Wikipedia («Tichitt tradition») y africanhistoryextra dan el inicio de la tradición en 2200 a.C.; la propia página «Dhar Tichitt» sitúa la ocupación a partir de ~2000 a.C. y describe 2600–1900 a.C. como fase «pre-Tichitt» de pastoreo móvil, con la arquitectura de piedra seca solo desde ~1900 a.C. Es decir, de la ventana −2250/−1800 solo cae con seguridad su tramo final, y el rasgo que hace notable a Tichitt (los poblados amurallados) puede ser posterior a −1900. Propongo la entidad porque la ocupación de la zona en la ventana sí está documentada, pero las fechas «desde» que doy son el rango sobre el que hay acuerdo, no una cronología firme. Hay una revisión de 2026 con nuevas dataciones de las excavaciones de Munson (Azania, doi 10.1080/0067270X.2026.2630538) que no he podido leer: el editor devuelve 403. Sin ella la cronología queda sin resolver. DESCARTADOS Y POR QUÉ: (a) Complejo de Kintampo (Q1320943, 8.05N −1.72E, dentro de la caja) — Wikipedia da 2500–1400 a.C., pero la literatura arqueológica (Watson, revisión en Azania 2010; estudios de palma aceitera) data el complejo en 3600–3200 BP ≈ 1650–1250 a.C., posterior a esta ventana. No lo incluyo: la fecha de Wikipedia no está respaldada por las dataciones radiocarbónicas publicadas y usarla metería un objeto cuatro siglos fuera de sitio. (b) Karkarichinkat, valle del Tilemsi (Q22906084) — cronología adecuada (mijo perla domesticado antes de 2400 a.C., ocupación hasta ~2200/1800 a.C.) pero su ítem de Wikidata NO tiene coordenadas (P625), así que incumple la regla 2. (c) Birimi (Q115867042) — ocupación Late Stone Age 3500–3000 BP ≈ 1550–1050 a.C., fuera de ventana. (d) Cultura Gajiganna (Q1491580) — arranca ~1800 a.C. (borde) pero sus coordenadas (13.15E) caen fuera del límite este de la zona (10.84). (e) Gobero y Dabous (Níger) — arte rupestre y cementerios del Sahara verde, milenios anteriores. (f) Cultura Nok — 500 a.C., muy posterior. (g) La entidad «Tichitt culture» (Q107008575) no tiene coordenadas propias en Wikidata; si el visor las toma solo de P625 no podrá situarla, y habría que anclarla al sitio Dhar Tichitt (Q1165596, 18.36N −9.15E, dentro de la caja). No propongo ninguna relación: no he encontrado documentación de contacto entre Tichitt y ninguna de las entidades ya presentes en el visor dentro de esta ventana, y no voy a inventar una ruta transahariana que en 2000 a.C. no está probada.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
