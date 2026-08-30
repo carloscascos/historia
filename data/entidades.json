@@ -11,7 +11,14 @@
    "wikidata:Q187979",
    "eswiki:Periodo arcaico de Egipto"
   ],
-  "origen_geo": "cliopatria"
+  "origen_geo": "cliopatria",
+  "alias": [
+   "Egipto arcaico",
+   "Egipto"
+  ],
+  "contexto": [
+   "Las dinastías I y II unifican el valle y el delta y fijan la monarquía, la escritura jeroglífica y la capital en Menfis. Las tumbas reales de Abidos son el origen de la arquitectura funeraria egipcia."
+  ]
  },
  {
   "qid": "Q177819",
@@ -25,7 +32,14 @@
    "wikidata:Q177819",
    "eswiki:Imperio Antiguo de Egipto"
   ],
-  "origen_geo": "cliopatria"
+  "origen_geo": "cliopatria",
+  "alias": [
+   "Imperio Antiguo",
+   "Egipto"
+  ],
+  "contexto": [
+   "La época de las pirámides: Zoser, Snefru, Keops, Kefrén y Micerino. Un Estado capaz de movilizar decenas de miles de trabajadores. Se disuelve hacia 2181 en el Primer Periodo Intermedio."
+  ]
  },
  {
   "qid": "Q191324",
@@ -39,7 +53,14 @@
    "wikidata:Q191324",
    "eswiki:Imperio Medio de Egipto"
   ],
-  "origen_geo": "cliopatria"
+  "origen_geo": "cliopatria",
+  "alias": [
+   "Imperio Medio",
+   "Egipto"
+  ],
+  "contexto": [
+   "Mentuhotep II reunifica Egipto desde Tebas hacia 2055. La dinastía XII coloniza el Fayum, fortifica Nubia y comercia con Biblos. Es la edad clásica de la literatura egipcia."
+  ]
  },
  {
   "qid": "Q728479",
@@ -53,7 +74,14 @@
    "wikidata:Q728479",
    "eswiki:Dinastía XV de Egipto"
   ],
-  "origen_geo": "cliopatria"
+  "origen_geo": "cliopatria",
+  "alias": [
+   "hicsos",
+   "Egipto"
+  ],
+  "contexto": [
+   "Los hicsos, reyes de origen levantino, gobiernan el delta desde Avaris. Introducen en Egipto el carro, el caballo y el arco compuesto. Ahmose los expulsa hacia 1550."
+  ]
  },
  {
   "qid": "Q737695",
@@ -67,7 +95,13 @@
    "wikidata:Q737695",
    "eswiki:Dinastía XVI de Egipto"
   ],
-  "origen_geo": "cliopatria"
+  "origen_geo": "cliopatria",
+  "alias": [
+   "Egipto"
+  ],
+  "contexto": [
+   "Dinastía tebana contemporánea de los hicsos, con control limitado al Alto Egipto; su existencia como dinastía separada es discutida."
+  ]
  },
  {
   "qid": "Q642301",
@@ -81,7 +115,13 @@
    "wikidata:Q642301",
    "eswiki:Dinastía XVII de Egipto"
   ],
-  "origen_geo": "cliopatria"
+  "origen_geo": "cliopatria",
+  "alias": [
+   "Egipto"
+  ],
+  "contexto": [
+   "Desde Tebas, Seqenenra Taa y Kamose emprenden la guerra contra los hicsos que Ahmose remata al fundar el Imperio Nuevo."
+  ]
  },
  {
   "qid": "Q180568",
@@ -96,7 +136,18 @@
    "eswiki:Imperio Nuevo de Egipto",
    "isbn:9780691140896 — Cline 2014, 1177 B.C.: The Year Civilization Collapsed, Princeton"
   ],
-  "origen_geo": "cliopatria"
+  "origen_geo": "cliopatria",
+  "alias": [
+   "Egipto",
+   "Imperio Nuevo",
+   "egipcio",
+   "egipcios"
+  ],
+  "contexto": [
+   "El Imperio Nuevo empieza cuando Ahmose expulsa a los hicsos del delta hacia 1550 a.C. y reunifica el país desde Tebas. Sus sucesores de la dinastía XVIII convierten la guerra de liberación en expansión: Tutmosis III, tras vencer en Megido (1457), lleva las fronteras hasta el Éufrates y convierte Canaán en una red de ciudades vasallas que pagan tributo y alojan guarniciones egipcias.",
+   "A mediados del siglo XIV, bajo Amenhotep III y Akenatón, Egipto es la primera potencia de un sistema de grandes reyes que se tratan como hermanos: Babilonia, Mitani, Hatti, Asiria y Alasiya. Las cartas de Amarna muestran ese mundo desde la cancillería egipcia: matrimonios diplomáticos, envíos de oro a cambio de caballos, lapislázuli y cobre, y las quejas de los vasallos cananeos.",
+   "Ramsés II choca con Hatti en Qadesh (1274) y firma con Hattusili III el primer tratado de paz conservado (1259). Merenptah y Ramsés III rechazan a los Pueblos del Mar (1207 y 1177): Egipto sobrevive al colapso que arrasa a sus vecinos, pero pierde Canaán y Nubia y se apaga en las guerras civiles del siglo XI."
+  ]
  },
  {
   "qid": "Q2345840",
@@ -104,13 +155,21 @@
   "tipo": "estado",
   "civilizacion": 7,
   "desde": -3300,
-  "hasta": -2004,
-  "linea": "Uruk, Ur, Lagash, Kish: primeras ciudades y primera escritura; rivalidad constante entre ellas.",
+  "hasta": -1800,
+  "linea": "Uruk, Ur, Lagash, Kish: primeras ciudades y primera escritura; rivalidad constante entre ellas. Tras Ur III, las ciudades-estado de Isin y Larsa prolongan el mundo sumerio hasta Hammurabi.",
   "fuentes": [
    "wikidata:Q2345840",
    "enwiki:History of Sumer"
   ],
-  "origen_geo": "cliopatria"
+  "origen_geo": "cliopatria",
+  "alias": [
+   "Sumer",
+   "sumerios",
+   "sumeria"
+  ],
+  "contexto": [
+   "Uruk, Ur, Lagash, Kish, Umma: las primeras ciudades del mundo y la primera escritura (hacia 3300). Rivales entre sí, son unificadas por Acad (hacia 2334) y renacen con la tercera dinastía de Ur, que cae ante elamitas y amorreos hacia 2004."
+  ]
  },
  {
   "qid": "Q41137",
@@ -124,7 +183,17 @@
    "wikidata:Q41137",
    "eswiki:Asiria"
   ],
-  "origen_geo": "cliopatria"
+  "origen_geo": "cliopatria",
+  "alias": [
+   "Asiria",
+   "asirios",
+   "Assur"
+  ],
+  "contexto": [
+   "Assur es primero una ciudad-estado mercantil: hacia 1900 sus comerciantes mantienen colonias en Anatolia (Kanesh) y cambian estaño y textiles por plata y oro. Después cae bajo Mitani.",
+   "Assur-uballit I (hacia 1363–1328) rompe con Mitani, se titula gran rey y escribe al faraón como igual: es el nacimiento del Imperio Asirio Medio. Adad-nirari I y Salmanasar I conquistan Hanigalbat; Tukulti-Ninurta I toma Babilonia hacia 1225 y se lleva la estatua de Marduk.",
+   "Asiria aguanta el colapso de 1200 mejor que nadie y de ella saldrá el gran imperio del Hierro."
+  ]
  },
  {
   "qid": "Q47690",
@@ -138,7 +207,18 @@
    "wikidata:Q47690",
    "eswiki:Babilonia (reino)"
   ],
-  "origen_geo": "cliopatria"
+  "origen_geo": "cliopatria",
+  "alias": [
+   "Babilonia",
+   "babilonios",
+   "casita",
+   "casitas"
+  ],
+  "contexto": [
+   "Babilonia, una ciudad menor hasta Hammurabi (hacia 1792–1750), se convierte con él en capital de toda Mesopotamia; su código de leyes es el más largo conservado del Bronce. Los hititas la saquean en 1595 y de esa ruina emerge la dinastía casita.",
+   "Los casitas, un pueblo de los Zagros, gobiernan cuatro siglos (hacia 1595–1155), el reinado más largo de la historia babilónica: fundan Dur-Kurigalzu, introducen el caballo y los mojones de tierra (kudurru), y hacen del acadio babilonio la lengua franca de la diplomacia. Sus reyes casan a sus hijas con faraones y se quejan por carta de que el oro egipcio llega falto de ley.",
+   "Tukulti-Ninurta I de Asiria toma la ciudad hacia 1225; Shutruk-Nahhunte de Elam la saquea en 1155 y se lleva a Susa la estela de Hammurabi."
+  ]
  },
  {
   "qid": "Q7440601",
@@ -152,7 +232,13 @@
    "wikidata:Q7440601",
    "eswiki:I Dinastía del País del Mar"
   ],
-  "origen_geo": "cliopatria"
+  "origen_geo": "cliopatria",
+  "alias": [
+   "País del Mar"
+  ],
+  "contexto": [
+   "Dinastía de las marismas del sur de Mesopotamia que gobierna entre el declive de la Babilonia amorrita y la consolidación casita."
+  ]
  },
  {
   "qid": "Q178665",
@@ -166,7 +252,18 @@
    "wikidata:Q178665",
    "eswiki:Mitani"
   ],
-  "origen_geo": "cliopatria"
+  "origen_geo": "cliopatria",
+  "alias": [
+   "Mitani",
+   "Mitanni",
+   "hurritas",
+   "Washukanni"
+  ],
+  "contexto": [
+   "Mitani es un reino hurrita del alto Éufrates y el Jabur, con capital en Washukanni, aún sin localizar con certeza. Su élite guerrera lleva nombres indoarios y venera a Mitra, Varuna e Indra; el tratado de aprendizaje de caballos de Kikkuli, escrito en Hattusa, usa términos técnicos indoarios.",
+   "Hacia 1400 domina desde el Mediterráneo hasta Asiria y se enfrenta a Egipto en Siria hasta que Tutmosis IV pacta con Artatama I. Tushratta se cartea con Amenhotep III y Akenatón y le envía a la diosa Ishtar de Nínive para curarlo.",
+   "Suppiluliuma I saquea Washukanni hacia 1340 y Assur-uballit I se independiza por el este. Lo que queda, Hanigalbat, acaba absorbido por Asiria en el siglo XIII."
+  ]
  },
  {
   "qid": "Q128904",
@@ -180,7 +277,17 @@
    "wikidata:Q128904",
    "eswiki:Elam (reino)"
   ],
-  "origen_geo": "cliopatria"
+  "origen_geo": "cliopatria",
+  "alias": [
+   "Elam",
+   "elamitas",
+   "Susa",
+   "Anshan"
+  ],
+  "contexto": [
+   "Elam junta dos mundos: Susa, en la llanura que prolonga Mesopotamia, y Anshan, en la meseta. Por él pasan el estaño y el lapislázuli de Afganistán hacia el oeste. Su escritura pasa del protoelamita, sin descifrar, al cuneiforme.",
+   "En el periodo elamita medio (hacia 1500–1100) los reyes de Anshan y Susa construyen Dur-Untash (Chogha Zanbil), con el zigurat mejor conservado del mundo, y culminan con Shutruk-Nahhunte, que saquea Babilonia en 1155 y se lleva a Susa la estela de Hammurabi y la de Naram-Sin."
+  ]
  },
  {
   "qid": "Q42534",
@@ -194,7 +301,15 @@
    "wikidata:Q42534",
    "eswiki:Civilización del valle del Indo"
   ],
-  "origen_geo": "cliopatria"
+  "origen_geo": "cliopatria",
+  "alias": [
+   "Indo",
+   "Harappa",
+   "harappense"
+  ],
+  "contexto": [
+   "Harappa, Mohenjo-daro, Dholavira, Rakhigarhi: ciudades planificadas con alcantarillado y pesos normalizados, una escritura sin descifrar y ningún palacio ni templo identificable. Comercia con Mesopotamia (Meluhha). Se disgrega hacia 1900 por causas discutidas, entre ellas el cambio del régimen de monzones."
+  ]
  },
  {
   "qid": "Q128938",
@@ -208,7 +323,16 @@
    "wikidata:Q128938",
    "eswiki:Dinastía Shang"
   ],
-  "origen_geo": "cliopatria"
+  "origen_geo": "cliopatria",
+  "alias": [
+   "Shang",
+   "Anyang",
+   "Yin"
+  ],
+  "contexto": [
+   "La dinastía Shang es la primera de China con registro escrito contemporáneo: los huesos oraculares de Anyang, donde los reyes consultan a los antepasados sobre cosechas, guerras y partos. Sus bronces rituales, fundidos a molde, son técnicamente únicos.",
+   "Desde Zhengzhou (Erligang) el poder se traslada hacia 1250 a Yin, la actual Anyang, bajo Wu Ding. El carro de guerra aparece hacia 1200, ya completo, lo que sugiere que llega de fuera. Los Zhou derrocan a los Shang en 1046."
+  ]
  },
  {
   "qid": "Q134178",
@@ -222,7 +346,16 @@
    "wikidata:Q134178",
    "eswiki:Civilización minoica"
   ],
-  "origen_geo": "cliopatria"
+  "origen_geo": "cliopatria",
+  "alias": [
+   "minoica",
+   "minoicos",
+   "Creta",
+   "Cnosos"
+  ],
+  "contexto": [
+   "Los palacios cretenses (Cnosos, Festo, Malia) organizan una economía redistributiva y una red marítima que llega a Egipto y el Levante. Escriben en Lineal A, sin descifrar. La erupción de Tera (hacia 1600) y la llegada micénica (hacia 1450) cierran el periodo."
+  ]
  },
  {
   "qid": "Q181264",
@@ -237,7 +370,19 @@
    "eswiki:Civilización micénica",
    "isbn:9780691140896 — Cline 2014, 1177 B.C.: The Year Civilization Collapsed, Princeton"
   ],
-  "origen_geo": "cliopatria"
+  "origen_geo": "cliopatria",
+  "alias": [
+   "micénicos",
+   "micénica",
+   "Micenas",
+   "aqueos",
+   "Ahhiyawa"
+  ],
+  "contexto": [
+   "Los micénicos son los primeros griegos con escritura: el Lineal B, adaptado del Lineal A minoico, registra en tablillas de arcilla los inventarios de los palacios de Micenas, Pilos, Tirinto y Tebas. Hacia 1450 toman Cnosos y heredan las rutas cretenses.",
+   "Su cerámica aparece en Ugarit, Chipre, Egipto, Sicilia y Cerdeña; los textos hititas hablan de un rey de Ahhiyawa con intereses en la costa de Anatolia. El cargamento de Uluburun lleva vasos micénicos y probablemente pasajeros micénicos.",
+   "Entre 1200 y 1150 los palacios arden uno tras otro; la escritura desaparece y Grecia entra en cuatro siglos sin ciudades. Los poemas homéricos son el recuerdo lejano de este mundo."
+  ]
  },
  {
   "qid": "Q5406",
@@ -252,7 +397,17 @@
    "eswiki:Hititas",
    "isbn:9780691140896 — Cline 2014, 1177 B.C.: The Year Civilization Collapsed, Princeton"
   ],
-  "origen_geo": "cliopatria"
+  "origen_geo": "cliopatria",
+  "alias": [
+   "Hatti",
+   "hititas",
+   "Hattusa"
+  ],
+  "contexto": [
+   "Los hititas hablan una lengua indoeuropea, la más antigua documentada, y la escriben en cuneiforme tomado de Mesopotamia. Desde Hattusa, en el centro de Anatolia, Hattusili I y Mursili I saquean Alepo y llegan hasta Babilonia (1595), pero el reino antiguo se desangra en luchas dinásticas.",
+   "El imperio lo funda Suppiluliuma I (hacia 1350–1322): destruye Washukanni, la capital de Mitani, arrebata Siria a Egipto y coloca a sus hijos como reyes en Alepo y Karkemish. Ugarit y Amurru pasan a ser vasallos hititas. Mursili II somete Arzawa; Muwatalli II detiene a Ramsés II en Qadesh.",
+   "Hacia 1180 Hattusa se abandona sin señales de asedio: hambruna, cortes en el suministro de grano por mar y disputas dinásticas, más que una invasión, explican el final. Karkemish sobrevive como reino neohitita."
+  ]
  },
  {
   "qid": "Q191369",
@@ -267,7 +422,17 @@
    "eswiki:Ugarit",
    "isbn:9780691140896 — Cline 2014, 1177 B.C.: The Year Civilization Collapsed, Princeton"
   ],
-  "origen_geo": "mano"
+  "origen_geo": "mano",
+  "alias": [
+   "Ugarit",
+   "ugarítico",
+   "Ras Shamra"
+  ],
+  "contexto": [
+   "Ugarit, en la costa siria frente a Chipre, es el puerto donde se cruzan las rutas de Egipto, el Egeo, Anatolia y Mesopotamia. Su rey es vasallo de Hatti pero comercia con todos; su archivo, en ocho lenguas, es la mejor ventana al Bronce final.",
+   "Aquí se inventa hacia 1400 un alfabeto de treinta signos cuneiformes, el primer alfabeto sistemático conocido, con el que se escriben los poemas de Baal y Anat. Sus mercaderes tienen agentes en Chipre y sus barcos llevan grano hitita.",
+   "Hacia 1185 la ciudad arde y nunca se reconstruye. La última carta del rey Ammurapi, encontrada en el horno, avisa de barcos enemigos que han quemado sus ciudades. Un campesino la redescubre arando en 1928."
+  ]
  },
  {
   "qid": "Q1760729",
@@ -281,7 +446,17 @@
    "wikidata:Q1760729",
    "eswiki:Alasiya"
   ],
-  "origen_geo": "mano"
+  "origen_geo": "mano",
+  "alias": [
+   "Alasiya",
+   "Alashiya",
+   "Chipre",
+   "chipriota"
+  ],
+  "contexto": [
+   "Alasiya es el nombre que Egipto, Hatti y Ugarit dan a Chipre, o a un reino de la isla. Su riqueza es el cobre de las montañas de Troodos, exportado en lingotes con forma de piel de buey que aparecen desde Cerdeña hasta Mesopotamia.",
+   "El rey de Alasiya escribe al faraón de igual a igual en las cartas de Amarna: le envía cientos de talentos de cobre y le pide plata, marfil y aceite. Enkomi, en la costa oriental, es el gran centro metalúrgico. Hacia 1200 la isla recibe refugiados micénicos y sale del colapso transformada."
+  ]
  },
  {
   "qid": "Q1421436",
@@ -295,7 +470,17 @@
    "wikidata:Q1421436",
    "eswiki:Cultura nurágica"
   ],
-  "origen_geo": "mano"
+  "origen_geo": "mano",
+  "alias": [
+   "nurágica",
+   "nuragas",
+   "Cerdeña",
+   "sardos"
+  ],
+  "contexto": [
+   "La Cerdeña del Bronce se cubre de nuragas, torres troncocónicas de piedra seca de las que quedan unas siete mil. Sin escritura ni ciudades, la isla forma parte de la red mediterránea: lingotes de cobre chipriota, cerámica micénica y objetos del Levante llegan a los nuragas.",
+   "Una hipótesis discutida identifica a los sardos con los shardana de los Pueblos del Mar, mercenarios que aparecen en las fuentes egipcias desde Ramsés II."
+  ]
  },
  {
   "qid": "Q2629081",
@@ -310,7 +495,17 @@
    "eswiki:Bronce Final atlántico",
    "doi:10.1371/journal.pone.0218326 — Berger et al. 2019, Isotope systematics and chemical composition of tin ingots from Mochlos (Crete) and other Late Bronze Age sites, PLOS ONE"
   ],
-  "origen_geo": "mano"
+  "origen_geo": "mano",
+  "alias": [
+   "Bronce atlántico",
+   "atlántico",
+   "Cornualles",
+   "Galicia"
+  ],
+  "contexto": [
+   "Entre 1300 y 700 a.C. la fachada atlántica, de Portugal a Escocia, comparte espadas, calderos y depósitos votivos: una red de intercambio de metal sin estados ni ciudades. Galicia, Bretaña y Cornualles tienen estaño, el metal escaso del Bronce.",
+   "Análisis isotópicos de lingotes de estaño hallados en Creta e Israel (Berger y otros, 2019) son compatibles con menas de Cornualles: el estaño atlántico habría llegado al Mediterráneo oriental ya en el siglo XIII. Es una hipótesis, no un dato cerrado."
+  ]
  },
  {
   "qid": "Q135364",
@@ -324,7 +519,16 @@
    "wikidata:Q135364",
    "eswiki:Cultura olmeca"
   ],
-  "origen_geo": "mano"
+  "origen_geo": "mano",
+  "alias": [
+   "olmecas",
+   "olmeca",
+   "San Lorenzo"
+  ],
+  "contexto": [
+   "En la costa del Golfo de México, San Lorenzo levanta hacia 1400 la primera capital mesoamericana: una meseta artificial con cabezas colosales de basalto traído de decenas de kilómetros. Sin metal ni rueda, los olmecas fijan la iconografía y el juego de pelota que heredarán mayas y aztecas.",
+   "No hay contacto alguno con el Viejo Mundo: la coincidencia temporal con el sistema palacial del Mediterráneo es solo eso."
+  ]
  },
  {
   "qid": "Q215262",
@@ -338,7 +542,17 @@
    "wikidata:Q215262",
    "eswiki:Periodo védico"
   ],
-  "origen_geo": "mano"
+  "origen_geo": "mano",
+  "alias": [
+   "védica",
+   "védico",
+   "indoarios",
+   "Rigveda"
+  ],
+  "contexto": [
+   "Tras el fin de las ciudades del Indo, grupos de habla indoaria se asientan en el Punyab. El Rigveda, compuesto hacia 1500–1200 y transmitido oralmente, describe un mundo de pastores, carros y sacrificios de fuego, sin ciudades ni escritura.",
+   "El origen de los indoarios en la estepa, vía las culturas de Andrónovo y del complejo bactriano, es la hipótesis dominante pero sigue debatida."
+  ]
  },
  {
   "qid": "Q459376",
@@ -352,7 +566,15 @@
    "wikidata:Q459376",
    "eswiki:Cultura andrónovo"
   ],
-  "origen_geo": "mano"
+  "origen_geo": "mano",
+  "alias": [
+   "Andrónovo",
+   "estepa"
+  ],
+  "contexto": [
+   "Andrónovo agrupa a las comunidades pastoras de la estepa de Kazajistán y Asia central entre 2000 y 1150 a.C.: metalurgia del bronce, cría de caballos y el carro ligero de radios, documentado en los enterramientos de Sintashta hacia 2000.",
+   "Se les suele asociar con los hablantes de indoiranio que llegan a Irán y la India, y se discute si el carro que aparece en China hacia 1200 viene de aquí. Ambas cosas son hipótesis."
+  ]
  },
  {
   "qid": "Q649262",
@@ -366,6 +588,13 @@
    "wikidata:Q649262",
    "eswiki:Arzawa"
   ],
-  "origen_geo": "mano"
+  "origen_geo": "mano",
+  "alias": [
+   "Arzawa",
+   "Apasa"
+  ],
+  "contexto": [
+   "Arzawa ocupa el oeste de Anatolia, con capital en Apasa, quizá la futura Éfeso. Rival de Hatti, llega a cartearse con Amenhotep III, que le pide una princesa. Mursili II lo conquista hacia 1320 y lo reparte en reinos vasallos: Mira, Seha y Hapalla."
+  ]
  }
 ]

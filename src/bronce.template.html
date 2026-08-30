@@ -56,7 +56,8 @@
   #main.nopanel #panel{display:none}
   #panel .hd{display:flex;align-items:flex-start;gap:8px;padding:14px 16px 6px;border-bottom:1px solid var(--line)}
   #panel .hd h2{font-family:var(--sans);font-size:18px;margin:0;flex:1}
-  #panel .hd button{padding:0 7px;font-size:16px;line-height:22px}
+  #panel .hd button{padding:0 7px;font-size:16px;line-height:22px} #panel .hd button:disabled{opacity:.3;cursor:default}
+  #panel a.go{color:var(--text);text-decoration:underline dotted var(--bronce);text-underline-offset:2px;cursor:pointer} #panel a.go:hover{color:var(--bronce)}
   #panel .bd{padding:10px 16px 16px;overflow:auto;flex:1}
   #panel .meta{font-family:var(--sans);font-size:12px;color:var(--text-dim);margin-bottom:8px}
   #panel .tag{display:inline-block;padding:1px 6px;border-radius:3px;font-size:11px;background:#1d262b;margin-right:4px;text-transform:uppercase;letter-spacing:.05em}
@@ -148,7 +149,7 @@
     <div id="lod"></div>
     <div id="zoomctl"><button id="z-in" title="acercar">+</button><button id="z-out" title="alejar">−</button></div>
   </div>
-  <aside id="panel"><div class="hd"><h2 id="p-title"></h2><button id="p-close" title="cerrar">×</button></div><div class="bd" id="p-body"></div></aside>
+  <aside id="panel"><div class="hd"><button id="p-back" title="atrás">‹</button><button id="p-next" title="siguiente">›</button><h2 id="p-title"></h2><button id="p-close" title="cerrar">×</button></div><div class="bd" id="p-body"></div></aside>
 </div>
 
 <!-- 5. pie -->
@@ -181,30 +182,27 @@ const entIdx={}; Object.values(DATA.ent).forEach(e=>{const k=e.civilizacion||0;e
 function entColor(E){const h=HEX[E.civilizacion||0];const n=parseInt(h.slice(1),16);let r=n>>16,g=(n>>8)&255,b=n&255;const i=entIdx[E.qid]%4;const f=[1,0.78,1.18,0.88][i];const rot=[0,1,2,0][i];
   let c=[r,g,b].map(v=>Math.max(0,Math.min(255,Math.round(v*f))));if(rot===1)c=[c[1],c[0],c[2]].map((v,j)=>Math.round((v+[r,g,b][j])/2));if(rot===2)c=[c[0],c[2],c[1]].map((v,j)=>Math.round((v+[r,g,b][j])/2));
   return `rgb(${c.join(",")})`}
-// peso de una ciudad por población (0–3); el de un evento viene en el dato (1–3)
 const wCiu=p=>p>=40000?3:p>=20000?2:p>=8000?1:0;
 
 /* ---------- mapa ---------- */
 $("#land").setAttribute("d",DATA.land); $("#land50").setAttribute("d",DATA.land50);
-const layers=$("#layers");
+const layers=$("#layers"); const NODES={};  // NODES[corte][kind:key] -> elemento SVG
 CORTES.forEach((c,i)=>{
+  const N=NODES[i]={};
   const g=el("g",{class:"corte","data-i":i});
   const ge=el("g");
   c.ent.forEach(e=>{
     const E=DATA.ent[e.qid], tipo=E.tipo==="estado"?"estado":"difuso";
     const p=el("path",{d:e.d,class:`ent ${tipo}`,fill:entColor(E),"data-qid":e.qid,"data-tipo":tipo});
-    p.addEventListener("click",()=>click(()=>show("ent",e.qid,p)));
-    ge.appendChild(p);
+    p.addEventListener("click",()=>click(()=>show("ent",e.qid))); ge.appendChild(p); N["ent:"+e.qid]=p;
   });
   g.appendChild(ge);
   const gr=el("g");
   c.rel.forEach(r=>{
     const R=DATA.rel[r.id];
     const hit=el("path",{d:r.d,class:"rel hit","data-tipo":R.tipo}), p=el("path",{d:r.d,class:`rel ${R.tipo}`,"data-id":r.id,"data-tipo":R.tipo});
-    const h=()=>click(()=>show("rel",r.id,p)); hit.addEventListener("click",h); p.addEventListener("click",h);
-    gr.appendChild(hit); gr.appendChild(p);
-    const L=p.getTotalLength?null:null; // longitud se calcula tras insertar en el DOM
-    p.dataset.lbl=R.tipo; 
+    const h=()=>click(()=>show("rel",r.id)); hit.addEventListener("click",h); p.addEventListener("click",h);
+    p.dataset.lbl=R.tipo; gr.appendChild(hit); gr.appendChild(p); N["rel:"+r.id]=p;
   });
   g.appendChild(gr);
   const gl=el("g");
@@ -212,25 +210,24 @@ CORTES.forEach((c,i)=>{
   g.appendChild(gl);
   const gc=el("g");
   c.ciu.forEach(ci=>{
-    const r=0.18+0.12*Math.sqrt(ci.pob/1000);
-    const g2=el("g",{class:"zs w"+wCiu(ci.pob),"data-x":ci.lon,"data-y":-ci.lat,"data-tipo":"ciudad"});
-    const k=el("circle",{cx:0,cy:0,r:r.toFixed(2),class:"ciu"+(ci.fiab===3?" dud":"")});
-    k.addEventListener("click",()=>click(()=>show("ciu",ci,k))); g2.appendChild(k);
-    g2.appendChild(el("text",{x:r+0.2,y:0.35,class:"lbl t"},ci.n)); gc.appendChild(g2);
+    const C=DATA.ciu[ci.n], r=0.18+0.12*Math.sqrt(ci.pob/1000);
+    const g2=el("g",{class:"zs w"+wCiu(ci.pob),"data-x":C.lon,"data-y":-C.lat,"data-tipo":"ciudad"});
+    const k=el("circle",{cx:0,cy:0,r:r.toFixed(2),class:"ciu"+(C.fiab===3?" dud":"")});
+    k.addEventListener("click",()=>click(()=>show("ciu",ci.n))); g2.appendChild(k);
+    g2.appendChild(el("text",{x:r+0.2,y:0.35,class:"lbl t"},ci.n)); gc.appendChild(g2); N["ciu:"+ci.n]=k;
   });
   g.appendChild(gc);
   const gv=el("g");
   c.ev.forEach(v=>{
     const V=DATA.ev[v.qid], s=0.75, g2=el("g",{class:"zs w"+(V.peso||1),"data-x":v.lon,"data-y":-v.lat,"data-tipo":"evento"}), m=el("path",{d:`M0,${-s}L${s},0L0,${s}L${-s},0Z`,class:"evm"});
-    m.addEventListener("click",()=>click(()=>show("ev",v.qid,m))); g2.appendChild(m);
-    g2.appendChild(el("text",{x:s+0.2,y:0.35,class:"lbl"},V.nombre)); gv.appendChild(g2);
+    m.addEventListener("click",()=>click(()=>show("ev",v.qid))); g2.appendChild(m);
+    g2.appendChild(el("text",{x:s+0.2,y:0.35,class:"lbl"},V.nombre)); gv.appendChild(g2); N["ev:"+v.qid]=m;
   });
   g.appendChild(gv);
   layers.appendChild(g);
 });
-
-// etiquetas de tipo sobre cada relación, en el punto medio del trazo (solo se ven de cerca)
 document.querySelectorAll(".corte").forEach(g=>{const gl=el("g");g.appendChild(gl);g.querySelectorAll("path.rel:not(.hit)").forEach(p=>{const m=p.getPointAtLength(p.getTotalLength()/2);const t=el("text",{class:`lbl zs rl ${p.dataset.lbl}`,"text-anchor":"middle","data-x":m.x.toFixed(2),"data-y":m.y.toFixed(2),"data-tipo":p.dataset.lbl},p.dataset.lbl);gl.appendChild(t)})});
+
 /* ---------- viewBox: zoom, paneo, nivel de detalle ---------- */
 const svg=$("#map"), wrap=$("#mapwrap"); const VIEJO=[-25,-60,150,55], MUNDO=[-180,-80,360,140], OP=[15,-47,42,22];
 let vb=VIEJO.slice();
@@ -246,13 +243,11 @@ function applyVB(){
 }
 function flyTo(t){t=t.slice();t[3]=t[2]*ratio();const s=vb.slice(),t0=performance.now();(function step(n){const k=Math.min(1,(n-t0)/500),e=1-Math.pow(1-k,3);vb=s.map((v,i)=>v+(t[i]-v)*e);applyVB();if(k<1)requestAnimationFrame(step)})(t0)}
 function bboxView(b){const [x0,y0,x1,y1]=b,w=x1-x0,h=y1-y0;let W=w*1.5,H=h*1.5;const ar=ratio();if(H/W<ar)H=W*ar;else W=H/ar;const cx=(x0+x1)/2,cy=-(y0+y1)/2;return[cx-W/2,cy-H/2,W,H]}
-// coordenadas de pantalla -> coordenadas del mapa (viewBox con meet)
 function toMap(cx,cy){const r=svg.getBoundingClientRect();const s=Math.max(vb[2]/r.width,vb[3]/r.height);const ox=(r.width-vb[2]/s)/2,oy=(r.height-vb[3]/s)/2;return[vb[0]+(cx-r.left-ox)*s,vb[1]+(cy-r.top-oy)*s]}
 function zoomAt(f,cx,cy){const [mx,my]=toMap(cx,cy);const w=vb[2]*f;if(w<6||w>400)return;vb=[mx-(mx-vb[0])*f,my-(my-vb[1])*f,w,vb[3]*f];applyVB()}
 wrap.addEventListener("wheel",e=>{e.preventDefault();zoomAt(Math.pow(1.0015,e.deltaY),e.clientX,e.clientY)},{passive:false});
 const center=()=>{const r=svg.getBoundingClientRect();return[r.left+r.width/2,r.top+r.height/2]};
 $("#z-in").onclick=()=>zoomAt(1/1.4,...center()); $("#z-out").onclick=()=>zoomAt(1.4,...center());
-// arrastre y pellizco con pointer events; un clic real es un pointerup sin desplazamiento
 const ptr=new Map(); let dragged=false, last=null, pinch=null;
 wrap.addEventListener("pointerdown",e=>{if(e.button!==0&&e.pointerType==="mouse")return;ptr.set(e.pointerId,[e.clientX,e.clientY]);dragged=false;last=[e.clientX,e.clientY];if(ptr.size===2){const p=[...ptr.values()];pinch={d:Math.hypot(p[0][0]-p[1][0],p[0][1]-p[1][1])}}});
 wrap.addEventListener("pointermove",e=>{if(!ptr.has(e.pointerId))return;ptr.set(e.pointerId,[e.clientX,e.clientY]);
@@ -268,34 +263,66 @@ addEventListener("resize",()=>applyVB());
 const cuadro=$("#cuadro");
 cuadro.style.gridTemplateColumns="130px "+CORTES.map(c=>c.col_cuadro?"3fr":"1fr").join(" ");
 cuadro.appendChild(Object.assign(document.createElement("div"),{className:"kicker",textContent:"civilización / corte"}));
-CORTES.forEach((c,i)=>{const h=document.createElement("div");h.className="h"+(c.col_cuadro?"":" map");h.textContent=c.etiqueta;h.dataset.i=i;h.onclick=()=>setCorte(i);cuadro.appendChild(h)});
+CORTES.forEach((c,i)=>{const h=document.createElement("div");h.className="h"+(c.col_cuadro?"":" map");h.textContent=c.etiqueta;h.dataset.i=i;h.onclick=()=>{pushHist();setCorte(i)};cuadro.appendChild(h)});
 DATA.civ.forEach(cv=>{
   const n=document.createElement("div");n.className="n";n.style.setProperty("--cc",civColor(cv.id));n.textContent=cv.nombre;n.title=cv.nombre;cuadro.appendChild(n);
   CORTES.forEach((c,i)=>{
     const d=document.createElement("div");d.dataset.i=i;
     if(c.col_cuadro){const cel=DATA.celdas.find(x=>x.civilizacion===cv.id&&x.col_cuadro===c.col_cuadro);d.className="c";d.textContent=cel?cel.estado:"";d.title=cel?cel.hecho:"";
-      d.onclick=()=>{setCorte(i);flyTo(bboxView(cv.bbox));showCelda(cv,c,cel)}}
-    else{d.className="c map";const names=c.ent.filter(e=>DATA.ent[e.qid].civilizacion===cv.id).map(e=>DATA.ent[e.qid].nombre.replace(/^Egipto: /,""));d.textContent=names.join(" · ");d.title=d.textContent;d.onclick=()=>{setCorte(i);flyTo(bboxView(cv.bbox))}}
+      d.onclick=()=>{pushHist();setCorte(i);flyTo(bboxView(cv.bbox));showCelda(cv,c,cel)}}
+    else{d.className="c map";const names=c.ent.filter(e=>DATA.ent[e.qid].civilizacion===cv.id).map(e=>DATA.ent[e.qid].nombre.replace(/^Egipto: /,""));d.textContent=names.join(" · ");d.title=d.textContent;d.onclick=()=>{pushHist();setCorte(i);flyTo(bboxView(cv.bbox))}}
     cuadro.appendChild(d);
   });
 });
 $("#btn-cuadro").onclick=()=>{const hid=cuadro.classList.toggle("hid");$("#btn-cuadro").textContent=hid?"Cuadro ▾":"Cuadro ▴";$("#btn-cuadro").classList.toggle("on",!hid);applyVB()};
 
 /* ---------- corte ---------- */
-function setCorte(i){
+function setCorte(i,keepSel){
   cur=i; $("#slider").value=i; $("#corte-lbl").textContent=CORTES[i].etiqueta;
   document.querySelectorAll(".corte").forEach(g=>g.classList.toggle("on",+g.dataset.i===i));
   cuadro.querySelectorAll("[data-i]").forEach(d=>d.classList.toggle("cur",+d.dataset.i===i));
-  if(sel&&sel.el&&!sel.el.closest(".corte.on")) clearSel();
-  if(!sel&&!main.classList.contains("nopanel")) showCorte(CORTES[i]);
+  if(!keepSel){clearSel(); if(!main.classList.contains("nopanel")) showCorte(CORTES[i])}
 }
-$("#slider").addEventListener("input",e=>setCorte(+e.target.value));
+$("#slider").addEventListener("input",e=>{pushHist();setCorte(+e.target.value)});
+
+/* ---------- pila de contexto: Atrás / Siguiente ---------- */
+// un contexto = corte + encuadre + foco. Atrás restaura el anterior; sin pila, muestra el corte; sin foco, retrocede un corte. Siguiente es el espejo.
+const hist=[], fwd=[];
+function ctx(){return {corte:cur,vb:vb.slice(),sel:sel?{kind:sel.kind,key:sel.key}:null}}
+function pushHist(){hist.push(ctx());if(hist.length>60)hist.shift();fwd.length=0;navBtns()}
+function restore(c){setCorte(c.corte,true);vb=c.vb.slice();applyVB();if(c.sel)show(c.sel.kind,c.sel.key,{silent:true});else{clearSel();showCorte(CORTES[cur])}navBtns()}
+function back(){if(hist.length){fwd.push(ctx());restore(hist.pop());return}
+  if(sel){fwd.push(ctx());clearSel();showCorte(CORTES[cur]);navBtns();return}
+  if(cur>0){fwd.push(ctx());setCorte(cur-1);navBtns()}}
+function next(){if(fwd.length){hist.push(ctx());restore(fwd.pop());return}
+  if(cur<CORTES.length-1){hist.push(ctx());setCorte(cur+1);navBtns()}}
+function navBtns(){$("#p-back").disabled=!(hist.length||sel||cur>0);$("#p-next").disabled=!(fwd.length||cur<CORTES.length-1);$("#p-back").title=hist.length?"volver al contexto anterior":sel?"ver el corte":"corte anterior";$("#p-next").title=fwd.length?"adelante":"corte siguiente"}
+$("#p-back").onclick=back; $("#p-next").onclick=next;
+addEventListener("keydown",e=>{if(e.target.tagName==="INPUT")return;if(e.key==="ArrowLeft"&&e.altKey)back();if(e.key==="ArrowRight"&&e.altKey)next();if(e.key==="Escape")closePanel()});
+
+/* ---------- navegación entre objetos ---------- */
+// ¿en qué cortes existe un objeto? Para saltar al suyo sin mover el encuadre
+function cortesDe(kind,key){return CORTES.map((c,i)=>i).filter(i=>NODES[i][kind+":"+key])}
+function go(kind,key){pushHist();const cs=cortesDe(kind,key);if(cs.length&&!cs.includes(cur)){const t=cs.reduce((a,b)=>Math.abs(b-cur)<Math.abs(a-cur)?b:a);setCorte(t,true)}show(kind,key,{silent:true})}
+// índice de nombres para enlazar automáticamente en los textos: nombre -> [{kind,key}]
+const IDX={};
+function addIdx(n,kind,key){if(!n||n.length<4)return;(IDX[n]=IDX[n]||[]).push({kind,key})}
+Object.values(DATA.ent).forEach(E=>{addIdx(E.nombre,"ent",E.qid);(E.alias||[]).forEach(a=>addIdx(a,"ent",E.qid))});
+Object.values(DATA.ev).forEach(V=>addIdx(V.nombre,"ev",V.qid));
+Object.keys(DATA.ciu).forEach(n=>addIdx(n,"ciu",n));
+const IDXN=Object.keys(IDX).sort((a,b)=>b.length-a.length);
+const esc=s=>s.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+const IDXRE=new RegExp("(?<![\\p{L}\\p{N}])("+IDXN.map(esc).join("|")+")(?![\\p{L}\\p{N}])","gu");
+function pick(cands){if(cands.length===1)return cands[0];const here=cands.find(c=>NODES[cur][c.kind+":"+c.key]);return here||cands[0]}
+// convierte en enlace cada nombre conocido que aparezca en un texto (fuera de etiquetas HTML), salvo el del propio objeto
+function linkify(html,self){let inA=0;return html.split(/(<[^>]+>)/).map(part=>{if(part.startsWith("<")){if(/^<a[\s>]/i.test(part))inA++;else if(/^<\/a>/i.test(part))inA--;return part}if(inA>0)return part;return part.replace(IDXRE,(m,n)=>{const t=pick(IDX[n]);if(self&&t.kind===self.kind&&t.key===self.key)return m;return `<a class="go" data-kind="${t.kind}" data-key="${t.key.replace(/"/g,"&quot;")}">${m}</a>`})}).join("")}
+const lnk=(kind,key,txt)=>`<a class="go" data-kind="${kind}" data-key="${String(key).replace(/"/g,"&quot;")}">${txt}</a>`;
 
 /* ---------- ficha (panel derecho) con paginado "más" ---------- */
 const main=$("#main"), pTitle=$("#p-title"), pBody=$("#p-body");
 function openPanel(){main.classList.remove("nopanel");$("#btn-panel").classList.add("on");applyVB()}
 function closePanel(){main.classList.add("nopanel");$("#btn-panel").classList.remove("on");applyVB()}
-$("#p-close").onclick=closePanel; $("#btn-panel").onclick=()=>main.classList.contains("nopanel")?(showCorte(CORTES[cur]),openPanel()):closePanel();
+$("#p-close").onclick=closePanel; $("#btn-panel").onclick=()=>main.classList.contains("nopanel")?(sel?show(sel.kind,sel.key,{silent:true}):showCorte(CORTES[cur]),openPanel()):closePanel();
 function clearSel(){if(sel&&sel.el)sel.el.classList.remove("sel");sel=null}
 function srcHtml(fs){return fs&&fs.length?`<div class="src"><span class="kicker">fuentes</span><br>`+fs.map(s=>{
   if(s.startsWith("wikidata:"))return`<a href="https://www.wikidata.org/wiki/${s.slice(9)}" target="_blank">Wikidata ${s.slice(9)}</a>`;
@@ -304,37 +331,46 @@ function srcHtml(fs){return fs&&fs.length?`<div class="src"><span class="kicker"
   if(s.startsWith("doi:")){const [d,...rest]=s.slice(4).split(" — ");return`<a href="https://doi.org/${d}" target="_blank">${rest.join(" — ")||d}</a>`}
   if(s.startsWith("isbn:")){const [d,...rest]=s.slice(5).split(" — ");return rest.join(" — ")+` (ISBN ${d})`}
   return s}).join("<br>")+`</div>`:""}
-function evHtml(list){return list.length?`<div class="kicker">eventos</div>`+list.map(v=>`<div class="ev" data-ev="${v.qid}"><b>${v.nombre}</b> · ${fmt(v.año)}<br>${v.linea}</div>`).join(""):""}
+const paras=list=>(list||[]).map(p=>`<p>${p}</p>`).join("");
+function evHtml(list){return list.length?`<div class="kicker">eventos</div>`+list.map(v=>`<div class="ev">${lnk("ev",v.qid,`<b>${v.nombre}</b>`)} · ${fmt(v.año)}<br>${v.linea}</div>`).join(""):""}
+function relHtml(list,self){return list.length?`<div class="kicker">relaciones en este corte</div><ul>`+list.map(r=>{const o=r.a===self?r.b:r.a;return`<li>${lnk("rel",r.id,`<span style="color:var(--${r.tipo})">${r.tipo}</span>`)} con ${lnk("ent",o,DATA.ent[o].nombre)}<br><span style="color:var(--text-dim)">${r.linea}</span></li>`}).join("")+`</ul>`:""}
 // la ficha se compone de páginas; se muestra la primera y un botón "más" va revelando las siguientes
-function card(title,pages,color){
-  pTitle.textContent=title; pTitle.style.color=color||""; pBody.innerHTML=""; pages=pages.filter(Boolean); let i=0;
+function card(title,pages,color,self){
+  pTitle.textContent=title; pTitle.style.color=color||""; pBody.innerHTML=""; pages=pages.filter(Boolean).map(p=>linkify(p,self)); let i=0;
   const more=document.createElement("button"); more.className="more"; more.textContent="… más";
-  function next(){const d=document.createElement("div");d.className="sec";d.innerHTML=pages[i++];pBody.insertBefore(d,more);d.querySelectorAll(".ev").forEach(x=>x.onclick=()=>show("ev",x.dataset.ev,null));if(i>=pages.length)more.remove()}
-  pBody.appendChild(more); more.onclick=next; next(); openPanel(); pBody.scrollTop=0;
+  function next(){const d=document.createElement("div");d.className="sec";d.innerHTML=pages[i++];pBody.insertBefore(d,more);d.querySelectorAll("a.go").forEach(a=>a.onclick=ev=>{ev.preventDefault();if(a.dataset.corte!=null){pushHist();setCorte(+a.dataset.corte,true);show(a.dataset.kind,a.dataset.key,{silent:true})}else go(a.dataset.kind,a.dataset.key)});if(i>=pages.length)more.remove()}
+  pBody.appendChild(more); more.onclick=next; next(); openPanel(); pBody.scrollTop=0; navBtns();
 }
-function show(kind,key,node){
-  clearSel(); if(node){node.classList.add("sel")} sel={kind,key,el:node};
-  const c=CORTES[cur];
+function show(kind,key,opt={}){
+  if(!opt.silent)pushHist();
+  clearSel(); const node=NODES[cur][kind+":"+key]; if(node)node.classList.add("sel"); sel={kind,key,el:node};
+  const c=CORTES[cur], self={kind,key};
   if(kind==="ent"){const E=DATA.ent[key];const evs=Object.values(DATA.ev).filter(v=>v.cuelga_de.entidad===key&&v.año>=c.ventana[0]&&v.año<=c.ventana[1]);
-    const rels=Object.values(DATA.rel).filter(r=>(r.a===key||r.b===key)&&c.rel.some(x=>x.id===r.id));
-    card(E.nombre,[`<div class="meta"><span class="tag">${E.tipo}</span>${civName(E.civilizacion)} · ${fmt(E.desde)} – ${fmt(E.hasta)}</div><p>${E.linea}</p>`,
-      rels.length?`<div class="kicker">relaciones en este corte</div><ul>`+rels.map(r=>{const o=r.a===key?r.b:r.a;return`<li><span style="color:var(--${r.tipo})">${r.tipo}</span> con ${DATA.ent[o].nombre}<br><span style="color:var(--text-dim)">${r.linea}</span></li>`}).join("")+`</ul>`:"",
-      evHtml(evs),
-      `<div class="src"><span class="kicker">geometría</span><br>${E.origen_geo==="cliopatria"?"Cliopatria (Seshat), CC BY 4.0, simplificada":"dibujada a mano para esta maqueta"}</div>`+srcHtml(E.fuentes)])}
+    const rels=Object.values(DATA.rel).filter(r=>(r.a===key||r.b===key)&&c.rel.some(x=>x.id===r.id));const ce=c.ent.find(x=>x.qid===key);const ciu=ce?ce.ciu:[];
+    card(E.nombre,[`<div class="meta"><span class="tag">${E.tipo}</span>${civName(E.civilizacion)} · ${fmt(E.desde)} – ${fmt(E.hasta)}</div><p><b>${E.linea}</b></p>`,
+      paras(E.contexto),
+      (ciu.length?`<div class="kicker">ciudades en este corte</div><p>${ciu.map(n=>lnk("ciu",n,n)).join(" · ")}</p>`:"")+relHtml(rels,key)+evHtml(evs),
+      `<div class="src"><span class="kicker">geometría</span><br>${E.origen_geo==="cliopatria"?"Cliopatria (Seshat), CC BY 4.0, simplificada":"dibujada a mano para esta maqueta"}</div>`+srcHtml(E.fuentes)],"",self)}
   if(kind==="rel"){const R=DATA.rel[key];const evs=Object.values(DATA.ev).filter(v=>v.cuelga_de.relacion===key&&v.año>=c.ventana[0]&&v.año<=c.ventana[1]);const g=c.rel.find(x=>x.id===key);
-    card(R.tipo,[`<div class="meta">${DATA.ent[R.a].nombre} ${R.tipo==="conflicto"?"→":"↔"} ${DATA.ent[R.b].nombre} · ${fmt(R.desde)} – ${fmt(R.hasta)}</div><p>${R.linea}</p>`,evHtml(evs),
-      `<div class="src"><span class="kicker">trazado</span><br>${g&&g.mano?"ruta dibujada a mano":"curva automática entre las dos entidades; no representa un itinerario"}</div>`+srcHtml(R.fuentes)],`var(--${R.tipo})`)}
-  if(kind==="ciu"){const ci=key;card(ci.n,[`<div class="meta"><span class="tag">ciudad</span>población estimada ${ci.pob.toLocaleString("es")} hacia ${fmt(ci.año)}</div>`+(ci.nota?`<p style="color:var(--text-dim)">${ci.nota}</p>`:""),
-      `<div class="src">${ci.fuente}; fiabilidad del geocodificado ${ci.fiab} (1 = mejor)<br><a href="https://www.wikidata.org/wiki/${ci.qid}" target="_blank">Wikidata ${ci.qid}</a>${ci.eswiki?` · <a href="https://es.wikipedia.org/wiki/${encodeURIComponent(ci.eswiki.replace(/ /g,"_"))}" target="_blank">Wikipedia: ${ci.eswiki}</a>`:""}</div>`])}
-  if(kind==="ev"){const V=DATA.ev[key];const cd=V.cuelga_de.relacion?`relación: ${DATA.ent[DATA.rel[V.cuelga_de.relacion].a].nombre} – ${DATA.ent[DATA.rel[V.cuelga_de.relacion].b].nombre}`:`entidad: ${DATA.ent[V.cuelga_de.entidad].nombre}`;
-    card(V.nombre,[`<div class="meta"><span class="tag">evento</span>${fmt(V.año)} · ${cd}</div><p>${V.linea}</p>`,(V.enlace?`<p>→ <a href="${V.enlace.url}" target="_blank">${V.enlace.texto}</a></p>`:"")+srcHtml(V.fuentes)])}
+    card(R.tipo,[`<div class="meta">${lnk("ent",R.a,DATA.ent[R.a].nombre)} ${R.tipo==="conflicto"?"→":"↔"} ${lnk("ent",R.b,DATA.ent[R.b].nombre)} · ${fmt(R.desde)} – ${fmt(R.hasta)}</div><p><b>${R.linea}</b></p>`,paras(R.contexto),evHtml(evs),
+      `<div class="src"><span class="kicker">trazado</span><br>${g&&g.mano?"ruta dibujada a mano":"curva automática entre las dos entidades; no representa un itinerario"}</div>`+srcHtml(R.fuentes)],`var(--${R.tipo})`,self)}
+  if(kind==="ciu"){const C=DATA.ciu[key];const cc=c.ciu.find(x=>x.n===key);const pob=cc?cc.pob:null;const ent=cc&&cc.ent?DATA.ent[cc.ent]:null;
+    const otros=Object.entries(C.pobs).filter(([id])=>id!==c.id).map(([id,[p,y]])=>{const i=CORTES.findIndex(x=>x.id===id);return `<a class="go" data-kind="ciu" data-key="${key}" data-corte="${i}">${CORTES[i].etiqueta}: ${p.toLocaleString("es")}</a>`});
+    card(key,[`<div class="meta"><span class="tag">ciudad</span>${pob?`población estimada ${pob.toLocaleString("es")} hacia ${fmt(cc.año)}`:"sin dato en este corte"}${ent?` · en ${lnk("ent",ent.qid,ent.nombre)}`:""}</div>`+(C.contexto?`<p>${C.contexto}</p>`:"")+(C.nota?`<p style="color:var(--text-dim)">${C.nota}</p>`:""),
+      (otros.length?`<div class="kicker">población en otros cortes</div><p>${otros.join(" · ")}</p>`:""),
+      `<div class="src">${C.fuente}; fiabilidad del geocodificado ${C.fiab} (1 = mejor)<br><a href="https://www.wikidata.org/wiki/${C.qid}" target="_blank">Wikidata ${C.qid}</a>${C.eswiki?` · <a href="https://es.wikipedia.org/wiki/${encodeURIComponent(C.eswiki.replace(/ /g,"_"))}" target="_blank">Wikipedia: ${C.eswiki}</a>`:""}</div>`],"",self)}
+  if(kind==="ev"){const V=DATA.ev[key];const cd=V.cuelga_de.relacion?`relación: ${lnk("rel",V.cuelga_de.relacion,DATA.ent[DATA.rel[V.cuelga_de.relacion].a].nombre+" – "+DATA.ent[DATA.rel[V.cuelga_de.relacion].b].nombre)}`:`entidad: ${lnk("ent",V.cuelga_de.entidad,DATA.ent[V.cuelga_de.entidad].nombre)}`;
+    card(V.nombre,[`<div class="meta"><span class="tag">evento</span>${fmt(V.año)} · ${cd}</div><p><b>${V.linea}</b></p>`,paras(V.contexto),(V.enlace?`<p>→ <a href="${V.enlace.url}" target="_blank">${V.enlace.texto}</a></p>`:"")+srcHtml(V.fuentes)],"",self)}
 }
-function showCorte(c){card(c.etiqueta,[`<div class="meta">ventana ${fmt(c.ventana[0])} – ${fmt(c.ventana[1])}${c.col_cuadro?" · corte del cuadro":" · solo en el mapa"}</div><p>${c.ent.length} entidades, ${c.ciu.length} ciudades con población estimada, ${c.rel.length} relaciones, ${c.ev.length} eventos.</p><p style="color:var(--text-dim)">Toca cualquier cosa del mapa para ver qué es y de dónde sale el dato.</p>`])}
-function showCelda(cv,c,cel){clearSel();if(!cel){showCorte(c);return}sel={kind:"celda"};card(cv.nombre,[`<div class="meta">${c.etiqueta} · celda del cuadro</div><p><b>Estado.</b> ${cel.estado}</p>`,`<p><b>Hecho.</b> ${cel.hecho}</p><p><b>Relación.</b> ${cel.relacion}</p>`,cel.fuentes.length?srcHtml(cel.fuentes):`<div class="src">celda sin fuente todavía</div>`])}
+function showCorte(c){const ents=c.ent.map(e=>lnk("ent",e.qid,DATA.ent[e.qid].nombre)).join(" · ");const evs=c.ev.map(v=>lnk("ev",v.qid,DATA.ev[v.qid].nombre)).join(" · ");
+  card(c.etiqueta,[`<div class="meta">ventana ${fmt(c.ventana[0])} – ${fmt(c.ventana[1])}${c.col_cuadro?" · corte del cuadro":" · solo en el mapa"}</div><p>${c.ent.length} entidades, ${c.ciu.length} ciudades con población estimada, ${c.rel.length} relaciones, ${c.ev.length} eventos.</p>`,
+    `<div class="kicker">entidades</div><p>${ents}</p>`+(evs?`<div class="kicker">eventos</div><p>${evs}</p>`:""),
+    `<p style="color:var(--text-dim)">Toca cualquier cosa del mapa o de este texto para ver qué es y de dónde sale el dato.</p>`])}
+function showCelda(cv,c,cel){clearSel();if(!cel){showCorte(c);return}sel={kind:"celda",key:cv.id+":"+c.id};card(cv.nombre,[`<div class="meta">${c.etiqueta} · celda del cuadro</div><p><b>Estado.</b> ${cel.estado}</p>`,`<p><b>Hecho.</b> ${cel.hecho}</p><p><b>Relación.</b> ${cel.relacion}</p>`,cel.fuentes.length?srcHtml(cel.fuentes):`<div class="src">celda sin fuente todavía</div>`])}
 
 // leyenda: cada icono muestra u oculta su capa
 document.querySelectorAll(".leg span[data-t]").forEach(sp=>sp.onclick=()=>{const off=sp.classList.toggle("off");svg.classList.toggle("h-"+sp.dataset.t,off)});
-setCorte(cur); applyVB();
+setCorte(cur); applyVB(); navBtns();
 </script>
 </body>
 </html>

@@ -14,7 +14,11 @@
    "wikidata:Q733364",
    "eswiki:Batalla de Megido (siglo XV a. C.)"
   ],
-  "peso": 2
+  "peso": 2,
+  "contexto": [
+   "Anales de Tutmosis III en Karnak: el faraón elige el paso más estrecho contra el consejo de sus generales y sorprende a la coalición de príncipes cananeos y sirios reunida por el rey de Qadesh. La batalla se gana en un día; la ciudad de Megido resiste siete meses de asedio.",
+   "Es la primera batalla de la historia con relato detallado y fecha discutida solo en unos años. Consolida el dominio egipcio sobre Canaán durante más de dos siglos."
+  ]
  },
  {
   "qid": "Q573852",
@@ -35,7 +39,12 @@
    "eswiki:Pecio de Uluburun",
    "doi:10.1111/j.1095-9270.1998.tb00803.x — Pulak 1998, The Uluburun shipwreck: an overview, IJNA 27"
   ],
-  "peso": 3
+  "peso": 3,
+  "contexto": [
+   "Un buscador de esponjas encuentra en 1982 unos «bizcochos con orejas» a 45 metros de profundidad frente a Kaş: eran lingotes de cobre. George Bass y Cemal Pulak excavan el pecio entre 1984 y 1994.",
+   "La bodega llevaba diez toneladas de cobre chipriota en 354 lingotes, una tonelada de estaño, lingotes de vidrio, ébano, marfil de elefante e hipopótamo, huevos de avestruz, ámbar del Báltico, cerámica cananea y micénica, y un escarabeo de oro de Nefertiti que fija la fecha hacia 1320. Es la red entera del Bronce final en un solo casco.",
+   "Lo expuesto está en el Museo de Arqueología Subacuática de Bodrum, en el castillo de San Pedro."
+  ]
  },
  {
   "qid": "Q235502",
@@ -52,7 +61,11 @@
    "wikidata:Q235502",
    "eswiki:Cartas de Amarna"
   ],
-  "peso": 2
+  "peso": 2,
+  "contexto": [
+   "En 1887 una campesina desentierra en Tell el-Amarna, la capital de Akenatón, unas tablillas de arcilla: 382 cartas en cuneiforme acadio, la lengua diplomática de la época, cruzadas entre el faraón y los reyes de Babilonia, Asiria, Mitani, Hatti, Alasiya y Arzawa, y con sus vasallos de Canaán.",
+   "Los grandes reyes se llaman hermanos, negocian matrimonios y se quejan de regalos escasos; los vasallos piden tropas contra los habiru. Es el retrato más directo del sistema internacional del Bronce."
+  ]
  },
  {
   "qid": "Q203729",
@@ -69,7 +82,11 @@
    "wikidata:Q203729",
    "eswiki:Batalla de Qadesh"
   ],
-  "peso": 3
+  "peso": 3,
+  "contexto": [
+   "Ramsés II marcha sobre Qadesh, en el Orontes, creyendo lejano al ejército hitita; Muwatalli II lo espera con miles de carros y sorprende al campamento egipcio. La versión de Ramsés, tallada en cinco templos, canta una victoria personal; el resultado fue tablas.",
+   "Quince años después Ramsés y Hattusili III firman el primer tratado de paz conservado (1259), en acadio y en egipcio; una copia cuelga en la sede de la ONU."
+  ]
  },
  {
   "qid": "Q51885901",
@@ -86,6 +103,10 @@
    "wikidata:Q51885901",
    "isbn:9780691140896 — Cline 2014, 1177 B.C.: The Year Civilization Collapsed, Princeton"
   ],
-  "peso": 3
+  "peso": 3,
+  "contexto": [
+   "Hacia 1185 Ugarit arde y no vuelve a habitarse. En el horno de un archivo quedó sin enviar la carta del rey Ammurapi al rey de Alasiya: «los barcos del enemigo han venido; han quemado mis ciudades». Las tropas ugaríticas estaban lejos, al servicio de Hatti.",
+   "Para Eric Cline (2014) el caso resume el colapso: no una invasión, sino la ruptura de una red que dependía de que todos sus nudos funcionaran a la vez."
+  ]
  }
 ]

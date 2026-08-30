@@ -10,6 +10,9 @@
   "fuentes": [
    "wikidata:Q235502",
    "eswiki:Cartas de Amarna"
+  ],
+  "contexto": [
+   "Las cartas EA 33–40 de Amarna son la correspondencia del rey de Alasiya con el faraón: envíos de hasta quinientos talentos de cobre, disculpas por retrasos causados por una peste, peticiones de plata, aceite y un adivino de aves. Egipto no tiene cobre propio en cantidad y depende de Chipre."
   ]
  },
  {
@@ -25,6 +28,9 @@
    "eswiki:Ugarit",
    "wikidata:Q1760729",
    "eswiki:Alasiya"
+  ],
+  "contexto": [
+   "Los archivos de Ugarit registran mercaderes ugaríticos residentes en Chipre y cargamentos de cobre y grano en ambos sentidos. La última carta del rey de Ugarit va dirigida precisamente al rey de Alasiya."
   ]
  },
  {
@@ -37,6 +43,9 @@
   "linea": "La ruta marítima del Levante al Egeo por la costa de Anatolia: la que seguía el barco de Uluburun con diez toneladas de cobre y una de estaño.",
   "fuentes": [
    "doi:10.1111/j.1095-9270.1998.tb00803.x — Pulak 1998, The Uluburun shipwreck: an overview, IJNA 27"
+  ],
+  "contexto": [
+   "La ruta de cabotaje que sigue el barco de Uluburun: desde el Levante a Chipre, la costa de Anatolia, Rodas y el Egeo, con el viento y la corriente a favor. Es la vía por la que la cerámica micénica llega a Ugarit y el cobre y el vidrio llegan a los palacios griegos."
   ]
  },
  {
@@ -49,6 +58,9 @@
   "linea": "Estaño atlántico hasta el Mediterráneo oriental. Hipótesis isotópica: los lingotes de Mochlos e Israel son compatibles con menas de Cornualles.",
   "fuentes": [
    "doi:10.1371/journal.pone.0218326 — Berger et al. 2019, Isotope systematics and chemical composition of tin ingots from Mochlos (Crete) and other Late Bronze Age sites, PLOS ONE"
+  ],
+  "contexto": [
+   "Berger y otros (2019) analizaron isótopos de estaño y plomo en lingotes de Mochlos (Creta), Israel y Turquía: los resultados son compatibles con menas de Cornualles, no con las de Asia central. Si se confirma, el estaño atlántico ya cruzaba el Mediterráneo en el siglo XIII, y la fundación fenicia de Cádiz hacia 1100 seguiría una ruta que existía."
   ]
  },
  {
@@ -63,6 +75,9 @@
    "wikidata:Q32056",
    "eswiki:Badajsán",
    "enwiki:Lapis lazuli"
+  ],
+  "contexto": [
+   "Badajsán, en el noreste de Afganistán, es la única fuente conocida de lapislázuli en el Viejo Mundo y una de las pocas de estaño en Asia. Por caravana, a través de la meseta irania y Elam, llegan a Mesopotamia desde el tercer milenio."
   ]
  },
  {
@@ -76,6 +91,9 @@
   "fuentes": [
    "wikidata:Q203729",
    "eswiki:Batalla de Qadesh"
+  ],
+  "contexto": [
+   "Egipto y Hatti se disputan el corredor sirio: Amurru cambia de bando, Qadesh es el punto de fricción. Tras la batalla de 1274 y quince años de tensión, el tratado de 1259 fija fronteras y extradiciones y sella una alianza que dura hasta el final del imperio hitita."
   ]
  },
  {
@@ -89,6 +107,9 @@
   "fuentes": [
    "wikidata:Q178665",
    "eswiki:Mitani"
+  ],
+  "contexto": [
+   "Suppiluliuma I cruza el Éufrates, saquea Washukanni y pone en el trono de Mitani a un rey vasallo. Siria pasa de manos mitanias a hititas en una generación."
   ]
  },
  {
@@ -102,6 +123,9 @@
   "fuentes": [
    "wikidata:Q12642600",
    "eswiki:Imperio Asirio Medio"
+  ],
+  "contexto": [
+   "Assur-uballit I aprovecha la crisis de Mitani para independizarse y ocupar sus tierras al este del Jabur. En sus cartas a Akenatón se titula ya gran rey."
   ]
  },
  {
@@ -115,6 +139,9 @@
   "fuentes": [
    "wikidata:Q649262",
    "eswiki:Arzawa"
+  ],
+  "contexto": [
+   "Mursili II somete Arzawa en su tercer y cuarto año de reinado y lo reparte en tres reinos vasallos. El oeste de Anatolia queda bajo control hitita hasta el colapso."
   ]
  },
  {
@@ -128,6 +155,9 @@
   "fuentes": [
    "wikidata:Q235502",
    "eswiki:Cartas de Amarna"
+  ],
+  "contexto": [
+   "Egipto no escribe a sus iguales en egipcio: la cancillería usa el acadio babilonio en cuneiforme, con escribas formados en textos escolares mesopotámicos. Las cartas de Amarna son la prueba: incluso los vasallos cananeos escriben en un acadio teñido de cananeo."
   ]
  },
  {
@@ -140,6 +170,9 @@
   "linea": "Lingotes de cobre chipriota en forma de piel de buey aparecen en los nuragas de Cerdeña.",
   "fuentes": [
    "enwiki:Oxhide ingot"
+  ],
+  "contexto": [
+   "Lingotes de cobre con forma de piel de buey, de mineral chipriota según los isótopos de plomo, aparecen en varios nuragas de Cerdeña. La isla estaba dentro de la red, no fuera."
   ]
  },
  {
@@ -154,6 +187,9 @@
    "enwiki:Chariot",
    "wikidata:Q459376",
    "eswiki:Cultura andrónovo"
+  ],
+  "contexto": [
+   "El carro de dos ruedas con radios aparece en las tumbas de Anyang hacia 1200 sin fases previas en China, lo que sugiere una importación desde la estepa a través de Asia central. La vía exacta es hipótesis."
   ]
  }
 ]

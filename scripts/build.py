@@ -5,7 +5,7 @@
 Uso: uv run scripts/build.py"""
 import csv, json, math, sys
 from pathlib import Path
-from shapely.geometry import shape
+from shapely.geometry import shape, Point
 
 ROOT = Path(__file__).resolve().parent.parent
 D = ROOT / "data"
@@ -51,6 +51,12 @@ def pick(qid, c):
     return min(over, key=lambda ft: abs((ft["properties"]["desde"] + ft["properties"]["hasta"]) / 2 - a))
 
 ent_by = {e["qid"]: e for e in ents}
+# ciudades: registro global por nombre; los cortes solo referencian nombre + población
+ciu_by = {}
+for r in ciudades:
+    ciu_by[r["nombre"]] = {"n": r["nombre"], "qid": r["qid"], "lat": float(r["lat"]), "lon": float(r["lon"]), "fiab": int(r["fiabilidad"]),
+        "nota": r["nota"], "eswiki": r["eswiki"], "fuente": r["fuente"], "contexto": r.get("contexto", ""),
+        "pobs": {c["id"]: [int(r[f"pob_{c['id']}"]), int(r[f"año_{c['id']}"])] for c in cortes if r.get(f"pob_{c['id']}")}}
 out_cortes = []
 centroid_any = {}
 for qid, fts in by_qid.items():
@@ -59,19 +65,28 @@ for qid, fts in by_qid.items():
 for c in cortes:
     lo, hi = c["ventana"]
     E = []; cent = {}
-    for e in ents:
-        if not (e["desde"] <= hi and e["hasta"] >= lo): continue
+    # presencia: la entidad solapa la ventana; pero si otra de la misma civilización contiene el año del corte, esta cede
+    pres = [e for e in ents if e["desde"] <= hi and e["hasta"] >= lo]
+    grp = lambda e: e["civilizacion"] if e["civilizacion"] is not None else e["qid"]
+    exact = {grp(e) for e in pres if e["desde"] <= c["año"] <= e["hasta"]}
+    pres = [e for e in pres if e["desde"] <= c["año"] <= e["hasta"] or grp(e) not in exact]
+    for e in pres:
         ft = pick(e["qid"], c)
         if not ft: warn(f"{c['id']}: {e['nombre']} sin geometría"); continue
         g = shape(ft["geometry"]); rp = g.representative_point()
         cent[e["qid"]] = [round(rp.x, 2), round(rp.y, 2)]
         E.append({"qid": e["qid"], "d": path(ft["geometry"]), "c": cent[e["qid"]], "geo": ft["properties"].get("origen", "cliopatria")})
     C = []
-    for r in ciudades:
-        pob = r.get(f"pob_{c['id']}", "")
-        if not pob: continue
-        C.append({"n": r["nombre"], "qid": r["qid"], "lat": float(r["lat"]), "lon": float(r["lon"]), "pob": int(pob),
-                  "año": int(r[f"año_{c['id']}"]), "fiab": int(r["fiabilidad"]), "nota": r["nota"], "eswiki": r["eswiki"], "fuente": r["fuente"]})
+    geoms = {e["qid"]: shape(pick(e["qid"], c)["geometry"]) for e in E and [ent_by[x["qid"]] for x in E]}
+    for name, ci in ciu_by.items():
+        if c["id"] not in ci["pobs"]: continue
+        pob, año = ci["pobs"][c["id"]]
+        pt = Point(ci["lon"], ci["lat"])
+        inside = [q for q, g in geoms.items() if g.contains(pt)]
+        # si cae en varias (solapes), la de menor área: la más específica
+        ent = min(inside, key=lambda q: (not (ent_by[q]["desde"] <= c["año"] <= ent_by[q]["hasta"]), geoms[q].area)) if inside else None
+        C.append({"n": name, "pob": pob, "año": año, "ent": ent})
+    for e in E: e["ciu"] = [x["n"] for x in C if x["ent"] == e["qid"]]
     R = []
     for r in rels:
         if not (r["desde"] <= hi and r["hasta"] >= lo): continue
@@ -89,7 +104,7 @@ for c in cortes:
     out_cortes.append({**c, "ent": E, "ciu": C, "rel": R, "ev": EV})
     print(f"{c['id']}: {len(E)} entidades, {len(C)} ciudades, {len(R)} relaciones, {len(EV)} eventos")
 
-DATA = {"civ": civ, "cortes": out_cortes, "ent": ent_by, "rel": {r["id"]: r for r in rels}, "ev": {e["qid"]: e for e in evs},
+DATA = {"civ": civ, "cortes": out_cortes, "ent": ent_by, "ciu": ciu_by, "rel": {r["id"]: r for r in rels}, "ev": {e["qid"]: e for e in evs},
         "celdas": celdas, "land": land_path, "land50": land50_path}
 tpl = open(ROOT / "src" / "bronce.template.html", encoding="utf-8").read()
 js = json.dumps(DATA, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
