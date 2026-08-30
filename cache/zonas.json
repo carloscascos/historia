@@ -3541,5 +3541,47 @@
   ],
   "nota": "Zona: Egeo, Anatolia, Levante, delta del Nilo, Chipre y Mesopotamia. Añado 4 ciudades de peso 3 (Hattusa, Pi-Ramsés, Assur, Troya) y 3 de peso 2 (Tirinto, Carquemis, Enkomi), 4 eventos, la confederación de los Pueblos del Mar y 3 relaciones entre entidades ya presentes.\n\nDESCARTADO por falta de coordenadas en Wikidata (regla 2): batalla de Nihriya (Q906834, solo P276 al río Balikh), batalla de Perire (Q1152668), guerra de Troya (Q42937, solo P276), tratado de paz egipcio-hitita (Q253155) — este último lo reconvierto en la relación conflicto Egipto–Hatti. La destrucción de Ugarit existe como ítem (Q51885901, fechada 1192-1185 a.C.) pero TAMPOCO tiene P625, así que no la propongo como evento; Ugarit ya está en el visor como entidad.\n\nDESCARTADO por no existir ítem en Wikidata: los dos saqueos de Babilonia (Tukulti-Ninurta I ~1225 y el elamita de Shutruk-Nahhunte ~1158), buscados y no encontrados.\n\nDESCARTADO por duplicar objetos ya presentes: Palacio de Néstor (Q2047396, 37.03/21.70) está a 9 km de Navarino (Q3904982) que ya está en el visor y es literalmente el mismo yacimiento micénico — añadirlo pondría dos marcas para lo mismo. Imperio asirio medio (Q12642600) duplica la entidad Asiria ya presente; dinastía casita (Q243312) duplica Babilonia.\n\nDESCARTADO por caer fuera de la ventana: Arzawa (Q649262, termina en 1300), Mitanni (Q178665, termina en 1260), cultura villanoviana (Q587309, empieza en 900), Emar (Q1196243, destruida ~1187 y no reocupada — solo cubre el primer cuarto).\n\nDOS AVISOS SOBRE LA CALIDAD DEL DATO, no interpretaciones mías:\n1. El ítem Amurru (Q481766) tiene las fechas en Wikidata con el SIGNO EQUIVOCADO: P571=1380 y P576=1200 en positivo, es decir d.C. Si el visor filtra por rango temporal, Amurru nunca aparecerá en una ventana a.C. No lo propongo por eso.\n2. Pueblos del Mar (Q193850) NO tiene fechas (P580/P582/P571) en Wikidata ni coordenadas. Las fechas que doy (-1210/-1100) salen del artículo de Wikipedia, que las ancla en las menciones egipcias de Ramsés II, Merenptah, Ramsés III y el Onomasticón de Amenope. Si el visor exige coordenadas también para las entidades, este objeto fallará; lo propongo asumiendo que las entidades se dibujan como área y no como punto.\n\nNO VERIFICADO: la ocupación de Kültepe/Kanesh entre 1275 y 1000 a.C. no he podido confirmarla — su documentación conocida es del kārum asirio de ~1950-1700 a.C. Causa desconocida, no la relleno; por eso no propongo el objeto.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "e3cfa1fff2",
+  "bbox": [
+   33.67,
+   32.5,
+   56.5,
+   46.25
+  ],
+  "corte": "-1200",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 6,
+  "descartados": [
+   {
+    "nombre": "Karkemish",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Alepo (Halab)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Emar",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Arameos",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Nairi",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Mushki",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona: Anatolia oriental, norte de Siria, alta y baja Mesopotamia, Zagros y meseta iraní occidental. Descartados y por qué: (1) Batalla de Nihriya (Q906834, c.1237 a.C.) y Guerra babilonio-asiria de 1235 a.C. (Q3119079) — ambas tienen QID y fecha en la ventana, pero NINGUNA tiene coordenadas (P625) en Wikidata (la localización de Nihriya sigue en discusión académica, con propuestas dispersas en un radio de 50 km en torno a Şanlıurfa), así que no cumplen el requisito de «evento»; las he reconvertido en relaciones de conflicto entre entidades ya presentes en el visor. (2) Batallas de Alasiya (Q85745983, primer combate naval documentado, c.1210 a.C.): tampoco tiene coordenadas y además es un combate frente a Chipre, al oeste del límite 33,67°E. (3) Susa (Q180773): capital elamita y protagonista del periodo, pero sus coordenadas Wikidata son 32,189°N — cae 0,3° por debajo del límite sur de la zona (32,5°N), así que queda fuera pese a su importancia; el papel de Elam en la ventana queda recogido en la relación de conflicto Elam–Babilonia. (4) Urartu (Q185068): unificado bajo Arame hacia 860 a.C., posterior a la ventana; en su lugar he propuesto Nairi, la confederación previa atestiguada desde Salmanasar I. (5) Alalakh (Q575249, 36,24°N 36,38°E, dentro de zona): su ocupación de la Edad del Bronce se apaga en el siglo XIII y su nivel final es de escasa entidad; no llega al umbral de vista media para una ventana que se extiende hasta 1000 a.C. (6) Segunda Dinastía de Isin y reino de Mukish: no encuentro elementos de Wikidata propios, y en cualquier caso la primera queda cubierta por la entidad Babilonia ya presente. No he verificado en Wikidata si Mushki y Nairi tienen geometría asociada — carecen de P625 y su extensión tendrá que resolverla el visor por otra vía.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
