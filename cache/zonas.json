@@ -2835,5 +2835,35 @@
   ],
   "nota": "Zona = Transbaikalia/Cis-Baikal, norte y este de Mongolia, alto y medio Amur, norte de Heilongjiang. Único objeto que llega al umbral: la cultura de Glazkovo (Q1973554), la cultura del Bronce del Baikal, con núcleo en Irkutsk (~104 E, 52 N) y yacimientos en el Selengá y el Shilka, todos dentro de la zona. DOS DESCUADRES QUE DEBE VER EL REVISOR: (1) El ítem Q1973554 NO tiene coordenadas (P625) en Wikidata, así que el visor no puede situarlo automáticamente desde Wikidata; si el pipeline exige P625, el objeto cae y la zona queda vacía. (2) Las fechas no cuadran entre fuentes: Wikidata P580/P582 dice 3200–2400 a.C. (sin solape con la ventana); en.wiki dice 2200–1200 a.C.; ru.wiki dice siglos XVIII–XIII a.C.; el modelo de Weber et al. 2006 (citado en Kuzmin 2007) sitúa el complejo Serovo-Glazkovo del Bronce en ~3400/3000–1000 cal BC sin corregir el efecto reservorio de agua dulce (que rejuvenece las fechas). Causa del valor de Wikidata desconocida. He usado 2200–1200 (en.wiki) porque tres de cuatro fuentes solapan con la ventana; si se toma el dato de Wikidata, el objeto no pertenece a este corte. DESCARTADOS: Munkhkhairkhan (Q124077889, 1800–1600 a.C.) está en Mongolia occidental (~92 E), fuera de la zona; Ulaanzuukh (1450–1000 a.C.) empieza justo después del fin de la ventana (−1475); Seima-Turbino (2200–1900 a.C.) termina antes de la ventana y su ítem no está localizado en la zona; Ymyyakhtakh (Q4529391, 2200–1300 a.C.) está en Yakutia, al norte de 60 N; piedras de ciervo y khirigsuur (1400–700 a.C.) y tumbas de losas (1300–300 a.C.) son posteriores; Baja Xiajiadian queda al sur de 46 N; en Heilongjiang las culturas de Xiaolaha/Baijinbao son del I milenio a.C. y además están fuera de zona (>125 E, <46 N). En el Amur medio/superior no he encontrado ninguna cultura con QID datada en la ventana (la fuente Springer 'Amur Neolithic and Bronze Age' está tras muro de pago; no leída). Yacimientos concretos de Glazkovo (necrópolis Fofanovo, cueva Shilka, Ulan-Khada) son peso 1 y no se proponen. No hay relaciones documentadas entre Glazkovo y las entidades existentes en el visor (la mención de Andrónovo en en.wiki se refiere a Minusinsk, fuera de zona).",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "1b437f63f2",
+  "bbox": [
+   79.33,
+   46.25,
+   102.16,
+   60.0
+  ],
+  "corte": "-1600",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 3,
+  "descartados": [
+   {
+    "nombre": "Fenómeno Seima-Turbino",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Munkhkhairkhan",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Elunino",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = sur de Siberia (Altái, cuenca de Minusinsk, Tuvá, alto Irtysh/Obi) y Mongolia occidental al norte de 46,25°. Sin ciudades ni batallas documentadas en la ventana; todo lo relevante son culturas arqueológicas. AVISOS DE DATOS: (1) Seima-Turbino, Munkhkhairkhan y Elunino NO tienen coordenadas (P625) en Wikidata; se proponen porque las entidades ya cargadas en el visor tampoco parecen depender de coordenadas, pero si el visor las exige habrá que descartarlas. Krotovo sí tiene P625 (53,53N 82,45E, dentro de la zona). (2) La datación de Seima-Turbino está en disputa: en.wikipedia da 2200–1900 a.C., ru.wikipedia 2150–1600 a.C., Wikidata 2300–1700 a.C.; con la datación corta quedaría fuera de la ventana. He usado 2200–1700 para que refleje el solape con las dataciones largas; es una elección, no un consenso. (3) Elunino termina hacia 1700 a.C.: solo solapa un siglo con la ventana. (4) La expansión Andronovo-Fiódorovo hacia el Yeniséi (1850–1450 a.C.) es el proceso principal de la zona en esta ventana, pero Andrónovo ya está en el visor; la relación con Krotovo la documenta ru.wikipedia sin fecha precisa ('frontera III–II milenio'), la ventana -1800/-1500 es aproximada. DESCARTADOS: cultura de Okunev (Q2632835, 2600/2700–1800 a.C., Minusinsk) termina justo al inicio de la ventana, solo su fase Razliv 'después de 1800' entraría — sin coords en Wikidata; Chemurchek (Q18573560, 2750–1900 a.C.) anterior a la ventana; Karakol (Q4213912, 'II milenio a.C.', Altái, coords dentro de la zona) datación demasiado vaga y relevancia local → peso 1, bajo el umbral; Samus (Q2219081, 'c. 2000 a.C.', sin coords, sin fechas claras); Sagsai (1500–1000 a.C.) y Karasuk (Q129282, 1500–800 a.C.) empiezan al final de la ventana, solapan 25 años, van al corte siguiente; Fedorovka (Q129764211) es subfase de Andrónovo ya presente. Yacimientos Seima-Turbino de Rostovka (Omsk, ~73E) y Sopka-2 (Baraba, ~78E) caen fuera de la zona por el oeste.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
