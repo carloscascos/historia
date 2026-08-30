@@ -140,8 +140,6 @@
   svg.h-conflicto [data-tipo="conflicto"]{display:none} svg.h-comercio [data-tipo="comercio"]{display:none} svg.h-transmision [data-tipo="transmision"]{display:none} svg.h-estado [data-tipo="estado"]{display:none} svg.h-difuso [data-tipo="difuso"]{display:none} svg.h-ciudad [data-tipo="ciudad"]{display:none} svg.h-evento [data-tipo="evento"]{display:none}
   .lbl .sub{font-size:.8em;fill:var(--text-dim);letter-spacing:0}
   svg.lod3 .lbl .sub,svg.lod2 .lbl .sub{display:none}
-  .lbl.rl{font-size:calc(1.2px * var(--fs,1));letter-spacing:.06em;text-transform:uppercase} .lbl.rl.conflicto{fill:var(--conflicto)} .lbl.rl.comercio{fill:var(--comercio)} .lbl.rl.transmision{fill:var(--transmision)}
-  svg.lod3 .lbl.rl,svg.lod2 .lbl.rl,svg.lod1 .lbl.rl{display:none}
 </style>
 </head>
 <body>
@@ -257,7 +255,6 @@ CORTES.forEach((c,i)=>{
   g.appendChild(gv);
   layers.appendChild(g);
 });
-document.querySelectorAll(".corte").forEach(g=>{const gl=el("g");g.appendChild(gl);g.querySelectorAll("path.rel:not(.hit)").forEach(p=>{const m=p.getPointAtLength(p.getTotalLength()/2);const t=el("text",{class:`lbl zs rl ${p.dataset.lbl}`,"text-anchor":"middle","data-x":m.x.toFixed(2),"data-y":m.y.toFixed(2),"data-tipo":p.dataset.lbl},p.dataset.lbl);gl.appendChild(t)})});
 
 /* ---------- viewBox: zoom, paneo, nivel de detalle ---------- */
 const svg=$("#map"), wrap=$("#mapwrap"); const VIEJO=[-25,-60,150,55], MUNDO=[-180,-80,360,140], OP=[15,-47,42,22];
