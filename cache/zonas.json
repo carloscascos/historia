@@ -498,5 +498,35 @@
   ],
   "nota": "Zona = India al este de 79°E, Sri Lanka, Sudeste Asiático y China al sur de 32,5°N (quedan fuera Anyang, Zhengzhou/Erligang y Yanshi, todas por encima de 34°N; los Shang ya figuran como entidad). Único objeto que alcanza el umbral 3 en vista lejana: la ciudad de Sanxingdui (Wikidata 30.99°N 104.20°E, dentro de la zona; ciudad amurallada fundada hacia 1600 a.C., activa toda la ventana, abandono hacia 1150 a.C. con traslado a Jinsha). La 'cultura de Sanxingdui' como entidad (Q118173543) existe en Wikidata pero sin coordenadas, por lo que no se propone; por el mismo motivo se omite una relación de transmisión Shang→Sanxingdui (técnica del bronce), que además valoraría en peso 2. Revisados y descartados por quedar en peso 2 o menos: Panlongcheng (Q217684, avanzada Erligang en Hubei, ~1 km², c. 1500–1300 a.C., peso 2); cultura de Wucheng (Q1078422, Jiangxi, desde c. 1600 a.C., peso 2); cultura Đồng Đậu (Q8079980, Vietnam, c. 1500–1000 a.C., aldeas con fundición, sin coordenadas en Wikidata, peso 1-2); Ban Chiang (Q584125, Tailandia: según Higham asentamiento c. 1500 a.C. pero bronce solo desde c. 1000 a.C., peso 1); cerámica de color ocre / tesoros del cobre (Q2663163, Q458076): aldeas del doab Ganges-Yamuna, mayoritariamente al oeste de 79°E, sin coordenadas en Wikidata, terminan hacia 1500-1200 a.C., peso 1. No se ha encontrado ningún estado, ciudad grande ni guerra mayor documentados en India oriental, Sri Lanka, Myanmar, Filipinas o Indonesia en 1475–1275 a.C.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "e7ba1d6e0d",
+  "bbox": [
+   27.4,
+   35.85,
+   28.5,
+   36.59
+  ],
+  "corte": "-1200",
+  "lod": 0,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 2,
+  "descartados": [
+   {
+    "nombre": "Ialisos (Trianda / Moschou Vounara)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Pylona (necrópolis micénica de Aspropilia)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Civilización micénica",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "La zona cubre casi exactamente la isla de Rodas (más Chalki y la punta de Loryma, sin evidencia LBA leída). Mirado: Ialisos/Trianda, Lindos, Camiro/Kalavarda, Pylona, Kattavia, Ahhiyawa, Chipre/Alashiya, Creta. Descartados: (1) Lindos (Q65122097): Wikipedia solo aporta la mención homérica (Catálogo de las naves, Tlepólemo) y un fragmento de búsqueda cita «dos tumbas de cámara» de la transición Bronce Final/Hierro que no pude leer en fuente; sin documentación leída, no se propone. (2) Ahhiyawa (Q552241): su localización en Rodas es una hipótesis minoritaria y antigua, no una presencia documentada; además Wikidata la fecha 2000–1500 a.C., fuera de la ventana. (3) Abandono de Trianda: hacia 1300 a.C., antes de la ventana y sin QID propio; Moschou Vounara/Makria Vounara y Trianda no tienen ítem en Wikidata, por eso la ciudad se representa con el ítem de Ialisos antigua (36.40, 28.14). (4) Relación con Creta (16 de 37 vasos de estilo pulpo en Ialisos son importaciones cretenses a inicios de LH IIIC): no hay entidad cretense LM IIIC con QID adecuado. (5) Tlepólemo/guerra de Troya: tradición literaria, no evento datado. Advertencias: Pylona y Kalavarda son necrópolis, no poblados excavados; se proponen como «ciudad» por ser la única evidencia de asentamiento. La fecha 1070 de Kalavarda procede de una guía turística (otra fuente da LH IIIA1–IIIB, hasta ~1200): descuadre entre fuentes, no resuelto. Las fuentes de academia.edu se conocen por resúmenes de búsqueda, no por lectura completa del PDF.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
