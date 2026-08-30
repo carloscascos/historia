@@ -4085,5 +4085,35 @@
   ],
   "nota": "Zona = Xinjiang (Tarim, Dzungaria, Tian Shan oriental), meseta tibetana, Qinghai occidental, corredor de Hexi y Altái mongol occidental. FUERA DE ZONA: Lajia (Q1317169, 102.80E) y Qijiaping (Q11180227, 103.83E) quedan al este del límite 102.16, igual que la garganta de Jishi y Zhukaigou (110.3E); Karuo (Q1692194) está a 31.06N, al sur del límite. Esto deja el corazón de Qijia justo fuera del recorte, pero propongo la cultura porque su distribución documentada llega al oeste del lago Qinghai y cubre el corredor de Hexi, dentro de la zona. FUERA DE VENTANA: Adunqiaolu (Q133306585, dentro de zona) tiene radiocarbono a partir de mediados del s. XVIII a.C.; Baigetuobie es de 1800-1500 a.C. y además no tiene QID; la cultura Siba (Q33204333) se data en 1900-1500 y solo solapa por su arranque, por eso propongo Huoshaogou (tumbas de 2000-1800) y no la cultura; Donghuishan (Q10870768) tiene coordenadas en zona pero sus dataciones se han revisado a 1623-1388 a.C.; Yanbulaq (Q2599315), Wubao (Q2594685), Mohuchahangoukou (Q64644968), Shirenzigou (Q123334152), Jirentai Goukou (Q74096259) y Nuomuhong (Q1326128) son todos del Bronce final o de la Edad del Hierro. SIN QID: Changguogou, Beifang (1785-1664, además fuera por poco), los yacimientos afanasievo de Xinjiang (Ke'ermuqi/Qiemu'erqieke) y Baigetuobie. MESETA TIBETANA Y LADAKH: nada alcanza el umbral, y el motivo es sólido, no una laguna de mi búsqueda. La cultura de Qugong, que la cronología antigua situaba en 2000-1500 a.C., ha sido redatada por reexcavación a 1400-1300 cal a.C.; Bangga, Kayue y Nuomuhong son posteriores. En Ladakh lo que hay es arte rupestre sin datación absoluta y sin ítems propios en Wikidata. Un barrido SPARQL sobre el rectángulo devuelve, en la mitad tibetana, solo monasterios y sitios históricos tardíos. COORDENADAS: Qijia, Qäwrighul, Tianshanbeilu y Seima-Turbino no tienen P625 en Wikidata y necesitan geometría dibujada a mano, como ya se hizo con Andrónovo y la cultura nurágica.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "d167db2750",
+  "bbox": [
+   79.33,
+   46.25,
+   102.16,
+   60.0
+  ],
+  "corte": "-2000",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 3,
+  "descartados": [
+   {
+    "nombre": "Cultura de Okúnev",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Fenómeno de Seima-Turbino",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Elunino",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = Altái-Sayán, cuenca de Minusinsk (alto Yeniséi), alto Obi y noroeste de Mongolia. AVISO SOBRE COORDENADAS, que afecta a la regla 2: ninguna de las cuatro entidades propuestas tiene P625 en Wikidata (Okúnev solo tiene P276 = Siberia, Q5428, cuyo punto 60N/105E cae FUERA de la zona; Seima-Turbino y Elunino no tienen ninguna; solo Karakol tiene coordenada propia, 50.773N/86.464E, dentro de la zona). No es un defecto de estas propuestas sino del criterio: de los objetos que YA están en el visor, Andrónovo (Q459376) tiene P625 en 55.88N/55.70E — los Urales, a más de 2.000 km al oeste de esta zona — y Cultura nurágica y Campaniforme no tienen P625 en absoluto. Es decir, el visor ya coloca culturas sin usar su coordenada de Wikidata; si el pipeline exige P625 y descarta lo que no lo tiene, esta zona se quedará vacía salvo Karakol, y eso sería un artefacto del método, no un vacío histórico. No sé cómo resuelve el visor la posición de esas culturas: causa desconocida, no la he inspeccionado. DESCARTADOS: Chemurchek (Q18573560, 2750-1900 a.C.) encaja en ventana y es la cultura megalítica clave del Altái mongol, pero su P625 está en 46.128N/91.687E, 0.12 grados al SUR del borde de la zona — queda fuera por muy poco y debería aparecer en la zona contigua del sur. Munkhkhairkhan (Q124077889) se data 1800-1600 a.C.: empieza justo donde acaba la ventana. Afanasievo termina hacia 2500 a.C., antes de la ventana. Cultura de Samus (Q2219081, hacia 2000 a.C.) es del Tomsk-Narym y curso medio del Irtish, al noroeste de la zona, y sin coordenada. Karasuk y Tagar son posteriores. No he encontrado ninguna ciudad ni evento datado con coordenadas que alcance el umbral: en esta región y ventana no hay urbanismo ni hechos fechados individualmente — los yacimientos Okúnev citados (Tas-Jazaá, Chernovaya VIII, Uibat) son necrópolis sin artículo propio de Wikidata que haya podido verificar.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
