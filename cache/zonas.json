@@ -844,5 +844,27 @@
   ],
   "nota": "Zona = China del norte, Mongolia, Xinjiang, Siberia sur y Asia Central oriental, 1800–1475 a.C., umbral peso 3. Propuesto: Xia (Q169705, entidad sin coordenadas en Wikidata; es el estado que corresponde a la ciudad de Erlitou ya presente), Zhengzhou Shang City (Q203132, coords 34.745/113.683, fases 1630–1400 a.C., ~300–1.500 ha, capital probable) y la relación de conflicto Shang–Xia (batalla de Mingtiao hacia 1600 a.C.). La batalla de Mingtiao (Q608694) NO se propone como evento porque su ítem de Wikidata carece de coordenadas y su ubicación exacta es discutida; se recoge como relación. Yanshi Shang City / Xibo corresponde al 'Bo' (Q11040185) ya presente en el visor, así que no se repite. Descartados por quedar por debajo del umbral (culturas arqueológicas, peso 2 o menos, y sin coordenadas en Wikidata salvo indicación): cultura de Erlitou (Q1051663, coords en zona; ya cubierta por la ciudad de Erlitou y por Xia), cultura de Erligang (Q1151593, 1600–1400 a.C.; cubierta por la entidad Shang ya presente), Qijia (Q1269223, 2400/2200–1600 a.C., Gansu-Qinghai), Xiajiadian inferior (Q1041674, 2200–1600 a.C., Mongolia Interior-Liaoning), Siba (Q33204333, 1900–1500 a.C.), Zhukaigou (Q2545535, Ordos), Yueshi (Q1460971, 1900–1500 a.C., Shandong), Xiaqiyuan (Q67935770), Seima-Turbino (Q2409967, 2200–1700 a.C., red metalúrgica Altái-Siberia; su ventana apenas roza el inicio del periodo), Okunev (Q2632835), Glazkovo (Q1973554), Tianshanbeilu (Q11107150) y el cementerio de Xiaohe (2000–1000 a.C., Lop Nur: solo necrópolis, sin asentamiento conocido). Karasuk (Q129282) empieza hacia 1500 a.C. y es peso 2. Panlongcheng (Q217684) queda fuera de la zona (30,7°N). Sin Wikidata verificable: Elunino, Chemurchek/Munkhkhairkhan (Mongolia). No se ha encontrado ninguna guerra mayor documentada en la zona además de Mingtiao.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "e218efa107",
+  "bbox": [
+   -12.0,
+   5.0,
+   33.67,
+   32.5
+  ],
+  "corte": "-1200",
+  "lod": 3,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 2,
+  "descartados": [
+   {
+    "nombre": "Egipto: Tercer periodo intermedio",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = Norte de África, Sáhara, Nubia y Sahel (Egipto hasta 32,5 N). Se han revisado Wikidata (QID, P625, fechas) y Wikipedia en/es. Umbral peso 3. Incluidos: la batalla del Delta (coordenadas Wikidata 30,9 N 31,12 E, dentro de zona; Wikidata la fecha en 1178, es-wiki 1178/1175, en-wiki ~1175: se da 'hacia 1175'); el Tercer periodo intermedio como continuidad del Estado egipcio a partir de 1069 (la entidad 'Imperio Nuevo' existente termina en -1070 en Wikidata; sin él Egipto desaparecería del mapa en los últimos 70 años de la ventana) — AVISO: Q212728 no tiene coordenadas P625 en Wikidata, igual que la entidad Hatti Q5406 ya presente; si el visor exige P625 hay que descartarlo o usar como alternativa la dinastía XXI (Q748151, tampoco con P625); y la relación de conflicto Egipto–Hatti que cierra con el tratado de 1259 (Qadesh cae fuera de zona, 36,5 E, pero ambas entidades ya están en el visor). DESCARTADOS: Reino de Kush (Q241790) — nace hacia 1070 a.C. en Napata, pero la coordenada de Wikidata es Meroe (17,18 N, 33,83 E), 0,16° fuera del borde este de la zona: excluido por regla 2, conviene revisarlo si la zona vecina no lo recoge. Napata (Q743282, 18,53 N 31,82 E): en la ventana es solo centro religioso egipcio de Amón, peso 2. Guerras libias de Merenptah (Perire, 1208 a.C.) y de Ramsés III (años 5 y 11, ~1182 y ~1176): sin ítem de Wikidata para las batallas; los libu (Q2456520) y mashauash (Q1191083) no tienen coordenadas y como entidad valdrían peso 2, no 3. Pueblos del Mar (Q193850): sin coordenadas y no residentes en la zona; quedan representados por la batalla. Cultura Nok (Q927291, desde 1500), tradición de Tichitt (2200–500) y garamantes (Q839034, desde ~1000): peso 1–2 en vista lejana. Kerma (Q1739282) termina hacia 1500. Punt (Q282350) tiene coordenadas fuera de zona (48 E). Relaciones comerciales Egipto–Ugarit/Alasiya/micénicos: plausibles pero de peso 2, por debajo del umbral.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
