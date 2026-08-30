@@ -2319,5 +2319,47 @@
   ],
   "nota": "Zona: Iberia, sur de Francia, norte de Italia hasta 10,84°E, Cerdeña, Córcega, Baleares y Magreb al norte de 32,5°N. Verificados QID en Wikidata y cronología en Wikipedia (es/en). Incluidos con peso 2 las culturas del Bronce coetáneas de El Argar (Bronce Manchego, Bronce valenciano), dos asentamientos emblemáticos con coordenadas (Motilla del Azuer 39.04/-3.50; La Bastida 37.76/-1.56) y las culturas del arco alpino-tirrénico (Polada, Terramaras, Ródano, Bonnanaro, pretalayótica). Advertencias: (1) Bonnanaro es la fase inicial de la ya presente Cultura nurágica; si el visor la data desde 1800 a.C. hay solapamiento y puede sobrar. (2) La cultura del Ródano tiene su núcleo (Franco Condado, Valais, Borgoña) al norte de 46,25°N; solo su extensión por el valle del Ródano cae en la zona; el ítem de Wikidata no tiene coordenadas. (3) Terramaras se concentra en Emilia, a caballo del límite este (Parma dentro, Módena fuera); sin coordenadas en Wikidata. (4) Polada, Bronce Manchego, Bronce valenciano y pretalayótica tampoco tienen P625; se proponen porque el visor ya admite entidades sin coordenadas (Nurágica, Vila Nova). Descartados: civilización torreana de Córcega (Q472258: Wikipedia la sitúa en la segunda mitad del II milenio, fuera casi por completo de la ventana; cronología de las torri discutida); cultura talayótica (desde ~850 a.C.); cultura de Wessex y de los Túmulos (fuera de zona); Castelluccio (Sicilia, fuera de zona); Cerro de la Encina y Lavagnone (peso 1, y Lavagnone sin artículo es/en); no se ha encontrado ningún evento con QID propio en la ventana (el abandono de La Bastida ~1600/1550 a.C. y el fin de El Argar ~1550 a.C. no tienen ítem de Wikidata separado); Magreb sin objetos de peso 2 en este periodo.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "603f21b4c4",
+  "bbox": [
+   33.67,
+   18.75,
+   56.5,
+   32.5
+  ],
+  "corte": "-1600",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 11,
+  "descartados": [
+   {
+    "nombre": "Ur",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Uruk",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Eridu",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Qal'at al-Bahrain",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Dilmun",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Cultura de Wadi Suq",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona: Sinaí oriental, Levante sur, Arabia norte y oriental, golfo Pérsico, sur de Mesopotamia y Juzestán. Todos los QID y coordenadas se comprobaron contra la API de Wikidata; las dataciones, contra los artículos de Wikipedia en inglés citados. Las entidades Dilmun (Q748846) y Cultura de Wadi Suq (Q48802879) NO tienen coordenadas en Wikidata; se proponen igualmente por su relevancia. Mashkan-shapir (32.40N) y Borsippa (32.39N) quedan a un décimo de grado del borde norte. DESCUADRE: el artículo de Qal'at al-Bahrain dice que el lugar «fue abandonado tras 1800 a.C.», pero el mismo artículo y el de Dilmun registran allí tablillas de Ea-gamil (País del Mar) y de reyes casitas; se propone con ocupación continua, pero la contradicción queda sin resolver. Descartados: Lagash (Q207330) y Girsu (Q853946), ocupación «modesta» en época babilónica y Girsu abandonada hacia 1600 (peso 1); Dilbat (Q1193666), Marad y Kisurra (peso 1); templo de Barbar (Q807317), en uso solo hasta inicios del II milenio; Tell Abraq (Q3517362) y Shimal (Q7496816), peso 1 y ya representados por Wadi Suq; Tayma (Q27365), cuya muralla se data vagamente «a mediados del II milenio» y cuyo apogeo es posterior; Mersa Gawasis (Q1536350), puerto del Imperio Medio hacia Punt usado hasta Amenemhat IV (hacia 1800 a.C.), fuera de la ventana por escaso margen; Canaán (Q163329), cuyas coordenadas en Wikidata (32.77N) caen fuera de la zona; Punt (Q282350), coordenadas fuera; Casitas/Dinastía casita (Q16630263), Babilonia queda fuera de la zona y su control del sur es posterior a 1475; Haft Tepe (Kabnak), fundada hacia 1400; Serabit el-Khadim y demás Sinaí egipcio, al oeste de 33.67; Nubia y Kerma, fuera. No existe ítem de Wikidata para el asedio de Sharuhen ni para la revuelta de Rim-Sin II/destrucción de Ur (hacia 1739), por lo que se recogen como relaciones o en la línea de Ur. La batalla de Megiddo (1457) queda fuera de ventana y de zona.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
