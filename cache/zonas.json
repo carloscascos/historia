@@ -2158,5 +2158,22 @@
   ],
   "nota": "Zona = África occidental (Senegal, Mauritania meridional, Malí, Guinea, Ghana, Burkina, Nigeria occidental). No hay estados, ciudades ni batallas documentados en -1800/-1475; sólo culturas arqueológicas. Se proponen tres con peso 2, al mismo nivel que El Argar o Vila Nova de São Pedro ya presentes. ADVERTENCIAS: (1) Tichitt: el ítem de la cultura (Q107008575, 'Tichitt culture') NO tiene coordenadas en Wikidata, por lo que se ancla al ítem del yacimiento Dar Tichitt (Q1165596, 18.36N -9.15E, dentro de la zona); si el visor exige que el QID sea de la cultura y no del sitio, descartar. La ocupación se da como 2000–300 a.C. (Wikipedia en); los recintos de piedra seca se datan desde c. 1400 a.C., o sea después de la ventana, pero el cultivo de mijo perla (1900–1600 a.C.) sí cae dentro. (2) Nok: entra en la ventana sólo en sus últimos 25 años (inicio c. 1500 a.C. según Wikipedia en y Wikidata P571); la Wikipedia en español la data 500 a.C.–300 d.C., discrepancia sin resolver entre fuentes; si se prefiere la cronología conservadora, descartar para este corte. (3) Kintampo cae íntegramente en la ventana y con coordenadas en zona; sin reservas. DESCARTADOS: Karkarichinkat (Malí, Q22906084) por no tener coordenadas en Wikidata y datarse 2620–2200 a.C., antes de la ventana; Gajiganna (Nigeria, lago Chad) por quedar fuera de la zona (lon ~13E); Ounjougou (Malí) por ser relevante en milenios anteriores. No se proponen relaciones: no hay vínculos documentados entre estas culturas ni con las entidades ya en el visor en este periodo.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "a1f4f5cca6",
+  "bbox": [
+   -12.0,
+   18.75,
+   10.84,
+   32.5
+  ],
+  "corte": "-1600",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 0,
+  "descartados": [],
+  "nota": "Zona = Magreb (Marruecos, Argelia, Túnez occidental) y Sáhara occidental/central hasta el Tassili. Revisado: (1) Kach Kouch (Q108266902, 35.39N -5.16E, único asentamiento de la Edad del Bronce conocido en el Magreb): fases 2200–2000 a.C., abandono, y 1300–900 a.C.; no hay ocupación documentada en la ventana 1800–1475 y aun así sería peso 1 (aldea <100 personas). (2) Tassili n'Ajjer (Q190048, 25.5N 9.0E): hay ocupación de las mesetas hasta c. 1500 a.C. y arte rupestre pastoral/'periodo del caballo', pero la datación del inicio del periodo del caballo es contradictoria entre fuentes (2000 / 1650 / 1200 a.C.) y no es ciudad, estado ni evento; peso 1 a lo sumo, por debajo del umbral. (3) Grabados de armas del Alto Atlas (Oukaïmeden, Yagour): alabardas y puñales comparados con tipos argáricos, datados por paralelos hacia mediados del II milenio; no existe QID propio para el conjunto rupestre (solo estación de esquí Q3090623 y comuna Q7110362) y sería peso 1. HIPÓTESIS SIN VERIFICAR: transmisión El Argar → Alto Atlas; no se propone como relación por falta de entidad receptora con QID y por datación solo tipológica. (4) Dhar Tichitt (18.45N -9.41W): queda fuera de la zona por el sur (límite 18.75N) y su inicio (c. 2000 a.C.) es marginal. (5) Tribus libias (Tehenu, Libu, Meshwesh): primeras menciones egipcias firmes en el s. XIII a.C. y localizadas en Cirenaica/Marmárica, fuera de la zona por el este. (6) Wikipedia es (Historia de Argelia, Historia de Marruecos, Historia de Túnez) no recoge ninguna cultura, ciudad ni estado con nombre para 2000–1000 a.C. en la región: entre el Neolítico magrebí (hasta c. 2000 a.C.) y la colonización fenicia (s. IX–VIII a.C.) no hay objeto de peso 2–3. Fuentes leídas: https://en.wikipedia.org/wiki/Tassili_n%27Ajjer ; https://en.wikipedia.org/wiki/Dhar_Tichitt ; https://en.wikipedia.org/wiki/Prehistoric_Morocco ; https://en.wikipedia.org/wiki/Ancient_Libya ; https://es.wikipedia.org/wiki/Historia_de_Argelia ; https://www.eurekalert.org/news-releases/1075672?language=spanish ; https://theconversation.com/discovery-of-a-4-000-year-old-bronze-age-settlement-in-morocco-rewrites-history-253172 ; https://www.wikidata.org/wiki/Special:EntityData/Q108266902.json ; https://www.rupestre.net/tracce/?p=5149",
+  "autor": "carlos alvarez-cascos"
  }
 ]
