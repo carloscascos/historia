@@ -464,8 +464,12 @@ function genHtml(kind,key){const g=GEN[kind+":"+key];if(!g)return"";
   return `<div class="gen"><span class="kicker">ficha generada · sin revisar</span> <span class="tag">${g.modelo}</span> <span class="tag">${g.fecha}</span>`+(g.entradilla?`<p><b>${g.entradilla}</b></p>`:"")+g.contexto.map(p=>`<p>${p}</p>`).join("")+
     (g.sin_respaldo&&g.sin_respaldo.length?`<div class="kicker">sin respaldo encontrado</div><ul>${g.sin_respaldo.map(x=>`<li>${x}</li>`).join("")}</ul>`:"")+
     `<div class="src"><span class="kicker">fuentes consultadas</span><br>${g.fuentes.map(f=>`<a href="${f.url}" target="_blank">${f.titulo||f.url}</a>${f.responde===false?" <span title='la URL no respondió al comprobarla'>⚠</span>":""}${f.uso?` — ${f.uso}`:""}`).join("<br>")}</div></div>`}
-const cfg={get url(){try{return localStorage.getItem("inv_url")||""}catch(e){return""}},set url(v){try{localStorage.setItem("inv_url",v)}catch(e){}}};
-$("#btn-cfg").onclick=()=>{const v=prompt("URL del investigador (servicio local, p. ej. http://172.24.31.1:8787 o https://pcac-xps.<tailnet>.ts.net)",cfg.url||"http://172.24.31.1:8787");if(v!==null){cfg.url=v.trim().replace(/\/$/,"");invBtn()}};
+const cfg={get url(){try{return localStorage.getItem("inv_url")||""}catch(e){return""}},set url(v){try{localStorage.setItem("inv_url",v)}catch(e){}},
+  get sec(){try{return localStorage.getItem("inv_sec")||""}catch(e){return""}},set sec(v){try{localStorage.setItem("inv_sec",v)}catch(e){}}};
+// el secreto viaja en una cabecera (compatible con CORS) en toda llamada al investigador
+const H=(extra={})=>cfg.sec?{...extra,"X-Investigador-Secreto":cfg.sec}:extra;
+$("#btn-cfg").onclick=()=>{const v=prompt("URL del investigador (p. ej. https://sbc.eu1.netbird.services o http://100.127.80.63:8787)",cfg.url||"https://sbc.eu1.netbird.services");
+  if(v!==null){cfg.url=v.trim().replace(/\/$/,"");const k=prompt("Secreto del investigador (déjalo vacío si el servicio no lo pide)",cfg.sec);if(k!==null)cfg.sec=k.trim();invBtn();pollCola(false)}};
 function invBtn(){$("#p-inv").classList.toggle("on",!!(cfg.url&&sel&&["ent","ciu","rel","ev"].includes(sel.kind)))}
 function fichaActual(kind,key){if(kind==="ent"){const E=DATA.ent[key];return {linea:E.linea,contexto:E.contexto,fuentes:E.fuentes,tipo:E.tipo,civilizacion:civName(E.civilizacion),desde:E.desde,hasta:E.hasta}}
   if(kind==="ciu"){const C=DATA.ciu[key];return {contexto:C.contexto,nota:C.nota,qid:C.qid,poblacion:C.pobs}}
@@ -477,10 +481,10 @@ async function investigar(){
   const box=document.createElement("div");box.className="gen";box.innerHTML=`<span class="kicker">investigando</span><p class="wait"><i></i>Claude busca y redacta la ficha de <b>${nombreDe(kind,key)}</b>. Suele tardar entre uno y tres minutos.</p>`;
   pBody.insertBefore(box,pBody.firstChild);$("#p-inv").disabled=true;
   try{
-    const r=await fetch(cfg.url+"/investiga",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({tipo:kind,clave:key,corte:c.etiqueta,nombre:nombreDe(kind,key),ficha:fichaActual(kind,key),objetos:IDXN})});
+    const r=await fetch(cfg.url+"/investiga",{method:"POST",headers:H({"content-type":"application/json"}),body:JSON.stringify({tipo:kind,clave:key,corte:c.etiqueta,nombre:nombreDe(kind,key),ficha:fichaActual(kind,key),objetos:IDXN})});
     if(!r.ok)throw new Error("el investigador respondió "+r.status);
     const {id}=await r.json();let t;
-    for(;;){await new Promise(z=>setTimeout(z,4000));t=await (await fetch(cfg.url+"/tarea/"+id)).json();if(t.estado!=="en curso")break}
+    for(;;){await new Promise(z=>setTimeout(z,4000));t=await (await fetch(cfg.url+"/tarea/"+id,{headers:H()})).json();if(t.estado!=="en curso")break}
     if(t.estado!=="hecha")throw new Error(t.error||"error");
     const f=t.ficha;
     box.innerHTML=`<span class="kicker">propuesta de Claude · ${t.meta.modelo} · ${t.meta.fecha}</span>`+(f.entradilla?`<p><b>${f.entradilla}</b></p>`:"")+f.contexto.map(p=>`<p>${p}</p>`).join("")+
@@ -490,7 +494,7 @@ async function investigar(){
     box.querySelectorAll(".acts button").forEach(b=>b.onclick=async()=>{
       if(b.dataset.m==="no"){box.remove();return}
       b.disabled=true;b.textContent="guardando…";
-      const g=await (await fetch(cfg.url+"/guardar",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({id,modo:b.dataset.m})})).json();
+      const g=await (await fetch(cfg.url+"/guardar",{method:"POST",headers:H({"content-type":"application/json"}),body:JSON.stringify({id,modo:b.dataset.m})})).json();
       if(g.ok){box.querySelector(".acts").innerHTML=`<span class="kicker">guardada como ${b.dataset.m} · commit ${g.commit}${b.dataset.m==="revisada"?" · recarga la página cuando se publique":""}</span>`;
         if(b.dataset.m==="generada"){GEN[kind+":"+key]={tipo:kind,clave:key,modelo:t.meta.modelo,fecha:t.meta.fecha,entradilla:f.entradilla,contexto:f.contexto,fuentes:f.fuentes,sin_respaldo:f.sin_respaldo}}}
       else{box.querySelector(".acts").innerHTML=`<span class="kicker" style="color:var(--conflicto)">error: ${g.error}</span>`}});
@@ -518,14 +522,14 @@ function proponerZona(b){const c=CORTES[cur],L=lod();clearSel();sel={kind:"zona"
     <p>Rectángulo de ${(b[2]-b[0]).toFixed(1)}° × ${(b[3]-b[1]).toFixed(1)}° (lon ${b[0]} a ${b[2]}, lat ${b[1]} a ${b[3]}).<br>Nivel de detalle: <b>${LODN[L]}</b>.<br>Ya hay ${ex[c.id].length} objetos dentro; Claude buscará lo que falte y después explorará sola la misma zona en los cortes vecinos (${[CORTES[cur-1],CORTES[cur+1]].filter(Boolean).map(x=>x.etiqueta).join(" y ")}).</p>
     <div class="acts"><button id="z-go">Investigar</button><button id="z-no">Cancelar</button></div>`]);
   $("#z-no").onclick=()=>{selrect.style.display="none";showCorte(c)};
-  $("#z-go").onclick=async()=>{$("#z-go").disabled=true;try{const r=await fetch(cfg.url+"/zona",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({bbox:b,corte:c.id,lod:L,existentes:ex[c.id],existentes_por_corte:ex,vecinos:true})});const j=await r.json();
+  $("#z-go").onclick=async()=>{$("#z-go").disabled=true;try{const r=await fetch(cfg.url+"/zona",{method:"POST",headers:H({"content-type":"application/json"}),body:JSON.stringify({bbox:b,corte:c.id,lod:L,existentes:ex[c.id],existentes_por_corte:ex,vecinos:true})});const j=await r.json();
       if(!r.ok)throw new Error(j.error||r.status);selrect.style.display="none";showCorte(c);pollCola(true)}catch(e){$("#z-go").parentElement.innerHTML=`<span class="kicker" style="color:var(--conflicto)">no se pudo encolar: ${e.message}</span>`}}}
 // cola de zonas: estado visible mientras haya trabajo; al terminar, los objetos nuevos se pintan
 let colaTimer=null, ZONAS_HECHAS=[];
-async function pollCola(loop){if(!cfg.url)return;try{const j=await (await fetch(cfg.url+"/cola")).json();ZONAS_HECHAS=j.hechas||[];renderZonas();mergeGen(j.objetos||[]);
+async function pollCola(loop){if(!cfg.url)return;try{const j=await (await fetch(cfg.url+"/cola",{headers:H()})).json();ZONAS_HECHAS=j.hechas||[];renderZonas();mergeGen(j.objetos||[]);
     const act=j.zonas.filter(z=>z.estado==="en cola"||z.estado==="en curso");const box=$("#cola");
     if(act.length){box.classList.add("on");box.innerHTML=`<span class="kicker">investigando zonas</span>`+act.map(z=>`<div>${z.estado==="en curso"?"⏳":"·"} ${CORTES.find(c=>c.id===z.corte)?.etiqueta} · ${z.bbox.map(v=>v.toFixed(0)).join(", ")}${z.origen?" (vecino)":""}${z.estado==="en cola"?` <a class="go" data-cancel="${z.id}" title="quitar de la cola">×</a>`:""}</div>`).join("");
-      box.querySelectorAll("[data-cancel]").forEach(a=>a.onclick=async()=>{await fetch(cfg.url+"/cancelar",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({id:a.dataset.cancel})});pollCola(false)})}
+      box.querySelectorAll("[data-cancel]").forEach(a=>a.onclick=async()=>{await fetch(cfg.url+"/cancelar",{method:"POST",headers:H({"content-type":"application/json"}),body:JSON.stringify({id:a.dataset.cancel})});pollCola(false)})}
     else{const ult=j.zonas.filter(z=>z.estado==="hecha").slice(-3);box.classList.toggle("on",!!ult.length);box.innerHTML=ult.length?`<span class="kicker">zonas terminadas</span>`+ult.map(z=>`<div>✓ ${CORTES.find(c=>c.id===z.corte)?.etiqueta}: ${z.hallazgos.length} objetos${z.descartados?.length?`, ${z.descartados.length} descartados`:""}${z.hallazgos.length?"":" — "+(z.nota||"").slice(0,120)}</div>`).join(""):""}
     if(loop&&act.length)colaTimer=setTimeout(()=>pollCola(true),6000)}catch(e){}}
 // objetos generados: se pintan en su corte con trazo discontinuo ámbar
@@ -546,7 +550,7 @@ function showGen(o){clearSel();sel={kind:"gen",key:o.qid||o.id};const z=ZONAS_HE
     `<div class="src">hallado por ${o.modelo} el ${o.fecha}${z?` en una zona investigada al nivel «${LODN[z.lod]}»`:""}<br><a href="https://www.wikidata.org/wiki/${o.qid}" target="_blank">Wikidata ${o.qid}</a>${o.eswiki?` · <a href="https://es.wikipedia.org/wiki/${encodeURIComponent(o.eswiki.replace(/ /g,"_"))}" target="_blank">Wikipedia: ${o.eswiki}</a>`:""}</div>`+srcHtml((o.fuentes||[]).map(f=>f.url?`web:${f.url} — ${f.titulo||""}`:f.titulo||""))],"#d4a27f",{kind:"gen",key:o.qid||o.id})}
 function renderZonas(){const g=$("#zonas");g.innerHTML="";ZONAS_HECHAS.filter(z=>z.corte===CORTES[cur].id).forEach(z=>{const b=z.bbox;const r=el("rect",{x:b[0],y:-b[3],width:b[2]-b[0],height:b[3]-b[1],class:"zhecha"});r.appendChild(el("title",{},`zona investigada el ${z.fecha}: ${z.hallazgos} objetos`));g.appendChild(r)})}
 // carga inicial: objetos y zonas desde el servicio si está, si no desde el repositorio publicado
-(async()=>{let j=null;if(cfg.url){try{j=await (await fetch(cfg.url+"/cola")).json()}catch(e){}}
+(async()=>{let j=null;if(cfg.url){try{j=await (await fetch(cfg.url+"/cola",{headers:H()})).json()}catch(e){}}
   if(!j){const RAWC="https://raw.githubusercontent.com/carloscascos/historia/main/cache/";const get=n=>fetch(n,{cache:"no-store"}).then(r=>r.ok?r.json():Promise.reject()).catch(()=>fetch(RAWC+n.split("/").pop(),{cache:"no-store"}).then(r=>r.ok?r.json():[]));j={objetos:await get("cache/objetos.json"),hechas:await get("cache/zonas.json"),zonas:[]}}
   ZONAS_HECHAS=j.hechas||[];renderZonas();mergeGen(j.objetos||[]);if((j.zonas||[]).some(z=>z.estado!=="hecha"&&z.estado!=="error"))pollCola(true)})();
 setCorte(cur); applyVB(); navBtns(); invBtn();

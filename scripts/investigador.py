@@ -25,6 +25,15 @@ PORT = int(sys.argv[1]) if len(sys.argv) > 1 else 8787
 TAREAS = {}
 LOCK = threading.Lock()
 CLAUDE = os.environ.get("CLAUDE_BIN", "claude")
+# Secreto de aplicación: el proxy de NetBird publica el servicio en Internet y su propia
+# autenticación rompe el preflight CORS, así que la protección se hace aquí, con una
+# cabecera que sí viaja en la petición real. Se guarda fuera del repositorio.
+SECRETO_PATH = Path.home() / ".config" / "historia" / "investigador.secreto"
+def _secreto():
+    if os.environ.get("INVESTIGADOR_SECRETO"): return os.environ["INVESTIGADOR_SECRETO"].strip()
+    if SECRETO_PATH.exists(): return SECRETO_PATH.read_text(encoding="utf-8").strip()
+    return ""
+SECRETO = _secreto()
 NOMBRES = {"ent": "entidad", "ciu": "ciudad", "rel": "relación", "ev": "evento"}
 
 def log(*a): print(time.strftime("%H:%M:%S"), *a, flush=True)
@@ -215,7 +224,7 @@ class H(BaseHTTPRequestHandler):
     def cors(self):
         self.send_header("Access-Control-Allow-Origin", self.headers.get("Origin") or "*")
         self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
-        self.send_header("Access-Control-Allow-Headers", "content-type")
+        self.send_header("Access-Control-Allow-Headers", "content-type, x-investigador-secreto")
         self.send_header("Access-Control-Allow-Private-Network", "true")
         self.send_header("Access-Control-Max-Age", "600")
     def out(self, code, obj):
@@ -223,8 +232,15 @@ class H(BaseHTTPRequestHandler):
         self.send_response(code); self.cors(); self.send_header("Content-Type", "application/json; charset=utf-8")
         self.send_header("Content-Length", str(len(body))); self.end_headers(); self.wfile.write(body)
     def do_OPTIONS(self): self.send_response(204); self.cors(); self.end_headers()
+    def autorizado(self):
+        """Sin secreto configurado, todo pasa (uso local). Con secreto, se exige en cabecera o en ?k=."""
+        if not SECRETO: return True
+        if self.headers.get("X-Investigador-Secreto", "") == SECRETO: return True
+        from urllib.parse import urlparse, parse_qs
+        return parse_qs(urlparse(self.path).query).get("k", [""])[0] == SECRETO
     def do_GET(self):
-        if self.path == "/": return self.out(200, {"servicio": "investigador", "tareas": len(TAREAS)})
+        if self.path.split("?")[0] == "/": return self.out(200, {"servicio": "investigador", "protegido": bool(SECRETO)})
+        if not self.autorizado(): return self.out(401, {"error": "falta el secreto del investigador (⚙ en el visor)"})
         if self.path == "/cola":
             zs = [{k: v for k, v in t.items() if k != "peticion"} for t in TAREAS.values() if t.get("tipo") == "zona"]
             return self.out(200, {"zonas": sorted(zs, key=lambda t: t["inicio"]), "objetos": leer(CACHE / "objetos.json", []), "hechas": leer(CACHE / "zonas.json", [])})
@@ -236,6 +252,7 @@ class H(BaseHTTPRequestHandler):
         self.out(404, {"error": "ruta"})
     def do_POST(self):
         n = int(self.headers.get("Content-Length") or 0); body = json.loads(self.rfile.read(n) or b"{}")
+        if not self.autorizado(): return self.out(401, {"error": "falta el secreto del investigador (⚙ en el visor)"})
         if self.path == "/investiga":
             for k in ("tipo", "clave", "nombre"):
                 if not body.get(k): return self.out(400, {"error": f"falta {k}"})
@@ -267,5 +284,5 @@ class H(BaseHTTPRequestHandler):
     def log_message(self, fmt, *a): log(self.address_string(), fmt % a)
 
 if __name__ == "__main__":
-    log(f"investigador en 0.0.0.0:{PORT} — raíz {ROOT}")
+    log(f"investigador en 0.0.0.0:{PORT} — raíz {ROOT}" + (" — protegido por secreto" if SECRETO else " — SIN secreto (solo uso local)"))
     ThreadingHTTPServer(("0.0.0.0", PORT), H).serve_forever()
