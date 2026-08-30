@@ -57,6 +57,11 @@
   #panel .hd{display:flex;align-items:flex-start;gap:8px;padding:14px 16px 6px;border-bottom:1px solid var(--line)}
   #panel .hd h2{font-family:var(--sans);font-size:18px;margin:0;flex:1}
   #panel .hd button{padding:0 7px;font-size:16px;line-height:22px} #panel .hd button:disabled{opacity:.3;cursor:default}
+  #p-inv{display:none;align-items:center;gap:4px;font-size:12px;color:#d4a27f;border-color:#5a4030} #p-inv.on{display:inline-flex} #p-inv:hover{border-color:#d4a27f}
+  #panel .gen{border:1px solid #5a4030;border-radius:4px;padding:8px 10px;margin-top:10px;background:#15110e}
+  #panel .gen .kicker{color:#d4a27f} #panel .gen .tag{background:#3a2a1e;color:#d4a27f}
+  #panel .acts{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px} #panel .acts button{font-size:12px}
+  #panel .wait{color:var(--text-dim);font-family:var(--sans);font-size:12.5px} #panel .wait i{display:inline-block;width:10px;height:10px;border:2px solid var(--bronce);border-right-color:transparent;border-radius:50%;animation:sp 1s linear infinite;vertical-align:-1px;margin-right:6px} @keyframes sp{to{transform:rotate(360deg)}}
   #panel a.go{color:var(--text);text-decoration:underline dotted var(--bronce);text-underline-offset:2px;cursor:pointer} #panel a.go:hover{color:var(--bronce)}
   #panel .bd{padding:10px 16px 16px;overflow:auto;flex:1}
   #panel .meta{font-family:var(--sans);font-size:12px;color:var(--text-dim);margin-bottom:8px}
@@ -126,7 +131,7 @@
   <span class="sub">maqueta</span>
   <div class="grp"><span id="corte-lbl"></span><input type="range" id="slider" min="0" max="5" step="1" value="4"></div>
   <div class="grp"><button id="btn-mundo">Mundo</button><button id="btn-viejo">Viejo Mundo</button><button id="btn-op">Oriente Próximo</button></div>
-  <div class="grp right"><button id="btn-cuadro" class="on">Cuadro ▴</button><button id="btn-panel">Ficha</button></div>
+  <div class="grp right"><button id="btn-cuadro" class="on">Cuadro ▴</button><button id="btn-panel">Ficha</button><button id="btn-cfg" title="ajustes del investigador">⚙</button></div>
 </div>
 
 <!-- 2. cuadro sinóptico -->
@@ -149,7 +154,7 @@
     <div id="lod"></div>
     <div id="zoomctl"><button id="z-in" title="acercar">+</button><button id="z-out" title="alejar">−</button></div>
   </div>
-  <aside id="panel"><div class="hd"><button id="p-back" title="atrás">‹</button><button id="p-next" title="siguiente">›</button><h2 id="p-title"></h2><button id="p-close" title="cerrar">×</button></div><div class="bd" id="p-body"></div></aside>
+  <aside id="panel"><div class="hd"><button id="p-back" title="atrás">‹</button><button id="p-next" title="siguiente">›</button><h2 id="p-title"></h2><button id="p-inv" title="investiga con Claude y propone una ficha"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.6 3h-3.2L3 21h3.4l1.6-4.3h8l1.6 4.3H21L13.6 3zm-4.5 10.9L12 6.6l2.9 7.3H9.1z" fill="currentColor"/></svg> Investiga</button><button id="p-close" title="cerrar">×</button></div><div class="bd" id="p-body"></div></aside>
 </div>
 
 <!-- 5. pie -->
@@ -303,7 +308,13 @@ addEventListener("keydown",e=>{if(e.target.tagName==="INPUT")return;if(e.key==="
 /* ---------- navegación entre objetos ---------- */
 // ¿en qué cortes existe un objeto? Para saltar al suyo sin mover el encuadre
 function cortesDe(kind,key){return CORTES.map((c,i)=>i).filter(i=>NODES[i][kind+":"+key])}
-function go(kind,key){pushHist();const cs=cortesDe(kind,key);if(cs.length&&!cs.includes(cur)){const t=cs.reduce((a,b)=>Math.abs(b-cur)<Math.abs(a-cur)?b:a);setCorte(t,true)}show(kind,key,{silent:true})}
+function go(kind,key){pushHist();const cs=cortesDe(kind,key);if(cs.length&&!cs.includes(cur)){const t=cs.reduce((a,b)=>Math.abs(b-cur)<Math.abs(a-cur)?b:a);setCorte(t,true)}show(kind,key,{silent:true});focusOn(kind,key)}
+// encuadra el objeto seleccionado: polígonos y trazos por su caja; puntos con una ventana de 12°
+function focusOn(kind,key){const n=NODES[cur][kind+":"+key];if(!n)return;let b;
+  if(kind==="ent"||kind==="rel"){const r=n.getBBox();b=[r.x,-(r.y+r.height),r.x+r.width,-r.y]}
+  else{const g=n.closest(".zs");const x=+g.dataset.x,y=-g.dataset.y;b=[x-6,y-3,x+6,y+3]}
+  const w=b[2]-b[0];if(w<8){const cx=(b[0]+b[2])/2,cy=(b[1]+b[3])/2;b=[cx-4,cy-2,cx+4,cy+2]}
+  flyTo(bboxView(b))}
 // índice de nombres para enlazar automáticamente en los textos: nombre -> [{kind,key}]
 const IDX={};
 function addIdx(n,kind,key){if(!n||n.length<4)return;(IDX[n]=IDX[n]||[]).push({kind,key})}
@@ -339,7 +350,8 @@ function card(title,pages,color,self){
   pTitle.textContent=title; pTitle.style.color=color||""; pBody.innerHTML=""; pages=pages.filter(Boolean).map(p=>linkify(p,self)); let i=0;
   const more=document.createElement("button"); more.className="more"; more.textContent="… más";
   function next(){const d=document.createElement("div");d.className="sec";d.innerHTML=pages[i++];pBody.insertBefore(d,more);d.querySelectorAll("a.go").forEach(a=>a.onclick=ev=>{ev.preventDefault();if(a.dataset.corte!=null){pushHist();setCorte(+a.dataset.corte,true);show(a.dataset.kind,a.dataset.key,{silent:true})}else go(a.dataset.kind,a.dataset.key)});if(i>=pages.length)more.remove()}
-  pBody.appendChild(more); more.onclick=next; next(); openPanel(); pBody.scrollTop=0; navBtns();
+  pBody.appendChild(more); more.onclick=next; next(); openPanel(); pBody.scrollTop=0; navBtns(); invBtn();
+  if(self&&GEN[self.kind+":"+self.key]){const d=document.createElement("div");d.innerHTML=genHtml(self.kind,self.key);pBody.insertBefore(d.firstChild,more)}
 }
 function show(kind,key,opt={}){
   if(!opt.silent)pushHist();
@@ -370,7 +382,51 @@ function showCelda(cv,c,cel){clearSel();if(!cel){showCorte(c);return}sel={kind:"
 
 // leyenda: cada icono muestra u oculta su capa
 document.querySelectorAll(".leg span[data-t]").forEach(sp=>sp.onclick=()=>{const off=sp.classList.toggle("off");svg.classList.toggle("h-"+sp.dataset.t,off)});
-setCorte(cur); applyVB(); navBtns();
+
+/* ---------- investigador: fichas generadas por Claude ---------- */
+const GEN={};  // "tipo:clave" -> ficha generada (cache/index.json, sin revisar)
+const RAW="https://raw.githubusercontent.com/carloscascos/historia/main/cache/index.json";
+// primero el índice junto a la página (GitHub Pages); si no se puede (file://), el del repositorio
+fetch("cache/index.json",{cache:"no-store"}).then(r=>r.ok?r.json():Promise.reject()).catch(()=>fetch(RAW,{cache:"no-store"}).then(r=>r.ok?r.json():[])).then(l=>{l.forEach(g=>GEN[g.tipo+":"+g.clave]=g);if(sel&&sel.kind!=="celda")show(sel.kind,sel.key,{silent:true})}).catch(()=>{});
+function genHtml(kind,key){const g=GEN[kind+":"+key];if(!g)return"";
+  return `<div class="gen"><span class="kicker">ficha generada · sin revisar</span> <span class="tag">${g.modelo}</span> <span class="tag">${g.fecha}</span>`+(g.entradilla?`<p><b>${g.entradilla}</b></p>`:"")+g.contexto.map(p=>`<p>${p}</p>`).join("")+
+    (g.sin_respaldo&&g.sin_respaldo.length?`<div class="kicker">sin respaldo encontrado</div><ul>${g.sin_respaldo.map(x=>`<li>${x}</li>`).join("")}</ul>`:"")+
+    `<div class="src"><span class="kicker">fuentes consultadas</span><br>${g.fuentes.map(f=>`<a href="${f.url}" target="_blank">${f.titulo||f.url}</a>${f.responde===false?" <span title='la URL no respondió al comprobarla'>⚠</span>":""}${f.uso?` — ${f.uso}`:""}`).join("<br>")}</div></div>`}
+const cfg={get url(){try{return localStorage.getItem("inv_url")||""}catch(e){return""}},set url(v){try{localStorage.setItem("inv_url",v)}catch(e){}}};
+$("#btn-cfg").onclick=()=>{const v=prompt("URL del investigador (servicio local, p. ej. http://172.24.31.1:8787 o https://pcac-xps.<tailnet>.ts.net)",cfg.url||"http://172.24.31.1:8787");if(v!==null){cfg.url=v.trim().replace(/\/$/,"");invBtn()}};
+function invBtn(){$("#p-inv").classList.toggle("on",!!(cfg.url&&sel&&["ent","ciu","rel","ev"].includes(sel.kind)))}
+function fichaActual(kind,key){if(kind==="ent"){const E=DATA.ent[key];return {linea:E.linea,contexto:E.contexto,fuentes:E.fuentes,tipo:E.tipo,civilizacion:civName(E.civilizacion),desde:E.desde,hasta:E.hasta}}
+  if(kind==="ciu"){const C=DATA.ciu[key];return {contexto:C.contexto,nota:C.nota,qid:C.qid,poblacion:C.pobs}}
+  if(kind==="rel"){const R=DATA.rel[key];return {tipo:R.tipo,entre:[DATA.ent[R.a].nombre,DATA.ent[R.b].nombre],linea:R.linea,contexto:R.contexto,fuentes:R.fuentes,desde:R.desde,hasta:R.hasta}}
+  const V=DATA.ev[key];return {año:V.año,linea:V.linea,contexto:V.contexto,fuentes:V.fuentes}}
+const nombreDe=(kind,key)=>kind==="ent"?DATA.ent[key].nombre:kind==="ciu"?key:kind==="rel"?`${DATA.rel[key].tipo} ${DATA.ent[DATA.rel[key].a].nombre} – ${DATA.ent[DATA.rel[key].b].nombre}`:DATA.ev[key].nombre;
+async function investigar(){
+  if(!sel||!cfg.url)return;const kind=sel.kind,key=sel.key,c=CORTES[cur];
+  const box=document.createElement("div");box.className="gen";box.innerHTML=`<span class="kicker">investigando</span><p class="wait"><i></i>Claude busca y redacta la ficha de <b>${nombreDe(kind,key)}</b>. Suele tardar entre uno y tres minutos.</p>`;
+  pBody.insertBefore(box,pBody.firstChild);$("#p-inv").disabled=true;
+  try{
+    const r=await fetch(cfg.url+"/investiga",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({tipo:kind,clave:key,corte:c.etiqueta,nombre:nombreDe(kind,key),ficha:fichaActual(kind,key),objetos:IDXN})});
+    if(!r.ok)throw new Error("el investigador respondió "+r.status);
+    const {id}=await r.json();let t;
+    for(;;){await new Promise(z=>setTimeout(z,4000));t=await (await fetch(cfg.url+"/tarea/"+id)).json();if(t.estado!=="en curso")break}
+    if(t.estado!=="hecha")throw new Error(t.error||"error");
+    const f=t.ficha;
+    box.innerHTML=`<span class="kicker">propuesta de Claude · ${t.meta.modelo} · ${t.meta.fecha}</span>`+(f.entradilla?`<p><b>${f.entradilla}</b></p>`:"")+f.contexto.map(p=>`<p>${p}</p>`).join("")+
+      (f.sin_respaldo.length?`<div class="kicker">sin respaldo encontrado</div><ul>${f.sin_respaldo.map(x=>`<li>${x}</li>`).join("")}</ul>`:"")+
+      `<div class="src"><span class="kicker">fuentes consultadas</span><br>${f.fuentes.map(x=>`<a href="${x.url}" target="_blank">${x.titulo||x.url}</a>${x.responde===false?" ⚠ no responde":""}${x.uso?` — ${x.uso}`:""}`).join("<br>")}</div>`+
+      `<div class="acts"><button data-m="generada">Guardar como generada</button><button data-m="revisada">Guardar como revisada</button><button data-m="no">Descartar</button></div>`;
+    box.querySelectorAll(".acts button").forEach(b=>b.onclick=async()=>{
+      if(b.dataset.m==="no"){box.remove();return}
+      b.disabled=true;b.textContent="guardando…";
+      const g=await (await fetch(cfg.url+"/guardar",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({id,modo:b.dataset.m})})).json();
+      if(g.ok){box.querySelector(".acts").innerHTML=`<span class="kicker">guardada como ${b.dataset.m} · commit ${g.commit}${b.dataset.m==="revisada"?" · recarga la página cuando se publique":""}</span>`;
+        if(b.dataset.m==="generada"){GEN[kind+":"+key]={tipo:kind,clave:key,modelo:t.meta.modelo,fecha:t.meta.fecha,entradilla:f.entradilla,contexto:f.contexto,fuentes:f.fuentes,sin_respaldo:f.sin_respaldo}}}
+      else{box.querySelector(".acts").innerHTML=`<span class="kicker" style="color:var(--conflicto)">error: ${g.error}</span>`}});
+  }catch(e){box.innerHTML=`<span class="kicker" style="color:var(--conflicto)">no se pudo investigar</span><p class="wait">${e.message}. ¿Está corriendo el servicio en ${cfg.url}?</p>`}
+  finally{$("#p-inv").disabled=false}
+}
+$("#p-inv").onclick=investigar;
+setCorte(cur); applyVB(); navBtns(); invBtn();
 </script>
 </body>
 </html>

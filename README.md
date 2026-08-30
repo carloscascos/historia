@@ -30,9 +30,12 @@ docs/mvp-bronce.md         alcance y decisiones de la maqueta
 docs/analisis-mercado.md   actores y decisión construir/adoptar
 docs/panorama-fuentes.md   fuentes de datos por capa
 data/                      un fichero por término del glosario (JSON/CSV) + geo/ (GeoJSON)
+cache/                     fichas generadas por Claude, sin revisar (index.json + una por objeto)
 src/bronce.template.html   plantilla del visor; scripts/build.py la rellena con data/
-scripts/                   build.py, extract_cliopatria.py, ciudades_reba.py, ciudades_qid.py, wd.py
+scripts/                   build.py, investigador.py (+ .sh, _prompt.md), extract_cliopatria.py, ciudades_*.py, wd.py
 ```
+
+**Investiga.** Cada ficha tiene un botón «Investiga» que pide a Claude una ficha nueva con fuentes. No llama a ninguna API desde la página: habla con `scripts/investigador.py`, un servicio local que lanza `claude -p` (Claude Code no interactivo, con la suscripción del usuario y WebSearch/WebFetch), valida el JSON y comprueba que las URL responden. La propuesta se muestra en la ficha y el usuario decide: guardarla como *generada* (va a `cache/`, visible para todos con marca «sin revisar») o como *revisada* (entra en `data/`, se reconstruye `bronce.html`). Ambas hacen commit y push. Arranque: `scripts/investigador.sh start` (tmux, puerto 8787); la URL del servicio se guarda en la página con ⚙. Decisión y alternativas en `docs/adr/0001-fichas-generadas-en-el-repo.md`.
 
 Los datos del cuadro de diez cortes siguen dentro de `index.html` (objetos `C` y `LINKS`). Los del visor viven en `data/`: `bronce.html` se regenera con `uv run scripts/build.py` y no se edita a mano.
 
