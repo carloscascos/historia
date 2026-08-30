@@ -4435,5 +4435,47 @@
   "descartados": [],
   "nota": "Zona 102–125 E / 5–18.75 N: sur de Vietnam y Camboya, golfo de Tailandia, península malaya norte, Borneo norte, Palawan, Filipinas centrales y Luzón central-sur. Ventana -2750 a -2250.\n\nLo que se ha mirado y por qué no entra:\n\n1) NEOLÍTICO DEL SUR DE VIETNAM (dentro de la zona por coordenadas). An Sơn (Long An, ~10.9 N 106.3 E) es el sitio mejor fechado: ocupación c. 2300–1200 a.C., con una lectura máxima de 2500–2000 a.C. Solo el arranque roza la ventana. Además su ítem de Wikidata (Q112052203) NO tiene coordenadas (P625), así que la regla 2 lo excluye de todas formas. Lộc Giang (mismo río Vàm Cỏ Đông) arranca c. 2000 a.C., ya fuera. La síntesis regional sitúa la llegada de las primeras poblaciones neolíticas al sur de Vietnam entre 2200 y 1500 a.C., es decir mayoritariamente posterior al corte.\n\n2) NEOLÍTICO DE FILIPINAS. Nagsabaran (valle del Cagayán) da base 2000–1800 a.C.: fuera de la ventana y, además, a ~18.2 N pero con la cerámica roja llegando después del corte. Batanes (Torongan, Reranum) sí da 2500 a.C., pero está a ~20.4 N, fuera del límite norte de la zona. Cuevas de Tabon (Palawan, dentro de la zona y con coordenadas): la ocupación documentada es Pleistoceno tardío (40.000–9.000 BP) y luego enterramientos en urna desde c. 1500 a.C.; no hay fase datada específicamente en -2750/-2250. Wikipedia sobre prehistoria de Filipinas no documenta nada concreto para esa ventana.\n\n3) BORNEO. Niah (Sarawak, ~4 N, por debajo del límite sur en su mayor parte): el cementerio neolítico del West Mouth cubre c. 5000–2500 BP, un rango tan amplio que no fecha nada dentro de la ventana. Bukit Tengkorak (Sabah) es de 3300–3000 BP, muy posterior.\n\n4) ENTIDADES SUPRARREGIONALES. La expansión austronesia sí es el proceso relevante en el periodo (salida de Taiwán, llegada a Filipinas c. 2500–2000 a.C.), pero Wikidata no tiene un ítem para «expansión austronesia» como proceso histórico: solo artículos académicos y Q622000 (historia de las islas del Pacífico), que no es una entidad situable en esta zona. Q861225 «pueblos austronesios» es un grupo etnolingüístico actual, no una entidad datable en la ventana. Sin QID válido, la regla 2 impide proponerlo.\n\n5) CULTURAS CON QID PROPIO Y FECHAS PRÓXIMAS que quedan fuera por geografía, no por fecha: Đa Bút (Q1156336) y Phùng Nguyên están en el delta del Río Rojo / Thanh Hóa, ~20 N, por encima del límite norte. Sa Huỳnh, Kalanay, Đông Sơn y los lingling-o de jade son todos del I milenio a.C., mil años posteriores al corte.\n\nCONCLUSIÓN: en esta zona y ventana no hay estados, ciudades, batallas ni rutas documentadas; hay comunidades neolíticas dispersas cuyos sitios o bien empiezan justo después del corte, o bien carecen de coordenadas en Wikidata. Nada alcanza el umbral de peso 2 para vista media. No se propone la expansión austronesia como entidad pese a ser el fenómeno de fondo del periodo, porque no tiene QID utilizable — su ausencia en el visor es una limitación de Wikidata, no una afirmación de que no ocurriera.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "71fea8ff93",
+  "bbox": [
+   6.71,
+   33.1,
+   21.25,
+   44.22
+  ],
+  "corte": "-2500",
+  "lod": 1,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 8,
+  "descartados": [
+   {
+    "nombre": "Fase de Tarxien",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Fase del Cementerio de Tarxien",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Laterza",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Abealzu-Filigosa",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura del Gaudo",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Rinaldone",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "La zona (6,71–21,25 E / 33,1–44,22 N) cubre Malta, Sicilia, Cerdeña oriental, sur y centro de Italia, Adriático oriental, Albania y las islas Jónicas hasta Léucade; NO incluye la Argólida, el Egeo ni Creta. Descartado por caer fuera del recuadro: Lerna y la Casa de las Tejas (22,72 E), Keros-Dhaskalio (25,2 E), Olimpia (21,63 E) y la cueva de Haua Fteah en Cirenaica (21,9 E). Descartado por fechas fuera de la ventana −2750/−2250: cultura de Castelluccio en Sicilia (−2200/−1800), cultura de Cetina en el Adriático (−2300/−1600 en la cronología alta, apenas 50 años dentro), campaniforme de Cerdeña (−2100/−1800) y cultura de Monte Claro (−2400/−2100, solo el arranque queda dentro). Sovjan (Albania), yacimiento lacustre del Korçë con dendrocronología de los siglos XXIV–XXII a.C. y por tanto el mejor datado de la zona en esta ventana, se ha descartado por no tener artículo propio en Wikipedia ni QID verificable; el municipio de Maliq sí tiene QID (Q772248) pero su artículo no da fechas absolutas para las fases Maliq IIIa/IIb, así que tampoco se propone. No se ha encontrado ningún evento fechado dentro de la ventana con coordenadas y QID en esta zona: el colapso del periodo de los templos malteses hacia 2500 a.C. está documentado como transición de fase, no como suceso datado, y por eso se propone como relación de transmisión entre las dos fases y no como evento.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
