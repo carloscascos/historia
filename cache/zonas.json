@@ -1,1 +1,19 @@
-[]
+[
+ {
+  "id": "035baa2fa0",
+  "bbox": [
+   34,
+   31,
+   38,
+   37
+  ],
+  "corte": "-1600",
+  "lod": 0,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 41,
+  "descartados": [],
+  "nota": "Se han revisado ~55 candidatos (Wikipedia en/es/de, más Bilkent, AUB, Penn Museum, Creighton, Wiley) y se han verificado QID y coordenadas en Wikidata; todos los objetos propuestos caen dentro de la zona. AVISOS sobre lo propuesto: (1) Tell Sakka no tiene ítem propio en Wikidata; el artículo de Wikipedia redirige a la aldea moderna de Sakka (Q7403017), cuyas coordenadas usan aquí — si el visor exige ítem arqueológico, descartar. (2) Las dos relaciones con Q5406 (hititas) y Q191324 (Reino Medio de Egipto) tienen un extremo fuera de la zona y sin coordenadas en Wikidata; van porque son los vínculos más importantes del periodo, pero hay que mapearlos a los QID que use el visor para esas entidades. (3) Descuadres de cronología en Wikipedia que no cierro: Alalakh VII destruida 'c. 1650' vs '1628 = 2.º año de Hattusili' (incompatible con su reinado 1650–1620 en cronología media); Idrimi en Alalakh c. 1517 (art. Yamhad) vs c. 1490–1465 (art. Idrimi) vs Barattarna c. 1500; Abishemu de Biblos en el s. XIX (art. necrópolis) vs 1750–1700 (art. Abishemu); Umm el-Marra = Tuba 'no probado' (art. propio) pero listada sin reservas en Yamhad. He usado 'hacia' y horquillas amplias. EVENTOS: ninguno propuesto porque ninguno tiene ítem de Wikidata: el saqueo de Alepo por Mursili I (c. 1600–1595), la destrucción de Ebla (c. 1600), el asedio de Urshu (CTH 7) y el asedio de Sharuhen por Ahmose I (segunda mitad del s. XVI) solo existen como secciones de otros artículos. Si el visor admite eventos anclados al QID de la ciudad, los cuatro merecerían peso 2–3. ENTIDADES sin coordenadas en Wikidata y por eso no propuestas: hicsos (Q192319; presencia en el Levante sur documentada pero debatida, centro en Avaris fuera de zona), hurritas (Q190394; ya en Alalakh hacia 1725), amorreos (Q203507), suteos (Q650947; nómadas que saqueaban Qatna y Palmira hacia 1800–1760), Mukish (redirige a Alalakh), Nuhašše (Q2004491; no es entidad política antes de 1475), Mitanni (Q178665; coordenadas fuera de zona, en Alepo solo desde c. 1524/1500 con fechas contradictorias). Urshu (Q11954111) y Hassuwa (Q11929777) están sin localizar y sin coordenadas. DESCARTADOS por falta de evidencia en la ventana: Tiro (sondeo sin Bronce Medio; el PDF de Genz 2017 dio 403 y no se leyó), Arwad y Tell Kazel (solo menciones genéricas), Damasco (sin restos; solo Tell Sakka), Tarsus y Yumuktepe (fuentes mudas para 1800–1475), Tell Tayinat (hiato entre Bronce Antiguo y Hierro), Tel Zeror (abandonado del s. XVIII al XV), Tel Yarmuth (unos tiestos), Tel Rehov (sin estratos del Bronce). FUERA DE ZONA: Carchemish (lon 38,015), Emar, Mari, Tilmen Höyük (lat 37,03), Mitanni. No propuestas relaciones de vasallaje (Yamhad–Ebla, Yamhad–Alalakh, Qatna–Hazor, Sidón–Tell el-Burak) porque no encajan en los tipos conflicto/comercio/transmisión; el comercio de estaño Mari–Hazor (c. 1770) tiene un extremo fuera de zona y la escala en Laish no aparece en Wikipedia.",
+  "autor": "carlos alvarez-cascos"
+ }
+]
