@@ -12,13 +12,15 @@ con WebSearch/WebFetch, valida el JSON devuelto y comprueba que las URL responde
 
 Uso: python3 scripts/investigador.py [puerto]   (por defecto 8787, escucha en 0.0.0.0)
 """
-import csv, json, os, re, subprocess, sys, threading, time, urllib.request, uuid
+import csv, json, os, queue, re, subprocess, sys, threading, time, urllib.request, uuid
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 CACHE = ROOT / "cache"
 PROMPT = (ROOT / "scripts" / "investigador_prompt.md").read_text(encoding="utf-8")
+PROMPT_ZONA = (ROOT / "scripts" / "investigador_zona_prompt.md").read_text(encoding="utf-8")
+sys.path.insert(0, str(ROOT / "scripts")); import wd  # búsqueda y coordenadas en Wikidata
 PORT = int(sys.argv[1]) if len(sys.argv) > 1 else 8787
 TAREAS = {}
 LOCK = threading.Lock()
@@ -110,6 +112,94 @@ def guardar_revisada(t):
     git("add", "data", "bronce.html"); git("commit", "-q", "-m", f"data: ficha revisada {tipo} {p['nombre']}"); git("push", "-q", "origin", "main")
     return git("rev-parse", "--short", "HEAD")
 
+# =============== investigación de zona ===============
+NIVEL = {3: "vista lejana: solo estados, ciudades grandes y guerras mayores (peso 3)", 2: "vista media: estados, ciudades relevantes, batallas y rutas principales (peso 2 o 3)",
+         1: "vista cercana: también yacimientos y hechos locales (peso 1 a 3)", 0: "todo el detalle: cualquier objeto documentado (peso 1 a 3)"}
+COLA = queue.Queue(); ZONAS = []
+CORTES = json.loads((ROOT / "data" / "cortes.json").read_text(encoding="utf-8"))
+def leer(p, default):
+    try: return json.loads(p.read_text(encoding="utf-8"))
+    except Exception: return default
+def qids_conocidos():
+    d = ROOT / "data"; q = set()
+    q |= {e["qid"] for e in leer(d / "entidades.json", [])}; q |= {e["qid"] for e in leer(d / "eventos.json", [])}
+    q |= {r["qid"] for r in csv.DictReader(open(d / "ciudades.csv", encoding="utf-8")) if r.get("qid")}
+    q |= {o["qid"] for o in leer(CACHE / "objetos.json", []) if o.get("qid")}
+    return q
+def civ_de(lon, lat):
+    for c in leer(ROOT / "data" / "civilizaciones.json", []):
+        x0, y0, x1, y1 = c["bbox"]
+        if x0 <= lon <= x1 and y0 <= lat <= y1: return c["id"]
+    return None
+def investigar_zona(tid, p):
+    lon0, lat0, lon1, lat1 = p["bbox"]; corte = next(c for c in CORTES if c["id"] == p["corte"]); lo, hi = corte["ventana"]
+    prompt = PROMPT_ZONA.format(lon0=lon0, lon1=lon1, lat0=lat0, lat1=lat1, corte=corte["etiqueta"], desde=lo, hasta=hi,
+                                nivel=NIVEL.get(int(p.get("lod", 1)), NIVEL[1]), existentes="\n".join("- " + x for x in p.get("existentes", [])) or "- (ninguno)")
+    log("zona", tid, p["bbox"], corte["id"])
+    try:
+        r = subprocess.run([CLAUDE, "-p", prompt, "--output-format", "json", "--allowedTools", "WebSearch,WebFetch"], cwd=ROOT, capture_output=True, text=True, timeout=1200)
+        if r.returncode != 0: raise RuntimeError(r.stderr[-800:] or "claude -p falló")
+        out = json.loads(r.stdout); res = extraer_json(out.get("result", "")); hall = res.get("hallazgos") or []
+        conocidos = qids_conocidos(); ok, desc = [], []
+        info = wd.get([h["qid"] for h in hall if re.fullmatch(r"Q\d+", str(h.get("qid", "")))]) if hall else {}
+        for h in hall:
+            q = str(h.get("qid", "")); tipo = h.get("tipo")
+            if tipo == "relacion":
+                if not (re.fullmatch(r"Q\d+", str(h.get("a", ""))) and re.fullmatch(r"Q\d+", str(h.get("b", "")))): desc.append((h, "relación sin QID en los extremos")); continue
+                if not (h.get("desde", lo) <= hi and h.get("hasta", hi) >= lo): desc.append((h, "fuera de la ventana")); continue
+                h["id"] = f"g_{h['a']}_{h['b']}_{tipo}"; ok.append(h); continue
+            if not re.fullmatch(r"Q\d+", q): desc.append((h, "sin QID")); continue
+            if q in conocidos: desc.append((h, "ya existe")); continue
+            w = info.get(q)
+            if not w or (w["es"] is None and w["en"] is None): desc.append((h, "QID no existe en Wikidata")); continue
+            co = w["coord"]
+            if co: lat, lon = co
+            elif tipo == "entidad" and h.get("lat") is not None and h.get("lon") is not None: lat, lon = h["lat"], h["lon"]; h["coord_sin_verificar"] = True
+            else: desc.append((h, "sin coordenadas en Wikidata")); continue
+            if not (lon0 <= lon <= lon1 and lat0 <= lat <= lat1): desc.append((h, f"fuera de la zona ({lat:.2f},{lon:.2f})")); continue
+            if tipo == "evento":
+                if not (lo <= h.get("año", 10**6) <= hi): desc.append((h, "año fuera de la ventana")); continue
+            elif not (h.get("desde", lo) <= hi and h.get("hasta", hi) >= lo): desc.append((h, "fuera de la ventana")); continue
+            h.update(lat=round(lat, 4), lon=round(lon, 4), eswiki=w["eswiki"], nombre=h.get("nombre") or w["es"] or w["en"], civilizacion=civ_de(lon, lat) if tipo == "entidad" else None)
+            conocidos.add(q); ok.append(h)
+        meta = {"modelo": out.get("model") or "claude (claude -p)", "fecha": time.strftime("%Y-%m-%d"), "sesion": out.get("session_id"), "coste_usd": out.get("total_cost_usd")}
+        for h in ok: h.update(estado="generado", zona=tid, corte=corte["id"], modelo=meta["modelo"], fecha=meta["fecha"])
+        guardar_zona(tid, p, corte, ok, [{"nombre": h.get("nombre"), "motivo": m} for h, m in desc], res.get("nota", ""), meta)
+        with LOCK: TAREAS[tid].update(estado="hecha", hallazgos=ok, descartados=[{"nombre": h.get("nombre"), "motivo": m} for h, m in desc], nota=res.get("nota", ""), meta=meta)
+        log("zona hecha", tid, len(ok), "objetos,", len(desc), "descartados")
+        if p.get("vecinos", True): encolar_vecinos(p, corte)
+    except Exception as e:
+        with LOCK: TAREAS[tid].update(estado="error", error=str(e))
+        log("zona error", tid, e)
+def guardar_zona(tid, p, corte, ok, desc, nota, meta):
+    with LOCK:
+        objs = leer(CACHE / "objetos.json", []); objs = [o for o in objs if o.get("zona") != tid] + ok
+        (CACHE / "objetos.json").write_text(json.dumps(objs, ensure_ascii=False), encoding="utf-8")
+        zonas = leer(CACHE / "zonas.json", [])
+        zonas.append({"id": tid, "bbox": p["bbox"], "corte": corte["id"], "lod": p.get("lod"), "fecha": meta["fecha"], "modelo": meta["modelo"], "hallazgos": len(ok), "descartados": desc, "nota": nota, "autor": git("config", "user.name")})
+        (CACHE / "zonas.json").write_text(json.dumps(zonas, ensure_ascii=False, indent=1), encoding="utf-8")
+        try:
+            git("add", "cache"); git("commit", "-q", "-m", f"cache: zona {corte['etiqueta']} {p['bbox']} → {len(ok)} objetos"); git("push", "-q", "origin", "main")
+        except Exception as e: log("git", e)
+def zona_hecha(bbox, corte_id):
+    return any(z["bbox"] == bbox and z["corte"] == corte_id for z in leer(CACHE / "zonas.json", [])) or \
+           any(t.get("tipo") == "zona" and t["peticion"]["bbox"] == bbox and t["peticion"]["corte"] == corte_id and t["estado"] in ("en cola", "en curso") for t in TAREAS.values())
+def encolar_vecinos(p, corte):
+    i = CORTES.index(corte)
+    for j in (i - 1, i + 1):
+        if 0 <= j < len(CORTES) and not zona_hecha(p["bbox"], CORTES[j]["id"]):
+            nueva_zona({**p, "corte": CORTES[j]["id"], "vecinos": False, "existentes": p.get("existentes_por_corte", {}).get(CORTES[j]["id"], [])}, origen=p["corte"])
+def nueva_zona(p, origen=None):
+    tid = uuid.uuid4().hex[:10]
+    with LOCK: TAREAS[tid] = {"id": tid, "tipo": "zona", "estado": "en cola", "peticion": p, "corte": p["corte"], "bbox": p["bbox"], "origen": origen, "inicio": time.time()}
+    COLA.put(tid); return tid
+def trabajador():
+    while True:
+        tid = COLA.get()
+        with LOCK: TAREAS[tid]["estado"] = "en curso"
+        investigar_zona(tid, TAREAS[tid]["peticion"]); COLA.task_done()
+threading.Thread(target=trabajador, daemon=True).start()
+
 class H(BaseHTTPRequestHandler):
     def cors(self):
         self.send_header("Access-Control-Allow-Origin", self.headers.get("Origin") or "*")
@@ -124,6 +214,9 @@ class H(BaseHTTPRequestHandler):
     def do_OPTIONS(self): self.send_response(204); self.cors(); self.end_headers()
     def do_GET(self):
         if self.path == "/": return self.out(200, {"servicio": "investigador", "tareas": len(TAREAS)})
+        if self.path == "/cola":
+            zs = [{k: v for k, v in t.items() if k != "peticion"} for t in TAREAS.values() if t.get("tipo") == "zona"]
+            return self.out(200, {"zonas": sorted(zs, key=lambda t: t["inicio"]), "objetos": leer(CACHE / "objetos.json", []), "hechas": leer(CACHE / "zonas.json", [])})
         m = re.match(r"^/tarea/([\w-]+)$", self.path)
         if m:
             t = TAREAS.get(m.group(1))
@@ -139,6 +232,10 @@ class H(BaseHTTPRequestHandler):
             with LOCK: TAREAS[tid] = {"id": tid, "estado": "en curso", "peticion": body, "inicio": time.time()}
             threading.Thread(target=investigar, args=(tid, body), daemon=True).start()
             return self.out(202, {"id": tid})
+        if self.path == "/zona":
+            if not (isinstance(body.get("bbox"), list) and len(body["bbox"]) == 4 and body.get("corte")): return self.out(400, {"error": "falta bbox o corte"})
+            if zona_hecha(body["bbox"], body["corte"]): return self.out(409, {"error": "esa zona y corte ya están investigados o en cola"})
+            return self.out(202, {"id": nueva_zona(body)})
         if self.path == "/guardar":
             t = TAREAS.get(body.get("id", ""))
             if not t or t.get("estado") != "hecha": return self.out(400, {"error": "tarea no lista"})

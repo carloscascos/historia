@@ -110,6 +110,17 @@
   .rel.sel{stroke-width:3.2}
   .evm{fill:var(--bronce);stroke:#0b0f11;stroke-width:.5;vector-effect:non-scaling-stroke;cursor:pointer}
   .evm:hover{fill:#fff}
+  /* investigación de zona: rectángulo, zonas exploradas y objetos generados (ámbar, discontinuo) */
+  #mapwrap.zona{cursor:crosshair} #selrect{fill:rgba(212,162,127,.12);stroke:#d4a27f;stroke-width:1.5;stroke-dasharray:4 3;vector-effect:non-scaling-stroke;pointer-events:none}
+  .zhecha{fill:rgba(212,162,127,.05);stroke:#7a5a40;stroke-width:1;stroke-dasharray:3 3;vector-effect:non-scaling-stroke;pointer-events:none}
+  .gciu{fill:#d4a27f;fill-opacity:.85;stroke:#0b0f11;stroke-width:.5;stroke-dasharray:2 1.2;vector-effect:non-scaling-stroke;cursor:pointer}
+  .gent{fill:#d4a27f;fill-opacity:.22;stroke:#d4a27f;stroke-width:1.2;stroke-dasharray:4 3;vector-effect:non-scaling-stroke;cursor:pointer;filter:url(#blur)}
+  .gev{fill:#d4a27f;stroke:#0b0f11;stroke-width:.5;stroke-dasharray:2 1.2;vector-effect:non-scaling-stroke;cursor:pointer}
+  .grel{fill:none;stroke:#d4a27f;stroke-width:1.4;stroke-dasharray:6 3;vector-effect:non-scaling-stroke;cursor:pointer}
+  .lbl.g{fill:#d4a27f}
+  svg.h-generado .gen-g{display:none}
+  #cola{position:absolute;left:10px;bottom:10px;font-family:var(--sans);font-size:12px;background:rgba(11,15,17,.85);border:1px solid #5a4030;border-radius:4px;padding:6px 10px;max-width:420px;display:none;color:var(--text)}
+  #cola.on{display:block} #cola .kicker{color:#d4a27f} #cola div{margin-top:2px}
   /* nivel de detalle por zoom: w = peso (ciudad por población, evento por peso) */
   svg.lod3 .w0,svg.lod3 .w1,svg.lod3 .w2{display:none}
   svg.lod2 .w0,svg.lod2 .w1{display:none}
@@ -131,7 +142,7 @@
   <span class="sub">maqueta</span>
   <div class="grp"><span id="corte-lbl"></span><input type="range" id="slider" min="0" max="5" step="1" value="4"></div>
   <div class="grp"><button id="btn-mundo">Mundo</button><button id="btn-viejo">Viejo Mundo</button><button id="btn-op">Oriente Próximo</button></div>
-  <div class="grp right"><button id="btn-cuadro" class="on">Cuadro ▴</button><button id="btn-panel">Ficha</button><button id="btn-cfg" title="ajustes del investigador">⚙</button></div>
+  <div class="grp right"><button id="btn-cuadro" class="on">Cuadro ▴</button><button id="btn-panel">Ficha</button><button id="btn-zona" title="dibuja un rectángulo en el mapa y Claude explora qué hay ahí en este corte (y en los cortes vecinos)">▭ Investigar zona</button><button id="btn-cfg" title="ajustes del investigador">⚙</button></div>
 </div>
 
 <!-- 2. cuadro sinóptico -->
@@ -150,9 +161,12 @@
       <path id="land"/>
       <path id="land50"/>
       <g id="layers"></g>
+      <g id="zonas"></g>
+      <rect id="selrect" style="display:none"/>
     </svg>
     <div id="lod"></div>
     <div id="zoomctl"><button id="z-in" title="acercar">+</button><button id="z-out" title="alejar">−</button></div>
+    <div id="cola"></div>
   </div>
   <aside id="panel"><div class="hd"><button id="p-back" title="atrás">‹</button><button id="p-next" title="siguiente">›</button><h2 id="p-title"></h2><button id="p-inv" title="investiga con Claude y propone una ficha"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.6 3h-3.2L3 21h3.4l1.6-4.3h8l1.6 4.3H21L13.6 3zm-4.5 10.9L12 6.6l2.9 7.3H9.1z" fill="currentColor"/></svg> Investiga</button><button id="p-close" title="cerrar">×</button></div><div class="bd" id="p-body"></div></aside>
 </div>
@@ -167,6 +181,7 @@
     <span data-t="difuso" title="mostrar u ocultar"><b class="blur"></b> ámbito difuso</span>
     <span data-t="ciudad" title="mostrar u ocultar"><b style="width:10px;height:10px;border-radius:50%;background:#f0e6d2"></b> ciudad (∝ población)</span>
     <span data-t="evento" title="mostrar u ocultar"><b style="width:9px;height:9px;transform:rotate(45deg);background:var(--bronce)"></b> evento</span>
+    <span data-t="generado" title="objetos hallados por Claude, sin revisar"><b style="width:12px;height:9px;border:1px dashed #d4a27f;background:transparent"></b> generado</span>
   </div>
   <span>Costas actuales (Natural Earth). Lo nítido es un estado; lo difuso, un ámbito cultural. Rueda o pellizco para acercar; arrastrar para mover.</span>
   <span class="lic">Datos: Cliopatria/Seshat CC BY 4.0 · Reba–Seto 2016 CC BY 4.0 · Wikidata CC0 · Natural Earth dominio público</span>
@@ -254,11 +269,11 @@ wrap.addEventListener("wheel",e=>{e.preventDefault();zoomAt(Math.pow(1.0015,e.de
 const center=()=>{const r=svg.getBoundingClientRect();return[r.left+r.width/2,r.top+r.height/2]};
 $("#z-in").onclick=()=>zoomAt(1/1.4,...center()); $("#z-out").onclick=()=>zoomAt(1.4,...center());
 const ptr=new Map(); let dragged=false, last=null, pinch=null;
-wrap.addEventListener("pointerdown",e=>{if(e.button!==0&&e.pointerType==="mouse")return;ptr.set(e.pointerId,[e.clientX,e.clientY]);dragged=false;last=[e.clientX,e.clientY];if(ptr.size===2){const p=[...ptr.values()];pinch={d:Math.hypot(p[0][0]-p[1][0],p[0][1]-p[1][1])}}});
-wrap.addEventListener("pointermove",e=>{if(!ptr.has(e.pointerId))return;ptr.set(e.pointerId,[e.clientX,e.clientY]);
+wrap.addEventListener("pointerdown",e=>{if(e.button!==0&&e.pointerType==="mouse")return;if(zonaMode){zonaStart(e);return}ptr.set(e.pointerId,[e.clientX,e.clientY]);dragged=false;last=[e.clientX,e.clientY];if(ptr.size===2){const p=[...ptr.values()];pinch={d:Math.hypot(p[0][0]-p[1][0],p[0][1]-p[1][1])}}});
+wrap.addEventListener("pointermove",e=>{if(zonaMode&&zsel){zonaMove(e);return}if(!ptr.has(e.pointerId))return;ptr.set(e.pointerId,[e.clientX,e.clientY]);
   if(ptr.size===2&&pinch){const p=[...ptr.values()];const d=Math.hypot(p[0][0]-p[1][0],p[0][1]-p[1][1]);if(d>0){zoomAt(pinch.d/d,(p[0][0]+p[1][0])/2,(p[0][1]+p[1][1])/2);pinch.d=d}dragged=true;return}
   if(ptr.size===1&&last){const dx=e.clientX-last[0],dy=e.clientY-last[1];if(!dragged&&Math.hypot(dx,dy)>3){dragged=true;ptr.forEach((_,id)=>{try{wrap.setPointerCapture(id)}catch(x){}})}if(dragged){const r=svg.getBoundingClientRect();const s=Math.max(vb[2]/r.width,vb[3]/r.height);vb[0]-=dx*s;vb[1]-=dy*s;applyVB();wrap.classList.add("drag")}last=[e.clientX,e.clientY]}});
-const up=e=>{ptr.delete(e.pointerId);if(ptr.size<2)pinch=null;if(!ptr.size){last=null;wrap.classList.remove("drag");setTimeout(()=>dragged=false,0)}};
+const up=e=>{if(zonaMode&&zsel){zonaEnd(e);return}ptr.delete(e.pointerId);if(ptr.size<2)pinch=null;if(!ptr.size){last=null;wrap.classList.remove("drag");setTimeout(()=>dragged=false,0)}};
 wrap.addEventListener("pointerup",up); wrap.addEventListener("pointercancel",up);
 function click(fn){if(!dragged)fn()}
 $("#btn-mundo").onclick=()=>flyTo(MUNDO); $("#btn-viejo").onclick=()=>flyTo(VIEJO); $("#btn-op").onclick=()=>flyTo(OP);
@@ -286,6 +301,7 @@ function setCorte(i,keepSel){
   cur=i; $("#slider").value=i; $("#corte-lbl").textContent=CORTES[i].etiqueta;
   document.querySelectorAll(".corte").forEach(g=>g.classList.toggle("on",+g.dataset.i===i));
   cuadro.querySelectorAll("[data-i]").forEach(d=>d.classList.toggle("cur",+d.dataset.i===i));
+  if(typeof renderZonas==="function")renderZonas();
   if(!keepSel){clearSel(); if(!main.classList.contains("nopanel")) showCorte(CORTES[i])}
 }
 $("#slider").addEventListener("input",e=>{pushHist();setCorte(+e.target.value)});
@@ -426,6 +442,56 @@ async function investigar(){
   finally{$("#p-inv").disabled=false}
 }
 $("#p-inv").onclick=investigar;
+
+/* ---------- investigación de zona ---------- */
+let zonaMode=false, zsel=null; const selrect=$("#selrect");
+$("#btn-zona").onclick=()=>{zonaMode=!zonaMode;wrap.classList.toggle("zona",zonaMode);$("#btn-zona").classList.toggle("on",zonaMode);if(zonaMode&&!cfg.url)$("#btn-cfg").click()};
+function zonaStart(e){const m=toMap(e.clientX,e.clientY);zsel={x0:m[0],y0:m[1],x1:m[0],y1:m[1]};selrect.style.display="";zonaMove(e)}
+function zonaMove(e){const m=toMap(e.clientX,e.clientY);zsel.x1=m[0];zsel.y1=m[1];const x=Math.min(zsel.x0,zsel.x1),y=Math.min(zsel.y0,zsel.y1);selrect.setAttribute("x",x);selrect.setAttribute("y",y);selrect.setAttribute("width",Math.abs(zsel.x1-zsel.x0));selrect.setAttribute("height",Math.abs(zsel.y1-zsel.y0))}
+function zonaEnd(e){const b=[Math.min(zsel.x0,zsel.x1),-Math.max(zsel.y0,zsel.y1),Math.max(zsel.x0,zsel.x1),-Math.min(zsel.y0,zsel.y1)].map(v=>+v.toFixed(2));zsel=null;zonaMode=false;wrap.classList.remove("zona");$("#btn-zona").classList.remove("on");
+  if(b[2]-b[0]<0.3||b[3]-b[1]<0.3){selrect.style.display="none";return}proponerZona(b)}
+// objetos ya presentes en la zona y corte, para que Claude no los repita
+function existentesEn(b,i){const c=CORTES[i],inb=(lon,lat)=>lon>=b[0]&&lon<=b[2]&&lat>=b[1]&&lat<=b[3];const l=[];
+  c.ent.forEach(e=>{if(inb(e.c[0],e.c[1]))l.push(`entidad ${DATA.ent[e.qid].nombre} (${e.qid})`)});
+  c.ciu.forEach(x=>{const C=DATA.ciu[x.n];if(inb(C.lon,C.lat))l.push(`ciudad ${x.n} (${C.qid})`)});
+  c.ev.forEach(v=>{if(inb(v.lon,v.lat))l.push(`evento ${DATA.ev[v.qid].nombre} (${v.qid})`)});
+  GENOBJ.filter(o=>o.corte===c.id&&o.lon!=null&&inb(o.lon,o.lat)).forEach(o=>l.push(`${o.tipo} ${o.nombre} (${o.qid})`));return l}
+function proponerZona(b){const c=CORTES[cur],L=lod();clearSel();sel={kind:"zona",key:b.join(",")};
+  const ex={};CORTES.forEach((x,i)=>ex[x.id]=existentesEn(b,i));
+  card("Investigar zona",[`<div class="meta"><span class="tag">zona</span>${c.etiqueta} · ventana ${fmt(c.ventana[0])} – ${fmt(c.ventana[1])}</div>
+    <p>Rectángulo de ${(b[2]-b[0]).toFixed(1)}° × ${(b[3]-b[1]).toFixed(1)}° (lon ${b[0]} a ${b[2]}, lat ${b[1]} a ${b[3]}).<br>Nivel de detalle: <b>${LODN[L]}</b>.<br>Ya hay ${ex[c.id].length} objetos dentro; Claude buscará lo que falte y después explorará sola la misma zona en los cortes vecinos (${[CORTES[cur-1],CORTES[cur+1]].filter(Boolean).map(x=>x.etiqueta).join(" y ")}).</p>
+    <div class="acts"><button id="z-go">Investigar</button><button id="z-no">Cancelar</button></div>`]);
+  $("#z-no").onclick=()=>{selrect.style.display="none";showCorte(c)};
+  $("#z-go").onclick=async()=>{$("#z-go").disabled=true;try{const r=await fetch(cfg.url+"/zona",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({bbox:b,corte:c.id,lod:L,existentes:ex[c.id],existentes_por_corte:ex,vecinos:true})});const j=await r.json();
+      if(!r.ok)throw new Error(j.error||r.status);selrect.style.display="none";showCorte(c);pollCola(true)}catch(e){$("#z-go").parentElement.innerHTML=`<span class="kicker" style="color:var(--conflicto)">no se pudo encolar: ${e.message}</span>`}}}
+// cola de zonas: estado visible mientras haya trabajo; al terminar, los objetos nuevos se pintan
+let colaTimer=null, ZONAS_HECHAS=[];
+async function pollCola(loop){if(!cfg.url)return;try{const j=await (await fetch(cfg.url+"/cola")).json();ZONAS_HECHAS=j.hechas||[];renderZonas();mergeGen(j.objetos||[]);
+    const act=j.zonas.filter(z=>z.estado==="en cola"||z.estado==="en curso");const box=$("#cola");
+    if(act.length){box.classList.add("on");box.innerHTML=`<span class="kicker">investigando zonas</span>`+act.map(z=>`<div>${z.estado==="en curso"?"⏳":"·"} ${CORTES.find(c=>c.id===z.corte)?.etiqueta} · ${z.bbox.map(v=>v.toFixed(0)).join(", ")}${z.origen?" (vecino)":""}</div>`).join("")}
+    else{const ult=j.zonas.filter(z=>z.estado==="hecha").slice(-3);box.classList.toggle("on",!!ult.length);box.innerHTML=ult.length?`<span class="kicker">zonas terminadas</span>`+ult.map(z=>`<div>✓ ${CORTES.find(c=>c.id===z.corte)?.etiqueta}: ${z.hallazgos.length} objetos${z.descartados?.length?`, ${z.descartados.length} descartados`:""}${z.hallazgos.length?"":" — "+(z.nota||"").slice(0,120)}</div>`).join(""):""}
+    if(loop&&act.length)colaTimer=setTimeout(()=>pollCola(true),6000)}catch(e){}}
+// objetos generados: se pintan en su corte con trazo discontinuo ámbar
+let GENOBJ=[]; const GENNODES={};
+function mergeGen(list){const known=new Set(GENOBJ.map(o=>o.qid||o.id));let n=0;list.forEach(o=>{const k=o.qid||o.id;if(!known.has(k)){GENOBJ.push(o);known.add(k);n++}});if(n)renderGen()}
+function renderGen(){document.querySelectorAll(".gen-g").forEach(g=>g.remove());
+  CORTES.forEach((c,i)=>{const objs=GENOBJ.filter(o=>o.corte===c.id);if(!objs.length)return;const g=el("g",{class:"gen-g"});document.querySelector(`.corte[data-i="${i}"]`).appendChild(g);
+    objs.forEach(o=>{if(o.tipo==="relacion"){const a=NODES[i]["ent:"+o.a]||GENNODES[i+":"+o.a],b=NODES[i]["ent:"+o.b]||GENNODES[i+":"+o.b];if(!a||!b)return;const ra=a.getBBox(),rb=b.getBBox();const p=el("path",{d:`M${ra.x+ra.width/2},${ra.y+ra.height/2}L${rb.x+rb.width/2},${rb.y+rb.height/2}`,class:"grel"});p.addEventListener("click",()=>click(()=>showGen(o)));g.appendChild(p);return}
+      const x=o.lon,y=-o.lat;let n;
+      if(o.tipo==="entidad"){const r=o.subtipo==="estado"?1.6:2.4;n=el("circle",{cx:x,cy:y,r,class:"gent"});g.appendChild(n);GENNODES[i+":"+o.qid]=n}
+      const g2=el("g",{class:"zs w"+(o.peso||1),"data-x":x,"data-y":y,"data-tipo":"generado"});
+      if(o.tipo==="ciudad"){n=el("circle",{cx:0,cy:0,r:.45,class:"gciu"});g2.appendChild(n)}
+      else if(o.tipo==="evento"){const s=.75;n=el("path",{d:`M0,${-s}L${s},0L0,${s}L${-s},0Z`,class:"gev"});g2.appendChild(n)}
+      g2.appendChild(el("text",{x:.9,y:.35,class:"lbl g"+(o.tipo==="entidad"?"":" t")},o.nombre));g.appendChild(g2);ZS.push(g2);
+      (n||g2).addEventListener("click",()=>click(()=>showGen(o)))})});applyVB()}
+function showGen(o){clearSel();sel={kind:"gen",key:o.qid||o.id};const z=ZONAS_HECHAS.find(z=>z.id===o.zona);
+  card(o.nombre||o.tipo,[`<div class="meta"><span class="tag">${o.tipo}${o.subtipo?" · "+o.subtipo:""}</span><span class="tag" style="background:#3a2a1e;color:#d4a27f">generado · sin revisar</span>${o.año!=null?fmt(o.año):o.desde!=null?`${fmt(o.desde)} – ${fmt(o.hasta)}`:""}</div><p>${o.linea||""}</p>`+(o.coord_sin_verificar?`<p style="color:var(--text-dim)">coordenadas dadas por el modelo, sin verificar en Wikidata</p>`:""),
+    `<div class="src">hallado por ${o.modelo} el ${o.fecha}${z?` en una zona investigada al nivel «${LODN[z.lod]}»`:""}<br><a href="https://www.wikidata.org/wiki/${o.qid}" target="_blank">Wikidata ${o.qid}</a>${o.eswiki?` · <a href="https://es.wikipedia.org/wiki/${encodeURIComponent(o.eswiki.replace(/ /g,"_"))}" target="_blank">Wikipedia: ${o.eswiki}</a>`:""}</div>`+srcHtml((o.fuentes||[]).map(f=>f.url?`web:${f.url} — ${f.titulo||""}`:f.titulo||""))],"#d4a27f")}
+function renderZonas(){const g=$("#zonas");g.innerHTML="";ZONAS_HECHAS.filter(z=>z.corte===CORTES[cur].id).forEach(z=>{const b=z.bbox;const r=el("rect",{x:b[0],y:-b[3],width:b[2]-b[0],height:b[3]-b[1],class:"zhecha"});r.appendChild(el("title",{},`zona investigada el ${z.fecha}: ${z.hallazgos} objetos`));g.appendChild(r)})}
+// carga inicial: objetos y zonas desde el servicio si está, si no desde el repositorio publicado
+(async()=>{let j=null;if(cfg.url){try{j=await (await fetch(cfg.url+"/cola")).json()}catch(e){}}
+  if(!j){const RAWC="https://raw.githubusercontent.com/carloscascos/historia/main/cache/";const get=n=>fetch(n,{cache:"no-store"}).then(r=>r.ok?r.json():Promise.reject()).catch(()=>fetch(RAWC+n.split("/").pop(),{cache:"no-store"}).then(r=>r.ok?r.json():[]));j={objetos:await get("cache/objetos.json"),hechas:await get("cache/zonas.json"),zonas:[]}}
+  ZONAS_HECHAS=j.hechas||[];renderZonas();mergeGen(j.objetos||[]);if((j.zonas||[]).some(z=>z.estado!=="hecha"&&z.estado!=="error"))pollCola(true)})();
 setCorte(cur); applyVB(); navBtns(); invBtn();
 </script>
 </body>

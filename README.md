@@ -30,12 +30,14 @@ docs/mvp-bronce.md         alcance y decisiones de la maqueta
 docs/analisis-mercado.md   actores y decisión construir/adoptar
 docs/panorama-fuentes.md   fuentes de datos por capa
 data/                      un fichero por término del glosario (JSON/CSV) + geo/ (GeoJSON)
-cache/                     fichas generadas por Claude, sin revisar (index.json + una por objeto)
+cache/                     fichas generadas (index.json), objetos hallados por zona (objetos.json) y zonas exploradas (zonas.json); todo sin revisar
 src/bronce.template.html   plantilla del visor; scripts/build.py la rellena con data/
 scripts/                   build.py, investigador.py (+ .sh, _prompt.md), extract_cliopatria.py, ciudades_*.py, wd.py
 ```
 
 **Investiga.** Cada ficha tiene un botón «Investiga» que pide a Claude una ficha nueva con fuentes. No llama a ninguna API desde la página: habla con `scripts/investigador.py`, un servicio local que lanza `claude -p` (Claude Code no interactivo, con la suscripción del usuario y WebSearch/WebFetch), valida el JSON y comprueba que las URL responden. La propuesta se muestra en la ficha y el usuario decide: guardarla como *generada* (va a `cache/`, visible para todos con marca «sin revisar») o como *revisada* (entra en `data/`, se reconstruye `bronce.html`). Ambas hacen commit y push. Arranque: `scripts/investigador.sh start` (tmux, puerto 8787); la URL del servicio se guarda en la página con ⚙. Desde la copia local basta `http://<IP de WSL>:8787`; desde la URL pública (HTTPS) hace falta Tailscale Serve en Windows: `tailscale serve --bg --https=443 http://localhost:8787` publica `https://pcac-xps.<tailnet>.ts.net` solo dentro del tailnet, con certificado válido (Serve y HTTPS se habilitan una vez en el panel de Tailscale). Decisión y alternativas en `docs/adr/0001-fichas-generadas-en-el-repo.md`.
+
+**Investigar zona.** El botón «▭ Investigar zona» permite dibujar un rectángulo sobre el mapa; Claude explora qué hay ahí en el corte actual al nivel de detalle del zoom (de lejos solo estados y ciudades grandes; de cerca, yacimientos y hechos locales) y puede devolver vacío. Cada hallazgo necesita un QID de Wikidata; el servicio toma las coordenadas de Wikidata (no del texto), comprueba que caen en el rectángulo y en la ventana del corte y que no duplican nada, y lo guarda como *objeto generado* en `cache/objetos.json` (`cache/zonas.json` registra cada zona explorada). Los objetos generados se pintan en ámbar discontinuo, con ficha propia, y las zonas exploradas se sombrean en su corte. Al terminar, el servicio encola sola la misma zona en el corte anterior y el posterior (±1, sin encadenar). Promoverlos a `data/` sigue siendo revisión manual.
 
 Los datos del cuadro de diez cortes siguen dentro de `index.html` (objetos `C` y `LINKS`). Los del visor viven en `data/`: `bronce.html` se regenera con `uv run scripts/build.py` y no se edita a mano.
 

@@ -66,5 +66,12 @@ _Avoid_: borrador, sugerencia, automática
 El proceso que produce una ficha generada: consulta fija sobre el objeto → generación con la clave del usuario → validación de fuentes → caché. La revisión no forma parte de la investigación.
 _Avoid_: búsqueda, autolearning
 
+**Zona**:
+Un rectángulo del mapa en un corte, explorado por una investigación. Queda registrada aunque no devuelva nada.
+
+**Objeto generado**:
+Ciudad, entidad, evento o relación propuesta por una investigación de zona, con QID de Wikidata y coordenadas verificadas, que aún nadie ha revisado. Se pinta distinto y no es dato hasta que se promueve.
+_Avoid_: hallazgo, candidato
+
 **Revisor**:
 Quien promueve una ficha generada a revisada. Hoy, solo Carlos.
