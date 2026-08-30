@@ -4388,5 +4388,35 @@
   "descartados": [],
   "nota": "La zona (79,33–102,16 E / 5,0–18,75 N) cubre el sur y este de la India peninsular, el norte de Sri Lanka, el golfo de Bengala, Myanmar, Tailandia, Camboya y el sur de Vietnam. En la ventana -2750/-2250 no hay en ella ningún estado, ciudad, batalla ni ruta documentados que alcancen peso 2 o 3. Revisado y descartado, con el motivo: (1) NEOLÍTICO DEL SUR DE LA INDIA / ashmounds — es la única cultura relevante realmente activa en la ventana (auge del amontonamiento de ceniza c. -2500/-2000), pero su núcleo documentado está en los distritos de Raichur, Bellary, Gulbarga, Kurnool y Anantapur, entre 76 y 77 E: al OESTE del límite de la zona. Su ítem de Wikidata (Q25348565) carece por completo de coordenadas, y su extensión oriental hacia el valle del Kunderu se data en -1700/-1500, ya fuera de la ventana. Nagarjunakonda, el yacimiento excavado más oriental de la tradición, está en 79°14' E, justo fuera del borde de 79,33 E. (2) TAMIL NADU / Paiyampalli — las dataciones por radiocarbono publicadas dan -1390±100 para el periodo I; los manuales que hablan de un neolítico tamil «hacia 2500 a.C.» no se apoyan en fechas absolutas del yacimiento. Fuera de ventana. (3) ODISHA COSTERA / Golbai Sasan y Gopalpur — las fechas AMS sobre grano de arroz y legumbres dan 3450–2850 cal BP, es decir c. -1500/-900. Muy posteriores. (4) SRI LANKA — entre el mesolítico de Balangoda y la Edad del Hierro temprana (-1000/-800 en Anuradhapura) el tercer milenio está esencialmente indocumentado; no hay entidad ni asentamiento nombrable. (5) MYANMAR / Nyaung'gan — datado -1500/-300 por AMS. Fuera de ventana. (6) SUDESTE ASIÁTICO CONTINENTAL — la llegada de los agricultores del arroz por vía marítima se fecha en c. -2100 (Man Bac, An Son) y c. -2000 (Khok Phanom Di), es decir después del cierre de la ventana; además An Son (~106 E) y Ban Chiang (~103 E, y con ocupación revisada a c. -1500) caen al ESTE del límite de 102,16 E. Samrong Sen tiene un rango antiguo citado (-3000/-300) demasiado laxo e impreciso para sostener un objeto datado. (7) NONG NOR (Tailandia costera) — sí hay una ocupación en ventana, c. -2500, pero es una estancia breve de cazadores-recolectores sobre un concheros de moluscos, delfines y tiburones: peso 1, por debajo del umbral de la vista media. (8) RUTAS Y RELACIONES — no se propone ninguna relación de comercio a través del golfo de Bengala: la bibliografía consultada sitúa el inicio del comercio marítimo de la costa oriental india hacia -800, y el comercio harappeo del tercer milenio es de la costa OCCIDENTAL hacia el Golfo Pérsico y Mesopotamia, fuera de esta zona. Conclusión: en esta zona y ventana existía población neolítica y mesolítica real, pero ninguna formación política, urbana o de ruta con entidad cartografiable a escala media y con artículo de Wikidata con coordenadas dentro del recuadro.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "816a8ac576",
+  "bbox": [
+   10.84,
+   18.75,
+   33.67,
+   32.5
+  ],
+  "corte": "-2500",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 3,
+  "descartados": [
+   {
+    "nombre": "Buhen",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Kerma",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Reino de Kerma",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona = Libia, Egipto, norte de Sudán y Sinaí occidental. Mirado y DESCARTADO, con el motivo: (1) Cultura del Grupo C de la Baja Nubia (Q1022291) — Wikipedia la data hacia 2400 a.C., pero Wikidata la fecha en -2200/-1500, es decir fuera de la ventana; las dos dataciones no cuadran entre sí y no he podido resolver cuál es la buena, así que no la propongo. (2) Cultura A de la Baja Nubia (Q277797) — se extingue hacia 2900-2800 a.C., antes de la ventana. (3) Elefantina (Q284009) — es la frontera sur y la puerta del comercio nubio, pero la evidencia de asentamiento sólida que he encontrado es sobre todo de la VI dinastía en adelante (~2300 a.C. y posterior) y el catálogo de ciudades del visor solo le da población desde -1900; no la propongo para el corte de 2500. (4) Nekhen/Hieracómpolis (Q278988) — su apogeo termina justo al empezar la ventana y su declive posterior es discutido porque la estratigrafía está arrasada: datación demasiado incierta para peso 2. (5) Abidos (Q192268) — importante en el periodo arcaico y en el Imperio Medio; en el Imperio Antiguo mantiene culto pero no alcanza el umbral de vista media. (6) Campaña nubia de Snefru (~2600 a.C., 7.000 cautivos según la Piedra de Palermo) y las cuatro expediciones de Harkhuf a Yam — hechos reales y datados, pero no encuentro artículo de Wikidata propio para ninguno, así que la regla del QID los deja fuera; además Harkhuf (~2280-2250) roza el borde de la ventana. (7) Tadrart Acacus (Q308807), pastores del Sahara libio — su longitud (10.33 E) cae justo al oeste del límite de la zona (10.84 E). (8) Byblos (34.12 E) y el comercio del cedro con Egipto — el objeto está fuera de la zona. No he encontrado en la ventana ninguna batalla con QID ni ninguna ciudad libia o sahariana que alcance el umbral: la franja al oeste del Nilo es, en este periodo, pastoreo disperso sin sitios de vista media.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
