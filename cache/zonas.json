@@ -4614,5 +4614,39 @@
   "descartados": [],
   "nota": "La zona cubre el noroeste de Marruecos (península de Tánger, Rif occidental, Rabat-Casablanca, meseta del Zemmour). Solo un objeto pasa el triple filtro de QID + coordenadas dentro de la zona + ocupación documentada en 2250/-1800. Descartados y por qué: (1) Daroua Zaydan, cerca de Tánger — la cista con datación radiocarbónica 2118-1890 a.C., el hecho MÁS ajustado a esta ventana en toda la zona y el primer enterramiento en cista datado del noroeste de África, pero NO tiene ítem en Wikidata (búsqueda directa: sin resultados), así que la regla 2 lo excluye; es la ausencia más significativa de esta lista. (2) Msoura / Mzoura (Q1140859), dentro de la zona, pero datado por ánforas en los siglos IV-III a.C. — fuera de ventana. (3) Caf Taht el Ghar (Q96060776), dentro de la zona y con niveles del III y II milenio, pero su fase campaniforme no está acotada por dataciones absolutas fiables y podría ser anterior a -2250: no propongo un objeto cuya presencia en la ventana no puedo documentar. (4) Ghar Cahal / Gar Kahal, junto a Yebel Musa: su nivel protohistórico sí se sitúa «entre finales del III milenio y comienzos del II» (Encyclopédie berbère), lo que encajaría, pero no encuentro QID. (5) Oued Beht, meseta del Zemmour: 13 dataciones agrupan la ocupación en 3400-2900 a.C., fuera de ventana, y tampoco localizo QID. (6) Ifri n'Amr ou Moussa, El Kiffen, Rouazi-Skhirat, Dar es-Soltan: neolítico final / calcolítico (aprox. 3350-2660 a.C. y anteriores), fuera de ventana. (7) Cultura campaniforme (Q470867) como entidad: en Marruecos se fecha ~2800-2300 a.C., es decir esencialmente ANTERIOR a la ventana, y su ítem de Wikidata no lleva coordenadas en esta zona. No propongo relaciones porque solo hay un objeto y no tengo un segundo extremo con QID. Advertencia sobre el único hallazgo: la fase KK1 de Kach Kouch está representada por tres fragmentos cerámicos sin decorar, una lasca de sílex y un hueso de vaca — los propios excavadores la describen como escasamente representada y posiblemente una ocupación temporal. El peso 2 se justifica por su relevancia historiográfica (rompe la idea de un Magreb vacío antes de los fenicios), no por la entidad material de esa fase concreta, que es mínima.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "607dc2ad56",
+  "bbox": [
+   28.57,
+   10.17,
+   40.03,
+   22.94
+  ],
+  "corte": "-2000",
+  "lod": 1,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 7,
+  "descartados": [
+   {
+    "nombre": "Buhen",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Kerma",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Semna",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Reino de Kerma",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "La zona cubre Baja Nubia (Segunda Catarata y Batn el-Hajar), el Nilo sudanés hasta Kerma y, hacia el sureste, Etiopía/Eritrea y parte de Arabia. Lo único con densidad documental en la ventana -2250/-1800 es el sistema fronterizo egipcio del Reino Medio (Dinastía XII) frente al reino de Kerma: verificados por coordenadas en Wikidata dentro del recuadro Buhen, Semna, Kumma, Uronarti, Shalfak, Askut y Kerma. DESCARTADOS: Sai (Q1380487), ocupación egipcia solo del Reino Nuevo según Wikipedia; Faras (Q584387), sin ocupación del Reino Medio documentada, destaca en el Grupo A, el Reino Nuevo y sobre todo el periodo cristiano; Sesebi, Soleb, Sedeinga, Amara West, Tabo y Kawa, todos del Reino Nuevo o posteriores; Gebel Barkal, Napata, Meroe, Nuri y El Kurru, muy posteriores (Reino Nuevo y napateo-meroítico); Aksum, Adulis, Qohaito y el resto del cuadrante etíope-eritreo, milenios posteriores a la ventana; Jebel Moya, cuya fase principal es también más tardía. Dabenarti (Q3700731) es un fuerte del Reino Medio ligado a Mirgissa, pero su ítem de Wikidata NO tiene coordenadas, así que queda fuera por la regla 2. Los Despachos de Semna (Q30594484), fechados en el año 3 de Sesostris III (hacia 1860 a.C.), serían un buen 'evento' pero tampoco tienen coordenadas en Wikidata y además el papiro se halló en Tebas, fuera de la zona; su contenido se ha usado en cambio para sostener la relación comercial. No he encontrado ítem de Wikidata con coordenadas para las estelas de frontera de Sesostris III (año 8 y año 16, hacia 1862 a.C.), que habrían sido el evento datado más sólido de la zona: 'Semna stela' y 'Kor (Nubia)' no existen como entradas. Las horquillas -1870/-1800 reflejan que la mayoría de estos fuertes son obra de Sesostris III (1878-1839 a.C.) y siguieron ocupados más allá del cierre de la ventana; Buhen y Semna tienen precedentes bajo Sesostris I, algo anteriores. Nota de fiabilidad: las fechas de fundación proceden de Wikipedia en inglés, no de excavación primaria; la de Shalfak y Uronarti no lleva año concreto en la fuente y se ha inferido del reinado de Sesostris III.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
