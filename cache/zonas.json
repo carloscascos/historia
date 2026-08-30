@@ -4717,5 +4717,35 @@
   ],
   "nota": "La zona es Cerdeña casi entera más Córcega del sur. CERDEÑA: la ventana -2750/-2250 cae en el Calcolítico, dominado por Abealzu-Filigosa (2700-2400) y el arranque de Monte Claro (2400-2100); ambas culturas y sus sitios epónimos y principales están dentro. AVISO SOBRE LA CALIDAD DE LA DATACIÓN: solo Monte Baranta (2500-2200) y la fase de ampliación de Monte d'Accoddi (2800-2400) tienen cifras numéricas inequívocas dentro de la ventana. Montessu, Anghelu Ruju, Filigosa, Santu Pedru y Su Crucifissu Mannu se incluyen por atribución cultural explícita (secuencia Ozieri → Abealzu-Filigosa → Monte Claro documentada en cada uno), NO por fechas numéricas de fase; sus rangos aquí son una inferencia a partir de la datación de las culturas, no un dato de excavación. CÓRCEGA DEL SUR: descartada por completo. Filitosa (Q1025950), Cauria (Q1677172), I Stantari (Q10964453), Funtanaccia (Q10976649), Cucuruzzu (Q1048878) y Castellu d'Araghju (Q2859432) tienen QID y coordenadas dentro de la zona, pero ninguna de sus entradas en Wikipedia (fr/en/co) da una sola fecha numérica: se describen como neolíticos o, sobre todo, de la Edad del Bronce (torreanos, hacia 1600 a.C.). El yacimiento calcolítico corso mejor datado en la bibliografía, I Calanchi-Sapar'Alta (Sollacaro, inicio del III milenio), NO tiene ítem en Wikidata, igual que Palaggiu y Renaghju; sin QID no se proponen. DESCARTES ADICIONALES: Pranu Muttedu (Q2107814) termina en 2800 a.C., antes de la ventana; Sa Figu (Q3685189) solo tiene una atribución declarada como hipótesis (\"si ipotizza\") al Eneolítico, sus fases datadas son Neolítico y Bronce Medio; Sant'Andrea Priu (Q2223903) no aporta fechas en las fuentes leídas; Monte Revincu queda fuera de la zona por latitud (42.67N sí entra en el rango, pero sus C14 son del V milenio, muy anteriores). Tampoco se ha localizado ítem con coordenadas para el yacimiento epónimo de Monte Claro en Cagliari.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "7431d8325d",
+  "bbox": [
+   7.59,
+   38.48,
+   10.23,
+   43.22
+  ],
+  "corte": "-1600",
+  "lod": 0,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 5,
+  "descartados": [
+   {
+    "nombre": "Cultura de Bonnanaro",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Su Nuraxi di Barumini",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Enterramientos de guerreros del hipogeo de Sant'Iroxi",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "ZONA = Cerdeña + Córcega + mar Tirreno occidental. CÓRCEGA: descartada por completo. La civilización torreana (Q472258) no tiene NINGUNA fecha en Wikidata (ni P571 ni P580/P582) y su cronología está en disputa abierta: Wikipedia FR da un apogeo 1800-1400 a.C. de divulgación, mientras la revisión C14 (Documents d'Archéologie Méridionale, journals.openedition.org/dam/1936) sitúa las torrae desde finales del III milenio y el Bronce Medio corso arrancando ~1650 a.C. Los dos encuadres no cuadran y la causa del descuadre es desconocida. Filitosa (Q1025950), Cucuruzzu (Q1048878) y Araghju (Q2859432) tienen QID y coordenadas verificadas, pero NINGUNO entra por datación positiva: solo por solape de horquillas C14 de 550-600 años (Gif.2399: 1950-1400 a.C. cal 2sigma) y ninguno tiene fecha en Wikidata. Además hay una indicación NO VERIFICADA de que los niveles del Bronce Medio de Filitosa son del s. XIII a.C., que lo sacaría de la ventana. Por eso no se proponen. La teoría de la invasión shardana de Grosjean (~1400 a.C.) está abandonada por la investigación posterior (Camps, Cesari, Lanfranchi) y no se usa como evento. DESCARTADOS EN CERDEÑA por fecha: Monte d'Accoddi (Q1945976) ya estaba EN RUINAS hacia 1800 a.C., solo uso funerario esporádico; Nuraghe Losa (Q622890) mastio s. XV-XIII; Palmavera (Q1732146) torre s. XV-XIV; Antigori (Q123065) cerámica micénica IIIB/IIIC s. XIV-XII, unos 250 años posterior; Su Tempiesu (Q2361327) s. XIII. Arrubiu (Q2005265) se descarta por datación demasiado gruesa ('~1500 a.C.' sin fasificación), no por estar claramente fuera. Nuraghe Santu Antine (Q56258655) SE DESCARTA pese a citarse '1800 a.C.' para su torre central: la fuente es internamente inconsistente (fecha la torre en 1800 y el primer asentamiento en 1600-1450, y llama 'Bronzo recente' a un tramo que es Bronzo Medio), y no hay publicación primaria verificada. SIN QID, por lo que no se proponen pese a tener datación en ventana: tumba de gigantes de Thomes (Bonnanaro B, 1600-1500), Sant'Iroxi como yacimiento (sí existe Q3992603 para el hipogeo, usado aquí como evento), Corona Moltana, Genna Maria, Santa Cristina. NO se propone relación de comercio con el Egeo: el contacto micénico documentado en Cerdeña es LH IIIA2/IIIB, a partir de ~1400-1300 a.C., FUERA de la ventana. NO se propone relación con El Argar: la similitud de las espadas de Sant'Iroxi con las argáricas está descrita en la literatura como parecido tipológico, sin interpretarse como comercio ni transmisión. No hay ningún pecio de la Edad del Bronce datado en la ventana en estas aguas. AVISOS DE CALIDAD: (1) ningún objeto propuesto tiene P571 en Wikidata; todas las fechas vienen de texto (Wikipedia it/en + SardegnaCultura), no de datos estructurados ni de publicación arqueológica revisada. Las cifras de '1800 a.C.' para Su Mulinu carecen de cita primaria. (2) La adscripción de los protonuraghi a esta ventana es EXPLÍCITAMENTE INCIERTA en la propia literatura: it.wikipedia dice que los datos disponibles no permiten saber si son de fase Bonnanaro o Sub-Bonnanaro posterior. (3) SESGO DE MUESTRA GRAVE: 1800-1475 a.C. es la fase peor documentada de la prehistoria sarda; los yacimientos con datación fina son mayoritariamente Bronce Reciente porque son los excavados. La escasez de objetos aquí es un artefacto del registro arqueológico, no un dato sobre poblamiento.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
