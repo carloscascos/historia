@@ -3953,5 +3953,35 @@
   ],
   "nota": "La zona real cubre Egeo, Creta, Grecia, Anatolia occidental, Chipre occidental, Italia y Balcanes: el límite este (33,67) deja FUERA toda Anatolia central y el Levante, y el sur (32,5) deja fuera Egipto. Verificado con las coordenadas de Wikidata: quedan fuera Kültepe/Kanesh (35,63 E), Hattusa (34,62), Alacahöyük (34,70), Acemhöyük (33,84), Ebla (36,80), Alalakh (36,39), Yamhad (37,15), Biblos (35,65) y Enkomi (33,87, por poco) — es decir, la red de colonias asirias y el Levante amorreo, que son lo relevante de esta ventana, caen en zonas vecinas. Ya estaban en el visor con QID (no se repiten): Beycesultan (Q4081181), Festo (Q249707), Malia (Q1887316), Zakros (Q60218) y Filacopi (Q1447360), y la relación comercial minoicos–Egipto Imperio Medio (Q134178–Q191324). DESCARTADOS por no llegar al umbral de peso 2: Lerna (Q1236078: tras el incendio de la Casa de las Tejas, ~2250, solo un poblado de casas de dos o tres cuartos), Poliochni (Q1542545: en declive hacia 2000 a.C. y con un hiato de ocupación), Sotira Kaminoudhia (Q59139488, poblado pequeño), Küllüoba, Limantepe y Panaztepe. DESCARTADO por fecha: cultura de Vučedol (Q922829), que termina hacia 2200 a.C. y solo rozaría el inicio de la ventana; Arzawa (Q649262), documentada a partir del s. XV a.C. NO PROPUESTAS por falta de coordenadas en Wikidata (el visor las exige): Heládico Medio (Q1940165), cultura de Polada (Q2347305), cultura de Castelluccio (Q3699313), Nagyrév (Q2338751) y los periodos minoicos (Q137262813, Q12056948) — son las etiquetas que cubrirían Grecia continental, Italia y Sicilia en esta ventana, de modo que esas tres regiones quedan sin representar por una limitación de los datos, no por ausencia de material arqueológico. La datación del pecio de Dokós oscila entre 2700 y 2200 a.C. según la fuente; se ha usado la estimación cerámica de ~2200 a.C., la única que lo sitúa dentro de la ventana.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "622e8f2ab0",
+  "bbox": [
+   -12.0,
+   46.25,
+   10.84,
+   60.0
+  ],
+  "corte": "-2000",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 4,
+  "descartados": [
+   {
+    "nombre": "Cultura de Wessex",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de los Túmulos armoricanos",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura del Ródano",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = Islas Británicas, Irlanda, Francia, Benelux, Alemania occidental, Suiza y borde alpino norte. Descartes explícitos por coordenadas de Wikidata fuera de la caja: cultura de Polada, palafitos del Garda, Ledro (45.88N) y Fiavè (46.00N) quedan al sur de 46.25N; cultura de Únětice (núcleo Bohemia-Sajonia) y el disco de Nebra (11.52E) quedan al este de 10.84E — Únětice roza el borde occidental pero su centro de gravedad está fuera, así que no la propongo. Descartes por ventana temporal: minas de Great Orme (activas desde ~1700 a.C.) y barco de Dover (1575-1520 a.C.) son posteriores; el Arquero de Amesbury (~2300 a.C.) es anterior al inicio de la ventana (-2250) y por eso no lo incluyo pese a su importancia. Cultura de Hilversum (Q278382, desde ~1870 a.C.) y de Elp (Q481062, desde ~1100 a.C. según Wikidata) quedan fuera o al borde y sin peso suficiente. AVISO DE DATO SUCIO: Wikidata da a la cultura del Ródano (Q116507925) fechas de inicio y fin en años POSITIVOS (2200-1500 d.C.); el artículo de Wikipedia dice claramente a.C. Es un error en Wikidata, no una duda cronológica; las fechas que doy son las de Wikipedia. Segunda salvedad: ninguna de las tres culturas propuestas tiene coordenadas (P625) en Wikidata; las incluyo porque el visor ya muestra entidades sin coordenadas en esta misma situación (Campaniforme Q470867, Nurágica Q1421436, Los Millares Q5794482), pero si el visor exige P625 para ubicarlas, estas tres no se podrán colocar. Stonehenge (Q39671) está dentro de la zona y su fase 3 IV (2280-1930 a.C.) cae en la ventana, pero no lo propongo como objeto propio porque es un monumento, no ciudad ni entidad ni hecho datado en la ventana: su fundación es de ~3000 a.C. Sin batallas: no hay ningún conflicto datado documentado en esta zona y ventana.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
