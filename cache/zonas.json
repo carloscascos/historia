@@ -1641,5 +1641,55 @@
   ],
   "nota": "Zona: costa de Omán/Emiratos, sureste de Irán, Baluchistán, Sind, Panyab y noroeste-centro de la India, ventana 1475–1275 a.C. Es un periodo de desurbanización sin estados ni batallas documentadas: todo lo que alcanza el umbral son culturas arqueológicas regionales y un solo asentamiento con nombre. Descartados: Dholavira (Q9468), cuyo último estadio VII termina hacia 1450 a.C., apenas roza la ventana; Pirak (Q4363252), yacimiento clave de Baluchistán (1800–800 a.C., caballo y camello bactriano) pero de peso 1 a esta escala; Mohenjo-daro, Lothal y Shahr-i Sokhta, abandonadas antes de la ventana; cultura Ahar-Banas y cerámica ocre (OCP), que terminan hacia 1500 a.C.; cultura de tumbas de Gandhara y BMAC, fuera de la zona por el norte (lat > 32,5). Magan y Meluhha no se proponen: las menciones mesopotámicas cesan hacia 1700 a.C. La sucesión Malwa→Jorwe (hacia 1400) y el debatido vínculo Cementerio H–védico se consideraron como relaciones pero quedan en peso 1. Aviso: las culturas arqueológicas no tienen coordenadas en Wikidata; su ubicación en el visor dependerá de cómo trate las entidades sin punto (igual que las ya presentes, p. ej. Andrónovo).",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "1f45a9aa9f",
+  "bbox": [
+   33.67,
+   18.75,
+   56.5,
+   32.5
+  ],
+  "corte": "-1350",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 10,
+  "descartados": [
+   {
+    "nombre": "Jerusalén (Urusalim)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Laquis",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Gézer",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Siquem (Tell Balata)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Bet Seán",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Anshan (Tal-i Malyan)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Dilmún",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Shasu",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona: Sinaí, sur del Levante (hasta lat 32,5), Arabia, Golfo Pérsico, sur de Mesopotamia y Susiana. Se ha verificado QID y coordenadas en Wikidata de cada candidato y leído las páginas de Wikipedia (en). ADVERTENCIA: Dilmún (Q748846) y Shasu (Q559386) no tienen coordenadas (P625) en Wikidata; se incluyen porque el visor ya lista entidades sin coordenadas, pero incumplen la regla 2 en sentido estricto — el visor decide. Descartados por estar fuera de la zona: Babilonia y Kish (lat 32,54), Dur-Kurigalzu, Megiddo y su batalla de 1457 a.C. (lat 32,58), Hazor, Serabit el-Khadim (lon 33,46). Descartados por peso 1 en esta ventana: Ur (Wikipedia: «no fue una ciudad significativa en el periodo casita», aunque Kurigalzu I restauró sus templos), Isin (solo centro de culto de Gula), Larsa, Borsippa, Failaka, Tell el-Ajjul (ocupación del Bronce Final documentada pero sin papel político descrito), Deir el-Balah (guarnición de finales del s. XIII), Tayma y Madián/Qurayyah (cerámica madianita del s. XIII, sin peso 2 en esta ventana). Descartados por cronología: Chogha Zanbil (fundada hacia 1250 a.C., posterior a la ventana); minas egipcias de Timna (templo de Hathor atribuido a Seti I, c. 1290, en el borde de la ventana, y la datación reciente traslada la producción principal a los siglos XI-IX). La conquista de Susa por Kurigalzu se propone como relación y no como evento porque no tiene artículo propio en Wikidata y su atribución (Kurigalzu I o II) está debatida. No se propone ningún evento con QID: los únicos datados en la ventana caen fuera de la zona.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
