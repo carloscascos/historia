@@ -1505,5 +1505,22 @@
   "descartados": [],
   "nota": "Zona = África occidental sahelo-sudanesa (Mauritania meridional, Senegal, Malí, Burkina, Ghana, Nigeria occidental). No hay estados, ciudades ni batallas documentadas en -1475/-1275; solo culturas arqueológicas. Se propone Dhar Tichitt (Q1165596, 18.45N/-9.41W, dentro de la zona) en lugar de 'Tichitt culture' (Q107008575) porque este último no tiene coordenadas en Wikidata. Kintampo: la Wikipedia en inglés lo cierra en -1400, así que solo solapa los primeros 75 años de la ventana; otras dataciones lo alargan hasta -1000, no verificadas aquí. Nok: la fecha de inicio -1500 procede del proyecto de Fráncfort (Breunig); Wikidata y la Wikipedia en inglés la adoptan, pero la Wikipedia en español sigue dando -500, y la fase temprana solo consta por cerámica escasa y mal conservada, sin terracotas ni hierro — se incluye con esa salvedad en la línea. Descartados: Ounjougou (Q1243595, Malí; aldeas agrícolas desde -1400, peso 1, por debajo del umbral); cultura de Gajiganna (lago Chad, ~13E, fuera de la zona, y sin artículo en Wikidata localizable). No se proponen relaciones: no hay evidencia leída de conflicto, comercio o transmisión datada entre estas culturas en la ventana (la Wikipedia de Ounjougou sugiere origen en los Dhars mauritanos, pero Ounjougou no se propone).",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "6b0fd7e827",
+  "bbox": [
+   -12.0,
+   18.75,
+   10.84,
+   32.5
+  ],
+  "corte": "-1350",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 0,
+  "descartados": [],
+  "nota": "Zona explorada: Sáhara occidental y central (sur de Marruecos, sur de Argelia, oeste de Libia, norte de Mauritania/Malí/Níger) en la ventana -1475/-1275. Candidatos examinados y descartados: (1) Tradición/cultura de Tichitt (Q107008575), la primera sociedad compleja de África occidental (c. 2200-200 a.C.), ocupada en la ventana y de peso 2-3, pero el ítem de Wikidata no tiene coordenadas y el sitio Dhar Tichitt (Q1165596) está en 18.36 N, fuera de la zona (límite sur 18.75); Dhar Walata y la región de los lagos de Malí quedan aún más al sur. (2) Arte rupestre de la Edad del Bronce del Alto Atlas (Oukaïmeden, Yagour; 31.2 N, -7.9 E, dentro de la zona) con armas de tipo ibérico (alabardas, hachas, escudos), datado c. 2000-1000 a.C. y por tanto vigente en la ventana; pero no existe ningún ítem de Wikidata para esa cultura ni para el conjunto rupestre (solo hay ítems de la estación de esquí, el observatorio y el jbel), así que no puede proponerse como entidad o ciudad; en cualquier caso sería peso 1. (3) Tassili n'Ajjer y el Sáhara central: ocupación de las tierras altas hasta c. 1500 a.C. y transición del periodo pastoral (bovidiano) al periodo del caballo con carros (fechas discrepantes entre fuentes: desde 2000 a.C. según Wikipedia, desde c. 1000 a.C. según UNESCO/Met/Coulson); no hay ítem de Wikidata para el periodo pastoral ni para el periodo caballino, y son tradiciones rupestres, no estados ni ciudades. (4) Garamantes (Q839034): emergen c. 1000 a.C. o después y su núcleo (Fezzan, 13 E) queda fuera por longitud. (5) Libios de las fuentes egipcias (Tehenu, Libu, Meshwesh): se sitúan en Cirenaica/Marmárica, fuera por longitud. (6) Kach Kouch (Bronce marroquí, 2200-600 a.C.) y las islas Canarias (no pobladas todavía): fuera de la zona. Conclusión: en esta zona y ventana no hay ningún estado, ciudad, batalla ni ruta documentada con QID y coordenadas dentro del recuadro que alcance el umbral de vista media; la ocupación son grupos pastoriles saharianos y del Atlas sin entidad nombrada en Wikidata.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
