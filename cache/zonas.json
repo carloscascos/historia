@@ -4293,5 +4293,27 @@
   ],
   "nota": "La zona (33,67–56,5 E / 46,25–60 N) cubre el Volga medio y alto, el Kama, el Don alto y la vertiente occidental de los Urales: territorio de estepa y bosque-estepa sin estados ni ciudades en esta ventana, por lo que todo lo propuesto son culturas arqueológicas y relaciones entre ellas. DESCARTADO POR COORDENADAS FUERA DE ZONA: la cultura de Sintashta (Q656393) y sus dos sitios emblemáticos, Arkaim (Q672602, 59,57 E) y el propio Sintashta (Q1090987, 60,18 E) — el llamado «País de las Ciudades» se concentra entre Magnitogorsk y Cheliábinsk, al este del límite oriental de esta zona; su reborde occidental roza Bashkortostán, pero ni la cultura ni sus asentamientos tienen en Wikidata coordenadas que caigan dentro. DESCARTADO POR VENTANA: Srubnaya (Q1470165), que arranca hacia 1900–1600 a.C., y Poltavka (Q1757895), que termina hacia 2100 a.C. y es sobre todo anterior al corte. AVISO SOBRE COORDENADAS: ninguna de las cuatro culturas propuestas tiene P625 en Wikidata (tampoco lo tienen varias de las ya presentes en el visor, salvo Andrónovo, que sí lleva 55,88 N / 55,7 E); si el visor exige coordenadas de Wikidata para situar el objeto, estas cuatro no se podrán colocar sin una fuente de posición alternativa. La relación comercial Sintashta–BMAC (exportación de metal de la estepa a las ciudades de Asia Central, ~2100–1800 a.C.) está bien documentada, pero no la propongo porque ninguno de sus dos extremos cae dentro de esta zona.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "6624a55905",
+  "bbox": [
+   56.5,
+   46.25,
+   79.33,
+   60.0
+  ],
+  "corte": "-2000",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 5,
+  "descartados": [
+   {
+    "nombre": "Fenómeno de Seima-Turbino",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "La zona (56,5°–79,33° E, 46,25°–60° N) es la estepa y bosque-estepa del Trans-Ural meridional, norte de Kazajistán y suroeste de Siberia: exactamente el foco de Sintashta-Petrovka. Las dos culturas mayores (Sintashta Q656393 y Andrónovo Q459376) ya estaban en el visor, así que lo propuesto son los yacimientos concretos que las materializan y una red metalúrgica supracultural. DESCARTADO por caer fuera de la ventana: cultura de Botai (3700–3100 a.C., anterior). DESCARTADO por caer fuera de la zona: cultura de Krotovo (Q6439090, coordenadas de Wikidata 82,45° E, al este del límite de 79,33°). DESCARTADO por falta de QID o de coordenadas en Wikidata: el cementerio de Rostovka junto al Irtysh (Q114375772 existe solo con artículo en finés y sin coordenada P625), el enterramiento de carro de Krivoye Ozero (ca. 2026 a.C. según datación de huesos; no hay elemento de Wikidata para el yacimiento arqueológico, solo lagos homónimos), y los poblados de Ustye, Kamennyi Ambar y el cementerio de Bolshekaragansky, todos ellos de Sintashta y dentro de la zona, pero sin elemento propio localizable en Wikidata. La cultura de Alakul (Q12528019) existe como elemento pero no tiene coordenadas y además su rango habitual (1900–1500 a.C.) queda casi entero fuera de la ventana. No he propuesto la relación comercial Sintashta–BMAC, que las fuentes documentan como la primera conexión de la estepa con las civilizaciones urbanas de Asia, porque el complejo de Bactria-Margiana no figura entre las entidades ya presentes en el visor.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
