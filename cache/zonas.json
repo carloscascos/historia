@@ -1691,5 +1691,31 @@
   ],
   "nota": "Zona: Sinaí, sur del Levante (hasta lat 32,5), Arabia, Golfo Pérsico, sur de Mesopotamia y Susiana. Se ha verificado QID y coordenadas en Wikidata de cada candidato y leído las páginas de Wikipedia (en). ADVERTENCIA: Dilmún (Q748846) y Shasu (Q559386) no tienen coordenadas (P625) en Wikidata; se incluyen porque el visor ya lista entidades sin coordenadas, pero incumplen la regla 2 en sentido estricto — el visor decide. Descartados por estar fuera de la zona: Babilonia y Kish (lat 32,54), Dur-Kurigalzu, Megiddo y su batalla de 1457 a.C. (lat 32,58), Hazor, Serabit el-Khadim (lon 33,46). Descartados por peso 1 en esta ventana: Ur (Wikipedia: «no fue una ciudad significativa en el periodo casita», aunque Kurigalzu I restauró sus templos), Isin (solo centro de culto de Gula), Larsa, Borsippa, Failaka, Tell el-Ajjul (ocupación del Bronce Final documentada pero sin papel político descrito), Deir el-Balah (guarnición de finales del s. XIII), Tayma y Madián/Qurayyah (cerámica madianita del s. XIII, sin peso 2 en esta ventana). Descartados por cronología: Chogha Zanbil (fundada hacia 1250 a.C., posterior a la ventana); minas egipcias de Timna (templo de Hathor atribuido a Seti I, c. 1290, en el borde de la ventana, y la datación reciente traslada la producción principal a los siglos XI-IX). La conquista de Susa por Kurigalzu se propone como relación y no como evento porque no tiene artículo propio en Wikidata y su atribución (Kurigalzu I o II) está debatida. No se propone ningún evento con QID: los únicos datados en la ventana caen fuera de la zona.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "b76e838dc4",
+  "bbox": [
+   79.33,
+   46.25,
+   102.16,
+   60.0
+  ],
+  "corte": "-1350",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 1,
+  "descartados": [
+   {
+    "nombre": "Cultura de Karasuk",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Sagsai",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = sur de Siberia (Altái, cuenca de Minusinsk/alto Yeniséi, Tuvá, Kuzbass, Ob medio) y franja norte de Mongolia occidental. Revisado: Wikipedia en/es y Wikidata para Karasuk, Andrónovo (Fedorovo), Sagsai, Mönkhkhairkhan, Chemurchek, Okunev, Seima-Turbino, Irmen, piedras de ciervo/khirigsuur, Ulaanzuukh. Propuestos: Karasuk (1500–800 a.C., núcleo en Minusinsk) y Sagsai (1500–1000 a.C., Altái mongol), más la relación de sucesión Andrónovo→Karasuk. AVISO: ninguno de los dos QIDs tiene coordenadas P625 en Wikidata (Karasuk solo P706 = montes Sayán, Q5535232, que sí cae en la zona; Sagsai no tiene ni fechas ni país en Wikidata, las fechas vienen solo de Wikipedia en) — si el visor exige P625, ambas entidades no podrán ubicarse automáticamente. Descartados por estar fuera de la ventana: Okunev (~2500–1800), Mönkhkhairkhan (1800–1600), Chemurchek (2500–1700), Seima-Turbino (cronología revisada 2200–1900), Irmen (siglos IX–VIII a.C. según Wikipedia, aunque otras fuentes lo inician en el XIII), complejo piedras de ciervo–khirigsuur (1200–700 a.C., fechas más antiguas ~1300 a.C.; sin item propio de 'cultura' en Wikidata, solo Q176824 'deer stone' y Q4219542 'khirigsuur' como tipos de monumento). Descartada la relación Karasuk→Shang (cuchillos de bronce imitados en Anyang) por datarse en los siglos XIII–XI a.C., después del cierre de la ventana; Ulaanzuukh-Tevsh (transmisión del carro a Shang) queda al este de 102°E. No se han hallado ciudades ni eventos datados con QID y coordenadas en la zona para esta ventana.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
