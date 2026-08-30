@@ -1941,5 +1941,22 @@
   ],
   "nota": "Zona: estepa y bosque ruso entre el Don, el Volga y los Urales meridionales (Moscú, Vorónezh, Kazán, Samara, Oremburgo). Sin estados, ciudades ni batallas documentadas en la ventana: el contenido son culturas arqueológicas. ADVERTENCIA sobre coordenadas: los ítems Wikidata de la cultura srubna (Q1470165) y de Pozdniakovo (Q4368832) NO tienen P625; solo Kargaly (Q4214672, 52.25 N / 54.82 E) tiene coordenada dentro de la zona. Andrónovo (Q459376, ya en el visor) sí tiene P625, así que asumo que el visor admite entidades sin coordenada o las resuelve por otra vía; si exige P625, esas dos entidades no se pueden colocar automáticamente. Fechas srubna: Wikidata da -1600/-1200, enwiki 1900–1200, ruwiki XVIII–XIII a.C.; uso 1800–1200 como compromiso. Descartados: fenómeno Seima-Turbino (Q2409967, consenso 2200–1900 a.C., fuera de ventana); cultura de Sabatinovka (Q4403450, 1600–1300 a.C., estepa de Ucrania y Moldavia, sin P625, extensión hacia el este solo hasta el bajo Dniéper, es decir, al oeste de la zona); cultura de Cherkaskul (Q4513013, sin P625, epónimo en Cheliábinsk ~60.7 E fuera de la zona, y datada 2º–3er cuarto del II milenio, en parte anterior a la ventana); cultura Prikazán (Q4378356, Volga-Kama, 2ª mitad del II milenio, sin P625): la considero de peso 1, juicio limítrofe y del mismo orden que Pozdniakovo, que sí incluyo por ser el brazo directo de la cultura srubna en la cuenca del Oká; culturas de Abashevo, Sintashta, Petrovka y Potapovka: anteriores a 1750 a.C. La relación srubna–Sabatinovka la omito porque la propia fuente rusa la califica de debatida.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "6477f9ee2d",
+  "bbox": [
+   56.5,
+   46.25,
+   79.33,
+   60.0
+  ],
+  "corte": "-1350",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 2,
+  "descartados": [],
+  "nota": "Zona = Urales meridionales, norte y centro de Kazajistán y Siberia occidental (Cheliábinsk–Omsk–Karagandá–Pávlodar). En 1475–1275 a.C. no hay estados ni ciudades en sentido estricto: solo culturas arqueológicas pastoriles y metalúrgicas, casi todas englobadas en la cultura de Andrónovo, que ya está en el visor. Mirado y descartado: (1) Variantes de Andrónovo — Alakul (Q12528019, 1900–1500 a.C. / C14 1802–1595), Fedorovo (Q129764211, 1900–1300 / C14 1742–1451) y Sargary-Alekséyevka (Q138432884, 1500–1000): son subdivisiones de una entidad ya presente, peso 1 en vista media; además ninguna tiene coordenadas (P625) ni fechas en Wikidata. (2) Cultura de Cherkaskul (Q4513013, 2º–3er cuarto del II milenio, bosque-estepa transuraliana): distinta de Andrónovo pero regional y menor, peso 1; sin P625. (3) Begazy-Dandybai (Q814276): las fuentes descuadran — Wikipedia en dice 1500–1100 a.C., Wikipedia ru siglos XIII–IX, Wikipedia es apogeo XII–VIII; dos de tres la sitúan tras la ventana, y no tiene coordenadas en Wikidata (los mausoleos Q4880422 sí, 48.27 N 75.35 E, pero son posteriores). Descartada por dudosa, causa del descuadre desconocida. (4) Fenómeno Seima-Turbino (Q2409967): Wikidata 2300–1700, Wikipedia ru 2200–1900 o 2150–1600 a.C.; termina antes de la ventana; la necrópolis de Rostovka (Omsk) no tiene ítem propio (Q4398447 es la aldea moderna). (5) Relación transmisión Andrónovo→Shang: Wikipedia solo dice que la influencia 'se cree' que llegó a Shang vía Karasuk, y los carros en Anyang se datan hacia 1200 a.C., fuera de la ventana; demasiado débil, no propuesta. (6) Semiyarka se incluye con peso 2 porque su tamaño (140 ha), trazado planificado y producción de bronce estañífero la hacen excepcional a escala de la estepa; la datación 'desde hacia 1600' y 'hasta -1100' sale de su adscripción a Cherkaskul (1600–1250) y Sargary-Alekséyevka (1500–1100) según Wikipedia; el artículo de Antiquity 2025 (UCL PDF) no pudo leerse (404), así que la cronología fina no está verificada contra la fuente primaria.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
