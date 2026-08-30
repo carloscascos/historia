@@ -41,5 +41,75 @@
   ],
   "nota": "Revisados ~30 candidatos en Wikipedia (es, en, pt) con QID y coordenadas comprobados en Wikidata (API); Cabezo Juré además con Dialnet. AVISOS sobre lo propuesto: (1) Valencina no tiene ítem arqueológico con coordenadas en Wikidata: Q97642895 («Zona de Valencina y Castilleja») carece de P625, así que va con el QID del municipio moderno Q1603015 (37.416, -6.077, a 1 km del yacimiento); si el visor exige ítem arqueológico, sustituir por el tholos de Montelirio (Q60970429) o descartar. (2) Cultura de Véraza no tiene coordenadas en Wikidata y su núcleo (Girona, Aude, Rosellón) queda al este de la zona; solo su franja occidental (Lleida) cae dentro. (3) Descuadres de fechas que no cierro: fin de Los Millares 2515–2365 (es) vs c. 2000 (en) — pongo -2250 para cuadrar con la entidad ya existente; Dolmen de Soto «hacia 3000» y «finales del tercer milenio» en el mismo artículo es vs «2500–3000, c. 2750» en en — va al borde de la ventana con año -2750; Marroquíes Bajos y Cerro de la Virgen solo tienen cronología vaga en Wikipedia («principios del III milenio», «hacia 3000»). (4) Los Millares aparece dos veces a propósito: el visor ya tiene la cultura (Q5794482); aquí se propone el poblado (Q1579766), que es otro ítem. DESCARTADOS por caer fuera de la ventana: Tholos de El Romeral (es-wiki 3000–2200 vs en-wiki 1800 a.C., contradicción irresuelta), El Malagón (2565–2200), Almizaraque (2500–1900), Alcalar (c. 2500), Monte da Tumba (2500–2000), poblado de Vila Nova de São Pedro (2600, y su cultura ya existe desde -2600), dólmenes de Menga y Viera (c. 3800–3600) y Anta Grande do Zambujeiro (4000–3000, c. 3500). DESCARTADOS por Wikidata: Cabezo Juré (Q85749995, metalurgia del cobre 2873–2274 cal. a.C. según Dialnet, encaja de lleno en la ventana pero el ítem no tiene coordenadas), Camino de las Yeseras (Q112897918 tiene coordenadas en Almería, el yacimiento está en Madrid: ítem equivocado o corrupto), Papa Uvas (Q97628280 sin coordenadas ni artículo); sin QID hallado: La Pijotilla, Porto Torrão, Los Castillejos de Montefrío. Norte de Marruecos dentro de la zona: nada documentado para 3300–2750. No propongo relaciones: las únicas entidades en zona son Los Millares y la Véraza propuesta, sin vínculo documentado; el comercio de marfil y huevo de avestruz con el norte de África (Los Millares, Valencina) no tiene entidad magrebí en el visor a la que enganchar, y los contactos Valencina–Perdigões–Los Millares son entre ciudades, no entre entidades.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "2d27540d7e",
+  "bbox": [
+   -10.66,
+   35.55,
+   0.22,
+   44.18
+  ],
+  "corte": "-2500",
+  "lod": 1,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 8,
+  "descartados": [
+   {
+    "nombre": "Los Millares",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Valencina de la Concepción (yacimiento calcolítico)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Castro do Zambujal",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Marroquíes Bajos",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Complexo Arqueológico dos Perdigões",
+    "motivo": "QID no existe en Wikidata"
+   },
+   {
+    "nombre": "Castro de Leceia",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Cerro de la Virgen (Orce)",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Castelo Velho de Freixo de Numão",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Cultura de Los Millares",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Cultura de Vila Nova de São Pedro",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Cultura del vaso campaniforme",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Construcción de los fortines de Los Millares",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Construcción del dolmen de Soto",
+    "motivo": "ya existe"
+   }
+  ],
+  "nota": "Zona = casi toda la Península Ibérica al oeste de 0,22° más el extremo de Tánger. Se han buscado en Wikidata ~45 candidatos calcolíticos y se han comprobado coordenadas (P625) y fechas leyendo Wikipedia es/en/pt y una nota SINC. AVISOS: (1) Valencina no tiene ítem de yacimiento con coordenadas válidas (Q97642895 «Zona de Valencina y Castilleja» tiene P625 = 0,0), así que se propone con el QID del municipio Q1603015, cuyas coordenadas caen sobre el yacimiento; si el visor exige ítem de sitio, descartar. (2) Fechas de fin de la cultura de Vila Nova contradictorias en las fuentes (2200 a. C. según unos autores, 1500 según otros); se ha puesto 1500. (3) La llegada del campaniforme al Tajo está en 28.º siglo a. C. (Bell Beaker en) y «mediados del III milenio» (Zambujal en), pero la página de Vila Nova de São Pedro sitúa la «llegada de los pueblos campaniformes» en 2200 a. C.: descuadre entre fuentes, sin resolver; la relación de transmisión usa el rango prudente 2600-2250. (4) Dolmen de Soto: en dice 3000-2500 / c. 2750 a. C. y es dice «alrededor del 3000» y también «finales del tercer milenio»; por eso va a peso 1 con «hacia». (5) Cerro de la Virgen: ninguna fuente leída da fecha de inicio de la fase precampaniforme; el rango es el de la ventana. DESCARTADOS: Cabezo Juré (Alosno), Los Castillejos de Montefrío y la zona de Valencina por coordenadas 0,0 en Wikidata; La Pijotilla, Porto Torrão, Camino de las Yeseras (Madrid), Ciempozuelos y Ereta del Pedregal sin QID o sin coordenadas; Humanejos (Q55439563 es la aldea medieval, no la necrópolis campaniforme); tholos de Montelirio (2900-2800 a. C.) y Dama de Marfil (2900-2650, además sin coordenadas) por caer antes de la ventana; Anta Grande do Zambujeiro (4000-3000) y Menga/Viera por anteriores; tholos de El Romeral por fechas contradictorias (3000-2200 en webs turísticas frente a «final del Calcolítico/inicio del Bronce» en otras) y dolmen de La Pastora sin fecha en Wikipedia; Castanheiro do Vento y Penedo do Lexim sin artículo con fechas. Norte de Marruecos, cornisa cantábrica y Galicia: nada localizado con QID y fechas dentro de la ventana; hueco de cobertura, no ausencia demostrada.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
