@@ -29,6 +29,7 @@ docs/especificacion.md     el encargo del cuadro
 docs/mvp-bronce.md         alcance y decisiones de la maqueta
 docs/analisis-mercado.md   actores y decisión construir/adoptar
 docs/panorama-fuentes.md   fuentes de datos por capa
+docs/plan-visor.md         pasos, umbrales y criterios de parada del visor completo
 data/                      un fichero por término del glosario (JSON/CSV) + geo/ (GeoJSON)
 cache/                     fichas generadas (index.json), objetos hallados por zona (objetos.json) y zonas exploradas (zonas.json); todo sin revisar
 src/bronce.template.html   plantilla del visor; scripts/build.py la rellena con data/
