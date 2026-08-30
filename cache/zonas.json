@@ -2064,5 +2064,47 @@
   ],
   "nota": "Zona = Islas Británicas, norte de Francia, Benelux, Alemania occidental y Dinamarca. Se revisaron en Wikidata (wbsearchentities + P625/P580/P582) y en Wikipedia (en/es) los candidatos del Bronce Medio de esta región. AVISO DE COORDENADAS: ninguna de las cuatro culturas propuestas (Q603383, Q605601, Q1646300, Q278382) tiene P625 en Wikidata, igual que la ya cargada Bronce final atlántico (Q2629081); si el visor exige P625 estricto, quedan solo el evento de Flag Fen (P625 52.57, -0.19) y las relaciones. Fechas: Deverel-Rimbury tiene -1600/-1100 en Wikidata pero 1400–1200 a.C. en Wikipedia; se usan las de Wikidata. DESCARTADOS: Chica de Egtved (Q1805029, 1370 a.C. por dendrocronología, sería peso 2 pero carece de P625 en Wikidata; el pueblo Q3412882 no es el objeto); Mujer de Skrydstrup (Q1451517, con coordenadas, pero datación C14 1382–1129 a.C. y peso 1); Borum Eshøj (Q2695465, siglo XIV a.C., peso 1); Carro Solar de Trundholm (Q1137682, lon 11.57, fuera de la zona); Pecio de Langdon Bay (Q104863305, dentro de zona, pero datación discutida: c. 1300–1150 a.C. según Needham et al. y c. 1100 a.C. según Historic England/Wikipedia, es decir en el borde o fuera de la ventana; no se propone); Cultura de Wessex (Q719139, termina c. 1400 a.C., roza la ventana solo 75 años, sin P625); Campos de Urnas (Q223998, empieza -1200/-1300, fuera); Barco de Dover (Q1252872, 1575 a.C., fuera); Sögel-Wohlde, Grupo de Lüneburg, Elp (peso 1, sin coordenadas); grupo de Tréboul (Bretaña) y fase Bishopsland (Irlanda) sin QID propio. No hay estados, ciudades ni batallas documentadas en la zona en esta ventana: la única 'ciudad' candidata no alcanza el nivel de asentamiento urbano.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "d39f471442",
+  "bbox": [
+   10.84,
+   32.5,
+   33.67,
+   46.25
+  ],
+  "corte": "-1350",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 23,
+  "descartados": [
+   {
+    "nombre": "Cultura de las Terramaras",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura apenínica",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Thapsos",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Wilusa",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Liga de Assuwa",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Lukka",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona: Italia peninsular y Sicilia, Malta, Grecia, Egeo, Anatolia occidental, Creta, Chipre hasta 33,67°E y los Balcanes hasta 46,25°N. Verificados QID y coordenadas en Wikidata; leídas las páginas de Wikipedia citadas. DESCARTADOS por caer fuera de la zona: Hattusa (34,6°E), Enkomi (33,87°E), Kaskas (norte de Anatolia central), Cabo Gelidonya (además, c. 1200 a.C.). DESCARTADOS por peso 1 al nivel medio: Beycesultan, Borġ in-Nadur, Kalavasos-Ayios Dhimitrios (la página de Wikipedia dio 404, sin verificar), Dendra, Ásine, Iasos, Hapalla (pequeño reino vasallo), Vivara, Lípari/cultura de Milazzese, culturas balcánicas de Vatin, Monteoru, Wietenberg y Ottomány (sin coordenadas en Wikidata y en el borde norte de la zona), cultura de los Túmulos (mayoritariamente al norte de 46,25°N). Hagia Triada y Festo: su apogeo es anterior a 1450 a.C.; en la ventana son centros secundarios bajo Cnosos, peso 1. Midea: la muralla y el primer megaron son LH IIIB2 (después de 1275 a.C.); no documenté ocupación relevante dentro de la ventana, así que no lo propongo. Ahhiyawa (Q552241) no se propone como entidad para no duplicar la Civilización micénica ya existente; las relaciones hitita-micénicas se cuelgan de Q181264. Cadmea (Q1276854) duplica Tebas, ya existente. Libu (Q2456520): sin coordenadas y las menciones egipcias empiezan con Seti I (c. 1290), en el límite de la ventana; no propuesto. EVENTOS: no hay entradas de Wikidata para la campaña de Mursili II contra Arzawa (c. 1318 a.C.), el incendio de Millawanda, la revuelta de Assuwa (que existe solo como liga, Q2665673, propuesta como entidad) ni la toma micénica de Cnosos, así que no se proponen como eventos; la batalla de Qadesh (1274 a.C.) queda fuera de zona y de ventana. Aviso sobre la relación Arzawa-Egipto: es diplomática (correspondencia de Amarna), etiquetada «comercio» porque el esquema no admite «diplomacia». Fechas: en ciudades y culturas de larga duración, desde/hasta están recortados a la ventana; Gla se data desde c. 1300 y solo solapa 25 años con la ventana. Yolco: la identificación del palacio de Dimini con Yolco está aceptada pero la página no da fechas explícitas LH IIIA-B; la inclusión se apoya en la lista de centros palaciales de la página de Grecia micénica.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
