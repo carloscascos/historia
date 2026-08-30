@@ -4833,5 +4833,31 @@
   ],
   "nota": "La zona cubre el valle del Nilo nubio (Sudán/sur de Egipto) en su mitad norte y las tierras altas de Etiopía-Eritrea y el Sudán oriental en la mitad sur. Casi todo lo aceptado es nubio: Kerma en su fase antigua (2500-2000 a.C.), Saï como segundo núcleo del reino, y dos huellas del Imperio Antiguo egipcio en la Baja Nubia (Buhen y las canteras de Gebel el-Asr), ambas activas en la ventana.\n\nDESCARTES POR FECHA: la mayoría de yacimientos con coordenadas dentro del recuadro son mucho más tardíos — Meroe, las pirámides de Meroe, Napata, Jebel Barkal, Musawarat, Sedeinga (kushitas, I milenio a.C.); Abu Simbel, Amada, Ellesyia, Faras, Askut, Uronarti, Kumma (Imperio Medio y Nuevo); Old Dongola y Qasr al-Wizz (cristianos). Aviso: Wikidata fecha Meroe (Q5780) en -2500/-1500; **eso es erróneo** — la Wikipedia y la bibliografía sitúan su fundación como capital hacia 591 a.C. No lo he propuesto.\n\nDESCARTES POR FALTA DE COORDENADAS EN WIKIDATA: la cultura del Grupo C de la Baja Nubia (Q1022291, iniciada c. 2400/2200 a.C.) y el Grupo Gash del Sudán oriental (Q84088970, c. 3000-1800 a.C., con Mahal Teglinos junto a Kassala) sí existen en la ventana y son relevantes, pero sus ítems de Wikidata no llevan P625, así que no puedo situarlos. Merecerían entrar si alguien añade coordenadas.\n\nMITAD SUR VACÍA: en Etiopía y Eritrea no he encontrado nada documentado en 2750-2250 a.C. La bibliografía sitúa las primeras sociedades complejas del Cuerno de África en el II-I milenio a.C. (Ona, Matara, preaksumita); es un hueco real de la investigación, no de mi búsqueda. Tampoco he propuesto la tierra de Punt (destino de la expedición de Sahure, c. 2470 a.C.): su localización sigue siendo objeto de debate y no tiene coordenadas fijas. Mersa Gawasis, el puerto del mar Rojo asociado, cae fuera del recuadro (≈26,5 N).\n\nLas canteras de Kefrén tienen ítem en Wikidata con coordenadas pero solo enlace a Commons, no a Wikipedia; las incluyo con peso 1 porque el nivel de detalle es de vista cercana, pero si el visor exige artículo de Wikipedia habría que quitarlas.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "4b4a36b97b",
+  "bbox": [
+   -8.54,
+   43.12,
+   -4.92,
+   43.88
+  ],
+  "corte": "-3000",
+  "lod": 0,
+  "fecha": "2026-08-31",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 2,
+  "descartados": [
+   {
+    "nombre": "Dolmen de Santa Cruz",
+    "motivo": "ya existe"
+   },
+   {
+    "nombre": "Cultura megalítica atlántica",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona = Asturias, oriente de Lugo y A Coruña oriental. Barrido por SPARQL de Wikidata del bounding box filtrando dólmenes, menhires, necrópolis y yacimientos, más búsqueda dirigida sobre megalitismo cantábrico. DESCARTADOS: Ídolo de Peña Tú (Q2081919) cae en lon -4.689, fuera del límite este de la zona, y además su puñal grabado lo sitúa en el Bronce inicial, posterior a la ventana. Roza das Modias (Q50689112, Vilalba) está dentro de la zona pero Wikidata y la Wikipedia gallega la datan en el 2500 a.C., mediados del III milenio, posterior a la ventana. Dolmen de Baradal (Q106834280) y Dolmen de Entrerríos (Q125925916) están dentro de la zona pero sus fuentes no ofrecen ninguna datación; no propuestos. Menhires lucenses (Pedra Chantada Q50689108, Marco da Pena Verde Q124249020) sin cronología publicada. Cueva de Tito Bustillo, Candamo, Lluera y los Azules son paleolíticas/epipaleolíticas, muy anteriores. El Dolmen de La Cobertoria, con la mejor datación asturiana (~3500 a.C., madera quemada en el acceso a la cámara), NO tiene artículo de Wikidata, así que no se propone pese a ser el caso mejor fechado del entorno. AVISO SOBRE LA CALIDAD DE LAS FECHAS: ninguno de los cuatro objetos propuestos se apoya en dataciones radiocarbónicas publicadas que yo haya podido leer. Monte Areo es el mejor documentado (la Wikipedia en español atribuye a análisis arqueológico y C14 el rango 'últimos siglos del IV milenio a comienzos del III', que es exactamente la ventana), pero no he visto las fechas concretas. Santa Cruz y Merillés se apoyan en atribuciones genéricas al III milenio o al megalitismo asturiano; las ventanas que doy para ellos son una traducción convencional de esa atribución, no una medida. Merillés en particular se excavó en 1962 sin ajuar alguno, y su asignación a esta ventana concreta es una convención de manual, no un dato.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
