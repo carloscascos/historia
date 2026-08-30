@@ -1915,5 +1915,31 @@
   ],
   "nota": "Se ha recorrido el Levante norte y costa fenicia, Siria interior, Alta Mesopotamia y Yazira, Anatolia central-oriental, el Cáucaso, el noroeste de Irán y la estepa norcaucásica/caspia. Descartados: Washukanni (Q1069007, sin coordenadas; la identificación con Tell Fekheriye Q1149666 es minoritaria y sin pruebas epigráficas); Batalla de Qadesh (Q203729, 1274 a.C., queda un año fuera de la ventana); Urkesh (Q1758030, abandonada hacia 1350 y sin peso a escala media); reino de Khana/Terqa (Q425405, sólo documentado hacia 1420 como vasallo mitanio, peso 1); Tel Akko (Q12412094), Arwad (Q377802), Maşat Höyük/Tapikka (Q3303460), Kuşaklı/Sarissa y Alacahöyük, todos ocupados pero de peso 1 a esta escala; Teppe Hasanlu (Q250844, periodo V poco relevante); cultura de Trialeti (Q169320, termina hacia 1500); cultura Kayakent-Jorochoi sin ítem en Wikidata; Susa, Haft Tepe, Chogha Zanbil y Nippur caen por debajo de la latitud 32,5. No hay ningún evento con QID y coordenadas dentro de la zona y ventana: el saqueo de Washukanni, la destrucción de Qatna, el incendio de Hattusa por los kaskas y la batalla de Sugagi no tienen ítem propio. Advertencias: las entidades Kaska, Hayasa-Azzi, Isuwa, Nuhashshe, Lchashen-Metsamor y Srubna no tienen coordenadas en Wikidata (igual que otras entidades ya cargadas), por lo que su inclusión depende de cómo el visor las geolocalice; Srubna sólo roza el borde norte de la zona (pie del Cáucaso y norte del Caspio). El artículo de Wikipedia de Tiro no cubre el Bronce final: la línea se apoya en el artículo de Abimilku. La ubicación de Tunip en Tell Asharneh es probable pero no segura. Las relaciones Hatti–Egipto (Amqu, asunto Zannanza) y Ugarit–Alasiya se dejaron fuera por no haber leído fuentes específicas en esta pasada.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "7c327a1b45",
+  "bbox": [
+   33.67,
+   46.25,
+   56.5,
+   60.0
+  ],
+  "corte": "-1350",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 2,
+  "descartados": [
+   {
+    "nombre": "Cultura srubna (de las tumbas de madera)",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Pozdniakovo",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona: estepa y bosque ruso entre el Don, el Volga y los Urales meridionales (Moscú, Vorónezh, Kazán, Samara, Oremburgo). Sin estados, ciudades ni batallas documentadas en la ventana: el contenido son culturas arqueológicas. ADVERTENCIA sobre coordenadas: los ítems Wikidata de la cultura srubna (Q1470165) y de Pozdniakovo (Q4368832) NO tienen P625; solo Kargaly (Q4214672, 52.25 N / 54.82 E) tiene coordenada dentro de la zona. Andrónovo (Q459376, ya en el visor) sí tiene P625, así que asumo que el visor admite entidades sin coordenada o las resuelve por otra vía; si exige P625, esas dos entidades no se pueden colocar automáticamente. Fechas srubna: Wikidata da -1600/-1200, enwiki 1900–1200, ruwiki XVIII–XIII a.C.; uso 1800–1200 como compromiso. Descartados: fenómeno Seima-Turbino (Q2409967, consenso 2200–1900 a.C., fuera de ventana); cultura de Sabatinovka (Q4403450, 1600–1300 a.C., estepa de Ucrania y Moldavia, sin P625, extensión hacia el este solo hasta el bajo Dniéper, es decir, al oeste de la zona); cultura de Cherkaskul (Q4513013, sin P625, epónimo en Cheliábinsk ~60.7 E fuera de la zona, y datada 2º–3er cuarto del II milenio, en parte anterior a la ventana); cultura Prikazán (Q4378356, Volga-Kama, 2ª mitad del II milenio, sin P625): la considero de peso 1, juicio limítrofe y del mismo orden que Pozdniakovo, que sí incluyo por ser el brazo directo de la cultura srubna en la cuenca del Oká; culturas de Abashevo, Sintashta, Petrovka y Potapovka: anteriores a 1750 a.C. La relación srubna–Sabatinovka la omito porque la propia fuente rusa la califica de debatida.",
+  "autor": "carlos alvarez-cascos"
  }
 ]
