@@ -1992,5 +1992,43 @@
   ],
   "nota": "Zona = península ibérica, Baleares, sur de Francia, Córcega, Cerdeña, Liguria/Emilia occidental y Magreb noroccidental. Revisado: Wikidata (QID, coordenadas, fechas) y Wikipedia es/en de cada candidato. DESCUADRE en las motillas: Wikipedia (es y en) las cierra en 1500 a.C., fuera de la ventana; la web oficial del yacimiento da 2200–1300 a.C. He usado la fecha oficial del yacimiento; si el visor prefiere Wikipedia, ambas entradas de motillas caen fuera. Aviso sobre Q4885086 (Naviforme): el ítem de Wikidata describe el tipo de edificio/periodo, no existe ítem propio para 'cultura naviforme'. Descartados: Cogotas I (fase media 1550–1350 a.C., pero no hay QID propio de la cultura; Q2660473 es el yacimiento Las Cogotas, castro sobre todo de la Edad del Hierro → peso 1); Bronce Valenciano (sin artículo/QID); Cultura talayótica (empieza c. 1000 a.C.); Cultura de los Túmulos Q603383 (1600–1300 a.C., pero Europa central, fuera de la zona); Cultura apenínica Q2569017 (Italia central-sur, casi toda al este de 10.84°E); Filitosa Q1025950 y Cucuruzzu Q1048878 (menhires c. 1500 a.C., peso 1 a esta escala); relación Alasiya–Cerdeña (lingotes chipriotas en Cerdeña se datan desde c. 1250 a.C., en el borde/fuera de la ventana; no incluida); Magreb: sin entidades documentadas con QID en la ventana.",
   "autor": "carlos alvarez-cascos"
+ },
+ {
+  "id": "03930dad42",
+  "bbox": [
+   10.84,
+   46.25,
+   33.67,
+   60.0
+  ],
+  "corte": "-1350",
+  "lod": 2,
+  "fecha": "2026-08-30",
+  "modelo": "claude (claude -p)",
+  "hallazgos": 5,
+  "descartados": [
+   {
+    "nombre": "Cultura de los Túmulos",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Edad del Bronce nórdica",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Trzciniec",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Ottomány (Otomani-Füzesabony)",
+    "motivo": "sin coordenadas en Wikidata"
+   },
+   {
+    "nombre": "Cultura de Vatya",
+    "motivo": "sin coordenadas en Wikidata"
+   }
+  ],
+  "nota": "Zona: Europa central-oriental, Báltico y sur de Escandinavia. Ninguna de las entidades existentes en el visor cae aquí; la zona estaba vacía. Se proponen las cinco culturas arqueológicas documentadas en la ventana (Túmulos, Bronce nórdico, Trzciniec, Ottomány, Vatya) y dos hallazgos datados hacia 1400 a.C. (Trundholm, Kivik), más tres relaciones de comercio de ámbar/metal con la Grecia micénica ya presente. ADVERTENCIA: ninguna de las cinco culturas tiene coordenadas (P625) en Wikidata, igual que ocurre con las culturas ya cargadas (nurágica, Andrónovo); si el visor exige P625, esas cinco fichas no podrán posicionarse automáticamente. Descartados: Egtved Girl (Q1805029, enterrada en 1370 a.C., dato excelente pero su coordenada 9.28°E queda fuera de la zona por el oeste); cultura de Komarov (Q4229398, 1500–1200 a.C., Dniéster medio) y Wietenberg (Q2599310, Transilvania, en el borde sur) por ser regionales, peso 1; cultura de Piliny (Q2332687) y lusaciana (Q611017) empiezan hacia 1300 a.C., fuera o en el límite de la ventana; Campos de Urnas (Q223998) empieza 1300/1200 a.C.; Únětice y disco de Nebra terminan/depositan hacia 1600 a.C., antes de la ventana. No hay ciudades ni batallas documentadas con QID en la zona para este periodo; las fechas de las culturas son aproximadas (variación de ±100 años entre fuentes; p. ej. Trzciniec 2400–1300 en enwiki, Túmulos 1600–1200 en eswiki frente a 1600–1300 en enwiki/Wikidata).",
+  "autor": "carlos alvarez-cascos"
  }
 ]
